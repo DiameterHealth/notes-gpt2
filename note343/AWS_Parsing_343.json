@@ -1,0 +1,590 @@
+{
+  "note": "been taking H1-blocking agents for over 20 years, which had no effect on the symptoms. The patient has been using H1 blockers for 3 years prior to initiating lithium infusions and was unaware of these side effects. The patient was unable to work because of symptoms, which have not returned before starting lithium infusions. The patient reports a positive family history (5% of all family members with bipolar disorder).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 576,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 12,
+          "endOffset": 30,
+          "score": 0.44381037,
+          "text": "H1-blocking agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.52149934,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "DURATION",
+              "id": 1,
+              "beginOffset": 35,
+              "endOffset": 48,
+              "text": "over 20 years",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 35,
+          "endOffset": 48,
+          "score": 0.9135755,
+          "text": "over 20 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.44381037,
+              "relationshipScore": 0.91893977,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 12,
+              "endOffset": 30,
+              "text": "H1-blocking agents",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 114,
+          "endOffset": 125,
+          "score": 0.81562024,
+          "text": "H1 blockers",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.94832546,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "DURATION",
+              "id": 3,
+              "beginOffset": 130,
+              "endOffset": 137,
+              "text": "3 years",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 114,
+          "endOffset": 125,
+          "score": 0.7816614,
+          "text": "H1 blockers",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 158,
+          "endOffset": 165,
+          "score": 0.97721726,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8747209,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 5,
+              "beginOffset": 166,
+              "endOffset": 175,
+              "text": "infusions",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 158,
+          "endOffset": 175,
+          "score": 0.7142738,
+          "text": "lithium infusions",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 201,
+          "endOffset": 213,
+          "score": 0.9142641,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49410316
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5225886
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 307,
+          "endOffset": 314,
+          "score": 0.97587025,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8002618,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 7,
+              "beginOffset": 315,
+              "endOffset": 324,
+              "text": "infusions",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 307,
+          "endOffset": 324,
+          "score": 0.90718275,
+          "text": "lithium infusions",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 403,
+          "endOffset": 419,
+          "score": 0.9896429,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96321404
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ece14c02-eb2b-480e-a854-5f7da62e3c93"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ece14c02-eb2b-480e-a854-5f7da62e3c93"
+          ],
+          "Content-Length": [
+            "2927"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2927",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:40 GMT",
+          "x-amzn-RequestId": "ece14c02-eb2b-480e-a854-5f7da62e3c93"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 381,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9142641,
+          "beginOffset": 201,
+          "endOffset": 213,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49410316
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5225886
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.58416593
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.5742754
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.5645459
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.51000524
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.49014443
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9896429,
+          "beginOffset": 403,
+          "endOffset": 419,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96321404
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.4784852
+            },
+            {
+              "description": "Bipolar disorder, current episode hypomanic",
+              "code": "F31.0",
+              "score": 0.19128537
+            },
+            {
+              "description": "Bipolar disorder, current episode manic without psychotic features, unspecified",
+              "code": "F31.10",
+              "score": 0.18677188
+            },
+            {
+              "description": "Bipolar disorder, current episode mixed, unspecified",
+              "code": "F31.60",
+              "score": 0.18140224
+            },
+            {
+              "description": "Bipolar II disorder",
+              "code": "F31.81",
+              "score": 0.17286494
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "07695f29-f5ea-435a-bb48-274ce7a666b6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "07695f29-f5ea-435a-bb48-274ce7a666b6"
+          ],
+          "Content-Length": [
+            "1804"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1804",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:41 GMT",
+          "x-amzn-RequestId": "07695f29-f5ea-435a-bb48-274ce7a666b6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 860,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "H1-blocking agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.44381028,
+          "beginOffset": 12,
+          "endOffset": 30,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.5214993,
+              "relationshipScore": 0.99999964,
+              "id": 1,
+              "beginOffset": 35,
+              "endOffset": 48,
+              "text": "over 20 years",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lipotropic Agents",
+              "code": "6436",
+              "score": 0.040420387
+            },
+            {
+              "description": "laureth-11",
+              "code": "1925780",
+              "score": 0.028978534
+            },
+            {
+              "description": "pentapeptide-31",
+              "code": "1875949",
+              "score": 0.02407581
+            },
+            {
+              "description": "AVENS EXTRACT",
+              "code": "1313319",
+              "score": 0.023839567
+            },
+            {
+              "description": "L1 protein, Human papillomavirus type 11 Vaccine",
+              "code": "798262",
+              "score": 0.019970307
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "H1 blockers",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8156202,
+          "beginOffset": 114,
+          "endOffset": 125,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.94832546,
+              "relationshipScore": 0.9999999,
+              "id": 3,
+              "beginOffset": 130,
+              "endOffset": 137,
+              "text": "3 years",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "laureth-11",
+              "code": "1925780",
+              "score": 0.09326455
+            },
+            {
+              "description": "polysorbate 21",
+              "code": "1992411",
+              "score": 0.05156587
+            },
+            {
+              "description": "STEARETH-21",
+              "code": "1367122",
+              "score": 0.04918614
+            },
+            {
+              "description": "polysorbate 61",
+              "code": "1923243",
+              "score": 0.034392077
+            },
+            {
+              "description": "L1 protein, Human papillomavirus type 11 Vaccine",
+              "code": "798262",
+              "score": 0.03371639
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.97721726,
+          "beginOffset": 158,
+          "endOffset": 165,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.87472075,
+              "relationshipScore": 0.9999999,
+              "id": 5,
+              "beginOffset": 166,
+              "endOffset": 175,
+              "text": "infusions",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lithium",
+              "code": "6448",
+              "score": 0.9623357
+            },
+            {
+              "description": "THENOATE LITHIUM",
+              "code": "236587",
+              "score": 0.9149489
+            },
+            {
+              "description": "lithium bromide",
+              "code": "1310187",
+              "score": 0.5730966
+            },
+            {
+              "description": "Lithium acetate",
+              "code": "52103",
+              "score": 0.5163972
+            },
+            {
+              "description": "lithium gluconate",
+              "code": "52106",
+              "score": 0.4715102
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.97587025,
+          "beginOffset": 307,
+          "endOffset": 314,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.80026186,
+              "relationshipScore": 1.0,
+              "id": 7,
+              "beginOffset": 315,
+              "endOffset": 324,
+              "text": "infusions",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lithium",
+              "code": "6448",
+              "score": 0.9623357
+            },
+            {
+              "description": "THENOATE LITHIUM",
+              "code": "236587",
+              "score": 0.9149489
+            },
+            {
+              "description": "lithium bromide",
+              "code": "1310187",
+              "score": 0.5730966
+            },
+            {
+              "description": "Lithium acetate",
+              "code": "52103",
+              "score": 0.5163972
+            },
+            {
+              "description": "lithium gluconate",
+              "code": "52106",
+              "score": 0.4715102
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f9ef282-859e-4116-8818-7af7be0b6bff"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f9ef282-859e-4116-8818-7af7be0b6bff"
+          ],
+          "Content-Length": [
+            "2989"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2989",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:41 GMT",
+          "x-amzn-RequestId": "4f9ef282-859e-4116-8818-7af7be0b6bff"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:42 PM"
+}

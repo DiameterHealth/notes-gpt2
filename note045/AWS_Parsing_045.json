@@ -1,0 +1,658 @@
+{
+  "note": "Pregnancy: If you have had sex while you have the rash or have already been pregnant, please advise us immediately. Please see our other symptom checker. Symptoms of herpes infections can be similar to those of Epstein-Barr virus (EBV). Treatment for herpes virus infections (HIV)  Herpes is no longer curable, but most people do get better with support and good healthcare.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 347,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 9,
+          "score": 0.9650428,
+          "text": "Pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9361336
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 50,
+          "endOffset": 54,
+          "score": 0.9923016,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42792857
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6069278
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 76,
+          "endOffset": 84,
+          "score": 0.98328835,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92630255
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 103,
+          "endOffset": 114,
+          "score": 0.99998343,
+          "text": "immediately",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98328835,
+              "relationshipScore": 0.82931876,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 76,
+              "endOffset": 84,
+              "text": "pregnant",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.92630255
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 166,
+          "endOffset": 183,
+          "score": 0.9536616,
+          "text": "herpes infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7894615
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 211,
+          "endOffset": 229,
+          "score": 0.9524795,
+          "text": "Epstein-Barr virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89395916
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 231,
+          "endOffset": 234,
+          "score": 0.65420055,
+          "text": "EBV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.65659934
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 251,
+          "endOffset": 274,
+          "score": 0.93754375,
+          "text": "herpes virus infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9605559
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 276,
+          "endOffset": 279,
+          "score": 0.9765909,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9164154
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 282,
+          "endOffset": 288,
+          "score": 0.76189786,
+          "text": "Herpes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66987973
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43e09f2a-4cba-4ae5-ae51-8051f9083b22"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43e09f2a-4cba-4ae5-ae51-8051f9083b22"
+          ],
+          "Content-Length": [
+            "2301"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2301",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:11 GMT",
+          "x-amzn-RequestId": "43e09f2a-4cba-4ae5-ae51-8051f9083b22"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 406,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9650428,
+          "beginOffset": 0,
+          "endOffset": 9,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9361336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.8124083
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.7104038
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.70406634
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.68364334
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, insulin controlled",
+              "code": "O24.414",
+              "score": 0.67617404
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9923016,
+          "beginOffset": 50,
+          "endOffset": 54,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4279286
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.60692775
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.68077016
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.43561766
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.4125874
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.3767375
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.37364826
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98328835,
+          "beginOffset": 76,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92630255
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7337595
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.6291208
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5780712
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.53257567
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.5044694
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "herpes infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9536616,
+          "beginOffset": 166,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7894616
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Herpesviral infection of urogenital system, unspecified",
+              "code": "A60.00",
+              "score": 0.48802823
+            },
+            {
+              "description": "Herpesviral infection, unspecified",
+              "code": "B00.9",
+              "score": 0.39821705
+            },
+            {
+              "description": "Herpes gestationis, unspecified trimester",
+              "code": "O26.40",
+              "score": 0.3426453
+            },
+            {
+              "description": "Herpes gestationis, third trimester",
+              "code": "O26.43",
+              "score": 0.33763817
+            },
+            {
+              "description": "Herpes gestationis",
+              "code": "O26.4",
+              "score": 0.29444572
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Epstein-Barr virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9524795,
+          "beginOffset": 211,
+          "endOffset": 229,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89395916
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.60635537
+            },
+            {
+              "description": "Respiratory syncytial virus as the cause of diseases classified elsewhere",
+              "code": "B97.4",
+              "score": 0.5420874
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.50206095
+            },
+            {
+              "description": "Enterovirus infection, unspecified",
+              "code": "B34.1",
+              "score": 0.47964954
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.45425662
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "EBV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6542005,
+          "beginOffset": 231,
+          "endOffset": 234,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6565992
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Immunodeficiency following hereditary defective response to Epstein-Barr virus",
+              "code": "D82.3",
+              "score": 0.4863886
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "herpes virus infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93754363,
+          "beginOffset": 251,
+          "endOffset": 274,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9605559
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Herpesviral infection, unspecified",
+              "code": "B00.9",
+              "score": 0.41697964
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.40540478
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.38776603
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.37561312
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.35516176
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9765909,
+          "beginOffset": 276,
+          "endOffset": 279,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9164154
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.67066467
+            },
+            {
+              "description": "Asymptomatic human immunodeficiency virus [HIV] infection status",
+              "code": "Z21",
+              "score": 0.5061919
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] counseling",
+              "code": "Z71.7",
+              "score": 0.36846069
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] disease complicating childbirth",
+              "code": "O98.72",
+              "score": 0.36653602
+            },
+            {
+              "description": "Human immunodeficiency virus, type 2 [HIV 2] as the cause of diseases classified elsewhere",
+              "code": "B97.35",
+              "score": 0.36034492
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Herpes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7618979,
+          "beginOffset": 282,
+          "endOffset": 288,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66987973
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Herpesviral infection of urogenital system, unspecified",
+              "code": "A60.00",
+              "score": 0.5916712
+            },
+            {
+              "description": "Herpesviral infection, unspecified",
+              "code": "B00.9",
+              "score": 0.48168048
+            },
+            {
+              "description": "Herpes gestationis, third trimester",
+              "code": "O26.43",
+              "score": 0.38363987
+            },
+            {
+              "description": "Herpes gestationis, unspecified trimester",
+              "code": "O26.40",
+              "score": 0.36260468
+            },
+            {
+              "description": "Herpesviral infection of other urogenital tract",
+              "code": "A60.09",
+              "score": 0.35707954
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7a1ce49a-ed94-4216-987e-a92410879638"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7a1ce49a-ed94-4216-987e-a92410879638"
+          ],
+          "Content-Length": [
+            "6615"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6615",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:11 GMT",
+          "x-amzn-RequestId": "7a1ce49a-ed94-4216-987e-a92410879638"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 208,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "db8b7b1d-210b-45f4-877a-d1d236404a10"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "db8b7b1d-210b-45f4-877a-d1d236404a10"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:11 GMT",
+          "x-amzn-RequestId": "db8b7b1d-210b-45f4-877a-d1d236404a10"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:12 PM"
+}

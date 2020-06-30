@@ -1,0 +1,408 @@
+{
+  "note": ". As part of the exercise, she completed a short run. She later reported lightheadedness that she attributed to exertion on the run. After the run the patient became dizzy on standing and was asked to sit down. She remained motionless for several minutes and reported no loss of consciousness. She was transferred to the emergency department where she remained stable.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 328,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 73,
+          "endOffset": 88,
+          "score": 0.9925236,
+          "text": "lightheadedness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88568074
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 166,
+          "endOffset": 171,
+          "score": 0.89776504,
+          "text": "dizzy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79717886
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 224,
+          "endOffset": 234,
+          "score": 0.8476037,
+          "text": "motionless",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6435408
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.41096956,
+              "relationshipScore": 1.0,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 235,
+              "endOffset": 254,
+              "text": "for several minutes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 271,
+          "endOffset": 292,
+          "score": 0.9838284,
+          "text": "loss of consciousness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91986674
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97015566
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 321,
+          "endOffset": 341,
+          "score": 0.9987846,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.41096956,
+            "id": 3,
+            "beginOffset": 235,
+            "endOffset": 254,
+            "text": "for several minutes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "39cdfba5-6489-480a-8c33-a893105ddfcd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "39cdfba5-6489-480a-8c33-a893105ddfcd"
+          ],
+          "Content-Length": [
+            "1488"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1488",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:21 GMT",
+          "x-amzn-RequestId": "39cdfba5-6489-480a-8c33-a893105ddfcd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 431,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "lightheadedness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9925236,
+          "beginOffset": 73,
+          "endOffset": 88,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88568074
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.8811865
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.562696
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.5400329
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.5090293
+            },
+            {
+              "description": "Concussion with loss of consciousness of unspecified duration",
+              "code": "S06.0X9",
+              "score": 0.496619
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "dizzy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89776504,
+          "beginOffset": 166,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79717886
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.7722361
+            },
+            {
+              "description": "Other peripheral vertigo",
+              "code": "H81.39",
+              "score": 0.41729888
+            },
+            {
+              "description": "Vertigo from infrasound",
+              "code": "T75.23",
+              "score": 0.40169117
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.3963542
+            },
+            {
+              "description": "Vertigo of central origin",
+              "code": "H81.4",
+              "score": 0.33005273
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "motionless",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84760374,
+          "beginOffset": 224,
+          "endOffset": 234,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4109698,
+              "relationshipScore": 1.0,
+              "id": 3,
+              "beginOffset": 235,
+              "endOffset": 254,
+              "text": "for several minutes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64354086
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stiffness of unspecified joint, not elsewhere classified",
+              "code": "M25.60",
+              "score": 0.7897914
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.78679675
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.6875196
+            },
+            {
+              "description": "Congenital malformation, unspecified",
+              "code": "Q89.9",
+              "score": 0.65755254
+            },
+            {
+              "description": "Motion sickness",
+              "code": "T75.3",
+              "score": 0.5575571
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "loss of consciousness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9838284,
+          "beginOffset": 271,
+          "endOffset": 292,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91986674
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97015566
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.8514355
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.69014835
+            },
+            {
+              "description": "Volume depletion, unspecified",
+              "code": "E86.9",
+              "score": 0.66962534
+            },
+            {
+              "description": "Malingerer [conscious simulation]",
+              "code": "Z76.5",
+              "score": 0.6675088
+            },
+            {
+              "description": "Other pulmonary collapse",
+              "code": "J98.19",
+              "score": 0.6396896
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0b6bb5b7-b774-4f19-97b1-c03ad442d2db"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0b6bb5b7-b774-4f19-97b1-c03ad442d2db"
+          ],
+          "Content-Length": [
+            "2934"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2934",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:21 GMT",
+          "x-amzn-RequestId": "0b6bb5b7-b774-4f19-97b1-c03ad442d2db"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 187,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "612aa30f-10e8-4a87-9c5d-2ba84b176f0b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "612aa30f-10e8-4a87-9c5d-2ba84b176f0b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:21 GMT",
+          "x-amzn-RequestId": "612aa30f-10e8-4a87-9c5d-2ba84b176f0b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:21 PM"
+}

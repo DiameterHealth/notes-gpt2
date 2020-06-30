@@ -1,0 +1,210 @@
+{
+  "note": "if MDM is not well received. (MDM): Patient will continue medications and therapy at home. Follow-up with her PCP is recommended within the next 7 days if MDM is not well received. Intravenous (IV) antibiotics: patient will continue to take IV antibiotics at 30% of previous dosage. Follow-up with their PCP or nurse will be encouraged in a timely matter.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 3,
+          "endOffset": 6,
+          "score": 0.3977477,
+          "text": "MDM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 198,
+          "endOffset": 209,
+          "score": 0.7252114,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.40923667,
+              "relationshipScore": 0.9999018,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 0,
+              "beginOffset": 181,
+              "endOffset": 192,
+              "text": "Intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 198,
+          "endOffset": 209,
+          "score": 0.68810856,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 241,
+          "endOffset": 255,
+          "score": 0.84981155,
+          "text": "IV antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 244,
+          "endOffset": 255,
+          "score": 0.985836,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9843642,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 241,
+              "endOffset": 243,
+              "text": "IV",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICATION",
+          "attribute": {
+            "type": "ROUTE_OR_MODE",
+            "score": 0.8526483,
+            "id": 1,
+            "beginOffset": 194,
+            "endOffset": 196,
+            "text": "IV",
+            "category": "MEDICATION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "76ebc564-7179-462a-b59d-a22e0dd2ed1d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "76ebc564-7179-462a-b59d-a22e0dd2ed1d"
+          ],
+          "Content-Length": [
+            "1474"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1474",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:44 GMT",
+          "x-amzn-RequestId": "76ebc564-7179-462a-b59d-a22e0dd2ed1d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 376,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8dbbcd9a-12b3-467b-b51c-368446c6c65b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8dbbcd9a-12b3-467b-b51c-368446c6c65b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:44 GMT",
+          "x-amzn-RequestId": "8dbbcd9a-12b3-467b-b51c-368446c6c65b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 350,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "814999ab-cfcb-4cff-9376-06caa0addf09"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "814999ab-cfcb-4cff-9376-06caa0addf09"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:44 GMT",
+          "x-amzn-RequestId": "814999ab-cfcb-4cff-9376-06caa0addf09"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:45 PM"
+}

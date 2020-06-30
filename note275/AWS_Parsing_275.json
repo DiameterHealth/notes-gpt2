@@ -1,0 +1,309 @@
+{
+  "note": "until complete clearance, see physician if need for additional testing. In patients known to be at risk of cardiac arrest, obtain cardiac biomarker or other information during initial evaluation. Administer oxygen immediately. If cardiac arrest occurs in this patient, perform CPR and transport to an emergency department. Do not attempt CPR in this patient if it was not started prior to arrival on the ward.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 520,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 107,
+          "endOffset": 121,
+          "score": 0.92973113,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9454293
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 130,
+          "endOffset": 147,
+          "score": 0.7747507,
+          "text": "cardiac biomarker",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 207,
+          "endOffset": 213,
+          "score": 0.86495316,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 214,
+          "endOffset": 225,
+          "score": 0.9999896,
+          "text": "immediately",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.86495316,
+              "relationshipScore": 0.95456964,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 207,
+              "endOffset": 213,
+              "text": "oxygen",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 230,
+          "endOffset": 244,
+          "score": 0.8716002,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8621503
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 277,
+          "endOffset": 280,
+          "score": 0.9368513,
+          "text": "CPR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 301,
+          "endOffset": 321,
+          "score": 0.9943798,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 338,
+          "endOffset": 341,
+          "score": 0.96098983,
+          "text": "CPR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8d07fc7d-232f-478e-be20-9bab4a26f69d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8d07fc7d-232f-478e-be20-9bab4a26f69d"
+          ],
+          "Content-Length": [
+            "1681"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1681",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:15 GMT",
+          "x-amzn-RequestId": "8d07fc7d-232f-478e-be20-9bab4a26f69d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 827,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92973113,
+          "beginOffset": 107,
+          "endOffset": 121,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9454293
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.8214914
+            },
+            {
+              "description": "Personal history of sudden cardiac arrest",
+              "code": "Z86.74",
+              "score": 0.7780569
+            },
+            {
+              "description": "Intraoperative cardiac arrest during cardiac surgery",
+              "code": "I97.710",
+              "score": 0.6667203
+            },
+            {
+              "description": "Intraoperative cardiac arrest",
+              "code": "I97.71",
+              "score": 0.6559901
+            },
+            {
+              "description": "Respiratory arrest",
+              "code": "R09.2",
+              "score": 0.6432404
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8716002,
+          "beginOffset": 230,
+          "endOffset": 244,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8621503
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.79890835
+            },
+            {
+              "description": "Personal history of sudden cardiac arrest",
+              "code": "Z86.74",
+              "score": 0.7482179
+            },
+            {
+              "description": "Postprocedural cardiac arrest following cardiac surgery",
+              "code": "I97.120",
+              "score": 0.63428843
+            },
+            {
+              "description": "Intraoperative cardiac arrest during cardiac surgery",
+              "code": "I97.710",
+              "score": 0.6199553
+            },
+            {
+              "description": "Respiratory arrest",
+              "code": "R09.2",
+              "score": 0.5983003
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2f2ce9a8-9115-43f3-a0af-0ef0e58d0f77"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2f2ce9a8-9115-43f3-a0af-0ef0e58d0f77"
+          ],
+          "Content-Length": [
+            "1500"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1500",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:16 GMT",
+          "x-amzn-RequestId": "2f2ce9a8-9115-43f3-a0af-0ef0e58d0f77"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e31ed8f6-f975-4ffe-b3a7-c3cf70c5518d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e31ed8f6-f975-4ffe-b3a7-c3cf70c5518d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:15 GMT",
+          "x-amzn-RequestId": "e31ed8f6-f975-4ffe-b3a7-c3cf70c5518d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:16 PM"
+}

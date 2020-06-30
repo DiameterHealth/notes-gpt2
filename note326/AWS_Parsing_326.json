@@ -1,0 +1,283 @@
+{
+  "note": ". Symptoms usually begin after eating certain foods, but some people get it even though they are sensitive to food. Causes are not yet certain. Treatment usually is with steroid cream or nasal drops.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 174,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 97,
+          "endOffset": 114,
+          "score": 0.4446729,
+          "text": "sensitive to food",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67092943
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 170,
+          "endOffset": 177,
+          "score": 0.8668153,
+          "text": "steroid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.960411,
+              "relationshipScore": 1.0,
+              "relationshipType": "FORM",
+              "id": 1,
+              "beginOffset": 178,
+              "endOffset": 183,
+              "text": "cream",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.4813637,
+              "relationshipScore": 0.9989016,
+              "relationshipType": "FORM",
+              "id": 2,
+              "beginOffset": 187,
+              "endOffset": 198,
+              "text": "nasal drops",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 170,
+          "endOffset": 198,
+          "score": 0.7041742,
+          "text": "steroid cream or nasal drops",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7d719380-8e29-4a19-b069-e56bec61c592"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7d719380-8e29-4a19-b069-e56bec61c592"
+          ],
+          "Content-Length": [
+            "995"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "995",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:18 GMT",
+          "x-amzn-RequestId": "7d719380-8e29-4a19-b069-e56bec61c592"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 355,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sensitive to food",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4446729,
+          "beginOffset": 97,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6709295
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.671813
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.6601897
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.64646906
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.6265478
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.601737
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6b36d31a-1a5a-427e-b42d-08de2cf8158f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6b36d31a-1a5a-427e-b42d-08de2cf8158f"
+          ],
+          "Content-Length": [
+            "744"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "744",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:20 GMT",
+          "x-amzn-RequestId": "6b36d31a-1a5a-427e-b42d-08de2cf8158f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 439,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "steroid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.86681545,
+          "beginOffset": 170,
+          "endOffset": 177,
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.960411,
+              "relationshipScore": 1.0,
+              "id": 1,
+              "beginOffset": 178,
+              "endOffset": 183,
+              "text": "cream",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.4813637,
+              "relationshipScore": 0.9989016,
+              "id": 2,
+              "beginOffset": 187,
+              "endOffset": 198,
+              "text": "nasal drops",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Rapeseed sterol extract",
+              "code": "1307741",
+              "score": 0.05359396
+            },
+            {
+              "description": "PEG-40 soy sterol",
+              "code": "1863569",
+              "score": 0.03408156
+            },
+            {
+              "description": "PEG-10 RAPESEED STEROL",
+              "code": "1307700",
+              "score": 0.026630355
+            },
+            {
+              "description": "PEG-16 soy sterol",
+              "code": "1855888",
+              "score": 0.0187735
+            },
+            {
+              "description": "PEG-20 SOY STEROL",
+              "code": "1314190",
+              "score": 0.0181826
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9b14d4c6-e071-4632-b243-5c45806181df"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9b14d4c6-e071-4632-b243-5c45806181df"
+          ],
+          "Content-Length": [
+            "923"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "923",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:20 GMT",
+          "x-amzn-RequestId": "9b14d4c6-e071-4632-b243-5c45806181df"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:20 PM"
+}

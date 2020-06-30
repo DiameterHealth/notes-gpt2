@@ -1,0 +1,876 @@
+{
+  "note": "The patella appears to be calcified, so a thorough examination to assess for patellofemoral pain is not required. If a lateral rotation assessment is found, the hip is flexed and elevated (elevated for the patellar component which does not have calcified synovium and may be very soft, and for the flexed knee), the knee is flexed, then flex again, then flex once more, followed by internal rotation, then extensor flexion.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 779,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 11,
+          "score": 0.9146006,
+          "text": "patella",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 26,
+          "endOffset": 35,
+          "score": 0.6171332,
+          "text": "calcified",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44082803
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9146006,
+              "relationshipScore": 0.9997898,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 4,
+              "endOffset": 11,
+              "text": "patella",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 77,
+          "endOffset": 96,
+          "score": 0.85960585,
+          "text": "patellofemoral pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 119,
+          "endOffset": 146,
+          "score": 0.7883574,
+          "text": "lateral rotation assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7596363,
+              "relationshipScore": 0.99932384,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 179,
+              "endOffset": 187,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6286858,
+              "relationshipScore": 0.9996458,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 189,
+              "endOffset": 197,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32616106,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 206,
+              "endOffset": 224,
+              "text": "patellar component",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.83319616,
+              "relationshipScore": 0.9999987,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 231,
+              "endOffset": 263,
+              "text": "does not have calcified synovium",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 161,
+          "endOffset": 164,
+          "score": 0.9936005,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 168,
+          "endOffset": 174,
+          "score": 0.30860296,
+          "text": "flexed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.9999753,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 179,
+          "endOffset": 187,
+          "score": 0.20047872,
+          "text": "elevated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.92602044,
+              "relationshipScore": 0.5320677,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 119,
+              "endOffset": 126,
+              "text": "lateral",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.99843305,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 245,
+          "endOffset": 263,
+          "score": 0.53835005,
+          "text": "calcified synovium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.74596655
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7126883
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.8222342,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 280,
+          "endOffset": 284,
+          "score": 0.6283386,
+          "text": "soft",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6211934
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.53377163,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9719669,
+              "relationshipScore": 0.74871385,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 305,
+              "endOffset": 309,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 305,
+          "endOffset": 309,
+          "score": 0.9719669,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 316,
+          "endOffset": 320,
+          "score": 0.994093,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 324,
+          "endOffset": 330,
+          "score": 0.54860705,
+          "text": "flexed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5957713
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9719669,
+              "relationshipScore": 0.74089944,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 305,
+              "endOffset": 309,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.994093,
+              "relationshipScore": 0.9999672,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 316,
+              "endOffset": 320,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 382,
+          "endOffset": 399,
+          "score": 0.51158357,
+          "text": "internal rotation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 406,
+          "endOffset": 414,
+          "score": 0.3237588,
+          "text": "extensor",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 406,
+          "endOffset": 422,
+          "score": 0.3880838,
+          "text": "extensor flexion",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.92602044,
+            "id": 1,
+            "beginOffset": 119,
+            "endOffset": 126,
+            "text": "lateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.37544167,
+            "id": 5,
+            "beginOffset": 382,
+            "endOffset": 390,
+            "text": "internal",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e47dc302-55ed-4ef6-8d05-96940017151c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e47dc302-55ed-4ef6-8d05-96940017151c"
+          ],
+          "Content-Length": [
+            "5924"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5924",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:37 GMT",
+          "x-amzn-RequestId": "e47dc302-55ed-4ef6-8d05-96940017151c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1025,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "calcified",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.617133,
+          "beginOffset": 26,
+          "endOffset": 35,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9146006,
+              "relationshipScore": 0.9997898,
+              "id": 0,
+              "beginOffset": 4,
+              "endOffset": 11,
+              "text": "patella",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44082773
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.57779354
+            },
+            {
+              "description": "Atherosclerosis of aorta",
+              "code": "I70.0",
+              "score": 0.53702164
+            },
+            {
+              "description": "Coronary atherosclerosis due to calcified coronary lesion",
+              "code": "I25.84",
+              "score": 0.518418
+            },
+            {
+              "description": "Unspecified atherosclerosis of native arteries of extremities, bilateral legs",
+              "code": "I70.203",
+              "score": 0.5131456
+            },
+            {
+              "description": "Atherosclerosis of other arteries",
+              "code": "I70.8",
+              "score": 0.4511569
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "patellofemoral pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8596059,
+          "beginOffset": 77,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.34846938
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.29869395
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.26618683
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.26453254
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.25425237
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "flexed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.30860296,
+          "beginOffset": 168,
+          "endOffset": 174,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.9999753,
+              "id": 4,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.6602597
+            },
+            {
+              "description": "Congenital deformity of hip, unspecified",
+              "code": "Q65.9",
+              "score": 0.601595
+            },
+            {
+              "description": "Congenital deformities of hip",
+              "code": "Q65",
+              "score": 0.54006857
+            },
+            {
+              "description": "Flexion deformity, right hip",
+              "code": "M21.251",
+              "score": 0.47732592
+            },
+            {
+              "description": "Other congenital deformities of hip",
+              "code": "Q65.8",
+              "score": 0.44623464
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "elevated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.20047879,
+          "beginOffset": 179,
+          "endOffset": 187,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.92602044,
+              "relationshipScore": 0.5320677,
+              "id": 3,
+              "beginOffset": 119,
+              "endOffset": 126,
+              "text": "lateral",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.99843305,
+              "id": 4,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal levels of other serum enzymes",
+              "code": "R74.8",
+              "score": 0.64308137
+            },
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.6179734
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.54363334
+            },
+            {
+              "description": "Nonspecific elevation of levels of transaminase and lactic acid dehydrogenase [LDH]",
+              "code": "R74.0",
+              "score": 0.53899646
+            },
+            {
+              "description": "Abnormal results of liver function studies",
+              "code": "R94.5",
+              "score": 0.53728527
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "calcified synovium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53835005,
+          "beginOffset": 245,
+          "endOffset": 263,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.8222342,
+              "id": 4,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.74596655
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7126883
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.40408117
+            },
+            {
+              "description": "Other specified disorders of synovium and tendon, unspecified site",
+              "code": "M67.80",
+              "score": 0.3919885
+            },
+            {
+              "description": "Atherosclerosis of other arteries",
+              "code": "I70.8",
+              "score": 0.32079238
+            },
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.31980333
+            },
+            {
+              "description": "Atherosclerosis of aorta",
+              "code": "I70.0",
+              "score": 0.31908855
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "soft",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6283385,
+          "beginOffset": 280,
+          "endOffset": 284,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9936005,
+              "relationshipScore": 0.53377163,
+              "id": 4,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "hip",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9719669,
+              "relationshipScore": 0.74871385,
+              "id": 9,
+              "beginOffset": 305,
+              "endOffset": 309,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.62119335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.6279453
+            },
+            {
+              "description": "Soft tissue disorder, unspecified",
+              "code": "M79.9",
+              "score": 0.60991096
+            },
+            {
+              "description": "Benign neoplasm of connective and other soft tissue, unspecified",
+              "code": "D21.9",
+              "score": 0.58687973
+            },
+            {
+              "description": "Unspecified injury of face",
+              "code": "S09.93",
+              "score": 0.45208168
+            },
+            {
+              "description": "Residual foreign body in soft tissue",
+              "code": "M79.5",
+              "score": 0.44937617
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "flexed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.54860705,
+          "beginOffset": 324,
+          "endOffset": 330,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9719669,
+              "relationshipScore": 0.74089944,
+              "id": 9,
+              "beginOffset": 305,
+              "endOffset": 309,
+              "text": "knee",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.994093,
+              "relationshipScore": 0.9999672,
+              "id": 10,
+              "beginOffset": 316,
+              "endOffset": 320,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5957713
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.5777232
+            },
+            {
+              "description": "Flexion deformity, right knee",
+              "code": "M21.261",
+              "score": 0.3246737
+            },
+            {
+              "description": "Congenital deformity of knee",
+              "code": "Q68.2",
+              "score": 0.31141806
+            },
+            {
+              "description": "Flexion deformity, left knee",
+              "code": "M21.262",
+              "score": 0.28829414
+            },
+            {
+              "description": "Flexion deformity, hip",
+              "code": "M21.25",
+              "score": 0.27287588
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0e1c3cc1-0080-4a50-8d25-5c18303d1471"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0e1c3cc1-0080-4a50-8d25-5c18303d1471"
+          ],
+          "Content-Length": [
+            "6546"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6546",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:39 GMT",
+          "x-amzn-RequestId": "0e1c3cc1-0080-4a50-8d25-5c18303d1471"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 219,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9e3e2461-aca4-4dd3-83df-27a26736fa7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9e3e2461-aca4-4dd3-83df-27a26736fa7c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:37 GMT",
+          "x-amzn-RequestId": "9e3e2461-aca4-4dd3-83df-27a26736fa7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:39 PM"
+}

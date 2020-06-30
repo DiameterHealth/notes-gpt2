@@ -1,0 +1,487 @@
+{
+  "note": "???? 1/19/17  Ketogenesis Medications Ketogenesis Medications FDA: (800) 322-9444  Drug Interactions  The patient experienced nausea and vomiting when she first started ketogenesis meds. Over time, these symptoms disappeared. In a ketogenic diet, the ketone levels are low. The patients report that they did not experience ketosis. The patient has also been on anti-nausea medication for three years.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 328,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 5,
+          "endOffset": 12,
+          "score": 0.99998283,
+          "text": "1/19/17",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 67,
+          "endOffset": 81,
+          "score": 0.6894286,
+          "text": "(800) 322-9444",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PHONE_OR_FAX",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 126,
+          "endOffset": 132,
+          "score": 0.9948486,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74624854
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "score": 0.9973084,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66001296
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 169,
+          "endOffset": 185,
+          "score": 0.3251067,
+          "text": "ketogenesis meds",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 251,
+          "endOffset": 264,
+          "score": 0.6213201,
+          "text": "ketone levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9351985,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 269,
+              "endOffset": 272,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 323,
+          "endOffset": 330,
+          "score": 0.9375309,
+          "text": "ketosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74171185
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.55325943
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 361,
+          "endOffset": 383,
+          "score": 0.42057264,
+          "text": "anti-nausea medication",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.79138505,
+              "relationshipScore": 1.0,
+              "relationshipType": "DURATION",
+              "id": 1,
+              "beginOffset": 388,
+              "endOffset": 399,
+              "text": "three years",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 361,
+          "endOffset": 383,
+          "score": 0.98442715,
+          "text": "anti-nausea medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 388,
+          "endOffset": 399,
+          "score": 0.6340517,
+          "text": "three years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.42057264,
+              "relationshipScore": 0.96919346,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 361,
+              "endOffset": 383,
+              "text": "anti-nausea medication",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 388,
+          "endOffset": 399,
+          "score": 0.6340517,
+          "text": "three years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.98442715,
+              "relationshipScore": 0.96919346,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 361,
+              "endOffset": 383,
+              "text": "anti-nausea medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bbdb3142-9647-4a75-a3fa-4b94b3dfc3fe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bbdb3142-9647-4a75-a3fa-4b94b3dfc3fe"
+          ],
+          "Content-Length": [
+            "2960"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2960",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:12 GMT",
+          "x-amzn-RequestId": "bbdb3142-9647-4a75-a3fa-4b94b3dfc3fe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 319,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9948486,
+          "beginOffset": 126,
+          "endOffset": 132,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74624854
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.79306585
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.6172333
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5379588
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.52154845
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.46984127
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9973084,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66001296
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.75570554
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.6248795
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5152446
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.46614647
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.40197635
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ketosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9375309,
+          "beginOffset": 323,
+          "endOffset": 330,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74171174
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5532594
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic effect of ketones, undetermined",
+              "code": "T52.4X4",
+              "score": 0.6066072
+            },
+            {
+              "description": "Other abnormal findings in urine",
+              "code": "R82.998",
+              "score": 0.6032917
+            },
+            {
+              "description": "Other specified metabolic disorders",
+              "code": "E88.89",
+              "score": 0.564795
+            },
+            {
+              "description": "Disorders of ketone metabolism",
+              "code": "E71.32",
+              "score": 0.5589996
+            },
+            {
+              "description": "Toxic effect of ketones, assault",
+              "code": "T52.4X3",
+              "score": 0.53561795
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4ebfcf08-e1d8-4ff1-a4c4-3f62dc1eb352"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4ebfcf08-e1d8-4ff1-a4c4-3f62dc1eb352"
+          ],
+          "Content-Length": [
+            "2101"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2101",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:13 GMT",
+          "x-amzn-RequestId": "4ebfcf08-e1d8-4ff1-a4c4-3f62dc1eb352"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 469,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "anti-nausea medication",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.4205728,
+          "beginOffset": 361,
+          "endOffset": 383,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.79138505,
+              "relationshipScore": 1.0,
+              "id": 1,
+              "beginOffset": 388,
+              "endOffset": 399,
+              "text": "three years",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lymphocyte Immune Globulin, Anti-Thymocyte Globulin",
+              "code": "1011",
+              "score": 0.56201124
+            },
+            {
+              "description": "Rabbit anti-human T-lymphocyte globulin",
+              "code": "107044",
+              "score": 0.4179846
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX",
+              "code": "314504",
+              "score": 0.41237336
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX 1 UNT Injection",
+              "code": "1659998",
+              "score": 0.33235937
+            },
+            {
+              "description": "Packera aurea extract",
+              "code": "1330093",
+              "score": 0.21153137
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1cef30e0-cf45-4e09-a666-128e6f0c57b0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1cef30e0-cf45-4e09-a666-128e6f0c57b0"
+          ],
+          "Content-Length": [
+            "879"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "879",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:12 GMT",
+          "x-amzn-RequestId": "1cef30e0-cf45-4e09-a666-128e6f0c57b0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:14 PM"
+}

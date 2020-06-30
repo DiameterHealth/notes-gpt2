@@ -1,0 +1,1226 @@
+{
+  "note": ". The clinical signs are consistent with infection with a Mycoplasma pneumoniae. History of travel related illness and recent onset of fever and cough: Traveler 1 had recent onset of fever and cough, as well as cough and chills. Traveler 2 had a week long history of fever and coughing with short episodes of chills and fatigue. Traveler 3 was taking antibiotics.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 718,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 41,
+          "endOffset": 50,
+          "score": 0.9771,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82566315
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 58,
+          "endOffset": 79,
+          "score": 0.7794735,
+          "text": "Mycoplasma pneumoniae",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.902861
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 107,
+          "endOffset": 114,
+          "score": 0.40267769,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 119,
+          "endOffset": 125,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.40267769,
+              "relationshipScore": 0.5867232,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 107,
+              "endOffset": 114,
+              "text": "illness",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 119,
+          "endOffset": 125,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99127156,
+              "relationshipScore": 0.85948974,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 135,
+              "endOffset": 140,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8708485
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 119,
+          "endOffset": 125,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99277437,
+              "relationshipScore": 0.6564025,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 145,
+              "endOffset": 150,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8881424
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 135,
+          "endOffset": 140,
+          "score": 0.99127156,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8708485
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 145,
+          "endOffset": 150,
+          "score": 0.99277437,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8881424
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.99999666,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99812275,
+              "relationshipScore": 0.61217886,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 221,
+              "endOffset": 227,
+              "text": "chills",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.934351
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.99999666,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99780625,
+              "relationshipScore": 0.75085026,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 193,
+              "endOffset": 198,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.9079429
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.99999666,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9950773,
+              "relationshipScore": 0.5935224,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 211,
+              "endOffset": 216,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.90214056
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.99999666,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99530727,
+              "relationshipScore": 0.8553405,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 183,
+              "endOffset": 188,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8923937
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.99999666,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99277437,
+              "relationshipScore": 0.58021986,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 145,
+              "endOffset": 150,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8881424
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 183,
+          "endOffset": 188,
+          "score": 0.99530727,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8923937
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 193,
+          "endOffset": 198,
+          "score": 0.99780625,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9079429
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 211,
+          "endOffset": 216,
+          "score": 0.9950773,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90214056
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 221,
+          "endOffset": 227,
+          "score": 0.99812275,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.934351
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 244,
+          "endOffset": 250,
+          "score": 0.60776764,
+          "text": "a week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.95968527,
+              "relationshipScore": 0.80367357,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 277,
+              "endOffset": 285,
+              "text": "coughing",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.78436375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 244,
+          "endOffset": 250,
+          "score": 0.60776764,
+          "text": "a week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9986564,
+              "relationshipScore": 0.6692051,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 320,
+              "endOffset": 327,
+              "text": "fatigue",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.84789675
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 244,
+          "endOffset": 250,
+          "score": 0.60776764,
+          "text": "a week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99717844,
+              "relationshipScore": 0.5654914,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 309,
+              "endOffset": 315,
+              "text": "chills",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.9225434
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 244,
+          "endOffset": 250,
+          "score": 0.60776764,
+          "text": "a week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9922092,
+              "relationshipScore": 0.9137786,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 267,
+              "endOffset": 272,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.7026122
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 267,
+          "endOffset": 272,
+          "score": 0.9922092,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7026122
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "score": 0.95968527,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78436375
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 309,
+          "endOffset": 315,
+          "score": 0.99717844,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9225434
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 320,
+          "endOffset": 327,
+          "score": 0.9986564,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84789675
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 351,
+          "endOffset": 362,
+          "score": 0.74612075,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 351,
+          "endOffset": 362,
+          "score": 0.72808766,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8967910c-360f-422c-a714-ea99d123f3d9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8967910c-360f-422c-a714-ea99d123f3d9"
+          ],
+          "Content-Length": [
+            "7908"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7908",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:29 GMT",
+          "x-amzn-RequestId": "8967910c-360f-422c-a714-ea99d123f3d9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 353,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9771,
+          "beginOffset": 41,
+          "endOffset": 50,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82566315
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.6553606
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.6543283
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6537049
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6532941
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.58945876
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Mycoplasma pneumoniae",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7794734,
+          "beginOffset": 58,
+          "endOffset": 79,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9028609
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Mycoplasma infection, unspecified site",
+              "code": "A49.3",
+              "score": 0.49258372
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.48461086
+            },
+            {
+              "description": "Pneumonia, unspecified organism",
+              "code": "J18.9",
+              "score": 0.47728705
+            },
+            {
+              "description": "Personal history of pneumonia (recurrent)",
+              "code": "Z87.01",
+              "score": 0.4526837
+            },
+            {
+              "description": "Pneumonia due to Mycoplasma pneumoniae",
+              "code": "J15.7",
+              "score": 0.43353632
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4026779,
+          "beginOffset": 107,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.80449855
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.71243596
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.66373307
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.64224213
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.64027816
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99127156,
+          "beginOffset": 135,
+          "endOffset": 140,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87084836
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.764028
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4871256
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4276223
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4226326
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.36966488
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99277437,
+          "beginOffset": 145,
+          "endOffset": 150,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88814247
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.81047034
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5907889
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.5791914
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5569228
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.55456716
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99530727,
+          "beginOffset": 183,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8923937
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8191782
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5498169
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.48122686
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.461702
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.42360264
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99780625,
+          "beginOffset": 193,
+          "endOffset": 198,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9079429
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.879762
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6796904
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.667484
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.6630701
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.6241796
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9950773,
+          "beginOffset": 211,
+          "endOffset": 216,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90214056
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8726539
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.68821704
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.6737896
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.670895
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.6424285
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99812275,
+          "beginOffset": 221,
+          "endOffset": 227,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.934351
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.7538547
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.61366427
+            },
+            {
+              "description": "Lassa fever",
+              "code": "A96.2",
+              "score": 0.38101986
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.3446767
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.34460536
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9922092,
+          "beginOffset": 267,
+          "endOffset": 272,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7026122
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.76755285
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.52448606
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.40511227
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4002375
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.37285522
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95968527,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7843637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.82635695
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.64476836
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.64164424
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.62140197
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5866858
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99717844,
+          "beginOffset": 309,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9225434
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.69708997
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.45879045
+            },
+            {
+              "description": "Lassa fever",
+              "code": "A96.2",
+              "score": 0.2766075
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.2742638
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.260938
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9986564,
+          "beginOffset": 320,
+          "endOffset": 327,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84789675
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8935497
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8108398
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.8011889
+            },
+            {
+              "description": "Fatigue fracture of vertebra, site unspecified",
+              "code": "M48.40",
+              "score": 0.7238214
+            },
+            {
+              "description": "Other specified disorders of muscle",
+              "code": "M62.89",
+              "score": 0.68694854
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f65cfc59-8272-46a9-ba56-d9fade2bce0b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f65cfc59-8272-46a9-ba56-d9fade2bce0b"
+          ],
+          "Content-Length": [
+            "8566"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8566",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:30 GMT",
+          "x-amzn-RequestId": "f65cfc59-8272-46a9-ba56-d9fade2bce0b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 195,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a376e227-dd38-4bf6-94a4-c613c2833500"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a376e227-dd38-4bf6-94a4-c613c2833500"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:29 GMT",
+          "x-amzn-RequestId": "a376e227-dd38-4bf6-94a4-c613c2833500"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:30 PM"
+}

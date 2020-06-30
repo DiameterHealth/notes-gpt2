@@ -1,0 +1,351 @@
+{
+  "note": ". The patient is nervous. He has had a recent history of aggressive behavior and his behavior is escalating. The PCP, with a sigh, informs the patient that there won\u0027t be enough time to explain everything. He has to make a decision. If the patient tells the nurse immediately, it might be a case of \"he went away.\" If the patient waits until later in the day, it may be \"he is on his own at the moment.\" The patient says nothing, and when the nurse asks him what is the situation, he says, \"I don\u0027t know what to do, it\u0027s just awful right now.\" The nurse has no answers for him; it\u0027s a case for a follow-up appointment.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 644,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 17,
+          "endOffset": 24,
+          "score": 0.82321227,
+          "text": "nervous",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41853306
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 39,
+          "endOffset": 45,
+          "score": 0.99998677,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.5494091,
+              "relationshipScore": 0.5563812,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 85,
+              "endOffset": 107,
+              "text": "behavior is escalating",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.482136
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 39,
+          "endOffset": 45,
+          "score": 0.99998677,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.77180076,
+              "relationshipScore": 0.9168407,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 57,
+              "endOffset": 76,
+              "text": "aggressive behavior",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.44100946
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 57,
+          "endOffset": 76,
+          "score": 0.77180076,
+          "text": "aggressive behavior",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44100946
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 85,
+          "endOffset": 107,
+          "score": 0.5494091,
+          "text": "behavior is escalating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.482136
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "00cf8fcf-1717-4313-b1c3-a56822d2655c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "00cf8fcf-1717-4313-b1c3-a56822d2655c"
+          ],
+          "Content-Length": [
+            "1528"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1528",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:21 GMT",
+          "x-amzn-RequestId": "00cf8fcf-1717-4313-b1c3-a56822d2655c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 618,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nervous",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82321227,
+          "beginOffset": 17,
+          "endOffset": 24,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41853297
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nervousness",
+              "code": "R45.0",
+              "score": 0.75392807
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.7526231
+            },
+            {
+              "description": "Degenerative disease of nervous system, unspecified",
+              "code": "G31.9",
+              "score": 0.7201766
+            },
+            {
+              "description": "Other malaise",
+              "code": "R53.81",
+              "score": 0.68023574
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.67637277
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "aggressive behavior",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77180076,
+          "beginOffset": 57,
+          "endOffset": 76,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44100937
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.66143245
+            },
+            {
+              "description": "Borderline personality disorder",
+              "code": "F60.3",
+              "score": 0.5765172
+            },
+            {
+              "description": "Personal history of neoplasm of uncertain behavior",
+              "code": "Z86.03",
+              "score": 0.57110506
+            },
+            {
+              "description": "Unspecified dementia with behavioral disturbance",
+              "code": "F03.91",
+              "score": 0.51985264
+            },
+            {
+              "description": "Strange and inexplicable behavior",
+              "code": "R46.2",
+              "score": 0.46682173
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "behavior is escalating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5494091,
+          "beginOffset": 85,
+          "endOffset": 107,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48213598
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving appearance and behavior",
+              "code": "R46.89",
+              "score": 0.7528479
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.685872
+            },
+            {
+              "description": "Unspecified dementia with behavioral disturbance",
+              "code": "F03.91",
+              "score": 0.55426884
+            },
+            {
+              "description": "Strange and inexplicable behavior",
+              "code": "R46.2",
+              "score": 0.5487612
+            },
+            {
+              "description": "Type A behavior pattern",
+              "code": "Z73.1",
+              "score": 0.51509875
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bb5f832f-63d6-48ff-bd93-f935e6c171cc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bb5f832f-63d6-48ff-bd93-f935e6c171cc"
+          ],
+          "Content-Length": [
+            "2156"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2156",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:22 GMT",
+          "x-amzn-RequestId": "bb5f832f-63d6-48ff-bd93-f935e6c171cc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 447,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "61213698-8bd7-43fb-a892-250cebd4ded6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "61213698-8bd7-43fb-a892-250cebd4ded6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:21 GMT",
+          "x-amzn-RequestId": "61213698-8bd7-43fb-a892-250cebd4ded6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:22 PM"
+}

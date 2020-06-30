@@ -1,0 +1,762 @@
+{
+  "note": ", ibuprofen, and naproxen. The patient becomes more ill with cough and diarrhea and is diagnosed with C difficile and given antibiotics. A stool sample is obtained with a nasogastric tube and confirmed as C difficile. Diagnostic tests revealed blood culture, low molecular weight erythrocytic streptococcus, pseudomembranous colitis, and staphylococcus aureus, and the patient is treated with vancomycin. The patient recovers from her symptoms.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 513,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 2,
+          "endOffset": 11,
+          "score": 0.9927786,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "score": 0.9974667,
+          "text": "naproxen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 52,
+          "endOffset": 55,
+          "score": 0.3020332,
+          "text": "ill",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 61,
+          "endOffset": 66,
+          "score": 0.99581283,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6002305
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 71,
+          "endOffset": 79,
+          "score": 0.999025,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.489041
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 102,
+          "endOffset": 113,
+          "score": 0.47792053,
+          "text": "C difficile",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85580957
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 124,
+          "endOffset": 135,
+          "score": 0.45113823,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 124,
+          "endOffset": 135,
+          "score": 0.5221679,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 139,
+          "endOffset": 151,
+          "score": 0.95663226,
+          "text": "stool sample",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 205,
+          "endOffset": 216,
+          "score": 0.63277835,
+          "text": "C difficile",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 218,
+          "endOffset": 234,
+          "score": 0.9861907,
+          "text": "Diagnostic tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.89206916,
+              "relationshipScore": 0.5015064,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 308,
+              "endOffset": 332,
+              "text": "pseudomembranous colitis",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9143523,
+              "relationshipScore": 0.6703281,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 338,
+              "endOffset": 359,
+              "text": "staphylococcus aureus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 244,
+          "endOffset": 257,
+          "score": 0.9965396,
+          "text": "blood culture",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9143523,
+              "relationshipScore": 0.72452796,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 338,
+              "endOffset": 359,
+              "text": "staphylococcus aureus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 263,
+          "endOffset": 279,
+          "score": 0.7868892,
+          "text": "molecular weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6180153,
+              "relationshipScore": 0.9952258,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 259,
+              "endOffset": 262,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.64246494,
+              "relationshipScore": 0.99948394,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 280,
+              "endOffset": 306,
+              "text": "erythrocytic streptococcus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.89206916,
+              "relationshipScore": 0.64056057,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 308,
+              "endOffset": 332,
+              "text": "pseudomembranous colitis",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9143523,
+              "relationshipScore": 0.9231846,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 338,
+              "endOffset": 359,
+              "text": "staphylococcus aureus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 308,
+          "endOffset": 332,
+          "score": 0.66940236,
+          "text": "pseudomembranous colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95612
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 338,
+          "endOffset": 359,
+          "score": 0.7957897,
+          "text": "staphylococcus aureus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8760703
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 393,
+          "endOffset": 403,
+          "score": 0.99798137,
+          "text": "vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e378b375-b4b6-41e2-8587-063284e8f0ab"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e378b375-b4b6-41e2-8587-063284e8f0ab"
+          ],
+          "Content-Length": [
+            "4502"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4502",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:13 GMT",
+          "x-amzn-RequestId": "e378b375-b4b6-41e2-8587-063284e8f0ab"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1047,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ill",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.30203313,
+          "beginOffset": 52,
+          "endOffset": 55,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.81615233
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7394965
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.68470216
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.6480439
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.6473034
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99581283,
+          "beginOffset": 61,
+          "endOffset": 66,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6002305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8052659
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.56236434
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.54766124
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5261982
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5252615
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.999025,
+          "beginOffset": 71,
+          "endOffset": 79,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.489041
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.8303745
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.66169566
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.6019297
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.5937623
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.58867764
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "C difficile",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4779209,
+          "beginOffset": 102,
+          "endOffset": 113,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85580957
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.65003663
+            },
+            {
+              "description": "Other specified bacterial agents as the cause of diseases classified elsewhere",
+              "code": "B96.89",
+              "score": 0.60495853
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.48465526
+            },
+            {
+              "description": "Enterocolitis due to Clostridium difficile, recurrent",
+              "code": "A04.71",
+              "score": 0.45505586
+            },
+            {
+              "description": "Chronic viral hepatitis C",
+              "code": "B18.2",
+              "score": 0.433346
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pseudomembranous colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6694025,
+          "beginOffset": 308,
+          "endOffset": 332,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95612
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.39140517
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.29639158
+            },
+            {
+              "description": "Pseudomembranous conjunctivitis",
+              "code": "H10.22",
+              "score": 0.2730456
+            },
+            {
+              "description": "Pseudomembranous conjunctivitis, unspecified eye",
+              "code": "H10.229",
+              "score": 0.27272213
+            },
+            {
+              "description": "Pseudomembranous conjunctivitis, right eye",
+              "code": "H10.221",
+              "score": 0.2717952
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "staphylococcus aureus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7957897,
+          "beginOffset": 338,
+          "endOffset": 359,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8760703
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Methicillin resistant Staphylococcus aureus infection as the cause of diseases classified elsewhere",
+              "code": "B95.62",
+              "score": 0.73083836
+            },
+            {
+              "description": "Sepsis due to Methicillin susceptible Staphylococcus aureus",
+              "code": "A41.01",
+              "score": 0.7099377
+            },
+            {
+              "description": "Unspecified staphylococcus as the cause of diseases classified elsewhere",
+              "code": "B95.8",
+              "score": 0.6585612
+            },
+            {
+              "description": "Personal history of Methicillin resistant Staphylococcus aureus infection",
+              "code": "Z86.14",
+              "score": 0.61215085
+            },
+            {
+              "description": "Methicillin resistant Staphylococcus aureus infection, unspecified site",
+              "code": "A49.02",
+              "score": 0.5966512
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53b8129a-8acf-417e-9f43-7f226050e283"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53b8129a-8acf-417e-9f43-7f226050e283"
+          ],
+          "Content-Length": [
+            "4574"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4574",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:16 GMT",
+          "x-amzn-RequestId": "53b8129a-8acf-417e-9f43-7f226050e283"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 465,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9927786,
+          "beginOffset": 2,
+          "endOffset": 11,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768029
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "naproxen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9974667,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Naproxen",
+              "code": "7258",
+              "score": 0.9484099
+            },
+            {
+              "description": "Naproxen sodium 220 MG Oral Tablet",
+              "code": "849574",
+              "score": 0.79079473
+            },
+            {
+              "description": "Naproxen sodium 550 MG Oral Tablet",
+              "code": "849431",
+              "score": 0.7180736
+            },
+            {
+              "description": "24 HR Naproxen 500 MG Extended Release Oral Tablet",
+              "code": "1116339",
+              "score": 0.5907834
+            },
+            {
+              "description": "Naproxen sodium 275 MG Oral Tablet",
+              "code": "849398",
+              "score": 0.56966347
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99798137,
+          "beginOffset": 393,
+          "endOffset": 403,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vancomycin",
+              "code": "11124",
+              "score": 0.93953425
+            },
+            {
+              "description": "Vancomycin 1000 MG Injection",
+              "code": "1807513",
+              "score": 0.772831
+            },
+            {
+              "description": "Vancomycin 500 MG Injection",
+              "code": "1807516",
+              "score": 0.76164496
+            },
+            {
+              "description": "Vancomycin 750 MG Injection",
+              "code": "1807518",
+              "score": 0.6116776
+            },
+            {
+              "description": "Vancomycin 250 MG Oral Capsule [Vancocin]",
+              "code": "201849",
+              "score": 0.5204505
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c4a6f7d-314c-426c-af34-900e0f84f67b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c4a6f7d-314c-426c-af34-900e0f84f67b"
+          ],
+          "Content-Length": [
+            "1954"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1954",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:14 GMT",
+          "x-amzn-RequestId": "0c4a6f7d-314c-426c-af34-900e0f84f67b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:16 PM"
+}

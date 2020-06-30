@@ -1,0 +1,564 @@
+{
+  "note": "During the previous several years, she suffered from occasional upper aerodigestive tract (UAT) attacks, which have decreased, but have recently increased dramatically. Asymptomatic, the patient had undergone an episode of non-diluted aldosterone. She had a chronic course of low-grade elevations of liver enzymes and has had three gastric bypasses. The primary treatment was the gastric acid suppressant NPO for 10 weeks.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 438,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 11,
+          "endOffset": 33,
+          "score": 0.99149525,
+          "text": "previous several years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.83104944,
+              "relationshipScore": 0.9715111,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 70,
+              "endOffset": 89,
+              "text": "aerodigestive tract",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.6765771
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 11,
+          "endOffset": 33,
+          "score": 0.99149525,
+          "text": "previous several years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.4470259,
+              "relationshipScore": 0.85323006,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 91,
+              "endOffset": 103,
+              "text": "UAT) attacks",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8492092
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 70,
+          "endOffset": 89,
+          "score": 0.5267338,
+          "text": "aerodigestive tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 70,
+          "endOffset": 89,
+          "score": 0.83104944,
+          "text": "aerodigestive tract",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6765771
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.89421695,
+              "relationshipScore": 0.97406197,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "upper",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 91,
+          "endOffset": 103,
+          "score": 0.4470259,
+          "text": "UAT) attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8492092
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.89421695,
+              "relationshipScore": 0.9376799,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "upper",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 169,
+          "endOffset": 181,
+          "score": 0.84662265,
+          "text": "Asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 235,
+          "endOffset": 246,
+          "score": 0.5619074,
+          "text": "aldosterone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 300,
+          "endOffset": 305,
+          "score": 0.9431342,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 332,
+          "endOffset": 348,
+          "score": 0.7775941,
+          "text": "gastric bypasses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9234172
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 380,
+          "endOffset": 408,
+          "score": 0.49372756,
+          "text": "gastric acid suppressant NPO",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 413,
+          "endOffset": 421,
+          "score": 0.99376655,
+          "text": "10 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.49372756,
+              "relationshipScore": 0.97793627,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 380,
+              "endOffset": 408,
+              "text": "gastric acid suppressant NPO",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.89421695,
+            "id": 0,
+            "beginOffset": 64,
+            "endOffset": 69,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9041509,
+            "id": 7,
+            "beginOffset": 258,
+            "endOffset": 265,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8c418d4c-0f54-42c3-b3ef-d8402722a43f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8c418d4c-0f54-42c3-b3ef-d8402722a43f"
+          ],
+          "Content-Length": [
+            "3568"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3568",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:16 GMT",
+          "x-amzn-RequestId": "8c418d4c-0f54-42c3-b3ef-d8402722a43f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 517,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "aerodigestive tract",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83104944,
+          "beginOffset": 70,
+          "endOffset": 89,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.89421695,
+              "relationshipScore": 0.97406197,
+              "id": 0,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "upper",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6765771
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.42636877
+            },
+            {
+              "description": "Other specified diseases of biliary tract",
+              "code": "K83.8",
+              "score": 0.40028676
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.39938283
+            },
+            {
+              "description": "Disease of biliary tract, unspecified",
+              "code": "K83.9",
+              "score": 0.37145373
+            },
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.3673476
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "UAT) attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.44702607,
+          "beginOffset": 91,
+          "endOffset": 103,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.89421695,
+              "relationshipScore": 0.9376799,
+              "id": 0,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "upper",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8492091
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.5093967
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.4750341
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.4717008
+            },
+            {
+              "description": "Panic disorder [episodic paroxysmal anxiety]",
+              "code": "F41.0",
+              "score": 0.41695204
+            },
+            {
+              "description": "Conduction disorder, unspecified",
+              "code": "I45.9",
+              "score": 0.4134725
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84662265,
+          "beginOffset": 169,
+          "endOffset": 181,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Asymptomatic varicose veins of bilateral lower extremities",
+              "code": "I83.93",
+              "score": 0.7178726
+            },
+            {
+              "description": "Asymptomatic menopausal state",
+              "code": "Z78.0",
+              "score": 0.63856864
+            },
+            {
+              "description": "Asymptomatic varicose veins of unspecified lower extremity",
+              "code": "I83.90",
+              "score": 0.59214056
+            },
+            {
+              "description": "Asymptomatic varicose veins of left lower extremity",
+              "code": "I83.92",
+              "score": 0.5638517
+            },
+            {
+              "description": "Asymptomatic varicose veins of right lower extremity",
+              "code": "I83.91",
+              "score": 0.55124855
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "gastric bypasses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7775943,
+          "beginOffset": 332,
+          "endOffset": 348,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9234172
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other diseases of stomach and duodenum",
+              "code": "K31.89",
+              "score": 0.47606823
+            },
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.4325872
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.41261852
+            },
+            {
+              "description": "Gastric varices",
+              "code": "I86.4",
+              "score": 0.37795848
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.33309445
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "062eb306-b9b4-481d-9da0-fc8ba2129cbd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "062eb306-b9b4-481d-9da0-fc8ba2129cbd"
+          ],
+          "Content-Length": [
+            "3190"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3190",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:16 GMT",
+          "x-amzn-RequestId": "062eb306-b9b4-481d-9da0-fc8ba2129cbd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 254,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aldosterone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5619074,
+          "beginOffset": 235,
+          "endOffset": 246,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aldosterone",
+              "code": "1312358",
+              "score": 0.9436719
+            },
+            {
+              "description": "Androsterone",
+              "code": "1312359",
+              "score": 0.9126446
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "87e83b27-cfe1-40ab-9563-0fb0f768b29a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "87e83b27-cfe1-40ab-9563-0fb0f768b29a"
+          ],
+          "Content-Length": [
+            "369"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "369",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:16 GMT",
+          "x-amzn-RequestId": "87e83b27-cfe1-40ab-9563-0fb0f768b29a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:17 PM"
+}

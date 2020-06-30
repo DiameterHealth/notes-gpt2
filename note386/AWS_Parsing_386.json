@@ -1,0 +1,247 @@
+{
+  "note": ". The majority said they felt they were being treated unfairly, but many also said the drug was prescribed for a medical problem they did not have. On October 18th, the Health Department published its findings. \"We can only conclude that the patient\u0027s treatment was appropriate and that the pharmacist was acting within the law,\" Health Officials said in a statement.  The patient told KATU\u0027s I-Team that it took her a year and a half, and numerous phone calls, emails and in-person visits to get her asthma medication.  In a press release issued by the Health Department, Dr. Jeffrey Tylianos, the hospital\u0027s Chief Medical Officer, said the department had reviewed the case and issued a ruling on Feb. 9 based on the findings of the clinical case report.  \"We made a decision based on the information we had, given the findings of the clinical case,\" said Tylianos. \"We did not hear back from a single patient that felt the drug was too expensive or was not working.\"",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 749,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 151,
+          "endOffset": 163,
+          "score": 0.9998406,
+          "text": "October 18th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 169,
+          "endOffset": 186,
+          "score": 0.3033443,
+          "text": "Health Department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 386,
+          "endOffset": 390,
+          "score": 0.9245815,
+          "text": "KATU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 501,
+          "endOffset": 507,
+          "score": 0.81505823,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8549205
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 554,
+          "endOffset": 571,
+          "score": 0.7411718,
+          "text": "Health Department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 577,
+          "endOffset": 593,
+          "score": 0.99665785,
+          "text": "Jeffrey Tylianos",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 698,
+          "endOffset": 704,
+          "score": 0.87745607,
+          "text": "Feb. 9",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 857,
+          "endOffset": 865,
+          "score": 0.9466087,
+          "text": "Tylianos",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b7ab1b1c-5226-4abe-ac89-fe5767278bec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b7ab1b1c-5226-4abe-ac89-fe5767278bec"
+          ],
+          "Content-Length": [
+            "1363"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1363",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:05 GMT",
+          "x-amzn-RequestId": "b7ab1b1c-5226-4abe-ac89-fe5767278bec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 831,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8150581,
+          "beginOffset": 501,
+          "endOffset": 507,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8549205
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7465203
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.55875355
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.48919255
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.4686905
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.45124513
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6de75566-b751-45e9-84f0-e6e8bb27029a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6de75566-b751-45e9-84f0-e6e8bb27029a"
+          ],
+          "Content-Length": [
+            "727"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "727",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:07 GMT",
+          "x-amzn-RequestId": "6de75566-b751-45e9-84f0-e6e8bb27029a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 552,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1326c79f-4bb8-49f0-8069-633bb3dc5d80"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1326c79f-4bb8-49f0-8069-633bb3dc5d80"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:05 GMT",
+          "x-amzn-RequestId": "1326c79f-4bb8-49f0-8069-633bb3dc5d80"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:07 PM"
+}

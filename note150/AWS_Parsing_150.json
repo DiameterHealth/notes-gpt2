@@ -1,0 +1,426 @@
+{
+  "note": "physician. A complete evaluation was performed. There was no history of chronic illness, medical history, or family history consistent with an allergy to eggs. There was only mild, mild asthma. The physician ordered an allergen screen to see if any previous or current allergies to eggs were present. There was no allergy. The physician concluded there was no contraindication. The patient\u0027s physician requested a repeat oropharyngeal examination of the patient after one year for additional allergy evaluation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 359,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 80,
+          "endOffset": 87,
+          "score": 0.75120205,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4464573
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8358362
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.956128,
+              "relationshipScore": 0.9991328,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 72,
+              "endOffset": 79,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 143,
+          "endOffset": 158,
+          "score": 0.5647406,
+          "text": "allergy to eggs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45003575
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4214552
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 186,
+          "endOffset": 192,
+          "score": 0.99457055,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9057146
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 219,
+          "endOffset": 234,
+          "score": 0.8257783,
+          "text": "allergen screen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 314,
+          "endOffset": 321,
+          "score": 0.3981644,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 421,
+          "endOffset": 446,
+          "score": 0.7057808,
+          "text": "oropharyngeal examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 492,
+          "endOffset": 510,
+          "score": 0.40888703,
+          "text": "allergy evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.956128,
+            "id": 0,
+            "beginOffset": 72,
+            "endOffset": 79,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f409559a-3f3a-42d9-bbaf-050675343843"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f409559a-3f3a-42d9-bbaf-050675343843"
+          ],
+          "Content-Length": [
+            "1807"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1807",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:02 GMT",
+          "x-amzn-RequestId": "f409559a-3f3a-42d9-bbaf-050675343843"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1237,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.751202,
+          "beginOffset": 80,
+          "endOffset": 87,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.956128,
+              "relationshipScore": 0.9991328,
+              "id": 0,
+              "beginOffset": 72,
+              "endOffset": 79,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44645724
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8358362
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.55425984
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.43816507
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.36798015
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.36727205
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.33297345
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "allergy to eggs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.56474066,
+          "beginOffset": 143,
+          "endOffset": 158,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45003578
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.42145523
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.34897324
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.32869053
+            },
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.32807708
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.32551074
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.3107337
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99457055,
+          "beginOffset": 186,
+          "endOffset": 192,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9057145
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6149159
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.45025098
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.39564338
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.35867888
+            },
+            {
+              "description": "Mild intermittent asthma, uncomplicated",
+              "code": "J45.20",
+              "score": 0.29605627
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39816466,
+          "beginOffset": 314,
+          "endOffset": 321,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.7306738
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.66130704
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.6569586
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.64428616
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.6356547
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6197190b-06d9-484a-8b3f-7d6e47c8cd26"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6197190b-06d9-484a-8b3f-7d6e47c8cd26"
+          ],
+          "Content-Length": [
+            "2988"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2988",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:03 GMT",
+          "x-amzn-RequestId": "6197190b-06d9-484a-8b3f-7d6e47c8cd26"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 229,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "82785c91-6897-4d0a-808a-273a0a807883"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "82785c91-6897-4d0a-808a-273a0a807883"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:02 GMT",
+          "x-amzn-RequestId": "82785c91-6897-4d0a-808a-273a0a807883"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:03 PM"
+}

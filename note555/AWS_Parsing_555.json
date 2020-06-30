@@ -1,0 +1,821 @@
+{
+  "note": "; he has had a single eye cataract removed three years ago. The following laboratory findings are present: pH of 7.41; platelet count, 6.7 K/mm3; hematocrit, 62%; glucose, 100 mg/dL; creatinine, 40 mg/dL. A complete medical, neurological and ophthalmologic examination is inconclusive with a history of severe headaches, sleep disturbance and poor appetite with nausea. Treatment: Initial therapy consists of acetaminophen, aspirin and a nonsteroidal anti-inflammatory drug to limit intraocular pressure.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1144,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 15,
+          "endOffset": 42,
+          "score": 0.43798313,
+          "text": "single eye cataract removed",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 22,
+          "endOffset": 25,
+          "score": 0.76260304,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 22,
+          "endOffset": 34,
+          "score": 0.44691265,
+          "text": "eye cataract",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9054925
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "beginOffset": 43,
+          "endOffset": 58,
+          "score": 0.9557684,
+          "text": "three years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.43798313,
+              "relationshipScore": 0.9725001,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 15,
+              "endOffset": 42,
+              "text": "single eye cataract removed",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "beginOffset": 43,
+          "endOffset": 58,
+          "score": 0.9557684,
+          "text": "three years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.44691265,
+              "relationshipScore": 0.9760258,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 22,
+              "endOffset": 34,
+              "text": "eye cataract",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9054925
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 107,
+          "endOffset": 109,
+          "score": 0.9713973,
+          "text": "pH",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.998478,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 113,
+              "endOffset": 117,
+              "text": "7.41",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 119,
+          "endOffset": 133,
+          "score": 0.9944805,
+          "text": "platelet count",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 139,
+          "endOffset": 140,
+          "score": 0.81447977,
+          "text": "K",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_UNIT",
+              "score": 0.54404116,
+              "relationshipScore": 0.9999769,
+              "relationshipType": "TEST_UNIT",
+              "id": 15,
+              "beginOffset": 141,
+              "endOffset": 144,
+              "text": "mm3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 146,
+          "endOffset": 156,
+          "score": 0.9948656,
+          "text": "hematocrit",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9877627,
+              "relationshipScore": 0.9999403,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 158,
+              "endOffset": 160,
+              "text": "62",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9972479,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_UNIT",
+              "id": 18,
+              "beginOffset": 160,
+              "endOffset": 161,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 163,
+          "endOffset": 170,
+          "score": 0.99219936,
+          "text": "glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9965031,
+              "relationshipScore": 0.99974805,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 172,
+              "endOffset": 175,
+              "text": "100",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9974299,
+              "relationshipScore": 0.99992085,
+              "relationshipType": "TEST_UNIT",
+              "id": 21,
+              "beginOffset": 176,
+              "endOffset": 181,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 183,
+          "endOffset": 193,
+          "score": 0.9982546,
+          "text": "creatinine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9883167,
+              "relationshipScore": 0.9999728,
+              "relationshipType": "TEST_VALUE",
+              "id": 23,
+              "beginOffset": 195,
+              "endOffset": 197,
+              "text": "40",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9953982,
+              "relationshipScore": 0.9999113,
+              "relationshipType": "TEST_UNIT",
+              "id": 24,
+              "beginOffset": 198,
+              "endOffset": 203,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 242,
+          "endOffset": 268,
+          "score": 0.961083,
+          "text": "ophthalmologic examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.71044534,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 26,
+              "beginOffset": 272,
+              "endOffset": 284,
+              "text": "inconclusive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 310,
+          "endOffset": 319,
+          "score": 0.9952968,
+          "text": "headaches",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40932935
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 321,
+          "endOffset": 338,
+          "score": 0.97922945,
+          "text": "sleep disturbance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 343,
+          "endOffset": 356,
+          "score": 0.97061926,
+          "text": "poor appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 362,
+          "endOffset": 368,
+          "score": 0.98426235,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48493746
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 409,
+          "endOffset": 422,
+          "score": 0.9976422,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 424,
+          "endOffset": 431,
+          "score": 0.9992543,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 27,
+          "beginOffset": 438,
+          "endOffset": 468,
+          "score": 0.6033328,
+          "text": "nonsteroidal anti-inflammatory",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 438,
+          "endOffset": 468,
+          "score": 0.9279823,
+          "text": "nonsteroidal anti-inflammatory",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.9954091,
+            "id": 13,
+            "beginOffset": 135,
+            "endOffset": 138,
+            "text": "6.7",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3fb72d93-085b-4ed7-a97e-46635cc3c544"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3fb72d93-085b-4ed7-a97e-46635cc3c544"
+          ],
+          "Content-Length": [
+            "6218"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6218",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:06 GMT",
+          "x-amzn-RequestId": "3fb72d93-085b-4ed7-a97e-46635cc3c544"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 395,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "eye cataract",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.44691265,
+          "beginOffset": 22,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9054925
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified disorder of eye and adnexa",
+              "code": "H57.9",
+              "score": 0.63619
+            },
+            {
+              "description": "Other specified disorders of eye and adnexa",
+              "code": "H57.89",
+              "score": 0.6010112
+            },
+            {
+              "description": "Unspecified cataract",
+              "code": "H26.9",
+              "score": 0.5583537
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.493156
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.47642156
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "headaches",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9952968,
+          "beginOffset": 310,
+          "endOffset": 319,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40932932
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.64255005
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.4667678
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.3940869
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.36679125
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.36033237
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sleep disturbance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97922945,
+          "beginOffset": 321,
+          "endOffset": 338,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.70242304
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.61385775
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.57035285
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5488632
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.51762027
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "poor appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97061926,
+          "beginOffset": 343,
+          "endOffset": 356,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.75757504
+            },
+            {
+              "description": "Abnormal reflex",
+              "code": "R29.2",
+              "score": 0.606525
+            },
+            {
+              "description": "Very low level of personal hygiene",
+              "code": "R46.0",
+              "score": 0.5820902
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.58154374
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.5354508
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98426235,
+          "beginOffset": 362,
+          "endOffset": 368,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48493737
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.76431507
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.72365683
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.579125
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.55792606
+            },
+            {
+              "description": "Nausea and vomiting",
+              "code": "R11",
+              "score": 0.4512944
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53173962-00e8-4911-9a75-ad439285f107"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53173962-00e8-4911-9a75-ad439285f107"
+          ],
+          "Content-Length": [
+            "3321"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3321",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:08 GMT",
+          "x-amzn-RequestId": "53173962-00e8-4911-9a75-ad439285f107"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 503,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9976422,
+          "beginOffset": 409,
+          "endOffset": 422,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6038662
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet",
+              "code": "313782",
+              "score": 0.59314084
+            },
+            {
+              "description": "Acetaminophen 650 MG Oral Tablet",
+              "code": "198444",
+              "score": 0.29524592
+            },
+            {
+              "description": "100 ML Acetaminophen 10 MG/ML Injection [Ofirmev]",
+              "code": "1041530",
+              "score": 0.27166602
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9992543,
+          "beginOffset": 424,
+          "endOffset": 431,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nonsteroidal anti-inflammatory",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9279823,
+          "beginOffset": 438,
+          "endOffset": 468,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX",
+              "code": "314504",
+              "score": 0.45805737
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX 1 UNT Injection",
+              "code": "1659998",
+              "score": 0.37302876
+            },
+            {
+              "description": "Lymphocyte Immune Globulin, Anti-Thymocyte Globulin",
+              "code": "1011",
+              "score": 0.27786383
+            },
+            {
+              "description": "Rabbit anti-human T-lymphocyte globulin",
+              "code": "107044",
+              "score": 0.105224974
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX 1 UNT Injection [Feiba]",
+              "code": "1660001",
+              "score": 0.050081607
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4086adb7-ca8a-4162-889f-ab24491334b1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4086adb7-ca8a-4162-889f-ab24491334b1"
+          ],
+          "Content-Length": [
+            "2092"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2092",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:06 GMT",
+          "x-amzn-RequestId": "4086adb7-ca8a-4162-889f-ab24491334b1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:08 PM"
+}

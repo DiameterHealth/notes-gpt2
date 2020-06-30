@@ -1,0 +1,367 @@
+{
+  "note": ".  Conclusion:  This patient had the most severe case of ulcer which required skin graft removal after 7-weeks of therapy with antibiotics. The ulcer is still healing and the physician is monitoring the patients progress. Pre- and Post-grafts:  The patient had a complete recovery and was no longer receiving corticosteroid therapy.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 295,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 57,
+          "endOffset": 62,
+          "score": 0.9589169,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9022506
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 78,
+          "endOffset": 82,
+          "score": 0.8842593,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 78,
+          "endOffset": 96,
+          "score": 0.92377687,
+          "text": "skin graft removal",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 103,
+          "endOffset": 110,
+          "score": 0.80822396,
+          "text": "7-weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.92377687,
+              "relationshipScore": 0.82202,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 78,
+              "endOffset": 96,
+              "text": "skin graft removal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 103,
+          "endOffset": 110,
+          "score": 0.80822396,
+          "text": "7-weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.4897104,
+              "relationshipScore": 0.54968995,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 127,
+              "endOffset": 138,
+              "text": "antibiotics",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 103,
+          "endOffset": 110,
+          "score": 0.80822396,
+          "text": "7-weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.80153483,
+              "relationshipScore": 0.54968995,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 127,
+              "endOffset": 138,
+              "text": "antibiotics",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 127,
+          "endOffset": 138,
+          "score": 0.4897104,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 127,
+          "endOffset": 138,
+          "score": 0.80153483,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 144,
+          "endOffset": 149,
+          "score": 0.9206434,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87549794
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 309,
+          "endOffset": 323,
+          "score": 0.8020181,
+          "text": "corticosteroid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 309,
+          "endOffset": 331,
+          "score": 0.9019222,
+          "text": "corticosteroid therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "11e1e8c3-afcf-4d91-a065-15e3000b9ffe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "11e1e8c3-afcf-4d91-a065-15e3000b9ffe"
+          ],
+          "Content-Length": [
+            "2613"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2613",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:10 GMT",
+          "x-amzn-RequestId": "11e1e8c3-afcf-4d91-a065-15e3000b9ffe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 362,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9589169,
+          "beginOffset": 57,
+          "endOffset": 62,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9022506
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.69718224
+            },
+            {
+              "description": "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K27.9",
+              "score": 0.6663426
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.65109
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.64161193
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.6355272
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9206434,
+          "beginOffset": 144,
+          "endOffset": 149,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87549794
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.66584617
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.6397624
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.63700294
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.63534737
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.6299524
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "01d74a42-dd8b-4170-9776-6c67d55a23c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "01d74a42-dd8b-4170-9776-6c67d55a23c5"
+          ],
+          "Content-Length": [
+            "1893"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1893",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:11 GMT",
+          "x-amzn-RequestId": "01d74a42-dd8b-4170-9776-6c67d55a23c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e49da93a-9748-460e-a4c2-a752a707a8af"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e49da93a-9748-460e-a4c2-a752a707a8af"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:10 GMT",
+          "x-amzn-RequestId": "e49da93a-9748-460e-a4c2-a752a707a8af"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:11 PM"
+}

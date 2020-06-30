@@ -1,0 +1,583 @@
+{
+  "note": "Her history is clean and clear. The patient\u0027s pregnancy has continued throughout most of the week as have her previous pregnancies. The patient had her first postpartum visit last week that was uneventful. Her last pregnancy was 8 weeks. The bloodwork is now being reviewed. The patient is on full antibiotics. Clinical Features  Ectopic pregnancy is caused by a problem with the fetus not being close enough to the uterus to develop normally.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 449,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 15,
+          "endOffset": 20,
+          "score": 0.6634919,
+          "text": "clean",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 25,
+          "endOffset": 30,
+          "score": 0.60823333,
+          "text": "clear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 46,
+          "endOffset": 55,
+          "score": 0.9885527,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9313881
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 119,
+          "endOffset": 130,
+          "score": 0.9726681,
+          "text": "pregnancies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92922556
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 158,
+          "endOffset": 168,
+          "score": 0.6838123,
+          "text": "postpartum",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5257396
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 175,
+          "endOffset": 184,
+          "score": 0.99382496,
+          "text": "last week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.6838123,
+              "relationshipScore": 0.9815337,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 158,
+              "endOffset": 168,
+              "text": "postpartum",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.5257396
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "score": 0.98574823,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9378779
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 229,
+          "endOffset": 236,
+          "score": 0.98933065,
+          "text": "8 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98574823,
+              "relationshipScore": 0.97128016,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 215,
+              "endOffset": 224,
+              "text": "pregnancy",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9378779
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 298,
+          "endOffset": 309,
+          "score": 0.6697503,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 330,
+          "endOffset": 347,
+          "score": 0.79959005,
+          "text": "Ectopic pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94935244
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 416,
+          "endOffset": 422,
+          "score": 0.94677347,
+          "text": "uterus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "20420d74-822e-4b22-ab42-8408861b0fba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "20420d74-822e-4b22-ab42-8408861b0fba"
+          ],
+          "Content-Length": [
+            "2513"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2513",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:44 GMT",
+          "x-amzn-RequestId": "20420d74-822e-4b22-ab42-8408861b0fba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 422,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "clean",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.66349196,
+          "beginOffset": 15,
+          "endOffset": 20,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other speech disturbances",
+              "code": "R47.89",
+              "score": 0.73576146
+            },
+            {
+              "description": "Unspecified speech disturbances",
+              "code": "R47.9",
+              "score": 0.6016931
+            },
+            {
+              "description": "Postnasal drip",
+              "code": "R09.82",
+              "score": 0.59978926
+            },
+            {
+              "description": "Activity, food preparation and clean up",
+              "code": "Y93.G1",
+              "score": 0.5711896
+            },
+            {
+              "description": "Malignant neoplasm of unspecified kidney, except renal pelvis",
+              "code": "C64.9",
+              "score": 0.552994
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "clear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6082332,
+          "beginOffset": 25,
+          "endOffset": 30,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.83938694
+            },
+            {
+              "description": "Unspecified speech disturbances",
+              "code": "R47.9",
+              "score": 0.7208307
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.70656455
+            },
+            {
+              "description": "Other specified diseases of anus and rectum",
+              "code": "K62.89",
+              "score": 0.6809871
+            },
+            {
+              "description": "Postnasal drip",
+              "code": "R09.82",
+              "score": 0.66360885
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9885527,
+          "beginOffset": 46,
+          "endOffset": 55,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9313881
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7471856
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.6568288
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.655543
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6458614
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.6080634
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pregnancies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9726681,
+          "beginOffset": 119,
+          "endOffset": 130,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92922556
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Severe pre-eclampsia, third trimester",
+              "code": "O14.13",
+              "score": 0.47776687
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.4767126
+            },
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.4753111
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.41504398
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, insulin controlled",
+              "code": "O24.414",
+              "score": 0.40361127
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "postpartum",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.68381214,
+          "beginOffset": 158,
+          "endOffset": 168,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5257394
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Postpartum depression",
+              "code": "F53.0",
+              "score": 0.63700306
+            },
+            {
+              "description": "Postpartum mood disturbance",
+              "code": "O90.6",
+              "score": 0.4466815
+            },
+            {
+              "description": "Postpartum thyroiditis",
+              "code": "O90.5",
+              "score": 0.41410816
+            },
+            {
+              "description": "Postpartum inversion of uterus",
+              "code": "O71.2",
+              "score": 0.39633447
+            },
+            {
+              "description": "Other immediate postpartum hemorrhage",
+              "code": "O72.1",
+              "score": 0.38848558
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98574823,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9378779
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.66160834
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.57420814
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.5685596
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.5500227
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.533278
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Ectopic pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7995901,
+          "beginOffset": 330,
+          "endOffset": 347,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94935244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.49754265
+            },
+            {
+              "description": "Severe pre-eclampsia, third trimester",
+              "code": "O14.13",
+              "score": 0.3606092
+            },
+            {
+              "description": "Unspecified ectopic pregnancy without intrauterine pregnancy",
+              "code": "O00.90",
+              "score": 0.33574715
+            },
+            {
+              "description": "Ectopic testis, unspecified",
+              "code": "Q53.00",
+              "score": 0.30309683
+            },
+            {
+              "description": "Ectopic kidney",
+              "code": "Q63.2",
+              "score": 0.2877939
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a9192a8e-bdbe-4c5d-94a1-66ccf46eb687"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a9192a8e-bdbe-4c5d-94a1-66ccf46eb687"
+          ],
+          "Content-Length": [
+            "5096"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5096",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:45 GMT",
+          "x-amzn-RequestId": "a9192a8e-bdbe-4c5d-94a1-66ccf46eb687"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "50030cb5-4d95-4c78-a2eb-3e139f99005d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "50030cb5-4d95-4c78-a2eb-3e139f99005d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:44 GMT",
+          "x-amzn-RequestId": "50030cb5-4d95-4c78-a2eb-3e139f99005d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:45 PM"
+}

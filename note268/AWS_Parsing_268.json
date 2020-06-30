@@ -1,0 +1,820 @@
+{
+  "note": "with multiple cardiac troponin readings \u003e8. Her initial symptoms of nausea and vomiting, and fever on admission were mild. Despite no specific laboratory findings, she underwent a complete EKG and pulmonary function study. Her primary diagnosis was AML with right ventricular ejection fraction (rVT/FF) of 0.6 and elevated cardiac troponin I (cth/Cti). Her EKG showed acute ventricular tachyarrhythmia, ventricular atrioventricular conduction abnormality, and myocardial ischemia on echocardiogram.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 793,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 14,
+          "endOffset": 39,
+          "score": 0.6806178,
+          "text": "cardiac troponin readings",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.96157396,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 40,
+              "endOffset": 42,
+              "text": "\u003e8",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 68,
+          "endOffset": 74,
+          "score": 0.9958494,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7566845
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 79,
+          "endOffset": 87,
+          "score": 0.9971891,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68683577
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 93,
+          "endOffset": 98,
+          "score": 0.98463386,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.54586345
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 99,
+          "endOffset": 111,
+          "score": 0.9999968,
+          "text": "on admission",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98463386,
+              "relationshipScore": 0.8156403,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 93,
+              "endOffset": 98,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.54586345
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 189,
+          "endOffset": 192,
+          "score": 0.9783492,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.44068274,
+              "relationshipScore": 0.99999905,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 258,
+              "endOffset": 293,
+              "text": "right ventricular ejection fraction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.94473636,
+              "relationshipScore": 0.9383503,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 306,
+              "endOffset": 309,
+              "text": "0.6",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 197,
+          "endOffset": 221,
+          "score": 0.99590576,
+          "text": "pulmonary function study",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 249,
+          "endOffset": 252,
+          "score": 0.9889286,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96589524
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 295,
+          "endOffset": 301,
+          "score": 0.49512693,
+          "text": "rVT/FF",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.44068274,
+              "relationshipScore": 0.9979569,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 258,
+              "endOffset": 293,
+              "text": "right ventricular ejection fraction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.94473636,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 306,
+              "endOffset": 309,
+              "text": "0.6",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 323,
+          "endOffset": 341,
+          "score": 0.9832478,
+          "text": "cardiac troponin I",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99169284,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 314,
+              "endOffset": 322,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 343,
+          "endOffset": 346,
+          "score": 0.47832945,
+          "text": "cth",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99169284,
+              "relationshipScore": 0.9999703,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 314,
+              "endOffset": 322,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 357,
+          "endOffset": 360,
+          "score": 0.99900156,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9863014,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 368,
+              "endOffset": 401,
+              "text": "acute ventricular tachyarrhythmia",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9159196,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 21,
+              "beginOffset": 403,
+              "endOffset": 454,
+              "text": "ventricular atrioventricular conduction abnormality",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 374,
+          "endOffset": 401,
+          "score": 0.9162007,
+          "text": "ventricular tachyarrhythmia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.911456
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6026738,
+              "relationshipScore": 0.9995297,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 368,
+              "endOffset": 373,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 403,
+          "endOffset": 454,
+          "score": 0.85404277,
+          "text": "ventricular atrioventricular conduction abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9313006
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 460,
+          "endOffset": 479,
+          "score": 0.75537664,
+          "text": "myocardial ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166235
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 483,
+          "endOffset": 497,
+          "score": 0.9967962,
+          "text": "echocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.87583554,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 22,
+              "beginOffset": 460,
+              "endOffset": 479,
+              "text": "myocardial ischemia",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.54181033,
+            "id": 0,
+            "beginOffset": 258,
+            "endOffset": 263,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6026738,
+            "id": 5,
+            "beginOffset": 368,
+            "endOffset": 373,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "226b200e-d502-4ec6-8c19-f6f37c0d8d3d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "226b200e-d502-4ec6-8c19-f6f37c0d8d3d"
+          ],
+          "Content-Length": [
+            "6234"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6234",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:04 GMT",
+          "x-amzn-RequestId": "226b200e-d502-4ec6-8c19-f6f37c0d8d3d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 566,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9958494,
+          "beginOffset": 68,
+          "endOffset": 74,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7566845
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.83636343
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.7764112
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.66067326
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5791095
+            },
+            {
+              "description": "Nausea and vomiting",
+              "code": "R11",
+              "score": 0.57007563
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9971891,
+          "beginOffset": 79,
+          "endOffset": 87,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68683577
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.79938644
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.76664084
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.55492985
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.54849327
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.50077367
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98463386,
+          "beginOffset": 93,
+          "endOffset": 98,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5458635
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7920726
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.48904988
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.47285286
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.46502355
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.41875654
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9889286,
+          "beginOffset": 249,
+          "endOffset": 252,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96589524
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myeloblastic leukemia, not having achieved remission",
+              "code": "C92.00",
+              "score": 0.51484764
+            },
+            {
+              "description": "Acute promyelocytic leukemia, not having achieved remission",
+              "code": "C92.40",
+              "score": 0.46677127
+            },
+            {
+              "description": "Acute monoblastic/monocytic leukemia, not having achieved remission",
+              "code": "C93.00",
+              "score": 0.36630273
+            },
+            {
+              "description": "Acute myeloblastic leukemia, in remission",
+              "code": "C92.01",
+              "score": 0.33785248
+            },
+            {
+              "description": "Acute promyelocytic leukemia, in remission",
+              "code": "C92.41",
+              "score": 0.32365003
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "ventricular tachyarrhythmia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9162008,
+          "beginOffset": 374,
+          "endOffset": 401,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.60267365,
+              "relationshipScore": 0.9995297,
+              "id": 5,
+              "beginOffset": 368,
+              "endOffset": 373,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.911456
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ventricular tachycardia",
+              "code": "I47.2",
+              "score": 0.52909434
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.39643046
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.35844347
+            },
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.33897662
+            },
+            {
+              "description": "Intracardiac thrombosis, not elsewhere classified",
+              "code": "I51.3",
+              "score": 0.3225985
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "ventricular atrioventricular conduction abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85404277,
+          "beginOffset": 403,
+          "endOffset": 454,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9313006
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.56368417
+            },
+            {
+              "description": "Other specified conduction disorders",
+              "code": "I45.89",
+              "score": 0.5475914
+            },
+            {
+              "description": "Conduction disorder, unspecified",
+              "code": "I45.9",
+              "score": 0.54595405
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.46886495
+            },
+            {
+              "description": "Atrioventricular block, complete",
+              "code": "I44.2",
+              "score": 0.45592332
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "myocardial ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7553769,
+          "beginOffset": 460,
+          "endOffset": 479,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166235
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.79077804
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.6596925
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.64274234
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.62800705
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.5866312
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "63fc595e-2461-443b-ba4c-bc85286336f8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "63fc595e-2461-443b-ba4c-bc85286336f8"
+          ],
+          "Content-Length": [
+            "5140"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5140",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:06 GMT",
+          "x-amzn-RequestId": "63fc595e-2461-443b-ba4c-bc85286336f8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 235,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7eb63445-b14b-4e96-bb70-143897c14df7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7eb63445-b14b-4e96-bb70-143897c14df7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:04 GMT",
+          "x-amzn-RequestId": "7eb63445-b14b-4e96-bb70-143897c14df7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:06 PM"
+}

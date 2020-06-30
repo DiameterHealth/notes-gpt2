@@ -1,0 +1,361 @@
+{
+  "note": "During his/her previous medical history the patient was diagnosed as having a history of myasthenia gravis; recurrent exacerbations of her disease and had undergone multiple rounds of steroid injections. In the initial consultation the patient had demonstrated a decreased sleep onset latency (in relation to previous hours of sleep onset) with an increase in the overall time of sleep onset in relation to her onset time.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 230,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 89,
+          "endOffset": 106,
+          "score": 0.968016,
+          "text": "myasthenia gravis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9725027
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 184,
+          "endOffset": 202,
+          "score": 0.58529407,
+          "text": "steroid injections",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 263,
+          "endOffset": 292,
+          "score": 0.5729794,
+          "text": "decreased sleep onset latency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74678177
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 327,
+          "endOffset": 338,
+          "score": 0.46068597,
+          "text": "sleep onset",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65268844
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 380,
+          "endOffset": 391,
+          "score": 0.4922936,
+          "text": "sleep onset",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5599829
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bcf7a6d4-cd56-440d-a99c-738bab083321"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bcf7a6d4-cd56-440d-a99c-738bab083321"
+          ],
+          "Content-Length": [
+            "1043"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1043",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:30 GMT",
+          "x-amzn-RequestId": "bcf7a6d4-cd56-440d-a99c-738bab083321"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 355,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "myasthenia gravis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.968016,
+          "beginOffset": 89,
+          "endOffset": 106,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9725026
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Myasthenia gravis without (acute) exacerbation",
+              "code": "G70.00",
+              "score": 0.46041054
+            },
+            {
+              "description": "Myasthenia gravis with (acute) exacerbation",
+              "code": "G70.01",
+              "score": 0.30564535
+            },
+            {
+              "description": "Myasthenia gravis",
+              "code": "G70.0",
+              "score": 0.27775943
+            },
+            {
+              "description": "Myasthenia gravis and other myoneural disorders",
+              "code": "G70",
+              "score": 0.19393376
+            },
+            {
+              "description": "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+              "code": "E05.90",
+              "score": 0.15862545
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "decreased sleep onset latency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5729792,
+          "beginOffset": 263,
+          "endOffset": 292,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7467817
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.46095315
+            },
+            {
+              "description": "Hypersomnia, unspecified",
+              "code": "G47.10",
+              "score": 0.45121166
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.42883897
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.41992006
+            },
+            {
+              "description": "Decreased libido",
+              "code": "R68.82",
+              "score": 0.39531285
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sleep onset",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4606861,
+          "beginOffset": 327,
+          "endOffset": 338,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65268844
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.69167507
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.6284092
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.597697
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5673525
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.56399435
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sleep onset",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4922936,
+          "beginOffset": 380,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.559983
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.65588564
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.58918667
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.58400714
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5761157
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.52030146
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9dc22171-1135-4936-b8ac-72bd38bc329f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9dc22171-1135-4936-b8ac-72bd38bc329f"
+          ],
+          "Content-Length": [
+            "2806"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2806",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:30 GMT",
+          "x-amzn-RequestId": "9dc22171-1135-4936-b8ac-72bd38bc329f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "416199f8-55f9-438f-9cab-b98abc514832"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "416199f8-55f9-438f-9cab-b98abc514832"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:30 GMT",
+          "x-amzn-RequestId": "416199f8-55f9-438f-9cab-b98abc514832"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:31 PM"
+}

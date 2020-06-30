@@ -1,0 +1,616 @@
+{
+  "note": "There is an acute onset of vaginal discharge of dark purple color, is no longer changing with increasing fetal age. The discharge has a pussy odor to it. Pupils begin to dilate, the nipples are visible in the nipples. The mother asks, \"What is this?\" The physician states, \"This is urine. Your baby is peeing.\" The mother responds, \"Well, he isn\u0027t peeing.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 699,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 27,
+          "endOffset": 44,
+          "score": 0.8624658,
+          "text": "vaginal discharge",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5331631
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9795999,
+              "relationshipScore": 0.994981,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 12,
+              "endOffset": 17,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 48,
+          "endOffset": 65,
+          "score": 0.6628301,
+          "text": "dark purple color",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8836463
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9795999,
+              "relationshipScore": 0.8346264,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 12,
+              "endOffset": 17,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 105,
+          "endOffset": 114,
+          "score": 0.5893495,
+          "text": "fetal age",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.72860247
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.42967418
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 136,
+          "endOffset": 146,
+          "score": 0.3997301,
+          "text": "pussy odor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7897841
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.94515914,
+              "relationshipScore": 0.9184709,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 154,
+              "endOffset": 160,
+              "text": "Pupils",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99052364,
+              "relationshipScore": 0.74361575,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 209,
+              "endOffset": 216,
+              "text": "nipples",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 154,
+          "endOffset": 160,
+          "score": 0.94515914,
+          "text": "Pupils",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 182,
+          "endOffset": 189,
+          "score": 0.99128014,
+          "text": "nipples",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 209,
+          "endOffset": 216,
+          "score": 0.99052364,
+          "text": "nipples",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 322,
+          "endOffset": 337,
+          "score": 0.3079866,
+          "text": "responds, \"Well",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6887236
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 342,
+          "endOffset": 354,
+          "score": 0.36712107,
+          "text": "isn\u0027t peeing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8379575
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9795999,
+            "id": 3,
+            "beginOffset": 12,
+            "endOffset": 17,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "776268a2-0daf-48fc-bbbf-afaadd90371e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "776268a2-0daf-48fc-bbbf-afaadd90371e"
+          ],
+          "Content-Length": [
+            "2824"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2824",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:47 GMT",
+          "x-amzn-RequestId": "776268a2-0daf-48fc-bbbf-afaadd90371e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 637,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "vaginal discharge",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86246586,
+          "beginOffset": 27,
+          "endOffset": 44,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9795999,
+              "relationshipScore": 0.994981,
+              "id": 0,
+              "beginOffset": 12,
+              "endOffset": 17,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5331631
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.59872997
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.43442708
+            },
+            {
+              "description": "Postmenopausal atrophic vaginitis",
+              "code": "N95.2",
+              "score": 0.37286878
+            },
+            {
+              "description": "Postnasal drip",
+              "code": "R09.82",
+              "score": 0.36271057
+            },
+            {
+              "description": "Candidiasis of vulva and vagina",
+              "code": "B37.3",
+              "score": 0.35501185
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "dark purple color",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6628302,
+          "beginOffset": 48,
+          "endOffset": 65,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9795999,
+              "relationshipScore": 0.8346264,
+              "id": 0,
+              "beginOffset": 12,
+              "endOffset": 17,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8836463
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormal findings in urine",
+              "code": "R82.998",
+              "score": 0.5778767
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.57746404
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.49111423
+            },
+            {
+              "description": "Other polyuria",
+              "code": "R35.8",
+              "score": 0.474381
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.46296477
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fetal age",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5893495,
+          "beginOffset": 105,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7286024
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.42967415
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Decreased fetal movements, third trimester",
+              "code": "O36.813",
+              "score": 0.25941864
+            },
+            {
+              "description": "Age-related physical debility",
+              "code": "R54",
+              "score": 0.23750284
+            },
+            {
+              "description": "Decreased fetal movements, second trimester",
+              "code": "O36.812",
+              "score": 0.20789564
+            },
+            {
+              "description": "Decreased fetal movements, unspecified trimester",
+              "code": "O36.819",
+              "score": 0.19398159
+            },
+            {
+              "description": "Obstructed labor, unspecified",
+              "code": "O66.9",
+              "score": 0.17774546
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pussy odor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39973027,
+          "beginOffset": 136,
+          "endOffset": 146,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.94515914,
+              "relationshipScore": 0.9184709,
+              "id": 5,
+              "beginOffset": 154,
+              "endOffset": 160,
+              "text": "Pupils",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99052364,
+              "relationshipScore": 0.74361575,
+              "id": 7,
+              "beginOffset": 209,
+              "endOffset": 216,
+              "text": "nipples",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7897841
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormal findings in urine",
+              "code": "R82.998",
+              "score": 0.42906216
+            },
+            {
+              "description": "Urgency of urination",
+              "code": "R39.15",
+              "score": 0.37438747
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.3711725
+            },
+            {
+              "description": "Abnormal findings on cytological and histological examination of urine",
+              "code": "R82.8",
+              "score": 0.33506274
+            },
+            {
+              "description": "Abnormal dark adaptation curve",
+              "code": "H53.61",
+              "score": 0.32353964
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "responds, \"Well",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3079865,
+          "beginOffset": 322,
+          "endOffset": 337,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68872356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.59876096
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.59009176
+            },
+            {
+              "description": "Scar conditions and fibrosis of skin",
+              "code": "L90.5",
+              "score": 0.5688757
+            },
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.5687325
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.531285
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "isn\u0027t peeing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36712128,
+          "beginOffset": 342,
+          "endOffset": 354,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8379574
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Slurred speech",
+              "code": "R47.81",
+              "score": 0.63389087
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.5841464
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.5358862
+            },
+            {
+              "description": "Dysphonia",
+              "code": "R49.0",
+              "score": 0.5273818
+            },
+            {
+              "description": "Gross hematuria",
+              "code": "R31.0",
+              "score": 0.5069145
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "101fc2a9-635e-4c33-9035-e5a4f24e7e76"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "101fc2a9-635e-4c33-9035-e5a4f24e7e76"
+          ],
+          "Content-Length": [
+            "4796"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4796",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:49 GMT",
+          "x-amzn-RequestId": "101fc2a9-635e-4c33-9035-e5a4f24e7e76"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4cb2a6e0-4dd9-433c-ab3f-e6aba95a7e8d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4cb2a6e0-4dd9-433c-ab3f-e6aba95a7e8d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:47 GMT",
+          "x-amzn-RequestId": "4cb2a6e0-4dd9-433c-ab3f-e6aba95a7e8d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:49 PM"
+}

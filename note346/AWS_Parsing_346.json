@@ -1,0 +1,414 @@
+{
+  "note": ", often after inhaling e-cigarette vapor in the hours prior to inhalation. The person then becomes ill. HOSPITALIZATION Anaphylaxis is life-threatening. Severe aaphylaxis, or hives, usually causes breathing to stop and death from asphyxiation occurs (2). E-CIGARETTES (ECIGARTS) A new generation of electronic cigarettes, designed to be less harmful to the user, with no tar or particulate matter, can be vaporized and inhaled, and can be an effective quitting aid for nonsmokers trying to quit traditional tobacco cigarettes (3).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 389,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 99,
+          "endOffset": 102,
+          "score": 0.55964893,
+          "text": "ill",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 120,
+          "endOffset": 131,
+          "score": 0.8982739,
+          "text": "Anaphylaxis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79792774
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 160,
+          "endOffset": 170,
+          "score": 0.96858853,
+          "text": "aaphylaxis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7357758
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 175,
+          "endOffset": 180,
+          "score": 0.98812395,
+          "text": "hives",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7080703
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 197,
+          "endOffset": 224,
+          "score": 0.68702114,
+          "text": "breathing to stop and death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.919872
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 230,
+          "endOffset": 242,
+          "score": 0.71697515,
+          "text": "asphyxiation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78321946
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ca0acc42-590a-4284-b767-3fdcdc12629f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ca0acc42-590a-4284-b767-3fdcdc12629f"
+          ],
+          "Content-Length": [
+            "1201"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1201",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:49 GMT",
+          "x-amzn-RequestId": "ca0acc42-590a-4284-b767-3fdcdc12629f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 447,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ill",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5596488,
+          "beginOffset": 99,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7811163
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.68692493
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.66213286
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.61854833
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.61022633
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Anaphylaxis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8982739,
+          "beginOffset": 120,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79792774
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anaphylactic reaction due to adverse effect of correct drug or medicament properly administered",
+              "code": "T88.6",
+              "score": 0.5744473
+            },
+            {
+              "description": "Anaphylactic reaction due to other food products",
+              "code": "T78.09",
+              "score": 0.47198382
+            },
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.45469046
+            },
+            {
+              "description": "Personal history of anaphylaxis",
+              "code": "Z87.892",
+              "score": 0.3846444
+            },
+            {
+              "description": "Anaphylactic reaction due to peanuts",
+              "code": "T78.01",
+              "score": 0.29413423
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hives",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98812395,
+          "beginOffset": 175,
+          "endOffset": 180,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7080702
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urticaria, unspecified",
+              "code": "L50.9",
+              "score": 0.68716747
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.6548427
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.4856126
+            },
+            {
+              "description": "Deficiency of other specified B group vitamins",
+              "code": "E53.8",
+              "score": 0.46345645
+            },
+            {
+              "description": "Urticaria",
+              "code": "L50",
+              "score": 0.4479799
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "breathing to stop and death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.68702114,
+          "beginOffset": 197,
+          "endOffset": 224,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.919872
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.56379265
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.51717615
+            },
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.49243498
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.41906834
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.4170638
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "asphyxiation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7169751,
+          "beginOffset": 230,
+          "endOffset": 242,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78321934
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Asphyxia",
+              "code": "R09.01",
+              "score": 0.58361477
+            },
+            {
+              "description": "Asphyxiation",
+              "code": "T71",
+              "score": 0.5633241
+            },
+            {
+              "description": "Asphyxiation due to unspecified cause",
+              "code": "T71.9",
+              "score": 0.47803065
+            },
+            {
+              "description": "Asphyxiation due to plastic bag, accidental",
+              "code": "T71.121",
+              "score": 0.47368014
+            },
+            {
+              "description": "Food in trachea causing asphyxiation",
+              "code": "T17.420",
+              "score": 0.45583266
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a861ac42-f872-422e-b699-8fa0314a2917"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a861ac42-f872-422e-b699-8fa0314a2917"
+          ],
+          "Content-Length": [
+            "3490"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3490",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:50 GMT",
+          "x-amzn-RequestId": "a861ac42-f872-422e-b699-8fa0314a2917"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 250,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1c8fc612-1963-488d-8675-21d5e4725ae0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1c8fc612-1963-488d-8675-21d5e4725ae0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:49 GMT",
+          "x-amzn-RequestId": "1c8fc612-1963-488d-8675-21d5e4725ae0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:50 PM"
+}

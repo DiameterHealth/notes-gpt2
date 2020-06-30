@@ -1,0 +1,892 @@
+{
+  "note": ". Patient did not have flu or influenza during the past 7 days. A urine culture for bacterial vaginosis is negative. PENIAC INTERACTIONS No significant current or previous penile infections. Patient did not have any penile lesions. No HIV or bacterial vaginosis tests. No STD tests available. No vaginal fluids available. Patient was advised that his or her local area would be examined and that no lesions would be noticed, but that these results were not routinely returned to the lab.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 725,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 23,
+          "endOffset": 26,
+          "score": 0.9010274,
+          "text": "flu",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.61181515
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.83799815
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 23,
+          "endOffset": 39,
+          "score": 0.33883637,
+          "text": "flu or influenza",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 30,
+          "endOffset": 39,
+          "score": 0.79379934,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.71801084
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 51,
+          "endOffset": 62,
+          "score": 0.999905,
+          "text": "past 7 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.79379934,
+              "relationshipScore": 0.942298,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 30,
+              "endOffset": 39,
+              "text": "influenza",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "NEGATION",
+                  "score": 0.71801084
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 51,
+          "endOffset": 62,
+          "score": 0.999905,
+          "text": "past 7 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.33883637,
+              "relationshipScore": 0.95941776,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 23,
+              "endOffset": 39,
+              "text": "flu or influenza",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 51,
+          "endOffset": 62,
+          "score": 0.999905,
+          "text": "past 7 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9010274,
+              "relationshipScore": 0.87290716,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 23,
+              "endOffset": 26,
+              "text": "flu",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.61181515
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.83799815
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 66,
+          "endOffset": 79,
+          "score": 0.9717758,
+          "text": "urine culture",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9450593,
+              "relationshipScore": 0.9770693,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 107,
+              "endOffset": 115,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 84,
+          "endOffset": 103,
+          "score": 0.310701,
+          "text": "bacterial vaginosis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9450593,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 107,
+              "endOffset": 115,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 84,
+          "endOffset": 103,
+          "score": 0.9450118,
+          "text": "bacterial vaginosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92903477
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 152,
+          "endOffset": 159,
+          "score": 0.9999993,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8708517,
+              "relationshipScore": 0.85251945,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 172,
+              "endOffset": 189,
+              "text": "penile infections",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7035141
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.8972664
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 172,
+          "endOffset": 189,
+          "score": 0.8708517,
+          "text": "penile infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7035141
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8972664
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 216,
+          "endOffset": 230,
+          "score": 0.9345169,
+          "text": "penile lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6892891
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98030454
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 235,
+          "endOffset": 238,
+          "score": 0.9501251,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7808183
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94671094
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 242,
+          "endOffset": 261,
+          "score": 0.9481264,
+          "text": "bacterial vaginosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8732885
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87582904
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 272,
+          "endOffset": 281,
+          "score": 0.52535236,
+          "text": "STD tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 304,
+          "endOffset": 310,
+          "score": 0.9796769,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.39187527,
+              "relationshipScore": 0.999426,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 0,
+              "beginOffset": 296,
+              "endOffset": 303,
+              "text": "vaginal",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 399,
+          "endOffset": 406,
+          "score": 0.96513045,
+          "text": "lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5181105
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9181523
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 483,
+          "endOffset": 486,
+          "score": 0.39524153,
+          "text": "lab",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "78c01fa5-89da-4fe5-9988-962d04451a1b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "78c01fa5-89da-4fe5-9988-962d04451a1b"
+          ],
+          "Content-Length": [
+            "5384"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5384",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:59 GMT",
+          "x-amzn-RequestId": "78c01fa5-89da-4fe5-9988-962d04451a1b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 580,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "flu",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9010274,
+          "beginOffset": 23,
+          "endOffset": 26,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6118153
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.83799815
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.8646541
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.74060935
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus",
+              "code": "J11",
+              "score": 0.6934986
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.6636956
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.6450288
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7937992,
+          "beginOffset": 30,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.71801084
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.854589
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.748196
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with unspecified type of pneumonia",
+              "code": "J11.00",
+              "score": 0.695785
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.6811309
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with other manifestations",
+              "code": "J11.89",
+              "score": 0.59481186
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bacterial vaginosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9450118,
+          "beginOffset": 84,
+          "endOffset": 103,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92903477
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute vaginitis",
+              "code": "N76.0",
+              "score": 0.61131334
+            },
+            {
+              "description": "Bacterial infection, unspecified",
+              "code": "A49.9",
+              "score": 0.35831803
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.3244047
+            },
+            {
+              "description": "Transverse vaginal septum",
+              "code": "Q52.11",
+              "score": 0.27254212
+            },
+            {
+              "description": "Spontaneous bacterial peritonitis",
+              "code": "K65.2",
+              "score": 0.26392883
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "penile infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8708517,
+          "beginOffset": 172,
+          "endOffset": 189,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7035141
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8972664
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.5709117
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.5555019
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.5446477
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.49827048
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.48623145
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "penile lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9345169,
+          "beginOffset": 216,
+          "endOffset": 230,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6892891
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98030454
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.61462927
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.55928135
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.5339279
+            },
+            {
+              "description": "Rheumatic mitral valve disease, unspecified",
+              "code": "I05.9",
+              "score": 0.48978084
+            },
+            {
+              "description": "Disorder of pigmentation, unspecified",
+              "code": "L81.9",
+              "score": 0.48782504
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9501251,
+          "beginOffset": 235,
+          "endOffset": 238,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7808183
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94671094
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.6803535
+            },
+            {
+              "description": "Asymptomatic human immunodeficiency virus [HIV] infection status",
+              "code": "Z21",
+              "score": 0.52358043
+            },
+            {
+              "description": "Human immunodeficiency virus, type 2 [HIV 2] as the cause of diseases classified elsewhere",
+              "code": "B97.35",
+              "score": 0.40294573
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] counseling",
+              "code": "Z71.7",
+              "score": 0.3842089
+            },
+            {
+              "description": "Family history of human immunodeficiency virus [HIV] disease",
+              "code": "Z83.0",
+              "score": 0.37792686
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "bacterial vaginosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9481264,
+          "beginOffset": 242,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8732885
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87582904
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute vaginitis",
+              "code": "N76.0",
+              "score": 0.6327764
+            },
+            {
+              "description": "Bacterial infection, unspecified",
+              "code": "A49.9",
+              "score": 0.35987633
+            },
+            {
+              "description": "Vaginitis following delivery",
+              "code": "O86.13",
+              "score": 0.33152187
+            },
+            {
+              "description": "Vaginal enterocele",
+              "code": "N81.5",
+              "score": 0.3013607
+            },
+            {
+              "description": "Trichomonal vulvovaginitis",
+              "code": "A59.01",
+              "score": 0.30127585
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96513045,
+          "beginOffset": 399,
+          "endOffset": 406,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5181105
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9181523
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.7550705
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6431837
+            },
+            {
+              "description": "Disorder of brain, unspecified",
+              "code": "G93.9",
+              "score": 0.62599266
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.6174541
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.61622787
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "01e6705a-7411-4953-954c-3f6763e73a40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "01e6705a-7411-4953-954c-3f6763e73a40"
+          ],
+          "Content-Length": [
+            "6743"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6743",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:00 GMT",
+          "x-amzn-RequestId": "01e6705a-7411-4953-954c-3f6763e73a40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9796769,
+          "beginOffset": 304,
+          "endOffset": 310,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.39187536,
+              "relationshipScore": 0.99942577,
+              "id": 0,
+              "beginOffset": 296,
+              "endOffset": 303,
+              "text": "vaginal",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.34581894
+            },
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.320926
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.046507087
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53e4d3ad-e87a-4f79-9cf3-1f4933da1327"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53e4d3ad-e87a-4f79-9cf3-1f4933da1327"
+          ],
+          "Content-Length": [
+            "656"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "656",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:00 GMT",
+          "x-amzn-RequestId": "53e4d3ad-e87a-4f79-9cf3-1f4933da1327"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:01 PM"
+}

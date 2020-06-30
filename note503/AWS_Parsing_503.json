@@ -1,0 +1,566 @@
+{
+  "note": "also been told by his primary care doctor to take a 20 mg dose of L-tryptophan daily. At the time of study onset, the patient was taking 20 mg of L-tryptophan per day. This level of L-tryptophan intake has been associated with increased depressive symptoms. Although the patient had not taken any other dietary supplement during the prior 2 years, he reported to be taking L-tryptophan.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 468,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 66,
+          "endOffset": 78,
+          "score": 0.95551753,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.98514044,
+              "relationshipScore": 0.9999213,
+              "relationshipType": "DOSAGE",
+              "id": 0,
+              "beginOffset": 52,
+              "endOffset": 57,
+              "text": "20 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99148303,
+              "relationshipScore": 0.99677104,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 79,
+              "endOffset": 84,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 146,
+          "endOffset": 158,
+          "score": 0.9434192,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.98514044,
+              "relationshipScore": 0.9415901,
+              "relationshipType": "DOSAGE",
+              "id": 0,
+              "beginOffset": 52,
+              "endOffset": 57,
+              "text": "20 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99148303,
+              "relationshipScore": 0.98960227,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 79,
+              "endOffset": 84,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9960598,
+              "relationshipScore": 0.9999865,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 137,
+              "endOffset": 142,
+              "text": "20 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9419572,
+              "relationshipScore": 0.9998048,
+              "relationshipType": "FREQUENCY",
+              "id": 5,
+              "beginOffset": 159,
+              "endOffset": 166,
+              "text": "per day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 182,
+          "endOffset": 194,
+          "score": 0.53996503,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 237,
+          "endOffset": 256,
+          "score": 0.9811255,
+          "text": "depressive symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414025
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 303,
+          "endOffset": 321,
+          "score": 0.3272093,
+          "text": "dietary supplement",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 333,
+          "endOffset": 346,
+          "score": 0.9985018,
+          "text": "prior 2 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.86011785,
+              "relationshipScore": 0.7306679,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 373,
+              "endOffset": 385,
+              "text": "L-tryptophan",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 333,
+          "endOffset": 346,
+          "score": 0.9985018,
+          "text": "prior 2 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.3272093,
+              "relationshipScore": 0.8811967,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 303,
+              "endOffset": 321,
+              "text": "dietary supplement",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 373,
+          "endOffset": 385,
+          "score": 0.86011785,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8f021af8-2d31-48c1-b3b4-97a230890ea2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8f021af8-2d31-48c1-b3b4-97a230890ea2"
+          ],
+          "Content-Length": [
+            "3121"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3121",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:32 GMT",
+          "x-amzn-RequestId": "8f021af8-2d31-48c1-b3b4-97a230890ea2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 350,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "depressive symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9811255,
+          "beginOffset": 237,
+          "endOffset": 256,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414025
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.7591291
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6480566
+            },
+            {
+              "description": "Major depressive disorder, recurrent severe without psychotic features",
+              "code": "F33.2",
+              "score": 0.5487701
+            },
+            {
+              "description": "Major depressive disorder, single episode, moderate",
+              "code": "F32.1",
+              "score": 0.5423144
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.5413212
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7eff733f-ad82-477a-a42e-d73c5d90e744"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7eff733f-ad82-477a-a42e-d73c5d90e744"
+          ],
+          "Content-Length": [
+            "880"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "880",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:33 GMT",
+          "x-amzn-RequestId": "7eff733f-ad82-477a-a42e-d73c5d90e744"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 660,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.95551753,
+          "beginOffset": 66,
+          "endOffset": 78,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.98514044,
+              "relationshipScore": 0.9999213,
+              "id": 0,
+              "beginOffset": 52,
+              "endOffset": 57,
+              "text": "20 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99148303,
+              "relationshipScore": 0.9967709,
+              "id": 2,
+              "beginOffset": 79,
+              "endOffset": 84,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Tryptophan",
+              "code": "10898",
+              "score": 0.73588943
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Tablet",
+              "code": "313525",
+              "score": 0.2870527
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Capsule",
+              "code": "199906",
+              "score": 0.24755166
+            },
+            {
+              "description": "Tryptophan 1000 MG Oral Tablet",
+              "code": "244158",
+              "score": 0.12595303
+            },
+            {
+              "description": "HYDROXYPROPYL CELLULOSE (TYPE L)",
+              "code": "1356137",
+              "score": 0.055204686
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9434192,
+          "beginOffset": 146,
+          "endOffset": 158,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.98514044,
+              "relationshipScore": 0.9415901,
+              "id": 0,
+              "beginOffset": 52,
+              "endOffset": 57,
+              "text": "20 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99148303,
+              "relationshipScore": 0.98960227,
+              "id": 2,
+              "beginOffset": 79,
+              "endOffset": 84,
+              "text": "daily",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9960598,
+              "relationshipScore": 0.9999865,
+              "id": 3,
+              "beginOffset": 137,
+              "endOffset": 142,
+              "text": "20 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9419572,
+              "relationshipScore": 0.9998048,
+              "id": 5,
+              "beginOffset": 159,
+              "endOffset": 166,
+              "text": "per day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Tryptophan",
+              "code": "10898",
+              "score": 0.5396586
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Tablet",
+              "code": "313525",
+              "score": 0.08932718
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Capsule",
+              "code": "199906",
+              "score": 0.084080264
+            },
+            {
+              "description": "2-(L-MENTHOXY)ETHANOL",
+              "code": "1428832",
+              "score": 0.07271677
+            },
+            {
+              "description": "L-ERYTHRULOSE",
+              "code": "1486718",
+              "score": 0.044531714
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.53996503,
+          "beginOffset": 182,
+          "endOffset": 194,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Tryptophan",
+              "code": "10898",
+              "score": 0.93835914
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Tablet",
+              "code": "313525",
+              "score": 0.65708894
+            },
+            {
+              "description": "Tryptophan 1000 MG Oral Tablet",
+              "code": "244158",
+              "score": 0.5428237
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Capsule",
+              "code": "199906",
+              "score": 0.47411212
+            },
+            {
+              "description": "L-ERYTHRULOSE",
+              "code": "1486718",
+              "score": 0.18107276
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "L-tryptophan",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8601179,
+          "beginOffset": 373,
+          "endOffset": 385,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Tryptophan",
+              "code": "10898",
+              "score": 0.93835914
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Tablet",
+              "code": "313525",
+              "score": 0.65708894
+            },
+            {
+              "description": "Tryptophan 1000 MG Oral Tablet",
+              "code": "244158",
+              "score": 0.5428237
+            },
+            {
+              "description": "Tryptophan 500 MG Oral Capsule",
+              "code": "199906",
+              "score": 0.47411212
+            },
+            {
+              "description": "HYDROXYPROPYL CELLULOSE (TYPE L)",
+              "code": "1356137",
+              "score": 0.43099743
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5be3ee98-ee8c-4666-a90c-664eb0abcd7f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5be3ee98-ee8c-4666-a90c-664eb0abcd7f"
+          ],
+          "Content-Length": [
+            "3413"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3413",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:33 GMT",
+          "x-amzn-RequestId": "5be3ee98-ee8c-4666-a90c-664eb0abcd7f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:33 PM"
+}

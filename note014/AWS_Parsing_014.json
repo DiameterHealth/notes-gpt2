@@ -1,0 +1,479 @@
+{
+  "note": "\u0026 mobility. Physical activity and occupational therapy will be done as needed until discharged. It was noted that the patient suffered complications with his knee due to surgery 2 years ago \u0026 has ongoing post-surgery pain. TREATMENT: The patient is recovering and walking without assistance. The patient was in fair condition at the time of discharge. It was determined that the patient did not need surgery.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 613,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 12,
+          "endOffset": 29,
+          "score": 0.7009296,
+          "text": "Physical activity",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 34,
+          "endOffset": 54,
+          "score": 0.9826052,
+          "text": "occupational therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 135,
+          "endOffset": 148,
+          "score": 0.5109763,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9408083,
+              "relationshipScore": 0.9577436,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 158,
+              "endOffset": 162,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 158,
+          "endOffset": 162,
+          "score": 0.9408083,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 170,
+          "endOffset": 177,
+          "score": 0.84254485,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 178,
+          "endOffset": 189,
+          "score": 0.999201,
+          "text": "2 years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.84254485,
+              "relationshipScore": 0.8481639,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 170,
+              "endOffset": 177,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 204,
+          "endOffset": 216,
+          "score": 0.8970409,
+          "text": "post-surgery",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9912238,
+              "relationshipScore": 0.7632231,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 217,
+              "endOffset": 221,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.5440879
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "score": 0.9912238,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5440879
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44014227,
+              "relationshipScore": 0.99995244,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 196,
+              "endOffset": 203,
+              "text": "ongoing",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 311,
+          "endOffset": 325,
+          "score": 0.40840384,
+          "text": "fair condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65852356
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 333,
+          "endOffset": 350,
+          "score": 0.9783313,
+          "text": "time of discharge",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.40840384,
+              "relationshipScore": 0.95587325,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 311,
+              "endOffset": 325,
+              "text": "fair condition",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.65852356
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 400,
+          "endOffset": 407,
+          "score": 0.96834743,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.44014227,
+            "id": 2,
+            "beginOffset": 196,
+            "endOffset": 203,
+            "text": "ongoing",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b9fda77b-3de6-4dd5-82fb-148446b443a3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b9fda77b-3de6-4dd5-82fb-148446b443a3"
+          ],
+          "Content-Length": [
+            "3340"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3340",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:29 GMT",
+          "x-amzn-RequestId": "b9fda77b-3de6-4dd5-82fb-148446b443a3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1098,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5109763,
+          "beginOffset": 135,
+          "endOffset": 148,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9408083,
+              "relationshipScore": 0.9577436,
+              "id": 1,
+              "beginOffset": 158,
+              "endOffset": 162,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.5655394
+            },
+            {
+              "description": "Unspecified complication of procedure",
+              "code": "T81.9",
+              "score": 0.54937524
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.50943714
+            },
+            {
+              "description": "Other postprocedural complications and disorders of the circulatory system, not elsewhere classified",
+              "code": "I97.89",
+              "score": 0.4875142
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.48589927
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9912238,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44014227,
+              "relationshipScore": 0.99995244,
+              "id": 2,
+              "beginOffset": 196,
+              "endOffset": 203,
+              "text": "ongoing",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5440879
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.4945666
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.38176152
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.38133898
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.35733208
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.35637352
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "fair condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40840384,
+          "beginOffset": 311,
+          "endOffset": 325,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65852356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.53175527
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.52630424
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.50334436
+            },
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.4598724
+            },
+            {
+              "description": "Unspecified degenerated conditions of globe",
+              "code": "H44.50",
+              "score": 0.3542503
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c89d29ed-1455-4d62-9c9f-6c2649625834"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c89d29ed-1455-4d62-9c9f-6c2649625834"
+          ],
+          "Content-Length": [
+            "2513"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2513",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:30 GMT",
+          "x-amzn-RequestId": "c89d29ed-1455-4d62-9c9f-6c2649625834"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "adfa1f19-f494-47c8-aa07-1d7efb4a9044"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "adfa1f19-f494-47c8-aa07-1d7efb4a9044"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:29 GMT",
+          "x-amzn-RequestId": "adfa1f19-f494-47c8-aa07-1d7efb4a9044"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:31 PM"
+}

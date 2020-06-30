@@ -1,0 +1,481 @@
+{
+  "note": "Her previous doctor also reported no complaints. We have noted a slight vaginal odor as well. The OBGYN notes mild contractions in other areas of the abdomen, but no other pain. Patient says her water broke about 6 months ago when she was pregnant. She also has a history of a previous miscarriage. She has been seeing her OBGYN on the third floor now for a few weeks.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 322,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 72,
+          "endOffset": 84,
+          "score": 0.92961067,
+          "text": "vaginal odor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7722619
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 115,
+          "endOffset": 127,
+          "score": 0.9823241,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78011066
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99283326,
+              "relationshipScore": 0.8787978,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 150,
+              "endOffset": 157,
+              "text": "abdomen",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 150,
+          "endOffset": 157,
+          "score": 0.99283326,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 172,
+          "endOffset": 176,
+          "score": 0.9885345,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73539746
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9033311
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 213,
+          "endOffset": 225,
+          "score": 0.99955016,
+          "text": "6 months ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9962049,
+              "relationshipScore": 0.88900775,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 239,
+              "endOffset": 247,
+              "text": "pregnant",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9457859
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 239,
+          "endOffset": 247,
+          "score": 0.9962049,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9457859
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 286,
+          "endOffset": 297,
+          "score": 0.9978549,
+          "text": "miscarriage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94987893
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4c89bc28-bf29-4c7c-b90d-b998e4749935"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4c89bc28-bf29-4c7c-b90d-b998e4749935"
+          ],
+          "Content-Length": [
+            "1903"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1903",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:52 GMT",
+          "x-amzn-RequestId": "4c89bc28-bf29-4c7c-b90d-b998e4749935"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 492,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "vaginal odor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9296106,
+          "beginOffset": 72,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7722619
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.5517994
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.522905
+            },
+            {
+              "description": "Candidiasis of vulva and vagina",
+              "code": "B37.3",
+              "score": 0.39063945
+            },
+            {
+              "description": "Noninflammatory disorder of vagina, unspecified",
+              "code": "N89.9",
+              "score": 0.37949932
+            },
+            {
+              "description": "Postmenopausal atrophic vaginitis",
+              "code": "N95.2",
+              "score": 0.36185142
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9823241,
+          "beginOffset": 115,
+          "endOffset": 127,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99283326,
+              "relationshipScore": 0.8787978,
+              "id": 2,
+              "beginOffset": 150,
+              "endOffset": 157,
+              "text": "abdomen",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7801106
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.69062847
+            },
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.6589922
+            },
+            {
+              "description": "Other premature depolarization",
+              "code": "I49.49",
+              "score": 0.63280106
+            },
+            {
+              "description": "Unspecified premature depolarization",
+              "code": "I49.40",
+              "score": 0.5906328
+            },
+            {
+              "description": "Obstruction of gallbladder",
+              "code": "K82.0",
+              "score": 0.49160823
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9885345,
+          "beginOffset": 172,
+          "endOffset": 176,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73539746
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9033311
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.52400976
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.4673965
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.45838556
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.44208798
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4032135
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9962049,
+          "beginOffset": 239,
+          "endOffset": 247,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9457859
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7624527
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.61336476
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5627769
+            },
+            {
+              "description": "Pregnant state",
+              "code": "Z33",
+              "score": 0.509148
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.49412698
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "miscarriage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9978549,
+          "beginOffset": 286,
+          "endOffset": 297,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94987893
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6056136
+            },
+            {
+              "description": "Complete or unspecified spontaneous abortion without complication",
+              "code": "O03.9",
+              "score": 0.48938432
+            },
+            {
+              "description": "Threatened abortion",
+              "code": "O20.0",
+              "score": 0.43606782
+            },
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.39257446
+            },
+            {
+              "description": "Severe pre-eclampsia, third trimester",
+              "code": "O14.13",
+              "score": 0.3734952
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53da8f76-db6a-49ea-b805-fae9becc5ba8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53da8f76-db6a-49ea-b805-fae9becc5ba8"
+          ],
+          "Content-Length": [
+            "3788"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3788",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:53 GMT",
+          "x-amzn-RequestId": "53da8f76-db6a-49ea-b805-fae9becc5ba8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6f3b014-cbb8-4cb1-b023-c9a7b02eb9bf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6f3b014-cbb8-4cb1-b023-c9a7b02eb9bf"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:52 GMT",
+          "x-amzn-RequestId": "e6f3b014-cbb8-4cb1-b023-c9a7b02eb9bf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:53 PM"
+}

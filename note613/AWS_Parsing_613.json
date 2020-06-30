@@ -1,0 +1,351 @@
+{
+  "note": "that have been diagnosed on the same day. In some cases patient may feign or even feign death after falling victim to the virus and dying as a result of the influenza virus being transfered into the bloodstream. Patient may have been in the hospital for many days since his last visit to hospital in the beginning of the virus.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 315,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 88,
+          "endOffset": 93,
+          "score": 0.93935657,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96191305
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 100,
+          "endOffset": 114,
+          "score": 0.5759398,
+          "text": "falling victim",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5543399
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 132,
+          "endOffset": 137,
+          "score": 0.5235311,
+          "text": "dying",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4454422
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 157,
+          "endOffset": 172,
+          "score": 0.5781554,
+          "text": "influenza virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8597378
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1d9d3aed-15a7-441c-ad81-a1c42510eed6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1d9d3aed-15a7-441c-ad81-a1c42510eed6"
+          ],
+          "Content-Length": [
+            "847"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "847",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:48 GMT",
+          "x-amzn-RequestId": "1d9d3aed-15a7-441c-ad81-a1c42510eed6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 348,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93935657,
+          "beginOffset": 88,
+          "endOffset": 93,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96191305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.74389654
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.67275393
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.6486213
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5910764
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.57498026
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "falling victim",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.57593983,
+          "beginOffset": 100,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5543399
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.6381907
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.5718141
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.5655806
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.5438949
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling with subsequent striking against other object",
+              "code": "W01.198",
+              "score": 0.5371821
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "dying",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5235311,
+          "beginOffset": 132,
+          "endOffset": 137,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4454422
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.83112353
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.7582085
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.74929327
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of any duration with death due to other cause prior to regaining consciousness",
+              "code": "S06.368",
+              "score": 0.5278035
+            },
+            {
+              "description": "Family history of sudden cardiac death",
+              "code": "Z82.41",
+              "score": 0.5056992
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "influenza virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5781553,
+          "beginOffset": 157,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8597378
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.8077913
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.70016825
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.60256034
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.5597777
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with other manifestations",
+              "code": "J11.89",
+              "score": 0.5394987
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f91562c2-6586-4a04-a91a-fb5b2ecee9cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f91562c2-6586-4a04-a91a-fb5b2ecee9cb"
+          ],
+          "Content-Length": [
+            "3257"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3257",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:48 GMT",
+          "x-amzn-RequestId": "f91562c2-6586-4a04-a91a-fb5b2ecee9cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 190,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "80b6429a-54c4-40fe-89eb-af13529ff278"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "80b6429a-54c4-40fe-89eb-af13529ff278"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:48 GMT",
+          "x-amzn-RequestId": "80b6429a-54c4-40fe-89eb-af13529ff278"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:49 PM"
+}

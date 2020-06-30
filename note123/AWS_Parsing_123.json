@@ -1,0 +1,556 @@
+{
+  "note": "that has been associated with severe GI symptoms, including cramping. Hospitalization is not necessary. The patient will be discharged to home from the ED with a 7-day course of antiobotics to treat an acute urinary tract infection that has been associated with severe GI symptoms, including cramping. PPD:  Patient will be discharged to home 1 day after discharge. For PPD patients, the discharge date is calculated based on when the patient is discharged home.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 631,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 37,
+          "endOffset": 39,
+          "score": 0.54687095,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 37,
+          "endOffset": 48,
+          "score": 0.9521245,
+          "text": "GI symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8707501
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 60,
+          "endOffset": 68,
+          "score": 0.9621021,
+          "text": "cramping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8508479
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 152,
+          "endOffset": 154,
+          "score": 0.9995938,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 178,
+          "endOffset": 189,
+          "score": 0.6679493,
+          "text": "antiobotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 178,
+          "endOffset": 189,
+          "score": 0.5464985,
+          "text": "antiobotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 208,
+          "endOffset": 221,
+          "score": 0.8132556,
+          "text": "urinary tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 208,
+          "endOffset": 231,
+          "score": 0.9927791,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8572247
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.95166326,
+              "relationshipScore": 0.9999808,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 202,
+              "endOffset": 207,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 269,
+          "endOffset": 271,
+          "score": 0.6631531,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 269,
+          "endOffset": 280,
+          "score": 0.9578536,
+          "text": "GI symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8445358
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 292,
+          "endOffset": 300,
+          "score": 0.950299,
+          "text": "cramping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79471713
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 302,
+          "endOffset": 305,
+          "score": 0.60444576,
+          "text": "PPD",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 370,
+          "endOffset": 373,
+          "score": 0.5792825,
+          "text": "PPD",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 370,
+          "endOffset": 373,
+          "score": 0.35523847,
+          "text": "PPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.95166326,
+            "id": 6,
+            "beginOffset": 202,
+            "endOffset": 207,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "64c3c8ad-3278-4b73-b05e-2c1668c02f47"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "64c3c8ad-3278-4b73-b05e-2c1668c02f47"
+          ],
+          "Content-Length": [
+            "2806"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2806",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:19 GMT",
+          "x-amzn-RequestId": "64c3c8ad-3278-4b73-b05e-2c1668c02f47"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 791,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "GI symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9521245,
+          "beginOffset": 37,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8707501
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the digestive system and abdomen",
+              "code": "R19.8",
+              "score": 0.7056289
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6604322
+            },
+            {
+              "description": "Disease of digestive system, unspecified",
+              "code": "K92.9",
+              "score": 0.55956
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5341446
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.5261715
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cramping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9621021,
+          "beginOffset": 60,
+          "endOffset": 68,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8508479
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cramp and spasm",
+              "code": "R25.2",
+              "score": 0.7707587
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.67212033
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.588497
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5839516
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.5403682
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9927791,
+          "beginOffset": 208,
+          "endOffset": 231,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.95166326,
+              "relationshipScore": 0.9999808,
+              "id": 3,
+              "beginOffset": 202,
+              "endOffset": 207,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8572246
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7468273
+            },
+            {
+              "description": "Personal history of urinary (tract) infections",
+              "code": "Z87.440",
+              "score": 0.54381263
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.5083409
+            },
+            {
+              "description": "Urinary calculus, unspecified",
+              "code": "N20.9",
+              "score": 0.47983414
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.44029394
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "GI symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9578536,
+          "beginOffset": 269,
+          "endOffset": 280,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8445358
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the digestive system and abdomen",
+              "code": "R19.8",
+              "score": 0.6579531
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.5835251
+            },
+            {
+              "description": "Disease of digestive system, unspecified",
+              "code": "K92.9",
+              "score": 0.5262272
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.5187434
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.49966216
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "cramping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.950299,
+          "beginOffset": 292,
+          "endOffset": 300,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79471713
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cramp and spasm",
+              "code": "R25.2",
+              "score": 0.7500845
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6622116
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5628882
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.546647
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.5432427
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "PPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3552384,
+          "beginOffset": 370,
+          "endOffset": 373,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nonspecific reaction to tuberculin skin test without active tuberculosis",
+              "code": "R76.11",
+              "score": 0.6696176
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ca8e38f-46df-4e49-ba3f-1a2a8577704d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ca8e38f-46df-4e49-ba3f-1a2a8577704d"
+          ],
+          "Content-Length": [
+            "4059"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4059",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:20 GMT",
+          "x-amzn-RequestId": "2ca8e38f-46df-4e49-ba3f-1a2a8577704d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 231,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "11313626-57c7-4943-8d13-d38b3af211c0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "11313626-57c7-4943-8d13-d38b3af211c0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:20 GMT",
+          "x-amzn-RequestId": "11313626-57c7-4943-8d13-d38b3af211c0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:21 PM"
+}

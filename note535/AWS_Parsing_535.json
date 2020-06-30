@@ -1,0 +1,740 @@
+{
+  "note": ". He reports the pain worsens and persists, with frequent attacks of burning, stabbing, or pinching pain. He is not taking any medications, anti-inflammatory drugs, analgesics, or anti-inflammation drugs. History of migraine headache, with aura (headache without aura). The patient describes the pain as a \"tearing sensation\" in the affected eye, and suggests that other symptoms are related to another cause such as allergies.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 434,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 17,
+          "endOffset": 21,
+          "score": 0.9595913,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.844701
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 58,
+          "endOffset": 76,
+          "score": 0.51949596,
+          "text": "attacks of burning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9241959
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5610204,
+              "relationshipScore": 0.99976426,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 49,
+              "endOffset": 57,
+              "text": "frequent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 91,
+          "endOffset": 104,
+          "score": 0.68385905,
+          "text": "pinching pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8268642
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 140,
+          "endOffset": 163,
+          "score": 0.36777115,
+          "text": "anti-inflammatory drugs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 165,
+          "endOffset": 175,
+          "score": 0.90199196,
+          "text": "analgesics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 216,
+          "endOffset": 233,
+          "score": 0.9694578,
+          "text": "migraine headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.65727323
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 246,
+          "endOffset": 254,
+          "score": 0.9711637,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6160187
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 263,
+          "endOffset": 267,
+          "score": 0.347696,
+          "text": "aura",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 296,
+          "endOffset": 300,
+          "score": 0.98953867,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9076199
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.36689496,
+              "relationshipScore": 0.6867407,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 333,
+              "endOffset": 345,
+              "text": "affected eye",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 307,
+          "endOffset": 324,
+          "score": 0.79430664,
+          "text": "tearing sensation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.920516
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.36689496,
+              "relationshipScore": 0.98401964,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 333,
+              "endOffset": 345,
+              "text": "affected eye",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 333,
+          "endOffset": 345,
+          "score": 0.36689496,
+          "text": "affected eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 417,
+          "endOffset": 426,
+          "score": 0.36190635,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.5610204,
+            "id": 2,
+            "beginOffset": 49,
+            "endOffset": 57,
+            "text": "frequent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d89968fe-da88-4d16-ad22-2cfa909178c9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d89968fe-da88-4d16-ad22-2cfa909178c9"
+          ],
+          "Content-Length": [
+            "3125"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3125",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:39 GMT",
+          "x-amzn-RequestId": "d89968fe-da88-4d16-ad22-2cfa909178c9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 654,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9595913,
+          "beginOffset": 17,
+          "endOffset": 21,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.844701
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7259239
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.69504905
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.68029636
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6715301
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.66993904
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "attacks of burning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.51949614,
+          "beginOffset": 58,
+          "endOffset": 76,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.56102026,
+              "relationshipScore": 0.99976426,
+              "id": 1,
+              "beginOffset": 49,
+              "endOffset": 57,
+              "text": "frequent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9241959
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.6868448
+            },
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.66769654
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.665271
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.6577314
+            },
+            {
+              "description": "Panic disorder [episodic paroxysmal anxiety]",
+              "code": "F41.0",
+              "score": 0.6552343
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pinching pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.683859,
+          "beginOffset": 91,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8268642
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.7049814
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.68100524
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.59230036
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.5915137
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.573311
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "migraine headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9694578,
+          "beginOffset": 216,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6572732
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.5814638
+            },
+            {
+              "description": "Migraine with aura, not intractable, without status migrainosus",
+              "code": "G43.109",
+              "score": 0.4388745
+            },
+            {
+              "description": "Migraine, unspecified, not intractable",
+              "code": "G43.90",
+              "score": 0.3428657
+            },
+            {
+              "description": "Migraine with aura, intractable, without status migrainosus",
+              "code": "G43.119",
+              "score": 0.33209252
+            },
+            {
+              "description": "Migraine, unspecified, intractable, without status migrainosus",
+              "code": "G43.919",
+              "score": 0.32941407
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9711637,
+          "beginOffset": 246,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.61601865
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.51722807
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.4234993
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.38031885
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.31479362
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.30242807
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "aura",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.34769592,
+          "beginOffset": 263,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Migraine with aura, not intractable, without status migrainosus",
+              "code": "G43.109",
+              "score": 0.5177334
+            },
+            {
+              "description": "Chronic migraine without aura, intractable, without status migrainosus",
+              "code": "G43.719",
+              "score": 0.49080062
+            },
+            {
+              "description": "Chronic migraine without aura, not intractable, without status migrainosus",
+              "code": "G43.709",
+              "score": 0.43232384
+            },
+            {
+              "description": "Migraine with aura, intractable, without status migrainosus",
+              "code": "G43.119",
+              "score": 0.41968986
+            },
+            {
+              "description": "Persistent migraine aura with cerebral infarction, not intractable, without status migrainosus",
+              "code": "G43.609",
+              "score": 0.4122379
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98953867,
+          "beginOffset": 296,
+          "endOffset": 300,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3668948,
+              "relationshipScore": 0.6867407,
+              "id": 9,
+              "beginOffset": 333,
+              "endOffset": 345,
+              "text": "affected eye",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9076199
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5136925
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.51221836
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.468
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.46767297
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4599073
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "tearing sensation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79430664,
+          "beginOffset": 307,
+          "endOffset": 324,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3668948,
+              "relationshipScore": 0.98401964,
+              "id": 9,
+              "beginOffset": 333,
+              "endOffset": 345,
+              "text": "affected eye",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.920516
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.56729245
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.49007994
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.47592908
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.45548278
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.40189734
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36190635,
+          "beginOffset": 417,
+          "endOffset": 426,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.7876739
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.6510173
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.6321527
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.6279426
+            },
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.6085417
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "be6f5e6a-3c80-46aa-b859-62013283288d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "be6f5e6a-3c80-46aa-b859-62013283288d"
+          ],
+          "Content-Length": [
+            "6812"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6812",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:41 GMT",
+          "x-amzn-RequestId": "be6f5e6a-3c80-46aa-b859-62013283288d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 242,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "082f880b-e72b-425a-a9b8-1e4aa00ff163"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "082f880b-e72b-425a-a9b8-1e4aa00ff163"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:39 GMT",
+          "x-amzn-RequestId": "082f880b-e72b-425a-a9b8-1e4aa00ff163"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:41 PM"
+}

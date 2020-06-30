@@ -1,0 +1,1157 @@
+{
+  "note": ". Now, I have a white, dry patch on my upper back, left side of my neck. Nail is chipped. Patient\u0027s family member is having some concerns. Patient\u0027s family member was aware that the patient received the benzethonium aqueous cream on 4/23/15. Date of Examination 4/29-5/3/15  Age 65 years of age  Alcoholism 30 mg/d  BMI 25.7  Prior Medication N/A  Prior History of skin reactions N/A  Respiratory Conditions:  No (other than minor cold), respiratory infections, COPD, asthma  Dermatologic Results:  Dark Circles over the face, forehead, upper back  Nail and hair mite infestations  Previous Dermatology Exams:  None  Investigations:  Tests:  Phosphate: 4.5 mg/dL; blood lactate: 11.4 mmol/L   Laboratory Results:  Phosphorate: 4.5 mg/dL; blood lactate: 11.4 mmol/L   Urogenital:  Foul smelling vaginal discharge  Diagnosis:  The patient was found to have a severe case of poisoning from benadryl.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1805,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 45,
+          "endOffset": 49,
+          "score": 0.9664668,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 67,
+          "endOffset": 71,
+          "score": 0.98767674,
+          "text": "neck",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 73,
+          "endOffset": 77,
+          "score": 0.88968766,
+          "text": "Nail",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 81,
+          "endOffset": 88,
+          "score": 0.591102,
+          "text": "chipped",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40925702
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.77689016,
+              "relationshipScore": 0.7108054,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 51,
+              "endOffset": 60,
+              "text": "left side",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98767674,
+              "relationshipScore": 0.9582558,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 67,
+              "endOffset": 71,
+              "text": "neck",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88968766,
+              "relationshipScore": 0.9998357,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 73,
+              "endOffset": 77,
+              "text": "Nail",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 203,
+          "endOffset": 215,
+          "score": 0.71822923,
+          "text": "benzethonium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.360737,
+              "relationshipScore": 0.9999852,
+              "relationshipType": "FORM",
+              "id": 14,
+              "beginOffset": 216,
+              "endOffset": 229,
+              "text": "aqueous cream",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 233,
+          "endOffset": 240,
+          "score": 0.9999262,
+          "text": "4/23/15",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 43,
+          "beginOffset": 233,
+          "endOffset": 240,
+          "score": 0.99983084,
+          "text": "4/23/15",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.71822923,
+              "relationshipScore": 0.9308618,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 203,
+              "endOffset": 215,
+              "text": "benzethonium",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 262,
+          "endOffset": 273,
+          "score": 0.985655,
+          "text": "4/29-5/3/15",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 26,
+          "beginOffset": 279,
+          "endOffset": 281,
+          "score": 0.9044148,
+          "text": "65",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 296,
+          "endOffset": 306,
+          "score": 0.4655124,
+          "text": "Alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42220938
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "beginOffset": 316,
+          "endOffset": 319,
+          "score": 0.990442,
+          "text": "BMI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.998914,
+              "relationshipScore": 0.99999785,
+              "relationshipType": "TEST_VALUE",
+              "id": 28,
+              "beginOffset": 320,
+              "endOffset": 324,
+              "text": "25.7",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 365,
+          "endOffset": 369,
+          "score": 0.9659969,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 365,
+          "endOffset": 379,
+          "score": 0.94622254,
+          "text": "skin reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68209803
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 431,
+          "endOffset": 435,
+          "score": 0.6460321,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 438,
+          "endOffset": 460,
+          "score": 0.94057494,
+          "text": "respiratory infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7201633
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5732494
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 462,
+          "endOffset": 466,
+          "score": 0.9972645,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8985267
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 468,
+          "endOffset": 474,
+          "score": 0.9960452,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79677916
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 521,
+          "endOffset": 525,
+          "score": 0.9970694,
+          "text": "face",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 527,
+          "endOffset": 535,
+          "score": 0.997408,
+          "text": "forehead",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 543,
+          "endOffset": 547,
+          "score": 0.99214387,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 549,
+          "endOffset": 553,
+          "score": 0.892212,
+          "text": "Nail",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 558,
+          "endOffset": 562,
+          "score": 0.86766773,
+          "text": "hair",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 29,
+          "beginOffset": 634,
+          "endOffset": 639,
+          "score": 0.30874497,
+          "text": "Tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 30,
+          "beginOffset": 642,
+          "endOffset": 651,
+          "score": 0.99726605,
+          "text": "Phosphate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99460816,
+              "relationshipScore": 0.9999851,
+              "relationshipType": "TEST_VALUE",
+              "id": 31,
+              "beginOffset": 653,
+              "endOffset": 656,
+              "text": "4.5",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9989378,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "TEST_UNIT",
+              "id": 32,
+              "beginOffset": 657,
+              "endOffset": 662,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "beginOffset": 664,
+          "endOffset": 677,
+          "score": 0.99701583,
+          "text": "blood lactate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99916947,
+              "relationshipScore": 0.9999869,
+              "relationshipType": "TEST_VALUE",
+              "id": 34,
+              "beginOffset": 679,
+              "endOffset": 683,
+              "text": "11.4",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9966325,
+              "relationshipScore": 0.9984188,
+              "relationshipType": "TEST_UNIT",
+              "id": 35,
+              "beginOffset": 684,
+              "endOffset": 690,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "beginOffset": 693,
+          "endOffset": 703,
+          "score": 0.33368447,
+          "text": "Laboratory",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 37,
+          "beginOffset": 714,
+          "endOffset": 725,
+          "score": 0.99418503,
+          "text": "Phosphorate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9967939,
+              "relationshipScore": 0.9998863,
+              "relationshipType": "TEST_VALUE",
+              "id": 38,
+              "beginOffset": 727,
+              "endOffset": 730,
+              "text": "4.5",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9990073,
+              "relationshipScore": 0.999907,
+              "relationshipType": "TEST_UNIT",
+              "id": 39,
+              "beginOffset": 731,
+              "endOffset": 736,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "beginOffset": 738,
+          "endOffset": 751,
+          "score": 0.9965682,
+          "text": "blood lactate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9977956,
+              "relationshipScore": 0.99961215,
+              "relationshipType": "TEST_VALUE",
+              "id": 41,
+              "beginOffset": 753,
+              "endOffset": 757,
+              "text": "11.4",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9898387,
+              "relationshipScore": 0.9801887,
+              "relationshipType": "TEST_UNIT",
+              "id": 42,
+              "beginOffset": 758,
+              "endOffset": 764,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 872,
+          "endOffset": 881,
+          "score": 0.8331201,
+          "text": "poisoning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69243765
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 887,
+          "endOffset": 895,
+          "score": 0.9885324,
+          "text": "benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9882544,
+            "id": 0,
+            "beginOffset": 39,
+            "endOffset": 44,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.77689016,
+            "id": 2,
+            "beginOffset": 51,
+            "endOffset": 60,
+            "text": "left side",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.78081363,
+            "id": 6,
+            "beginOffset": 512,
+            "endOffset": 516,
+            "text": "over",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9947942,
+            "id": 9,
+            "beginOffset": 537,
+            "endOffset": 542,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "41a3f8de-d9d4-4e8d-b593-0aa70065a608"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "41a3f8de-d9d4-4e8d-b593-0aa70065a608"
+          ],
+          "Content-Length": [
+            "8864"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8864",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:27 GMT",
+          "x-amzn-RequestId": "41a3f8de-d9d4-4e8d-b593-0aa70065a608"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1884,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "text": "chipped",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.591102,
+          "beginOffset": 81,
+          "endOffset": 88,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.77689016,
+              "relationshipScore": 0.7108054,
+              "id": 2,
+              "beginOffset": 51,
+              "endOffset": 60,
+              "text": "left side",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98767674,
+              "relationshipScore": 0.9582558,
+              "id": 3,
+              "beginOffset": 67,
+              "endOffset": 71,
+              "text": "neck",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88968766,
+              "relationshipScore": 0.9998357,
+              "id": 4,
+              "beginOffset": 73,
+              "endOffset": 77,
+              "text": "Nail",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40925708
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Corrosion of second degree of chin",
+              "code": "T20.63",
+              "score": 0.32976887
+            },
+            {
+              "description": "Corrosion of third degree of chin",
+              "code": "T20.73",
+              "score": 0.2835657
+            },
+            {
+              "description": "Maternal care for face, brow and chin presentation",
+              "code": "O32.3",
+              "score": 0.21825486
+            },
+            {
+              "description": "Corrosion of unspecified degree of chin",
+              "code": "T20.43",
+              "score": 0.19626878
+            },
+            {
+              "description": "Unspecified injury of face",
+              "code": "S09.93",
+              "score": 0.19584611
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.46551263,
+          "beginOffset": 296,
+          "endOffset": 306,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42220968
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol dependence, uncomplicated",
+              "code": "F10.20",
+              "score": 0.6256606
+            },
+            {
+              "description": "Alcohol dependence, in remission",
+              "code": "F10.21",
+              "score": 0.57474786
+            },
+            {
+              "description": "Alcohol dependence with withdrawal, unspecified",
+              "code": "F10.239",
+              "score": 0.53511286
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.52217346
+            },
+            {
+              "description": "Alcohol abuse, in remission",
+              "code": "F10.11",
+              "score": 0.49067268
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "skin reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9462224,
+          "beginOffset": 365,
+          "endOffset": 379,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6820979
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.51127535
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.48820227
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.47303048
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.47104558
+            },
+            {
+              "description": "Other specified disorders of the skin and subcutaneous tissue",
+              "code": "L98.8",
+              "score": 0.41597456
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.646032,
+          "beginOffset": 431,
+          "endOffset": 435,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.7177107
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.64478827
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.6074269
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.5708366
+            },
+            {
+              "description": "Anesthesia of skin",
+              "code": "R20.0",
+              "score": 0.5586038
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "respiratory infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94057494,
+          "beginOffset": 438,
+          "endOffset": 460,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7201633
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5732494
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.58644474
+            },
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.5694568
+            },
+            {
+              "description": "Acidosis",
+              "code": "E87.2",
+              "score": 0.5137752
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.49815592
+            },
+            {
+              "description": "Alkalosis",
+              "code": "E87.3",
+              "score": 0.49576807
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9972645,
+          "beginOffset": 462,
+          "endOffset": 466,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8985267
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.6995277
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.5872774
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.47556484
+            },
+            {
+              "description": "Other chronic obstructive pulmonary disease",
+              "code": "J44",
+              "score": 0.41916198
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.41434073
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9960452,
+          "beginOffset": 468,
+          "endOffset": 474,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7967791
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.62640166
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.46320745
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.4293889
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.4279865
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.3942591
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "text": "poisoning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83312005,
+          "beginOffset": 872,
+          "endOffset": 881,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69243747
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ciguatera fish poisoning, accidental (unintentional)",
+              "code": "T61.01",
+              "score": 0.56285375
+            },
+            {
+              "description": "Scombroid fish poisoning, accidental (unintentional)",
+              "code": "T61.11",
+              "score": 0.53087515
+            },
+            {
+              "description": "Ciguatera fish poisoning, intentional self-harm",
+              "code": "T61.02",
+              "score": 0.5091738
+            },
+            {
+              "description": "Scombroid fish poisoning",
+              "code": "T61.1",
+              "score": 0.50409377
+            },
+            {
+              "description": "Scombroid fish poisoning, intentional self-harm",
+              "code": "T61.12",
+              "score": 0.5000961
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0d83f04e-2724-4a2d-9c29-e9fc95159ee5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0d83f04e-2724-4a2d-9c29-e9fc95159ee5"
+          ],
+          "Content-Length": [
+            "6385"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6385",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:30 GMT",
+          "x-amzn-RequestId": "0d83f04e-2724-4a2d-9c29-e9fc95159ee5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 940,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "benzethonium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.71822906,
+          "beginOffset": 203,
+          "endOffset": 215,
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.36073717,
+              "relationshipScore": 0.9999852,
+              "id": 1,
+              "beginOffset": 216,
+              "endOffset": 229,
+              "text": "aqueous cream",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Benzethonium",
+              "code": "1390",
+              "score": 0.88284975
+            },
+            {
+              "description": "Benzethonium Chloride 2 MG/ML Topical Cream",
+              "code": "1372490",
+              "score": 0.5571746
+            },
+            {
+              "description": "Benzethonium Chloride 2 MG/ML / Benzocaine 200 MG/ML Topical Cream",
+              "code": "1300294",
+              "score": 0.5551064
+            },
+            {
+              "description": "Benzethonium Chloride 2 MG/ML / Benzocaine 60 MG/ML Topical Cream",
+              "code": "1039168",
+              "score": 0.46481162
+            },
+            {
+              "description": "Benzethonium Chloride 1 MG/ML Topical Solution",
+              "code": "1049094",
+              "score": 0.07210925
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.9885324,
+          "beginOffset": 887,
+          "endOffset": 895,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Benadryl",
+              "code": "203457",
+              "score": 0.9437768
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Tablet [Benadryl]",
+              "code": "1049632",
+              "score": 0.7401185
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Capsule [Benadryl]",
+              "code": "1049910",
+              "score": 0.5568911
+            },
+            {
+              "description": "Vetadryl",
+              "code": "1310476",
+              "score": 0.46938977
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 0.01 MG/MG Topical Gel [Benadryl]",
+              "code": "1049725",
+              "score": 0.11818677
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "38845b3f-ea9d-44c4-9896-f7ce6166074d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "38845b3f-ea9d-44c4-9896-f7ce6166074d"
+          ],
+          "Content-Length": [
+            "1616"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1616",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:27 GMT",
+          "x-amzn-RequestId": "38845b3f-ea9d-44c4-9896-f7ce6166074d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:30 PM"
+}

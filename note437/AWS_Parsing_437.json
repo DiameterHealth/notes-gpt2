@@ -1,0 +1,864 @@
+{
+  "note": ". The parent reports that the child has been experiencing persistent fever, sore throat, cough, sore eyes, and is coughing more aggressively. The parent reports difficulty falling asleep. The parent reports that the child has been experiencing the above symptoms on and off throughout the day and night. During the current week, the parent is concerned that the child\u0027s discomfort is not resolved and that the fever and sore throat persist, and is concerned that the child should be seen by a child physician.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 814,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 69,
+          "endOffset": 74,
+          "score": 0.9992461,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.950182
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9524812,
+              "relationshipScore": 0.9977204,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 58,
+              "endOffset": 68,
+              "text": "persistent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 76,
+          "endOffset": 87,
+          "score": 0.77789646,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9686543
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 81,
+          "endOffset": 87,
+          "score": 0.98265564,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 89,
+          "endOffset": 94,
+          "score": 0.99816304,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9712511
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 96,
+          "endOffset": 105,
+          "score": 0.68865603,
+          "text": "sore eyes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94723284
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 101,
+          "endOffset": 105,
+          "score": 0.949934,
+          "text": "eyes",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 114,
+          "endOffset": 122,
+          "score": 0.8948725,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8829334
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 161,
+          "endOffset": 186,
+          "score": 0.8711877,
+          "text": "difficulty falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93236303
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 304,
+          "endOffset": 314,
+          "score": 0.500022,
+          "text": "During the",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9762442,
+              "relationshipScore": 0.5044549,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 410,
+              "endOffset": 415,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.89020514
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 304,
+          "endOffset": 314,
+          "score": 0.500022,
+          "text": "During the",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.72767687,
+              "relationshipScore": 0.55603397,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 420,
+              "endOffset": 431,
+              "text": "sore throat",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.895373
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 304,
+          "endOffset": 314,
+          "score": 0.500022,
+          "text": "During the",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8958454,
+              "relationshipScore": 0.8430158,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 370,
+              "endOffset": 380,
+              "text": "discomfort",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.83162475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 315,
+          "endOffset": 327,
+          "score": 0.96769404,
+          "text": "current week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8958454,
+              "relationshipScore": 0.7394997,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 370,
+              "endOffset": 380,
+              "text": "discomfort",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.83162475
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 370,
+          "endOffset": 380,
+          "score": 0.8958454,
+          "text": "discomfort",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83162475
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 410,
+          "endOffset": 415,
+          "score": 0.9762442,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89020514
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 420,
+          "endOffset": 431,
+          "score": 0.72767687,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.895373
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.473481,
+              "relationshipScore": 0.9985543,
+              "relationshipType": "ACUITY",
+              "id": 13,
+              "beginOffset": 432,
+              "endOffset": 439,
+              "text": "persist",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 425,
+          "endOffset": 431,
+          "score": 0.9748044,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9524812,
+            "id": 3,
+            "beginOffset": 58,
+            "endOffset": 68,
+            "text": "persistent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.473481,
+            "id": 13,
+            "beginOffset": 432,
+            "endOffset": 439,
+            "text": "persist",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "473da4c0-bd7c-456c-9e2f-8a048e87c2f8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "473da4c0-bd7c-456c-9e2f-8a048e87c2f8"
+          ],
+          "Content-Length": [
+            "4817"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4817",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:35 GMT",
+          "x-amzn-RequestId": "473da4c0-bd7c-456c-9e2f-8a048e87c2f8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 907,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9992461,
+          "beginOffset": 69,
+          "endOffset": 74,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9524812,
+              "relationshipScore": 0.9977204,
+              "id": 0,
+              "beginOffset": 58,
+              "endOffset": 68,
+              "text": "persistent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.950182
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.68380386
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.41074947
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.40203923
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.38368732
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.36765838
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77789646,
+          "beginOffset": 76,
+          "endOffset": 87,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.96865416
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.7842201
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.50835747
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.49814144
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.49153563
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.49055833
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99816304,
+          "beginOffset": 89,
+          "endOffset": 94,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9712511
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.7907565
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5194013
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.50438356
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.4769564
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.44282493
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "sore eyes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6886562,
+          "beginOffset": 96,
+          "endOffset": 105,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94723284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.57894033
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.4454879
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.4186248
+            },
+            {
+              "description": "Ocular pain, bilateral",
+              "code": "H57.13",
+              "score": 0.41171485
+            },
+            {
+              "description": "Pain in left hand",
+              "code": "M79.642",
+              "score": 0.41004217
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89487237,
+          "beginOffset": 114,
+          "endOffset": 122,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8829334
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8019944
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.59969366
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.57147187
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.54871035
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.50306344
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "difficulty falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8711877,
+          "beginOffset": 161,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93236303
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.569898
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.511725
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.5002101
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.4936889
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.4315467
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "discomfort",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8958454,
+          "beginOffset": 370,
+          "endOffset": 380,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83162475
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.5490996
+            },
+            {
+              "description": "Pain in left leg",
+              "code": "M79.605",
+              "score": 0.4420227
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.42251053
+            },
+            {
+              "description": "Pain in unspecified shoulder",
+              "code": "M25.519",
+              "score": 0.4114379
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.41046816
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9762442,
+          "beginOffset": 410,
+          "endOffset": 415,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89020514
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6167228
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.39247096
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.3631683
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.36048034
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.31633994
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72767687,
+          "beginOffset": 420,
+          "endOffset": 431,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.473481,
+              "relationshipScore": 0.9985543,
+              "id": 13,
+              "beginOffset": 432,
+              "endOffset": 439,
+              "text": "persist",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.895373
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.63105637
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.39112464
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.38229272
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.37888697
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.3425758
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8b4a5a80-ff30-4747-bde1-28fe35a84910"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8b4a5a80-ff30-4747-bde1-28fe35a84910"
+          ],
+          "Content-Length": [
+            "6235"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6235",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:36 GMT",
+          "x-amzn-RequestId": "8b4a5a80-ff30-4747-bde1-28fe35a84910"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b66ecfdc-0d85-4988-855e-c3199072ade8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b66ecfdc-0d85-4988-855e-c3199072ade8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:35 GMT",
+          "x-amzn-RequestId": "b66ecfdc-0d85-4988-855e-c3199072ade8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:36 PM"
+}

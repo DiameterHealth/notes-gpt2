@@ -1,0 +1,217 @@
+{
+  "note": "only. If possible, use with a physician on the same plan. Continue treatment as directed regardless of the above medications. For more information about a cardiac medications regimen for a heart transplant, see Transfusion Medicine. Cardiovascular Disease  Assessment / Plan: Refer to cardiologist for additional monitoring. Continue on current medications only. If possible, use with a physician on the same plan.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 287,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 155,
+          "endOffset": 174,
+          "score": 0.9210436,
+          "text": "cardiac medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 189,
+          "endOffset": 194,
+          "score": 0.9233997,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 189,
+          "endOffset": 205,
+          "score": 0.85604084,
+          "text": "heart transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 211,
+          "endOffset": 222,
+          "score": 0.21324527,
+          "text": "Transfusion",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 233,
+          "endOffset": 255,
+          "score": 0.663766,
+          "text": "Cardiovascular Disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9147524
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7430b905-0b36-45e5-a807-fdff610ea1e1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7430b905-0b36-45e5-a807-fdff610ea1e1"
+          ],
+          "Content-Length": [
+            "924"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "924",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:45 GMT",
+          "x-amzn-RequestId": "7430b905-0b36-45e5-a807-fdff610ea1e1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 370,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "Cardiovascular Disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.66376626,
+          "beginOffset": 233,
+          "endOffset": 255,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9147524
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.78336245
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.6648135
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.6545802
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6430224
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.63733035
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8bf3ee9e-6821-4011-9115-c61c9ecf23e4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8bf3ee9e-6821-4011-9115-c61c9ecf23e4"
+          ],
+          "Content-Length": [
+            "869"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "869",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:46 GMT",
+          "x-amzn-RequestId": "8bf3ee9e-6821-4011-9115-c61c9ecf23e4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 196,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75104e78-f2d5-4bfb-950e-a9a880267410"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75104e78-f2d5-4bfb-950e-a9a880267410"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:46 GMT",
+          "x-amzn-RequestId": "75104e78-f2d5-4bfb-950e-a9a880267410"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:46 PM"
+}

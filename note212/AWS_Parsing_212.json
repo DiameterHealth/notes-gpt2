@@ -1,0 +1,989 @@
+{
+  "note": ", and return to work. Patient\u0027s condition remains stable. Discharge Information: Patient scheduled for discharge at 4:30 p.m. Subject, in stable condition in nursing home. Date of Death: 5/20/2008. Age at Death: 82  Location of Death: Unknown  Cause of Death: Acute myocardial infarction  Primary Disclosures: Medical history as follows: Acute myocardial infarction 9/23/1988; Acute pancreatitis 7/18/1989; Acute pancreatitis 10/21/1989.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 819,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 180,
+          "endOffset": 185,
+          "score": 0.7596179,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77629155
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 187,
+          "endOffset": 196,
+          "score": 0.999974,
+          "text": "5/20/2008",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 187,
+          "endOffset": 196,
+          "score": 0.99999285,
+          "text": "5/20/2008",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7596179,
+              "relationshipScore": 0.7648234,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 180,
+              "endOffset": 185,
+              "text": "Death",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.77629155
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 205,
+          "endOffset": 210,
+          "score": 0.5300591,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4793228
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 212,
+          "endOffset": 214,
+          "score": 0.97211087,
+          "text": "82",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 228,
+          "endOffset": 233,
+          "score": 0.89709693,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8998944
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 253,
+          "endOffset": 258,
+          "score": 0.9686628,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94538486
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 266,
+          "endOffset": 287,
+          "score": 0.9573063,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95565873
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.41570354,
+              "relationshipScore": 0.997255,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 260,
+              "endOffset": 265,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 344,
+          "endOffset": 365,
+          "score": 0.9356135,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.952401
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4105443,
+              "relationshipScore": 0.9998217,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 338,
+              "endOffset": 343,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 366,
+          "endOffset": 375,
+          "score": 0.9999976,
+          "text": "9/23/1988",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 366,
+          "endOffset": 375,
+          "score": 0.99999475,
+          "text": "9/23/1988",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9356135,
+              "relationshipScore": 0.7978193,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 344,
+              "endOffset": 365,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.952401
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 383,
+          "endOffset": 395,
+          "score": 0.9915264,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9607665
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.74130476,
+              "relationshipScore": 0.9999963,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 377,
+              "endOffset": 382,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 396,
+          "endOffset": 405,
+          "score": 0.999997,
+          "text": "7/18/1989",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 396,
+          "endOffset": 405,
+          "score": 0.99995255,
+          "text": "7/18/1989",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9356135,
+              "relationshipScore": 0.7112092,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 344,
+              "endOffset": 365,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.952401
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 396,
+          "endOffset": 405,
+          "score": 0.99995255,
+          "text": "7/18/1989",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9915264,
+              "relationshipScore": 0.8393794,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 383,
+              "endOffset": 395,
+              "text": "pancreatitis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9607665
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 396,
+          "endOffset": 405,
+          "score": 0.99995255,
+          "text": "7/18/1989",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98918915,
+              "relationshipScore": 0.694663,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 413,
+              "endOffset": 425,
+              "text": "pancreatitis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9529198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 413,
+          "endOffset": 425,
+          "score": 0.98918915,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9529198
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.75818616,
+              "relationshipScore": 0.99999666,
+              "relationshipType": "ACUITY",
+              "id": 10,
+              "beginOffset": 407,
+              "endOffset": 412,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 426,
+          "endOffset": 436,
+          "score": 0.99997103,
+          "text": "10/21/1989",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 426,
+          "endOffset": 436,
+          "score": 0.9999058,
+          "text": "10/21/1989",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9915264,
+              "relationshipScore": 0.7577982,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 383,
+              "endOffset": 395,
+              "text": "pancreatitis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9607665
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 426,
+          "endOffset": 436,
+          "score": 0.9999058,
+          "text": "10/21/1989",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98918915,
+              "relationshipScore": 0.84042686,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 413,
+              "endOffset": 425,
+              "text": "pancreatitis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9529198
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.41570354,
+            "id": 4,
+            "beginOffset": 260,
+            "endOffset": 265,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.4105443,
+            "id": 6,
+            "beginOffset": 338,
+            "endOffset": 343,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.74130476,
+            "id": 8,
+            "beginOffset": 377,
+            "endOffset": 382,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.75818616,
+            "id": 10,
+            "beginOffset": 407,
+            "endOffset": 412,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bf60eda5-d4eb-4792-b3e8-14c7ff376a5a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bf60eda5-d4eb-4792-b3e8-14c7ff376a5a"
+          ],
+          "Content-Length": [
+            "7150"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7150",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:39 GMT",
+          "x-amzn-RequestId": "bf60eda5-d4eb-4792-b3e8-14c7ff376a5a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1007,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7596179,
+          "beginOffset": 180,
+          "endOffset": 185,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77629155
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.7996507
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.70907056
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.67828137
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.63653123
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.55862135
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53005904,
+          "beginOffset": 205,
+          "endOffset": 210,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47932267
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.7932317
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.7191466
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.672199
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6188742
+            },
+            {
+              "description": "Family history of sudden cardiac death",
+              "code": "Z82.41",
+              "score": 0.55867976
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89709693,
+          "beginOffset": 228,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8998944
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.75620735
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.66709656
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.62409395
+            },
+            {
+              "description": "Family history of sudden cardiac death",
+              "code": "Z82.41",
+              "score": 0.5186749
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.5124971
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9686628,
+          "beginOffset": 253,
+          "endOffset": 258,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94538486
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.7208628
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.6330594
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.5940625
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5594466
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.4763669
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9573063,
+          "beginOffset": 266,
+          "endOffset": 287,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.41570354,
+              "relationshipScore": 0.997255,
+              "id": 4,
+              "beginOffset": 260,
+              "endOffset": 265,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95565873
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7283378
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7186333
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6280237
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.6109475
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.60892224
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9356135,
+          "beginOffset": 344,
+          "endOffset": 365,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4105443,
+              "relationshipScore": 0.9998217,
+              "id": 6,
+              "beginOffset": 338,
+              "endOffset": 343,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.952401
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7473035
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.73471314
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6538284
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6354867
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.63463557
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9915264,
+          "beginOffset": 383,
+          "endOffset": 395,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.74130476,
+              "relationshipScore": 0.9999963,
+              "id": 8,
+              "beginOffset": 377,
+              "endOffset": 382,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9607665
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pancreatitis without necrosis or infection, unspecified",
+              "code": "K85.90",
+              "score": 0.7146343
+            },
+            {
+              "description": "Other chronic pancreatitis",
+              "code": "K86.1",
+              "score": 0.565059
+            },
+            {
+              "description": "Acute pancreatitis, unspecified",
+              "code": "K85.9",
+              "score": 0.56296486
+            },
+            {
+              "description": "Biliary acute pancreatitis without necrosis or infection",
+              "code": "K85.10",
+              "score": 0.45398974
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.368995
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98918915,
+          "beginOffset": 413,
+          "endOffset": 425,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7581859,
+              "relationshipScore": 0.99999666,
+              "id": 10,
+              "beginOffset": 407,
+              "endOffset": 412,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9529198
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pancreatitis without necrosis or infection, unspecified",
+              "code": "K85.90",
+              "score": 0.71127576
+            },
+            {
+              "description": "Other chronic pancreatitis",
+              "code": "K86.1",
+              "score": 0.56415445
+            },
+            {
+              "description": "Acute pancreatitis, unspecified",
+              "code": "K85.9",
+              "score": 0.5574287
+            },
+            {
+              "description": "Biliary acute pancreatitis without necrosis or infection",
+              "code": "K85.10",
+              "score": 0.44376186
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.3617879
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "14de265c-8144-4d44-bca4-6a94816cc377"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "14de265c-8144-4d44-bca4-6a94816cc377"
+          ],
+          "Content-Length": [
+            "6590"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6590",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:40 GMT",
+          "x-amzn-RequestId": "14de265c-8144-4d44-bca4-6a94816cc377"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5cd09802-739e-4031-95a8-739e32f3ba3f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5cd09802-739e-4031-95a8-739e32f3ba3f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:40 GMT",
+          "x-amzn-RequestId": "5cd09802-739e-4031-95a8-739e32f3ba3f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:41 PM"
+}

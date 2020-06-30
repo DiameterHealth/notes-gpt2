@@ -1,0 +1,342 @@
+{
+  "note": "********  I see and am able to make out the outlines of the object, although a very faint one at this distance. When the object is near enough to the eye it becomes more vivid. I have frequently seen the object surrounded by a brilliant light; this was a white glare, like that produced by the glare of lightning. This phenomenon was always produced by a flash from some concealed source and never at a distance of more than 2 ft., when the object being seen at some distance from the eye appears white and opaque.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 433,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 84,
+          "endOffset": 89,
+          "score": 0.3738223,
+          "text": "faint",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 150,
+          "endOffset": 153,
+          "score": 0.8869131,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 170,
+          "endOffset": 175,
+          "score": 0.5855293,
+          "text": "vivid",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43544406
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8869131,
+              "relationshipScore": 0.5083082,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 150,
+              "endOffset": 153,
+              "text": "eye",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 294,
+          "endOffset": 312,
+          "score": 0.32232553,
+          "text": "glare of lightning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.60302556
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 485,
+          "endOffset": 488,
+          "score": 0.97426355,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 507,
+          "endOffset": 513,
+          "score": 0.747554,
+          "text": "opaque",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.43875316
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97426355,
+              "relationshipScore": 0.99840957,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 485,
+              "endOffset": 488,
+              "text": "eye",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7185e6a2-8cd8-4678-b6ee-01961ed2d038"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7185e6a2-8cd8-4678-b6ee-01961ed2d038"
+          ],
+          "Content-Length": [
+            "1546"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1546",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:52 GMT",
+          "x-amzn-RequestId": "7185e6a2-8cd8-4678-b6ee-01961ed2d038"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 593,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "faint",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37382215,
+          "beginOffset": 84,
+          "endOffset": 89,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.69778776
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.67788434
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.64145976
+            },
+            {
+              "description": "Fall from, out of or through window",
+              "code": "W13.4",
+              "score": 0.59663326
+            },
+            {
+              "description": "Contusion of other part of head",
+              "code": "S00.83",
+              "score": 0.59635955
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "glare of lightning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.32232553,
+          "beginOffset": 294,
+          "endOffset": 312,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6030257
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.799639
+            },
+            {
+              "description": "Disorders of diaphragm",
+              "code": "J98.6",
+              "score": 0.78246456
+            },
+            {
+              "description": "Disorder of ligament, unspecified site",
+              "code": "M24.20",
+              "score": 0.7589376
+            },
+            {
+              "description": "Unspecified effects of lightning",
+              "code": "T75.00",
+              "score": 0.71330225
+            },
+            {
+              "description": "Disorder of breast, unspecified",
+              "code": "N64.9",
+              "score": 0.70809156
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "opaque",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.747554,
+          "beginOffset": 507,
+          "endOffset": 513,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97426355,
+              "relationshipScore": 0.99840957,
+              "id": 4,
+              "beginOffset": 485,
+              "endOffset": 488,
+              "text": "eye",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.43875292
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other congenital malformations of posterior segment of eye",
+              "code": "Q14.8",
+              "score": 0.34073716
+            },
+            {
+              "description": "Other congenital lens malformations",
+              "code": "Q12.8",
+              "score": 0.29172948
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1962757-eb96-4a3e-80c6-8fea9f328142"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1962757-eb96-4a3e-80c6-8fea9f328142"
+          ],
+          "Content-Length": [
+            "1949"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1949",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:53 GMT",
+          "x-amzn-RequestId": "b1962757-eb96-4a3e-80c6-8fea9f328142"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 270,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dbef685e-c8a3-463a-8ec0-edfd38a0c3c9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dbef685e-c8a3-463a-8ec0-edfd38a0c3c9"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:52 GMT",
+          "x-amzn-RequestId": "dbef685e-c8a3-463a-8ec0-edfd38a0c3c9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:54 PM"
+}

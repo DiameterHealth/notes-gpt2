@@ -1,0 +1,332 @@
+{
+  "note": "(CABG) surgery, asthma and bronchitis. No current substance abuse. EDITED ENGLISH VERSION: DHEA is an anabolic steroid, an antagonist of the DHEA uptake transporters which allow uptake of dihydrotestosterone into the liver. Since the DHEA transporter is found in the brain and peripheral tissues, DHEA can influence central and peripheral nervous system function and the immune response of athletes and non-athletes respectively.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 331,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 1,
+          "endOffset": 5,
+          "score": 0.8866132,
+          "text": "CABG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 7,
+          "endOffset": 14,
+          "score": 0.84924185,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 16,
+          "endOffset": 22,
+          "score": 0.98780674,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9479791
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 27,
+          "endOffset": 37,
+          "score": 0.9953401,
+          "text": "bronchitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95224684
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 102,
+          "endOffset": 118,
+          "score": 0.80859596,
+          "text": "anabolic steroid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 188,
+          "endOffset": 207,
+          "score": 0.36887085,
+          "text": "dihydrotestosterone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 217,
+          "endOffset": 222,
+          "score": 0.66201115,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 267,
+          "endOffset": 272,
+          "score": 0.93297106,
+          "text": "brain",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 288,
+          "endOffset": 295,
+          "score": 0.46387583,
+          "text": "tissues",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.43561625,
+            "id": 2,
+            "beginOffset": 277,
+            "endOffset": 287,
+            "text": "peripheral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.4205096,
+            "id": 4,
+            "beginOffset": 328,
+            "endOffset": 338,
+            "text": "peripheral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c30865f-ef25-48b6-86d7-cf990d0ecb23"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c30865f-ef25-48b6-86d7-cf990d0ecb23"
+          ],
+          "Content-Length": [
+            "1870"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1870",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:24 GMT",
+          "x-amzn-RequestId": "0c30865f-ef25-48b6-86d7-cf990d0ecb23"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 472,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98780674,
+          "beginOffset": 16,
+          "endOffset": 22,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9479791
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7328071
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.58115876
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.5113284
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.47595543
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.44928464
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bronchitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9953401,
+          "beginOffset": 27,
+          "endOffset": 37,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95224684
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bronchitis, not specified as acute or chronic",
+              "code": "J40",
+              "score": 0.78971934
+            },
+            {
+              "description": "Acute bronchitis, unspecified",
+              "code": "J20.9",
+              "score": 0.65759265
+            },
+            {
+              "description": "Bronchitis and pneumonitis due to chemicals, gases, fumes and vapors",
+              "code": "J68.0",
+              "score": 0.6533601
+            },
+            {
+              "description": "Unspecified chronic bronchitis",
+              "code": "J42",
+              "score": 0.63797945
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.61489266
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3033cb55-f415-4cce-9b8e-2ac4d3ea3e1a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3033cb55-f415-4cce-9b8e-2ac4d3ea3e1a"
+          ],
+          "Content-Length": [
+            "1492"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1492",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:25 GMT",
+          "x-amzn-RequestId": "3033cb55-f415-4cce-9b8e-2ac4d3ea3e1a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 240,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "72db0413-273a-45fe-b9bf-18e38eb2b3a4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "72db0413-273a-45fe-b9bf-18e38eb2b3a4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:24 GMT",
+          "x-amzn-RequestId": "72db0413-273a-45fe-b9bf-18e38eb2b3a4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:25 PM"
+}

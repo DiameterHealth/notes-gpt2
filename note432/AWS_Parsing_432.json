@@ -1,0 +1,585 @@
+{
+  "note": ". A chest x-ray shows a large pulmonary embolism. Is he likely to need transplant and is there a chance the cancer returns. A\u0026E  Patient presents with fever, sore throat and headache, may have been a case of chikungunya. Is he likely to need transplant. Has he been sick recently? I think not. He had a minor stroke 3 years ago and was in and out of hospital.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 671,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 9,
+          "score": 0.96995956,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 4,
+          "endOffset": 15,
+          "score": 0.91715914,
+          "text": "chest x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.74024004,
+              "relationshipScore": 0.99999654,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 24,
+              "endOffset": 48,
+              "text": "large pulmonary embolism",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 30,
+          "endOffset": 48,
+          "score": 0.9631058,
+          "text": "pulmonary embolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95867765
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96995956,
+              "relationshipScore": 0.7208415,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 4,
+              "endOffset": 9,
+              "text": "chest",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 71,
+          "endOffset": 81,
+          "score": 0.9069192,
+          "text": "transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 108,
+          "endOffset": 114,
+          "score": 0.9189572,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.917904
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 151,
+          "endOffset": 156,
+          "score": 0.99376726,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84635603
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 158,
+          "endOffset": 169,
+          "score": 0.76355463,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88319266
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 163,
+          "endOffset": 169,
+          "score": 0.98783,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 174,
+          "endOffset": 182,
+          "score": 0.99883443,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7588561
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 242,
+          "endOffset": 252,
+          "score": 0.8970069,
+          "text": "transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 309,
+          "endOffset": 315,
+          "score": 0.97950625,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.905699
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 316,
+          "endOffset": 327,
+          "score": 0.9988973,
+          "text": "3 years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97950625,
+              "relationshipScore": 0.9558831,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 309,
+              "endOffset": 315,
+              "text": "stroke",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.905699
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ce5262d9-6432-4e46-9ddd-84e5cc0b4ed8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ce5262d9-6432-4e46-9ddd-84e5cc0b4ed8"
+          ],
+          "Content-Length": [
+            "2921"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2921",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:24 GMT",
+          "x-amzn-RequestId": "ce5262d9-6432-4e46-9ddd-84e5cc0b4ed8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 555,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "pulmonary embolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9631058,
+          "beginOffset": 30,
+          "endOffset": 48,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96995956,
+              "relationshipScore": 0.7208415,
+              "id": 0,
+              "beginOffset": 4,
+              "endOffset": 9,
+              "text": "chest",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95867765
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other pulmonary embolism without acute cor pulmonale",
+              "code": "I26.99",
+              "score": 0.8577999
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.7787573
+            },
+            {
+              "description": "Pulmonary embolism without acute cor pulmonale",
+              "code": "I26.9",
+              "score": 0.7157818
+            },
+            {
+              "description": "Other pulmonary embolism with acute cor pulmonale",
+              "code": "I26.09",
+              "score": 0.7153452
+            },
+            {
+              "description": "Septic pulmonary embolism without acute cor pulmonale",
+              "code": "I26.90",
+              "score": 0.63630795
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9189572,
+          "beginOffset": 108,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.917904
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.6393969
+            },
+            {
+              "description": "Malignant neoplasm of unspecified part of unspecified bronchus or lung",
+              "code": "C34.90",
+              "score": 0.6338435
+            },
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.6318316
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.62561417
+            },
+            {
+              "description": "Personal history of malignant neoplasm, unspecified",
+              "code": "Z85.9",
+              "score": 0.59549975
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99376726,
+          "beginOffset": 151,
+          "endOffset": 156,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84635603
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7899641
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5398732
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4697417
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.461938
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.43644547
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7635547,
+          "beginOffset": 158,
+          "endOffset": 169,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88319266
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.81543404
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.5787747
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.57382876
+            },
+            {
+              "description": "Gonococcal pharyngitis",
+              "code": "A54.5",
+              "score": 0.5369005
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.5274406
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99883443,
+          "beginOffset": 174,
+          "endOffset": 182,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7588561
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.70405376
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.47311825
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.45503202
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.4326651
+            },
+            {
+              "description": "Myalgia, unspecified site",
+              "code": "M79.10",
+              "score": 0.38992384
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97950625,
+          "beginOffset": 309,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.905699
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.8225334
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7523101
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.65953976
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.63658166
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.62947494
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4d1a54ad-f7f8-40c9-bf6c-f797b9a1934d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4d1a54ad-f7f8-40c9-bf6c-f797b9a1934d"
+          ],
+          "Content-Length": [
+            "4570"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4570",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:25 GMT",
+          "x-amzn-RequestId": "4d1a54ad-f7f8-40c9-bf6c-f797b9a1934d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed994e7b-b710-4801-b472-54f0e6c46ece"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed994e7b-b710-4801-b472-54f0e6c46ece"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:25 GMT",
+          "x-amzn-RequestId": "ed994e7b-b710-4801-b472-54f0e6c46ece"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:26 PM"
+}

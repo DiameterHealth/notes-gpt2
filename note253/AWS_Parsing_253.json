@@ -1,0 +1,490 @@
+{
+  "note": ".  Routine Care (RCC) - If needed, call the family physician and schedule an RCC appointment. Fever or Infection: Call your physician as soon as you may think about fever or infection. If fever does not improve after three days, you should call your physician for a second opinion. However, if the fever is not improving within 7 days from the first visit, a second opinion isn\u0027t necessary.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 245,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 17,
+          "endOffset": 20,
+          "score": 0.43385512,
+          "text": "RCC",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49161538
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "score": 0.9396178,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71354574
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 103,
+          "endOffset": 112,
+          "score": 0.97829586,
+          "text": "Infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.51038295
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45236
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 165,
+          "endOffset": 170,
+          "score": 0.9902907,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8240317
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 174,
+          "endOffset": 183,
+          "score": 0.9950611,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71663016
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 188,
+          "endOffset": 193,
+          "score": 0.9712421,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79199773
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 298,
+          "endOffset": 303,
+          "score": 0.97342026,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6505602
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c50dbd5-c714-4f6a-a75e-a253bea150fd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c50dbd5-c714-4f6a-a75e-a253bea150fd"
+          ],
+          "Content-Length": [
+            "1442"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1442",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:40 GMT",
+          "x-amzn-RequestId": "6c50dbd5-c714-4f6a-a75e-a253bea150fd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 424,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93961793,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71354586
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6680606
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.38790777
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.33002117
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.31909233
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.28921545
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97829574,
+          "beginOffset": 103,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.510383
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45235988
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.6683294
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.62871283
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.5795819
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.57554513
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.5653864
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9902907,
+          "beginOffset": 165,
+          "endOffset": 170,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8240317
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8008176
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.55265146
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.49054918
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.46944183
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.458956
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9950611,
+          "beginOffset": 174,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7166302
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.82997483
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.82309836
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7710048
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.75075686
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.74345255
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9712421,
+          "beginOffset": 188,
+          "endOffset": 193,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.79199773
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.82618153
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.56991017
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.52400637
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.5008871
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.49289984
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97342026,
+          "beginOffset": 298,
+          "endOffset": 303,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65056026
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.794759
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5729348
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5055345
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.47903728
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.47793978
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e0ad0b84-29a3-4da7-a7e9-190f93272b51"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e0ad0b84-29a3-4da7-a7e9-190f93272b51"
+          ],
+          "Content-Length": [
+            "4140"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4140",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:41 GMT",
+          "x-amzn-RequestId": "e0ad0b84-29a3-4da7-a7e9-190f93272b51"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9ec9031a-c6c5-4e21-9c7f-acac0746adf7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9ec9031a-c6c5-4e21-9c7f-acac0746adf7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:40 GMT",
+          "x-amzn-RequestId": "9ec9031a-c6c5-4e21-9c7f-acac0746adf7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:41 PM"
+}

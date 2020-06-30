@@ -1,0 +1,607 @@
+{
+  "note": "when she raises her head. The patient is a registered nurse in a long-term care facility and has been in that position for 9 years. She is receiving treatment for diabetes and hypertension. She is unaware of any medical conditions. Her current medications are metformin 500mg q3h, lisinopril 250mg q3h, and clopidogrel 250mg q2h. The patient drinks 3 times a day; is physically active, and reports no other medications.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 485,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 20,
+          "endOffset": 24,
+          "score": 0.91828513,
+          "text": "head",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 43,
+          "endOffset": 59,
+          "score": 0.9751662,
+          "text": "registered nurse",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 163,
+          "endOffset": 171,
+          "score": 0.98607635,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9445699
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "score": 0.99922764,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9663695
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 260,
+          "endOffset": 269,
+          "score": 0.9998254,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9963069,
+              "relationshipScore": 0.9998654,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 270,
+              "endOffset": 275,
+              "text": "500mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99914837,
+              "relationshipScore": 0.9999622,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 276,
+              "endOffset": 279,
+              "text": "q3h",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 281,
+          "endOffset": 291,
+          "score": 0.9998222,
+          "text": "lisinopril",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9976882,
+              "relationshipScore": 0.9999523,
+              "relationshipType": "DOSAGE",
+              "id": 5,
+              "beginOffset": 292,
+              "endOffset": 297,
+              "text": "250mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9974376,
+              "relationshipScore": 0.99996936,
+              "relationshipType": "FREQUENCY",
+              "id": 6,
+              "beginOffset": 298,
+              "endOffset": 301,
+              "text": "q3h",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 307,
+          "endOffset": 318,
+          "score": 0.9995763,
+          "text": "clopidogrel",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.998268,
+              "relationshipScore": 0.99989104,
+              "relationshipType": "DOSAGE",
+              "id": 8,
+              "beginOffset": 319,
+              "endOffset": 324,
+              "text": "250mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99799216,
+              "relationshipScore": 0.99995196,
+              "relationshipType": "FREQUENCY",
+              "id": 9,
+              "beginOffset": 325,
+              "endOffset": 328,
+              "text": "q2h",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 367,
+          "endOffset": 384,
+          "score": 0.74791896,
+          "text": "physically active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4368083
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.44243
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "de679ca6-3e96-485c-80bd-fba30a7ba7a3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "de679ca6-3e96-485c-80bd-fba30a7ba7a3"
+          ],
+          "Content-Length": [
+            "2735"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2735",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:45 GMT",
+          "x-amzn-RequestId": "de679ca6-3e96-485c-80bd-fba30a7ba7a3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 415,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98607635,
+          "beginOffset": 163,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9445699
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8449293
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7750026
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.75882566
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.74762213
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7245571
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99922764,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9663695
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8553196
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.77765054
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7451194
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7181323
+            },
+            {
+              "description": "Hypertension secondary to endocrine disorders",
+              "code": "I15.2",
+              "score": 0.7098438
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "physically active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.74791896,
+          "beginOffset": 367,
+          "endOffset": 384,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.43680838
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.44243
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8442034
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.7853808
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.76318693
+            },
+            {
+              "description": "Other malaise",
+              "code": "R53.81",
+              "score": 0.7542349
+            },
+            {
+              "description": "Physical restraint status",
+              "code": "Z78.1",
+              "score": 0.7402511
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "983af7b8-b710-4102-9e0a-ddc1265a2efa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "983af7b8-b710-4102-9e0a-ddc1265a2efa"
+          ],
+          "Content-Length": [
+            "2345"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2345",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:46 GMT",
+          "x-amzn-RequestId": "983af7b8-b710-4102-9e0a-ddc1265a2efa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 890,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9998254,
+          "beginOffset": 260,
+          "endOffset": 269,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9963069,
+              "relationshipScore": 0.9998653,
+              "id": 1,
+              "beginOffset": 270,
+              "endOffset": 275,
+              "text": "500mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99914837,
+              "relationshipScore": 0.9999622,
+              "id": 2,
+              "beginOffset": 276,
+              "endOffset": 279,
+              "text": "q3h",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metformin hydrochloride 500 MG Oral Tablet",
+              "code": "861007",
+              "score": 0.9863283
+            },
+            {
+              "description": "Osmotic 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "1807917",
+              "score": 0.95951295
+            },
+            {
+              "description": "Metformin",
+              "code": "6809",
+              "score": 0.8972949
+            },
+            {
+              "description": "Modified 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "1807915",
+              "score": 0.82831436
+            },
+            {
+              "description": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "860975",
+              "score": 0.790181
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "lisinopril",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9998222,
+          "beginOffset": 281,
+          "endOffset": 291,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9976882,
+              "relationshipScore": 0.99995244,
+              "id": 4,
+              "beginOffset": 292,
+              "endOffset": 297,
+              "text": "250mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9974376,
+              "relationshipScore": 0.99996936,
+              "id": 5,
+              "beginOffset": 298,
+              "endOffset": 301,
+              "text": "q3h",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lisinopril",
+              "code": "29046",
+              "score": 0.8189292
+            },
+            {
+              "description": "Lisinopril 20 MG Oral Tablet",
+              "code": "314077",
+              "score": 0.09716037
+            },
+            {
+              "description": "Lisinopril 10 MG Oral Tablet",
+              "code": "314076",
+              "score": 0.010282554
+            },
+            {
+              "description": "Lisinopril 1 MG/ML Oral Solution",
+              "code": "1806884",
+              "score": 0.009665697
+            },
+            {
+              "description": "Lisinopril 5 MG Oral Tablet [Prinivil]",
+              "code": "206764",
+              "score": 0.006940948
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "clopidogrel",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9995763,
+          "beginOffset": 307,
+          "endOffset": 318,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.998268,
+              "relationshipScore": 0.99989104,
+              "id": 7,
+              "beginOffset": 319,
+              "endOffset": 324,
+              "text": "250mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99799216,
+              "relationshipScore": 0.99995196,
+              "id": 8,
+              "beginOffset": 325,
+              "endOffset": 328,
+              "text": "q2h",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "clopidogrel",
+              "code": "32968",
+              "score": 0.7776463
+            },
+            {
+              "description": "clopidogrel 75 MG Oral Tablet",
+              "code": "309362",
+              "score": 0.72583234
+            },
+            {
+              "description": "clopidogrel 300 MG Oral Tablet",
+              "code": "749196",
+              "score": 0.015890196
+            },
+            {
+              "description": "clopidogrel 75 MG Oral Tablet [Plavix]",
+              "code": "213169",
+              "score": 0.0074551515
+            },
+            {
+              "description": "clopidogrel 300 MG Oral Tablet [Plavix]",
+              "code": "749198",
+              "score": 0.0056952233
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "31ceaa85-fa5c-426d-ad65-c27e1aaae073"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "31ceaa85-fa5c-426d-ad65-c27e1aaae073"
+          ],
+          "Content-Length": [
+            "2983"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2983",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:45 GMT",
+          "x-amzn-RequestId": "31ceaa85-fa5c-426d-ad65-c27e1aaae073"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:46 PM"
+}

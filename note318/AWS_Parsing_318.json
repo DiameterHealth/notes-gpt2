@@ -1,0 +1,829 @@
+{
+  "note": ". The chest symptoms were noted as being present only after a short cold (4 days). On examination he had no previous chest symptoms. He states that he suffers from asthma and has been taking a combination of Benadryl and Tylenol for 10 days. The cold symptoms were noted before the shortness of breath. He states that at the time of the onset of the chest symptoms the patient was standing, and has no history of lung diseases.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 568,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 6,
+          "endOffset": 11,
+          "score": 0.97189957,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 6,
+          "endOffset": 20,
+          "score": 0.60140735,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75679284
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 62,
+          "endOffset": 72,
+          "score": 0.49586397,
+          "text": "short cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73171693
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 74,
+          "endOffset": 80,
+          "score": 0.50448817,
+          "text": "4 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.49586397,
+              "relationshipScore": 0.95675427,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 62,
+              "endOffset": 72,
+              "text": "short cold",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.73171693
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 117,
+          "endOffset": 122,
+          "score": 0.9722403,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 117,
+          "endOffset": 131,
+          "score": 0.8983269,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7756602
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7471043
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 164,
+          "endOffset": 170,
+          "score": 0.99731714,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82899404
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 208,
+          "endOffset": 216,
+          "score": 0.9993973,
+          "text": "Benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.9458972,
+              "relationshipScore": 0.99971825,
+              "relationshipType": "DURATION",
+              "id": 6,
+              "beginOffset": 233,
+              "endOffset": 240,
+              "text": "10 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 221,
+          "endOffset": 228,
+          "score": 0.99823797,
+          "text": "Tylenol",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.9458972,
+              "relationshipScore": 0.9998945,
+              "relationshipType": "DURATION",
+              "id": 6,
+              "beginOffset": 233,
+              "endOffset": 240,
+              "text": "10 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 246,
+          "endOffset": 259,
+          "score": 0.9425774,
+          "text": "cold symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83432716
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 282,
+          "endOffset": 301,
+          "score": 0.9782442,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9189417
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 350,
+          "endOffset": 355,
+          "score": 0.9930428,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 350,
+          "endOffset": 364,
+          "score": 0.36526722,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6702843
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9930428,
+              "relationshipScore": 0.6748795,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 350,
+              "endOffset": 355,
+              "text": "chest",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 413,
+          "endOffset": 417,
+          "score": 0.96278375,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 413,
+          "endOffset": 426,
+          "score": 0.9813074,
+          "text": "lung diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7346425
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9465391
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7aa91f43-2fda-4a46-8724-afa268c7c2f7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7aa91f43-2fda-4a46-8724-afa268c7c2f7"
+          ],
+          "Content-Length": [
+            "3721"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3721",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:08 GMT",
+          "x-amzn-RequestId": "7aa91f43-2fda-4a46-8724-afa268c7c2f7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 675,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60140747,
+          "beginOffset": 6,
+          "endOffset": 20,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75679284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.78802735
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.73360527
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6820153
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.6672236
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6594837
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "short cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49586397,
+          "beginOffset": 62,
+          "endOffset": 72,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73171693
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.79751974
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.7855185
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7369941
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.7192979
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.6660121
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8983269,
+          "beginOffset": 117,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77566034
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7471043
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.57019037
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.566651
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.5390288
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.5268994
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.521832
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99731714,
+          "beginOffset": 164,
+          "endOffset": 170,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.828994
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6912319
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.5097858
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.43717188
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.43210277
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.40524498
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "cold symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9425774,
+          "beginOffset": 246,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83432716
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.7626944
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7314132
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.51382273
+            },
+            {
+              "description": "Effect of reduced temperature, unspecified",
+              "code": "T69.9",
+              "score": 0.46782038
+            },
+            {
+              "description": "Cryopyrin-associated periodic syndromes",
+              "code": "M04.2",
+              "score": 0.4578029
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9782442,
+          "beginOffset": 282,
+          "endOffset": 301,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9189417
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.8954238
+            },
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.68333936
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.6807699
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6781801
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.66413707
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36526713,
+          "beginOffset": 350,
+          "endOffset": 364,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6702843
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.7855039
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6978446
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.69134045
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.6672751
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6416286
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "lung diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9813074,
+          "beginOffset": 413,
+          "endOffset": 426,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7346425
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9465391
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of other diseases of the respiratory system",
+              "code": "Z83.6",
+              "score": 0.7323917
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.7044968
+            },
+            {
+              "description": "Malignant neoplasm of unspecified part of unspecified bronchus or lung",
+              "code": "C34.90",
+              "score": 0.6671417
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.63409877
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.59796345
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "844fcef5-9e38-4db5-ae35-4c4dc36a3ef3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "844fcef5-9e38-4db5-ae35-4c4dc36a3ef3"
+          ],
+          "Content-Length": [
+            "5773"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5773",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:11 GMT",
+          "x-amzn-RequestId": "844fcef5-9e38-4db5-ae35-4c4dc36a3ef3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 631,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.9993973,
+          "beginOffset": 208,
+          "endOffset": 216,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.9458972,
+              "relationshipScore": 0.99971825,
+              "id": 2,
+              "beginOffset": 233,
+              "endOffset": 240,
+              "text": "10 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Benadryl",
+              "code": "203457",
+              "score": 0.9437768
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Tablet [Benadryl]",
+              "code": "1049632",
+              "score": 0.7401185
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Capsule [Benadryl]",
+              "code": "1049910",
+              "score": 0.5568911
+            },
+            {
+              "description": "Vetadryl",
+              "code": "1310476",
+              "score": 0.46938977
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 0.01 MG/MG Topical Gel [Benadryl]",
+              "code": "1049725",
+              "score": 0.11818677
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Tylenol",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99823797,
+          "beginOffset": 221,
+          "endOffset": 228,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.9458972,
+              "relationshipScore": 0.9998945,
+              "id": 2,
+              "beginOffset": 233,
+              "endOffset": 240,
+              "text": "10 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Tylenol",
+              "code": "202433",
+              "score": 0.9421222
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Capsule [Tylenol]",
+              "code": "1738139",
+              "score": 0.67628044
+            },
+            {
+              "description": "8 HR Acetaminophen 650 MG Extended Release Oral Tablet [Tylenol]",
+              "code": "1243440",
+              "score": 0.56167316
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Tablet [Tylenol]",
+              "code": "209459",
+              "score": 0.4544661
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet [Tylenol]",
+              "code": "209387",
+              "score": 0.4179797
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b0803601-416e-4980-be9b-26803f18d72d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b0803601-416e-4980-be9b-26803f18d72d"
+          ],
+          "Content-Length": [
+            "1725"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1725",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:10 GMT",
+          "x-amzn-RequestId": "b0803601-416e-4980-be9b-26803f18d72d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:11 PM"
+}

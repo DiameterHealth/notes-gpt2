@@ -1,0 +1,1012 @@
+{
+  "note": ", ibuprofen and other analgesics. Her throat is dry and her nasal mucosa inflamed. The second clinical picture:  A 28-year-old female presents on Saturday with a cold fever, runny nose and cough. Her symptoms have been improving for 6 days, but on Saturday she had a \"chilling feeling,\" she was in severe pain in the extremities, she had a headache and a sore throat.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 843,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 2,
+          "endOffset": 11,
+          "score": 0.98947513,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 22,
+          "endOffset": 32,
+          "score": 0.60880226,
+          "text": "analgesics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 38,
+          "endOffset": 44,
+          "score": 0.9775204,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 48,
+          "endOffset": 51,
+          "score": 0.7860395,
+          "text": "dry",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.462007
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9775204,
+              "relationshipScore": 0.9934093,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 38,
+              "endOffset": 44,
+              "text": "throat",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9693369,
+              "relationshipScore": 0.68556947,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 60,
+              "endOffset": 72,
+              "text": "nasal mucosa",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 60,
+          "endOffset": 72,
+          "score": 0.9693369,
+          "text": "nasal mucosa",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 60,
+          "endOffset": 81,
+          "score": 0.6874151,
+          "text": "nasal mucosa inflamed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7872679
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 115,
+          "endOffset": 117,
+          "score": 0.9810831,
+          "text": "28",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 146,
+          "endOffset": 154,
+          "score": 0.99621564,
+          "text": "Saturday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9926515,
+              "relationshipScore": 0.52996314,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 189,
+              "endOffset": 194,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8749985
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 146,
+          "endOffset": 154,
+          "score": 0.99621564,
+          "text": "Saturday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.6866977,
+              "relationshipScore": 0.8686693,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 162,
+              "endOffset": 172,
+              "text": "cold fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.88181293
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 146,
+          "endOffset": 154,
+          "score": 0.99621564,
+          "text": "Saturday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9635903,
+              "relationshipScore": 0.7496296,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 174,
+              "endOffset": 184,
+              "text": "runny nose",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8118036
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 162,
+          "endOffset": 172,
+          "score": 0.6866977,
+          "text": "cold fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88181293
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 174,
+          "endOffset": 184,
+          "score": 0.9635903,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8118036
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35717887,
+              "relationshipScore": 0.6167418,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 229,
+              "endOffset": 239,
+              "text": "for 6 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 180,
+          "endOffset": 184,
+          "score": 0.9652353,
+          "text": "nose",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 189,
+          "endOffset": 194,
+          "score": 0.9926515,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8749985
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35717887,
+              "relationshipScore": 0.99126315,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 229,
+              "endOffset": 239,
+              "text": "for 6 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 248,
+          "endOffset": 256,
+          "score": 0.9992679,
+          "text": "Saturday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7796692,
+              "relationshipScore": 0.6797535,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 268,
+              "endOffset": 284,
+              "text": "chilling feeling",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.91728693
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 268,
+          "endOffset": 284,
+          "score": 0.7796692,
+          "text": "chilling feeling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91728693
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 305,
+          "endOffset": 309,
+          "score": 0.96679896,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8959726
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9939115,
+              "relationshipScore": 0.99998033,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 317,
+              "endOffset": 328,
+              "text": "extremities",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 317,
+          "endOffset": 328,
+          "score": 0.9939115,
+          "text": "extremities",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 340,
+          "endOffset": 348,
+          "score": 0.9955752,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9182506
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 355,
+          "endOffset": 366,
+          "score": 0.86342996,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9061577
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 360,
+          "endOffset": 366,
+          "score": 0.99356574,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.35717887,
+            "id": 11,
+            "beginOffset": 229,
+            "endOffset": 239,
+            "text": "for 6 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "746a4880-7bb3-4ed0-b4fe-f610dfde2c07"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "746a4880-7bb3-4ed0-b4fe-f610dfde2c07"
+          ],
+          "Content-Length": [
+            "6099"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6099",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:01 GMT",
+          "x-amzn-RequestId": "746a4880-7bb3-4ed0-b4fe-f610dfde2c07"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 915,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "dry",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7860394,
+          "beginOffset": 48,
+          "endOffset": 51,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9775204,
+              "relationshipScore": 0.9934093,
+              "id": 0,
+              "beginOffset": 38,
+              "endOffset": 44,
+              "text": "throat",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9693369,
+              "relationshipScore": 0.68556947,
+              "id": 3,
+              "beginOffset": 60,
+              "endOffset": 72,
+              "text": "nasal mucosa",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46200693
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.5955141
+            },
+            {
+              "description": "Xerosis cutis",
+              "code": "L85.3",
+              "score": 0.58827925
+            },
+            {
+              "description": "Dry eye syndrome of bilateral lacrimal glands",
+              "code": "H04.123",
+              "score": 0.5770838
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.50298744
+            },
+            {
+              "description": "Other diseases of pharynx",
+              "code": "J39.2",
+              "score": 0.47237772
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nasal mucosa inflamed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6874151,
+          "beginOffset": 60,
+          "endOffset": 81,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7872679
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.50630915
+            },
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.4454496
+            },
+            {
+              "description": "Cyst and mucocele of nose and nasal sinus",
+              "code": "J34.1",
+              "score": 0.37662128
+            },
+            {
+              "description": "Other specified disorders of the skin and subcutaneous tissue",
+              "code": "L98.8",
+              "score": 0.35586798
+            },
+            {
+              "description": "Unspecified disorder of nose and nasal sinuses",
+              "code": "J34.9",
+              "score": 0.34649605
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cold fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6866977,
+          "beginOffset": 162,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88181293
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.66263646
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6478576
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.53070045
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.509161
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.5088292
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9635903,
+          "beginOffset": 174,
+          "endOffset": 184,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35717887,
+              "relationshipScore": 0.6167418,
+              "id": 8,
+              "beginOffset": 229,
+              "endOffset": 239,
+              "text": "for 6 days",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8118036
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.7820237
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.6047658
+            },
+            {
+              "description": "Orthopnea",
+              "code": "R06.01",
+              "score": 0.5679534
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.5659907
+            },
+            {
+              "description": "Nasal congestion",
+              "code": "R09.81",
+              "score": 0.5546333
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9926515,
+          "beginOffset": 189,
+          "endOffset": 194,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35717887,
+              "relationshipScore": 0.99126315,
+              "id": 8,
+              "beginOffset": 229,
+              "endOffset": 239,
+              "text": "for 6 days",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8749985
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.89597386
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.7034804
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7003195
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6936096
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.66945165
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "chilling feeling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77966917,
+          "beginOffset": 268,
+          "endOffset": 284,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91728693
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.572366
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.53496265
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.5323756
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.5105958
+            },
+            {
+              "description": "Flushing",
+              "code": "R23.2",
+              "score": 0.45321044
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96679896,
+          "beginOffset": 305,
+          "endOffset": 309,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9939115,
+              "relationshipScore": 0.99998033,
+              "id": 11,
+              "beginOffset": 317,
+              "endOffset": 328,
+              "text": "extremities",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8959726
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.67077625
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.57831365
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5709163
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5661057
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.53870964
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9955752,
+          "beginOffset": 340,
+          "endOffset": 348,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9182506
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7500217
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.5374836
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.518204
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.4733936
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.41731593
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86343,
+          "beginOffset": 355,
+          "endOffset": 366,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9061577
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.808397
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.57806027
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.57414037
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.53652316
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.5235153
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "66fa50f5-3108-48a2-aa17-add0fd9a14a3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "66fa50f5-3108-48a2-aa17-add0fd9a14a3"
+          ],
+          "Content-Length": [
+            "6958"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6958",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:03 GMT",
+          "x-amzn-RequestId": "66fa50f5-3108-48a2-aa17-add0fd9a14a3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 614,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.98947513,
+          "beginOffset": 2,
+          "endOffset": 11,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768029
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ee5900b5-2f95-4629-b26b-501dbb2d6127"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ee5900b5-2f95-4629-b26b-501dbb2d6127"
+          ],
+          "Content-Length": [
+            "680"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "680",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:01 GMT",
+          "x-amzn-RequestId": "ee5900b5-2f95-4629-b26b-501dbb2d6127"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:03 PM"
+}

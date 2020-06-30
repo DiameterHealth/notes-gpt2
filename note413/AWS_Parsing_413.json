@@ -1,0 +1,538 @@
+{
+  "note": "(including cough and fever). Patient is advised to wear protective equipment which should include contact clothing, face mask, rubber gloves, eye protection, etc. Patient is placed in isolation with temperature of 34.2C and chest radiograph of abdomen is normal. Patient is placed in a room with bright lights and room temperature of 32.2C and instructed to take 2mg nitroglycerine, 2g aspirin.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 408,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 11,
+          "endOffset": 16,
+          "score": 0.9865955,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7734031
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 21,
+          "endOffset": 26,
+          "score": 0.95872414,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6944454
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 116,
+          "endOffset": 120,
+          "score": 0.3647595,
+          "text": "face",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 142,
+          "endOffset": 145,
+          "score": 0.8293127,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 142,
+          "endOffset": 156,
+          "score": 0.5028202,
+          "text": "eye protection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 199,
+          "endOffset": 210,
+          "score": 0.9503379,
+          "text": "temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9905847,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 214,
+              "endOffset": 219,
+              "text": "34.2C",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7296638,
+              "relationshipScore": 0.93882143,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 255,
+              "endOffset": 261,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 224,
+          "endOffset": 229,
+          "score": 0.9672029,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 224,
+          "endOffset": 240,
+          "score": 0.9215092,
+          "text": "chest radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7296638,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 255,
+              "endOffset": 261,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 244,
+          "endOffset": 251,
+          "score": 0.98564446,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 319,
+          "endOffset": 330,
+          "score": 0.8445445,
+          "text": "temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9427308,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 334,
+              "endOffset": 339,
+              "text": "32.2C",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 367,
+          "endOffset": 381,
+          "score": 0.99623305,
+          "text": "nitroglycerine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9822973,
+              "relationshipScore": 0.99999666,
+              "relationshipType": "DOSAGE",
+              "id": 4,
+              "beginOffset": 363,
+              "endOffset": 366,
+              "text": "2mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 386,
+          "endOffset": 393,
+          "score": 0.9996431,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9822973,
+              "relationshipScore": 0.653817,
+              "relationshipType": "DOSAGE",
+              "id": 4,
+              "beginOffset": 363,
+              "endOffset": 366,
+              "text": "2mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.96891975,
+              "relationshipScore": 0.99991727,
+              "relationshipType": "DOSAGE",
+              "id": 6,
+              "beginOffset": 383,
+              "endOffset": 385,
+              "text": "2g",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ced566e5-0a4e-4d3e-a026-54f548628f75"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ced566e5-0a4e-4d3e-a026-54f548628f75"
+          ],
+          "Content-Length": [
+            "3542"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3542",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:50 GMT",
+          "x-amzn-RequestId": "ced566e5-0a4e-4d3e-a026-54f548628f75"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 388,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9865955,
+          "beginOffset": 11,
+          "endOffset": 16,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7734031
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8244508
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.6084914
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.58027947
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.5781332
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.56021726
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95872426,
+          "beginOffset": 21,
+          "endOffset": 26,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6944454
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.75169593
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5662669
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45430025
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.43627724
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.43369725
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fb9286c8-d1c1-4ee3-a84d-95d5191e9fc8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fb9286c8-d1c1-4ee3-a84d-95d5191e9fc8"
+          ],
+          "Content-Length": [
+            "1304"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1304",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:51 GMT",
+          "x-amzn-RequestId": "fb9286c8-d1c1-4ee3-a84d-95d5191e9fc8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 801,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "nitroglycerine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99623305,
+          "beginOffset": 367,
+          "endOffset": 381,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9822973,
+              "relationshipScore": 0.9999968,
+              "id": 0,
+              "beginOffset": 363,
+              "endOffset": 366,
+              "text": "2mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Nitroglycerin",
+              "code": "4917",
+              "score": 0.8191594
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray [Nitrolingual]",
+              "code": "995019",
+              "score": 0.66837007
+            },
+            {
+              "description": "Nitroglycerin 2.5 MG Extended Release Oral Capsule",
+              "code": "312013",
+              "score": 0.5730833
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG Sublingual Tablet",
+              "code": "198039",
+              "score": 0.4562986
+            },
+            {
+              "description": "250 ML Nitroglycerin 0.2 MG/ML Injection",
+              "code": "312004",
+              "score": 0.22014335
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9996431,
+          "beginOffset": 386,
+          "endOffset": 393,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9822973,
+              "relationshipScore": 0.6538169,
+              "id": 0,
+              "beginOffset": 363,
+              "endOffset": 366,
+              "text": "2mg",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.96891975,
+              "relationshipScore": 0.9999174,
+              "id": 2,
+              "beginOffset": 383,
+              "endOffset": 385,
+              "text": "2g",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.7298675
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.30014905
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Bufferin]",
+              "code": "1592700",
+              "score": 0.29206562
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.25921038
+            },
+            {
+              "description": "Aspirin 81 MG Oral Tablet [Bayer Aspirin]",
+              "code": "825181",
+              "score": 0.19021517
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ae00dd69-e1b1-41e9-acb4-e957a8b694b8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ae00dd69-e1b1-41e9-acb4-e957a8b694b8"
+          ],
+          "Content-Length": [
+            "1863"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1863",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:51 GMT",
+          "x-amzn-RequestId": "ae00dd69-e1b1-41e9-acb4-e957a8b694b8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:51 PM"
+}

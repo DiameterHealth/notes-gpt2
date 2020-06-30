@@ -1,0 +1,531 @@
+{
+  "note": "is recommended. The patient is in good health based on recent history and current laboratory findings. The patient is taking two medications, methotrexate and hydroxocobalamin, and continues to take them at the recommended dose, and his doctor is satisfied he is taking them as prescribed. He has no history of thrombocytopenia or other bleeding disorders. His blood work includes a folate panel including low and normal levels for folic acid and vitamin B12.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 413,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 142,
+          "endOffset": 154,
+          "score": 0.9968354,
+          "text": "methotrexate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 159,
+          "endOffset": 175,
+          "score": 0.9969374,
+          "text": "hydroxocobalamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 311,
+          "endOffset": 327,
+          "score": 0.99550134,
+          "text": "thrombocytopenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8872866
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8855089
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 337,
+          "endOffset": 355,
+          "score": 0.9213502,
+          "text": "bleeding disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8998835
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8905815
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 361,
+          "endOffset": 371,
+          "score": 0.9357541,
+          "text": "blood work",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8225023,
+              "relationshipScore": 0.72672766,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 406,
+              "endOffset": 409,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 383,
+          "endOffset": 395,
+          "score": 0.9921185,
+          "text": "folate panel",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8225023,
+              "relationshipScore": 0.99998915,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 406,
+              "endOffset": 409,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 421,
+          "endOffset": 427,
+          "score": 0.370576,
+          "text": "levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9408483,
+              "relationshipScore": 0.9848369,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 414,
+              "endOffset": 420,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 432,
+          "endOffset": 442,
+          "score": 0.59157723,
+          "text": "folic acid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 432,
+          "endOffset": 442,
+          "score": 0.9094561,
+          "text": "folic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 447,
+          "endOffset": 458,
+          "score": 0.82378966,
+          "text": "vitamin B12",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 447,
+          "endOffset": 458,
+          "score": 0.8867233,
+          "text": "vitamin B12",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1d6d9c8c-8f9c-49ac-beb7-947e17ded1b8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1d6d9c8c-8f9c-49ac-beb7-947e17ded1b8"
+          ],
+          "Content-Length": [
+            "2678"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2678",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:53 GMT",
+          "x-amzn-RequestId": "1d6d9c8c-8f9c-49ac-beb7-947e17ded1b8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "thrombocytopenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99550134,
+          "beginOffset": 311,
+          "endOffset": 327,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8872866
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8855089
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Thrombocytopenia, unspecified",
+              "code": "D69.6",
+              "score": 0.75414276
+            },
+            {
+              "description": "Other primary thrombocytopenia",
+              "code": "D69.49",
+              "score": 0.54502696
+            },
+            {
+              "description": "Immune thrombocytopenic purpura",
+              "code": "D69.3",
+              "score": 0.5428331
+            },
+            {
+              "description": "Secondary thrombocytopenia",
+              "code": "D69.5",
+              "score": 0.4500683
+            },
+            {
+              "description": "Heparin induced thrombocytopenia (HIT)",
+              "code": "D75.82",
+              "score": 0.40023208
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bleeding disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9213502,
+          "beginOffset": 337,
+          "endOffset": 355,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8998835
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8905815
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Coagulation defect, unspecified",
+              "code": "D68.9",
+              "score": 0.6895945
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.6605411
+            },
+            {
+              "description": "Hemorrhagic condition, unspecified",
+              "code": "D69.9",
+              "score": 0.63440406
+            },
+            {
+              "description": "Ovulation bleeding",
+              "code": "N92.3",
+              "score": 0.6221932
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.6085182
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7f42bee9-0718-4f02-bdfc-6bdc134887c6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7f42bee9-0718-4f02-bdfc-6bdc134887c6"
+          ],
+          "Content-Length": [
+            "1528"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1528",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:53 GMT",
+          "x-amzn-RequestId": "7f42bee9-0718-4f02-bdfc-6bdc134887c6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 434,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "methotrexate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9968354,
+          "beginOffset": 142,
+          "endOffset": 154,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Methotrexate",
+              "code": "6851",
+              "score": 0.9599671
+            },
+            {
+              "description": "0.55 ML Methotrexate 50 MG/ML Auto-Injector",
+              "code": "1544399",
+              "score": 0.69111925
+            },
+            {
+              "description": "0.4 ML Methotrexate 50 MG/ML Auto-Injector [Rasuvo]",
+              "code": "1544394",
+              "score": 0.12031857
+            },
+            {
+              "description": "0.4 ML Methotrexate 25 MG/ML Auto-Injector [Otrexup]",
+              "code": "1441407",
+              "score": 0.102452576
+            },
+            {
+              "description": "{32 (Methotrexate 2.5 MG Oral Tablet [Rheumatrex]) } Pack [Rheumatrex Dose Pack 32]",
+              "code": "1541228",
+              "score": 0.08024526
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hydroxocobalamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9969374,
+          "beginOffset": 159,
+          "endOffset": 175,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Hydroxocobalamin",
+              "code": "5514",
+              "score": 0.9486623
+            },
+            {
+              "description": "Hydroxocobalamin 1 MG/ML Injectable Solution",
+              "code": "317106",
+              "score": 0.82359093
+            },
+            {
+              "description": "Hydroxocobalamin 5000 MG Injection",
+              "code": "700496",
+              "score": 0.7201251
+            },
+            {
+              "description": "Hydroxocobalamin 5000 MG Injection [Cyanokit]",
+              "code": "700499",
+              "score": 0.43420437
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "folic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9094561,
+          "beginOffset": 432,
+          "endOffset": 442,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Folic Acid 1 MG Oral Tablet",
+              "code": "310410",
+              "score": 0.9703377
+            },
+            {
+              "description": "Folic Acid",
+              "code": "4511",
+              "score": 0.965142
+            },
+            {
+              "description": "Folic Acid 2 MG Oral Capsule",
+              "code": "1374807",
+              "score": 0.7307372
+            },
+            {
+              "description": "Folic Acid 5 MG Oral Tablet",
+              "code": "199318",
+              "score": 0.49003333
+            },
+            {
+              "description": "Folic Acid 5 MG/ML Injectable Solution",
+              "code": "237786",
+              "score": 0.43391967
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "vitamin B12",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8867233,
+          "beginOffset": 447,
+          "endOffset": 458,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vitamin B 12",
+              "code": "11248",
+              "score": 0.9169379
+            },
+            {
+              "description": "Vitamin B 12 1 MG Oral Tablet",
+              "code": "309593",
+              "score": 0.81436867
+            },
+            {
+              "description": "Vitamin B 12 0.1 MG Oral Tablet",
+              "code": "309595",
+              "score": 0.7729829
+            },
+            {
+              "description": "vitamin D3",
+              "code": "1244014",
+              "score": 0.40676466
+            },
+            {
+              "description": "Vitamin B 12 5 MG Sublingual Tablet",
+              "code": "199184",
+              "score": 0.12110336
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "270952a8-ee41-403c-8ced-6a9f446d04e5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "270952a8-ee41-403c-8ced-6a9f446d04e5"
+          ],
+          "Content-Length": [
+            "2584"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2584",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:53 GMT",
+          "x-amzn-RequestId": "270952a8-ee41-403c-8ced-6a9f446d04e5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:53 PM"
+}

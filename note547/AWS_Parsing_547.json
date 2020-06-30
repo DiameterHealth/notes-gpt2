@@ -1,0 +1,712 @@
+{
+  "note": ", previous pericardial effusion or myocardial infarction, and atrial fibrillation. Prior to surgery the patient had been hospitalized for a 3-month cardiac catheterization and a peripheral arterial catheterization. He had no evidence of ischemic heart disease. The cardiac catheterization has been done a few times, and showed no abnormality. The patient\u0027s blood pressure was 125/80 mm Hg and he had no signs of coronary artery narrowing.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 478,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 11,
+          "endOffset": 31,
+          "score": 0.95796007,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495784
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 35,
+          "endOffset": 56,
+          "score": 0.9726901,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9426021
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.612569
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 62,
+          "endOffset": 81,
+          "score": 0.9821476,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9546048
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 83,
+          "endOffset": 91,
+          "score": 0.7377617,
+          "text": "Prior to",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.8875444,
+              "relationshipScore": 0.96247655,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 92,
+              "endOffset": 99,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 92,
+          "endOffset": 99,
+          "score": 0.8875444,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 140,
+          "endOffset": 147,
+          "score": 0.7553755,
+          "text": "3-month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.5821049,
+              "relationshipScore": 0.85571516,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 178,
+              "endOffset": 213,
+              "text": "peripheral arterial catheterization",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 140,
+          "endOffset": 147,
+          "score": 0.7553755,
+          "text": "3-month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.52206254,
+              "relationshipScore": 0.9537741,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 148,
+              "endOffset": 171,
+              "text": "cardiac catheterization",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 148,
+          "endOffset": 171,
+          "score": 0.52206254,
+          "text": "cardiac catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 178,
+          "endOffset": 213,
+          "score": 0.5821049,
+          "text": "peripheral arterial catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 237,
+          "endOffset": 259,
+          "score": 0.9192688,
+          "text": "ischemic heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9200296
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93659335
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 246,
+          "endOffset": 251,
+          "score": 0.92243284,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 265,
+          "endOffset": 288,
+          "score": 0.8253917,
+          "text": "cardiac catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32159045,
+              "relationshipScore": 0.9999796,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 305,
+              "endOffset": 314,
+              "text": "few times",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9752525,
+              "relationshipScore": 0.99994254,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 327,
+              "endOffset": 341,
+              "text": "no abnormality",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 330,
+          "endOffset": 341,
+          "score": 0.53491056,
+          "text": "abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5223726
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 357,
+          "endOffset": 371,
+          "score": 0.9727994,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.985683,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 376,
+              "endOffset": 388,
+              "text": "125/80 mm Hg",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8682493,
+              "relationshipScore": 0.9995459,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 400,
+              "endOffset": 437,
+              "text": "no signs of coronary artery narrowing",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 412,
+          "endOffset": 427,
+          "score": 0.92376393,
+          "text": "coronary artery",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 412,
+          "endOffset": 437,
+          "score": 0.9763787,
+          "text": "coronary artery narrowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71823525
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.950277
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.3205321,
+            "id": 0,
+            "beginOffset": 178,
+            "endOffset": 188,
+            "text": "peripheral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.3227836,
+            "id": 12,
+            "beginOffset": 222,
+            "endOffset": 259,
+            "text": "no evidence of ischemic heart disease",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8f1f3eae-82c3-4666-817c-1c6d1bfd9def"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8f1f3eae-82c3-4666-817c-1c6d1bfd9def"
+          ],
+          "Content-Length": [
+            "5254"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5254",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:54 GMT",
+          "x-amzn-RequestId": "8f1f3eae-82c3-4666-817c-1c6d1bfd9def"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 544,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95796007,
+          "beginOffset": 11,
+          "endOffset": 31,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495784
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pericardial effusion (noninflammatory)",
+              "code": "I31.3",
+              "score": 0.76145464
+            },
+            {
+              "description": "Pleural effusion, not elsewhere classified",
+              "code": "J90",
+              "score": 0.4981534
+            },
+            {
+              "description": "Disease of pericardium, unspecified",
+              "code": "I31.9",
+              "score": 0.45942354
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.37975422
+            },
+            {
+              "description": "Chronic constrictive pericarditis",
+              "code": "I31.1",
+              "score": 0.35673544
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9726901,
+          "beginOffset": 35,
+          "endOffset": 56,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.942602
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.61256903
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8555022
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.80459726
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.77088517
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.770569
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.7545802
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9821476,
+          "beginOffset": 62,
+          "endOffset": 81,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9546048
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.80106884
+            },
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.7867839
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.74025744
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.72409904
+            },
+            {
+              "description": "Ventricular fibrillation",
+              "code": "I49.01",
+              "score": 0.6385866
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "ischemic heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91926867,
+          "beginOffset": 237,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9200296
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93659335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.84216225
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.7265747
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.7101838
+            },
+            {
+              "description": "Chronic ischemic heart disease",
+              "code": "I25",
+              "score": 0.69950926
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.6800021
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53491056,
+          "beginOffset": 330,
+          "endOffset": 341,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.52237254
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.7753846
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.76070607
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.75430506
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.73716396
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.73077387
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "coronary artery narrowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9763787,
+          "beginOffset": 412,
+          "endOffset": 437,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7182353
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.950277
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.8320234
+            },
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.72304666
+            },
+            {
+              "description": "Stenosis of coronary artery stent",
+              "code": "T82.855",
+              "score": 0.70530635
+            },
+            {
+              "description": "Coronary artery dissection",
+              "code": "I25.42",
+              "score": 0.6464305
+            },
+            {
+              "description": "Coronary atherosclerosis due to calcified coronary lesion",
+              "code": "I25.84",
+              "score": 0.58409923
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "15d04d27-73a4-45e1-b746-c11154de4d4d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "15d04d27-73a4-45e1-b746-c11154de4d4d"
+          ],
+          "Content-Length": [
+            "4819"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4819",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:54 GMT",
+          "x-amzn-RequestId": "15d04d27-73a4-45e1-b746-c11154de4d4d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 248,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "138cea8e-5430-4ad1-8863-673ccbb145ac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "138cea8e-5430-4ad1-8863-673ccbb145ac"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:54 GMT",
+          "x-amzn-RequestId": "138cea8e-5430-4ad1-8863-673ccbb145ac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:55 PM"
+}

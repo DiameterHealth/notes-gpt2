@@ -1,0 +1,766 @@
+{
+  "note": "Dental history Tooth structure is perfect, but crown needs adjustment or replacement  Physical Exam Chest xray is normal; no other abnormalities on chest or abdomen  Blood pressure and heart rate are normal  No history of stroke in the family   A Note on Risk Factors  Your risk of experiencing a stroke begins when you have a stroke, but you can reduce your risk of stroke by following an anti-dementia program.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 621,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 15,
+          "endOffset": 20,
+          "score": 0.69239384,
+          "text": "Tooth",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 15,
+          "endOffset": 41,
+          "score": 0.7869535,
+          "text": "Tooth structure is perfect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5357506
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 73,
+          "endOffset": 84,
+          "score": 0.3271099,
+          "text": "replacement",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 86,
+          "endOffset": 99,
+          "score": 0.93443865,
+          "text": "Physical Exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9183187,
+              "relationshipScore": 0.97130436,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 114,
+              "endOffset": 120,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 100,
+          "endOffset": 105,
+          "score": 0.9832788,
+          "text": "Chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 100,
+          "endOffset": 110,
+          "score": 0.97039324,
+          "text": "Chest xray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9183187,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 114,
+              "endOffset": 120,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.78376603,
+              "relationshipScore": 0.99901485,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 122,
+              "endOffset": 144,
+              "text": "no other abnormalities",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 131,
+          "endOffset": 144,
+          "score": 0.8443158,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.76466084
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.912719
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.995048,
+              "relationshipScore": 0.93483186,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 148,
+              "endOffset": 153,
+              "text": "chest",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9944073,
+              "relationshipScore": 0.9965307,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 157,
+              "endOffset": 164,
+              "text": "abdomen",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 148,
+          "endOffset": 153,
+          "score": 0.995048,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 157,
+          "endOffset": 164,
+          "score": 0.9944073,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 166,
+          "endOffset": 180,
+          "score": 0.97624105,
+          "text": "Blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.95680684,
+              "relationshipScore": 0.79811776,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 200,
+              "endOffset": 206,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 166,
+          "endOffset": 206,
+          "score": 0.55911505,
+          "text": "Blood pressure and heart rate are normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.822344
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 185,
+          "endOffset": 190,
+          "score": 0.9848711,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 185,
+          "endOffset": 195,
+          "score": 0.91918236,
+          "text": "heart rate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.95680684,
+              "relationshipScore": 0.99986553,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 200,
+              "endOffset": 206,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 222,
+          "endOffset": 228,
+          "score": 0.9803017,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7040416
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9350678
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 297,
+          "endOffset": 303,
+          "score": 0.96863335,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8482497
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 327,
+          "endOffset": 333,
+          "score": 0.97546375,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9185175
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 367,
+          "endOffset": 373,
+          "score": 0.98784965,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92910063
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 390,
+          "endOffset": 411,
+          "score": 0.6981585,
+          "text": "anti-dementia program",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "490fb223-ad30-4666-aa21-dd226692a954"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "490fb223-ad30-4666-aa21-dd226692a954"
+          ],
+          "Content-Length": [
+            "4940"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4940",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:46 GMT",
+          "x-amzn-RequestId": "490fb223-ad30-4666-aa21-dd226692a954"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 778,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Tooth structure is perfect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78695357,
+          "beginOffset": 15,
+          "endOffset": 41,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5357506
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of teeth and supporting structures",
+              "code": "K08.89",
+              "score": 0.6554942
+            },
+            {
+              "description": "Disorder of teeth and supporting structures, unspecified",
+              "code": "K08.9",
+              "score": 0.6092552
+            },
+            {
+              "description": "Fracture of tooth (traumatic)",
+              "code": "S02.5",
+              "score": 0.5836613
+            },
+            {
+              "description": "Cracked tooth",
+              "code": "K03.81",
+              "score": 0.57751644
+            },
+            {
+              "description": "Hereditary disturbances in tooth structure, not elsewhere classified",
+              "code": "K00.5",
+              "score": 0.5368544
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84431577,
+          "beginOffset": 131,
+          "endOffset": 144,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.995048,
+              "relationshipScore": 0.93483186,
+              "id": 4,
+              "beginOffset": 148,
+              "endOffset": 153,
+              "text": "chest",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9944073,
+              "relationshipScore": 0.9965307,
+              "id": 5,
+              "beginOffset": 157,
+              "endOffset": 164,
+              "text": "abdomen",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.76466084
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.912719
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal ultrasonic finding on antenatal screening of mother",
+              "code": "O28.3",
+              "score": 0.65299505
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.5321123
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.52855456
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other abdominal regions, including retroperitoneum",
+              "code": "R93.5",
+              "score": 0.51199746
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.5090412
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Blood pressure and heart rate are normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.55911523,
+          "beginOffset": 166,
+          "endOffset": 206,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.822344
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.4877294
+            },
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.46142754
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.43645766
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.42866585
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.3834432
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9803017,
+          "beginOffset": 222,
+          "endOffset": 228,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7040416
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9350678
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.62306905
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.52300483
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5223376
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.47296908
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.45585644
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96863335,
+          "beginOffset": 297,
+          "endOffset": 303,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84824973
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7237616
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.65843046
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.59379613
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.52405095
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.5107098
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97546375,
+          "beginOffset": 327,
+          "endOffset": 333,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9185176
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7656661
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.6938435
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.6154785
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.5957921
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.5501718
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98784965,
+          "beginOffset": 367,
+          "endOffset": 373,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92910063
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.85662836
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.75461096
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.6956621
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.66845864
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.65574855
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a20e9511-7e20-4ae6-8db9-2b64218c4f2c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a20e9511-7e20-4ae6-8db9-2b64218c4f2c"
+          ],
+          "Content-Length": [
+            "6139"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6139",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:48 GMT",
+          "x-amzn-RequestId": "a20e9511-7e20-4ae6-8db9-2b64218c4f2c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "55222d16-527a-4d0e-9d73-e462690d75c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "55222d16-527a-4d0e-9d73-e462690d75c5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:46 GMT",
+          "x-amzn-RequestId": "55222d16-527a-4d0e-9d73-e462690d75c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:48 PM"
+}

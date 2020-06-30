@@ -1,0 +1,256 @@
+{
+  "note": ".  Treatment Inappropriate use of corticosteroids are the most common cause of this condition. Patients with this condition should be closely monitored and prescribed topical or oral steroidal antihistamines for the first 21 days to allow the skin to be more accustomed to the exposure to the allergens.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 34,
+          "endOffset": 49,
+          "score": 0.6893661,
+          "text": "corticosteroids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8789114,
+              "relationshipScore": 0.5969586,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 167,
+              "endOffset": 174,
+              "text": "topical",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 34,
+          "endOffset": 49,
+          "score": 0.29836535,
+          "text": "corticosteroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 178,
+          "endOffset": 207,
+          "score": 0.69814044,
+          "text": "oral steroidal antihistamines",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 183,
+          "endOffset": 207,
+          "score": 0.55811816,
+          "text": "steroidal antihistamines",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8789114,
+              "relationshipScore": 0.96866804,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 167,
+              "endOffset": 174,
+              "text": "topical",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9675857,
+              "relationshipScore": 0.9993918,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 178,
+              "endOffset": 182,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 216,
+          "endOffset": 229,
+          "score": 0.9994266,
+          "text": "first 21 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.55811816,
+              "relationshipScore": 0.80017203,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 183,
+              "endOffset": 207,
+              "text": "steroidal antihistamines",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 216,
+          "endOffset": 229,
+          "score": 0.9994266,
+          "text": "first 21 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.69814044,
+              "relationshipScore": 0.82142794,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 178,
+              "endOffset": 207,
+              "text": "oral steroidal antihistamines",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 243,
+          "endOffset": 247,
+          "score": 0.8586415,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed4b1415-dc7d-49a1-b264-feb265b0a715"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed4b1415-dc7d-49a1-b264-feb265b0a715"
+          ],
+          "Content-Length": [
+            "2398"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2398",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:18 GMT",
+          "x-amzn-RequestId": "ed4b1415-dc7d-49a1-b264-feb265b0a715"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 165,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9f174748-12ef-414e-8915-9c8713fb803d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9f174748-12ef-414e-8915-9c8713fb803d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:20 GMT",
+          "x-amzn-RequestId": "9f174748-12ef-414e-8915-9c8713fb803d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 296,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d80c5775-a6f4-4b9f-8e40-9d8d8174304e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d80c5775-a6f4-4b9f-8e40-9d8d8174304e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:20 GMT",
+          "x-amzn-RequestId": "d80c5775-a6f4-4b9f-8e40-9d8d8174304e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:20 PM"
+}

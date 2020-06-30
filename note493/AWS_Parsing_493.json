@@ -1,0 +1,856 @@
+{
+  "note": ", nausea and vomiting and other tbns. The patient has no history of fever, influenza, other infectious illnesses or prior febrile illness. History and physical exam is negative other than the history contains no current medical or family history of febrile illnesses. This includes only current pregnancy history. A skin prce.r and a complete blood panel including a complete plate of cell function results are negative and lab seroassignations are negative.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 624,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 2,
+          "endOffset": 8,
+          "score": 0.99000937,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7392396
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 13,
+          "endOffset": 21,
+          "score": 0.99385935,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7071863
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 68,
+          "endOffset": 73,
+          "score": 0.9936388,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7140293
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97619706
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 75,
+          "endOffset": 84,
+          "score": 0.8826029,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.83702314
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 92,
+          "endOffset": 112,
+          "score": 0.87319094,
+          "text": "infectious illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5935381
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40020007
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9493941
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 116,
+          "endOffset": 121,
+          "score": 0.99996865,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9176427,
+              "relationshipScore": 0.9718327,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 122,
+              "endOffset": 137,
+              "text": "febrile illness",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.51256406
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9164466
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 122,
+          "endOffset": 137,
+          "score": 0.9176427,
+          "text": "febrile illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.51256406
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9164466
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 151,
+          "endOffset": 164,
+          "score": 0.7350409,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9220211,
+              "relationshipScore": 0.99998033,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 168,
+              "endOffset": 176,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 212,
+          "endOffset": 219,
+          "score": 0.99999785,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9564072,
+              "relationshipScore": 0.57678556,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 249,
+              "endOffset": 266,
+              "text": "febrile illnesses",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.5686106
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9288278
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 249,
+          "endOffset": 266,
+          "score": 0.9564072,
+          "text": "febrile illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5686106
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9288278
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 287,
+          "endOffset": 294,
+          "score": 0.99998903,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.94155127,
+              "relationshipScore": 0.9766301,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 295,
+              "endOffset": 304,
+              "text": "pregnancy",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.92303526
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 287,
+          "endOffset": 294,
+          "score": 0.99998903,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.3469666,
+              "relationshipScore": 0.5312415,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 316,
+              "endOffset": 325,
+              "text": "skin prce",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 295,
+          "endOffset": 304,
+          "score": 0.94155127,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92303526
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 316,
+          "endOffset": 320,
+          "score": 0.95968395,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 316,
+          "endOffset": 325,
+          "score": 0.3469666,
+          "text": "skin prce",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 334,
+          "endOffset": 354,
+          "score": 0.66105384,
+          "text": "complete blood panel",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 367,
+          "endOffset": 398,
+          "score": 0.6304998,
+          "text": "complete plate of cell function",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9640599,
+              "relationshipScore": 0.99989533,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 411,
+              "endOffset": 419,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 424,
+          "endOffset": 444,
+          "score": 0.90461737,
+          "text": "lab seroassignations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9640599,
+              "relationshipScore": 0.9776422,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 411,
+              "endOffset": 419,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9854233,
+              "relationshipScore": 0.9999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 449,
+              "endOffset": 457,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f60ba370-d360-4cd4-b6bf-5c442c064b66"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f60ba370-d360-4cd4-b6bf-5c442c064b66"
+          ],
+          "Content-Length": [
+            "5610"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5610",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:11 GMT",
+          "x-amzn-RequestId": "f60ba370-d360-4cd4-b6bf-5c442c064b66"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 414,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99000937,
+          "beginOffset": 2,
+          "endOffset": 8,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7392396
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.8343636
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.7497003
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.590261
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.58398914
+            },
+            {
+              "description": "Nausea and vomiting",
+              "code": "R11",
+              "score": 0.5277351
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99385935,
+          "beginOffset": 13,
+          "endOffset": 21,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.70718616
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.8255868
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.74528533
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.61109865
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.5481874
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.52547807
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9936388,
+          "beginOffset": 68,
+          "endOffset": 73,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71402925
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97619706
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.81701595
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5007271
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4586485
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.44131282
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.40880403
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8826029,
+          "beginOffset": 75,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.83702314
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.86094797
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.72967356
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with unspecified type of pneumonia",
+              "code": "J11.00",
+              "score": 0.7277142
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.6517517
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with other manifestations",
+              "code": "J11.89",
+              "score": 0.6088471
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "infectious illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8731908,
+          "beginOffset": 92,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5935381
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40020016
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9493941
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.8060638
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.8008714
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.72570884
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.70488673
+            },
+            {
+              "description": "Other and unspecified infectious diseases",
+              "code": "B99",
+              "score": 0.6986471
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "febrile illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9176427,
+          "beginOffset": 122,
+          "endOffset": 137,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.512564
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9164466
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6437794
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.48270845
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.4308191
+            },
+            {
+              "description": "Malingerer [conscious simulation]",
+              "code": "Z76.5",
+              "score": 0.33256102
+            },
+            {
+              "description": "Complex febrile convulsions",
+              "code": "R56.01",
+              "score": 0.33112887
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "febrile illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95640707,
+          "beginOffset": 249,
+          "endOffset": 266,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5686107
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9288278
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.44792047
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.3718264
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.31884357
+            },
+            {
+              "description": "Complex febrile convulsions",
+              "code": "R56.01",
+              "score": 0.26760456
+            },
+            {
+              "description": "Febrile convulsions",
+              "code": "R56.0",
+              "score": 0.25910893
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9415514,
+          "beginOffset": 295,
+          "endOffset": 304,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92303526
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6350015
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.5596799
+            },
+            {
+              "description": "Recurrent pregnancy loss",
+              "code": "N96",
+              "score": 0.5376667
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.45924672
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.44213054
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b18a8b0-6db0-4285-b866-91cd6e4da859"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b18a8b0-6db0-4285-b866-91cd6e4da859"
+          ],
+          "Content-Length": [
+            "5949"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5949",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:11 GMT",
+          "x-amzn-RequestId": "2b18a8b0-6db0-4285-b866-91cd6e4da859"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "583a2771-150a-43b2-95a8-3c96cb7873ca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "583a2771-150a-43b2-95a8-3c96cb7873ca"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:11 GMT",
+          "x-amzn-RequestId": "583a2771-150a-43b2-95a8-3c96cb7873ca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:12 PM"
+}

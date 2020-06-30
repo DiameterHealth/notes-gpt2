@@ -1,0 +1,485 @@
+{
+  "note": "The husband was on bed rest through day 3 with no recurrences of labor. The only major medical problem was a pregnancy complication. Case 2: The patient showed up with a fever and her fetus was at 38 weeks\u0027 gestational age. A prenatal CT scan showed a 13.5 centimeter long lesion on the uterine wall in the position of the fetus\u0027s sacrum.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 537,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 36,
+          "endOffset": 41,
+          "score": 0.999592,
+          "text": "day 3",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.50927967,
+              "relationshipScore": 0.7867268,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 65,
+              "endOffset": 70,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "score": 0.50927967,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 109,
+          "endOffset": 131,
+          "score": 0.5500517,
+          "text": "pregnancy complication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8562696
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 170,
+          "endOffset": 175,
+          "score": 0.93755174,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.552712
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 197,
+          "endOffset": 205,
+          "score": 0.9275952,
+          "text": "38 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93755174,
+              "relationshipScore": 0.5879086,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 170,
+              "endOffset": 175,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.552712
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 226,
+          "endOffset": 242,
+          "score": 0.81150293,
+          "text": "prenatal CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9110448,
+              "relationshipScore": 0.9999937,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 252,
+              "endOffset": 337,
+              "text": "13.5 centimeter long lesion on the uterine wall in the position of the fetus\u0027s sacrum",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 273,
+          "endOffset": 279,
+          "score": 0.94685835,
+          "text": "lesion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84777987
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98451555,
+              "relationshipScore": 0.9999517,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 287,
+              "endOffset": 299,
+              "text": "uterine wall",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8896302,
+              "relationshipScore": 0.99977857,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 323,
+              "endOffset": 337,
+              "text": "fetus\u0027s sacrum",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 287,
+          "endOffset": 299,
+          "score": 0.98451555,
+          "text": "uterine wall",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 323,
+          "endOffset": 337,
+          "score": 0.8896302,
+          "text": "fetus\u0027s sacrum",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ff60b199-74a6-4e1d-b7e2-40960ca97c1f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ff60b199-74a6-4e1d-b7e2-40960ca97c1f"
+          ],
+          "Content-Length": [
+            "2869"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2869",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:00 GMT",
+          "x-amzn-RequestId": "ff60b199-74a6-4e1d-b7e2-40960ca97c1f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1102,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.50927967,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.6700016
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.56527567
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.5627432
+            },
+            {
+              "description": "Personal history of pre-term labor",
+              "code": "Z87.51",
+              "score": 0.5514414
+            },
+            {
+              "description": "Preterm labor",
+              "code": "O60",
+              "score": 0.5364294
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnancy complication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5500518,
+          "beginOffset": 109,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8562696
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6390254
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6266667
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.599991
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.5492321
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.54099643
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9375516,
+          "beginOffset": 170,
+          "endOffset": 175,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55271196
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6780334
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4353081
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.36512053
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.35792947
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.31042463
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "lesion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94685835,
+          "beginOffset": 273,
+          "endOffset": 279,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98451555,
+              "relationshipScore": 0.9999517,
+              "id": 4,
+              "beginOffset": 287,
+              "endOffset": 299,
+              "text": "uterine wall",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8896302,
+              "relationshipScore": 0.99977857,
+              "id": 5,
+              "beginOffset": 323,
+              "endOffset": 337,
+              "text": "fetus\u0027s sacrum",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84777987
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.5148643
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.47169745
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.46148387
+            },
+            {
+              "description": "Actinic keratosis",
+              "code": "L57.0",
+              "score": 0.4552134
+            },
+            {
+              "description": "Other seborrheic keratosis",
+              "code": "L82.1",
+              "score": 0.43895274
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "81085a05-a834-4c76-800d-62db917958df"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "81085a05-a834-4c76-800d-62db917958df"
+          ],
+          "Content-Length": [
+            "3220"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3220",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:01 GMT",
+          "x-amzn-RequestId": "81085a05-a834-4c76-800d-62db917958df"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 198,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed8b375a-1f10-4a12-8703-d3308c949874"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed8b375a-1f10-4a12-8703-d3308c949874"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:00 GMT",
+          "x-amzn-RequestId": "ed8b375a-1f10-4a12-8703-d3308c949874"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:01 PM"
+}

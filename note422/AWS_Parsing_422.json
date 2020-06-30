@@ -1,0 +1,511 @@
+{
+  "note": "for diabetes management. During this visit, he had fasting glucose levels of 99 mg/dL with no significant change over the past few months. During the evaluation, total cholesterol values were 6.9 mmol/L. Serum HDL levels were 2.3 mmol/L, triglycerides 2.8 mmol/L, LDL cholesterol 4.2 mmol/L and high-density lipoprotein cholesterol (HDL-C) 1.6 mmol/L.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1189,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 12,
+          "score": 0.90440804,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92253053
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 4,
+          "endOffset": 23,
+          "score": 0.7870262,
+          "text": "diabetes management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 22,
+          "beginOffset": 25,
+          "endOffset": 42,
+          "score": 0.8572048,
+          "text": "During this visit",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.977701,
+              "relationshipScore": 0.934394,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 51,
+              "endOffset": 73,
+              "text": "fasting glucose levels",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 51,
+          "endOffset": 73,
+          "score": 0.977701,
+          "text": "fasting glucose levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99174774,
+              "relationshipScore": 0.99999905,
+              "relationshipType": "TEST_VALUE",
+              "id": 3,
+              "beginOffset": 77,
+              "endOffset": 79,
+              "text": "99",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99801266,
+              "relationshipScore": 0.99999535,
+              "relationshipType": "TEST_UNIT",
+              "id": 4,
+              "beginOffset": 80,
+              "endOffset": 85,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4941293,
+              "relationshipScore": 0.99985397,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 91,
+              "endOffset": 112,
+              "text": "no significant change",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 122,
+          "endOffset": 130,
+          "score": 0.4417282,
+          "text": "past few",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.977701,
+              "relationshipScore": 0.69634175,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 51,
+              "endOffset": 73,
+              "text": "fasting glucose levels",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 139,
+          "endOffset": 145,
+          "score": 0.41860345,
+          "text": "During",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.85916996,
+              "relationshipScore": 0.9235132,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 162,
+              "endOffset": 186,
+              "text": "total cholesterol values",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 162,
+          "endOffset": 186,
+          "score": 0.85916996,
+          "text": "total cholesterol values",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9993413,
+              "relationshipScore": 0.9999517,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 192,
+              "endOffset": 195,
+              "text": "6.9",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9966646,
+              "relationshipScore": 0.9999974,
+              "relationshipType": "TEST_UNIT",
+              "id": 8,
+              "beginOffset": 196,
+              "endOffset": 202,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 204,
+          "endOffset": 220,
+          "score": 0.9879265,
+          "text": "Serum HDL levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9963335,
+              "relationshipScore": 0.99999154,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 226,
+              "endOffset": 229,
+              "text": "2.3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99455476,
+              "relationshipScore": 0.99995065,
+              "relationshipType": "TEST_UNIT",
+              "id": 11,
+              "beginOffset": 230,
+              "endOffset": 236,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 238,
+          "endOffset": 251,
+          "score": 0.9968232,
+          "text": "triglycerides",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9985208,
+              "relationshipScore": 0.9997873,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 252,
+              "endOffset": 255,
+              "text": "2.8",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9964115,
+              "relationshipScore": 0.9995326,
+              "relationshipType": "TEST_UNIT",
+              "id": 14,
+              "beginOffset": 256,
+              "endOffset": 262,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 264,
+          "endOffset": 279,
+          "score": 0.9406108,
+          "text": "LDL cholesterol",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99935657,
+              "relationshipScore": 0.9994809,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 280,
+              "endOffset": 283,
+              "text": "4.2",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9824654,
+              "relationshipScore": 0.9999927,
+              "relationshipType": "TEST_UNIT",
+              "id": 17,
+              "beginOffset": 284,
+              "endOffset": 290,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 295,
+          "endOffset": 331,
+          "score": 0.9906126,
+          "text": "high-density lipoprotein cholesterol",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9977023,
+              "relationshipScore": 0.9278734,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 340,
+              "endOffset": 343,
+              "text": "1.6",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 333,
+          "endOffset": 338,
+          "score": 0.8237623,
+          "text": "HDL-C",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9977023,
+              "relationshipScore": 0.9972269,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 340,
+              "endOffset": 343,
+              "text": "1.6",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99415463,
+              "relationshipScore": 0.96840835,
+              "relationshipType": "TEST_UNIT",
+              "id": 21,
+              "beginOffset": 344,
+              "endOffset": 350,
+              "text": "mmol/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f153676-5bef-4477-95ab-1fcbfbabbd3a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f153676-5bef-4477-95ab-1fcbfbabbd3a"
+          ],
+          "Content-Length": [
+            "6099"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6099",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:04 GMT",
+          "x-amzn-RequestId": "4f153676-5bef-4477-95ab-1fcbfbabbd3a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1397,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90440804,
+          "beginOffset": 4,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92253053
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.86011094
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.77475566
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.75926113
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.74071264
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.74016804
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b8cfa1cf-e075-47ae-9077-1164c2e7212d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b8cfa1cf-e075-47ae-9077-1164c2e7212d"
+          ],
+          "Content-Length": [
+            "831"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "831",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:05 GMT",
+          "x-amzn-RequestId": "b8cfa1cf-e075-47ae-9077-1164c2e7212d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 173,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a93c8626-a275-41c5-87e9-87fcbc378308"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a93c8626-a275-41c5-87e9-87fcbc378308"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:04 GMT",
+          "x-amzn-RequestId": "a93c8626-a275-41c5-87e9-87fcbc378308"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:06 PM"
+}

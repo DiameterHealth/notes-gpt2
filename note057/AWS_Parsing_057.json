@@ -1,0 +1,645 @@
+{
+  "note": ". A large portion of pt was advised to take medication, preferably NSAID that has a low toxicity profile like indomethacin. Ps was managed with a combination of ibuprofen/cetabine, diclofenac/ticlopidine, and piroxicam/sertraline as appropriate, with pt receiving the most effective therapy. The ulcer became a smaller, much easier to treat one for 2 weeks, and then pt was instructed to discontinue all NSAIDs and diclofenac.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 301,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 67,
+          "endOffset": 72,
+          "score": 0.41082373,
+          "text": "NSAID",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 84,
+          "endOffset": 96,
+          "score": 0.707805,
+          "text": "low toxicity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8571111
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 110,
+          "endOffset": 122,
+          "score": 0.99681574,
+          "text": "indomethacin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 161,
+          "endOffset": 170,
+          "score": 0.9830313,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 171,
+          "endOffset": 179,
+          "score": 0.9837053,
+          "text": "cetabine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 181,
+          "endOffset": 191,
+          "score": 0.99738353,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 192,
+          "endOffset": 203,
+          "score": 0.9992618,
+          "text": "ticlopidine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 209,
+          "endOffset": 218,
+          "score": 0.9970022,
+          "text": "piroxicam",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 219,
+          "endOffset": 229,
+          "score": 0.9996138,
+          "text": "sertraline",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 296,
+          "endOffset": 301,
+          "score": 0.95272905,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91881233
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 404,
+          "endOffset": 410,
+          "score": 0.643848,
+          "text": "NSAIDs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 404,
+          "endOffset": 410,
+          "score": 0.90651786,
+          "text": "NSAIDs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.8593716
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 415,
+          "endOffset": 425,
+          "score": 0.9981458,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eea08eb0-61ae-4875-8457-d0ce15b10a65"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eea08eb0-61ae-4875-8457-d0ce15b10a65"
+          ],
+          "Content-Length": [
+            "2143"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2143",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:44 GMT",
+          "x-amzn-RequestId": "eea08eb0-61ae-4875-8457-d0ce15b10a65"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 526,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "low toxicity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7078049,
+          "beginOffset": 84,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8571111
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Poisoning by unspecified drugs, medicaments and biological substances, accidental (unintentional)",
+              "code": "T50.901",
+              "score": 0.67250043
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.62082314
+            },
+            {
+              "description": "Anemia, unspecified",
+              "code": "D64.9",
+              "score": 0.5894138
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.5755602
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.54913074
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95272905,
+          "beginOffset": 296,
+          "endOffset": 301,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91881233
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.65032935
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.6284609
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.6260519
+            },
+            {
+              "description": "Abscess of the breast and nipple",
+              "code": "N61.1",
+              "score": 0.61910325
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.6109417
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cf3274b3-b650-4adf-8568-83850ca1838a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cf3274b3-b650-4adf-8568-83850ca1838a"
+          ],
+          "Content-Length": [
+            "1655"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1655",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:45 GMT",
+          "x-amzn-RequestId": "cf3274b3-b650-4adf-8568-83850ca1838a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 584,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "indomethacin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99681574,
+          "beginOffset": 110,
+          "endOffset": 122,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Indomethacin",
+              "code": "5781",
+              "score": 0.9416777
+            },
+            {
+              "description": "Indomethacin 40 MG Oral Capsule",
+              "code": "1491529",
+              "score": 0.55485153
+            },
+            {
+              "description": "Indomethacin 50 MG Oral Capsule",
+              "code": "197818",
+              "score": 0.5130784
+            },
+            {
+              "description": "Indomethacin 1 MG Injection",
+              "code": "346508",
+              "score": 0.49240404
+            },
+            {
+              "description": "Indomethacin 20 MG Oral Capsule [Tivorbex]",
+              "code": "1491527",
+              "score": 0.38746434
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9830313,
+          "beginOffset": 161,
+          "endOffset": 170,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768029
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cetabine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9837053,
+          "beginOffset": 171,
+          "endOffset": 179,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ketamine",
+              "code": "6130",
+              "score": 0.5773017
+            },
+            {
+              "description": "Ketamine 50 MG/ML Injectable Solution",
+              "code": "238084",
+              "score": 0.36960107
+            },
+            {
+              "description": "Ketamine 100 MG/ML Injectable Solution",
+              "code": "238083",
+              "score": 0.34855977
+            },
+            {
+              "description": "Ketamine 10 MG/ML Injectable Solution",
+              "code": "238082",
+              "score": 0.2575107
+            },
+            {
+              "description": "Betaine 300 MG Oral Tablet",
+              "code": "199239",
+              "score": 0.24078166
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99738353,
+          "beginOffset": 181,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Diclofenac",
+              "code": "3355",
+              "score": 0.94906294
+            },
+            {
+              "description": "Diclofenac Sodium 0.01 MG/MG Topical Gel",
+              "code": "855633",
+              "score": 0.8090719
+            },
+            {
+              "description": "Diclofenac Sodium 0.015 MG/MG Medicated Patch",
+              "code": "1995011",
+              "score": 0.5687754
+            },
+            {
+              "description": "Diclofenac Sodium 100 MG Oral Capsule",
+              "code": "1234493",
+              "score": 0.5664999
+            },
+            {
+              "description": "24 HR Diclofenac Sodium 100 MG Extended Release Oral Tablet",
+              "code": "855657",
+              "score": 0.46070808
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "ticlopidine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9992618,
+          "beginOffset": 192,
+          "endOffset": 203,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ticlopidine",
+              "code": "10594",
+              "score": 0.94574547
+            },
+            {
+              "description": "Ticlopidine Hydrochloride 250 MG Oral Tablet",
+              "code": "313406",
+              "score": 0.79563296
+            },
+            {
+              "description": "Ticlopidine Hydrochloride 250 MG Oral Tablet [Ticlid]",
+              "code": "208558",
+              "score": 0.26161417
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "piroxicam",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9970022,
+          "beginOffset": 209,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Piroxicam",
+              "code": "8356",
+              "score": 0.9410756
+            },
+            {
+              "description": "Piroxicam 20 MG Oral Tablet",
+              "code": "199560",
+              "score": 0.7502975
+            },
+            {
+              "description": "Piroxicam 20 MG Oral Capsule",
+              "code": "198108",
+              "score": 0.7033752
+            },
+            {
+              "description": "Piroxicam 10 MG Oral Capsule",
+              "code": "198107",
+              "score": 0.31450102
+            },
+            {
+              "description": "Piroxicam 10 MG Oral Tablet",
+              "code": "199559",
+              "score": 0.26989055
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "sertraline",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9996138,
+          "beginOffset": 219,
+          "endOffset": 229,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Sertraline",
+              "code": "36437",
+              "score": 0.94410115
+            },
+            {
+              "description": "Sertraline 100 MG Oral Tablet",
+              "code": "312938",
+              "score": 0.83815104
+            },
+            {
+              "description": "Sertraline 50 MG Oral Tablet",
+              "code": "312941",
+              "score": 0.822102
+            },
+            {
+              "description": "Sertraline 150 MG Oral Tablet",
+              "code": "794947",
+              "score": 0.7123856
+            },
+            {
+              "description": "Sertraline 200 MG Oral Tablet",
+              "code": "251200",
+              "score": 0.688604
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9981458,
+          "beginOffset": 415,
+          "endOffset": 425,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Diclofenac",
+              "code": "3355",
+              "score": 0.94906294
+            },
+            {
+              "description": "Diclofenac Sodium 0.01 MG/MG Topical Gel",
+              "code": "855633",
+              "score": 0.8090719
+            },
+            {
+              "description": "Diclofenac Potassium 50 MG Powder for Oral Solution",
+              "code": "859063",
+              "score": 0.3803983
+            },
+            {
+              "description": "Diclofenac 35 MG Oral Capsule",
+              "code": "1442128",
+              "score": 0.20785606
+            },
+            {
+              "description": "Diclofenac 18 MG Oral Capsule",
+              "code": "1442116",
+              "score": 0.1285129
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c3087c28-7fe8-4710-a03f-5535f2b6e5e7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c3087c28-7fe8-4710-a03f-5535f2b6e5e7"
+          ],
+          "Content-Length": [
+            "4997"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4997",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:44 GMT",
+          "x-amzn-RequestId": "c3087c28-7fe8-4710-a03f-5535f2b6e5e7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:45 PM"
+}

@@ -1,0 +1,446 @@
+{
+  "note": ".  Case Presentation: During this course, we find a patient who has a history of hospital acquired pneumonia but had been seen prior to onset of symptoms who had no previous symptoms suggestive of an influenza virus infection. At presentation, this patient is agitated, has rapid respiration, and complains of the same difficulty in breathing. The patient is taken to a hospital and his sputum is screened for influenza virus.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 329,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 99,
+          "endOffset": 108,
+          "score": 0.9933351,
+          "text": "pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9658275
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 200,
+          "endOffset": 225,
+          "score": 0.8878119,
+          "text": "influenza virus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8049005
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5354481
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 227,
+          "endOffset": 229,
+          "score": 0.42497194,
+          "text": "At",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.94461167,
+              "relationshipScore": 0.5948901,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 260,
+              "endOffset": 268,
+              "text": "agitated",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.73719525
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 260,
+          "endOffset": 268,
+          "score": 0.94461167,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73719525
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 319,
+          "endOffset": 342,
+          "score": 0.9084545,
+          "text": "difficulty in breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6693982
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 410,
+          "endOffset": 425,
+          "score": 0.8821745,
+          "text": "influenza virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.76605934
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9b4864d6-2521-40a7-836a-ea64cf21735b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9b4864d6-2521-40a7-836a-ea64cf21735b"
+          ],
+          "Content-Length": [
+            "1535"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1535",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:06 GMT",
+          "x-amzn-RequestId": "9b4864d6-2521-40a7-836a-ea64cf21735b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 414,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9933351,
+          "beginOffset": 99,
+          "endOffset": 108,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9658275
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pneumonia, unspecified organism",
+              "code": "J18.9",
+              "score": 0.83630204
+            },
+            {
+              "description": "Personal history of pneumonia (recurrent)",
+              "code": "Z87.01",
+              "score": 0.7502994
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7262399
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.68033856
+            },
+            {
+              "description": "Pneumonia due to Methicillin resistant Staphylococcus aureus",
+              "code": "J15.212",
+              "score": 0.6735772
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "influenza virus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8878119,
+          "beginOffset": 200,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8049005
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5354481
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.83297
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.6656822
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.6255485
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6007613
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.56070733
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94461167,
+          "beginOffset": 260,
+          "endOffset": 268,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73719525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Restlessness and agitation",
+              "code": "R45.1",
+              "score": 0.8622473
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.7375036
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.7314106
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7110008
+            },
+            {
+              "description": "Acute stress reaction",
+              "code": "F43.0",
+              "score": 0.67072076
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "difficulty in breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9084545,
+          "beginOffset": 319,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6693981
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.67471284
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6223614
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.60292095
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.5608648
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.51442975
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "influenza virus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8821745,
+          "beginOffset": 410,
+          "endOffset": 425,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.76605934
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.8562143
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.7451066
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.67612785
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.6391139
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with other manifestations",
+              "code": "J11.89",
+              "score": 0.59520286
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f53975a7-e715-47ef-aafe-247ead12197f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f53975a7-e715-47ef-aafe-247ead12197f"
+          ],
+          "Content-Length": [
+            "3940"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3940",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:06 GMT",
+          "x-amzn-RequestId": "f53975a7-e715-47ef-aafe-247ead12197f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4e3a7c8c-e06d-4aae-8707-d34ea8407b77"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4e3a7c8c-e06d-4aae-8707-d34ea8407b77"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:06 GMT",
+          "x-amzn-RequestId": "4e3a7c8c-e06d-4aae-8707-d34ea8407b77"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:07 PM"
+}

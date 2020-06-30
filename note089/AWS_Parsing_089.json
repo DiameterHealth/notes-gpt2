@@ -1,0 +1,667 @@
+{
+  "note": "Her neurological exam revealed an abnormal MRI and EEG. During hospital intake and admission, she developed a mild motor skill deficit. Her neurological exam was followed by serial neurological examinations with normal neurologic performance. She was discharged home with low-grade neurological symptoms (musculoskeletal, visual) after 5 days. 2. Acute Toxic Encephalopathy (ATEP): She developed a transient Torsades de Pointes and a postictal coma.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 502,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 4,
+          "endOffset": 21,
+          "score": 0.9053119,
+          "text": "neurological exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99304223,
+              "relationshipScore": 0.99876666,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 34,
+              "endOffset": 42,
+              "text": "abnormal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32700595,
+              "relationshipScore": 0.960119,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 110,
+              "endOffset": 134,
+              "text": "mild motor skill deficit",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 43,
+          "endOffset": 46,
+          "score": 0.96980256,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99304223,
+              "relationshipScore": 0.9999893,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 34,
+              "endOffset": 42,
+              "text": "abnormal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32700595,
+              "relationshipScore": 0.95029116,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 110,
+              "endOffset": 134,
+              "text": "mild motor skill deficit",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 51,
+          "endOffset": 54,
+          "score": 0.9939115,
+          "text": "EEG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99304223,
+              "relationshipScore": 0.9982658,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 34,
+              "endOffset": 42,
+              "text": "abnormal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32700595,
+              "relationshipScore": 0.9939376,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 110,
+              "endOffset": 134,
+              "text": "mild motor skill deficit",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "score": 0.93539476,
+          "text": "motor skill deficit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.72143406
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 140,
+          "endOffset": 157,
+          "score": 0.9424932,
+          "text": "neurological exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 174,
+          "endOffset": 206,
+          "score": 0.44763875,
+          "text": "serial neurological examinations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 219,
+          "endOffset": 241,
+          "score": 0.6606112,
+          "text": "neurologic performance",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.88513964,
+              "relationshipScore": 0.99999917,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 212,
+              "endOffset": 218,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 282,
+          "endOffset": 303,
+          "score": 0.91223514,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63495356
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 336,
+          "endOffset": 337,
+          "score": 0.5742827,
+          "text": "5",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.91223514,
+              "relationshipScore": 0.68990463,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 282,
+              "endOffset": 303,
+              "text": "neurological symptoms",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.63495356
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 353,
+          "endOffset": 373,
+          "score": 0.9769166,
+          "text": "Toxic Encephalopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9334747
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7717594,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 347,
+              "endOffset": 352,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 408,
+          "endOffset": 427,
+          "score": 0.98409355,
+          "text": "Torsades de Pointes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86646205
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.22527443,
+              "relationshipScore": 0.9999989,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 398,
+              "endOffset": 407,
+              "text": "transient",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 434,
+          "endOffset": 448,
+          "score": 0.9564117,
+          "text": "postictal coma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7965502
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.7717594,
+            "id": 2,
+            "beginOffset": 347,
+            "endOffset": 352,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.22527443,
+            "id": 4,
+            "beginOffset": 398,
+            "endOffset": 407,
+            "text": "transient",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f1e385a6-185e-4281-b83a-c3f3a222c62e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f1e385a6-185e-4281-b83a-c3f3a222c62e"
+          ],
+          "Content-Length": [
+            "5040"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5040",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:33 GMT",
+          "x-amzn-RequestId": "f1e385a6-185e-4281-b83a-c3f3a222c62e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1564,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "motor skill deficit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93539476,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.72143406
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.84038526
+            },
+            {
+              "description": "Abnormal reflex",
+              "code": "R29.2",
+              "score": 0.70377445
+            },
+            {
+              "description": "Other disorders of nervous system",
+              "code": "G98.8",
+              "score": 0.68802124
+            },
+            {
+              "description": "Weakness",
+              "code": "R53.1",
+              "score": 0.680942
+            },
+            {
+              "description": "Other lack of coordination",
+              "code": "R27.8",
+              "score": 0.6388467
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91223514,
+          "beginOffset": 282,
+          "endOffset": 303,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63495356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.71376437
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.7056991
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5889764
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.5776048
+            },
+            {
+              "description": "Other disorders of nervous system",
+              "code": "G98.8",
+              "score": 0.48381382
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Toxic Encephalopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9769166,
+          "beginOffset": 353,
+          "endOffset": 373,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.77175933,
+              "relationshipScore": 0.9999994,
+              "id": 2,
+              "beginOffset": 347,
+              "endOffset": 352,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9334747
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic encephalopathy",
+              "code": "G92",
+              "score": 0.58420324
+            },
+            {
+              "description": "Metabolic encephalopathy",
+              "code": "G93.41",
+              "score": 0.4700505
+            },
+            {
+              "description": "Encephalopathy, unspecified",
+              "code": "G93.40",
+              "score": 0.46807715
+            },
+            {
+              "description": "Poisoning by unspecified drugs, medicaments and biological substances, accidental (unintentional)",
+              "code": "T50.901",
+              "score": 0.46009073
+            },
+            {
+              "description": "Hypertensive encephalopathy",
+              "code": "I67.4",
+              "score": 0.40907568
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Torsades de Pointes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98409355,
+          "beginOffset": 408,
+          "endOffset": 427,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.22527447,
+              "relationshipScore": 0.9999989,
+              "id": 4,
+              "beginOffset": 398,
+              "endOffset": 407,
+              "text": "transient",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86646205
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.50978786
+            },
+            {
+              "description": "Tornado",
+              "code": "X37.1",
+              "score": 0.44369465
+            },
+            {
+              "description": "Ventricular septal defect",
+              "code": "Q21.0",
+              "score": 0.37114194
+            },
+            {
+              "description": "Linear scleroderma",
+              "code": "L94.1",
+              "score": 0.292493
+            },
+            {
+              "description": "Radial styloid tenosynovitis [de Quervain]",
+              "code": "M65.4",
+              "score": 0.28846976
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "postictal coma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9564117,
+          "beginOffset": 434,
+          "endOffset": 448,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7965502
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.7358232
+            },
+            {
+              "description": "Unspecified coma",
+              "code": "R40.20",
+              "score": 0.6382909
+            },
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.554441
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.5166202
+            },
+            {
+              "description": "Acute and subacute hepatic failure with coma",
+              "code": "K72.01",
+              "score": 0.44929013
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9fb45f97-7a41-470b-8316-c79a597719b5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9fb45f97-7a41-470b-8316-c79a597719b5"
+          ],
+          "Content-Length": [
+            "3898"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3898",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:35 GMT",
+          "x-amzn-RequestId": "9fb45f97-7a41-470b-8316-c79a597719b5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "87e3f429-c28e-4665-b109-efe756461295"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "87e3f429-c28e-4665-b109-efe756461295"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:33 GMT",
+          "x-amzn-RequestId": "87e3f429-c28e-4665-b109-efe756461295"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:35 PM"
+}

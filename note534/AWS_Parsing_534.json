@@ -1,0 +1,893 @@
+{
+  "note": "Pt had a fracture of JCL. ED does x-rays of R knee. Pt states she had an episodic back pain throughout the previous year. CT, PET \u0026 MRI done. R knee is found to be fractured and in significant disrepair including significant soft tissue injury. ED states R knee fracture is non-contact, and it\u0027s possible this R knee could be a source of her pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1024,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 9,
+          "endOffset": 17,
+          "score": 0.9602069,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90734583
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 26,
+          "endOffset": 28,
+          "score": 0.7608639,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 34,
+          "endOffset": 40,
+          "score": 0.9184178,
+          "text": "x-rays",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 46,
+          "endOffset": 50,
+          "score": 0.99180686,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 82,
+          "endOffset": 86,
+          "score": 0.97972566,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 82,
+          "endOffset": 91,
+          "score": 0.9902834,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5770855
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87601745,
+              "relationshipScore": 0.98896784,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 73,
+              "endOffset": 81,
+              "text": "episodic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97972566,
+              "relationshipScore": 0.78556925,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 82,
+              "endOffset": 86,
+              "text": "back",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 92,
+          "endOffset": 106,
+          "score": 0.45701447,
+          "text": "throughout the",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9902834,
+              "relationshipScore": 0.9594442,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 82,
+              "endOffset": 91,
+              "text": "back pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.5770855
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 107,
+          "endOffset": 120,
+          "score": 0.8314135,
+          "text": "previous year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9902834,
+              "relationshipScore": 0.9677778,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 82,
+              "endOffset": 91,
+              "text": "back pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.5770855
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 107,
+          "endOffset": 120,
+          "score": 0.8314135,
+          "text": "previous year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.82793283,
+              "relationshipScore": 0.53169745,
+              "relationshipType": "OVERLAP",
+              "id": 21,
+              "beginOffset": 126,
+              "endOffset": 129,
+              "text": "PET",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 107,
+          "endOffset": 120,
+          "score": 0.8314135,
+          "text": "previous year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9732762,
+              "relationshipScore": 0.714858,
+              "relationshipType": "OVERLAP",
+              "id": 20,
+              "beginOffset": 122,
+              "endOffset": 124,
+              "text": "CT",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 122,
+          "endOffset": 124,
+          "score": 0.9732762,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 21,
+          "beginOffset": 126,
+          "endOffset": 129,
+          "score": 0.82793283,
+          "text": "PET",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 22,
+          "beginOffset": 132,
+          "endOffset": 135,
+          "score": 0.99632615,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 144,
+          "endOffset": 148,
+          "score": 0.9913306,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 164,
+          "endOffset": 173,
+          "score": 0.91866976,
+          "text": "fractured",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68144065
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9936479,
+              "relationshipScore": 0.9998332,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 142,
+              "endOffset": 143,
+              "text": "R",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9913306,
+              "relationshipScore": 0.99971277,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 144,
+              "endOffset": 148,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 225,
+          "endOffset": 236,
+          "score": 0.7489165,
+          "text": "soft tissue",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 225,
+          "endOffset": 243,
+          "score": 0.60093683,
+          "text": "soft tissue injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6598588
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9913306,
+              "relationshipScore": 0.8724787,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 144,
+              "endOffset": 148,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 245,
+          "endOffset": 247,
+          "score": 0.7365973,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 257,
+          "endOffset": 261,
+          "score": 0.99206674,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 257,
+          "endOffset": 270,
+          "score": 0.81937534,
+          "text": "knee fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94879794
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9940221,
+              "relationshipScore": 0.99992585,
+              "relationshipType": "DIRECTION",
+              "id": 6,
+              "beginOffset": 255,
+              "endOffset": 256,
+              "text": "R",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 312,
+          "endOffset": 316,
+          "score": 0.9838076,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 342,
+          "endOffset": 346,
+          "score": 0.9870617,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5190632
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9919602,
+            "id": 0,
+            "beginOffset": 44,
+            "endOffset": 45,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.87601745,
+            "id": 11,
+            "beginOffset": 73,
+            "endOffset": 81,
+            "text": "episodic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9936479,
+            "id": 3,
+            "beginOffset": 142,
+            "endOffset": 143,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9940221,
+            "id": 6,
+            "beginOffset": 255,
+            "endOffset": 256,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.98701745,
+            "id": 8,
+            "beginOffset": 310,
+            "endOffset": 311,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d163e48d-249b-4f88-9ead-88814ef60166"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d163e48d-249b-4f88-9ead-88814ef60166"
+          ],
+          "Content-Length": [
+            "6872"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6872",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:38 GMT",
+          "x-amzn-RequestId": "d163e48d-249b-4f88-9ead-88814ef60166"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1126,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9602069,
+          "beginOffset": 9,
+          "endOffset": 17,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90734583
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified fracture of left patella",
+              "code": "S82.002",
+              "score": 0.5610315
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5559997
+            },
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.53029794
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.52953863
+            },
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.5120535
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9902834,
+          "beginOffset": 82,
+          "endOffset": 91,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87601745,
+              "relationshipScore": 0.98896784,
+              "id": 3,
+              "beginOffset": 73,
+              "endOffset": 81,
+              "text": "episodic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.57708555
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.5690685
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.5328783
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.5039462
+            },
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.4740281
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.38697118
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "fractured",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91866976,
+          "beginOffset": 164,
+          "endOffset": 173,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9936479,
+              "relationshipScore": 0.9998332,
+              "id": 6,
+              "beginOffset": 142,
+              "endOffset": 143,
+              "text": "R",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9913306,
+              "relationshipScore": 0.99971277,
+              "id": 7,
+              "beginOffset": 144,
+              "endOffset": 148,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6814406
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.41847473
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.33239138
+            },
+            {
+              "description": "Unspecified fracture of left patella",
+              "code": "S82.002",
+              "score": 0.32548013
+            },
+            {
+              "description": "Fracture of left shoulder girdle, part unspecified",
+              "code": "S42.92",
+              "score": 0.31213826
+            },
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.30085889
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "soft tissue injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60093683,
+          "beginOffset": 225,
+          "endOffset": 243,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9913306,
+              "relationshipScore": 0.8724787,
+              "id": 7,
+              "beginOffset": 144,
+              "endOffset": 148,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6598588
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Contusion of right knee",
+              "code": "S80.01",
+              "score": 0.4741349
+            },
+            {
+              "description": "Contusion of left knee",
+              "code": "S80.02",
+              "score": 0.47112635
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.46271977
+            },
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.44860315
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.4436353
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "knee fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8193754,
+          "beginOffset": 257,
+          "endOffset": 270,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9940221,
+              "relationshipScore": 0.99992585,
+              "id": 11,
+              "beginOffset": 255,
+              "endOffset": 256,
+              "text": "R",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94879794
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.5078009
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.46934927
+            },
+            {
+              "description": "Unspecified fracture of left patella",
+              "code": "S82.002",
+              "score": 0.4121911
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.38666713
+            },
+            {
+              "description": "Pain in unspecified knee",
+              "code": "M25.569",
+              "score": 0.37635002
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9870617,
+          "beginOffset": 342,
+          "endOffset": 346,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51906323
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5635555
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.46440557
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.45250997
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.45151648
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.4336046
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ac87ada4-68fc-4e19-95c3-a25fa9d698c0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ac87ada4-68fc-4e19-95c3-a25fa9d698c0"
+          ],
+          "Content-Length": [
+            "4887"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4887",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:39 GMT",
+          "x-amzn-RequestId": "ac87ada4-68fc-4e19-95c3-a25fa9d698c0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ba181673-07bb-4cdf-9ce6-b3129d1d5979"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ba181673-07bb-4cdf-9ce6-b3129d1d5979"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:38 GMT",
+          "x-amzn-RequestId": "ba181673-07bb-4cdf-9ce6-b3129d1d5979"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:40 PM"
+}

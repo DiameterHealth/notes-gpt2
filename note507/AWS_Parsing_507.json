@@ -1,0 +1,629 @@
+{
+  "note": ", and recent surgery for heart valve replacement. The medical history of this individual was extensive. He had a history of alcoholism, depression, anorexia, and venous insufficiency. He was also receiving H\u0026Ps at the time of the accident. He reported to be moderately conscious in the ED but was confused and agitated both in the ED and at the time of the crash.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 655,
+    "data": {
+      "entities": [
+        {
+          "id": 12,
+          "beginOffset": 6,
+          "endOffset": 12,
+          "score": 0.9999964,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.90668494,
+              "relationshipScore": 0.9650654,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 13,
+              "endOffset": 20,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 6,
+          "endOffset": 12,
+          "score": 0.9999964,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.91326994,
+              "relationshipScore": 0.9323228,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 25,
+              "endOffset": 48,
+              "text": "heart valve replacement",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 13,
+          "endOffset": 20,
+          "score": 0.90668494,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 25,
+          "endOffset": 30,
+          "score": 0.62965435,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 25,
+          "endOffset": 48,
+          "score": 0.91326994,
+          "text": "heart valve replacement",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 124,
+          "endOffset": 134,
+          "score": 0.9858867,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9451373
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 136,
+          "endOffset": 146,
+          "score": 0.99803144,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9380633
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 148,
+          "endOffset": 156,
+          "score": 0.99854517,
+          "text": "anorexia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8792428
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 162,
+          "endOffset": 182,
+          "score": 0.9823867,
+          "text": "venous insufficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621547
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 269,
+          "endOffset": 278,
+          "score": 0.516279,
+          "text": "conscious",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 286,
+          "endOffset": 288,
+          "score": 0.9925567,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 297,
+          "endOffset": 305,
+          "score": 0.97919375,
+          "text": "confused",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47476017
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.6737827
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 310,
+          "endOffset": 318,
+          "score": 0.9868751,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65897584
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.49509376
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 331,
+          "endOffset": 333,
+          "score": 0.99070096,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "95081371-aeea-429e-8f0a-9619ce94f795"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "95081371-aeea-429e-8f0a-9619ce94f795"
+          ],
+          "Content-Length": [
+            "3079"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3079",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:41 GMT",
+          "x-amzn-RequestId": "95081371-aeea-429e-8f0a-9619ce94f795"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1146,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9858867,
+          "beginOffset": 124,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9451373
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol dependence, uncomplicated",
+              "code": "F10.20",
+              "score": 0.5769803
+            },
+            {
+              "description": "Alcohol dependence, in remission",
+              "code": "F10.21",
+              "score": 0.52414185
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.4530817
+            },
+            {
+              "description": "Alcohol dependence with withdrawal, unspecified",
+              "code": "F10.239",
+              "score": 0.4443208
+            },
+            {
+              "description": "Alcohol abuse, in remission",
+              "code": "F10.11",
+              "score": 0.4156291
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99803144,
+          "beginOffset": 136,
+          "endOffset": 146,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9380633
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.762717
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6309887
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.604981
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.5588538
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.5221316
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "anorexia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99854517,
+          "beginOffset": 148,
+          "endOffset": 156,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87924266
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.8012254
+            },
+            {
+              "description": "Hypoxemia",
+              "code": "R09.02",
+              "score": 0.5254796
+            },
+            {
+              "description": "Anorexia nervosa, restricting type",
+              "code": "F50.01",
+              "score": 0.51775175
+            },
+            {
+              "description": "Anoxic brain damage, not elsewhere classified",
+              "code": "G93.1",
+              "score": 0.48835325
+            },
+            {
+              "description": "Anorexia nervosa, unspecified",
+              "code": "F50.00",
+              "score": 0.47192255
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "venous insufficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9823867,
+          "beginOffset": 162,
+          "endOffset": 182,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621547
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Venous insufficiency (chronic) (peripheral)",
+              "code": "I87.2",
+              "score": 0.7584203
+            },
+            {
+              "description": "Other specified disorders of veins",
+              "code": "I87.8",
+              "score": 0.58130115
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.5684103
+            },
+            {
+              "description": "Nonrheumatic aortic (valve) insufficiency",
+              "code": "I35.1",
+              "score": 0.56721246
+            },
+            {
+              "description": "Acute cerebrovascular insufficiency",
+              "code": "I67.81",
+              "score": 0.5206537
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "conscious",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5162789,
+          "beginOffset": 269,
+          "endOffset": 278,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.80269814
+            },
+            {
+              "description": "Unspecified coma",
+              "code": "R40.20",
+              "score": 0.78344464
+            },
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.73641783
+            },
+            {
+              "description": "Malingerer [conscious simulation]",
+              "code": "Z76.5",
+              "score": 0.6916412
+            },
+            {
+              "description": "Traumatic subdural hemorrhage with loss of consciousness of unspecified duration",
+              "code": "S06.5X9",
+              "score": 0.6846452
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "confused",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97919375,
+          "beginOffset": 297,
+          "endOffset": 305,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47476017
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.6737827
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.89061177
+            },
+            {
+              "description": "Coma scale, best verbal response, confused conversation",
+              "code": "R40.224",
+              "score": 0.6465297
+            },
+            {
+              "description": "Alcohol dependence with withdrawal delirium",
+              "code": "F10.231",
+              "score": 0.4800658
+            },
+            {
+              "description": "Delirium due to known physiological condition",
+              "code": "F05",
+              "score": 0.45213675
+            },
+            {
+              "description": "Other dissociative and conversion disorders",
+              "code": "F44.89",
+              "score": 0.39688164
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9868751,
+          "beginOffset": 310,
+          "endOffset": 318,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65897584
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.49509367
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Restlessness and agitation",
+              "code": "R45.1",
+              "score": 0.86705816
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.7362318
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.7232432
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6996324
+            },
+            {
+              "description": "Acute stress reaction",
+              "code": "F43.0",
+              "score": 0.63411325
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dd313ad0-93a4-44f0-9538-f9e74269ab0d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dd313ad0-93a4-44f0-9538-f9e74269ab0d"
+          ],
+          "Content-Length": [
+            "5205"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5205",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:42 GMT",
+          "x-amzn-RequestId": "dd313ad0-93a4-44f0-9538-f9e74269ab0d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 191,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b7bb7811-b608-4b72-9b1c-cba3ac695811"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b7bb7811-b608-4b72-9b1c-cba3ac695811"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:41 GMT",
+          "x-amzn-RequestId": "b7bb7811-b608-4b72-9b1c-cba3ac695811"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:42 PM"
+}

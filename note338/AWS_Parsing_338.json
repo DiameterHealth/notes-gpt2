@@ -1,0 +1,427 @@
+{
+  "note": ". He is in excellent health and has no history of cardiac symptoms or risk factors. His family history of stroke is also negative. He is able to walk without assistance. He has been attending a chiropractic clinic for 30 y.o. and has had no significant changes in his daily activity. The patient has had a recent visit to a different chiropractor who suggested a physical exam (with palpation on the abdomen).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 369,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 11,
+          "endOffset": 27,
+          "score": 0.40422234,
+          "text": "excellent health",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 50,
+          "endOffset": 66,
+          "score": 0.951032,
+          "text": "cardiac symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73012054
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8067752
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 106,
+          "endOffset": 112,
+          "score": 0.95683414,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8843041
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 137,
+          "endOffset": 168,
+          "score": 0.58972853,
+          "text": "able to walk without assistance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 218,
+          "endOffset": 220,
+          "score": 0.62800205,
+          "text": "30",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 253,
+          "endOffset": 282,
+          "score": 0.64373636,
+          "text": "changes in his daily activity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4022027
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 363,
+          "endOffset": 376,
+          "score": 0.8254008,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 400,
+          "endOffset": 407,
+          "score": 0.9937237,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "948f336c-c027-41aa-9b6d-206ecac4ffb7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "948f336c-c027-41aa-9b6d-206ecac4ffb7"
+          ],
+          "Content-Length": [
+            "1498"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1498",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:33 GMT",
+          "x-amzn-RequestId": "948f336c-c027-41aa-9b6d-206ecac4ffb7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1065,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "excellent health",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40422246,
+          "beginOffset": 11,
+          "endOffset": 27,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.51609176
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.46226436
+            },
+            {
+              "description": "Other contact with and (suspected) exposures hazardous to health",
+              "code": "Z77.9",
+              "score": 0.42108268
+            },
+            {
+              "description": "Palpitations",
+              "code": "R00.2",
+              "score": 0.41512728
+            },
+            {
+              "description": "Other problems related to medical facilities and other health care",
+              "code": "Z75.8",
+              "score": 0.331599
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cardiac symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.951032,
+          "beginOffset": 50,
+          "endOffset": 66,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73012054
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8067752
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.6575801
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.46145415
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.4459811
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.43558502
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.3914607
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95683414,
+          "beginOffset": 106,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8843041
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.59735703
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.55311304
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.46925485
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.4202386
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.41330317
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "able to walk without assistance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.58972853,
+          "beginOffset": 137,
+          "endOffset": 168,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.5149476
+            },
+            {
+              "description": "Need for assistance with personal care",
+              "code": "Z74.1",
+              "score": 0.47480083
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.46898928
+            },
+            {
+              "description": "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+              "code": "E05.90",
+              "score": 0.45832896
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.37011808
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "changes in his daily activity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64373624,
+          "beginOffset": 253,
+          "endOffset": 282,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40220279
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.65022886
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.5990765
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.57930773
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.5792395
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.5608861
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0a6db6a7-74da-4787-b9f7-293cb1883068"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0a6db6a7-74da-4787-b9f7-293cb1883068"
+          ],
+          "Content-Length": [
+            "3931"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3931",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:35 GMT",
+          "x-amzn-RequestId": "0a6db6a7-74da-4787-b9f7-293cb1883068"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "73cd60d3-0ed4-4f07-9955-5ece64692a13"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "73cd60d3-0ed4-4f07-9955-5ece64692a13"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:33 GMT",
+          "x-amzn-RequestId": "73cd60d3-0ed4-4f07-9955-5ece64692a13"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:35 PM"
+}

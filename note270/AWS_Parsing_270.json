@@ -1,0 +1,600 @@
+{
+  "note": "These findings are consistent with a diagnosis of compartment syndrome and, as such, the patient is considered to be suffering from bilateral hip osteoarthritis and required urgent surgical intervention. Under medical decision making, a bilateral hip osteoarthritis was considered to be the appropriate treatment decision for the patient. Further evaluation of the case revealed that the patient had a history of multiple prior surgical treatment attempts (including osteotomy, open arthrosurgery, and corticosteroid injections) for bilateral hip bone deformities.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 697,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 50,
+          "endOffset": 70,
+          "score": 0.9208452,
+          "text": "compartment syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96692365
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 142,
+          "endOffset": 145,
+          "score": 0.98827773,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 142,
+          "endOffset": 160,
+          "score": 0.63440067,
+          "text": "hip osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95443755
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9960945,
+              "relationshipScore": 0.984939,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 132,
+              "endOffset": 141,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 181,
+          "endOffset": 202,
+          "score": 0.7440957,
+          "text": "surgical intervention",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 247,
+          "endOffset": 250,
+          "score": 0.9812873,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 247,
+          "endOffset": 265,
+          "score": 0.60063595,
+          "text": "hip osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95756537
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9935369,
+              "relationshipScore": 0.99964917,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 237,
+              "endOffset": 246,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 422,
+          "endOffset": 427,
+          "score": 0.99999917,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.34853253,
+              "relationshipScore": 0.9367793,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 428,
+              "endOffset": 446,
+              "text": "surgical treatment",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 428,
+          "endOffset": 446,
+          "score": 0.34853253,
+          "text": "surgical treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 467,
+          "endOffset": 476,
+          "score": 0.97457355,
+          "text": "osteotomy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 478,
+          "endOffset": 496,
+          "score": 0.9873126,
+          "text": "open arthrosurgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 502,
+          "endOffset": 527,
+          "score": 0.50972366,
+          "text": "corticosteroid injections",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 543,
+          "endOffset": 546,
+          "score": 0.73626786,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 543,
+          "endOffset": 563,
+          "score": 0.45882067,
+          "text": "hip bone deformities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47488424
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4725505
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9972363,
+              "relationshipScore": 0.9957767,
+              "relationshipType": "DIRECTION",
+              "id": 4,
+              "beginOffset": 533,
+              "endOffset": 542,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.73626786,
+              "relationshipScore": 0.5581461,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 543,
+              "endOffset": 546,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 547,
+          "endOffset": 551,
+          "score": 0.81835616,
+          "text": "bone",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9960945,
+            "id": 0,
+            "beginOffset": 132,
+            "endOffset": 141,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9935369,
+            "id": 2,
+            "beginOffset": 237,
+            "endOffset": 246,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9972363,
+            "id": 4,
+            "beginOffset": 533,
+            "endOffset": 542,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "40352d3a-a5a6-4fe3-8bdd-e4e29b905f8d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "40352d3a-a5a6-4fe3-8bdd-e4e29b905f8d"
+          ],
+          "Content-Length": [
+            "4193"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4193",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:07 GMT",
+          "x-amzn-RequestId": "40352d3a-a5a6-4fe3-8bdd-e4e29b905f8d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 806,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "compartment syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9208452,
+          "beginOffset": 50,
+          "endOffset": 70,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96692365
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Compartment syndrome, unspecified",
+              "code": "T79.A0",
+              "score": 0.43370295
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.35057947
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.3378633
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.3183798
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.3012004
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hip osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.63440067,
+          "beginOffset": 142,
+          "endOffset": 160,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9960945,
+              "relationshipScore": 0.984939,
+              "id": 1,
+              "beginOffset": 132,
+              "endOffset": 141,
+              "text": "bilateral",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95443755
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bilateral primary osteoarthritis of hip",
+              "code": "M16.0",
+              "score": 0.71698415
+            },
+            {
+              "description": "Bilateral primary osteoarthritis of knee",
+              "code": "M17.0",
+              "score": 0.6756343
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, left hip",
+              "code": "M16.12",
+              "score": 0.6498523
+            },
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.6264416
+            },
+            {
+              "description": "Unilateral primary osteoarthritis of hip",
+              "code": "M16.1",
+              "score": 0.6148642
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "hip osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60063577,
+          "beginOffset": 247,
+          "endOffset": 265,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9935369,
+              "relationshipScore": 0.99964917,
+              "id": 4,
+              "beginOffset": 237,
+              "endOffset": 246,
+              "text": "bilateral",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95756537
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bilateral primary osteoarthritis of hip",
+              "code": "M16.0",
+              "score": 0.78560066
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, left hip",
+              "code": "M16.12",
+              "score": 0.71456444
+            },
+            {
+              "description": "Bilateral primary osteoarthritis of knee",
+              "code": "M17.0",
+              "score": 0.6971402
+            },
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.696127
+            },
+            {
+              "description": "Unilateral primary osteoarthritis of hip",
+              "code": "M16.1",
+              "score": 0.69030714
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "hip bone deformities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.45882055,
+          "beginOffset": 543,
+          "endOffset": 563,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9972363,
+              "relationshipScore": 0.9957767,
+              "id": 7,
+              "beginOffset": 533,
+              "endOffset": 542,
+              "text": "bilateral",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47488424
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47255057
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.4701667
+            },
+            {
+              "description": "Other specified acquired deformities of musculoskeletal system",
+              "code": "M95.8",
+              "score": 0.44924074
+            },
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.44716263
+            },
+            {
+              "description": "Pain in right hip",
+              "code": "M25.551",
+              "score": 0.40418512
+            },
+            {
+              "description": "Unspecified acquired deformity of unspecified limb",
+              "code": "M21.90",
+              "score": 0.3648531
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6fd1818-14b9-4b94-96c7-e7ac25d97db1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6fd1818-14b9-4b94-96c7-e7ac25d97db1"
+          ],
+          "Content-Length": [
+            "3538"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3538",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:08 GMT",
+          "x-amzn-RequestId": "e6fd1818-14b9-4b94-96c7-e7ac25d97db1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 229,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7b605136-29c5-4cc2-a5c4-1b5565bdb2f0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7b605136-29c5-4cc2-a5c4-1b5565bdb2f0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:07 GMT",
+          "x-amzn-RequestId": "7b605136-29c5-4cc2-a5c4-1b5565bdb2f0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:08 PM"
+}

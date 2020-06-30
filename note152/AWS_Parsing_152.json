@@ -1,0 +1,162 @@
+{
+  "note": "and energy. Discharge Summary:  In the meantime, patient has been discharged to home with a physician recommendation to continue with physical activities to recover and maintain functional capacity. Discharge from hospital:  Patient has been discharged, but is on the ventilator, so the hospital will be a while before discharge. Patient\u0027s Family: (Name, Age, Sex, Date of Birth)  In Summary of Treatment:   Physical \u0026 Occupational Therapy: 3 hours daily  Nursing: 1 hour daily  Medical Treatment: 5 hours daily  Medication: 10 days from discharge  N.B.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 389,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 134,
+          "endOffset": 153,
+          "score": 0.42007697,
+          "text": "physical activities",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 408,
+          "endOffset": 439,
+          "score": 0.8660328,
+          "text": "Physical \u0026 Occupational Therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 525,
+          "endOffset": 537,
+          "score": 0.6780176,
+          "text": "10 days from",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8660328,
+              "relationshipScore": 0.58666253,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 408,
+              "endOffset": 439,
+              "text": "Physical \u0026 Occupational Therapy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "76be0459-d131-4ac4-af53-b48198e7671f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "76be0459-d131-4ac4-af53-b48198e7671f"
+          ],
+          "Content-Length": [
+            "853"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "853",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:04 GMT",
+          "x-amzn-RequestId": "76be0459-d131-4ac4-af53-b48198e7671f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 415,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cbc599ec-310f-4273-b711-4c316e01e2a2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cbc599ec-310f-4273-b711-4c316e01e2a2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:05 GMT",
+          "x-amzn-RequestId": "cbc599ec-310f-4273-b711-4c316e01e2a2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 411,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b564e7f9-6297-42e0-8f36-9b385f02f96b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b564e7f9-6297-42e0-8f36-9b385f02f96b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:04 GMT",
+          "x-amzn-RequestId": "b564e7f9-6297-42e0-8f36-9b385f02f96b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:05 PM"
+}

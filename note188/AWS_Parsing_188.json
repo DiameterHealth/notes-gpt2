@@ -1,0 +1,265 @@
+{
+  "note": "She was given birth training the week before and the nurses who performed the Cesarean was experienced. She gave birth to an intact baby girl, born in an Emergency Cesarean and delivered safely and with a low risk of mother, newborn, and child complications. The obstetric staff member on shift that night took the mother outside her room to perform some simple vaginal labor, which was helpful.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 251,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 14,
+          "endOffset": 28,
+          "score": 0.75066924,
+          "text": "birth training",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 29,
+          "endOffset": 44,
+          "score": 0.86115825,
+          "text": "the week before",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.21112879,
+              "relationshipScore": 0.7486587,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 78,
+              "endOffset": 102,
+              "text": "Cesarean was experienced",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 29,
+          "endOffset": 44,
+          "score": 0.86115825,
+          "text": "the week before",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.75066924,
+              "relationshipScore": 0.99674416,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 14,
+              "endOffset": 28,
+              "text": "birth training",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 78,
+          "endOffset": 102,
+          "score": 0.21112879,
+          "text": "Cesarean was experienced",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 154,
+          "endOffset": 172,
+          "score": 0.16866495,
+          "text": "Emergency Cesarean",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 355,
+          "endOffset": 375,
+          "score": 0.47678486,
+          "text": "simple vaginal labor",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 362,
+          "endOffset": 375,
+          "score": 0.7691298,
+          "text": "vaginal labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74977857
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "19eb47c1-5380-405f-a7b7-d2990599deed"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "19eb47c1-5380-405f-a7b7-d2990599deed"
+          ],
+          "Content-Length": [
+            "1791"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1791",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:57 GMT",
+          "x-amzn-RequestId": "19eb47c1-5380-405f-a7b7-d2990599deed"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 999,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "vaginal labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7691298,
+          "beginOffset": 362,
+          "endOffset": 375,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74977857
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.3961319
+            },
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.35283312
+            },
+            {
+              "description": "Candidiasis of vulva and vagina",
+              "code": "B37.3",
+              "score": 0.26446256
+            },
+            {
+              "description": "Postmenopausal atrophic vaginitis",
+              "code": "N95.2",
+              "score": 0.22811583
+            },
+            {
+              "description": "Noninflammatory disorder of vagina, unspecified",
+              "code": "N89.9",
+              "score": 0.21916717
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2acac50a-e770-4b1c-9ab5-d1a61d210426"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2acac50a-e770-4b1c-9ab5-d1a61d210426"
+          ],
+          "Content-Length": [
+            "793"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "793",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:58 GMT",
+          "x-amzn-RequestId": "2acac50a-e770-4b1c-9ab5-d1a61d210426"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8354661e-4591-40c8-bf98-23bdd4e410b2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8354661e-4591-40c8-bf98-23bdd4e410b2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:57 GMT",
+          "x-amzn-RequestId": "8354661e-4591-40c8-bf98-23bdd4e410b2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:59 PM"
+}

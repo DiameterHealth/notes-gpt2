@@ -1,0 +1,431 @@
+{
+  "note": " The pain has become so severe  that he cannot even move his hands, as if they are burning.  Is there something wrong and should I call the doctor or a clinic with alternative medicine?    1. The first step of the course of treatment for the patient with this complaint is to make a full physical examination.  The patient can be reassured that any pain in the joints could be due to osteoarthritis.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 338,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 8,
+          "endOffset": 12,
+          "score": 0.9760133,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7883068
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 67,
+          "endOffset": 72,
+          "score": 0.9770693,
+          "text": "hands",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 89,
+          "endOffset": 96,
+          "score": 0.7382326,
+          "text": "burning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63404137
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9770693,
+              "relationshipScore": 0.87430596,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 67,
+              "endOffset": 72,
+              "text": "hands",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 300,
+          "endOffset": 320,
+          "score": 0.31245142,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 364,
+          "endOffset": 368,
+          "score": 0.9829798,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5985337
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9932768,
+              "relationshipScore": 0.99996376,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 376,
+              "endOffset": 382,
+              "text": "joints",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 376,
+          "endOffset": 382,
+          "score": 0.9932768,
+          "text": "joints",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 399,
+          "endOffset": 413,
+          "score": 0.9963709,
+          "text": "osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92260754
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "10c8074b-15ab-4c15-acef-1ec81abbac6f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "10c8074b-15ab-4c15-acef-1ec81abbac6f"
+          ],
+          "Content-Length": [
+            "1761"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1761",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:08 GMT",
+          "x-amzn-RequestId": "10c8074b-15ab-4c15-acef-1ec81abbac6f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 478,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9760133,
+          "beginOffset": 8,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7883067
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6913519
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.65271544
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.61000323
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6096703
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5943875
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "burning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7382327,
+          "beginOffset": 89,
+          "endOffset": 96,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9770693,
+              "relationshipScore": 0.87430596,
+              "id": 1,
+              "beginOffset": 67,
+              "endOffset": 72,
+              "text": "hands",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6340414
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.755548
+            },
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.67337865
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.67307526
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.6453585
+            },
+            {
+              "description": "Contusion of thorax, unspecified",
+              "code": "S20.20",
+              "score": 0.59783816
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9829798,
+          "beginOffset": 364,
+          "endOffset": 368,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9932768,
+              "relationshipScore": 0.99996376,
+              "id": 4,
+              "beginOffset": 376,
+              "endOffset": 382,
+              "text": "joints",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5985337
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.63493
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.566642
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.55786043
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.540091
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5398929
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9963709,
+          "beginOffset": 399,
+          "endOffset": 413,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92260754
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.87307274
+            },
+            {
+              "description": "Bilateral primary osteoarthritis of knee",
+              "code": "M17.0",
+              "score": 0.8074016
+            },
+            {
+              "description": "Primary osteoarthritis, left ankle and foot",
+              "code": "M19.072",
+              "score": 0.761781
+            },
+            {
+              "description": "Primary osteoarthritis, left hand",
+              "code": "M19.042",
+              "score": 0.76138115
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, left knee",
+              "code": "M17.12",
+              "score": 0.7549373
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0d019bb8-d494-433d-94ad-0cd4029cd44f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0d019bb8-d494-433d-94ad-0cd4029cd44f"
+          ],
+          "Content-Length": [
+            "3058"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3058",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:09 GMT",
+          "x-amzn-RequestId": "0d019bb8-d494-433d-94ad-0cd4029cd44f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 228,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "09803b9e-1af2-4e1f-a09c-fb8f3de275f1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "09803b9e-1af2-4e1f-a09c-fb8f3de275f1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:08 GMT",
+          "x-amzn-RequestId": "09803b9e-1af2-4e1f-a09c-fb8f3de275f1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:09 PM"
+}

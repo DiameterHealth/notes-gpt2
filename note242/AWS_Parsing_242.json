@@ -1,0 +1,1229 @@
+{
+  "note": ". Emergency department management is recommended for acute urinary tract infection and acute bladder pain (Table). Infectious Diseases:  Pneumonia: Follows the infection with observation of changes in respiratory sounds (tachycardic and diaphoretic). Emergency physician recommends treatment for acute respiratory tract infection with 2 antibiotics: ceftriaxone and azithromycin. E. coli: Follows the infection with observation of fever and signs of dyspnea and abdominal pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1205,
+    "data": {
+      "entities": [
+        {
+          "id": 22,
+          "beginOffset": 2,
+          "endOffset": 22,
+          "score": 0.99321127,
+          "text": "Emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 59,
+          "endOffset": 72,
+          "score": 0.7143424,
+          "text": "urinary tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 59,
+          "endOffset": 82,
+          "score": 0.9894085,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93079597
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9293138,
+              "relationshipScore": 0.99999356,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 53,
+              "endOffset": 58,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 93,
+          "endOffset": 100,
+          "score": 0.9885061,
+          "text": "bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 93,
+          "endOffset": 105,
+          "score": 0.9535867,
+          "text": "bladder pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6710538
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9293138,
+              "relationshipScore": 0.6287505,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 53,
+              "endOffset": 58,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.7143424,
+              "relationshipScore": 0.6150925,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 59,
+              "endOffset": 72,
+              "text": "urinary tract",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.9485325,
+              "relationshipScore": 0.99997437,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 87,
+              "endOffset": 92,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885061,
+              "relationshipScore": 0.5502318,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 93,
+              "endOffset": 100,
+              "text": "bladder",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "score": 0.71961635,
+          "text": "Infectious Diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8966368
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 137,
+          "endOffset": 146,
+          "score": 0.98753244,
+          "text": "Pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9479056
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 160,
+          "endOffset": 169,
+          "score": 0.88857245,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7125794
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 190,
+          "endOffset": 219,
+          "score": 0.74905705,
+          "text": "changes in respiratory sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 221,
+          "endOffset": 232,
+          "score": 0.9661046,
+          "text": "tachycardic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59808147
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 237,
+          "endOffset": 248,
+          "score": 0.96719766,
+          "text": "diaphoretic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.53997374
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 302,
+          "endOffset": 319,
+          "score": 0.80988294,
+          "text": "respiratory tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 302,
+          "endOffset": 329,
+          "score": 0.9585346,
+          "text": "respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9245436
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8445949,
+              "relationshipScore": 0.9948626,
+              "relationshipType": "ACUITY",
+              "id": 15,
+              "beginOffset": 296,
+              "endOffset": 301,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 337,
+          "endOffset": 348,
+          "score": 0.3372776,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 350,
+          "endOffset": 361,
+          "score": 0.99858046,
+          "text": "ceftriaxone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 366,
+          "endOffset": 378,
+          "score": 0.99785054,
+          "text": "azithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 380,
+          "endOffset": 387,
+          "score": 0.60709614,
+          "text": "E. coli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6103751
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 401,
+          "endOffset": 410,
+          "score": 0.9295761,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.72767437
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 431,
+          "endOffset": 436,
+          "score": 0.9475563,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 450,
+          "endOffset": 457,
+          "score": 0.9804396,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6749152
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 462,
+          "endOffset": 476,
+          "score": 0.9520512,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6605
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9293138,
+            "id": 5,
+            "beginOffset": 53,
+            "endOffset": 58,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9485325,
+            "id": 7,
+            "beginOffset": 87,
+            "endOffset": 92,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8445949,
+            "id": 15,
+            "beginOffset": 296,
+            "endOffset": 301,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f1f0d371-d840-49d4-b10b-085a23a7a5b8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f1f0d371-d840-49d4-b10b-085a23a7a5b8"
+          ],
+          "Content-Length": [
+            "5747"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5747",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:24 GMT",
+          "x-amzn-RequestId": "f1f0d371-d840-49d4-b10b-085a23a7a5b8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2014,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9894085,
+          "beginOffset": 59,
+          "endOffset": 82,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9293138,
+              "relationshipScore": 0.99999356,
+              "id": 0,
+              "beginOffset": 53,
+              "endOffset": 58,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93079597
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7608771
+            },
+            {
+              "description": "Personal history of urinary (tract) infections",
+              "code": "Z87.440",
+              "score": 0.5550009
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.53046614
+            },
+            {
+              "description": "Urinary calculus, unspecified",
+              "code": "N20.9",
+              "score": 0.48913828
+            },
+            {
+              "description": "Other specified disorders of urinary system",
+              "code": "N39.8",
+              "score": 0.48798895
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "bladder pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9535867,
+          "beginOffset": 93,
+          "endOffset": 105,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9293138,
+              "relationshipScore": 0.6287505,
+              "id": 0,
+              "beginOffset": 53,
+              "endOffset": 58,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.71434236,
+              "relationshipScore": 0.6150925,
+              "id": 2,
+              "beginOffset": 59,
+              "endOffset": 72,
+              "text": "urinary tract",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.9485325,
+              "relationshipScore": 0.99997437,
+              "id": 3,
+              "beginOffset": 87,
+              "endOffset": 92,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6710538
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bladder disorder, unspecified",
+              "code": "N32.9",
+              "score": 0.5713056
+            },
+            {
+              "description": "Other specified disorders of bladder",
+              "code": "N32.89",
+              "score": 0.5499685
+            },
+            {
+              "description": "Other symptoms and signs involving the genitourinary system",
+              "code": "R39.89",
+              "score": 0.52370125
+            },
+            {
+              "description": "Calculus in bladder",
+              "code": "N21.0",
+              "score": 0.5068015
+            },
+            {
+              "description": "Neuromuscular dysfunction of bladder, unspecified",
+              "code": "N31.9",
+              "score": 0.48990363
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Infectious Diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.71961665,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8966368
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.6816383
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.5677741
+            },
+            {
+              "description": "Infectious gastroenteritis and colitis, unspecified",
+              "code": "A09",
+              "score": 0.5623864
+            },
+            {
+              "description": "Unspecified mycosis",
+              "code": "B49",
+              "score": 0.5318604
+            },
+            {
+              "description": "Other and unspecified infectious diseases",
+              "code": "B99",
+              "score": 0.52196676
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98753244,
+          "beginOffset": 137,
+          "endOffset": 146,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9479056
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pneumonia, unspecified organism",
+              "code": "J18.9",
+              "score": 0.7366366
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.636802
+            },
+            {
+              "description": "Personal history of pneumonia (recurrent)",
+              "code": "Z87.01",
+              "score": 0.6231281
+            },
+            {
+              "description": "Bronchopneumonia, unspecified organism",
+              "code": "J18.0",
+              "score": 0.58172876
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.5782226
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88857245,
+          "beginOffset": 160,
+          "endOffset": 169,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71257937
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.61294353
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.59450203
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.5678145
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.56611156
+            },
+            {
+              "description": "Other postprocedural complications and disorders of genitourinary system",
+              "code": "N99.89",
+              "score": 0.5017779
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "changes in respiratory sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.74905705,
+          "beginOffset": 190,
+          "endOffset": 219,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.6498308
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.6103516
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.60071224
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.5576844
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.5461933
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "tachycardic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9661046,
+          "beginOffset": 221,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59808147
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.67136097
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.4747271
+            },
+            {
+              "description": "Cardiomyopathy, unspecified",
+              "code": "I42.9",
+              "score": 0.43778744
+            },
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.42323378
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.4147847
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "diaphoretic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96719766,
+          "beginOffset": 237,
+          "endOffset": 248,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.53997374
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Generalized hyperhidrosis",
+              "code": "R61",
+              "score": 0.5832008
+            },
+            {
+              "description": "Congenital methemoglobinemia",
+              "code": "D74.0",
+              "score": 0.28028512
+            },
+            {
+              "description": "Eccrine sweat disorder, unspecified",
+              "code": "L74.9",
+              "score": 0.26139435
+            },
+            {
+              "description": "Other eccrine sweat disorders",
+              "code": "L74.8",
+              "score": 0.25564504
+            },
+            {
+              "description": "Apocrine sweat disorder, unspecified",
+              "code": "L75.9",
+              "score": 0.2512357
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9585346,
+          "beginOffset": 302,
+          "endOffset": 329,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8445948,
+              "relationshipScore": 0.9948626,
+              "id": 12,
+              "beginOffset": 296,
+              "endOffset": 301,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9245435
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory failure with hypoxia",
+              "code": "J96.01",
+              "score": 0.519131
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.5017256
+            },
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.49533153
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.43027386
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.365309
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "text": "E. coli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60709643,
+          "beginOffset": 380,
+          "endOffset": 387,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6103751
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified Escherichia coli [E. coli] as the cause of diseases classified elsewhere",
+              "code": "B96.20",
+              "score": 0.7677272
+            },
+            {
+              "description": "Sepsis due to Escherichia coli [E. coli]",
+              "code": "A41.51",
+              "score": 0.764625
+            },
+            {
+              "description": "Pneumonia due to Escherichia coli",
+              "code": "J15.5",
+              "score": 0.5964623
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.5953664
+            },
+            {
+              "description": "Other Escherichia coli [E. coli] as the cause of diseases classified elsewhere",
+              "code": "B96.29",
+              "score": 0.5570298
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.929576,
+          "beginOffset": 401,
+          "endOffset": 410,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7276743
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.66047484
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6254429
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.5994362
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.56628454
+            },
+            {
+              "description": "Cellulitis of left upper limb",
+              "code": "L03.114",
+              "score": 0.51835763
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94755644,
+          "beginOffset": 431,
+          "endOffset": 436,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7823242
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.50593066
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4453333
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.43670174
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.39159715
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9804396,
+          "beginOffset": 450,
+          "endOffset": 457,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67491525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.8273212
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.70722455
+            },
+            {
+              "description": "Dyspnea",
+              "code": "R06.0",
+              "score": 0.5797878
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.51742667
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.51520073
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95205134,
+          "beginOffset": 462,
+          "endOffset": 476,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66049993
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.767662
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.64550513
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.6255709
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.62202686
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.6116392
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b6ed5386-bf35-48e4-925b-c5684d845832"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b6ed5386-bf35-48e4-925b-c5684d845832"
+          ],
+          "Content-Length": [
+            "10823"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "10823",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:27 GMT",
+          "x-amzn-RequestId": "b6ed5386-bf35-48e4-925b-c5684d845832"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 429,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ceftriaxone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99858046,
+          "beginOffset": 350,
+          "endOffset": 361,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ceftriaxone",
+              "code": "2193",
+              "score": 0.9470901
+            },
+            {
+              "description": "Ceftriaxone 500 MG Injection",
+              "code": "1665005",
+              "score": 0.7915334
+            },
+            {
+              "description": "Ceftriaxone 250 MG Injection",
+              "code": "309092",
+              "score": 0.724922
+            },
+            {
+              "description": "Ceftriaxone 100 MG/ML Injectable Solution",
+              "code": "309090",
+              "score": 0.72278845
+            },
+            {
+              "description": "Ceftriaxone 1000 MG Injection",
+              "code": "1665021",
+              "score": 0.6412407
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "azithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99785054,
+          "beginOffset": 366,
+          "endOffset": 378,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Azithromycin",
+              "code": "18631",
+              "score": 0.93790025
+            },
+            {
+              "description": "{6 (Azithromycin 500 MG Oral Tablet) } Pack",
+              "code": "1148107",
+              "score": 0.81142026
+            },
+            {
+              "description": "Azithromycin 500 MG Oral Tablet",
+              "code": "248656",
+              "score": 0.7412911
+            },
+            {
+              "description": "Azithromycin 10 MG/ML Ophthalmic Solution [AzaSite]",
+              "code": "706872",
+              "score": 0.7260378
+            },
+            {
+              "description": "Azithromycin 500 MG Injection",
+              "code": "1668238",
+              "score": 0.6989314
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2f51ee33-a39a-428a-bd0e-3d0cf1697334"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2f51ee33-a39a-428a-bd0e-3d0cf1697334"
+          ],
+          "Content-Length": [
+            "1330"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1330",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:24 GMT",
+          "x-amzn-RequestId": "2f51ee33-a39a-428a-bd0e-3d0cf1697334"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:27 PM"
+}

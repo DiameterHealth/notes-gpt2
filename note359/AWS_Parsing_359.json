@@ -1,0 +1,227 @@
+{
+  "note": ". For the patient who is using a back pack, is it possible to reduce the pain? For the patient who is using a cervical pack, is it possible to maintain adequate cervical spinal manipulation during exercise and sport? How do these issues and others inform our recommendations on the best pack? Do we recommend a \"durable\" pack or \"lightweight\" pack?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 301,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 33,
+          "endOffset": 42,
+          "score": 0.32254815,
+          "text": "back pack",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 73,
+          "endOffset": 77,
+          "score": 0.98532224,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66469413
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 110,
+          "endOffset": 123,
+          "score": 0.93728226,
+          "text": "cervical pack",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 152,
+          "endOffset": 189,
+          "score": 0.56283396,
+          "text": "adequate cervical spinal manipulation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 161,
+          "endOffset": 176,
+          "score": 0.503045,
+          "text": "cervical spinal",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 197,
+          "endOffset": 205,
+          "score": 0.19205019,
+          "text": "exercise",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1b9a36ce-36fc-4daf-a251-c85635fca5ef"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1b9a36ce-36fc-4daf-a251-c85635fca5ef"
+          ],
+          "Content-Length": [
+            "1088"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1088",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:09 GMT",
+          "x-amzn-RequestId": "1b9a36ce-36fc-4daf-a251-c85635fca5ef"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 523,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98532224,
+          "beginOffset": 73,
+          "endOffset": 77,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6646941
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.49559528
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.43291742
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.42618874
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.404112
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.39515054
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "964ee7b5-8427-4303-a7a7-62aaf83a77cd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "964ee7b5-8427-4303-a7a7-62aaf83a77cd"
+          ],
+          "Content-Length": [
+            "680"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "680",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:09 GMT",
+          "x-amzn-RequestId": "964ee7b5-8427-4303-a7a7-62aaf83a77cd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d422d0f3-5187-4697-8cbf-2271c4a69a79"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d422d0f3-5187-4697-8cbf-2271c4a69a79"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:09 GMT",
+          "x-amzn-RequestId": "d422d0f3-5187-4697-8cbf-2271c4a69a79"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:10 PM"
+}

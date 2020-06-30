@@ -1,0 +1,593 @@
+{
+  "note": "The patient responds favorably in response to systemic corticosteroids and other treatment modalities and is discharged home with appropriate rehabilitation. Notes : 1) The patient is subsequently assessed for a bilateral femoral-femoral capsule (femoral femoral head) injury. This patient had a prior left femoral fracture resulting from a fall several years prior to presentation. 2) In this patient the left femoral head bone was found to be the origin of the intraoccipital bone fracture.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 782,
+    "data": {
+      "entities": [
+        {
+          "id": 12,
+          "beginOffset": 46,
+          "endOffset": 70,
+          "score": 0.78533864,
+          "text": "systemic corticosteroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 222,
+          "endOffset": 245,
+          "score": 0.37381327,
+          "text": "femoral-femoral capsule",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 247,
+          "endOffset": 267,
+          "score": 0.6258957,
+          "text": "femoral femoral head",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 269,
+          "endOffset": 275,
+          "score": 0.70791554,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6834199
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6258957,
+              "relationshipScore": 0.95392936,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 247,
+              "endOffset": 267,
+              "text": "femoral femoral head",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 296,
+          "endOffset": 301,
+          "score": 0.9999993,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.79287297,
+              "relationshipScore": 0.91430086,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 307,
+              "endOffset": 323,
+              "text": "femoral fracture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9654358
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 296,
+          "endOffset": 301,
+          "score": 0.9999993,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7949732,
+              "relationshipScore": 0.6305129,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 341,
+              "endOffset": 345,
+              "text": "fall",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 307,
+          "endOffset": 314,
+          "score": 0.40883878,
+          "text": "femoral",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 307,
+          "endOffset": 323,
+          "score": 0.79287297,
+          "text": "femoral fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9654358
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.97721714,
+              "relationshipScore": 0.995195,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 302,
+              "endOffset": 306,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 341,
+          "endOffset": 345,
+          "score": 0.7949732,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 360,
+          "endOffset": 365,
+          "score": 0.99999714,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7949732,
+              "relationshipScore": 0.768591,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 341,
+              "endOffset": 345,
+              "text": "fall",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 411,
+          "endOffset": 428,
+          "score": 0.89887,
+          "text": "femoral head bone",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 463,
+          "endOffset": 482,
+          "score": 0.9284322,
+          "text": "intraoccipital bone",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 463,
+          "endOffset": 491,
+          "score": 0.41823173,
+          "text": "intraoccipital bone fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9603368
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.89887,
+              "relationshipScore": 0.66793317,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 411,
+              "endOffset": 428,
+              "text": "femoral head bone",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9842271,
+            "id": 0,
+            "beginOffset": 212,
+            "endOffset": 221,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.97721714,
+            "id": 3,
+            "beginOffset": 302,
+            "endOffset": 306,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.98016286,
+            "id": 5,
+            "beginOffset": 406,
+            "endOffset": 410,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75e7d350-efa9-4228-8529-5b80ed697785"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75e7d350-efa9-4228-8529-5b80ed697785"
+          ],
+          "Content-Length": [
+            "4203"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4203",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:39 GMT",
+          "x-amzn-RequestId": "75e7d350-efa9-4228-8529-5b80ed697785"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 935,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7079153,
+          "beginOffset": 269,
+          "endOffset": 275,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6258957,
+              "relationshipScore": 0.95392936,
+              "id": 2,
+              "beginOffset": 247,
+              "endOffset": 267,
+              "text": "femoral femoral head",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6834196
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.4059816
+            },
+            {
+              "description": "Unspecified injury of left lower leg",
+              "code": "S89.92",
+              "score": 0.38594025
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.38060006
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.37238857
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.36271143
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "femoral fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79287297,
+          "beginOffset": 307,
+          "endOffset": 323,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.97721714,
+              "relationshipScore": 0.995195,
+              "id": 4,
+              "beginOffset": 302,
+              "endOffset": 306,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9654358
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.29134697
+            },
+            {
+              "description": "Fracture of left shoulder girdle, part unspecified",
+              "code": "S42.92",
+              "score": 0.24718644
+            },
+            {
+              "description": "Displaced unspecified fracture of left great toe",
+              "code": "S92.402",
+              "score": 0.23757592
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.21929424
+            },
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.21101038
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79497313,
+          "beginOffset": 341,
+          "endOffset": 345,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.5233828
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.45114645
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.40430146
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling with subsequent striking against other object",
+              "code": "W01.198",
+              "score": 0.40343532
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.36254227
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "intraoccipital bone fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41823193,
+          "beginOffset": 463,
+          "endOffset": 491,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.89887,
+              "relationshipScore": 0.66793317,
+              "id": 9,
+              "beginOffset": 411,
+              "endOffset": 428,
+              "text": "femoral head bone",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9603368
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.36162102
+            },
+            {
+              "description": "Unspecified fracture of facial bones",
+              "code": "S02.92",
+              "score": 0.29858685
+            },
+            {
+              "description": "Fracture of left shoulder girdle, part unspecified",
+              "code": "S42.92",
+              "score": 0.27803564
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.2755978
+            },
+            {
+              "description": "Displaced unspecified fracture of left great toe",
+              "code": "S92.402",
+              "score": 0.24736442
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "66357ad6-5317-4692-9e5c-112d6f5e4266"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "66357ad6-5317-4692-9e5c-112d6f5e4266"
+          ],
+          "Content-Length": [
+            "3486"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3486",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:40 GMT",
+          "x-amzn-RequestId": "66357ad6-5317-4692-9e5c-112d6f5e4266"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 225,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "10dd0810-d467-44a9-808e-690167d70f06"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "10dd0810-d467-44a9-808e-690167d70f06"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:39 GMT",
+          "x-amzn-RequestId": "10dd0810-d467-44a9-808e-690167d70f06"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:40 PM"
+}

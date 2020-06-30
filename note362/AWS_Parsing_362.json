@@ -1,0 +1,357 @@
+{
+  "note": "as he developed non-specific symptoms of low appetite and was seen within days of diagnosis. There is no significant new evidence regarding the efficacy of oral hypoglycaemic agent in patients with GDM who were previously treated with oral hypoglycaemic agents.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 16,
+          "endOffset": 37,
+          "score": 0.72532237,
+          "text": "non-specific symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 41,
+          "endOffset": 53,
+          "score": 0.86425304,
+          "text": "low appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75062335
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 156,
+          "endOffset": 180,
+          "score": 0.3849648,
+          "text": "oral hypoglycaemic agent",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 198,
+          "endOffset": 201,
+          "score": 0.70396626,
+          "text": "GDM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6875823
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 211,
+          "endOffset": 221,
+          "score": 0.9999994,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.33726192,
+              "relationshipScore": 0.6212779,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 235,
+              "endOffset": 260,
+              "text": "oral hypoglycaemic agents",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 211,
+          "endOffset": 221,
+          "score": 0.9999994,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.81927186,
+              "relationshipScore": 0.6212779,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 235,
+              "endOffset": 260,
+              "text": "oral hypoglycaemic agents",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 235,
+          "endOffset": 260,
+          "score": 0.33726192,
+          "text": "oral hypoglycaemic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 235,
+          "endOffset": 260,
+          "score": 0.81927186,
+          "text": "oral hypoglycaemic agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cc21f264-4d4c-41fa-a93d-fd45ae10ce7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cc21f264-4d4c-41fa-a93d-fd45ae10ce7c"
+          ],
+          "Content-Length": [
+            "1957"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1957",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:14 GMT",
+          "x-amzn-RequestId": "cc21f264-4d4c-41fa-a93d-fd45ae10ce7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 342,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "non-specific symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72532225,
+          "beginOffset": 16,
+          "endOffset": 37,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.8416095
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8284822
+            },
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.7995212
+            },
+            {
+              "description": "Other specified symptoms and signs involving the digestive system and abdomen",
+              "code": "R19.8",
+              "score": 0.7891326
+            },
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.77525544
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "low appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86425304,
+          "beginOffset": 41,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75062335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.7985047
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.7000029
+            },
+            {
+              "description": "Anemia, unspecified",
+              "code": "D64.9",
+              "score": 0.6688483
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.6378362
+            },
+            {
+              "description": "Hypoglycemia, unspecified",
+              "code": "E16.2",
+              "score": 0.59336996
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "259e39d5-97ab-4d3c-886f-face3106b38f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "259e39d5-97ab-4d3c-886f-face3106b38f"
+          ],
+          "Content-Length": [
+            "1460"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1460",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:14 GMT",
+          "x-amzn-RequestId": "259e39d5-97ab-4d3c-886f-face3106b38f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 254,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "oral hypoglycaemic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.33726192,
+          "beginOffset": 235,
+          "endOffset": 260,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Sus scrofa oral mucosa preparation",
+              "code": "1311232",
+              "score": 0.02498078
+            },
+            {
+              "description": "Lipotropic Agents",
+              "code": "6436",
+              "score": 0.02027602
+            },
+            {
+              "description": "Lyral",
+              "code": "1420141",
+              "score": 0.013365752
+            },
+            {
+              "description": "AVENS EXTRACT",
+              "code": "1313319",
+              "score": 0.009959416
+            },
+            {
+              "description": "neral",
+              "code": "1484865",
+              "score": 0.009950121
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "92ebe5df-9f82-4092-891c-505149f0dce3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "92ebe5df-9f82-4092-891c-505149f0dce3"
+          ],
+          "Content-Length": [
+            "631"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "631",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:14 GMT",
+          "x-amzn-RequestId": "92ebe5df-9f82-4092-891c-505149f0dce3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:15 PM"
+}

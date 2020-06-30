@@ -1,0 +1,293 @@
+{
+  "note": "since yesterday afternoon. He presents in good spirits and is willing to discuss any concerns he may have. He is scheduled to visit the clinic tomorrow with respiratory signs similar to the other patient he had been seen the day before  This patient is currently in severe respiratory distress as is being monitored but appears to be improving. Case #6 - M/W Case 2 - D/O/P Case #5 - M/W Case #7 - M/W  PERSON: 1ST/2ST CATEGORY : M/W DATE: 07/25/1961.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 530,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 42,
+          "endOffset": 54,
+          "score": 0.592712,
+          "text": "good spirits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.51737607
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 143,
+          "endOffset": 151,
+          "score": 0.9997956,
+          "text": "tomorrow",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.5895677,
+              "relationshipScore": 0.5987278,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 157,
+              "endOffset": 174,
+              "text": "respiratory signs",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 157,
+          "endOffset": 174,
+          "score": 0.5895677,
+          "text": "respiratory signs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 253,
+          "endOffset": 262,
+          "score": 0.9999809,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9037822,
+              "relationshipScore": 0.5408297,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 273,
+              "endOffset": 293,
+              "text": "respiratory distress",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 273,
+          "endOffset": 293,
+          "score": 0.9037822,
+          "text": "respiratory distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 440,
+          "endOffset": 450,
+          "score": 0.99947864,
+          "text": "07/25/1961",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d0ff1f54-9abc-49df-ab21-15c5205c9ec9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d0ff1f54-9abc-49df-ab21-15c5205c9ec9"
+          ],
+          "Content-Length": [
+            "1539"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1539",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:26 GMT",
+          "x-amzn-RequestId": "d0ff1f54-9abc-49df-ab21-15c5205c9ec9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 446,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "good spirits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5927118,
+          "beginOffset": 42,
+          "endOffset": 54,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.51737607
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other amnesia",
+              "code": "R41.3",
+              "score": 0.7832774
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.76318276
+            },
+            {
+              "description": "Parkinson\u0027s disease",
+              "code": "G20",
+              "score": 0.69553137
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6788419
+            },
+            {
+              "description": "Alcohol dependence, uncomplicated",
+              "code": "F10.20",
+              "score": 0.67176825
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "respiratory distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9037822,
+          "beginOffset": 273,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.858542
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6977026
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.6817682
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.6510542
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.6413742
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46f61165-d44a-4147-b11b-600b2c118d89"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46f61165-d44a-4147-b11b-600b2c118d89"
+          ],
+          "Content-Length": [
+            "1355"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1355",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:26 GMT",
+          "x-amzn-RequestId": "46f61165-d44a-4147-b11b-600b2c118d89"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 309,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9013546f-b03a-46ca-8749-66c3f2407343"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9013546f-b03a-46ca-8749-66c3f2407343"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:26 GMT",
+          "x-amzn-RequestId": "9013546f-b03a-46ca-8749-66c3f2407343"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:27 PM"
+}

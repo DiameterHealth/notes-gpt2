@@ -1,0 +1,458 @@
+{
+  "note": "_____________________________________________________________ 4/26/2014  This is an interesting note because the patient seems to have been feeling a lot better over the weekend. However, she appears to have had some problems with the symptoms. We talked last night and she felt more nauseated than normal and was very weak. Also had some issues with her breathing. I took her to the cardiologist and we plan to go to the emergency room.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 522,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 62,
+          "endOffset": 71,
+          "score": 0.99995065,
+          "text": "4/26/2014",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 140,
+          "endOffset": 160,
+          "score": 0.5384951,
+          "text": "feeling a lot better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7369398
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.47445637,
+              "relationshipScore": 0.9999976,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 161,
+              "endOffset": 177,
+              "text": "over the weekend",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 255,
+          "endOffset": 265,
+          "score": 0.9769489,
+          "text": "last night",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.80766594,
+              "relationshipScore": 0.85277605,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 284,
+              "endOffset": 293,
+              "text": "nauseated",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6028671
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 255,
+          "endOffset": 265,
+          "score": 0.9769489,
+          "text": "last night",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.65070724,
+              "relationshipScore": 0.65516424,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 319,
+              "endOffset": 323,
+              "text": "weak",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.65312314
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 284,
+          "endOffset": 293,
+          "score": 0.80766594,
+          "text": "nauseated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6028671
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 319,
+          "endOffset": 323,
+          "score": 0.65070724,
+          "text": "weak",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65312314
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 355,
+          "endOffset": 364,
+          "score": 0.40374678,
+          "text": "breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 422,
+          "endOffset": 436,
+          "score": 0.9717658,
+          "text": "emergency room",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.47445637,
+            "id": 1,
+            "beginOffset": 161,
+            "endOffset": 177,
+            "text": "over the weekend",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "738fe587-aecd-4714-8e20-2d879ff04678"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "738fe587-aecd-4714-8e20-2d879ff04678"
+          ],
+          "Content-Length": [
+            "2406"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2406",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:23 GMT",
+          "x-amzn-RequestId": "738fe587-aecd-4714-8e20-2d879ff04678"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 642,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "feeling a lot better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5384951,
+          "beginOffset": 140,
+          "endOffset": 160,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4744561,
+              "relationshipScore": 0.9999976,
+              "id": 1,
+              "beginOffset": 161,
+              "endOffset": 177,
+              "text": "over the weekend",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7369398
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7745132
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.73847264
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7234361
+            },
+            {
+              "description": "Worries",
+              "code": "R45.82",
+              "score": 0.7158044
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.71157223
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nauseated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.80766594,
+          "beginOffset": 284,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6028671
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.8138632
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.78232104
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.61832106
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5475701
+            },
+            {
+              "description": "Nausea and vomiting",
+              "code": "R11",
+              "score": 0.48799768
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "weak",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6507071,
+          "beginOffset": 319,
+          "endOffset": 323,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65312296
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Weakness",
+              "code": "R53.1",
+              "score": 0.84549165
+            },
+            {
+              "description": "Muscle weakness (generalized)",
+              "code": "M62.81",
+              "score": 0.6664917
+            },
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.6606275
+            },
+            {
+              "description": "Adverse effect of unspecified hormones and synthetic substitutes",
+              "code": "T38.805",
+              "score": 0.6534875
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.62234706
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40374684,
+          "beginOffset": 355,
+          "endOffset": 364,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.6877439
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.6599605
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.60301477
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.5799364
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.56937164
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ba1a56d4-a1b9-43b9-a1f4-a0ceda8f4c65"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ba1a56d4-a1b9-43b9-a1f4-a0ceda8f4c65"
+          ],
+          "Content-Length": [
+            "2929"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2929",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:24 GMT",
+          "x-amzn-RequestId": "ba1a56d4-a1b9-43b9-a1f4-a0ceda8f4c65"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 335,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "67ad9a9b-903f-43b6-b6b5-8c1fce01b5c7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "67ad9a9b-903f-43b6-b6b5-8c1fce01b5c7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:23 GMT",
+          "x-amzn-RequestId": "67ad9a9b-903f-43b6-b6b5-8c1fce01b5c7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:24 PM"
+}

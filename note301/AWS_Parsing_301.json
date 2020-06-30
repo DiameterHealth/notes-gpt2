@@ -1,0 +1,410 @@
+{
+  "note": ".  Outcome Measurement/Participation: The primary outcome will be the presence or absence of the acute urinary tract infection and recurrence. Other outcomes include changes in vital signs, pain as assessed by the investigator, and the investigator\u0027s subjective appraisal of the patient\u0027s pain. Additional Outcomes/Measures: Laboratory studies to measure uropathy and the concentration of creatinine will be administered.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 339,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 103,
+          "endOffset": 116,
+          "score": 0.8039808,
+          "text": "urinary tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 103,
+          "endOffset": 126,
+          "score": 0.9740122,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7903412
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8354884,
+              "relationshipScore": 0.9998696,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 97,
+              "endOffset": 102,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 166,
+          "endOffset": 188,
+          "score": 0.75353175,
+          "text": "changes in vital signs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 177,
+          "endOffset": 188,
+          "score": 0.3430903,
+          "text": "vital signs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 190,
+          "endOffset": 194,
+          "score": 0.9346534,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 289,
+          "endOffset": 293,
+          "score": 0.95812285,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5579251
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 325,
+          "endOffset": 343,
+          "score": 0.51312256,
+          "text": "Laboratory studies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 389,
+          "endOffset": 399,
+          "score": 0.9528699,
+          "text": "creatinine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8354884,
+            "id": 1,
+            "beginOffset": 97,
+            "endOffset": 102,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ba79cdf-7381-49ef-a3b9-c68f488b51c9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ba79cdf-7381-49ef-a3b9-c68f488b51c9"
+          ],
+          "Content-Length": [
+            "1811"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1811",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:53 GMT",
+          "x-amzn-RequestId": "2ba79cdf-7381-49ef-a3b9-c68f488b51c9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 572,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9740122,
+          "beginOffset": 103,
+          "endOffset": 126,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8354884,
+              "relationshipScore": 0.9998696,
+              "id": 0,
+              "beginOffset": 97,
+              "endOffset": 102,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7903412
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.78870255
+            },
+            {
+              "description": "Personal history of urinary (tract) infections",
+              "code": "Z87.440",
+              "score": 0.61510473
+            },
+            {
+              "description": "Urinary calculus, unspecified",
+              "code": "N20.9",
+              "score": 0.5582603
+            },
+            {
+              "description": "Urgency of urination",
+              "code": "R39.15",
+              "score": 0.55307025
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.5418936
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "changes in vital signs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.75353163,
+          "beginOffset": 166,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8519824
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.8029324
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.7635576
+            },
+            {
+              "description": "Secondary malignant neoplasm of unspecified lung",
+              "code": "C78.00",
+              "score": 0.76119506
+            },
+            {
+              "description": "Unspecified skin changes",
+              "code": "R23.9",
+              "score": 0.7551319
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9346534,
+          "beginOffset": 190,
+          "endOffset": 194,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.76077926
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.66456175
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6545432
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.65141374
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.64194196
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95812285,
+          "beginOffset": 289,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5579251
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6778721
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.64550364
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.6107525
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5579466
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5571392
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c1a2209a-72cf-4244-98cb-6aaf67f57796"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c1a2209a-72cf-4244-98cb-6aaf67f57796"
+          ],
+          "Content-Length": [
+            "2809"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2809",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:53 GMT",
+          "x-amzn-RequestId": "c1a2209a-72cf-4244-98cb-6aaf67f57796"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9f0fb3a6-c9d5-42f2-ac7c-c861facb4d32"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9f0fb3a6-c9d5-42f2-ac7c-c861facb4d32"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:53 GMT",
+          "x-amzn-RequestId": "9f0fb3a6-c9d5-42f2-ac7c-c861facb4d32"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:54 PM"
+}

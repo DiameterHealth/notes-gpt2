@@ -1,0 +1,474 @@
+{
+  "note": "The patient\u0027s weight stabilized with careful management of the patient\u0027s appetite and hydration by the treating medical staff. The patient underwent an oral nutritional assessment to ensure a sustained improvement in body weight, and the patient\u0027s weight normalized at 5 months post-treatment. Post-treatment clinical course On physical examination, the patient was found to have moderate, but persistent, aldosterone deficiency that persisted despite regular weight gain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 461,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 86,
+          "endOffset": 95,
+          "score": 0.55697936,
+          "text": "hydration",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 152,
+          "endOffset": 179,
+          "score": 0.7424339,
+          "text": "oral nutritional assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 248,
+          "endOffset": 254,
+          "score": 0.93404776,
+          "text": "weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.90571684,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 255,
+              "endOffset": 265,
+              "text": "normalized",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 269,
+          "endOffset": 277,
+          "score": 0.97422427,
+          "text": "5 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.93404776,
+              "relationshipScore": 0.82035303,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 248,
+              "endOffset": 254,
+              "text": "weight",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 278,
+          "endOffset": 292,
+          "score": 0.4117596,
+          "text": "post-treatment",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.93404776,
+              "relationshipScore": 0.71622586,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 248,
+              "endOffset": 254,
+              "text": "weight",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 294,
+          "endOffset": 308,
+          "score": 0.7341636,
+          "text": "Post-treatment",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.57503814,
+              "relationshipScore": 0.5034086,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 328,
+              "endOffset": 348,
+              "text": "physical examination",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 328,
+          "endOffset": 348,
+          "score": 0.57503814,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5189231,
+              "relationshipScore": 0.99762195,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 380,
+              "endOffset": 388,
+              "text": "moderate",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 406,
+          "endOffset": 428,
+          "score": 0.9232748,
+          "text": "aldosterone deficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82269526
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8059208,
+              "relationshipScore": 0.99937445,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 394,
+              "endOffset": 404,
+              "text": "persistent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.6756862,
+              "relationshipScore": 0.9999982,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 434,
+              "endOffset": 443,
+              "text": "persisted",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 460,
+          "endOffset": 471,
+          "score": 0.9162196,
+          "text": "weight gain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.60493046
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6756862,
+              "relationshipScore": 0.8050434,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 434,
+              "endOffset": 443,
+              "text": "persisted",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8059208,
+            "id": 0,
+            "beginOffset": 394,
+            "endOffset": 404,
+            "text": "persistent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6756862,
+            "id": 2,
+            "beginOffset": 434,
+            "endOffset": 443,
+            "text": "persisted",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "82536317-c203-463d-92c0-7b3f9bf26549"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "82536317-c203-463d-92c0-7b3f9bf26549"
+          ],
+          "Content-Length": [
+            "3864"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3864",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:35 GMT",
+          "x-amzn-RequestId": "82536317-c203-463d-92c0-7b3f9bf26549"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 528,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "aldosterone deficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9232748,
+          "beginOffset": 406,
+          "endOffset": 428,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8059207,
+              "relationshipScore": 0.99937445,
+              "id": 0,
+              "beginOffset": 394,
+              "endOffset": 404,
+              "text": "persistent",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.67568606,
+              "relationshipScore": 0.9999982,
+              "id": 2,
+              "beginOffset": 434,
+              "endOffset": 443,
+              "text": "persisted",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82269526
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Iron deficiency anemia, unspecified",
+              "code": "D50.9",
+              "score": 0.5101742
+            },
+            {
+              "description": "Vitamin D deficiency, unspecified",
+              "code": "E55.9",
+              "score": 0.48183143
+            },
+            {
+              "description": "Vitamin B deficiency, unspecified",
+              "code": "E53.9",
+              "score": 0.423074
+            },
+            {
+              "description": "Hyperaldosteronism, unspecified",
+              "code": "E26.9",
+              "score": 0.41020873
+            },
+            {
+              "description": "Deficiency of other specified B group vitamins",
+              "code": "E53.8",
+              "score": 0.3954917
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "weight gain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9162196,
+          "beginOffset": 460,
+          "endOffset": 471,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.67568606,
+              "relationshipScore": 0.8050434,
+              "id": 2,
+              "beginOffset": 434,
+              "endOffset": 443,
+              "text": "persisted",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.60493046
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.8118326
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.66875315
+            },
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.66444343
+            },
+            {
+              "description": "Excessive weight gain in pregnancy",
+              "code": "O26.0",
+              "score": 0.52106667
+            },
+            {
+              "description": "Excessive weight gain in pregnancy, unspecified trimester",
+              "code": "O26.00",
+              "score": 0.5052779
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3d7e3172-4231-41d5-b11b-960883e7241e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3d7e3172-4231-41d5-b11b-960883e7241e"
+          ],
+          "Content-Length": [
+            "1955"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1955",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:36 GMT",
+          "x-amzn-RequestId": "3d7e3172-4231-41d5-b11b-960883e7241e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ba9739c0-298b-453d-a6bd-c7bedcab53a2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ba9739c0-298b-453d-a6bd-c7bedcab53a2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:35 GMT",
+          "x-amzn-RequestId": "ba9739c0-298b-453d-a6bd-c7bedcab53a2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:36 PM"
+}

@@ -1,0 +1,338 @@
+{
+  "note": "(two months on or off the meds) at his or her convenience. You would contact your patient when available but it can be best to have him or her call for an early appointment, since then the doctor can be present to discuss any concerns about the medication.  In the meantime, the patient is asked to keep a diary of all symptoms, side effects, physical exam, ECG results, and any other information that may affect the doctor\u0027s decision.  At this point the next step is to provide a written history of all medications you have taken (including vitamins) for months since the start of therapy. To do so, the doctor checks the patient\u0027s pharmacy records for each medication (you should have copies of them by date), and provides any additional information needed to document the history.  An individualized treatment plan is provided:  Medication history—the doctor will review the records to make sure that at the appropriate stage of the illness, you were well-prepared.  Patient goals—the doctor must evaluate your physical, emotional, and psychological state in the context of the medications to guide therapeutic decisions. For example, some of the common goals for patients may include \"I am getting better,\" \"I am happy,\" and \"I am able to function at work.\"",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1101,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 329,
+          "endOffset": 341,
+          "score": 0.8425527,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74471676
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 343,
+          "endOffset": 356,
+          "score": 0.5409782,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 358,
+          "endOffset": 361,
+          "score": 0.9945852,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 542,
+          "endOffset": 550,
+          "score": 0.7520506,
+          "text": "vitamins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 542,
+          "endOffset": 550,
+          "score": 0.30621547,
+          "text": "vitamins",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 552,
+          "endOffset": 555,
+          "score": 0.5823919,
+          "text": "for",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.37421253,
+              "relationshipScore": 0.64417857,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 582,
+              "endOffset": 589,
+              "text": "therapy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 552,
+          "endOffset": 555,
+          "score": 0.5823919,
+          "text": "for",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.7520506,
+              "relationshipScore": 0.8433363,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 542,
+              "endOffset": 550,
+              "text": "vitamins",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 552,
+          "endOffset": 555,
+          "score": 0.5823919,
+          "text": "for",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.30621547,
+              "relationshipScore": 0.8433363,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 542,
+              "endOffset": 550,
+              "text": "vitamins",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 582,
+          "endOffset": 589,
+          "score": 0.37421253,
+          "text": "therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a6f4b025-02d9-48af-ab61-162f50f0d525"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a6f4b025-02d9-48af-ab61-162f50f0d525"
+          ],
+          "Content-Length": [
+            "2226"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2226",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:19 GMT",
+          "x-amzn-RequestId": "a6f4b025-02d9-48af-ab61-162f50f0d525"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1218,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84255254,
+          "beginOffset": 329,
+          "endOffset": 341,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74471676
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.6691409
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.64523727
+            },
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.64275163
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.59496343
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.54600644
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "555477f0-7ee9-4ded-be56-1e1755b363f6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "555477f0-7ee9-4ded-be56-1e1755b363f6"
+          ],
+          "Content-Length": [
+            "980"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "980",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:20 GMT",
+          "x-amzn-RequestId": "555477f0-7ee9-4ded-be56-1e1755b363f6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 823,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "vitamins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.7520506,
+          "beginOffset": 542,
+          "endOffset": 550,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "vitamin D3",
+              "code": "1244014",
+              "score": 0.5370411
+            },
+            {
+              "description": "Vitamin D",
+              "code": "11253",
+              "score": 0.40547553
+            },
+            {
+              "description": "Vitamin E",
+              "code": "11256",
+              "score": 0.29644036
+            },
+            {
+              "description": "Vitamin B6",
+              "code": "42954",
+              "score": 0.08130857
+            },
+            {
+              "description": "Vitamin K",
+              "code": "11258",
+              "score": 0.07388049
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "65401807-c885-4168-8bd0-b34efb0449d5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "65401807-c885-4168-8bd0-b34efb0449d5"
+          ],
+          "Content-Length": [
+            "576"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "576",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:19 GMT",
+          "x-amzn-RequestId": "65401807-c885-4168-8bd0-b34efb0449d5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:21 PM"
+}

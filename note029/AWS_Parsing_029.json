@@ -1,0 +1,970 @@
+{
+  "note": "She continued to take aspirin and metronidazole but experienced significant pain later in the day when driving. She resumed aspirin and metronidazole but experienced some additional pain in the morning when driving. She has now stopped taking aspirin and metronidazole although the pain was still moderate. There will be future studies to determine how the body responds to low-dose aspirin/metronidazole with the same or different analgesics, and if more pain can be managed with a higher dose (eg, 325 mg of aspirin/metronidazole).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 505,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 22,
+          "endOffset": 29,
+          "score": 0.99936956,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 34,
+          "endOffset": 47,
+          "score": 0.9991424,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 76,
+          "endOffset": 80,
+          "score": 0.9865868,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6315886
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 81,
+          "endOffset": 97,
+          "score": 0.949039,
+          "text": "later in the day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9865868,
+              "relationshipScore": 0.90759957,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 76,
+              "endOffset": 80,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.6315886
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 124,
+          "endOffset": 131,
+          "score": 0.99942786,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 136,
+          "endOffset": 149,
+          "score": 0.99924445,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 182,
+          "endOffset": 186,
+          "score": 0.9899859,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6571173
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 187,
+          "endOffset": 201,
+          "score": 0.99982315,
+          "text": "in the morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9899859,
+              "relationshipScore": 0.91414165,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 182,
+              "endOffset": 186,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.6571173
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 243,
+          "endOffset": 250,
+          "score": 0.99946386,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.77224773
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 255,
+          "endOffset": 268,
+          "score": 0.99912435,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5637799
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 282,
+          "endOffset": 286,
+          "score": 0.98344004,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8983528
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 383,
+          "endOffset": 390,
+          "score": 0.9883058,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 391,
+          "endOffset": 404,
+          "score": 0.9991431,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 432,
+          "endOffset": 442,
+          "score": 0.4331573,
+          "text": "analgesics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 456,
+          "endOffset": 460,
+          "score": 0.98067987,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8984357
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 510,
+          "endOffset": 517,
+          "score": 0.9702149,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9893588,
+              "relationshipScore": 0.999723,
+              "relationshipType": "DOSAGE",
+              "id": 8,
+              "beginOffset": 500,
+              "endOffset": 506,
+              "text": "325 mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 518,
+          "endOffset": 531,
+          "score": 0.99912125,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9893588,
+              "relationshipScore": 0.9992557,
+              "relationshipType": "DOSAGE",
+              "id": 8,
+              "beginOffset": 500,
+              "endOffset": 506,
+              "text": "325 mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2685183c-2724-49fe-a4a5-98712d0f83bf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2685183c-2724-49fe-a4a5-98712d0f83bf"
+          ],
+          "Content-Length": [
+            "3868"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3868",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:47 GMT",
+          "x-amzn-RequestId": "2685183c-2724-49fe-a4a5-98712d0f83bf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 457,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9865867,
+          "beginOffset": 76,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63158846
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6292185
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5835925
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.52852786
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.52593416
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.51505655
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9899859,
+          "beginOffset": 182,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.65711725
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.64103085
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.62248176
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5963809
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.581383
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.56353277
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98344004,
+          "beginOffset": 282,
+          "endOffset": 286,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8983528
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5075944
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.50629693
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.4978173
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4433878
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4346512
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98067987,
+          "beginOffset": 456,
+          "endOffset": 460,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8984356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7077668
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6488183
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.60484374
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.59129906
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.5534705
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a486b370-3842-4d63-8026-576e8c643417"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a486b370-3842-4d63-8026-576e8c643417"
+          ],
+          "Content-Length": [
+            "2535"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2535",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:49 GMT",
+          "x-amzn-RequestId": "a486b370-3842-4d63-8026-576e8c643417"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 702,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99936956,
+          "beginOffset": 22,
+          "endOffset": 29,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            },
+            {
+              "description": "Aspirin 325 MG Oral Tablet [Ascriptin]",
+              "code": "830530",
+              "score": 0.23549667
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9991424,
+          "beginOffset": 34,
+          "endOffset": 47,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metronidazole",
+              "code": "6922",
+              "score": 0.93839276
+            },
+            {
+              "description": "Metronidazole 500 MG Oral Tablet",
+              "code": "311681",
+              "score": 0.8568254
+            },
+            {
+              "description": "Metronidazole 0.01 MG/MG Topical Gel",
+              "code": "577237",
+              "score": 0.80896884
+            },
+            {
+              "description": "Metronidazole 7.5 MG/ML Topical Cream",
+              "code": "311678",
+              "score": 0.74569803
+            },
+            {
+              "description": "Metronidazole 100 MG/ML Vaginal Cream",
+              "code": "247055",
+              "score": 0.74315494
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99942786,
+          "beginOffset": 124,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99924445,
+          "beginOffset": 136,
+          "endOffset": 149,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metronidazole",
+              "code": "6922",
+              "score": 0.93839276
+            },
+            {
+              "description": "Metronidazole 500 MG Oral Tablet",
+              "code": "311681",
+              "score": 0.8568254
+            },
+            {
+              "description": "Metronidazole 0.01 MG/MG Topical Gel",
+              "code": "577237",
+              "score": 0.80896884
+            },
+            {
+              "description": "Metronidazole 7.5 MG/ML Topical Cream",
+              "code": "311678",
+              "score": 0.74569803
+            },
+            {
+              "description": "Metronidazole 100 MG/ML Vaginal Cream",
+              "code": "247055",
+              "score": 0.74315494
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99946386,
+          "beginOffset": 243,
+          "endOffset": 250,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.7722478
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]",
+              "code": "724444",
+              "score": 0.16114618
+            },
+            {
+              "description": "Aspirin 500 MG Delayed Release Oral Tablet",
+              "code": "308409",
+              "score": 0.14790183
+            },
+            {
+              "description": "Aspirin 228 MG Chewing Gum",
+              "code": "853499",
+              "score": 0.10526551
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99912435,
+          "beginOffset": 255,
+          "endOffset": 268,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.56377995
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Metronidazole",
+              "code": "6922",
+              "score": 0.93839276
+            },
+            {
+              "description": "Metronidazole 500 MG Oral Tablet",
+              "code": "311681",
+              "score": 0.8568254
+            },
+            {
+              "description": "Metronidazole 0.01 MG/MG Topical Gel",
+              "code": "577237",
+              "score": 0.80896884
+            },
+            {
+              "description": "Metronidazole 7.5 MG/ML Topical Cream",
+              "code": "311678",
+              "score": 0.74569803
+            },
+            {
+              "description": "Metronidazole 100 MG/ML Vaginal Cream",
+              "code": "247055",
+              "score": 0.74315494
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9883058,
+          "beginOffset": 383,
+          "endOffset": 390,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9991431,
+          "beginOffset": 391,
+          "endOffset": 404,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metronidazole",
+              "code": "6922",
+              "score": 0.93839276
+            },
+            {
+              "description": "Metronidazole 500 MG Oral Tablet",
+              "code": "311681",
+              "score": 0.8568254
+            },
+            {
+              "description": "Metronidazole 0.01 MG/MG Topical Gel",
+              "code": "577237",
+              "score": 0.80896884
+            },
+            {
+              "description": "Metronidazole 7.5 MG/ML Topical Cream",
+              "code": "311678",
+              "score": 0.74569803
+            },
+            {
+              "description": "Metronidazole 100 MG/ML Vaginal Cream",
+              "code": "247055",
+              "score": 0.74315494
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9702148,
+          "beginOffset": 510,
+          "endOffset": 517,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9893588,
+              "relationshipScore": 0.99972314,
+              "id": 8,
+              "beginOffset": 500,
+              "endOffset": 506,
+              "text": "325 mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin 325 MG Oral Tablet",
+              "code": "212033",
+              "score": 0.9918493
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.94182146
+            },
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.8292297
+            },
+            {
+              "description": "Aspirin 325 MG Delayed Release Oral Tablet",
+              "code": "198467",
+              "score": 0.73919237
+            },
+            {
+              "description": "Aspirin 325 MG Oral Tablet [Ascriptin]",
+              "code": "830530",
+              "score": 0.73708284
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "metronidazole",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99912125,
+          "beginOffset": 518,
+          "endOffset": 531,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9893588,
+              "relationshipScore": 0.99925584,
+              "id": 8,
+              "beginOffset": 500,
+              "endOffset": 506,
+              "text": "325 mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metronidazole",
+              "code": "6922",
+              "score": 0.77172506
+            },
+            {
+              "description": "Metronidazole 250 MG Oral Tablet",
+              "code": "314106",
+              "score": 0.45489967
+            },
+            {
+              "description": "Metronidazole 0.0075 MG/MG Topical Gel",
+              "code": "311679",
+              "score": 0.44650456
+            },
+            {
+              "description": "Metronidazole 10 MG/ML Topical Cream",
+              "code": "311680",
+              "score": 0.4186304
+            },
+            {
+              "description": "Metronidazole 7.5 MG/ML Topical Cream",
+              "code": "311678",
+              "score": 0.3288117
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "900eb881-43ea-46ec-961c-b255e6636f5c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "900eb881-43ea-46ec-961c-b255e6636f5c"
+          ],
+          "Content-Length": [
+            "6933"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6933",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:49 GMT",
+          "x-amzn-RequestId": "900eb881-43ea-46ec-961c-b255e6636f5c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:49 PM"
+}

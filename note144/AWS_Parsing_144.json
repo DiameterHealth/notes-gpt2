@@ -1,0 +1,565 @@
+{
+  "note": "If these symptoms persist contact your GP. If you have been to hospital or hospital emergency department in the last 3 days then you should visit your nearest emergency department as soon as possible. Contact your nearest ambulance and contact their emergency department to check if they have a rapid responder in attendance. Fever and urinary symptoms: Any other symptoms to check for and get yourself checked for include a headache, chest pain, confusion (not always clear what is causing it), drowsiness  Affected People: It is important that you contact your doctor as soon as possible if you feel unwell.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 504,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 84,
+          "endOffset": 104,
+          "score": 0.9716474,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 159,
+          "endOffset": 179,
+          "score": 0.97690463,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 250,
+          "endOffset": 270,
+          "score": 0.992401,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 326,
+          "endOffset": 331,
+          "score": 0.9182609,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81585896
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 336,
+          "endOffset": 352,
+          "score": 0.9226721,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89411527
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 425,
+          "endOffset": 433,
+          "score": 0.99678975,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93638253
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 435,
+          "endOffset": 440,
+          "score": 0.9885268,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 435,
+          "endOffset": 445,
+          "score": 0.9310873,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.96922314
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 447,
+          "endOffset": 456,
+          "score": 0.9963685,
+          "text": "confusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9627345
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 496,
+          "endOffset": 506,
+          "score": 0.95472485,
+          "text": "drowsiness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.927057
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 597,
+          "endOffset": 608,
+          "score": 0.6818758,
+          "text": "feel unwell",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91740596
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "93b61017-08e4-4026-aacd-3a448198333c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "93b61017-08e4-4026-aacd-3a448198333c"
+          ],
+          "Content-Length": [
+            "2079"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2079",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:51 GMT",
+          "x-amzn-RequestId": "93b61017-08e4-4026-aacd-3a448198333c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 664,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9182609,
+          "beginOffset": 326,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81585896
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.816217
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5541728
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.5164271
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.49180976
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.44367972
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9226721,
+          "beginOffset": 336,
+          "endOffset": 352,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8941153
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.86182386
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.75639606
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7406576
+            },
+            {
+              "description": "Other symptoms and signs involving the genitourinary system",
+              "code": "R39.89",
+              "score": 0.73579127
+            },
+            {
+              "description": "Painful micturition, unspecified",
+              "code": "R30.9",
+              "score": 0.71649396
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99678975,
+          "beginOffset": 425,
+          "endOffset": 433,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93638253
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.70339423
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.47428927
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.45159322
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.43744746
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.380373
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9310873,
+          "beginOffset": 435,
+          "endOffset": 445,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.96922314
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.7015833
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.47325534
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4657985
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.42469585
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.38488588
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "confusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9963684,
+          "beginOffset": 447,
+          "endOffset": 456,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9627345
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.8434777
+            },
+            {
+              "description": "Coma scale, best verbal response, confused conversation",
+              "code": "R40.224",
+              "score": 0.51177186
+            },
+            {
+              "description": "Alcohol dependence with withdrawal delirium",
+              "code": "F10.231",
+              "score": 0.40198982
+            },
+            {
+              "description": "Delirium due to known physiological condition",
+              "code": "F05",
+              "score": 0.38068438
+            },
+            {
+              "description": "Other dissociative and conversion disorders",
+              "code": "F44.89",
+              "score": 0.32402927
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "drowsiness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9547248,
+          "beginOffset": 496,
+          "endOffset": 506,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.927057
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.69000983
+            },
+            {
+              "description": "Somnolence, stupor and coma",
+              "code": "R40",
+              "score": 0.44762287
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.43938842
+            },
+            {
+              "description": "Hypersomnia, unspecified",
+              "code": "G47.10",
+              "score": 0.40843394
+            },
+            {
+              "description": "Other ascites",
+              "code": "R18.8",
+              "score": 0.3798345
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "feel unwell",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6818756,
+          "beginOffset": 597,
+          "endOffset": 608,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9174059
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7976633
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.7504705
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6500091
+            },
+            {
+              "description": "Extrapyramidal and movement disorder, unspecified",
+              "code": "G25.9",
+              "score": 0.63823056
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.6293614
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e225b634-8f40-4cb4-828e-e6dfe6526c60"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e225b634-8f40-4cb4-828e-e6dfe6526c60"
+          ],
+          "Content-Length": [
+            "4932"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4932",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:51 GMT",
+          "x-amzn-RequestId": "e225b634-8f40-4cb4-828e-e6dfe6526c60"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 257,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "323d0224-c194-4612-8162-f2d7a36cc6a7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "323d0224-c194-4612-8162-f2d7a36cc6a7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:51 GMT",
+          "x-amzn-RequestId": "323d0224-c194-4612-8162-f2d7a36cc6a7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:52 PM"
+}

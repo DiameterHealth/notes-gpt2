@@ -1,0 +1,494 @@
+{
+  "note": "at the VA Medical Center every 18 months for routine and clinical measurements, including measurement of COPD exacerbation. The patient has been on oral and inhaled corticosteroids for the past 8 years for a severe exacerbation of chronic bronchitis. The COPD results are stable with stable medication. He is an \"A\" smoker who has smoked for most of his adult life.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 7,
+          "endOffset": 24,
+          "score": 0.9889231,
+          "text": "VA Medical Center",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 31,
+          "endOffset": 40,
+          "score": 0.36336267,
+          "text": "18 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7020102,
+              "relationshipScore": 0.5981037,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 105,
+              "endOffset": 109,
+              "text": "COPD",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7822072
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 105,
+          "endOffset": 109,
+          "score": 0.7020102,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7822072
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 148,
+          "endOffset": 180,
+          "score": 0.3478282,
+          "text": "oral and inhaled corticosteroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 165,
+          "endOffset": 180,
+          "score": 0.95683074,
+          "text": "corticosteroids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42600256,
+              "relationshipScore": 0.9949698,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 0,
+              "beginOffset": 148,
+              "endOffset": 152,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.92161673,
+              "relationshipScore": 0.9999944,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 1,
+              "beginOffset": 157,
+              "endOffset": 164,
+              "text": "inhaled",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 189,
+          "endOffset": 201,
+          "score": 0.9999651,
+          "text": "past 8 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.95683074,
+              "relationshipScore": 0.8749534,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 165,
+              "endOffset": 180,
+              "text": "corticosteroids",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 189,
+          "endOffset": 201,
+          "score": 0.9999651,
+          "text": "past 8 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.3478282,
+              "relationshipScore": 0.92053276,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 148,
+              "endOffset": 180,
+              "text": "oral and inhaled corticosteroids",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 189,
+          "endOffset": 201,
+          "score": 0.9999651,
+          "text": "past 8 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9983438,
+              "relationshipScore": 0.58179945,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 239,
+              "endOffset": 249,
+              "text": "bronchitis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9607511
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 239,
+          "endOffset": 249,
+          "score": 0.9983438,
+          "text": "bronchitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9607511
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9519257,
+              "relationshipScore": 0.99999046,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 231,
+              "endOffset": 238,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 255,
+          "endOffset": 259,
+          "score": 0.96393424,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93626285
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9519257,
+            "id": 4,
+            "beginOffset": 231,
+            "endOffset": 238,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "60f8b666-1273-4ac1-a2d3-95cf9d44f0ac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "60f8b666-1273-4ac1-a2d3-95cf9d44f0ac"
+          ],
+          "Content-Length": [
+            "3706"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3706",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:02 GMT",
+          "x-amzn-RequestId": "60f8b666-1273-4ac1-a2d3-95cf9d44f0ac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 486,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7020101,
+          "beginOffset": 105,
+          "endOffset": 109,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78220713
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.70901656
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.64651656
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.50894827
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.39234957
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.37690896
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bronchitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9983438,
+          "beginOffset": 239,
+          "endOffset": 249,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9519257,
+              "relationshipScore": 0.99999046,
+              "id": 1,
+              "beginOffset": 231,
+              "endOffset": 238,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9607511
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified chronic bronchitis",
+              "code": "J42",
+              "score": 0.62997365
+            },
+            {
+              "description": "Bronchitis, not specified as acute or chronic",
+              "code": "J40",
+              "score": 0.6044135
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.4654408
+            },
+            {
+              "description": "Acute bronchitis, unspecified",
+              "code": "J20.9",
+              "score": 0.4299098
+            },
+            {
+              "description": "Bronchitis and pneumonitis due to chemicals, gases, fumes and vapors",
+              "code": "J68.0",
+              "score": 0.42859864
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96393424,
+          "beginOffset": 255,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93626285
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.65468997
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.61899745
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.49544656
+            },
+            {
+              "description": "Other chronic obstructive pulmonary disease",
+              "code": "J44",
+              "score": 0.36157194
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.35801286
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed1df6ea-094b-4308-856a-bc46551fcfd6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed1df6ea-094b-4308-856a-bc46551fcfd6"
+          ],
+          "Content-Length": [
+            "2539"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2539",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:02 GMT",
+          "x-amzn-RequestId": "ed1df6ea-094b-4308-856a-bc46551fcfd6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 313,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "62feb738-e6d9-4166-af74-6b9d2d33bebe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "62feb738-e6d9-4166-af74-6b9d2d33bebe"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:02 GMT",
+          "x-amzn-RequestId": "62feb738-e6d9-4166-af74-6b9d2d33bebe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:03 PM"
+}

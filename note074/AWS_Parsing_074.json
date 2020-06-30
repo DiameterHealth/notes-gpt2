@@ -1,0 +1,172 @@
+{
+  "note": ". Should improve and the physical therapist can provide a physical activity plan that limits use of crutches. Should improve and return to physical activities as soon as this morning and return to work. Should continue physical activities and rehabilitation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 195,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 139,
+          "endOffset": 158,
+          "score": 0.44541186,
+          "text": "physical activities",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 170,
+          "endOffset": 182,
+          "score": 0.9999851,
+          "text": "this morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.44541186,
+              "relationshipScore": 0.84615266,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 139,
+              "endOffset": 158,
+              "text": "physical activities",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 219,
+          "endOffset": 238,
+          "score": 0.92761827,
+          "text": "physical activities",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 243,
+          "endOffset": 257,
+          "score": 0.43746054,
+          "text": "rehabilitation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3f5ec83a-2ef8-4f5a-88fb-84d8680b0ac1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3f5ec83a-2ef8-4f5a-88fb-84d8680b0ac1"
+          ],
+          "Content-Length": [
+            "995"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "995",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:12 GMT",
+          "x-amzn-RequestId": "3f5ec83a-2ef8-4f5a-88fb-84d8680b0ac1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 161,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "686e4c83-49b3-45f1-aa69-a30e57ac1a66"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "686e4c83-49b3-45f1-aa69-a30e57ac1a66"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:12 GMT",
+          "x-amzn-RequestId": "686e4c83-49b3-45f1-aa69-a30e57ac1a66"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 130,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c042275e-a787-4425-8625-ea98a782cf4e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c042275e-a787-4425-8625-ea98a782cf4e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:12 GMT",
+          "x-amzn-RequestId": "c042275e-a787-4425-8625-ea98a782cf4e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:12 PM"
+}

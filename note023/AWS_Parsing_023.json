@@ -1,0 +1,371 @@
+{
+  "note": ". Physical findings suggest respiratory involvement or lung injury. The pulmonary assessment may be a good option for the patient with a history of obstructive pulmonary disease. A diagnosis of pulmonary edema may be helpful in determining a good course of treatment.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 373,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 28,
+          "endOffset": 51,
+          "score": 0.8135237,
+          "text": "respiratory involvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5859422
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 55,
+          "endOffset": 59,
+          "score": 0.98272103,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 55,
+          "endOffset": 66,
+          "score": 0.9030485,
+          "text": "lung injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.846822
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 72,
+          "endOffset": 92,
+          "score": 0.651454,
+          "text": "pulmonary assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 148,
+          "endOffset": 177,
+          "score": 0.89271784,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9555294
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 194,
+          "endOffset": 209,
+          "score": 0.9529503,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.872889
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed9f7166-6272-4e49-8221-fd46daa0fd40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed9f7166-6272-4e49-8221-fd46daa0fd40"
+          ],
+          "Content-Length": [
+            "1189"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1189",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:41 GMT",
+          "x-amzn-RequestId": "ed9f7166-6272-4e49-8221-fd46daa0fd40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 326,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "respiratory involvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8135236,
+          "beginOffset": 28,
+          "endOffset": 51,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5859422
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.78075856
+            },
+            {
+              "description": "Acute respiratory failure with hypoxia",
+              "code": "J96.01",
+              "score": 0.66074526
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.6446722
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.62439895
+            },
+            {
+              "description": "Respiratory failure, unspecified with hypoxia",
+              "code": "J96.91",
+              "score": 0.6131194
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "lung injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9030486,
+          "beginOffset": 55,
+          "endOffset": 66,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.846822
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.55788773
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.51043725
+            },
+            {
+              "description": "Contusion of left knee",
+              "code": "S80.02",
+              "score": 0.42943764
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.42027545
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.40838486
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8927177,
+          "beginOffset": 148,
+          "endOffset": 177,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9555294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7167284
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.56567276
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.51664114
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.4856984
+            },
+            {
+              "description": "Disease of pulmonary vessels, unspecified",
+              "code": "I28.9",
+              "score": 0.44495147
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9529503,
+          "beginOffset": 194,
+          "endOffset": 209,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.872889
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic pulmonary edema",
+              "code": "J81.1",
+              "score": 0.65272653
+            },
+            {
+              "description": "Pulmonary edema",
+              "code": "J81",
+              "score": 0.52862144
+            },
+            {
+              "description": "Acute pulmonary edema",
+              "code": "J81.0",
+              "score": 0.49845767
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.3793971
+            },
+            {
+              "description": "Left ventricular failure, unspecified",
+              "code": "I50.1",
+              "score": 0.35816646
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f25181f3-de40-49ed-a83c-e05b6f7cdace"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f25181f3-de40-49ed-a83c-e05b6f7cdace"
+          ],
+          "Content-Length": [
+            "2924"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2924",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:41 GMT",
+          "x-amzn-RequestId": "f25181f3-de40-49ed-a83c-e05b6f7cdace"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 141,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "02649602-f9ab-4c67-ad06-baaf0b016ebc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "02649602-f9ab-4c67-ad06-baaf0b016ebc"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:41 GMT",
+          "x-amzn-RequestId": "02649602-f9ab-4c67-ad06-baaf0b016ebc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:42 PM"
+}

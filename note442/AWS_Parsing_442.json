@@ -1,0 +1,611 @@
+{
+  "note": "for a non-insulin related disease. This was a follow-up visit by the nephrologist to evaluate current management of diabetes with or without glucose. The pt was on insulin for type 1 diabetes and was being managed with the patient\u0027s blood glucose being checked via a glucose-dialysis system. Blood glucose was \u003c140 mg/dl. A comprehensive medical history was taken including diabetes, recent or past comorbidities and use of medication.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 393,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 6,
+          "endOffset": 33,
+          "score": 0.86717486,
+          "text": "non-insulin related disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9475328
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 94,
+          "endOffset": 101,
+          "score": 0.99999547,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97345936,
+              "relationshipScore": 0.5724041,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 116,
+              "endOffset": 124,
+              "text": "diabetes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9259637
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 116,
+          "endOffset": 124,
+          "score": 0.97345936,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9259637
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 164,
+          "endOffset": 171,
+          "score": 0.9856543,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 176,
+          "endOffset": 191,
+          "score": 0.5007082,
+          "text": "type 1 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95831656
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 233,
+          "endOffset": 246,
+          "score": 0.9088851,
+          "text": "blood glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 267,
+          "endOffset": 274,
+          "score": 0.55963874,
+          "text": "glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 275,
+          "endOffset": 283,
+          "score": 0.30757555,
+          "text": "dialysis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 292,
+          "endOffset": 305,
+          "score": 0.9932334,
+          "text": "Blood glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98599386,
+              "relationshipScore": 0.99998975,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 310,
+              "endOffset": 314,
+              "text": "\u003c140",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9966281,
+              "relationshipScore": 0.99980146,
+              "relationshipType": "TEST_UNIT",
+              "id": 11,
+              "beginOffset": 315,
+              "endOffset": 320,
+              "text": "mg/dl",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 374,
+          "endOffset": 382,
+          "score": 0.9433111,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9089455
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 384,
+          "endOffset": 390,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8121408,
+              "relationshipScore": 0.72725254,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 399,
+              "endOffset": 412,
+              "text": "comorbidities",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.75330806
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 384,
+          "endOffset": 390,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9433111,
+              "relationshipScore": 0.65446377,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 374,
+              "endOffset": 382,
+              "text": "diabetes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9089455
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 399,
+          "endOffset": 412,
+          "score": 0.8121408,
+          "text": "comorbidities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75330806
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "52777f05-62b0-4709-a1ec-30467609e2dc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "52777f05-62b0-4709-a1ec-30467609e2dc"
+          ],
+          "Content-Length": [
+            "3613"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3613",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:40 GMT",
+          "x-amzn-RequestId": "52777f05-62b0-4709-a1ec-30467609e2dc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 389,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "non-insulin related disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86717486,
+          "beginOffset": 6,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9475328
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.73491335
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.71496636
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.6410687
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6347447
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.60064584
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97345936,
+          "beginOffset": 116,
+          "endOffset": 124,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9259637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8407148
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.79333174
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.7550848
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7467068
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7292443
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "type 1 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5007081,
+          "beginOffset": 176,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95831656
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.669481
+            },
+            {
+              "description": "Type 1 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E10.22",
+              "score": 0.66071814
+            },
+            {
+              "description": "Type 1 diabetes mellitus without complications",
+              "code": "E10.9",
+              "score": 0.6526493
+            },
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.58262986
+            },
+            {
+              "description": "Type 1 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E10.42",
+              "score": 0.56194955
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9433111,
+          "beginOffset": 374,
+          "endOffset": 382,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9089456
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7761775
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7224977
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.65820456
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.61966014
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.6137658
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "comorbidities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8121408,
+          "beginOffset": 399,
+          "endOffset": 412,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.753308
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.91850793
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.76762986
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.7436293
+            },
+            {
+              "description": "Other ill-defined heart diseases",
+              "code": "I51.89",
+              "score": 0.7294104
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.7170992
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b8a90c5f-adbf-40b6-9ffe-a03304d13c7a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b8a90c5f-adbf-40b6-9ffe-a03304d13c7a"
+          ],
+          "Content-Length": [
+            "4039"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4039",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:41 GMT",
+          "x-amzn-RequestId": "b8a90c5f-adbf-40b6-9ffe-a03304d13c7a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 324,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9856543,
+          "beginOffset": 164,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Insulin Glargine",
+              "code": "274783",
+              "score": 0.87097144
+            },
+            {
+              "description": "insulin, isophane",
+              "code": "1605101",
+              "score": 0.8187334
+            },
+            {
+              "description": "Insulin Lispro",
+              "code": "86009",
+              "score": 0.5334955
+            },
+            {
+              "description": "Regular Insulin, Human",
+              "code": "253182",
+              "score": 0.49866036
+            },
+            {
+              "description": "Inulin",
+              "code": "5924",
+              "score": 0.47026154
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a937039f-08f5-4b5d-9fdd-061ae297305f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a937039f-08f5-4b5d-9fdd-061ae297305f"
+          ],
+          "Content-Length": [
+            "600"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "600",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:41 GMT",
+          "x-amzn-RequestId": "a937039f-08f5-4b5d-9fdd-061ae297305f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:42 PM"
+}

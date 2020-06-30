@@ -1,0 +1,516 @@
+{
+  "note": "provider for routine blood test. Management: This patient was seen for allergy testing and had the following laboratory results documented. No evidence of chronic obstructive pulmonary disease (COPD) or other underlying conditions. She is in excellent health with a history of asthma, but no history of asthma exacerbations within the past year. The patient had not been on any medication for 4 months.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 313,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 21,
+          "endOffset": 31,
+          "score": 0.9762162,
+          "text": "blood test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 71,
+          "endOffset": 86,
+          "score": 0.88068366,
+          "text": "allergy testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 109,
+          "endOffset": 119,
+          "score": 0.3671647,
+          "text": "laboratory",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.46168023,
+              "relationshipScore": 0.99999785,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 140,
+              "endOffset": 192,
+              "text": "No evidence of chronic obstructive pulmonary disease",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 163,
+          "endOffset": 192,
+          "score": 0.9480189,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9413104
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8806405
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98234576,
+              "relationshipScore": 0.9996117,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 194,
+          "endOffset": 198,
+          "score": 0.98990613,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9441083
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.53469723
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98234576,
+              "relationshipScore": 0.733888,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 277,
+          "endOffset": 283,
+          "score": 0.99506927,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9239963
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 303,
+          "endOffset": 309,
+          "score": 0.98889357,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84287417
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8208908
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 324,
+          "endOffset": 344,
+          "score": 0.8590595,
+          "text": "within the past year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98889357,
+              "relationshipScore": 0.9801804,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 303,
+              "endOffset": 309,
+              "text": "asthma",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.84287417
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.8208908
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98234576,
+            "id": 0,
+            "beginOffset": 155,
+            "endOffset": 162,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5a33afd4-b55f-4b38-874b-0407d8405f8b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5a33afd4-b55f-4b38-874b-0407d8405f8b"
+          ],
+          "Content-Length": [
+            "2892"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2892",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:52 GMT",
+          "x-amzn-RequestId": "5a33afd4-b55f-4b38-874b-0407d8405f8b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 595,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9480189,
+          "beginOffset": 163,
+          "endOffset": 192,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98234564,
+              "relationshipScore": 0.9996117,
+              "id": 0,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9413104
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8806405
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.75221634
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6168948
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.51897365
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.5127305
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.4517887
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98990613,
+          "beginOffset": 194,
+          "endOffset": 198,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98234564,
+              "relationshipScore": 0.733888,
+              "id": 0,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9441083
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5346972
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7977926
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6515111
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.53559494
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.5319612
+            },
+            {
+              "description": "Other chronic obstructive pulmonary disease",
+              "code": "J44",
+              "score": 0.52702826
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99506927,
+          "beginOffset": 277,
+          "endOffset": 283,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92399627
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6669532
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.53611016
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.4427235
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.43808627
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.39346606
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98889357,
+          "beginOffset": 303,
+          "endOffset": 309,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84287417
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8208908
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6145293
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.5954326
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.4250712
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.39117715
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.3557586
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a86f6189-4d06-44c3-92cc-fe33452a66ef"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a86f6189-4d06-44c3-92cc-fe33452a66ef"
+          ],
+          "Content-Length": [
+            "3520"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3520",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:52 GMT",
+          "x-amzn-RequestId": "a86f6189-4d06-44c3-92cc-fe33452a66ef"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ca9a3fbc-7c70-4f28-995c-7792fb2ba784"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ca9a3fbc-7c70-4f28-995c-7792fb2ba784"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:52 GMT",
+          "x-amzn-RequestId": "ca9a3fbc-7c70-4f28-995c-7792fb2ba784"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:53 PM"
+}

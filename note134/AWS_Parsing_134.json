@@ -1,0 +1,246 @@
+{
+  "note": ".  Note: if you are having any side effect that is not listed here, check with your doctor or pharmacist. Comments: There are 2 different FDA-approved antidiuretic medications (H2RAB) available. It is important to read the labels and to avoid taking both at the same time. If you have any questions at all about the use of antidiuretic medications, please stop taking them and talk with your doctor.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 243,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 31,
+          "endOffset": 42,
+          "score": 0.81068426,
+          "text": "side effect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6279701
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 138,
+          "endOffset": 175,
+          "score": 0.37864673,
+          "text": "FDA-approved antidiuretic medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 177,
+          "endOffset": 182,
+          "score": 0.3425855,
+          "text": "H2RAB",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 323,
+          "endOffset": 347,
+          "score": 0.9498186,
+          "text": "antidiuretic medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "55dc541b-b51c-43af-a3b8-459a567e3a37"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "55dc541b-b51c-43af-a3b8-459a567e3a37"
+          ],
+          "Content-Length": [
+            "768"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "768",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:38 GMT",
+          "x-amzn-RequestId": "55dc541b-b51c-43af-a3b8-459a567e3a37"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 375,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "side effect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8106841,
+          "beginOffset": 31,
+          "endOffset": 42,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6279701
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.8351425
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.75251335
+            },
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.74805313
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.7184097
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.7040007
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f101992b-edb5-4439-ab9d-233e2e47d94c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f101992b-edb5-4439-ab9d-233e2e47d94c"
+          ],
+          "Content-Length": [
+            "975"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "975",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:38 GMT",
+          "x-amzn-RequestId": "f101992b-edb5-4439-ab9d-233e2e47d94c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 301,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "H2RAB",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.34258562,
+          "beginOffset": 177,
+          "endOffset": 182,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Hura crepitans sap extract",
+              "code": "1366113",
+              "score": 0.18274106
+            },
+            {
+              "description": "crab allergenic extract",
+              "code": "892610",
+              "score": 0.032423202
+            },
+            {
+              "description": "Snow Crab, Unspecified preparation",
+              "code": "1315123",
+              "score": 0.027411807
+            },
+            {
+              "description": "Arched Swimming Crab, Cooked Preparation",
+              "code": "1315108",
+              "score": 0.026782913
+            },
+            {
+              "description": "blue crab preparation",
+              "code": "1315126",
+              "score": 0.010270182
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5c875387-c399-4110-9818-71de761c590f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5c875387-c399-4110-9818-71de761c590f"
+          ],
+          "Content-Length": [
+            "679"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "679",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:38 GMT",
+          "x-amzn-RequestId": "5c875387-c399-4110-9818-71de761c590f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:38 PM"
+}

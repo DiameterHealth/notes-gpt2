@@ -1,0 +1,197 @@
+{
+  "note": ". The child is seen to be healthy. The physician takes a history and physical exam, and considers a vaccination for pertussis a non-emergency action. The physician gives the pertussis vaccine and recommends continuation of the tetanus booster for 6 months as a reminder. A nurse practitioner discusses the patient\u0027s history and concerns with the caregiver and the parent.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "score": 0.540078,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 100,
+          "endOffset": 111,
+          "score": 0.35415214,
+          "text": "vaccination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 227,
+          "endOffset": 242,
+          "score": 0.6516636,
+          "text": "tetanus booster",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 273,
+          "endOffset": 291,
+          "score": 0.69306004,
+          "text": "nurse practitioner",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9fe09429-4548-48aa-bf67-23a4decfda19"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9fe09429-4548-48aa-bf67-23a4decfda19"
+          ],
+          "Content-Length": [
+            "710"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "710",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:55 GMT",
+          "x-amzn-RequestId": "9fe09429-4548-48aa-bf67-23a4decfda19"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 326,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5400779,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.77613735
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.74264914
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.72025776
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.69817203
+            },
+            {
+              "description": "Type 2 diabetes mellitus with other skin ulcer",
+              "code": "E11.622",
+              "score": 0.6883176
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5000dded-a794-4307-bf94-7ab8ac5069b5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5000dded-a794-4307-bf94-7ab8ac5069b5"
+          ],
+          "Content-Length": [
+            "768"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "768",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:55 GMT",
+          "x-amzn-RequestId": "5000dded-a794-4307-bf94-7ab8ac5069b5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 178,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9ff5d26a-8ba5-4483-81b8-a6e2b29b3255"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9ff5d26a-8ba5-4483-81b8-a6e2b29b3255"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:55 GMT",
+          "x-amzn-RequestId": "9ff5d26a-8ba5-4483-81b8-a6e2b29b3255"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:56 PM"
+}

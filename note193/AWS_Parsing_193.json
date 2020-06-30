@@ -1,0 +1,384 @@
+{
+  "note": ".  Management:  There are two types of therapy for depression: psychotherapy (SSRIs and TCAs) and antidepressant medications. If the patient is using psychotherapies, such as SSRIs or TCAs, these are likely to alleviate symptoms quickly. Medications are indicated because medications can slow down the brain and can take days to weeks to work. In that case, antidepressants may be required to reduce symptoms again.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 247,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 51,
+          "endOffset": 61,
+          "score": 0.9893454,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9660366
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 63,
+          "endOffset": 76,
+          "score": 0.5777502,
+          "text": "psychotherapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 78,
+          "endOffset": 83,
+          "score": 0.6196452,
+          "text": "SSRIs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 78,
+          "endOffset": 83,
+          "score": 0.79478437,
+          "text": "SSRIs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 88,
+          "endOffset": 92,
+          "score": 0.87080395,
+          "text": "TCAs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 98,
+          "endOffset": 124,
+          "score": 0.98252904,
+          "text": "antidepressant medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 150,
+          "endOffset": 165,
+          "score": 0.65616226,
+          "text": "psychotherapies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 175,
+          "endOffset": 180,
+          "score": 0.66327125,
+          "text": "SSRIs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.650633
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 175,
+          "endOffset": 180,
+          "score": 0.81489956,
+          "text": "SSRIs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 184,
+          "endOffset": 188,
+          "score": 0.9399033,
+          "text": "TCAs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 302,
+          "endOffset": 307,
+          "score": 0.7368998,
+          "text": "brain",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 358,
+          "endOffset": 373,
+          "score": 0.943557,
+          "text": "antidepressants",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 358,
+          "endOffset": 373,
+          "score": 0.38593864,
+          "text": "antidepressants",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f4acd73b-c273-4053-9537-6059639da8cc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f4acd73b-c273-4053-9537-6059639da8cc"
+          ],
+          "Content-Length": [
+            "2197"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2197",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:09 GMT",
+          "x-amzn-RequestId": "f4acd73b-c273-4053-9537-6059639da8cc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 336,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9893454,
+          "beginOffset": 51,
+          "endOffset": 61,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9660366
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.89222753
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7494235
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.7370343
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.73123664
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.69399714
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "29477f13-6984-4bca-945f-b6b0030d04aa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "29477f13-6984-4bca-945f-b6b0030d04aa"
+          ],
+          "Content-Length": [
+            "825"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "825",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:09 GMT",
+          "x-amzn-RequestId": "29477f13-6984-4bca-945f-b6b0030d04aa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 347,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "SSRIs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.619645,
+          "beginOffset": 78,
+          "endOffset": 83,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "tris(trimethylsiloxy)phenylsilane",
+              "code": "1799152",
+              "score": 0.4915873
+            },
+            {
+              "description": "Primula veris extract",
+              "code": "1311310",
+              "score": 0.33995414
+            },
+            {
+              "description": "Paris quadrifolia extract",
+              "code": "1492935",
+              "score": 0.32253215
+            },
+            {
+              "description": "Tris(Tetramethylhydroxypiperidinol)",
+              "code": "1368376",
+              "score": 0.0836711
+            },
+            {
+              "description": "Paris polyphylla whole extract",
+              "code": "1793743",
+              "score": 0.06940009
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "SSRIs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.663271,
+          "beginOffset": 175,
+          "endOffset": 180,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.65063274
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Primula veris extract",
+              "code": "1311310",
+              "score": 0.33995417
+            },
+            {
+              "description": "Paris quadrifolia extract",
+              "code": "1492935",
+              "score": 0.32253215
+            },
+            {
+              "description": "TRIS-BHT MESITYLENE",
+              "code": "1428857",
+              "score": 0.1408244
+            },
+            {
+              "description": "Tris(Tetramethylhydroxypiperidinol)",
+              "code": "1368376",
+              "score": 0.0836711
+            },
+            {
+              "description": "Paris polyphylla whole extract",
+              "code": "1793743",
+              "score": 0.06940009
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a201c6d4-d08b-4773-ba96-c087f7aaa955"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a201c6d4-d08b-4773-ba96-c087f7aaa955"
+          ],
+          "Content-Length": [
+            "1347"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1347",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:09 GMT",
+          "x-amzn-RequestId": "a201c6d4-d08b-4773-ba96-c087f7aaa955"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:10 PM"
+}

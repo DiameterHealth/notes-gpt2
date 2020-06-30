@@ -1,0 +1,536 @@
+{
+  "note": ". Patient presents with acute acute MI. His blood work is in normal ranges with an eGFR under 50 (normal is 80). He had significant pulmonary impairment and his blood pressure was 70/25. Outcome:  Good. Comments:  I will refer patients with prior myocardial infarction to this protocol with this interpretation. Routes:  CXR. 3. The following are examples of scenarios that may be encountered but it is not intended to be exhaustive.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 596,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 36,
+          "endOffset": 39,
+          "score": 0.97175443,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8435637
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9037591,
+              "relationshipScore": 0.9999654,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.9404322,
+              "relationshipScore": 0.99999285,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 30,
+              "endOffset": 35,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 44,
+          "endOffset": 54,
+          "score": 0.9245479,
+          "text": "blood work",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.53409487,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 61,
+              "endOffset": 67,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 83,
+          "endOffset": 87,
+          "score": 0.966416,
+          "text": "eGFR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4439979,
+              "relationshipScore": 0.99989116,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 88,
+              "endOffset": 96,
+              "text": "under 50",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.510829,
+              "relationshipScore": 0.9997836,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 98,
+              "endOffset": 110,
+              "text": "normal is 80",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.36583167,
+              "relationshipScore": 0.98127824,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 120,
+              "endOffset": 152,
+              "text": "significant pulmonary impairment",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 132,
+          "endOffset": 152,
+          "score": 0.961344,
+          "text": "pulmonary impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54273206
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 161,
+          "endOffset": 175,
+          "score": 0.98985904,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.36583167,
+              "relationshipScore": 0.7471508,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 120,
+              "endOffset": 152,
+              "text": "significant pulmonary impairment",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8793427,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 180,
+              "endOffset": 185,
+              "text": "70/25",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.40246442,
+              "relationshipScore": 0.9998803,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 196,
+              "endOffset": 201,
+              "text": " Good",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 180,
+          "endOffset": 185,
+          "score": 0.17102899,
+          "text": "70/25",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 241,
+          "endOffset": 246,
+          "score": 0.99999666,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.67638165,
+              "relationshipScore": 0.86607087,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 247,
+              "endOffset": 268,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9220118
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 247,
+          "endOffset": 268,
+          "score": 0.67638165,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9220118
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 320,
+          "endOffset": 324,
+          "score": 0.9717695,
+          "text": " CXR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9037591,
+            "id": 0,
+            "beginOffset": 24,
+            "endOffset": 29,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9404322,
+            "id": 1,
+            "beginOffset": 30,
+            "endOffset": 35,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a645fe75-4d67-4f8b-935d-4b1dcddfa838"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a645fe75-4d67-4f8b-935d-4b1dcddfa838"
+          ],
+          "Content-Length": [
+            "4376"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4376",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:50 GMT",
+          "x-amzn-RequestId": "a645fe75-4d67-4f8b-935d-4b1dcddfa838"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 559,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97175443,
+          "beginOffset": 36,
+          "endOffset": 39,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9037591,
+              "relationshipScore": 0.9999654,
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.9404322,
+              "relationshipScore": 0.99999285,
+              "id": 1,
+              "beginOffset": 30,
+              "endOffset": 35,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8435637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.68490815
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.6479419
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.60048825
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.58909076
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.57823706
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pulmonary impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.961344,
+          "beginOffset": 132,
+          "endOffset": 152,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.542732
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.63359916
+            },
+            {
+              "description": "Other pulmonary embolism without acute cor pulmonale",
+              "code": "I26.99",
+              "score": 0.5925953
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.5570445
+            },
+            {
+              "description": "Pulmonary fibrosis, unspecified",
+              "code": "J84.10",
+              "score": 0.52829826
+            },
+            {
+              "description": "Disease of pulmonary vessels, unspecified",
+              "code": "I28.9",
+              "score": 0.49464995
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.67638165,
+          "beginOffset": 247,
+          "endOffset": 268,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9220118
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8580743
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7829056
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7491012
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.7396276
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.737328
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "54419a22-6cac-468b-b8dc-20ba4dbc7165"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "54419a22-6cac-468b-b8dc-20ba4dbc7165"
+          ],
+          "Content-Length": [
+            "2655"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2655",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:52 GMT",
+          "x-amzn-RequestId": "54419a22-6cac-468b-b8dc-20ba4dbc7165"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 302,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "03e0dfd9-1f52-4f93-be99-4f0fb6bf158a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "03e0dfd9-1f52-4f93-be99-4f0fb6bf158a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:50 GMT",
+          "x-amzn-RequestId": "03e0dfd9-1f52-4f93-be99-4f0fb6bf158a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:52 PM"
+}

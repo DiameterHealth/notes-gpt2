@@ -1,0 +1,512 @@
+{
+  "note": "She reports being sedated for most of the day. [3]   During the initial evaluation after fainting, it became clear that the patient was not experiencing a heart attack but rather a fainting episode due to atrial fibrillation. [4] MDM is a process in which the clinician must evaluate the appropriateness of medication given to the patient, and determine whether the patient is safe to continue with that medication.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 339,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 18,
+          "endOffset": 25,
+          "score": 0.6763551,
+          "text": "sedated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5682441
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 30,
+          "endOffset": 34,
+          "score": 0.5640362,
+          "text": "most",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.6763551,
+              "relationshipScore": 0.88738984,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 18,
+              "endOffset": 25,
+              "text": "sedated",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.5682441
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 89,
+          "endOffset": 97,
+          "score": 0.9655699,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7622242
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 109,
+          "endOffset": 114,
+          "score": 0.48293155,
+          "text": "clear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 155,
+          "endOffset": 160,
+          "score": 0.9455803,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 155,
+          "endOffset": 167,
+          "score": 0.975496,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41243827
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5773373
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.84494364
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 181,
+          "endOffset": 197,
+          "score": 0.55888873,
+          "text": "fainting episode",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7523564
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 205,
+          "endOffset": 224,
+          "score": 0.9789033,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9247821
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "936d29ad-7994-499c-b23e-6b45f0f9314c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "936d29ad-7994-499c-b23e-6b45f0f9314c"
+          ],
+          "Content-Length": [
+            "1852"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1852",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:32 GMT",
+          "x-amzn-RequestId": "936d29ad-7994-499c-b23e-6b45f0f9314c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 466,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sedated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6763552,
+          "beginOffset": 18,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.56824416
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other complications of anesthesia",
+              "code": "T88.59",
+              "score": 0.52648276
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic abuse, uncomplicated",
+              "code": "F13.10",
+              "score": 0.4245553
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic dependence, uncomplicated",
+              "code": "F13.20",
+              "score": 0.40826842
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic dependence with withdrawal, uncomplicated",
+              "code": "F13.230",
+              "score": 0.3999439
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic dependence with intoxication, unspecified",
+              "code": "F13.229",
+              "score": 0.3937421
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9655699,
+          "beginOffset": 89,
+          "endOffset": 97,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7622242
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.8593135
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.6579105
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.6169049
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.6029269
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.58530724
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "clear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.48293155,
+          "beginOffset": 109,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.8900862
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.84750456
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.79215384
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.71434575
+            },
+            {
+              "description": "Other specified diseases of anus and rectum",
+              "code": "K62.89",
+              "score": 0.71365803
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.975496,
+          "beginOffset": 155,
+          "endOffset": 167,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41243824
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5773374
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.84494364
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8484346
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.8427601
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.7755225
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.74044997
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7308715
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "fainting episode",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.55888885,
+          "beginOffset": 181,
+          "endOffset": 197,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75235635
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.83938557
+            },
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.71188843
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.6833231
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.6822048
+            },
+            {
+              "description": "Manic episode, unspecified",
+              "code": "F30.9",
+              "score": 0.67874086
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9789033,
+          "beginOffset": 205,
+          "endOffset": 224,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9247821
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.9079694
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.86896557
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.8484118
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.8415833
+            },
+            {
+              "description": "Unspecified atrial flutter",
+              "code": "I48.92",
+              "score": 0.7693149
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0fa12318-5546-4536-aafb-d641364e5210"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0fa12318-5546-4536-aafb-d641364e5210"
+          ],
+          "Content-Length": [
+            "4289"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4289",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:32 GMT",
+          "x-amzn-RequestId": "0fa12318-5546-4536-aafb-d641364e5210"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e10581d3-3351-4b97-803f-08bf032bfb96"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e10581d3-3351-4b97-803f-08bf032bfb96"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:32 GMT",
+          "x-amzn-RequestId": "e10581d3-3351-4b97-803f-08bf032bfb96"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:32 PM"
+}

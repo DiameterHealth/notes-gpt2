@@ -1,0 +1,535 @@
+{
+  "note": ", and diclofenac at 150mg 3 times a day. Patient should do well with current lifestyle and medications. I have had the following problem with my older PPI for 10-15 years. I take 200mg atorvastatin 3 times a day and have been on 2x 325mg paracetamol in the morning and 1x 300mg otc every other day. Yesterday my doctor told me that the diclofenac at 300mg daily is causing the side effects.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 510,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 6,
+          "endOffset": 16,
+          "score": 0.9979208,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99244845,
+              "relationshipScore": 0.9999982,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 20,
+              "endOffset": 25,
+              "text": "150mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.98939705,
+              "relationshipScore": 0.9999919,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 26,
+              "endOffset": 39,
+              "text": "3 times a day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 185,
+          "endOffset": 197,
+          "score": 0.99938405,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.92051935,
+              "relationshipScore": 0.9999963,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 179,
+              "endOffset": 184,
+              "text": "200mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9620813,
+              "relationshipScore": 0.9997009,
+              "relationshipType": "FREQUENCY",
+              "id": 5,
+              "beginOffset": 198,
+              "endOffset": 211,
+              "text": "3 times a day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 238,
+          "endOffset": 249,
+          "score": 0.9867134,
+          "text": "paracetamol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.21323581,
+              "relationshipScore": 1.0,
+              "relationshipType": "DOSAGE",
+              "id": 6,
+              "beginOffset": 229,
+              "endOffset": 237,
+              "text": "2x 325mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.6793029,
+              "relationshipScore": 0.9999925,
+              "relationshipType": "FREQUENCY",
+              "id": 8,
+              "beginOffset": 250,
+              "endOffset": 264,
+              "text": "in the morning",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.4259381,
+              "relationshipScore": 0.99999654,
+              "relationshipType": "FREQUENCY",
+              "id": 9,
+              "beginOffset": 269,
+              "endOffset": 297,
+              "text": "1x 300mg otc every other day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 250,
+          "endOffset": 264,
+          "score": 0.99989426,
+          "text": "in the morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9867134,
+              "relationshipScore": 0.8327646,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 238,
+              "endOffset": 249,
+              "text": "paracetamol",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 336,
+          "endOffset": 346,
+          "score": 0.9982022,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99783057,
+              "relationshipScore": 0.99998677,
+              "relationshipType": "DOSAGE",
+              "id": 11,
+              "beginOffset": 350,
+              "endOffset": 355,
+              "text": "300mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9915872,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "FREQUENCY",
+              "id": 12,
+              "beginOffset": 356,
+              "endOffset": 361,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 377,
+          "endOffset": 389,
+          "score": 0.9263174,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69889146
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "de1ba00b-2d30-4592-9997-664ceb466114"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "de1ba00b-2d30-4592-9997-664ceb466114"
+          ],
+          "Content-Length": [
+            "3212"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3212",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:55 GMT",
+          "x-amzn-RequestId": "de1ba00b-2d30-4592-9997-664ceb466114"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 374,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9263174,
+          "beginOffset": 377,
+          "endOffset": 389,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69889146
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.6508186
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.6317425
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.5721868
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.5338706
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.52759326
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "744f77fa-7d06-4319-9429-8ff0d2d24b8d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "744f77fa-7d06-4319-9429-8ff0d2d24b8d"
+          ],
+          "Content-Length": [
+            "983"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "983",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:56 GMT",
+          "x-amzn-RequestId": "744f77fa-7d06-4319-9429-8ff0d2d24b8d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 900,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9979208,
+          "beginOffset": 6,
+          "endOffset": 16,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99244857,
+              "relationshipScore": 0.9999982,
+              "id": 1,
+              "beginOffset": 20,
+              "endOffset": 25,
+              "text": "150mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.98939705,
+              "relationshipScore": 0.9999919,
+              "id": 2,
+              "beginOffset": 26,
+              "endOffset": 39,
+              "text": "3 times a day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Diclofenac",
+              "code": "3355",
+              "score": 0.7233812
+            },
+            {
+              "description": "Diclofenac Sodium 0.01 MG/MG Topical Gel",
+              "code": "855633",
+              "score": 0.41776997
+            },
+            {
+              "description": "Diclofenac Sodium 25 MG Delayed Release Oral Tablet",
+              "code": "855664",
+              "score": 0.27939588
+            },
+            {
+              "description": "Diclofenac Sodium 0.015 MG/MG Medicated Patch",
+              "code": "1995011",
+              "score": 0.2451529
+            },
+            {
+              "description": "Diclofenac Sodium 50 MG Delayed Release Oral Tablet",
+              "code": "855906",
+              "score": 0.16750851
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99938405,
+          "beginOffset": 185,
+          "endOffset": 197,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.92051935,
+              "relationshipScore": 0.9999964,
+              "id": 3,
+              "beginOffset": 179,
+              "endOffset": 184,
+              "text": "200mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9620813,
+              "relationshipScore": 0.9997009,
+              "id": 5,
+              "beginOffset": 198,
+              "endOffset": 211,
+              "text": "3 times a day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "atorvastatin 20 MG Oral Tablet",
+              "code": "617310",
+              "score": 0.94428205
+            },
+            {
+              "description": "atorvastatin",
+              "code": "83367",
+              "score": 0.8185652
+            },
+            {
+              "description": "atorvastatin 10 MG Oral Tablet",
+              "code": "617312",
+              "score": 0.7232574
+            },
+            {
+              "description": "atorvastatin 20 MG Oral Tablet [Lipitor]",
+              "code": "617318",
+              "score": 0.4584549
+            },
+            {
+              "description": "atorvastatin 40 MG Oral Tablet",
+              "code": "617311",
+              "score": 0.29708177
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "diclofenac",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9982022,
+          "beginOffset": 336,
+          "endOffset": 346,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99783057,
+              "relationshipScore": 0.99998665,
+              "id": 11,
+              "beginOffset": 350,
+              "endOffset": 355,
+              "text": "300mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9915872,
+              "relationshipScore": 0.9999994,
+              "id": 12,
+              "beginOffset": 356,
+              "endOffset": 361,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Diclofenac",
+              "code": "3355",
+              "score": 0.7702448
+            },
+            {
+              "description": "Diclofenac Sodium 25 MG Delayed Release Oral Tablet",
+              "code": "855664",
+              "score": 0.16004592
+            },
+            {
+              "description": "Diclofenac Sodium 0.01 MG/MG Topical Gel",
+              "code": "855633",
+              "score": 0.10156251
+            },
+            {
+              "description": "Diclofenac Potassium 50 MG Powder for Oral Solution",
+              "code": "859063",
+              "score": 0.10019777
+            },
+            {
+              "description": "Diclofenac Potassium 25 MG Oral Capsule",
+              "code": "858342",
+              "score": 0.09602435
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3e98b29a-3496-47c3-9d9e-7f1b837395e0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3e98b29a-3496-47c3-9d9e-7f1b837395e0"
+          ],
+          "Content-Length": [
+            "2975"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2975",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:55 GMT",
+          "x-amzn-RequestId": "3e98b29a-3496-47c3-9d9e-7f1b837395e0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:57 PM"
+}

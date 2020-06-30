@@ -1,0 +1,413 @@
+{
+  "note": "ing and coronary artery bypass graft-fusion, and a recent heart transplant. He has no history of significant pulmonary or cardiovascular disease. He began weight-reduction with a 2,700 kcal/day diet on Oct. 12. He has previously used an isocaloric, reduced calorie diet. There are no known allergies or hypersensitivity to any components of this dietary regimen and he has not received any other medications known to affect metabolism, lipoprotein metabolism, or blood pressure.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 549,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 8,
+          "endOffset": 23,
+          "score": 0.96660477,
+          "text": "coronary artery",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 8,
+          "endOffset": 43,
+          "score": 0.8854769,
+          "text": "coronary artery bypass graft-fusion",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 51,
+          "endOffset": 57,
+          "score": 0.99980575,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9856967,
+              "relationshipScore": 0.990657,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 58,
+              "endOffset": 74,
+              "text": "heart transplant",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 58,
+          "endOffset": 63,
+          "score": 0.9753904,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 58,
+          "endOffset": 74,
+          "score": 0.9856967,
+          "text": "heart transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 109,
+          "endOffset": 144,
+          "score": 0.9246393,
+          "text": "pulmonary or cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.891158
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92067116
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 155,
+          "endOffset": 171,
+          "score": 0.27579197,
+          "text": "weight-reduction",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 202,
+          "endOffset": 209,
+          "score": 0.37476084,
+          "text": "Oct. 12",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 290,
+          "endOffset": 299,
+          "score": 0.41038823,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 303,
+          "endOffset": 319,
+          "score": 0.8706394,
+          "text": "hypersensitivity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6365151
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.67280227
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 346,
+          "endOffset": 361,
+          "score": 0.3565155,
+          "text": "dietary regimen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 436,
+          "endOffset": 458,
+          "score": 0.30378503,
+          "text": "lipoprotein metabolism",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 463,
+          "endOffset": 477,
+          "score": 0.75890034,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4a3d2ded-05d7-4bac-91b5-beec7dcbf0e3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4a3d2ded-05d7-4bac-91b5-beec7dcbf0e3"
+          ],
+          "Content-Length": [
+            "2616"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2616",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:26 GMT",
+          "x-amzn-RequestId": "4a3d2ded-05d7-4bac-91b5-beec7dcbf0e3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1773,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "pulmonary or cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9246393,
+          "beginOffset": 109,
+          "endOffset": 144,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.891158
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92067116
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6273811
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.53961986
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.5308577
+            },
+            {
+              "description": "Other specified pulmonary heart diseases",
+              "code": "I27.89",
+              "score": 0.52005583
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.5090446
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41038847,
+          "beginOffset": 290,
+          "endOffset": 299,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.7333978
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.61495495
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.60739136
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.5889091
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.58214647
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hypersensitivity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8706395,
+          "beginOffset": 303,
+          "endOffset": 319,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6365152
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6728025
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.5126835
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.46136665
+            },
+            {
+              "description": "Suberosis",
+              "code": "J67.3",
+              "score": 0.42023304
+            },
+            {
+              "description": "Hypersensitivity angiitis",
+              "code": "M31.0",
+              "score": 0.41954836
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.41940004
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7b36932d-e45d-4b20-8e77-862d3e4eea7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7b36932d-e45d-4b20-8e77-862d3e4eea7c"
+          ],
+          "Content-Length": [
+            "2205"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2205",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:27 GMT",
+          "x-amzn-RequestId": "7b36932d-e45d-4b20-8e77-862d3e4eea7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 234,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a9acf958-c663-44f8-b4f3-88d1f1c4cd19"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a9acf958-c663-44f8-b4f3-88d1f1c4cd19"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:26 GMT",
+          "x-amzn-RequestId": "a9acf958-c663-44f8-b4f3-88d1f1c4cd19"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:28 PM"
+}

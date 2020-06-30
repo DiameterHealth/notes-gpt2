@@ -1,0 +1,490 @@
+{
+  "note": "All signs were negative, she remained well on birth control pills and she had a normal pre-pregnancy weight, height and blood pressure. There was evidence of a history of a lower leg infection. The patient\u0027s obstetrician was a midwife and she had had a previous C-section with complications. Discussion / Conclusion: The midwife\u0027s assessment of the labor environment was correct as she noted no history of an adverse delivery.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 348,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 46,
+          "endOffset": 65,
+          "score": 0.6843981,
+          "text": "birth control pills",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 46,
+          "endOffset": 65,
+          "score": 0.95087224,
+          "text": "birth control pills",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 80,
+          "endOffset": 107,
+          "score": 0.41786653,
+          "text": "normal pre-pregnancy weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4103244
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 87,
+          "endOffset": 107,
+          "score": 0.9531993,
+          "text": "pre-pregnancy weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9704216,
+              "relationshipScore": 0.96769184,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 80,
+              "endOffset": 86,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 109,
+          "endOffset": 115,
+          "score": 0.9728284,
+          "text": "height",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 120,
+          "endOffset": 134,
+          "score": 0.9760652,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9704216,
+              "relationshipScore": 0.9840958,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 80,
+              "endOffset": 86,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 179,
+          "endOffset": 182,
+          "score": 0.9917374,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 179,
+          "endOffset": 192,
+          "score": 0.7450096,
+          "text": "leg infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8296944
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9782153,
+              "relationshipScore": 0.99998033,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 173,
+              "endOffset": 178,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 262,
+          "endOffset": 271,
+          "score": 0.9431377,
+          "text": "C-section",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 409,
+          "endOffset": 425,
+          "score": 0.5355992,
+          "text": "adverse delivery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45083672
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6293655
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.39320132,
+            "id": 6,
+            "beginOffset": 15,
+            "endOffset": 23,
+            "text": "negative",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9782153,
+            "id": 0,
+            "beginOffset": 173,
+            "endOffset": 178,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "37eafc32-7afa-4cd9-84b5-34ee966a52c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "37eafc32-7afa-4cd9-84b5-34ee966a52c5"
+          ],
+          "Content-Length": [
+            "2910"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2910",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:33 GMT",
+          "x-amzn-RequestId": "37eafc32-7afa-4cd9-84b5-34ee966a52c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 466,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "normal pre-pregnancy weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41786653,
+          "beginOffset": 80,
+          "endOffset": 107,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4103243
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.55769944
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.51452327
+            },
+            {
+              "description": "Encounter for supervision of other normal pregnancy, third trimester",
+              "code": "Z34.83",
+              "score": 0.3346804
+            },
+            {
+              "description": "Encounter for supervision of normal pregnancy, unspecified, second trimester",
+              "code": "Z34.92",
+              "score": 0.3317601
+            },
+            {
+              "description": "Encounter for supervision of normal pregnancy, unspecified, third trimester",
+              "code": "Z34.93",
+              "score": 0.3245586
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "leg infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7450096,
+          "beginOffset": 179,
+          "endOffset": 192,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9782153,
+              "relationshipScore": 0.99998033,
+              "id": 1,
+              "beginOffset": 173,
+              "endOffset": 178,
+              "text": "lower",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8296944
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.48179722
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.4528371
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.41697976
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.37645358
+            },
+            {
+              "description": "Infectious gastroenteritis and colitis, unspecified",
+              "code": "A09",
+              "score": 0.3637888
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "adverse delivery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53559905,
+          "beginOffset": 409,
+          "endOffset": 425,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45083672
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6293655
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.7225815
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.6043582
+            },
+            {
+              "description": "Adverse effect of unspecified anesthetic",
+              "code": "T41.45",
+              "score": 0.5900572
+            },
+            {
+              "description": "Second degree perineal laceration during delivery",
+              "code": "O70.1",
+              "score": 0.5485052
+            },
+            {
+              "description": "Other adverse effects, not elsewhere classified",
+              "code": "T78.8",
+              "score": 0.5382522
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4a533073-5dca-483d-b974-c97093303e83"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4a533073-5dca-483d-b974-c97093303e83"
+          ],
+          "Content-Length": [
+            "2628"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2628",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:34 GMT",
+          "x-amzn-RequestId": "4a533073-5dca-483d-b974-c97093303e83"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 307,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "birth control pills",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.684398,
+          "beginOffset": 46,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Pinus lambertiana resin",
+              "code": "1359088",
+              "score": 0.017316356
+            },
+            {
+              "description": "Pinus massoniana resin",
+              "code": "1311586",
+              "score": 0.011936132
+            },
+            {
+              "description": "silver birch pollen allergenic extract",
+              "code": "1306108",
+              "score": 0.005557731
+            },
+            {
+              "description": "gray birch pollen extract",
+              "code": "852178",
+              "score": 0.0054775183
+            },
+            {
+              "description": "yellow birch pollen extract",
+              "code": "899550",
+              "score": 0.005402899
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0a33de1f-9767-43b7-be46-eb8f6346741d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0a33de1f-9767-43b7-be46-eb8f6346741d"
+          ],
+          "Content-Length": [
+            "685"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "685",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:33 GMT",
+          "x-amzn-RequestId": "0a33de1f-9767-43b7-be46-eb8f6346741d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:34 PM"
+}

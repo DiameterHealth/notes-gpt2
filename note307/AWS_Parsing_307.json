@@ -1,0 +1,616 @@
+{
+  "note": ". The patient was admitted in spontaneous labor in the morning of Jan 3rd. Her spouse was reactive and reassuring throughout the course of her stay in labor and delivery. Plan of Treatment:  56 year old patient with history of AML without CNS involvement who is status post successful 7+3 induction therapy being admitted for acute myocardial infarction. The patient was admitted in spontaneous labor in the morning of Jan 3rd.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 613,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 42,
+          "endOffset": 47,
+          "score": 0.64233714,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 48,
+          "endOffset": 62,
+          "score": 0.9836819,
+          "text": "in the morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.64233714,
+              "relationshipScore": 0.9791662,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 42,
+              "endOffset": 47,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 66,
+          "endOffset": 73,
+          "score": 0.9656047,
+          "text": "Jan 3rd",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.64233714,
+              "relationshipScore": 0.96609616,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 42,
+              "endOffset": 47,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 66,
+          "endOffset": 73,
+          "score": 0.99851793,
+          "text": "Jan 3rd",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 151,
+          "endOffset": 169,
+          "score": 0.64756685,
+          "text": "labor and delivery",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 191,
+          "endOffset": 193,
+          "score": 0.99899167,
+          "text": "56",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 227,
+          "endOffset": 230,
+          "score": 0.9945234,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9741107
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 239,
+          "endOffset": 242,
+          "score": 0.75528705,
+          "text": "CNS",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 239,
+          "endOffset": 254,
+          "score": 0.45902506,
+          "text": "CNS involvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.80345595
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7284006
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 262,
+          "endOffset": 273,
+          "score": 0.83575004,
+          "text": "status post",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.42648482,
+              "relationshipScore": 0.81452674,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 285,
+              "endOffset": 306,
+              "text": "7+3 induction therapy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 285,
+          "endOffset": 306,
+          "score": 0.42648482,
+          "text": "7+3 induction therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 332,
+          "endOffset": 353,
+          "score": 0.97984946,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95444906
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73038614,
+              "relationshipScore": 0.9996326,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 326,
+              "endOffset": 331,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 395,
+          "endOffset": 400,
+          "score": 0.536292,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 401,
+          "endOffset": 415,
+          "score": 0.99355125,
+          "text": "in the morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.536292,
+              "relationshipScore": 0.9791662,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 395,
+              "endOffset": 400,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 419,
+          "endOffset": 426,
+          "score": 0.8611472,
+          "text": "Jan 3rd",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.536292,
+              "relationshipScore": 0.96609616,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 395,
+              "endOffset": 400,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 419,
+          "endOffset": 426,
+          "score": 0.99893075,
+          "text": "Jan 3rd",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.73038614,
+            "id": 4,
+            "beginOffset": 326,
+            "endOffset": 331,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c0dc2fb-1ad0-41e0-a6fe-be55497ca573"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c0dc2fb-1ad0-41e0-a6fe-be55497ca573"
+          ],
+          "Content-Length": [
+            "4310"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4310",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:03 GMT",
+          "x-amzn-RequestId": "0c0dc2fb-1ad0-41e0-a6fe-be55497ca573"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 487,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6423369,
+          "beginOffset": 42,
+          "endOffset": 47,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.64458734
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.5665724
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.54389954
+            },
+            {
+              "description": "Personal history of pre-term labor",
+              "code": "Z87.51",
+              "score": 0.53677166
+            },
+            {
+              "description": "Preterm labor",
+              "code": "O60",
+              "score": 0.5260718
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9945234,
+          "beginOffset": 227,
+          "endOffset": 230,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9741107
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myeloblastic leukemia, not having achieved remission",
+              "code": "C92.00",
+              "score": 0.58386606
+            },
+            {
+              "description": "Acute promyelocytic leukemia, not having achieved remission",
+              "code": "C92.40",
+              "score": 0.5178888
+            },
+            {
+              "description": "Acute monoblastic/monocytic leukemia, not having achieved remission",
+              "code": "C93.00",
+              "score": 0.40208954
+            },
+            {
+              "description": "Acute myeloblastic leukemia, in remission",
+              "code": "C92.01",
+              "score": 0.40010265
+            },
+            {
+              "description": "Acute promyelocytic leukemia, in remission",
+              "code": "C92.41",
+              "score": 0.35208207
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "CNS involvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.45902514,
+          "beginOffset": 239,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8034559
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7284006
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.77940106
+            },
+            {
+              "description": "Other symptoms and signs involving appearance and behavior",
+              "code": "R46.89",
+              "score": 0.7780626
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.75415313
+            },
+            {
+              "description": "Other specified symptoms and signs involving the digestive system and abdomen",
+              "code": "R19.8",
+              "score": 0.7355414
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.67874026
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97984946,
+          "beginOffset": 332,
+          "endOffset": 353,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7303862,
+              "relationshipScore": 0.9996326,
+              "id": 4,
+              "beginOffset": 326,
+              "endOffset": 331,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95444906
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.8445908
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8177227
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.72828716
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.71094096
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.7108955
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5362918,
+          "beginOffset": 395,
+          "endOffset": 400,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.61704814
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.49852794
+            },
+            {
+              "description": "Preterm labor without delivery, unspecified trimester",
+              "code": "O60.00",
+              "score": 0.48263136
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.48242053
+            },
+            {
+              "description": "Personal history of pre-term labor",
+              "code": "Z87.51",
+              "score": 0.48213872
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "00f5ca4b-14ec-43e8-826e-bee5ab192188"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "00f5ca4b-14ec-43e8-826e-bee5ab192188"
+          ],
+          "Content-Length": [
+            "3909"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3909",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:03 GMT",
+          "x-amzn-RequestId": "00f5ca4b-14ec-43e8-826e-bee5ab192188"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 207,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e98a0b2e-09a7-485e-beef-8d54de5a339d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e98a0b2e-09a7-485e-beef-8d54de5a339d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:03 GMT",
+          "x-amzn-RequestId": "e98a0b2e-09a7-485e-beef-8d54de5a339d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:07:03 PM"
+}

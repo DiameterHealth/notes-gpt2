@@ -1,0 +1,690 @@
+{
+  "note": "Patient denies any other cardiac or pulmonary disease, but says he is having difficulty in climbing stairs and has had headaches lately, and a sudden change in weight. He denies tobacco use. Patient has an unusual BMI (22.5). Echocardiography shows ventricular hypertrophy, as well as evidence of progressive atrial septal and ventricular arrhythmias leading up to the onset of his cardiac arrest.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 404,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 25,
+          "endOffset": 53,
+          "score": 0.8794319,
+          "text": "cardiac or pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.551855
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9579488
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 77,
+          "endOffset": 106,
+          "score": 0.9471538,
+          "text": "difficulty in climbing stairs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.777682
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 119,
+          "endOffset": 128,
+          "score": 0.9834183,
+          "text": "headaches",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88289875
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 150,
+          "endOffset": 166,
+          "score": 0.7460625,
+          "text": "change in weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6973906
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 214,
+          "endOffset": 217,
+          "score": 0.823629,
+          "text": "BMI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6870653,
+              "relationshipScore": 0.9999833,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 219,
+              "endOffset": 223,
+              "text": "22.5",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 226,
+          "endOffset": 242,
+          "score": 0.99307114,
+          "text": "Echocardiography",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.79632103,
+              "relationshipScore": 0.99999845,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 249,
+              "endOffset": 272,
+              "text": "ventricular hypertrophy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.43263513,
+              "relationshipScore": 0.9999604,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 285,
+              "endOffset": 350,
+              "text": "evidence of progressive atrial septal and ventricular arrhythmias",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 249,
+          "endOffset": 272,
+          "score": 0.7795229,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.53644115
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 309,
+          "endOffset": 322,
+          "score": 0.984455,
+          "text": "atrial septal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46902275
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.21427736,
+              "relationshipScore": 0.9987527,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 297,
+              "endOffset": 308,
+              "text": "progressive",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 327,
+          "endOffset": 350,
+          "score": 0.9570799,
+          "text": "ventricular arrhythmias",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8067724
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 382,
+          "endOffset": 396,
+          "score": 0.86865103,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8645279
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.21427736,
+            "id": 5,
+            "beginOffset": 297,
+            "endOffset": 308,
+            "text": "progressive",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "62986b11-b82f-46b2-a9ed-1c86e6657669"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "62986b11-b82f-46b2-a9ed-1c86e6657669"
+          ],
+          "Content-Length": [
+            "3277"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3277",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:07 GMT",
+          "x-amzn-RequestId": "62986b11-b82f-46b2-a9ed-1c86e6657669"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 510,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiac or pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8794319,
+          "beginOffset": 25,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55185497
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9579488
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.7234533
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.69870484
+            },
+            {
+              "description": "Endocarditis, valve unspecified",
+              "code": "I38",
+              "score": 0.67497474
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.66959137
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.66933835
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "difficulty in climbing stairs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9471538,
+          "beginOffset": 77,
+          "endOffset": 106,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.777682
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7540885
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.721576
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.6454012
+            },
+            {
+              "description": "Feeding difficulties",
+              "code": "R63.3",
+              "score": 0.57972157
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.5309645
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "headaches",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9834183,
+          "beginOffset": 119,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88289875
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7302512
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.47112042
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.46227416
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.4252027
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.3982228
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "change in weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7460625,
+          "beginOffset": 150,
+          "endOffset": 166,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6973906
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.75562835
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.7268863
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.7214199
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.6573583
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.6232665
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7795229,
+          "beginOffset": 249,
+          "endOffset": 272,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.53644115
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.736417
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.71346354
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6753637
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.55209565
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.5506771
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "atrial septal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.984455,
+          "beginOffset": 309,
+          "endOffset": 322,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.21427727,
+              "relationshipScore": 0.9987527,
+              "id": 5,
+              "beginOffset": 297,
+              "endOffset": 308,
+              "text": "progressive",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46902293
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atrial septal defect",
+              "code": "Q21.1",
+              "score": 0.72597635
+            },
+            {
+              "description": "Aneurysm of heart",
+              "code": "I25.3",
+              "score": 0.62687916
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.61307836
+            },
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.6006878
+            },
+            {
+              "description": "Unspecified atrial flutter",
+              "code": "I48.92",
+              "score": 0.6003418
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "ventricular arrhythmias",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9570799,
+          "beginOffset": 327,
+          "endOffset": 350,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8067725
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.74288595
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.7071004
+            },
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.6733308
+            },
+            {
+              "description": "Ventricular tachycardia",
+              "code": "I47.2",
+              "score": 0.575716
+            },
+            {
+              "description": "Re-entry ventricular arrhythmia",
+              "code": "I47.0",
+              "score": 0.54812884
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "cardiac arrest",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86865103,
+          "beginOffset": 382,
+          "endOffset": 396,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86452776
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.8074746
+            },
+            {
+              "description": "Personal history of sudden cardiac arrest",
+              "code": "Z86.74",
+              "score": 0.78131443
+            },
+            {
+              "description": "Postprocedural cardiac arrest following cardiac surgery",
+              "code": "I97.120",
+              "score": 0.65012157
+            },
+            {
+              "description": "Respiratory arrest",
+              "code": "R09.2",
+              "score": 0.6329977
+            },
+            {
+              "description": "Intraoperative cardiac arrest",
+              "code": "I97.71",
+              "score": 0.6243235
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c998039b-6da4-42b0-8a45-86d1acc91f47"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c998039b-6da4-42b0-8a45-86d1acc91f47"
+          ],
+          "Content-Length": [
+            "6046"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6046",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:08 GMT",
+          "x-amzn-RequestId": "c998039b-6da4-42b0-8a45-86d1acc91f47"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "abdf4953-98c7-4433-867d-faabd92c377a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "abdf4953-98c7-4433-867d-faabd92c377a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:08 GMT",
+          "x-amzn-RequestId": "abdf4953-98c7-4433-867d-faabd92c377a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:09 PM"
+}

@@ -1,0 +1,395 @@
+{
+  "note": "The family left her for more than five hours. She was not given any care for her symptoms or for her bleeding while on home. The ED physician was also unaware of any underlying bleeding or underlying condition. She suffered a mild transient ischemic attack although was discharged from the ED with family to home. The family left her for more than five hours.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 260,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 101,
+          "endOffset": 109,
+          "score": 0.9739923,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67460215
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5767564
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 129,
+          "endOffset": 131,
+          "score": 0.99668866,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 177,
+          "endOffset": 185,
+          "score": 0.9372162,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7597536
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.68571603
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 189,
+          "endOffset": 209,
+          "score": 0.5817775,
+          "text": "underlying condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.80453986
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8643038
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 231,
+          "endOffset": 256,
+          "score": 0.233761,
+          "text": "transient ischemic attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8670107
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 290,
+          "endOffset": 292,
+          "score": 0.9996117,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fbabad0e-481e-4d6e-8078-2a0173429da2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fbabad0e-481e-4d6e-8078-2a0173429da2"
+          ],
+          "Content-Length": [
+            "1311"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1311",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:34 GMT",
+          "x-amzn-RequestId": "fbabad0e-481e-4d6e-8078-2a0173429da2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 337,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9739923,
+          "beginOffset": 101,
+          "endOffset": 109,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6746021
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.57675636
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.748584
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.6620103
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.65221715
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.63232243
+            },
+            {
+              "description": "Hemorrhagic condition, unspecified",
+              "code": "D69.9",
+              "score": 0.5911449
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9372162,
+          "beginOffset": 177,
+          "endOffset": 185,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7597535
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6857161
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.68709105
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.58153397
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.5636087
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a circulatory system organ or structure complicating a cardiac catheterization",
+              "code": "I97.410",
+              "score": 0.53230774
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.5260698
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "underlying condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5817777,
+          "beginOffset": 189,
+          "endOffset": 209,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8045398
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8643038
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diabetes mellitus due to underlying condition without complications",
+              "code": "E08.9",
+              "score": 0.46416208
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.44263005
+            },
+            {
+              "description": "Diabetes mellitus due to underlying condition with unspecified complications",
+              "code": "E08.8",
+              "score": 0.40364087
+            },
+            {
+              "description": "Egg (Oocyte) donor under age 35, designated recipient",
+              "code": "Z52.811",
+              "score": 0.37148494
+            },
+            {
+              "description": "Egg (Oocyte) donor under age 35, anonymous recipient",
+              "code": "Z52.810",
+              "score": 0.3645161
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "transient ischemic attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.2337608,
+          "beginOffset": 231,
+          "endOffset": 256,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8670107
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.6629651
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.630571
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.44713122
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.4295096
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.42261595
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9a6c8b55-65d4-479d-80c2-b34279a4ee2a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9a6c8b55-65d4-479d-80c2-b34279a4ee2a"
+          ],
+          "Content-Length": [
+            "3371"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3371",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:34 GMT",
+          "x-amzn-RequestId": "9a6c8b55-65d4-479d-80c2-b34279a4ee2a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 187,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b2a3b8e-3e05-4d87-a682-3d5e61777f76"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b2a3b8e-3e05-4d87-a682-3d5e61777f76"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:34 GMT",
+          "x-amzn-RequestId": "2b2a3b8e-3e05-4d87-a682-3d5e61777f76"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:34 PM"
+}

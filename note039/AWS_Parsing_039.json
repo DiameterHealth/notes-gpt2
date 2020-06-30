@@ -1,0 +1,595 @@
+{
+  "note": "Report to Physician:  Patient was advised that her breasts were \"normal weight\" with an average circumference of 32C. She asked her gynecologist if more breast growth was expected. The gynecologist told her that although there were no obvious changes to the patient\u0027s \"breasts\", there could be breast cysts and increased breast growth, with potential for cysts to grow at an increased rate.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 586,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 51,
+          "endOffset": 58,
+          "score": 0.9595396,
+          "text": "breasts",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 65,
+          "endOffset": 78,
+          "score": 0.5910236,
+          "text": "normal weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.52050114
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9595396,
+              "relationshipScore": 0.9887617,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 51,
+              "endOffset": 58,
+              "text": "breasts",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 153,
+          "endOffset": 159,
+          "score": 0.9074694,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 153,
+          "endOffset": 166,
+          "score": 0.51005614,
+          "text": "breast growth",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5687521
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9074694,
+              "relationshipScore": 0.6044151,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 153,
+              "endOffset": 159,
+              "text": "breast",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 243,
+          "endOffset": 277,
+          "score": 0.49129876,
+          "text": "changes to the patient\u0027s \"breasts\"",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6530187
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 269,
+          "endOffset": 276,
+          "score": 0.9546226,
+          "text": "breasts",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 294,
+          "endOffset": 300,
+          "score": 0.93838716,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 294,
+          "endOffset": 306,
+          "score": 0.9403896,
+          "text": "breast cysts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47674853
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.93838716,
+              "relationshipScore": 0.6154673,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 294,
+              "endOffset": 300,
+              "text": "breast",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 311,
+          "endOffset": 334,
+          "score": 0.37338895,
+          "text": "increased breast growth",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.51118004
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.93838716,
+              "relationshipScore": 0.77475685,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 294,
+              "endOffset": 300,
+              "text": "breast",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 321,
+          "endOffset": 327,
+          "score": 0.94847256,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 355,
+          "endOffset": 360,
+          "score": 0.78536373,
+          "text": "cysts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47215527
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e3b3eac-4108-4785-b2bb-b1940bc30506"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e3b3eac-4108-4785-b2bb-b1940bc30506"
+          ],
+          "Content-Length": [
+            "2957"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2957",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:00 GMT",
+          "x-amzn-RequestId": "7e3b3eac-4108-4785-b2bb-b1940bc30506"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 724,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "normal weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5910236,
+          "beginOffset": 65,
+          "endOffset": 78,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9595396,
+              "relationshipScore": 0.9887617,
+              "id": 0,
+              "beginOffset": 51,
+              "endOffset": 58,
+              "text": "breasts",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5205011
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.5562101
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.54317284
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.5351086
+            },
+            {
+              "description": "Balanced translocation and insertion in normal individual",
+              "code": "Q95.0",
+              "score": 0.34408695
+            },
+            {
+              "description": "Chromosome inversion in normal individual",
+              "code": "Q95.1",
+              "score": 0.34111252
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "breast growth",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.51005614,
+          "beginOffset": 153,
+          "endOffset": 166,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5687521
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.5062962
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of unspecified female breast",
+              "code": "C50.919",
+              "score": 0.50087655
+            },
+            {
+              "description": "Disorder of breast, unspecified",
+              "code": "N64.9",
+              "score": 0.5003427
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.49238214
+            },
+            {
+              "description": "Other signs and symptoms in breast",
+              "code": "N64.59",
+              "score": 0.49233028
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "changes to the patient\u0027s \"breasts\"",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4912986,
+          "beginOffset": 243,
+          "endOffset": 277,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6530187
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.38763303
+            },
+            {
+              "description": "Other voice and resonance disorders",
+              "code": "R49.8",
+              "score": 0.38116667
+            },
+            {
+              "description": "Spontaneous ecchymoses",
+              "code": "R23.3",
+              "score": 0.36998227
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.36315206
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.3540492
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "breast cysts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9403896,
+          "beginOffset": 294,
+          "endOffset": 306,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4767486
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Solitary cyst of unspecified breast",
+              "code": "N60.09",
+              "score": 0.62751764
+            },
+            {
+              "description": "Other signs and symptoms in breast",
+              "code": "N64.59",
+              "score": 0.5785069
+            },
+            {
+              "description": "Disorder of breast, unspecified",
+              "code": "N64.9",
+              "score": 0.56787175
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.52009606
+            },
+            {
+              "description": "Unspecified lump in unspecified breast",
+              "code": "N63.0",
+              "score": 0.47071108
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "increased breast growth",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37338904,
+          "beginOffset": 311,
+          "endOffset": 334,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9383871,
+              "relationshipScore": 0.77475685,
+              "id": 7,
+              "beginOffset": 294,
+              "endOffset": 300,
+              "text": "breast",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.51118004
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of breast, unspecified",
+              "code": "N64.9",
+              "score": 0.58232045
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of unspecified female breast",
+              "code": "C50.919",
+              "score": 0.5765738
+            },
+            {
+              "description": "Other signs and symptoms in breast",
+              "code": "N64.59",
+              "score": 0.5543511
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.5446361
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.5315352
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "cysts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7853638,
+          "beginOffset": 355,
+          "endOffset": 360,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47215536
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cyst of kidney, acquired",
+              "code": "N28.1",
+              "score": 0.599066
+            },
+            {
+              "description": "Solitary cyst of unspecified breast",
+              "code": "N60.09",
+              "score": 0.55989814
+            },
+            {
+              "description": "Pilonidal cyst without abscess",
+              "code": "L05.91",
+              "score": 0.5439193
+            },
+            {
+              "description": "Epidermal cyst",
+              "code": "L72.0",
+              "score": 0.49645036
+            },
+            {
+              "description": "Unspecified ovarian cyst, right side",
+              "code": "N83.201",
+              "score": 0.4891433
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "68bbc10d-f64d-489c-a1b8-e86a7d45b66c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "68bbc10d-f64d-489c-a1b8-e86a7d45b66c"
+          ],
+          "Content-Length": [
+            "4698"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4698",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:01 GMT",
+          "x-amzn-RequestId": "68bbc10d-f64d-489c-a1b8-e86a7d45b66c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a3d6afe0-b05e-4cad-ac29-6302c52aacc8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a3d6afe0-b05e-4cad-ac29-6302c52aacc8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:00 GMT",
+          "x-amzn-RequestId": "a3d6afe0-b05e-4cad-ac29-6302c52aacc8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:01 PM"
+}

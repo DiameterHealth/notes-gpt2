@@ -1,0 +1,376 @@
+{
+  "note": "erythromycin. He will be moved to a residential care unit once he has been monitored for 3 more days. He has not returned to active treatment work as the results of the blood test are still pending. The following are some examples of what some people may have experienced as a result of an \"overdose\". Blood test results were not available until many days after the poisoning.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 333,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "score": 0.9986778,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 36,
+          "endOffset": 52,
+          "score": 0.3221353,
+          "text": "residential care",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 89,
+          "endOffset": 100,
+          "score": 0.94489527,
+          "text": "3 more days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.3221353,
+              "relationshipScore": 0.5550833,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 36,
+              "endOffset": 52,
+              "text": "residential care",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 169,
+          "endOffset": 179,
+          "score": 0.94738126,
+          "text": "blood test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9529861,
+              "relationshipScore": 0.99999714,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 190,
+              "endOffset": 197,
+              "text": "pending",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 291,
+          "endOffset": 299,
+          "score": 0.6036319,
+          "text": "overdose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.41496733
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 302,
+          "endOffset": 312,
+          "score": 0.9774969,
+          "text": "Blood test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 346,
+          "endOffset": 355,
+          "score": 0.9513372,
+          "text": "many days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9774969,
+              "relationshipScore": 0.8601876,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 302,
+              "endOffset": 312,
+              "text": "Blood test",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 366,
+          "endOffset": 375,
+          "score": 0.8632176,
+          "text": "poisoning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7250074
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c57f4a76-230f-4389-bbb9-76a0b42ac1dc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c57f4a76-230f-4389-bbb9-76a0b42ac1dc"
+          ],
+          "Content-Length": [
+            "2141"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2141",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:51 GMT",
+          "x-amzn-RequestId": "c57f4a76-230f-4389-bbb9-76a0b42ac1dc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 511,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "overdose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6036318,
+          "beginOffset": 291,
+          "endOffset": 299,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4149672
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Poisoning by other drugs, medicaments and biological substances, intentional self-harm",
+              "code": "T50.992",
+              "score": 0.80610615
+            },
+            {
+              "description": "Poisoning by anticoagulants, accidental (unintentional)",
+              "code": "T45.511",
+              "score": 0.68550813
+            },
+            {
+              "description": "Poisoning by other drugs, medicaments and biological substances, accidental (unintentional)",
+              "code": "T50.991",
+              "score": 0.67698026
+            },
+            {
+              "description": "Poisoning by unspecified narcotics, accidental (unintentional)",
+              "code": "T40.601",
+              "score": 0.66758484
+            },
+            {
+              "description": "Poisoning by other drugs, medicaments and biological substances, assault",
+              "code": "T50.993",
+              "score": 0.6397469
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "poisoning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8632174,
+          "beginOffset": 366,
+          "endOffset": 375,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7250072
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ciguatera fish poisoning, accidental (unintentional)",
+              "code": "T61.01",
+              "score": 0.6959146
+            },
+            {
+              "description": "Scombroid fish poisoning, accidental (unintentional)",
+              "code": "T61.11",
+              "score": 0.6845381
+            },
+            {
+              "description": "Scombroid fish poisoning",
+              "code": "T61.1",
+              "score": 0.64887804
+            },
+            {
+              "description": "Toxic effect of unspecified substance, accidental (unintentional)",
+              "code": "T65.91",
+              "score": 0.6364181
+            },
+            {
+              "description": "Other fish poisoning",
+              "code": "T61.77",
+              "score": 0.6172694
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f0871460-328e-48f8-9f08-38d3271701fc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f0871460-328e-48f8-9f08-38d3271701fc"
+          ],
+          "Content-Length": [
+            "1700"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1700",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:51 GMT",
+          "x-amzn-RequestId": "f0871460-328e-48f8-9f08-38d3271701fc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 439,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9986778,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Erythromycin",
+              "code": "4053",
+              "score": 0.9361085
+            },
+            {
+              "description": "Erythromycin 250 MG Oral Tablet",
+              "code": "598006",
+              "score": 0.43545812
+            },
+            {
+              "description": "Erythromycin 250 MG Delayed Release Oral Capsule",
+              "code": "310154",
+              "score": 0.27387562
+            },
+            {
+              "description": "Erythromycin 0.02 MG/MG Topical Gel [Erygel]",
+              "code": "206212",
+              "score": 0.2429897
+            },
+            {
+              "description": "Erythromycin 0.005 MG/MG Ophthalmic Ointment",
+              "code": "310149",
+              "score": 0.23455147
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2018441-c66f-4b3d-a439-f225dc04202c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2018441-c66f-4b3d-a439-f225dc04202c"
+          ],
+          "Content-Length": [
+            "708"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "708",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:51 GMT",
+          "x-amzn-RequestId": "b2018441-c66f-4b3d-a439-f225dc04202c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:52 PM"
+}

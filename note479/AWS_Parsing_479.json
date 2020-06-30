@@ -1,0 +1,279 @@
+{
+  "note": ".  Patient takes prescription pain management medication. Doctor visits later for follow-up. Patient\u0027s physical exam shows improvement. Doctor visits later for follow-up. Patient starts using a back brace daily. Doctor visits later for follow-up. Patient starts using a prescription pain management medication daily. Doctor visits later for follow-up. Patient starts using a back brace daily. Doctor visits later for follow-up.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 289,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 30,
+          "endOffset": 34,
+          "score": 0.41054112,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 30,
+          "endOffset": 45,
+          "score": 0.9734119,
+          "text": "pain management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 103,
+          "endOffset": 116,
+          "score": 0.80188584,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.36352685,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 123,
+              "endOffset": 134,
+              "text": "improvement",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 194,
+          "endOffset": 198,
+          "score": 0.46406248,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 283,
+          "endOffset": 287,
+          "score": 0.4764713,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 283,
+          "endOffset": 298,
+          "score": 0.9667458,
+          "text": "pain management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 375,
+          "endOffset": 379,
+          "score": 0.5908109,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "accbdb95-268b-4ceb-8aff-1ecc25b85ac2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "accbdb95-268b-4ceb-8aff-1ecc25b85ac2"
+          ],
+          "Content-Length": [
+            "1381"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1381",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:46 GMT",
+          "x-amzn-RequestId": "accbdb95-268b-4ceb-8aff-1ecc25b85ac2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 474,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41054094,
+          "beginOffset": 30,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7233378
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5609886
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.52437574
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.48315743
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.47033036
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4764713,
+          "beginOffset": 283,
+          "endOffset": 287,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.67615104
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.46376452
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.4485211
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.44696483
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.43975213
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "aea0d5e2-047a-4aae-9436-a1228818ea7f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "aea0d5e2-047a-4aae-9436-a1228818ea7f"
+          ],
+          "Content-Length": [
+            "1236"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1236",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:47 GMT",
+          "x-amzn-RequestId": "aea0d5e2-047a-4aae-9436-a1228818ea7f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f11200dc-45be-4117-8c90-679ddfb606a3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f11200dc-45be-4117-8c90-679ddfb606a3"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:46 GMT",
+          "x-amzn-RequestId": "f11200dc-45be-4117-8c90-679ddfb606a3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:47 PM"
+}

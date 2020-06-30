@@ -1,0 +1,469 @@
+{
+  "note": ". He should be seen with the same primary care physician as before; he may be referred to a specialist for additional assessment or surgery. Management of the Ulcer  Treatment: Ulceration should be closed with topical antibiotics and wound closure with sutures. Wound dressings should be changed every 8–12 hours. Careful irrigation and rest of wound should be provided. Follow-Up:  Oral antibiotics, if needed may be given until healed.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 248,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 132,
+          "endOffset": 139,
+          "score": 0.7057446,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 159,
+          "endOffset": 164,
+          "score": 0.9291978,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9136843
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 177,
+          "endOffset": 187,
+          "score": 0.8716114,
+          "text": "Ulceration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.76924956
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 210,
+          "endOffset": 229,
+          "score": 0.5815244,
+          "text": "topical antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 234,
+          "endOffset": 239,
+          "score": 0.7814269,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9080042
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 234,
+          "endOffset": 247,
+          "score": 0.37153366,
+          "text": "wound closure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 262,
+          "endOffset": 267,
+          "score": 0.6929716,
+          "text": "Wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7905822
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 262,
+          "endOffset": 277,
+          "score": 0.3537468,
+          "text": "Wound dressings",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 322,
+          "endOffset": 332,
+          "score": 0.38432565,
+          "text": "irrigation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 345,
+          "endOffset": 350,
+          "score": 0.9454077,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.935663
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 383,
+          "endOffset": 399,
+          "score": 0.9295597,
+          "text": "Oral antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dcdd2242-8e43-4891-a336-4868c4c4c354"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dcdd2242-8e43-4891-a336-4868c4c4c354"
+          ],
+          "Content-Length": [
+            "2034"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2034",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:45 GMT",
+          "x-amzn-RequestId": "dcdd2242-8e43-4891-a336-4868c4c4c354"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 404,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9291979,
+          "beginOffset": 159,
+          "endOffset": 164,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9136843
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.6218638
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.6099477
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.6097451
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.5908652
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.58620507
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Ulceration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8716114,
+          "beginOffset": 177,
+          "endOffset": 187,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.76924956
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.5380821
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.5253359
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.47892734
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.46751842
+            },
+            {
+              "description": "Other forms of stomatitis",
+              "code": "K12.1",
+              "score": 0.46696872
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7814269,
+          "beginOffset": 234,
+          "endOffset": 239,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9080042
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic effect of unspecified spider venom, accidental (unintentional)",
+              "code": "T63.301",
+              "score": 0.5699757
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5608171
+            },
+            {
+              "description": "Disruption of external operation (surgical) wound, not elsewhere classified",
+              "code": "T81.31",
+              "score": 0.5338281
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.5323018
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.5261646
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6929717,
+          "beginOffset": 262,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7905822
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.6023816
+            },
+            {
+              "description": "Disruption of external operation (surgical) wound, not elsewhere classified",
+              "code": "T81.31",
+              "score": 0.571479
+            },
+            {
+              "description": "Toxic effect of unspecified spider venom, accidental (unintentional)",
+              "code": "T63.301",
+              "score": 0.5601317
+            },
+            {
+              "description": "Laceration without foreign body of nose",
+              "code": "S01.21",
+              "score": 0.5519921
+            },
+            {
+              "description": "Non-pressure chronic ulcer of other part of left foot with unspecified severity",
+              "code": "L97.529",
+              "score": 0.55075055
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9454077,
+          "beginOffset": 345,
+          "endOffset": 350,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.935663
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic effect of unspecified spider venom, accidental (unintentional)",
+              "code": "T63.301",
+              "score": 0.53970236
+            },
+            {
+              "description": "Disruption of external operation (surgical) wound, not elsewhere classified",
+              "code": "T81.31",
+              "score": 0.52924883
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.50689095
+            },
+            {
+              "description": "Laceration without foreign body of left hand",
+              "code": "S61.412",
+              "score": 0.45903924
+            },
+            {
+              "description": "Laceration without foreign body of nose",
+              "code": "S01.21",
+              "score": 0.44687325
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a939e04e-5eb4-4148-9c2e-3cbd28f39ed8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a939e04e-5eb4-4148-9c2e-3cbd28f39ed8"
+          ],
+          "Content-Length": [
+            "4398"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4398",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:45 GMT",
+          "x-amzn-RequestId": "a939e04e-5eb4-4148-9c2e-3cbd28f39ed8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 233,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "534f1407-b004-4219-8267-71559174920b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "534f1407-b004-4219-8267-71559174920b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:45 GMT",
+          "x-amzn-RequestId": "534f1407-b004-4219-8267-71559174920b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:45 PM"
+}

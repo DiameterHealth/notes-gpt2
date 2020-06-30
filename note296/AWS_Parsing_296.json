@@ -1,0 +1,375 @@
+{
+  "note": "During a second follow-up CT scan,  The tumorous mass had shrunk by 90% and was undetectable except for a small area of necrosis. Treatment consisted of chemotherapy and radiation therapy. Following a year of medical therapy,  The patient was able to return to her job and work properly again. The patient had initially consulted his physician about a tumorous mass that appeared during her annual physical examination.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 287,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "score": 0.9843556,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7090203,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_VALUE",
+              "id": 4,
+              "beginOffset": 40,
+              "endOffset": 71,
+              "text": "tumorous mass had shrunk by 90%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6016296,
+              "relationshipScore": 0.99997675,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 80,
+              "endOffset": 92,
+              "text": "undetectable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.65901107,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 106,
+              "endOffset": 128,
+              "text": "small area of necrosis",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 40,
+          "endOffset": 53,
+          "score": 0.4375161,
+          "text": "tumorous mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8380771
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 120,
+          "endOffset": 128,
+          "score": 0.7872695,
+          "text": "necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56653404
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 153,
+          "endOffset": 165,
+          "score": 0.9218072,
+          "text": "chemotherapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 170,
+          "endOffset": 187,
+          "score": 0.9674247,
+          "text": "radiation therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 361,
+          "endOffset": 365,
+          "score": 0.8953902,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58340657
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 398,
+          "endOffset": 418,
+          "score": 0.6993204,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8b2e2f2e-bd3b-4b0c-a82f-6c1f6120de73"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "8b2e2f2e-bd3b-4b0c-a82f-6c1f6120de73"
+          ],
+          "Content-Length": [
+            "2043"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "2043",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:47 GMT",
+          "x-amzn-RequestId": "8b2e2f2e-bd3b-4b0c-a82f-6c1f6120de73"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 510,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "tumorous mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.43751597,
+          "beginOffset": 40,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8380771
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.53159106
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.48939773
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.4838115
+            },
+            {
+              "description": "Other benign neuroendocrine tumors",
+              "code": "D3A.8",
+              "score": 0.47990495
+            },
+            {
+              "description": "Localized swelling, mass and lump, unspecified",
+              "code": "R22.9",
+              "score": 0.45678043
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7872695,
+          "beginOffset": 120,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56653404
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gangrene, not elsewhere classified",
+              "code": "I96",
+              "score": 0.7595314
+            },
+            {
+              "description": "Other specified noninflammatory disorders of uterus",
+              "code": "N85.8",
+              "score": 0.69104266
+            },
+            {
+              "description": "Fat necrosis of breast",
+              "code": "N64.1",
+              "score": 0.6524342
+            },
+            {
+              "description": "Acute kidney failure with tubular necrosis",
+              "code": "N17.0",
+              "score": 0.63686967
+            },
+            {
+              "description": "Necrosis of amputation stump",
+              "code": "T87.5",
+              "score": 0.62012404
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8953902,
+          "beginOffset": 361,
+          "endOffset": 365,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58340657
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.6737326
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.65370035
+            },
+            {
+              "description": "Intra-abdominal and pelvic swelling, mass and lump, unspecified site",
+              "code": "R19.00",
+              "score": 0.6424273
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6370492
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.6282105
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "550f17ca-2ffb-49f7-8e94-992d46f6ed40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "550f17ca-2ffb-49f7-8e94-992d46f6ed40"
+          ],
+          "Content-Length": [
+            "2228"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2228",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:47 GMT",
+          "x-amzn-RequestId": "550f17ca-2ffb-49f7-8e94-992d46f6ed40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "63ae12ee-0458-459c-ad7a-4fc50807a011"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "63ae12ee-0458-459c-ad7a-4fc50807a011"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:47 GMT",
+          "x-amzn-RequestId": "63ae12ee-0458-459c-ad7a-4fc50807a011"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:48 PM"
+}

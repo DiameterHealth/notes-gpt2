@@ -1,0 +1,466 @@
+{
+  "note": "until cardiac rehabilitation services are initiated. [Grade D]  Cardiac Rehabilitation Services: Continue on current medications, monitoring, or medical procedures until cardiac rehabilitative counseling services are initiated. [Grade D]  Elevated Blood Pressure: Evaluate patient\u0027s risk factors to determine appropriate medications or medical treatment. In general, elevated blood pressure should be considered in chronic heart failure due to its effect on hemodynamics, cardiovascular function, and quality of life.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 394,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 6,
+          "endOffset": 28,
+          "score": 0.3226145,
+          "text": "cardiac rehabilitation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 64,
+          "endOffset": 86,
+          "score": 0.39782912,
+          "text": "Cardiac Rehabilitation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 170,
+          "endOffset": 203,
+          "score": 0.37034276,
+          "text": "cardiac rehabilitative counseling",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 239,
+          "endOffset": 262,
+          "score": 0.41760212,
+          "text": "Elevated Blood Pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.403587
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5881854
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 262,
+          "score": 0.9982919,
+          "text": "Blood Pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.83982426,
+              "relationshipScore": 0.9951508,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 239,
+              "endOffset": 247,
+              "text": "Elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 367,
+          "endOffset": 390,
+          "score": 0.4763463,
+          "text": "elevated blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5124542
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47113797
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 376,
+          "endOffset": 390,
+          "score": 0.9904427,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.92463994,
+              "relationshipScore": 0.9999479,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 367,
+              "endOffset": 375,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 423,
+          "endOffset": 428,
+          "score": 0.9552406,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 423,
+          "endOffset": 436,
+          "score": 0.9652968,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9640578
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.95268416,
+              "relationshipScore": 0.8886021,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 415,
+              "endOffset": 422,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 458,
+          "endOffset": 470,
+          "score": 0.7461213,
+          "text": "hemodynamics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 472,
+          "endOffset": 486,
+          "score": 0.36621436,
+          "text": "cardiovascular",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 472,
+          "endOffset": 495,
+          "score": 0.37312013,
+          "text": "cardiovascular function",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.95268416,
+            "id": 4,
+            "beginOffset": 415,
+            "endOffset": 422,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "900fe722-9a09-419e-8105-03fd73807181"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "900fe722-9a09-419e-8105-03fd73807181"
+          ],
+          "Content-Length": [
+            "3168"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3168",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:13 GMT",
+          "x-amzn-RequestId": "900fe722-9a09-419e-8105-03fd73807181"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 582,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Elevated Blood Pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41760203,
+          "beginOffset": 239,
+          "endOffset": 262,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40358695
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58818537
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7743333
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6751729
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.634196
+            },
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.62255317
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.60504514
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "elevated blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4763464,
+          "beginOffset": 367,
+          "endOffset": 390,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5124543
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47113794
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7113297
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.642589
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.5736385
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.5351003
+            },
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.51114845
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9652969,
+          "beginOffset": 423,
+          "endOffset": 436,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.95268416,
+              "relationshipScore": 0.8886021,
+              "id": 2,
+              "beginOffset": 415,
+              "endOffset": 422,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9640578
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6506959
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.61874133
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.6053134
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",
+              "code": "I13.2",
+              "score": 0.57726884
+            },
+            {
+              "description": "Chronic diastolic (congestive) heart failure",
+              "code": "I50.32",
+              "score": 0.56996316
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "77853513-edab-43b5-943c-49f16599e627"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "77853513-edab-43b5-943c-49f16599e627"
+          ],
+          "Content-Length": [
+            "2665"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2665",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:13 GMT",
+          "x-amzn-RequestId": "77853513-edab-43b5-943c-49f16599e627"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 213,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f3ee49f4-4a9c-4897-b993-f8763effc066"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f3ee49f4-4a9c-4897-b993-f8763effc066"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:13 GMT",
+          "x-amzn-RequestId": "f3ee49f4-4a9c-4897-b993-f8763effc066"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:14 PM"
+}

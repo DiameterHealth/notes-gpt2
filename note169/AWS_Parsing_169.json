@@ -1,0 +1,567 @@
+{
+  "note": "and stable coronary artery disease. Patient is on an intensive intensive therapy protocol and is being transferred from cardiac catheterization to surgical site after a 3 hour procedure. Initial presentation is mild hypertension (140/84), dyspnea (17/30), and chest pain (15/30) with acute-phase response. Her initial symptoms resolved without admission admission. She received intravenous phenobarbital and ticlopidine which were started at 2:00pm and continued till 11 pm.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 396,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 11,
+          "endOffset": 26,
+          "score": 0.90384686,
+          "text": "coronary artery",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 11,
+          "endOffset": 34,
+          "score": 0.9497399,
+          "text": "coronary artery disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9298969
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 53,
+          "endOffset": 80,
+          "score": 0.931508,
+          "text": "intensive intensive therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 53,
+          "endOffset": 89,
+          "score": 0.28671888,
+          "text": "intensive intensive therapy protocol",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 120,
+          "endOffset": 143,
+          "score": 0.70743227,
+          "text": "cardiac catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 216,
+          "endOffset": 228,
+          "score": 0.9926824,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9199847
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 239,
+          "endOffset": 246,
+          "score": 0.936042,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40094605
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 260,
+          "endOffset": 265,
+          "score": 0.97464585,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 260,
+          "endOffset": 270,
+          "score": 0.80213165,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.49821872,
+              "relationshipScore": 0.8983939,
+              "relationshipType": "ACUITY",
+              "id": 9,
+              "beginOffset": 284,
+              "endOffset": 289,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 390,
+          "endOffset": 403,
+          "score": 0.9992587,
+          "text": "phenobarbital",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99565697,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 378,
+              "endOffset": 389,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 408,
+          "endOffset": 419,
+          "score": 0.99880755,
+          "text": "ticlopidine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99565697,
+              "relationshipScore": 0.9973132,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 378,
+              "endOffset": 389,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.49821872,
+            "id": 9,
+            "beginOffset": 284,
+            "endOffset": 289,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fa317f42-3fa1-48e1-9251-be0da3171fd0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fa317f42-3fa1-48e1-9251-be0da3171fd0"
+          ],
+          "Content-Length": [
+            "2829"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2829",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:31 GMT",
+          "x-amzn-RequestId": "fa317f42-3fa1-48e1-9251-be0da3171fd0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 616,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "coronary artery disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9497399,
+          "beginOffset": 11,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9298969
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.85129344
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.74759245
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.72686404
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.6235626
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery",
+              "code": "I25.1",
+              "score": 0.596935
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9926824,
+          "beginOffset": 216,
+          "endOffset": 228,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9199847
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8457398
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.8334015
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7812966
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7668303
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.7023608
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9360421,
+          "beginOffset": 239,
+          "endOffset": 246,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4009461
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.8252908
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.698133
+            },
+            {
+              "description": "Dyspnea",
+              "code": "R06.0",
+              "score": 0.5959232
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.50816286
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.5048728
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.80213165,
+          "beginOffset": 260,
+          "endOffset": 270,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.49821866,
+              "relationshipScore": 0.8983939,
+              "id": 6,
+              "beginOffset": 284,
+              "endOffset": 289,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.72117084
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.5434133
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.49909922
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.46724674
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.42916173
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0da81926-5285-44f2-b6b8-ac921a3e30b9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0da81926-5285-44f2-b6b8-ac921a3e30b9"
+          ],
+          "Content-Length": [
+            "3151"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3151",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:32 GMT",
+          "x-amzn-RequestId": "0da81926-5285-44f2-b6b8-ac921a3e30b9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 625,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "phenobarbital",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9992587,
+          "beginOffset": 390,
+          "endOffset": 403,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99565697,
+              "relationshipScore": 1.0,
+              "id": 0,
+              "beginOffset": 378,
+              "endOffset": 389,
+              "text": "intravenous",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Phenobarbital",
+              "code": "8134",
+              "score": 0.9538593
+            },
+            {
+              "description": "Phenobarbital 65 MG/ML Injectable Solution",
+              "code": "198368",
+              "score": 0.43408737
+            },
+            {
+              "description": "Phenobarbital 130 MG/ML Injectable Solution",
+              "code": "312370",
+              "score": 0.17401062
+            },
+            {
+              "description": "Phenobarbital 97.2 MG Oral Tablet",
+              "code": "199164",
+              "score": 0.059807617
+            },
+            {
+              "description": "Phenobarbital 15 MG Oral Tablet",
+              "code": "312357",
+              "score": 0.047639452
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ticlopidine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99880755,
+          "beginOffset": 408,
+          "endOffset": 419,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99565697,
+              "relationshipScore": 0.9973131,
+              "id": 0,
+              "beginOffset": 378,
+              "endOffset": 389,
+              "text": "intravenous",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ticlopidine",
+              "code": "10594",
+              "score": 0.9424685
+            },
+            {
+              "description": "Ticlopidine Hydrochloride 250 MG Oral Tablet",
+              "code": "313406",
+              "score": 0.3224411
+            },
+            {
+              "description": "Ticlopidine Hydrochloride 250 MG Oral Tablet [Ticlid]",
+              "code": "208558",
+              "score": 0.06707563
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7944a2b0-958e-42ec-adf0-fbf11bd9fdd5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7944a2b0-958e-42ec-adf0-fbf11bd9fdd5"
+          ],
+          "Content-Length": [
+            "1488"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1488",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:31 GMT",
+          "x-amzn-RequestId": "7944a2b0-958e-42ec-adf0-fbf11bd9fdd5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:32 PM"
+}

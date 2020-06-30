@@ -1,0 +1,345 @@
+{
+  "note": ". He has a history of recent visits to a private physician and a family physician without improvement in his symptoms. He is a healthy African-American male aged 40. He denies any underlying condition and does not smoke, drink, or use illicit drugs. There is no evidence of underlying cardiovascular disease. His blood pressure has recently risen and is 120/70 during the examination, which has been recorded using a mercury sphygmomanometer.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 301,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 41,
+          "endOffset": 58,
+          "score": 0.5523413,
+          "text": "private physician",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 65,
+          "endOffset": 81,
+          "score": 0.6569158,
+          "text": "family physician",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 127,
+          "endOffset": 134,
+          "score": 0.58878815,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 162,
+          "endOffset": 164,
+          "score": 0.9266988,
+          "text": "40",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 285,
+          "endOffset": 307,
+          "score": 0.9150685,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8507523
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.91118294
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 313,
+          "endOffset": 327,
+          "score": 0.95376486,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9916215,
+              "relationshipScore": 0.99999475,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 354,
+              "endOffset": 360,
+              "text": "120/70",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 332,
+          "endOffset": 340,
+          "score": 0.999992,
+          "text": "recently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.6288303,
+              "relationshipScore": 0.565731,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 417,
+              "endOffset": 441,
+              "text": "mercury sphygmomanometer",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 332,
+          "endOffset": 340,
+          "score": 0.999992,
+          "text": "recently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.95376486,
+              "relationshipScore": 0.92668045,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 313,
+              "endOffset": 327,
+              "text": "blood pressure",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 417,
+          "endOffset": 441,
+          "score": 0.6288303,
+          "text": "mercury sphygmomanometer",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6d1e696a-069f-4bde-a828-5695cfe90ad6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6d1e696a-069f-4bde-a828-5695cfe90ad6"
+          ],
+          "Content-Length": [
+            "2341"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2341",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:36 GMT",
+          "x-amzn-RequestId": "6d1e696a-069f-4bde-a828-5695cfe90ad6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 500,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.58878803,
+          "beginOffset": 127,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.65810555
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.61519045
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.5976408
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.5766722
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.56916505
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91506845,
+          "beginOffset": 285,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8507523
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.91118294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.7360807
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.63448775
+            },
+            {
+              "description": "Endocarditis, valve unspecified",
+              "code": "I38",
+              "score": 0.62761635
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.62300843
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.58439934
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b08f2f5f-01a1-4686-86cd-d1cfa15a71e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b08f2f5f-01a1-4686-86cd-d1cfa15a71e2"
+          ],
+          "Content-Length": [
+            "1692"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1692",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:37 GMT",
+          "x-amzn-RequestId": "b08f2f5f-01a1-4686-86cd-d1cfa15a71e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c5bec02c-be94-469f-a722-497a6515829c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c5bec02c-be94-469f-a722-497a6515829c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:36 GMT",
+          "x-amzn-RequestId": "c5bec02c-be94-469f-a722-497a6515829c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:37 PM"
+}

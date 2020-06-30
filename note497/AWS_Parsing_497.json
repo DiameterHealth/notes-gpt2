@@ -1,0 +1,510 @@
+{
+  "note": ". The patient is an adolescent who presents with history and physical examination findings consistent with a diagnosis of autism disorder. She states that she has the classic symptoms of autism disorder and also presents with significant language impairment. She reports to her family physician that she hears words when she looks at her hands. She states that she does not understand and is unable to articulate those sounds to the family physician.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 530,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 20,
+          "endOffset": 30,
+          "score": 0.37503776,
+          "text": "adolescent",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 61,
+          "endOffset": 81,
+          "score": 0.5126011,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 122,
+          "endOffset": 137,
+          "score": 0.9921111,
+          "text": "autism disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95783603
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 187,
+          "endOffset": 202,
+          "score": 0.99032414,
+          "text": "autism disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8749118
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 238,
+          "endOffset": 257,
+          "score": 0.96484894,
+          "text": "language impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50419974
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48480067
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 304,
+          "endOffset": 315,
+          "score": 0.72852296,
+          "text": "hears words",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7961731
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96969235,
+              "relationshipScore": 0.8987463,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 338,
+              "endOffset": 343,
+              "text": "hands",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 338,
+          "endOffset": 343,
+          "score": 0.96969235,
+          "text": "hands",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 392,
+          "endOffset": 425,
+          "score": 0.64415765,
+          "text": "unable to articulate those sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48122877
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e7c6f206-f1af-43b5-9d5c-8499526e75c8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e7c6f206-f1af-43b5-9d5c-8499526e75c8"
+          ],
+          "Content-Length": [
+            "1826"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1826",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:22 GMT",
+          "x-amzn-RequestId": "e7c6f206-f1af-43b5-9d5c-8499526e75c8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 671,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "adolescent",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37503776,
+          "beginOffset": 20,
+          "endOffset": 30,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Excessive crying of child, adolescent or adult",
+              "code": "R45.83",
+              "score": 0.7899985
+            },
+            {
+              "description": "Encounter for examination for adolescent development state",
+              "code": "Z00.3",
+              "score": 0.61930573
+            },
+            {
+              "description": "Postural kyphosis, site unspecified",
+              "code": "M40.00",
+              "score": 0.602681
+            },
+            {
+              "description": "Unspecified behavioral and emotional disorders with onset usually occurring in childhood and adolescence",
+              "code": "F98.9",
+              "score": 0.58227056
+            },
+            {
+              "description": "Social phobia, unspecified",
+              "code": "F40.10",
+              "score": 0.51373863
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "autism disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9921111,
+          "beginOffset": 122,
+          "endOffset": 137,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95783603
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.7025996
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.6833816
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.6723705
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6503984
+            },
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.6414345
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "autism disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99032414,
+          "beginOffset": 187,
+          "endOffset": 202,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8749118
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.5677226
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.55216026
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.5512956
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.5451517
+            },
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.5185109
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "language impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96484894,
+          "beginOffset": 238,
+          "endOffset": 257,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50419974
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48480067
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.46405414
+            },
+            {
+              "description": "Unspecified speech disturbances",
+              "code": "R47.9",
+              "score": 0.45324826
+            },
+            {
+              "description": "Mild cognitive impairment, so stated",
+              "code": "G31.84",
+              "score": 0.45307767
+            },
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.41878724
+            },
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.40170747
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hears words",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.728523,
+          "beginOffset": 304,
+          "endOffset": 315,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96969235,
+              "relationshipScore": 0.8987463,
+              "id": 5,
+              "beginOffset": 338,
+              "endOffset": 343,
+              "text": "hands",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7961731
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified hearing loss, unspecified ear",
+              "code": "H91.90",
+              "score": 0.6473559
+            },
+            {
+              "description": "Aphasia",
+              "code": "R47.01",
+              "score": 0.6435115
+            },
+            {
+              "description": "Unspecified hearing loss, bilateral",
+              "code": "H91.93",
+              "score": 0.57762414
+            },
+            {
+              "description": "Unspecified hearing loss, right ear",
+              "code": "H91.91",
+              "score": 0.46236986
+            },
+            {
+              "description": "Family history of deafness and hearing loss",
+              "code": "Z82.2",
+              "score": 0.39613363
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "unable to articulate those sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64415765,
+          "beginOffset": 392,
+          "endOffset": 425,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48122865
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.6872171
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.5779955
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.50597286
+            },
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.4722811
+            },
+            {
+              "description": "Problem related to primary support group, unspecified",
+              "code": "Z63.9",
+              "score": 0.46856794
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3f9ca96c-9c04-4431-a56b-3b17720f5876"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3f9ca96c-9c04-4431-a56b-3b17720f5876"
+          ],
+          "Content-Length": [
+            "4648"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4648",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:24 GMT",
+          "x-amzn-RequestId": "3f9ca96c-9c04-4431-a56b-3b17720f5876"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 202,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "48c9d949-faf9-4a1c-8186-38a20fa12b9d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "48c9d949-faf9-4a1c-8186-38a20fa12b9d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:22 GMT",
+          "x-amzn-RequestId": "48c9d949-faf9-4a1c-8186-38a20fa12b9d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:24 PM"
+}

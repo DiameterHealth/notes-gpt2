@@ -1,0 +1,195 @@
+{
+  "note": "in 2010 with no treatment plan and the following was discussed by the nephrologists: (i) What was the diagnosis? Who is he? (ii) What has happened to him? Is it a complication of his renal function? How long has it been affecting him? Is it the new normal or is it still a problem? (iii) What is the cause? Can we control the underlying cause and should we treat the pt further?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 3,
+          "endOffset": 7,
+          "score": 0.9988545,
+          "text": "2010",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 163,
+          "endOffset": 197,
+          "score": 0.5086889,
+          "text": "complication of his renal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41787815
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57573205
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e2973cf-429f-445a-b0b5-615b5665df4e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e2973cf-429f-445a-b0b5-615b5665df4e"
+          ],
+          "Content-Length": [
+            "476"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "476",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:00 GMT",
+          "x-amzn-RequestId": "7e2973cf-429f-445a-b0b5-615b5665df4e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 454,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "complication of his renal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5086889,
+          "beginOffset": 163,
+          "endOffset": 197,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41787815
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57573193
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.7017381
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.59644943
+            },
+            {
+              "description": "Other specified disorders of kidney and ureter",
+              "code": "N28.89",
+              "score": 0.55885196
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.5209593
+            },
+            {
+              "description": "Other postprocedural complications and disorders of the circulatory system, not elsewhere classified",
+              "code": "I97.89",
+              "score": 0.50508386
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "88c74dd7-2530-441a-b565-0c4063f82f29"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "88c74dd7-2530-441a-b565-0c4063f82f29"
+          ],
+          "Content-Length": [
+            "961"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "961",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:00 GMT",
+          "x-amzn-RequestId": "88c74dd7-2530-441a-b565-0c4063f82f29"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2de8f597-f550-4309-a40a-44cf355458ae"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2de8f597-f550-4309-a40a-44cf355458ae"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:00 GMT",
+          "x-amzn-RequestId": "2de8f597-f550-4309-a40a-44cf355458ae"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:01 PM"
+}

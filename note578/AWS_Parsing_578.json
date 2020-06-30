@@ -1,0 +1,690 @@
+{
+  "note": "for more than a week. He is not receiving any treatment for his breathing problem. A radiograph of his chest is suggestive of a right coronary artery occlusion (RCO). His family history suggests familial angina. The patient is also on hemodialysis and is in pain. The radiograph and blood work do not show significant symptoms of myocardial infarction (MI) or hypertension.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 432,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 64,
+          "endOffset": 81,
+          "score": 0.78906065,
+          "text": "breathing problem",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50270236
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 85,
+          "endOffset": 95,
+          "score": 0.97193795,
+          "text": "radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6216849,
+              "relationshipScore": 0.9999958,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 128,
+              "endOffset": 159,
+              "text": "right coronary artery occlusion",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 103,
+          "endOffset": 108,
+          "score": 0.97667056,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 134,
+          "endOffset": 149,
+          "score": 0.9276837,
+          "text": "coronary artery",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 134,
+          "endOffset": 159,
+          "score": 0.9737119,
+          "text": "coronary artery occlusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94022065
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9781653,
+              "relationshipScore": 0.70789796,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 128,
+              "endOffset": 133,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 195,
+          "endOffset": 210,
+          "score": 0.9379529,
+          "text": "familial angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94486415
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 235,
+          "endOffset": 247,
+          "score": 0.87732255,
+          "text": "hemodialysis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 258,
+          "endOffset": 262,
+          "score": 0.9616787,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45765227
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 268,
+          "endOffset": 278,
+          "score": 0.98287016,
+          "text": "radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4593655,
+              "relationshipScore": 0.9917157,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 294,
+              "endOffset": 351,
+              "text": "do not show significant symptoms of myocardial infarction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 283,
+          "endOffset": 293,
+          "score": 0.9776384,
+          "text": "blood work",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4593655,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 294,
+              "endOffset": 351,
+              "text": "do not show significant symptoms of myocardial infarction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 330,
+          "endOffset": 351,
+          "score": 0.9536123,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87553257
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81280214
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 353,
+          "endOffset": 355,
+          "score": 0.97868425,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9534692
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6441467
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 360,
+          "endOffset": 372,
+          "score": 0.9967085,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91486245
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8048128
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9781653,
+            "id": 1,
+            "beginOffset": 128,
+            "endOffset": 133,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f0818c0f-2538-41e2-aac6-1cb649b47dc6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f0818c0f-2538-41e2-aac6-1cb649b47dc6"
+          ],
+          "Content-Length": [
+            "3775"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3775",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:54 GMT",
+          "x-amzn-RequestId": "f0818c0f-2538-41e2-aac6-1cb649b47dc6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 576,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "breathing problem",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78906065,
+          "beginOffset": 64,
+          "endOffset": 81,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50270236
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.4806635
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.36782616
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.36568713
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.36164036
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.31693769
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "coronary artery occlusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9737119,
+          "beginOffset": 134,
+          "endOffset": 159,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9781653,
+              "relationshipScore": 0.70789796,
+              "id": 2,
+              "beginOffset": 128,
+              "endOffset": 133,
+              "text": "right",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94022065
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.39905542
+            },
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.36100876
+            },
+            {
+              "description": "Stenosis of coronary artery stent",
+              "code": "T82.855",
+              "score": 0.29503575
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.2945295
+            },
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.27984464
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "familial angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9379529,
+          "beginOffset": 195,
+          "endOffset": 210,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94486415
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.23442699
+            },
+            {
+              "description": "Other forms of angina pectoris",
+              "code": "I20.8",
+              "score": 0.21941245
+            },
+            {
+              "description": "Angina pectoris with documented spasm",
+              "code": "I20.1",
+              "score": 0.20247234
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.19423583
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.1919721
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9616787,
+          "beginOffset": 258,
+          "endOffset": 262,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45765227
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.266827
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.2104917
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.19626285
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.1833832
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.18141448
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9536123,
+          "beginOffset": 330,
+          "endOffset": 351,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87553257
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81280214
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7169713
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.6876067
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.63847554
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.62752074
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.62627697
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97868425,
+          "beginOffset": 353,
+          "endOffset": 355,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9534692
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.64414674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.677274
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.6538897
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6129087
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.6073653
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.59975153
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9967085,
+          "beginOffset": 360,
+          "endOffset": 372,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91486245
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.80481285
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.82074267
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.79059845
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.785534
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7689143
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.71959317
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "362769b2-fd41-4951-b084-a4d1eb17bbdf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "362769b2-fd41-4951-b084-a4d1eb17bbdf"
+          ],
+          "Content-Length": [
+            "5940"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5940",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:54 GMT",
+          "x-amzn-RequestId": "362769b2-fd41-4951-b084-a4d1eb17bbdf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cb6302a9-f035-4518-a15d-96d46e6c0d94"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cb6302a9-f035-4518-a15d-96d46e6c0d94"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:54 GMT",
+          "x-amzn-RequestId": "cb6302a9-f035-4518-a15d-96d46e6c0d94"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:55 PM"
+}

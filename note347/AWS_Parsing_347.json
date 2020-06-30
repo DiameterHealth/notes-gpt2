@@ -1,0 +1,492 @@
+{
+  "note": "ing (CABG), and left ventricular hypertrophy with ejection fraction of less than 35% (LVH). His previous physician noted diabetes mellitus and dyslipidemia. He was a nonsmoker. He had been on a very low carbohydrate diet (2,800 kcal/day) for 8 months and was able to maintain his weight during that time. He was given a low carbohydrate diet to see if he gained more weight than expected.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 336,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 5,
+          "endOffset": 9,
+          "score": 0.8301553,
+          "text": "CABG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 21,
+          "endOffset": 44,
+          "score": 0.6562989,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68863237
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.84773797,
+              "relationshipScore": 0.99767715,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 16,
+              "endOffset": 20,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 50,
+          "endOffset": 67,
+          "score": 0.36564153,
+          "text": "ejection fraction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6254045
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 50,
+          "endOffset": 67,
+          "score": 0.33384913,
+          "text": "ejection fraction",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.83692074,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 71,
+              "endOffset": 84,
+              "text": "less than 35%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 121,
+          "endOffset": 138,
+          "score": 0.9447098,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9111377
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 143,
+          "endOffset": 155,
+          "score": 0.9936951,
+          "text": "dyslipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93777215
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 320,
+          "endOffset": 341,
+          "score": 0.5338196,
+          "text": "low carbohydrate diet",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 355,
+          "endOffset": 373,
+          "score": 0.558904,
+          "text": "gained more weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4205472
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.84773797,
+            "id": 0,
+            "beginOffset": 16,
+            "endOffset": 20,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e48cdd0-1e31-4b9e-8523-0bc9d70f0ae8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e48cdd0-1e31-4b9e-8523-0bc9d70f0ae8"
+          ],
+          "Content-Length": [
+            "2200"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2200",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:50 GMT",
+          "x-amzn-RequestId": "7e48cdd0-1e31-4b9e-8523-0bc9d70f0ae8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 449,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65629876,
+          "beginOffset": 21,
+          "endOffset": 44,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.84773797,
+              "relationshipScore": 0.99767715,
+              "id": 0,
+              "beginOffset": 16,
+              "endOffset": 20,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68863225
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.758816
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.75141025
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.74186337
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.645691
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.6158355
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ejection fraction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3656418,
+          "beginOffset": 50,
+          "endOffset": 67,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6254045
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.77566326
+            },
+            {
+              "description": "Cardiac murmur, unspecified",
+              "code": "R01.1",
+              "score": 0.7286291
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.7285084
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.706938
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.65541005
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94470966,
+          "beginOffset": 121,
+          "endOffset": 138,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9111377
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.82354134
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7794553
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.74222606
+            },
+            {
+              "description": "Type 2 diabetes mellitus with foot ulcer",
+              "code": "E11.621",
+              "score": 0.713891
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7040475
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "dyslipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9936951,
+          "beginOffset": 143,
+          "endOffset": 155,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93777215
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hyperlipidemia, unspecified",
+              "code": "E78.5",
+              "score": 0.65516865
+            },
+            {
+              "description": "Pure hyperglyceridemia",
+              "code": "E78.1",
+              "score": 0.3408454
+            },
+            {
+              "description": "Mixed hyperlipidemia",
+              "code": "E78.2",
+              "score": 0.33795863
+            },
+            {
+              "description": "Other hyperlipidemia",
+              "code": "E78.49",
+              "score": 0.3307196
+            },
+            {
+              "description": "Lipoprotein deficiency",
+              "code": "E78.6",
+              "score": 0.2569763
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "gained more weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.558904,
+          "beginOffset": 355,
+          "endOffset": 373,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4205472
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.8957227
+            },
+            {
+              "description": "Adult failure to thrive",
+              "code": "R62.7",
+              "score": 0.78071505
+            },
+            {
+              "description": "Excessive weight gain in pregnancy",
+              "code": "O26.0",
+              "score": 0.6933127
+            },
+            {
+              "description": "Low weight gain in pregnancy",
+              "code": "O26.1",
+              "score": 0.67281896
+            },
+            {
+              "description": "Excessive weight gain in pregnancy, unspecified trimester",
+              "code": "O26.00",
+              "score": 0.66630304
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3e0b2965-335b-4eed-b09a-8717e09d7d58"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3e0b2965-335b-4eed-b09a-8717e09d7d58"
+          ],
+          "Content-Length": [
+            "3943"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3943",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:51 GMT",
+          "x-amzn-RequestId": "3e0b2965-335b-4eed-b09a-8717e09d7d58"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c417f883-d927-4ab0-bc18-658519ba11ae"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c417f883-d927-4ab0-bc18-658519ba11ae"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:50 GMT",
+          "x-amzn-RequestId": "c417f883-d927-4ab0-bc18-658519ba11ae"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:51 PM"
+}

@@ -1,0 +1,1025 @@
+{
+  "note": "for arthritis. The patient also requires a blood pressure cuff on the right arm for his right wrist. This patient underwent a heart attack within the past two years, and is now suffering symptoms as a result. The symptoms include chest pain, shortness of breath, and severe cough due to a lung infection. Patient is also experiencing chronic migraine and is now on a combination of 2.5 migraine pills and 40 mg of caffeine.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1111,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 4,
+          "endOffset": 13,
+          "score": 0.9917148,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90844387
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 43,
+          "endOffset": 57,
+          "score": 0.38690087,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 43,
+          "endOffset": 62,
+          "score": 0.3714329,
+          "text": "blood pressure cuff",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99478203,
+              "relationshipScore": 0.9973092,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 70,
+              "endOffset": 75,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9888277,
+              "relationshipScore": 0.99559504,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 76,
+              "endOffset": 79,
+              "text": "arm",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.99627304,
+              "relationshipScore": 0.99819785,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 88,
+              "endOffset": 93,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9919906,
+              "relationshipScore": 0.99795806,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 94,
+              "endOffset": 99,
+              "text": "wrist",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 76,
+          "endOffset": 79,
+          "score": 0.9888277,
+          "text": "arm",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "score": 0.9919906,
+          "text": "wrist",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 126,
+          "endOffset": 131,
+          "score": 0.9630571,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 126,
+          "endOffset": 138,
+          "score": 0.84768295,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82045835
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.42675453,
+              "relationshipScore": 0.999642,
+              "relationshipType": "ACUITY",
+              "id": 14,
+              "beginOffset": 150,
+              "endOffset": 164,
+              "text": "past two years",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 150,
+          "endOffset": 164,
+          "score": 0.9836348,
+          "text": "past two years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.84768295,
+              "relationshipScore": 0.9192069,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 126,
+              "endOffset": 138,
+              "text": "heart attack",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.82045835
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 230,
+          "endOffset": 235,
+          "score": 0.98812616,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 230,
+          "endOffset": 240,
+          "score": 0.96315056,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94188356
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 242,
+          "endOffset": 261,
+          "score": 0.99748355,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9107614
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 274,
+          "endOffset": 279,
+          "score": 0.9957841,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78879523
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 289,
+          "endOffset": 293,
+          "score": 0.98706436,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 289,
+          "endOffset": 303,
+          "score": 0.8940128,
+          "text": "lung infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7291865
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 342,
+          "endOffset": 350,
+          "score": 0.99755657,
+          "text": "migraine",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166039
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97885865,
+              "relationshipScore": 0.999998,
+              "relationshipType": "ACUITY",
+              "id": 19,
+              "beginOffset": 334,
+              "endOffset": 341,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 386,
+          "endOffset": 400,
+          "score": 0.91167974,
+          "text": "migraine pills",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.26332814,
+              "relationshipScore": 0.99992156,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 382,
+              "endOffset": 385,
+              "text": "2.5",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 414,
+          "endOffset": 422,
+          "score": 0.86292785,
+          "text": "caffeine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.26332814,
+              "relationshipScore": 0.49264213,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 382,
+              "endOffset": 385,
+              "text": "2.5",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.98303384,
+              "relationshipScore": 0.9999832,
+              "relationshipType": "DOSAGE",
+              "id": 9,
+              "beginOffset": 405,
+              "endOffset": 410,
+              "text": "40 mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99478203,
+            "id": 0,
+            "beginOffset": 70,
+            "endOffset": 75,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99627304,
+            "id": 2,
+            "beginOffset": 88,
+            "endOffset": 93,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.42675453,
+            "id": 14,
+            "beginOffset": 150,
+            "endOffset": 164,
+            "text": "past two years",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.97885865,
+            "id": 19,
+            "beginOffset": 334,
+            "endOffset": 341,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b4d671b9-17e7-4d80-b0ec-6fb387e37fa1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b4d671b9-17e7-4d80-b0ec-6fb387e37fa1"
+          ],
+          "Content-Length": [
+            "5904"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5904",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:41 GMT",
+          "x-amzn-RequestId": "b4d671b9-17e7-4d80-b0ec-6fb387e37fa1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1197,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9917148,
+          "beginOffset": 4,
+          "endOffset": 13,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90844387
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Primary osteoarthritis, right wrist",
+              "code": "M19.031",
+              "score": 0.47086918
+            },
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.38649577
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, right knee",
+              "code": "M17.11",
+              "score": 0.31424102
+            },
+            {
+              "description": "Family history of arthritis and other diseases of the musculoskeletal system and connective tissue",
+              "code": "Z82.6",
+              "score": 0.31422427
+            },
+            {
+              "description": "Primary osteoarthritis, unspecified wrist",
+              "code": "M19.039",
+              "score": 0.29080564
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "blood pressure cuff",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3714329,
+          "beginOffset": 43,
+          "endOffset": 62,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99478203,
+              "relationshipScore": 0.9973092,
+              "id": 2,
+              "beginOffset": 70,
+              "endOffset": 75,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9888277,
+              "relationshipScore": 0.99559504,
+              "id": 3,
+              "beginOffset": 76,
+              "endOffset": 79,
+              "text": "arm",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.99627304,
+              "relationshipScore": 0.99819785,
+              "id": 4,
+              "beginOffset": 88,
+              "endOffset": 93,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9919906,
+              "relationshipScore": 0.99795806,
+              "id": 5,
+              "beginOffset": 94,
+              "endOffset": 99,
+              "text": "wrist",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.29880953
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.29097688
+            },
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.28999946
+            },
+            {
+              "description": "Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic",
+              "code": "M75.100",
+              "score": 0.25830224
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.2364293
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84768295,
+          "beginOffset": 126,
+          "endOffset": 138,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.42675462,
+              "relationshipScore": 0.999642,
+              "id": 8,
+              "beginOffset": 150,
+              "endOffset": 164,
+              "text": "past two years",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82045835
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.36234835
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.31588292
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.2870587
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other sites",
+              "code": "I21.29",
+              "score": 0.28240603
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.2655394
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96315056,
+          "beginOffset": 230,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94188356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6152231
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.41694334
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.36426964
+            },
+            {
+              "description": "Chronic pain syndrome",
+              "code": "G89.4",
+              "score": 0.33761403
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.32653013
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99748355,
+          "beginOffset": 242,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9107614
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.8445951
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.6102873
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.5743461
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.55966836
+            },
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.5325968
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9957841,
+          "beginOffset": 274,
+          "endOffset": 279,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78879523
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.79470867
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.5546951
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.52115273
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.48292688
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.47051406
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "lung infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8940128,
+          "beginOffset": 289,
+          "endOffset": 303,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.72918636
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.6803338
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.5922128
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.52726936
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.52291644
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.5140841
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "migraine",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99755657,
+          "beginOffset": 342,
+          "endOffset": 350,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97885865,
+              "relationshipScore": 0.999998,
+              "id": 15,
+              "beginOffset": 334,
+              "endOffset": 341,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166039
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.6494775
+            },
+            {
+              "description": "Chronic migraine without aura, intractable, without status migrainosus",
+              "code": "G43.719",
+              "score": 0.5731437
+            },
+            {
+              "description": "Migraine with aura, not intractable, without status migrainosus",
+              "code": "G43.109",
+              "score": 0.50760466
+            },
+            {
+              "description": "Migraine, unspecified, intractable, without status migrainosus",
+              "code": "G43.919",
+              "score": 0.38274375
+            },
+            {
+              "description": "Migraine, unspecified, not intractable",
+              "code": "G43.90",
+              "score": 0.3744262
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "72f17695-1376-4084-bc60-44889a8476bb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "72f17695-1376-4084-bc60-44889a8476bb"
+          ],
+          "Content-Length": [
+            "6837"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6837",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:44 GMT",
+          "x-amzn-RequestId": "72f17695-1376-4084-bc60-44889a8476bb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 823,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "migraine pills",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.91167974,
+          "beginOffset": 386,
+          "endOffset": 400,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.263328,
+              "relationshipScore": 0.99992156,
+              "id": 0,
+              "beginOffset": 382,
+              "endOffset": 385,
+              "text": "2.5",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Pinus massoniana resin",
+              "code": "1311586",
+              "score": 0.01923586
+            },
+            {
+              "description": "Pinus tabuliformis bark extract",
+              "code": "1307671",
+              "score": 0.012068666
+            },
+            {
+              "description": "Pinus lambertiana resin",
+              "code": "1359088",
+              "score": 0.011934989
+            },
+            {
+              "description": "Pinus sylvestris cone extract",
+              "code": "1372561",
+              "score": 0.010852767
+            },
+            {
+              "description": "PINUS SYLVESTRIS LEAFY TWIG",
+              "code": "1310095",
+              "score": 0.009280544
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "caffeine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.86292785,
+          "beginOffset": 414,
+          "endOffset": 422,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.263328,
+              "relationshipScore": 0.49264213,
+              "id": 0,
+              "beginOffset": 382,
+              "endOffset": 385,
+              "text": "2.5",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.98303384,
+              "relationshipScore": 0.9999832,
+              "id": 2,
+              "beginOffset": 405,
+              "endOffset": 410,
+              "text": "40 mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Caffeine",
+              "code": "1886",
+              "score": 0.7793126
+            },
+            {
+              "description": "Aspirin 500 MG / Caffeine 32.5 MG Oral Tablet",
+              "code": "702316",
+              "score": 0.7329543
+            },
+            {
+              "description": "Acetaminophen 500 MG / Caffeine 32.5 MG / Phenylephrine Hydrochloride 5 MG Oral Tablet",
+              "code": "1367210",
+              "score": 0.6109306
+            },
+            {
+              "description": "Aspirin 325 MG / butalbital 50 MG / Caffeine 40 MG Oral Tablet",
+              "code": "238135",
+              "score": 0.60556155
+            },
+            {
+              "description": "Caffeine 200 MG Oral Tablet",
+              "code": "198520",
+              "score": 0.43119797
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ef43c6da-6d8b-437b-bf5e-e41ada5d2996"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ef43c6da-6d8b-437b-bf5e-e41ada5d2996"
+          ],
+          "Content-Length": [
+            "1848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:41 GMT",
+          "x-amzn-RequestId": "ef43c6da-6d8b-437b-bf5e-e41ada5d2996"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:44 PM"
+}

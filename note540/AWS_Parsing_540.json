@@ -1,0 +1,893 @@
+{
+  "note": ". Chest radiograph is normal. He has fever, cough, and vomiting, and does not have chest X-ray changes consistent with acute respiratory distress syndrome (ARDS). His clinical course is complicated by severe hemoptysis that requires ventilator support. A CT scan is carried out. CT shows a small pneumothorax, bacteremia, and small pleural effusions. The patient develops respiratory failure and remains intubated.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 580,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 2,
+          "endOffset": 7,
+          "score": 0.95541143,
+          "text": "Chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 2,
+          "endOffset": 18,
+          "score": 0.9314225,
+          "text": "Chest radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9148327,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 22,
+              "endOffset": 28,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 37,
+          "endOffset": 42,
+          "score": 0.99491185,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68896514
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 44,
+          "endOffset": 49,
+          "score": 0.99709666,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69662124
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 55,
+          "endOffset": 63,
+          "score": 0.99326044,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5992046
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 83,
+          "endOffset": 88,
+          "score": 0.9825707,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 83,
+          "endOffset": 94,
+          "score": 0.73054534,
+          "text": "chest X-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 83,
+          "endOffset": 102,
+          "score": 0.39068022,
+          "text": "chest X-ray changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55089957
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81083244
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 125,
+          "endOffset": 154,
+          "score": 0.948113,
+          "text": "respiratory distress syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85553974
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.55613124
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.94502556,
+              "relationshipScore": 0.9995865,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 119,
+              "endOffset": 124,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 156,
+          "endOffset": 160,
+          "score": 0.9544098,
+          "text": "ARDS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92776173
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.94502556,
+              "relationshipScore": 0.9558565,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 119,
+              "endOffset": 124,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 208,
+          "endOffset": 218,
+          "score": 0.9951638,
+          "text": "hemoptysis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8061072
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 255,
+          "endOffset": 262,
+          "score": 0.9903182,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 279,
+          "endOffset": 281,
+          "score": 0.98517054,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98117846,
+              "relationshipScore": 0.99999833,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 290,
+              "endOffset": 320,
+              "text": "small pneumothorax, bacteremia",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9725362,
+              "relationshipScore": 0.9999982,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 326,
+              "endOffset": 349,
+              "text": "small pleural effusions",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 296,
+          "endOffset": 308,
+          "score": 0.986379,
+          "text": "pneumothorax",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94251674
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 310,
+          "endOffset": 320,
+          "score": 0.9848141,
+          "text": "bacteremia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93546957
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 332,
+          "endOffset": 349,
+          "score": 0.91190374,
+          "text": "pleural effusions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90712327
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 372,
+          "endOffset": 391,
+          "score": 0.96220535,
+          "text": "respiratory failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7907121
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 404,
+          "endOffset": 413,
+          "score": 0.7620285,
+          "text": "intubated",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.94502556,
+            "id": 6,
+            "beginOffset": 119,
+            "endOffset": 124,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "888633b2-9496-4b9e-a062-4e22c049c15b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "888633b2-9496-4b9e-a062-4e22c049c15b"
+          ],
+          "Content-Length": [
+            "4790"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4790",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:46 GMT",
+          "x-amzn-RequestId": "888633b2-9496-4b9e-a062-4e22c049c15b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 719,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99491185,
+          "beginOffset": 37,
+          "endOffset": 42,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68896514
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6660981
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.39304063
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.3076645
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3065202
+            },
+            {
+              "description": "Lassa fever",
+              "code": "A96.2",
+              "score": 0.26292485
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99709666,
+          "beginOffset": 44,
+          "endOffset": 49,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69662124
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.7467776
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.51679265
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.4654169
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.44533917
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.42290798
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99326044,
+          "beginOffset": 55,
+          "endOffset": 63,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5992047
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.6384974
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.59595853
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.42825466
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.3972063
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.39117134
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "chest X-ray changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39068022,
+          "beginOffset": 83,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55089957
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81083244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5268708
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.52360344
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.48824525
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.46074748
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.45124438
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "respiratory distress syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.948113,
+          "beginOffset": 125,
+          "endOffset": 154,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.94502544,
+              "relationshipScore": 0.9995865,
+              "id": 6,
+              "beginOffset": 119,
+              "endOffset": 124,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85553974
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5561313
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.5301936
+            },
+            {
+              "description": "Acute respiratory distress syndrome",
+              "code": "J80",
+              "score": 0.48035067
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.34823993
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.29615578
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.28658453
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "hemoptysis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9951638,
+          "beginOffset": 208,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8061072
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.49343893
+            },
+            {
+              "description": "Delayed or excessive hemorrhage following complete or unspecified spontaneous abortion",
+              "code": "O03.6",
+              "score": 0.32428497
+            },
+            {
+              "description": "HELLP syndrome (HELLP), unspecified trimester",
+              "code": "O14.20",
+              "score": 0.293957
+            },
+            {
+              "description": "HELLP syndrome (HELLP), third trimester",
+              "code": "O14.23",
+              "score": 0.28345165
+            },
+            {
+              "description": "HELLP syndrome (HELLP), second trimester",
+              "code": "O14.22",
+              "score": 0.2492821
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "pneumothorax",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.986379,
+          "beginOffset": 296,
+          "endOffset": 308,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94251674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pneumothorax, unspecified",
+              "code": "J93.9",
+              "score": 0.6704921
+            },
+            {
+              "description": "Postprocedural pneumothorax",
+              "code": "J95.811",
+              "score": 0.512305
+            },
+            {
+              "description": "Chronic pneumothorax",
+              "code": "J93.81",
+              "score": 0.39337397
+            },
+            {
+              "description": "Traumatic pneumothorax",
+              "code": "S27.0",
+              "score": 0.3646813
+            },
+            {
+              "description": "Other pneumothorax",
+              "code": "J93.83",
+              "score": 0.3469207
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "bacteremia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9848141,
+          "beginOffset": 310,
+          "endOffset": 320,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93546957
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bacteremia",
+              "code": "R78.81",
+              "score": 0.55549014
+            },
+            {
+              "description": "Pneumonia due to other specified bacteria",
+              "code": "J15.8",
+              "score": 0.34170485
+            },
+            {
+              "description": "Personal history of Methicillin resistant Staphylococcus aureus infection",
+              "code": "Z86.14",
+              "score": 0.2895751
+            },
+            {
+              "description": "Bacterial intestinal infection, unspecified",
+              "code": "A04.9",
+              "score": 0.2724544
+            },
+            {
+              "description": "Bacteriuria",
+              "code": "R82.71",
+              "score": 0.24933527
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "pleural effusions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91190374,
+          "beginOffset": 332,
+          "endOffset": 349,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90712327
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pleural effusion, not elsewhere classified",
+              "code": "J90",
+              "score": 0.72390074
+            },
+            {
+              "description": "Pleural effusion in other conditions classified elsewhere",
+              "code": "J91.8",
+              "score": 0.53056806
+            },
+            {
+              "description": "Other specified pleural conditions",
+              "code": "J94.8",
+              "score": 0.49644613
+            },
+            {
+              "description": "Malignant pleural effusion",
+              "code": "J91.0",
+              "score": 0.46712488
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.4553284
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "respiratory failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96220535,
+          "beginOffset": 372,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7907121
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia",
+              "code": "J96.90",
+              "score": 0.6399151
+            },
+            {
+              "description": "Chronic respiratory failure, unspecified whether with hypoxia or hypercapnia",
+              "code": "J96.10",
+              "score": 0.59133756
+            },
+            {
+              "description": "Acute and chronic respiratory failure, unspecified whether with hypoxia or hypercapnia",
+              "code": "J96.20",
+              "score": 0.5906806
+            },
+            {
+              "description": "Respiratory failure, unspecified with hypoxia",
+              "code": "J96.91",
+              "score": 0.5806153
+            },
+            {
+              "description": "Acute respiratory failure, unspecified whether with hypoxia or hypercapnia",
+              "code": "J96.00",
+              "score": 0.5635139
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c8783d5d-c292-4915-986d-4f5b5206045d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c8783d5d-c292-4915-986d-4f5b5206045d"
+          ],
+          "Content-Length": [
+            "7446"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7446",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:47 GMT",
+          "x-amzn-RequestId": "c8783d5d-c292-4915-986d-4f5b5206045d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 223,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1f243036-9c46-4a50-bcd8-c18c086d0bcb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1f243036-9c46-4a50-bcd8-c18c086d0bcb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:46 GMT",
+          "x-amzn-RequestId": "1f243036-9c46-4a50-bcd8-c18c086d0bcb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:47 PM"
+}

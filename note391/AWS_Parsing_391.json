@@ -1,0 +1,419 @@
+{
+  "note": "................................. Vomiting was intermittent (occurred during meal) but had few (sometimes many) small cramping attacks throughout the duration of the meal. 4:36 PM  Dr. R - Gastroparesis was diagnosed based on the physical examination, patient history, labs and urine/blood samples. 3:41 PM  Dr. R. Gastroparesis – I have some concerns about your patient history and lab testing, do you have any concerns regarding them.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 449,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 34,
+          "endOffset": 42,
+          "score": 0.9742519,
+          "text": "Vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.52198046
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 118,
+          "endOffset": 134,
+          "score": 0.704953,
+          "text": "cramping attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6191933
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43125346
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 185,
+          "endOffset": 186,
+          "score": 0.8150206,
+          "text": "R",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 189,
+          "endOffset": 202,
+          "score": 0.91882694,
+          "text": "Gastroparesis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8709963
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 230,
+          "endOffset": 250,
+          "score": 0.35144335,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 269,
+          "endOffset": 273,
+          "score": 0.92272455,
+          "text": "labs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 278,
+          "endOffset": 297,
+          "score": 0.82030755,
+          "text": "urine/blood samples",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 312,
+          "endOffset": 314,
+          "score": 0.5173229,
+          "text": "R.",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 315,
+          "endOffset": 328,
+          "score": 0.7911148,
+          "text": "Gastroparesis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6193774
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 383,
+          "endOffset": 394,
+          "score": 0.9303298,
+          "text": "lab testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "01c19d80-787b-444d-8d72-1a302eb4cdd6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "01c19d80-787b-444d-8d72-1a302eb4cdd6"
+          ],
+          "Content-Length": [
+            "1851"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1851",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:12 GMT",
+          "x-amzn-RequestId": "01c19d80-787b-444d-8d72-1a302eb4cdd6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 465,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9742519,
+          "beginOffset": 34,
+          "endOffset": 42,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5219804
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.7735624
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.76154745
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.62015486
+            },
+            {
+              "description": "Vomiting",
+              "code": "R11.1",
+              "score": 0.607676
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.5947552
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cramping attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.704953,
+          "beginOffset": 118,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6191932
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43125358
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cramp and spasm",
+              "code": "R25.2",
+              "score": 0.6240105
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.52493227
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.46243262
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.4512165
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.44969642
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Gastroparesis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91882706,
+          "beginOffset": 189,
+          "endOffset": 202,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8709964
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastroparesis",
+              "code": "K31.84",
+              "score": 0.65728873
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E11.43",
+              "score": 0.4997733
+            },
+            {
+              "description": "Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E10.43",
+              "score": 0.36114427
+            },
+            {
+              "description": "Other specified diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E13.43",
+              "score": 0.33968127
+            },
+            {
+              "description": "Diabetes mellitus due to underlying condition with diabetic autonomic (poly)neuropathy",
+              "code": "E08.43",
+              "score": 0.282635
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Gastroparesis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7911149,
+          "beginOffset": 315,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.61937743
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastroparesis",
+              "code": "K31.84",
+              "score": 0.5602724
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E11.43",
+              "score": 0.45882195
+            },
+            {
+              "description": "Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E10.43",
+              "score": 0.34311092
+            },
+            {
+              "description": "Other specified diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E13.43",
+              "score": 0.31334963
+            },
+            {
+              "description": "Diabetes mellitus due to underlying condition with diabetic autonomic (poly)neuropathy",
+              "code": "E08.43",
+              "score": 0.26539475
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "58c1d96f-b560-4132-b089-1588d03d3133"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "58c1d96f-b560-4132-b089-1588d03d3133"
+          ],
+          "Content-Length": [
+            "3100"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3100",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:14 GMT",
+          "x-amzn-RequestId": "58c1d96f-b560-4132-b089-1588d03d3133"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 262,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd7ec84e-abb1-4d7d-b83f-4753aefe4b01"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd7ec84e-abb1-4d7d-b83f-4753aefe4b01"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:12 GMT",
+          "x-amzn-RequestId": "bd7ec84e-abb1-4d7d-b83f-4753aefe4b01"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:14 PM"
+}

@@ -1,0 +1,383 @@
+{
+  "note": ". The woman is well-nourished and physically fit. Her physician does a complete physical exam including measurement of height, weight, chest, and a skin examination of the legs by an experienced dermatologist. She is scheduled to receive a single dose, oral polio vaccine (OPV) administered in a multi-dose vial and followed by IM and intramuscular (IM) injections. Background: It requires a high level of immunization to ensure protection against polio, one of the most dangerous communicable diseases of the world.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 391,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 15,
+          "endOffset": 29,
+          "score": 0.9536588,
+          "text": "well-nourished",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9258361
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 34,
+          "endOffset": 48,
+          "score": 0.91204613,
+          "text": "physically fit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.88149613
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 80,
+          "endOffset": 93,
+          "score": 0.61290383,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 119,
+          "endOffset": 125,
+          "score": 0.75480044,
+          "text": "height",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 127,
+          "endOffset": 133,
+          "score": 0.85362303,
+          "text": "weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 135,
+          "endOffset": 140,
+          "score": 0.9317312,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 148,
+          "endOffset": 152,
+          "score": 0.9435608,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 148,
+          "endOffset": 164,
+          "score": 0.8126237,
+          "text": "skin examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 172,
+          "endOffset": 176,
+          "score": 0.9874849,
+          "text": "legs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 253,
+          "endOffset": 271,
+          "score": 0.8962623,
+          "text": "oral polio vaccine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 406,
+          "endOffset": 418,
+          "score": 0.5624985,
+          "text": "immunization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 448,
+          "endOffset": 453,
+          "score": 0.8310724,
+          "text": "polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86991906
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c319dcef-69a4-4778-9684-4141880e387f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c319dcef-69a4-4778-9684-4141880e387f"
+          ],
+          "Content-Length": [
+            "2047"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2047",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:42 GMT",
+          "x-amzn-RequestId": "c319dcef-69a4-4778-9684-4141880e387f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 524,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "well-nourished",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9536587,
+          "beginOffset": 15,
+          "endOffset": 29,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9258361
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.7339725
+            },
+            {
+              "description": "Pulmonary valve atresia",
+              "code": "Q22.0",
+              "score": 0.6597626
+            },
+            {
+              "description": "Urticaria, unspecified",
+              "code": "L50.9",
+              "score": 0.6166942
+            },
+            {
+              "description": "Disease of pulmonary vessels, unspecified",
+              "code": "I28.9",
+              "score": 0.55004805
+            },
+            {
+              "description": "Hypertensive crisis, unspecified",
+              "code": "I16.9",
+              "score": 0.5407064
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "physically fit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91204613,
+          "beginOffset": 34,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.88149613
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.7956732
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7882177
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.71286637
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.70687103
+            },
+            {
+              "description": "Physical restraint status",
+              "code": "Z78.1",
+              "score": 0.69383734
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8310724,
+          "beginOffset": 448,
+          "endOffset": 453,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86991906
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Target of (perceived) adverse discrimination and persecution",
+              "code": "Z60.5",
+              "score": 0.7231089
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E11.43",
+              "score": 0.5538434
+            },
+            {
+              "description": "Osteopathy after poliomyelitis, unspecified site",
+              "code": "M89.60",
+              "score": 0.53104013
+            },
+            {
+              "description": "Acute poliomyelitis, unspecified",
+              "code": "A80.9",
+              "score": 0.50174445
+            },
+            {
+              "description": "Acute poliomyelitis",
+              "code": "A80",
+              "score": 0.4632448
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2003e9a6-9765-40d5-ae51-cc08e6cd27d5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2003e9a6-9765-40d5-ae51-cc08e6cd27d5"
+          ],
+          "Content-Length": [
+            "2113"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2113",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:43 GMT",
+          "x-amzn-RequestId": "2003e9a6-9765-40d5-ae51-cc08e6cd27d5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 289,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d7be26c6-57bc-425b-a471-fb03ea2e6b1d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d7be26c6-57bc-425b-a471-fb03ea2e6b1d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:43 GMT",
+          "x-amzn-RequestId": "d7be26c6-57bc-425b-a471-fb03ea2e6b1d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:43 PM"
+}

@@ -1,0 +1,211 @@
+{
+  "note": "not discussed her psychiatric history. The patient reported that she is currently taking a number of antidepressants. She also reported that she drank a lot of alcohol and used opiates during her childhood. After the patient was hospitalized she was sent to a psychiatrist for evaluation. The patient reported at that time that she was having trouble falling asleep and waking up with a feeling that something was wrong with her.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 274,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 72,
+          "endOffset": 81,
+          "score": 0.9999988,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.9179726,
+              "relationshipScore": 0.773591,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 101,
+              "endOffset": 116,
+              "text": "antidepressants",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 101,
+          "endOffset": 116,
+          "score": 0.9179726,
+          "text": "antidepressants",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 343,
+          "endOffset": 365,
+          "score": 0.88010395,
+          "text": "trouble falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8566436
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c2c11ce-0384-4066-afee-aaca29154239"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c2c11ce-0384-4066-afee-aaca29154239"
+          ],
+          "Content-Length": [
+            "849"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "849",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:13 GMT",
+          "x-amzn-RequestId": "6c2c11ce-0384-4066-afee-aaca29154239"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 926,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "trouble falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88010406,
+          "beginOffset": 343,
+          "endOffset": 365,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8566435
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.72637933
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.72095084
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.7183544
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.6835798
+            },
+            {
+              "description": "Nervousness",
+              "code": "R45.0",
+              "score": 0.6486046
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "776d737a-6eae-439b-b790-d9a8065517b1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "776d737a-6eae-439b-b790-d9a8065517b1"
+          ],
+          "Content-Length": [
+            "679"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "679",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:15 GMT",
+          "x-amzn-RequestId": "776d737a-6eae-439b-b790-d9a8065517b1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c67d2aa5-9da5-446b-b2f9-d6e35fe6821a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c67d2aa5-9da5-446b-b2f9-d6e35fe6821a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:13 GMT",
+          "x-amzn-RequestId": "c67d2aa5-9da5-446b-b2f9-d6e35fe6821a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:15 PM"
+}

@@ -1,0 +1,237 @@
+{
+  "note": ". If all goes well, he should remain out of the hospital, although the next scheduled visit will likely be up to two weeks later. If an infection is identified, an antibiotic may either be added to the antibiotics already taken, or he will be kept off antibiotics until he becomes symptom free. The PCP will provide information about what to expect if such a complication does arise, and to be reassured if the patient expresses concern about his health.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 468,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 136,
+          "endOffset": 145,
+          "score": 0.96802336,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7836775
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 164,
+          "endOffset": 174,
+          "score": 0.43644717,
+          "text": "antibiotic",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 164,
+          "endOffset": 174,
+          "score": 0.80427057,
+          "text": "antibiotic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 202,
+          "endOffset": 213,
+          "score": 0.67328644,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 202,
+          "endOffset": 213,
+          "score": 0.88530076,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 252,
+          "endOffset": 263,
+          "score": 0.7317098,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 252,
+          "endOffset": 263,
+          "score": 0.8675039,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "29138b57-662d-4b61-a795-88092afb7141"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "29138b57-662d-4b61-a795-88092afb7141"
+          ],
+          "Content-Length": [
+            "1197"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1197",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:17 GMT",
+          "x-amzn-RequestId": "29138b57-662d-4b61-a795-88092afb7141"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 412,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96802336,
+          "beginOffset": 136,
+          "endOffset": 145,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78367746
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.7573848
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.71458954
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.70709157
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6832148
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.6390409
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "04aba5a8-12e8-45c0-8ff4-d40da2d27ef6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "04aba5a8-12e8-45c0-8ff4-d40da2d27ef6"
+          ],
+          "Content-Length": [
+            "778"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "778",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:17 GMT",
+          "x-amzn-RequestId": "04aba5a8-12e8-45c0-8ff4-d40da2d27ef6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2e185c58-211b-4dd7-b001-5da324db7a13"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2e185c58-211b-4dd7-b001-5da324db7a13"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:17 GMT",
+          "x-amzn-RequestId": "2e185c58-211b-4dd7-b001-5da324db7a13"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:17 PM"
+}

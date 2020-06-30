@@ -1,0 +1,295 @@
+{
+  "note": ". (FDA, 2012)  Comments: The patient\u0027s weight and blood pressure rose 1 to 3 days after administration, and the patient\u0027s temperature rose 1°C to 6°C higher than normal. The patient was treated with intravenous fluids but no other treatment was given or attempted. The patient eventually dropped out of the study. Study: Effect of dosing regimens on adverse reactions  Study ID: NCAHF-002-00036  Study Type: Observational  Participants: 561 adults aged 50 years and older with at least 6 months of follow-up  Intervention: Three dosages of a low–mortality dose of doxorubicin plus two low–mortality dose (LLD) doses, all initiated in the first week of therapy.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 565,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 8,
+          "endOffset": 12,
+          "score": 0.9829662,
+          "text": "2012",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 39,
+          "endOffset": 45,
+          "score": 0.46994698,
+          "text": "weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 50,
+          "endOffset": 64,
+          "score": 0.9106157,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 122,
+          "endOffset": 133,
+          "score": 0.92868465,
+          "text": "temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 211,
+          "endOffset": 217,
+          "score": 0.9891834,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8860748,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 0,
+              "beginOffset": 199,
+              "endOffset": 210,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 564,
+          "endOffset": 575,
+          "score": 0.9967428,
+          "text": "doxorubicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.23443131,
+              "relationshipScore": 0.9999789,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 581,
+              "endOffset": 603,
+              "text": "two low–mortality dose",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3290c5d5-3ee5-4e8a-8017-f58cb3aa75d3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3290c5d5-3ee5-4e8a-8017-f58cb3aa75d3"
+          ],
+          "Content-Length": [
+            "1439"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1439",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:05 GMT",
+          "x-amzn-RequestId": "3290c5d5-3ee5-4e8a-8017-f58cb3aa75d3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 614,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7fef1e93-059f-44dc-85e5-4823a211f711"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7fef1e93-059f-44dc-85e5-4823a211f711"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:06 GMT",
+          "x-amzn-RequestId": "7fef1e93-059f-44dc-85e5-4823a211f711"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 661,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9891834,
+          "beginOffset": 211,
+          "endOffset": 217,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8860748,
+              "relationshipScore": 1.0,
+              "id": 0,
+              "beginOffset": 199,
+              "endOffset": 210,
+              "text": "intravenous",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.16372547
+            },
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.1157627
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.044594448
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "doxorubicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9967428,
+          "beginOffset": 564,
+          "endOffset": 575,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.23443128,
+              "relationshipScore": 0.9999789,
+              "id": 3,
+              "beginOffset": 581,
+              "endOffset": 603,
+              "text": "two low–mortality dose",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Doxorubicin",
+              "code": "3639",
+              "score": 0.92755735
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 2 MG/ML Injectable Solution",
+              "code": "1191138",
+              "score": 0.49432346
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 20 MG Injection",
+              "code": "1872062",
+              "score": 0.4243393
+            },
+            {
+              "description": "25 ML Doxorubicin Hydrochloride 2 MG/ML Injection",
+              "code": "1790100",
+              "score": 0.2702815
+            },
+            {
+              "description": "5 ML Doxorubicin Hydrochloride 2 MG/ML Injection",
+              "code": "1790097",
+              "score": 0.26695913
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dc5badf8-d7ba-455d-be39-ba43ff83edc2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dc5badf8-d7ba-455d-be39-ba43ff83edc2"
+          ],
+          "Content-Length": [
+            "1519"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1519",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:06 GMT",
+          "x-amzn-RequestId": "dc5badf8-d7ba-455d-be39-ba43ff83edc2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:07 PM"
+}

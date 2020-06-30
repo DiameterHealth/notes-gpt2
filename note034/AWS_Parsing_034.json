@@ -1,0 +1,259 @@
+{
+  "note": ".  Postoperative Care:  Routine blood work. Outcome: Discharged after 2 weeks; no further complications. Outcome Measures: Normal physical and occupational status. Results:   A single 1-mg capsule of Laminaria japonica leaf extract had no effect on bleeding or other complications during this procedure. Discussion:  This study suggests another treatment option for hemorrhagic peptic ulcers that is more potent than the other available therapies.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 285,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 3,
+          "endOffset": 16,
+          "score": 0.9998605,
+          "text": "Postoperative",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.8750516,
+              "relationshipScore": 0.92209816,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 32,
+              "endOffset": 42,
+              "text": "blood work",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 32,
+          "endOffset": 42,
+          "score": 0.8750516,
+          "text": "blood work",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 249,
+          "endOffset": 257,
+          "score": 0.5883191,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 366,
+          "endOffset": 391,
+          "score": 0.68923575,
+          "text": "hemorrhagic peptic ulcers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95279086
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "262638b4-41f4-40d4-8d36-ed3f52ba2125"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "262638b4-41f4-40d4-8d36-ed3f52ba2125"
+          ],
+          "Content-Length": [
+            "976"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "976",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:55 GMT",
+          "x-amzn-RequestId": "262638b4-41f4-40d4-8d36-ed3f52ba2125"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 489,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5883191,
+          "beginOffset": 249,
+          "endOffset": 257,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.77038103
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.7041476
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.6730438
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.65043306
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a digestive system organ or structure complicating a digestive system procedure",
+              "code": "K91.61",
+              "score": 0.6305671
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hemorrhagic peptic ulcers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.68923575,
+          "beginOffset": 366,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95279086
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic or unspecified peptic ulcer, site unspecified, with hemorrhage",
+              "code": "K27.4",
+              "score": 0.6070585
+            },
+            {
+              "description": "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K27.9",
+              "score": 0.54754263
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.433012
+            },
+            {
+              "description": "Hemorrhagic condition, unspecified",
+              "code": "D69.9",
+              "score": 0.40238413
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.36419365
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6e46940-750e-46cd-8d66-2b635d84a73b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6e46940-750e-46cd-8d66-2b635d84a73b"
+          ],
+          "Content-Length": [
+            "1658"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1658",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:55 GMT",
+          "x-amzn-RequestId": "e6e46940-750e-46cd-8d66-2b635d84a73b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5592d33d-0c4d-43d3-9628-95a8908ff9e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5592d33d-0c4d-43d3-9628-95a8908ff9e2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:55 GMT",
+          "x-amzn-RequestId": "5592d33d-0c4d-43d3-9628-95a8908ff9e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:56 PM"
+}

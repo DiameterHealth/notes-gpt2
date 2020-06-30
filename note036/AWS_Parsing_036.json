@@ -1,0 +1,415 @@
+{
+  "note": ". Patient was also counselled regarding her level of emotional distress. Outcome Measures: The primary outcome measure was the change in score from baseline after 6 months, followed by the change from baseline during the follow-up period. Secondary outcome measures included the Psychotic Disorders Interview Schedule-Revised (PDI-R), Global Assessment of Functioning Scale (GAF-S), and global quality of life assessment of global functioning, global depression scale, and global anxiety scale.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 414,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 53,
+          "endOffset": 71,
+          "score": 0.7181265,
+          "text": "emotional distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4169837
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 279,
+          "endOffset": 298,
+          "score": 0.6170771,
+          "text": "Psychotic Disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8416959
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 318,
+          "endOffset": 333,
+          "score": 0.28497824,
+          "text": "Revised (PDI-R)",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 335,
+          "endOffset": 352,
+          "score": 0.9889697,
+          "text": "Global Assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 356,
+          "endOffset": 373,
+          "score": 0.41142038,
+          "text": "Functioning Scale",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 375,
+          "endOffset": 380,
+          "score": 0.72444004,
+          "text": "GAF-S",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 387,
+          "endOffset": 420,
+          "score": 0.8086874,
+          "text": "global quality of life assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32073972,
+              "relationshipScore": 0.9977048,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 424,
+              "endOffset": 442,
+              "text": "global functioning",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 444,
+          "endOffset": 467,
+          "score": 0.8630568,
+          "text": "global depression scale",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 451,
+          "endOffset": 461,
+          "score": 0.50730294,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 473,
+          "endOffset": 493,
+          "score": 0.7083021,
+          "text": "global anxiety scale",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 480,
+          "endOffset": 487,
+          "score": 0.73999757,
+          "text": "anxiety",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2e912d01-eb11-4422-9bc4-fc5a469b82ba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2e912d01-eb11-4422-9bc4-fc5a469b82ba"
+          ],
+          "Content-Length": [
+            "2193"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2193",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:57 GMT",
+          "x-amzn-RequestId": "2e912d01-eb11-4422-9bc4-fc5a469b82ba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 401,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "emotional distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7181268,
+          "beginOffset": 53,
+          "endOffset": 71,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41698372
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.7026097
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.69883907
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.6612056
+            },
+            {
+              "description": "Borderline personality disorder",
+              "code": "F60.3",
+              "score": 0.5323061
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.49637252
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Psychotic Disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6170771,
+          "beginOffset": 279,
+          "endOffset": 298,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8416958
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified psychosis not due to a substance or known physiological condition",
+              "code": "F29",
+              "score": 0.6276195
+            },
+            {
+              "description": "Parkinson\u0027s disease",
+              "code": "G20",
+              "score": 0.60115814
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.5972148
+            },
+            {
+              "description": "Delusional disorders",
+              "code": "F22",
+              "score": 0.5946064
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.57936466
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5073031,
+          "beginOffset": 451,
+          "endOffset": 461,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.77328837
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.6825798
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.64450485
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6380343
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.62201965
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "anxiety",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7399976,
+          "beginOffset": 480,
+          "endOffset": 487,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anxiety disorder, unspecified",
+              "code": "F41.9",
+              "score": 0.81527895
+            },
+            {
+              "description": "Generalized anxiety disorder",
+              "code": "F41.1",
+              "score": 0.6784107
+            },
+            {
+              "description": "Anxiety disorder due to known physiological condition",
+              "code": "F06.4",
+              "score": 0.5322569
+            },
+            {
+              "description": "Other specified anxiety disorders",
+              "code": "F41.8",
+              "score": 0.5212714
+            },
+            {
+              "description": "Phobic anxiety disorder, unspecified",
+              "code": "F40.9",
+              "score": 0.507224
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ce70b44f-7c59-4d93-8ee0-ba1ffe8b6adc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ce70b44f-7c59-4d93-8ee0-ba1ffe8b6adc"
+          ],
+          "Content-Length": [
+            "2934"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2934",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:57 GMT",
+          "x-amzn-RequestId": "ce70b44f-7c59-4d93-8ee0-ba1ffe8b6adc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1feb85d2-3b76-4651-86f4-2c0961a56452"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1feb85d2-3b76-4651-86f4-2c0961a56452"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:57 GMT",
+          "x-amzn-RequestId": "1feb85d2-3b76-4651-86f4-2c0961a56452"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:58 PM"
+}

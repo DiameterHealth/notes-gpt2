@@ -1,0 +1,659 @@
+{
+  "note": "; he has no previous history of systemic lupus erythematosus, but has previously been exposed to systemic lupus erythematosus antithymotic tablets. The patient denies other diseases, allergies or infections. Laboratory studies were normal in all. CONCLUSIONS \u0026 CLINICAL IMPLICATIONS The patient was treated with antithymotic tablets for 12 weeks after presentation with eye pain and worsening visual acuity.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 389,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 32,
+          "endOffset": 60,
+          "score": 0.87135375,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92329556
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89398897
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 97,
+          "endOffset": 125,
+          "score": 0.6997526,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93279845
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 173,
+          "endOffset": 181,
+          "score": 0.75343835,
+          "text": "diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46744084
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87269866
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 183,
+          "endOffset": 192,
+          "score": 0.9038114,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4087476
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9166398
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 196,
+          "endOffset": 206,
+          "score": 0.9929911,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8011216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9263258
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 208,
+          "endOffset": 226,
+          "score": 0.60703945,
+          "text": "Laboratory studies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.89770925,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 232,
+              "endOffset": 238,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 312,
+          "endOffset": 324,
+          "score": 0.5669867,
+          "text": "antithymotic",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.918197,
+              "relationshipScore": 0.9999989,
+              "relationshipType": "FORM",
+              "id": 2,
+              "beginOffset": 325,
+              "endOffset": 332,
+              "text": "tablets",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.67042106,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "DURATION",
+              "id": 3,
+              "beginOffset": 337,
+              "endOffset": 345,
+              "text": "12 weeks",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 337,
+          "endOffset": 345,
+          "score": 0.5845428,
+          "text": "12 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.5669867,
+              "relationshipScore": 0.8308513,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 312,
+              "endOffset": 324,
+              "text": "antithymotic",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 370,
+          "endOffset": 373,
+          "score": 0.9590487,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 370,
+          "endOffset": 378,
+          "score": 0.9100055,
+          "text": "eye pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4557939
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4423929
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 393,
+          "endOffset": 406,
+          "score": 0.8710586,
+          "text": "visual acuity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7547335
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "914fb8a0-5c77-4f95-9cce-abc63bb84225"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "914fb8a0-5c77-4f95-9cce-abc63bb84225"
+          ],
+          "Content-Length": [
+            "3213"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3213",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:15 GMT",
+          "x-amzn-RequestId": "914fb8a0-5c77-4f95-9cce-abc63bb84225"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 431,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87135375,
+          "beginOffset": 32,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92329556
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89398897
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Systemic lupus erythematosus, unspecified",
+              "code": "M32.9",
+              "score": 0.7591165
+            },
+            {
+              "description": "Systemic lupus erythematosus, organ or system involvement unspecified",
+              "code": "M32.10",
+              "score": 0.59085363
+            },
+            {
+              "description": "Systemic lupus erythematosus (SLE)",
+              "code": "M32",
+              "score": 0.5795631
+            },
+            {
+              "description": "Systemic lupus erythematosus with organ or system involvement",
+              "code": "M32.1",
+              "score": 0.5742041
+            },
+            {
+              "description": "Other forms of systemic lupus erythematosus",
+              "code": "M32.8",
+              "score": 0.5097
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6997525,
+          "beginOffset": 97,
+          "endOffset": 125,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93279845
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Systemic lupus erythematosus, unspecified",
+              "code": "M32.9",
+              "score": 0.76599675
+            },
+            {
+              "description": "Systemic lupus erythematosus, organ or system involvement unspecified",
+              "code": "M32.10",
+              "score": 0.59647435
+            },
+            {
+              "description": "Systemic lupus erythematosus (SLE)",
+              "code": "M32",
+              "score": 0.588962
+            },
+            {
+              "description": "Systemic lupus erythematosus with organ or system involvement",
+              "code": "M32.1",
+              "score": 0.58398515
+            },
+            {
+              "description": "Other forms of systemic lupus erythematosus",
+              "code": "M32.8",
+              "score": 0.5414236
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7534384,
+          "beginOffset": 173,
+          "endOffset": 181,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46744084
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87269866
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7759423
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.70689166
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.699003
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.69606
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.69351655
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9038114,
+          "beginOffset": 183,
+          "endOffset": 192,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40874758
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9166398
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.79880035
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.6932942
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.63860595
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.6362665
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.633572
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9929911,
+          "beginOffset": 196,
+          "endOffset": 206,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8011216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9263258
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.79208905
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.75029576
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.73175204
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.72224617
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7156862
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "eye pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9100055,
+          "beginOffset": 370,
+          "endOffset": 378,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4557939
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44239286
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.6756368
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.67430705
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.6613729
+            },
+            {
+              "description": "Ocular pain, bilateral",
+              "code": "H57.13",
+              "score": 0.61819893
+            },
+            {
+              "description": "Ocular pain",
+              "code": "H57.1",
+              "score": 0.49893126
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "visual acuity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8710586,
+          "beginOffset": 393,
+          "endOffset": 406,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7547335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.7227027
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.6473373
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.5837146
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.58132875
+            },
+            {
+              "description": "Unqualified visual loss, both eyes",
+              "code": "H54.3",
+              "score": 0.55370855
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ae74539-05a8-4940-84f7-c73f44421120"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ae74539-05a8-4940-84f7-c73f44421120"
+          ],
+          "Content-Length": [
+            "5402"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5402",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:16 GMT",
+          "x-amzn-RequestId": "2ae74539-05a8-4940-84f7-c73f44421120"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 254,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2a62d814-e649-4b0c-bd7b-ddc30860968e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2a62d814-e649-4b0c-bd7b-ddc30860968e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:15 GMT",
+          "x-amzn-RequestId": "2a62d814-e649-4b0c-bd7b-ddc30860968e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:16 PM"
+}

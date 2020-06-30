@@ -1,0 +1,265 @@
+{
+  "note": "at St Vincents and delivered a healthy baby girl at 7:30 am on Jan 4, 2008. The baby girl had a low birth weight of 1737 g, which is less than the ideal of 2,000 g. The infant presented with severe respiratory distress at birth, but a neonatal history was well documented. The patient and her baby were discharged from the neonatal intensive care unit (NICU) 2 hrs after birth.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 411,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 3,
+          "endOffset": 14,
+          "score": 0.88503766,
+          "text": "St Vincents",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 63,
+          "endOffset": 74,
+          "score": 0.9996942,
+          "text": "Jan 4, 2008",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 96,
+          "endOffset": 112,
+          "score": 0.5006265,
+          "text": "low birth weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5009802
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 198,
+          "endOffset": 218,
+          "score": 0.8978032,
+          "text": "respiratory distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 323,
+          "endOffset": 351,
+          "score": 0.29391995,
+          "text": "neonatal intensive care unit",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 353,
+          "endOffset": 357,
+          "score": 0.99483395,
+          "text": "NICU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "743bdd23-b8b3-488a-bc91-9f64690edf86"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "743bdd23-b8b3-488a-bc91-9f64690edf86"
+          ],
+          "Content-Length": [
+            "1069"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1069",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:35 GMT",
+          "x-amzn-RequestId": "743bdd23-b8b3-488a-bc91-9f64690edf86"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "low birth weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5006265,
+          "beginOffset": 96,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5009802
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.4653401
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.41573814
+            },
+            {
+              "description": "Low income",
+              "code": "Z59.6",
+              "score": 0.37754458
+            },
+            {
+              "description": "Anemia, unspecified",
+              "code": "D64.9",
+              "score": 0.35095945
+            },
+            {
+              "description": "Other low birth weight newborn, unspecified weight",
+              "code": "P07.10",
+              "score": 0.34522393
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "respiratory distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8978032,
+          "beginOffset": 198,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.6103494
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.40816385
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.40651545
+            },
+            {
+              "description": "Acute respiratory distress syndrome",
+              "code": "J80",
+              "score": 0.4016204
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.38419265
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "db501645-d9ba-4143-b5f3-4e6affc6f744"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "db501645-d9ba-4143-b5f3-4e6affc6f744"
+          ],
+          "Content-Length": [
+            "1349"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1349",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:36 GMT",
+          "x-amzn-RequestId": "db501645-d9ba-4143-b5f3-4e6affc6f744"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 246,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2e41f633-53cd-4487-8b36-a83c9c7cf286"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2e41f633-53cd-4487-8b36-a83c9c7cf286"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:36 GMT",
+          "x-amzn-RequestId": "2e41f633-53cd-4487-8b36-a83c9c7cf286"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:36 PM"
+}

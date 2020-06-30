@@ -1,0 +1,365 @@
+{
+  "note": ".  PEDIATRIC CHRONIC DISEASE:  Patient should follow doctor\u0027s advice on how to manage medications or therapy. FDA WARNINGS:  Contraindicated:  - In the setting of severe hepatic impairment due to diabetes insipidus drug interactions, drug should be taken only under the supervision of a health care professional. [See WARNINGS AND PRECAUTIONS ]  RINITROPIN:  Avoid oral RINITROPIN at dosage levels above 250 mg/day due to a significant increase in the risk associated with higher doses.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 344,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 13,
+          "endOffset": 28,
+          "score": 0.43953532,
+          "text": "CHRONIC DISEASE",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9332404
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 170,
+          "endOffset": 188,
+          "score": 0.9782453,
+          "text": "hepatic impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86094046
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 196,
+          "endOffset": 214,
+          "score": 0.87305117,
+          "text": "diabetes insipidus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9149264
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 346,
+          "endOffset": 356,
+          "score": 0.41697356,
+          "text": "RINITROPIN",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9794326,
+              "relationshipScore": 0.9995907,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 1,
+              "beginOffset": 365,
+              "endOffset": 369,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.73313767,
+              "relationshipScore": 0.9999819,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 404,
+              "endOffset": 414,
+              "text": "250 mg/day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 370,
+          "endOffset": 380,
+          "score": 0.95365936,
+          "text": "RINITROPIN",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9794326,
+              "relationshipScore": 0.99998665,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 1,
+              "beginOffset": 365,
+              "endOffset": 369,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.73313767,
+              "relationshipScore": 0.9496055,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 404,
+              "endOffset": 414,
+              "text": "250 mg/day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cae3bb62-1a3a-4cd1-9cbc-52fcf67d42d1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cae3bb62-1a3a-4cd1-9cbc-52fcf67d42d1"
+          ],
+          "Content-Length": [
+            "1850"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1850",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:42 GMT",
+          "x-amzn-RequestId": "cae3bb62-1a3a-4cd1-9cbc-52fcf67d42d1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "CHRONIC DISEASE",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.43953532,
+          "beginOffset": 13,
+          "endOffset": 28,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9332404
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.65302414
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6269642
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.6020222
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.5908962
+            },
+            {
+              "description": "Other chronic pain",
+              "code": "G89.29",
+              "score": 0.5848457
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hepatic impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9782453,
+          "beginOffset": 170,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86094046
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.5095841
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.41028762
+            },
+            {
+              "description": "Unspecified viral hepatitis B without hepatic coma",
+              "code": "B19.10",
+              "score": 0.35782078
+            },
+            {
+              "description": "Chronic hepatic failure without coma",
+              "code": "K72.10",
+              "score": 0.34700963
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.32461435
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diabetes insipidus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87305117,
+          "beginOffset": 196,
+          "endOffset": 214,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9149264
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.64564896
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.5820611
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.53645694
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.50580335
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.48735005
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b505a0c3-6b85-4d75-8f33-999600035eea"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b505a0c3-6b85-4d75-8f33-999600035eea"
+          ],
+          "Content-Length": [
+            "2394"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2394",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:43 GMT",
+          "x-amzn-RequestId": "b505a0c3-6b85-4d75-8f33-999600035eea"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 362,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "415be2f7-b458-497a-9ce2-b819056c92b1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "415be2f7-b458-497a-9ce2-b819056c92b1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:42 GMT",
+          "x-amzn-RequestId": "415be2f7-b458-497a-9ce2-b819056c92b1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:43 PM"
+}

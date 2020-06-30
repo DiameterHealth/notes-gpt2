@@ -1,0 +1,794 @@
+{
+  "note": "If symptoms start to worsen, call 999 immediately. (The following information has been extracted from the National Health Service (NHS) guidance) The National Institute for Clinical Excellence (NICE):  \"Amphetamines are contraindicated in a child on the ventilator or who has a respiratory or cardiac condition. Acetaminophen (paracetamol) should not be used in children and should not be administered with amphetamines in elderly patients as studies have shown that the metabolism of these drugs affects the body\u0027s tolerance. The risk of potentially fatal blood thinning in the elderly is more likely to occur if acetaminophen is used in combination with a stimulant medicine. The risk of blood thinning is most likely to occur when a drug is used as a standalone medicine or taken together with an oral anticoagulant used for angina pectoris, although it may also occur in patients treated with long-term methotrexate (sold under the brand name Diltiazem) or at some risk of bleeding. In some situations, it is beneficial to increase the dose of the first drug given. If the patient has symptoms of the common cold or is experiencing sneezing (also known as watery mucous), then the child is probably allergic to the drug. If the symptoms continue, it may be appropriate to increase the dose of the drug, take it more frequently when you are awake, change the child\u0027s medicine, or remove the medication from the child\u0027s medicine table.\"",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1082,
+    "data": {
+      "entities": [
+        {
+          "id": 13,
+          "beginOffset": 87,
+          "endOffset": 96,
+          "score": 0.34169933,
+          "text": "extracted",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 278,
+          "endOffset": 310,
+          "score": 0.3573351,
+          "text": "respiratory or cardiac condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 312,
+          "endOffset": 325,
+          "score": 0.99911267,
+          "text": "Acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 327,
+          "endOffset": 338,
+          "score": 0.97944206,
+          "text": "paracetamol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 551,
+          "endOffset": 571,
+          "score": 0.49864572,
+          "text": "fatal blood thinning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70606554
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 614,
+          "endOffset": 627,
+          "score": 0.9901335,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 658,
+          "endOffset": 676,
+          "score": 0.84926105,
+          "text": "stimulant medicine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 690,
+          "endOffset": 704,
+          "score": 0.9572389,
+          "text": "blood thinning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.65435994
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 800,
+          "endOffset": 818,
+          "score": 0.5109724,
+          "text": "oral anticoagulant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 828,
+          "endOffset": 843,
+          "score": 0.97838235,
+          "text": "angina pectoris",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96279484
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 907,
+          "endOffset": 919,
+          "score": 0.835304,
+          "text": "methotrexate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 947,
+          "endOffset": 956,
+          "score": 0.99047273,
+          "text": "Diltiazem",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 977,
+          "endOffset": 985,
+          "score": 0.99440825,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5033523
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4464518
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 1112,
+          "endOffset": 1116,
+          "score": 0.6284689,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41264012
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 1136,
+          "endOffset": 1144,
+          "score": 0.990393,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.85089016
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 1160,
+          "endOffset": 1173,
+          "score": 0.37153,
+          "text": "watery mucous",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75226176
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "77a4b73f-69cd-4846-848d-e1805db6a212"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "77a4b73f-69cd-4846-848d-e1805db6a212"
+          ],
+          "Content-Length": [
+            "2928"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2928",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:28 GMT",
+          "x-amzn-RequestId": "77a4b73f-69cd-4846-848d-e1805db6a212"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1320,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "respiratory or cardiac condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3573351,
+          "beginOffset": 278,
+          "endOffset": 310,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.74875665
+            },
+            {
+              "description": "Respiratory failure, unspecified with hypoxia",
+              "code": "J96.91",
+              "score": 0.7286525
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.72392064
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.72248095
+            },
+            {
+              "description": "Acute respiratory failure with hypoxia",
+              "code": "J96.01",
+              "score": 0.71659696
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fatal blood thinning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49864572,
+          "beginOffset": 551,
+          "endOffset": 571,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7060655
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.5984735
+            },
+            {
+              "description": "Disease of blood and blood-forming organs, unspecified",
+              "code": "D75.9",
+              "score": 0.5659295
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5605511
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.54737276
+            },
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.5435747
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "blood thinning",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9572389,
+          "beginOffset": 690,
+          "endOffset": 704,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6543599
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.643016
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.5983953
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.59219444
+            },
+            {
+              "description": "Disease of blood and blood-forming organs, unspecified",
+              "code": "D75.9",
+              "score": 0.5865529
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.557333
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "angina pectoris",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97838235,
+          "beginOffset": 828,
+          "endOffset": 843,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96279484
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.8280157
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.78007966
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.73493016
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.6767004
+            },
+            {
+              "description": "Other forms of angina pectoris",
+              "code": "I20.8",
+              "score": 0.67453027
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99440825,
+          "beginOffset": 977,
+          "endOffset": 985,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5033523
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4464518
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.7848179
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.7081876
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.6653306
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a circulatory system organ or structure complicating a cardiac catheterization",
+              "code": "I97.410",
+              "score": 0.63047284
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.59460694
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6284691,
+          "beginOffset": 1112,
+          "endOffset": 1116,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41264042
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.7590882
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6242659
+            },
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.610595
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.6014117
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.54906386
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.990393,
+          "beginOffset": 1136,
+          "endOffset": 1144,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8508901
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sneezing",
+              "code": "R06.7",
+              "score": 0.5553257
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "watery mucous",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37153003,
+          "beginOffset": 1160,
+          "endOffset": 1173,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7522617
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fluid overload, unspecified",
+              "code": "E87.70",
+              "score": 0.5921222
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.49596834
+            },
+            {
+              "description": "Unspecified epiphora, right side",
+              "code": "H04.201",
+              "score": 0.48915973
+            },
+            {
+              "description": "Unspecified epiphora, left side",
+              "code": "H04.202",
+              "score": 0.47453842
+            },
+            {
+              "description": "Unspecified epiphora, unspecified side",
+              "code": "H04.209",
+              "score": 0.4732572
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e748912e-702d-40e4-b0ea-d717f2675ba4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e748912e-702d-40e4-b0ea-d717f2675ba4"
+          ],
+          "Content-Length": [
+            "5595"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5595",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:30 GMT",
+          "x-amzn-RequestId": "e748912e-702d-40e4-b0ea-d717f2675ba4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1063,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99911267,
+          "beginOffset": 312,
+          "endOffset": 325,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6038662
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet",
+              "code": "313782",
+              "score": 0.59314084
+            },
+            {
+              "description": "Acetaminophen 650 MG Oral Tablet",
+              "code": "198444",
+              "score": 0.29524592
+            },
+            {
+              "description": "100 ML Acetaminophen 10 MG/ML Injection [Ofirmev]",
+              "code": "1041530",
+              "score": 0.27166602
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9901335,
+          "beginOffset": 614,
+          "endOffset": 627,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6038662
+            },
+            {
+              "description": "Acetaminophen 650 MG Oral Tablet",
+              "code": "198444",
+              "score": 0.29524592
+            },
+            {
+              "description": "100 ML Acetaminophen 10 MG/ML Injection [Ofirmev]",
+              "code": "1041530",
+              "score": 0.27166602
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Capsule [Tylenol]",
+              "code": "1738139",
+              "score": 0.08851672
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "methotrexate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.835304,
+          "beginOffset": 907,
+          "endOffset": 919,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Methotrexate",
+              "code": "6851",
+              "score": 0.9599671
+            },
+            {
+              "description": "Methotrexate 25 MG/ML Injectable Solution",
+              "code": "1946772",
+              "score": 0.73992205
+            },
+            {
+              "description": "0.55 ML Methotrexate 50 MG/ML Auto-Injector",
+              "code": "1544399",
+              "score": 0.69111925
+            },
+            {
+              "description": "0.6 ML Methotrexate 50 MG/ML Auto-Injector",
+              "code": "1544401",
+              "score": 0.6622528
+            },
+            {
+              "description": "0.5 ML Methotrexate 50 MG/ML Auto-Injector",
+              "code": "1544397",
+              "score": 0.631544
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Diltiazem",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99047273,
+          "beginOffset": 947,
+          "endOffset": 956,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Diltiazem",
+              "code": "3443",
+              "score": 0.9794701
+            },
+            {
+              "description": "24 HR Diltiazem Hydrochloride 240 MG Extended Release Oral Tablet",
+              "code": "830879",
+              "score": 0.8095121
+            },
+            {
+              "description": "24 HR Diltiazem Hydrochloride 240 MG Extended Release Oral Capsule [Cardizem]",
+              "code": "830839",
+              "score": 0.20761606
+            },
+            {
+              "description": "24 HR Diltiazem Hydrochloride 240 MG Extended Release Oral Tablet [Matzim]",
+              "code": "1091629",
+              "score": 0.20497268
+            },
+            {
+              "description": "24 HR Diltiazem Hydrochloride 120 MG Extended Release Oral Capsule [Cartia]",
+              "code": "831226",
+              "score": 0.18283826
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "669a9572-70ef-44bc-9a72-47dae5ca7c5f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "669a9572-70ef-44bc-9a72-47dae5ca7c5f"
+          ],
+          "Content-Length": [
+            "2819"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2819",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:29 GMT",
+          "x-amzn-RequestId": "669a9572-70ef-44bc-9a72-47dae5ca7c5f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:31 PM"
+}

@@ -1,0 +1,643 @@
+{
+  "note": "that might occur with ulcer healing. Pt\u0027s ulcer was treated with antibiotics on a 5day schedule. She was asked to return to work on Monday, September 9th and has not felt any pain. She has continued to have swelling and will continue with follow up work. Laboratory Values: HR of 65, BP of 130/80, HR of 130/80 and a normal PEEP of 5mm Hg.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 746,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 22,
+          "endOffset": 35,
+          "score": 0.5899437,
+          "text": "ulcer healing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41496712
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 42,
+          "endOffset": 47,
+          "score": 0.9762729,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7893873
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 65,
+          "endOffset": 76,
+          "score": 0.62361974,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 65,
+          "endOffset": 76,
+          "score": 0.82863367,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 82,
+          "endOffset": 86,
+          "score": 0.9736085,
+          "text": "5day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9762729,
+              "relationshipScore": 0.51705015,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 42,
+              "endOffset": 47,
+              "text": "ulcer",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7893873
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 82,
+          "endOffset": 86,
+          "score": 0.9736085,
+          "text": "5day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.62361974,
+              "relationshipScore": 0.9712044,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 65,
+              "endOffset": 76,
+              "text": "antibiotics",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 82,
+          "endOffset": 86,
+          "score": 0.9736085,
+          "text": "5day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.82863367,
+              "relationshipScore": 0.9712044,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 65,
+              "endOffset": 76,
+              "text": "antibiotics",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 132,
+          "endOffset": 153,
+          "score": 0.97902757,
+          "text": "Monday, September 9th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9821869,
+              "relationshipScore": 0.6999897,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 175,
+              "endOffset": 179,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.80468
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.89945716
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 132,
+          "endOffset": 153,
+          "score": 0.9575337,
+          "text": "Monday, September 9th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 175,
+          "endOffset": 179,
+          "score": 0.9821869,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.80468
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89945716
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 207,
+          "endOffset": 215,
+          "score": 0.9835507,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77796507
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 255,
+          "endOffset": 272,
+          "score": 0.30401328,
+          "text": "Laboratory Values",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 274,
+          "endOffset": 276,
+          "score": 0.9996872,
+          "text": "HR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99915075,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 280,
+              "endOffset": 282,
+              "text": "65",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 284,
+          "endOffset": 286,
+          "score": 0.9978836,
+          "text": "BP",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99855274,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 290,
+              "endOffset": 296,
+              "text": "130/80",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 298,
+          "endOffset": 300,
+          "score": 0.9993625,
+          "text": "HR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99738127,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 304,
+              "endOffset": 310,
+              "text": "130/80",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 324,
+          "endOffset": 328,
+          "score": 0.9848045,
+          "text": "PEEP",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9178155,
+              "relationshipScore": 0.9318614,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 317,
+              "endOffset": 323,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 336,
+          "endOffset": 338,
+          "score": 0.4440431,
+          "text": "Hg",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9178155,
+              "relationshipScore": 0.7070692,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 317,
+              "endOffset": 323,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.7610445,
+            "id": 16,
+            "beginOffset": 332,
+            "endOffset": 335,
+            "text": "5mm",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eb77ea3e-58f2-4db6-b95a-0204acbfbd8b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eb77ea3e-58f2-4db6-b95a-0204acbfbd8b"
+          ],
+          "Content-Length": [
+            "5356"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5356",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:45 GMT",
+          "x-amzn-RequestId": "eb77ea3e-58f2-4db6-b95a-0204acbfbd8b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 594,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ulcer healing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.58994395,
+          "beginOffset": 22,
+          "endOffset": 35,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41496712
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.69911873
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.6792636
+            },
+            {
+              "description": "Personal history of diseases of the skin and subcutaneous tissue",
+              "code": "Z87.2",
+              "score": 0.65525293
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.6437334
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.6400735
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9762729,
+          "beginOffset": 42,
+          "endOffset": 47,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7893873
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.6918358
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.67151016
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.6656495
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.6653678
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.64675325
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9821869,
+          "beginOffset": 175,
+          "endOffset": 179,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.80468
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89945716
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7176076
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5316772
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5204265
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5056668
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4952414
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98355085,
+          "beginOffset": 207,
+          "endOffset": 215,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7779651
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.81806624
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.81561625
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.75948745
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.7413273
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.73638815
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d26b1af2-2129-484a-8a1f-756b59904756"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d26b1af2-2129-484a-8a1f-756b59904756"
+          ],
+          "Content-Length": [
+            "3224"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3224",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:46 GMT",
+          "x-amzn-RequestId": "d26b1af2-2129-484a-8a1f-756b59904756"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 222,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "00c1f4f2-7792-4dab-bb52-4f49466a6543"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "00c1f4f2-7792-4dab-bb52-4f49466a6543"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:46 GMT",
+          "x-amzn-RequestId": "00c1f4f2-7792-4dab-bb52-4f49466a6543"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:47 PM"
+}

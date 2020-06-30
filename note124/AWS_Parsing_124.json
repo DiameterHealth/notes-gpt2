@@ -1,0 +1,362 @@
+{
+  "note": "Fever and urinary symptoms: Should these symptoms return please contact your family doctor urgently or visit your nearest emergency department. PURPOSE: We did a systematic review of all randomised controlled trials (RCTs) investigating the effect of nafarelin in improving symptoms related to irritable bowel syndrome in children and adolescents. METHODS: We searched MEDLINE, EMBASE, SCOPUS and CENTRAL, up to 23 Nov 2013.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 263,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 0,
+          "endOffset": 5,
+          "score": 0.92342144,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6224659
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 10,
+          "endOffset": 26,
+          "score": 0.9456983,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.814319
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 122,
+          "endOffset": 142,
+          "score": 0.9699841,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 251,
+          "endOffset": 260,
+          "score": 0.9164399,
+          "text": "nafarelin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 294,
+          "endOffset": 318,
+          "score": 0.903875,
+          "text": "irritable bowel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8983339
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 304,
+          "endOffset": 309,
+          "score": 0.7320021,
+          "text": "bowel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 412,
+          "endOffset": 423,
+          "score": 0.99336797,
+          "text": "23 Nov 2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eba9d208-f62e-480b-bec5-633418e4b5cf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eba9d208-f62e-480b-bec5-633418e4b5cf"
+          ],
+          "Content-Length": [
+            "1279"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1279",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:21 GMT",
+          "x-amzn-RequestId": "eba9d208-f62e-480b-bec5-633418e4b5cf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 999,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92342144,
+          "beginOffset": 0,
+          "endOffset": 5,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6224659
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.82600033
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.52334815
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45216912
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.44026515
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.39379993
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9456983,
+          "beginOffset": 10,
+          "endOffset": 26,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.814319
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.82301474
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.6992806
+            },
+            {
+              "description": "Other symptoms and signs involving the genitourinary system",
+              "code": "R39.89",
+              "score": 0.6914271
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6406591
+            },
+            {
+              "description": "Painful micturition, unspecified",
+              "code": "R30.9",
+              "score": 0.63089883
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "irritable bowel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.903875,
+          "beginOffset": 294,
+          "endOffset": 318,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8983339
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Irritable bowel syndrome with constipation",
+              "code": "K58.1",
+              "score": 0.6930665
+            },
+            {
+              "description": "Irritable bowel syndrome without diarrhea",
+              "code": "K58.9",
+              "score": 0.6890026
+            },
+            {
+              "description": "Irritable bowel syndrome with diarrhea",
+              "code": "K58.0",
+              "score": 0.6637583
+            },
+            {
+              "description": "Irritability and anger",
+              "code": "R45.4",
+              "score": 0.50442076
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.47919086
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1920fd41-bf25-4f13-9b7d-0cedf772ff1d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1920fd41-bf25-4f13-9b7d-0cedf772ff1d"
+          ],
+          "Content-Length": [
+            "2165"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2165",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:22 GMT",
+          "x-amzn-RequestId": "1920fd41-bf25-4f13-9b7d-0cedf772ff1d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 280,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nafarelin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9164399,
+          "beginOffset": 251,
+          "endOffset": 260,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Nafarelin",
+              "code": "28656",
+              "score": 0.94489026
+            },
+            {
+              "description": "Nafarelin 0.2 MG/ACTUAT Metered Dose Nasal Spray",
+              "code": "1797878",
+              "score": 0.5992307
+            },
+            {
+              "description": "Nafarelin 0.2 MG/ACTUAT Metered Dose Nasal Spray [Synarel]",
+              "code": "1797880",
+              "score": 0.20314048
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "917a7002-39d5-48f4-9ea9-df84ca248927"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "917a7002-39d5-48f4-9ea9-df84ca248927"
+          ],
+          "Content-Length": [
+            "521"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "521",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:21 GMT",
+          "x-amzn-RequestId": "917a7002-39d5-48f4-9ea9-df84ca248927"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:22 PM"
+}

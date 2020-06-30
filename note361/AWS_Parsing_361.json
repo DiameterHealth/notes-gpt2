@@ -1,0 +1,511 @@
+{
+  "note": "Patient is complicated with obstructive sleep apnea but does not meet criteria for the diagnosis (e.g. \u003e30% sleep apnea in the last 12 months), patient is underweight and overweight (see obesity section), and patient is pregnant Clinical Question(s) What questions should a physician ask in order to assess for possible diagnosis of obstructive sleep apnea The physician must be a careful and dispassionate observer The physician must have an accurate sleep test (or sleep study)   that demonstrates the prevalence of obstructive sleep apnea within that patient\u0027s patient population Clinical Scenarios As I have written about in the past for those who follow me on Twitter, my wife and I recently decided to give ourselves the ability to monitor the effectiveness of our exercise program with an exercise watch.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 695,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 28,
+          "endOffset": 51,
+          "score": 0.7707273,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9507958
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 108,
+          "endOffset": 119,
+          "score": 0.9040544,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9418971
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 127,
+          "endOffset": 141,
+          "score": 0.9996507,
+          "text": "last 12 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9040544,
+              "relationshipScore": 0.64165944,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 108,
+              "endOffset": 119,
+              "text": "sleep apnea",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9418971
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 171,
+          "endOffset": 181,
+          "score": 0.8072623,
+          "text": "overweight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.722071
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 187,
+          "endOffset": 194,
+          "score": 0.8771875,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9337951
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 333,
+          "endOffset": 356,
+          "score": 0.9311721,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9696618
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 452,
+          "endOffset": 462,
+          "score": 0.88438433,
+          "text": "sleep test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 467,
+          "endOffset": 478,
+          "score": 0.98757243,
+          "text": "sleep study",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 518,
+          "endOffset": 541,
+          "score": 0.8985794,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9442525
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 771,
+          "endOffset": 787,
+          "score": 0.5596865,
+          "text": "exercise program",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2c43004-fafe-40d5-bd90-aed427987cd2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2c43004-fafe-40d5-bd90-aed427987cd2"
+          ],
+          "Content-Length": [
+            "2206"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2206",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:12 GMT",
+          "x-amzn-RequestId": "b2c43004-fafe-40d5-bd90-aed427987cd2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 855,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7707273,
+          "beginOffset": 28,
+          "endOffset": 51,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9507958
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.820739
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.58973783
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.47050104
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.4314662
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.32615358
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9040545,
+          "beginOffset": 108,
+          "endOffset": 119,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9418971
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.5634731
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.54841304
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.36872327
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.28409648
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.26592404
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "overweight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8072621,
+          "beginOffset": 171,
+          "endOffset": 181,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7220709
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Overweight",
+              "code": "E66.3",
+              "score": 0.5965978
+            },
+            {
+              "description": "Overweight and obesity",
+              "code": "E66",
+              "score": 0.45629948
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8771876,
+          "beginOffset": 187,
+          "endOffset": 194,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9337951
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.7615134
+            },
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.7483128
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.61177963
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.60036206
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.59865576
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9311721,
+          "beginOffset": 333,
+          "endOffset": 356,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9696618
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.76750183
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.479115
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.36406228
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.32238925
+            },
+            {
+              "description": "Other sleep apnea",
+              "code": "G47.39",
+              "score": 0.32146323
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8985794,
+          "beginOffset": 518,
+          "endOffset": 541,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9442525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.8131116
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.5359192
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.41863275
+            },
+            {
+              "description": "Other sleep apnea",
+              "code": "G47.39",
+              "score": 0.36717045
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.35701495
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "41210d67-b6e6-40c7-bf50-f2bc42807e58"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "41210d67-b6e6-40c7-bf50-f2bc42807e58"
+          ],
+          "Content-Length": [
+            "3878"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3878",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:14 GMT",
+          "x-amzn-RequestId": "41210d67-b6e6-40c7-bf50-f2bc42807e58"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 381,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c4932153-966d-4317-b06f-6411f2b0f8f5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c4932153-966d-4317-b06f-6411f2b0f8f5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:12 GMT",
+          "x-amzn-RequestId": "c4932153-966d-4317-b06f-6411f2b0f8f5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:14 PM"
+}

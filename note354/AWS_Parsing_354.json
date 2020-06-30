@@ -1,0 +1,703 @@
+{
+  "note": "X-rays clear. No fracture. The knee pains persisted for 2 months and were treated with physical therapy and TKE. Exam revealed a 2.0 GAL during walking on level ground with a 0.4 GAL on stair with no history of chronic leg pain. Ankle is stable, but not straight despite TKE. Knee pain is present as of 2 months following a TKE.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 624,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 0,
+          "endOffset": 6,
+          "score": 0.96894956,
+          "text": "X-rays",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6006437,
+              "relationshipScore": 0.99997914,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 7,
+              "endOffset": 12,
+              "text": "clear",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.62582445,
+              "relationshipScore": 0.9979095,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 14,
+              "endOffset": 25,
+              "text": "No fracture",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "score": 0.98041534,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8429142
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8948179
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 31,
+          "endOffset": 35,
+          "score": 0.98882246,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 31,
+          "endOffset": 41,
+          "score": 0.7909604,
+          "text": "knee pains",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4967129
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98882246,
+              "relationshipScore": 0.60039127,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 31,
+              "endOffset": 35,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.35267365,
+              "relationshipScore": 1.0,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 42,
+              "endOffset": 64,
+              "text": "persisted for 2 months",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 56,
+          "endOffset": 64,
+          "score": 0.7337842,
+          "text": "2 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7909604,
+              "relationshipScore": 0.95484614,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 31,
+              "endOffset": 41,
+              "text": "knee pains",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.4967129
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 87,
+          "endOffset": 103,
+          "score": 0.93159235,
+          "text": "physical therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 113,
+          "endOffset": 117,
+          "score": 0.41286606,
+          "text": "Exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.93042946,
+              "relationshipScore": 0.99999475,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 129,
+              "endOffset": 132,
+              "text": "2.0",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 219,
+          "endOffset": 222,
+          "score": 0.9863826,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 219,
+          "endOffset": 227,
+          "score": 0.94931406,
+          "text": "leg pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.82887715
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9902642,
+              "relationshipScore": 0.9999888,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 211,
+              "endOffset": 218,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 229,
+          "endOffset": 234,
+          "score": 0.9746867,
+          "text": "Ankle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 229,
+          "endOffset": 244,
+          "score": 0.8973861,
+          "text": "Ankle is stable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.84831065
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 276,
+          "endOffset": 280,
+          "score": 0.9701691,
+          "text": "Knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 276,
+          "endOffset": 285,
+          "score": 0.7842264,
+          "text": "Knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.51340616
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 297,
+          "endOffset": 299,
+          "score": 0.6265259,
+          "text": "as",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7842264,
+              "relationshipScore": 0.9249555,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 276,
+              "endOffset": 285,
+              "text": "Knee pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.51340616
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 303,
+          "endOffset": 311,
+          "score": 0.8158024,
+          "text": "2 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7842264,
+              "relationshipScore": 0.83658147,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 276,
+              "endOffset": 285,
+              "text": "Knee pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.51340616
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.35267365,
+            "id": 6,
+            "beginOffset": 42,
+            "endOffset": 64,
+            "text": "persisted for 2 months",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9902642,
+            "id": 7,
+            "beginOffset": 211,
+            "endOffset": 218,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b113adb3-b82a-4f40-9f89-6000e135093d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b113adb3-b82a-4f40-9f89-6000e135093d"
+          ],
+          "Content-Length": [
+            "5193"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5193",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:02 GMT",
+          "x-amzn-RequestId": "b113adb3-b82a-4f40-9f89-6000e135093d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 696,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98041534,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8429142
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8948179
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.7061204
+            },
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.66986895
+            },
+            {
+              "description": "Unspecified fracture of left patella",
+              "code": "S82.002",
+              "score": 0.65431404
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.62393093
+            },
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.6235069
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "knee pains",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7909604,
+          "beginOffset": 31,
+          "endOffset": 41,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35267365,
+              "relationshipScore": 1.0,
+              "id": 3,
+              "beginOffset": 42,
+              "endOffset": 64,
+              "text": "persisted for 2 months",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49671283
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.60647094
+            },
+            {
+              "description": "Pain in unspecified knee",
+              "code": "M25.569",
+              "score": 0.5833592
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.56397766
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.44147474
+            },
+            {
+              "description": "Pain in left thigh",
+              "code": "M79.652",
+              "score": 0.38108394
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "leg pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94931406,
+          "beginOffset": 219,
+          "endOffset": 227,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9902642,
+              "relationshipScore": 0.9999888,
+              "id": 4,
+              "beginOffset": 211,
+              "endOffset": 218,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.82887715
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in leg, unspecified",
+              "code": "M79.606",
+              "score": 0.49858707
+            },
+            {
+              "description": "Pain in left leg",
+              "code": "M79.605",
+              "score": 0.4847618
+            },
+            {
+              "description": "Pain in unspecified lower leg",
+              "code": "M79.669",
+              "score": 0.48121428
+            },
+            {
+              "description": "Pain in left lower leg",
+              "code": "M79.662",
+              "score": 0.47463006
+            },
+            {
+              "description": "Other chronic pain",
+              "code": "G89.29",
+              "score": 0.45321432
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Ankle is stable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8973861,
+          "beginOffset": 229,
+          "endOffset": 244,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.84831065
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Effusion, unspecified ankle",
+              "code": "M25.473",
+              "score": 0.53835714
+            },
+            {
+              "description": "Pain in right ankle and joints of right foot",
+              "code": "M25.571",
+              "score": 0.5105335
+            },
+            {
+              "description": "Pain in unspecified ankle and joints of unspecified foot",
+              "code": "M25.579",
+              "score": 0.4829313
+            },
+            {
+              "description": "Effusion, right ankle",
+              "code": "M25.471",
+              "score": 0.47387007
+            },
+            {
+              "description": "Sprain of unspecified ligament of right ankle",
+              "code": "S93.401",
+              "score": 0.46596617
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78422654,
+          "beginOffset": 276,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.51340616
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.60872656
+            },
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.6042319
+            },
+            {
+              "description": "Pain in unspecified knee",
+              "code": "M25.569",
+              "score": 0.5779442
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.43699446
+            },
+            {
+              "description": "Pain in left thigh",
+              "code": "M79.652",
+              "score": 0.35189056
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4b9c43da-7420-4a47-ad16-8200e435945c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4b9c43da-7420-4a47-ad16-8200e435945c"
+          ],
+          "Content-Length": [
+            "3771"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3771",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:04 GMT",
+          "x-amzn-RequestId": "4b9c43da-7420-4a47-ad16-8200e435945c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 207,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8ea6e0b5-20c7-42db-ab4f-3d10a0d42e28"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8ea6e0b5-20c7-42db-ab4f-3d10a0d42e28"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:02 GMT",
+          "x-amzn-RequestId": "8ea6e0b5-20c7-42db-ab4f-3d10a0d42e28"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:04 PM"
+}

@@ -1,0 +1,300 @@
+{
+  "note": "Her water broke early in the morning. She was then given a dilation of the cervix by a midwife. There was a delay in giving her oxytocin. ED: What kind of response did she have when she had an epidural? MCS: The patient did not have a reaction. MCS: There is some concern that there may be an adverse reaction to the anesthesia given in the epidural.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 296,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 59,
+          "endOffset": 81,
+          "score": 0.59532547,
+          "text": "dilation of the cervix",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 75,
+          "endOffset": 81,
+          "score": 0.99060374,
+          "text": "cervix",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 128,
+          "endOffset": 136,
+          "score": 0.8260435,
+          "text": "oxytocin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 138,
+          "endOffset": 140,
+          "score": 0.51660687,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 193,
+          "endOffset": 201,
+          "score": 0.36212498,
+          "text": "epidural",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 293,
+          "endOffset": 309,
+          "score": 0.7137461,
+          "text": "adverse reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5987719
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 317,
+          "endOffset": 327,
+          "score": 0.44674104,
+          "text": "anesthesia",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.53694695,
+              "relationshipScore": 0.9998877,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 341,
+              "endOffset": 349,
+              "text": "epidural",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 317,
+          "endOffset": 327,
+          "score": 0.62863827,
+          "text": "anesthesia",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a3cc4268-ae0f-4912-82b5-4c35d6cbfbca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a3cc4268-ae0f-4912-82b5-4c35d6cbfbca"
+          ],
+          "Content-Length": [
+            "1590"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1590",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:29 GMT",
+          "x-amzn-RequestId": "a3cc4268-ae0f-4912-82b5-4c35d6cbfbca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 367,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "adverse reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7137461,
+          "beginOffset": 293,
+          "endOffset": 309,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59877187
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.77097213
+            },
+            {
+              "description": "Adverse effect of local astringents and local detergents",
+              "code": "T49.2X5",
+              "score": 0.6863703
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6408179
+            },
+            {
+              "description": "Adverse effect of unspecified drugs, medicaments and biological substances",
+              "code": "T50.905",
+              "score": 0.6395754
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.6313671
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8c3ce1d0-c38d-4d60-8977-7379d7370464"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8c3ce1d0-c38d-4d60-8977-7379d7370464"
+          ],
+          "Content-Length": [
+            "836"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "836",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:30 GMT",
+          "x-amzn-RequestId": "8c3ce1d0-c38d-4d60-8977-7379d7370464"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 361,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "oxytocin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.82604367,
+          "beginOffset": 128,
+          "endOffset": 136,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Oxytocin",
+              "code": "7824",
+              "score": 0.9400964
+            },
+            {
+              "description": "Oxytocin 10 UNT/ML Injectable Solution",
+              "code": "238013",
+              "score": 0.77743447
+            },
+            {
+              "description": "Oxytocin 10 UNT/ML Injectable Solution [Pitocin]",
+              "code": "207315",
+              "score": 0.4910121
+            },
+            {
+              "description": "1 ML Oxytocin 10 UNT/ML Injection",
+              "code": "1791721",
+              "score": 0.41024116
+            },
+            {
+              "description": "1 ML Oxytocin 10 UNT/ML Injection [Pitocin]",
+              "code": "1791723",
+              "score": 0.28922486
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b0823310-7ced-4d4a-a88f-a6f73f57419b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b0823310-7ced-4d4a-a88f-a6f73f57419b"
+          ],
+          "Content-Length": [
+            "699"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "699",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:29 GMT",
+          "x-amzn-RequestId": "b0823310-7ced-4d4a-a88f-a6f73f57419b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:30 PM"
+}

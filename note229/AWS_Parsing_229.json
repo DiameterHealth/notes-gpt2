@@ -1,0 +1,245 @@
+{
+  "note": ". He is a patient with an initial coronary syndrome. Study: 1) The primary endpoint was the number of patients who experienced a serious adverse cardiac event. 2) The secondary endpoint was the proportion of patients who were alive 1 month after hospital discharge without a major cardiovascular event. Study: In addition to the 7+3 induction, the cardiac catheterization technique was used.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 279,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 34,
+          "endOffset": 51,
+          "score": 0.9765204,
+          "text": "coronary syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9634321
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 137,
+          "endOffset": 158,
+          "score": 0.36408466,
+          "text": "adverse cardiac event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75434697
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 348,
+          "endOffset": 371,
+          "score": 0.5555182,
+          "text": "cardiac catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f8b781f0-5a83-41b6-89f2-369007c8aa5a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f8b781f0-5a83-41b6-89f2-369007c8aa5a"
+          ],
+          "Content-Length": [
+            "648"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "648",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:01 GMT",
+          "x-amzn-RequestId": "f8b781f0-5a83-41b6-89f2-369007c8aa5a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 879,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "coronary syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9765204,
+          "beginOffset": 34,
+          "endOffset": 51,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9634321
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.8161504
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.7818825
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.7674347
+            },
+            {
+              "description": "Coronary angioplasty status",
+              "code": "Z98.61",
+              "score": 0.727144
+            },
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.70277286
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "adverse cardiac event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36408466,
+          "beginOffset": 137,
+          "endOffset": 158,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75434697
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac murmur, unspecified",
+              "code": "R01.1",
+              "score": 0.7197911
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.7110048
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.70288885
+            },
+            {
+              "description": "Intraoperative cardiac arrest during cardiac surgery",
+              "code": "I97.710",
+              "score": 0.70240325
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.69983053
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b4ff64e7-48cc-4392-8833-5c032ca21f02"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b4ff64e7-48cc-4392-8833-5c032ca21f02"
+          ],
+          "Content-Length": [
+            "1525"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1525",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:02 GMT",
+          "x-amzn-RequestId": "b4ff64e7-48cc-4392-8833-5c032ca21f02"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 203,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3325e2b4-8c92-482d-9fa0-d9b7ba2407f1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3325e2b4-8c92-482d-9fa0-d9b7ba2407f1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:01 GMT",
+          "x-amzn-RequestId": "3325e2b4-8c92-482d-9fa0-d9b7ba2407f1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:03 PM"
+}

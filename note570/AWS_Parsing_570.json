@@ -1,0 +1,235 @@
+{
+  "note": "in 3 weeks. No other history of illness is found. I am sending her a copy of the report with my comments here. As much as I want to help, I have no idea how to address this situation. Thanks. Is this patient pregnant ?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 171,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 32,
+          "endOffset": 39,
+          "score": 0.47204208,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.58088017
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 208,
+          "endOffset": 216,
+          "score": 0.97417194,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9236031
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "850b1a9e-408a-4679-aed5-8d61bbe96e8a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "850b1a9e-408a-4679-aed5-8d61bbe96e8a"
+          ],
+          "Content-Length": [
+            "447"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "447",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:33 GMT",
+          "x-amzn-RequestId": "850b1a9e-408a-4679-aed5-8d61bbe96e8a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 274,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.47204193,
+          "beginOffset": 32,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5808799
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.79592735
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6835234
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.6519958
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.62959474
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.62856495
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97417194,
+          "beginOffset": 208,
+          "endOffset": 216,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9236031
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7122287
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.58399206
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5586702
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.5161192
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.50223684
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1ef51fc-095d-4164-af6a-60254ed7edb6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1ef51fc-095d-4164-af6a-60254ed7edb6"
+          ],
+          "Content-Length": [
+            "1449"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1449",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:33 GMT",
+          "x-amzn-RequestId": "b1ef51fc-095d-4164-af6a-60254ed7edb6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 145,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c401c256-67e0-410f-9a58-86e52e659120"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c401c256-67e0-410f-9a58-86e52e659120"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:33 GMT",
+          "x-amzn-RequestId": "c401c256-67e0-410f-9a58-86e52e659120"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:33 PM"
+}

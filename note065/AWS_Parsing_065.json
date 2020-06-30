@@ -1,0 +1,380 @@
+{
+  "note": "Management: A rapid diagnosis and effective treatment of the underlying cause is important. The treatment of the underlying cause may be required. A diagnosis, evaluation and management of the underlying cause (eg. infection) is the starting point for the treatment of the associated pathophysiology. Diagnosis of acute pyelonephritis  When the clinical history of acute pyelonephritis is available, the clinician should perform a complete physical examination (Table).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 369,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "score": 0.96744543,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89893425
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 320,
+          "endOffset": 334,
+          "score": 0.9995598,
+          "text": "pyelonephritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9707662
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8896554,
+              "relationshipScore": 0.99997413,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 314,
+              "endOffset": 319,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 371,
+          "endOffset": 385,
+          "score": 0.9965738,
+          "text": "pyelonephritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96129507
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7942796,
+              "relationshipScore": 0.9999186,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 365,
+              "endOffset": 370,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 440,
+          "endOffset": 460,
+          "score": 0.75272286,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8896554,
+            "id": 1,
+            "beginOffset": 314,
+            "endOffset": 319,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.7942796,
+            "id": 3,
+            "beginOffset": 365,
+            "endOffset": 370,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c0f0445d-e079-4f4e-b5b2-de7602108352"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c0f0445d-e079-4f4e-b5b2-de7602108352"
+          ],
+          "Content-Length": [
+            "1647"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1647",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:00 GMT",
+          "x-amzn-RequestId": "c0f0445d-e079-4f4e-b5b2-de7602108352"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 542,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96744543,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89893425
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7745465
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.765562
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.75219744
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.7146253
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7072435
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pyelonephritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9995598,
+          "beginOffset": 320,
+          "endOffset": 334,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8896553,
+              "relationshipScore": 0.99997413,
+              "id": 1,
+              "beginOffset": 314,
+              "endOffset": 319,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9707662
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pyelonephritis",
+              "code": "N10",
+              "score": 0.80838805
+            },
+            {
+              "description": "Tubulo-interstitial nephritis, not specified as acute or chronic",
+              "code": "N12",
+              "score": 0.67252564
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.5236665
+            },
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.5086596
+            },
+            {
+              "description": "Sarcoid pyelonephritis",
+              "code": "D86.84",
+              "score": 0.37824905
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pyelonephritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9965738,
+          "beginOffset": 371,
+          "endOffset": 385,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7942796,
+              "relationshipScore": 0.9999186,
+              "id": 3,
+              "beginOffset": 365,
+              "endOffset": 370,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96129507
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pyelonephritis",
+              "code": "N10",
+              "score": 0.80750275
+            },
+            {
+              "description": "Tubulo-interstitial nephritis, not specified as acute or chronic",
+              "code": "N12",
+              "score": 0.67038167
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.5166707
+            },
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.50677013
+            },
+            {
+              "description": "Sarcoid pyelonephritis",
+              "code": "D86.84",
+              "score": 0.37513405
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "33b77118-1305-4fef-ae62-43e16a9457fc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "33b77118-1305-4fef-ae62-43e16a9457fc"
+          ],
+          "Content-Length": [
+            "2493"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2493",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:01 GMT",
+          "x-amzn-RequestId": "33b77118-1305-4fef-ae62-43e16a9457fc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "453666ee-ff92-475b-8b4e-d1cc6119882f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "453666ee-ff92-475b-8b4e-d1cc6119882f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:00 GMT",
+          "x-amzn-RequestId": "453666ee-ff92-475b-8b4e-d1cc6119882f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:01 PM"
+}

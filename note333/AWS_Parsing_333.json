@@ -1,0 +1,446 @@
+{
+  "note": ".  DISCRIMINATION:  I work in a primary care practice with many female patients and male physicians as well as staff. There are usually two male physicians to every female. The staff can not recall ever seeing any females with sore throat with sore throat, flu like symptoms and cough. CLINICAL FINDINGS:  Phenylephrine was not identified as a treatment in this patient.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 524,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 111,
+          "endOffset": 116,
+          "score": 0.27996582,
+          "text": "staff",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 227,
+          "endOffset": 238,
+          "score": 0.8446747,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8565802
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.48915058
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 232,
+          "endOffset": 238,
+          "score": 0.9732299,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 244,
+          "endOffset": 255,
+          "score": 0.89834154,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8978893
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.46788758
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 249,
+          "endOffset": 255,
+          "score": 0.98804736,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 257,
+          "endOffset": 274,
+          "score": 0.78296655,
+          "text": "flu like symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8498292
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 279,
+          "endOffset": 284,
+          "score": 0.98730856,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8327217
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 306,
+          "endOffset": 319,
+          "score": 0.8363992,
+          "text": "Phenylephrine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "73b33fce-9d2f-496b-9c13-883181e8e66e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "73b33fce-9d2f-496b-9c13-883181e8e66e"
+          ],
+          "Content-Length": [
+            "1541"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1541",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:26 GMT",
+          "x-amzn-RequestId": "73b33fce-9d2f-496b-9c13-883181e8e66e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 600,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8446745,
+          "beginOffset": 227,
+          "endOffset": 238,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8565802
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.48915064
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.76098704
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.5092401
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.5006194
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.49817124
+            },
+            {
+              "description": "Gonococcal pharyngitis",
+              "code": "A54.5",
+              "score": 0.44035053
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89834154,
+          "beginOffset": 244,
+          "endOffset": 255,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8978892
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.46788764
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.7723917
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.50295305
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.5009104
+            },
+            {
+              "description": "Gonococcal pharyngitis",
+              "code": "A54.5",
+              "score": 0.44264105
+            },
+            {
+              "description": "Other lesions of oral mucosa",
+              "code": "K13.79",
+              "score": 0.4249742
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "flu like symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78296655,
+          "beginOffset": 257,
+          "endOffset": 274,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8498292
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.8678363
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.72550404
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus",
+              "code": "J11",
+              "score": 0.7017363
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.66721094
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.66086704
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98730856,
+          "beginOffset": 279,
+          "endOffset": 284,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8327217
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.84534895
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.61632717
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.60994077
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.59510875
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5663516
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a6cee153-ee3f-4a5d-a429-e7bf6313b64e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a6cee153-ee3f-4a5d-a429-e7bf6313b64e"
+          ],
+          "Content-Length": [
+            "2941"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2941",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:28 GMT",
+          "x-amzn-RequestId": "a6cee153-ee3f-4a5d-a429-e7bf6313b64e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 420,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Phenylephrine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8363992,
+          "beginOffset": 306,
+          "endOffset": 319,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Phenylephrine",
+              "code": "8163",
+              "score": 0.929258
+            },
+            {
+              "description": "PHENYLEHRINE",
+              "code": "325517",
+              "score": 0.8158424
+            },
+            {
+              "description": "Phenylephrine Hydrochloride 100 MG/ML Ophthalmic Solution",
+              "code": "1234571",
+              "score": 0.40497157
+            },
+            {
+              "description": "Phenylephrine Hydrochloride 25 MG/ML Ophthalmic Solution",
+              "code": "1234579",
+              "score": 0.31557366
+            },
+            {
+              "description": "Phenylephrine 10 MG Oral Strip",
+              "code": "705164",
+              "score": 0.023270408
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ace3edb6-e5c1-4ea2-abea-3dc333891662"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ace3edb6-e5c1-4ea2-abea-3dc333891662"
+          ],
+          "Content-Length": [
+            "704"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "704",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:26 GMT",
+          "x-amzn-RequestId": "ace3edb6-e5c1-4ea2-abea-3dc333891662"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:28 PM"
+}

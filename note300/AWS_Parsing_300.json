@@ -1,0 +1,398 @@
+{
+  "note": ". He or she may be referred for a chest tube to drain mucus from the lungs or possibly a bronchoscopy to see the lung function. The patient\u0027s symptoms continue to subside and he or she may need to continue to take at least 3 months of prednisone daily to avoid pulmonary edema. Treatment Advice:  The patient should be instructed to avoid high-sugar foods and drinks and to limit his or her alcohol intake to one drink per day, although alcohol is often taken along with a meal.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 480,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 34,
+          "endOffset": 39,
+          "score": 0.7146991,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 34,
+          "endOffset": 59,
+          "score": 0.369768,
+          "text": "chest tube to drain mucus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4708619
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9819186,
+              "relationshipScore": 0.9744109,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 69,
+              "endOffset": 74,
+              "text": "lungs",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 69,
+          "endOffset": 74,
+          "score": 0.9819186,
+          "text": "lungs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 89,
+          "endOffset": 101,
+          "score": 0.93966466,
+          "text": "bronchoscopy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 113,
+          "endOffset": 117,
+          "score": 0.9704873,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 223,
+          "endOffset": 231,
+          "score": 0.71403927,
+          "text": "3 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9993787,
+              "relationshipScore": 0.62986267,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 235,
+              "endOffset": 245,
+              "text": "prednisone",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 235,
+          "endOffset": 245,
+          "score": 0.9993787,
+          "text": "prednisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.8311222,
+              "relationshipScore": 0.99990094,
+              "relationshipType": "FREQUENCY",
+              "id": 4,
+              "beginOffset": 246,
+              "endOffset": 251,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 261,
+          "endOffset": 276,
+          "score": 0.9023822,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75616205
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a80ef10f-a357-42b7-bed0-ab80a8dd4adf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a80ef10f-a357-42b7-bed0-ab80a8dd4adf"
+          ],
+          "Content-Length": [
+            "2063"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2063",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:51 GMT",
+          "x-amzn-RequestId": "a80ef10f-a357-42b7-bed0-ab80a8dd4adf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 678,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chest tube to drain mucus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3697681,
+          "beginOffset": 34,
+          "endOffset": 59,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9819186,
+              "relationshipScore": 0.9744109,
+              "id": 2,
+              "beginOffset": 69,
+              "endOffset": 74,
+              "text": "lungs",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47086194
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.4290631
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.42067555
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.3801087
+            },
+            {
+              "description": "Encounter for change or removal of drains",
+              "code": "Z48.03",
+              "score": 0.3680684
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.34614557
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9023821,
+          "beginOffset": 261,
+          "endOffset": 276,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.756162
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic pulmonary edema",
+              "code": "J81.1",
+              "score": 0.66231704
+            },
+            {
+              "description": "Pulmonary edema",
+              "code": "J81",
+              "score": 0.5776022
+            },
+            {
+              "description": "Acute pulmonary edema",
+              "code": "J81.0",
+              "score": 0.55782807
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.41986588
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.40685442
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9e8d0492-0ecd-4a5d-9391-54220c984dc7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9e8d0492-0ecd-4a5d-9391-54220c984dc7"
+          ],
+          "Content-Length": [
+            "1492"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1492",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:52 GMT",
+          "x-amzn-RequestId": "9e8d0492-0ecd-4a5d-9391-54220c984dc7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 624,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "prednisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9993787,
+          "beginOffset": 235,
+          "endOffset": 245,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.8311223,
+              "relationshipScore": 0.99990094,
+              "id": 1,
+              "beginOffset": 246,
+              "endOffset": 251,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Prednisone",
+              "code": "8640",
+              "score": 0.93788475
+            },
+            {
+              "description": "Prednisone 20 MG Oral Tablet",
+              "code": "312615",
+              "score": 0.8070976
+            },
+            {
+              "description": "{21 (Prednisone 10 MG Oral Tablet) } Pack",
+              "code": "763185",
+              "score": 0.36935657
+            },
+            {
+              "description": "Prednisone 2 MG Delayed Release Oral Tablet",
+              "code": "1303132",
+              "score": 0.3597773
+            },
+            {
+              "description": "{48 (Prednisone 10 MG Oral Tablet) } Pack",
+              "code": "763183",
+              "score": 0.27996475
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b91a4e86-a50e-4e11-928c-73ae8534e25a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b91a4e86-a50e-4e11-928c-73ae8534e25a"
+          ],
+          "Content-Length": [
+            "848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:52 GMT",
+          "x-amzn-RequestId": "b91a4e86-a50e-4e11-928c-73ae8534e25a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:53 PM"
+}

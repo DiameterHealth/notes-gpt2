@@ -1,0 +1,177 @@
+{
+  "note": "______________________________________________________________  Mast Cells and Mast Cell Activators of the Mast Cells:  Dendritic Cells + CD34 + Tregs to Stimulate and Normalize Mast Cell Activity. Mast Cells are the primary lymphoid organs in our bodies; they produce both CD4 and CD8 T cells and are responsible for protecting the body from microbial infection but also for activating immune memory responses following exposure to a pathogen.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 581,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 353,
+          "endOffset": 362,
+          "score": 0.5466625,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46908537
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a67980a2-a3ce-4d0d-a3cb-94821d88a6fc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a67980a2-a3ce-4d0d-a3cb-94821d88a6fc"
+          ],
+          "Content-Length": [
+            "258"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "258",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:23 GMT",
+          "x-amzn-RequestId": "a67980a2-a3ce-4d0d-a3cb-94821d88a6fc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 558,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5466625,
+          "beginOffset": 353,
+          "endOffset": 362,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46908528
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.74695534
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.713811
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.67480767
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6699067
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.6551116
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2af5ca84-73de-4e16-914d-6aa196e00bea"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2af5ca84-73de-4e16-914d-6aa196e00bea"
+          ],
+          "Content-Length": [
+            "779"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "779",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:24 GMT",
+          "x-amzn-RequestId": "2af5ca84-73de-4e16-914d-6aa196e00bea"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c019db2-faf3-4fbe-be97-62c7cc70e2c7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c019db2-faf3-4fbe-be97-62c7cc70e2c7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:24 GMT",
+          "x-amzn-RequestId": "6c019db2-faf3-4fbe-be97-62c7cc70e2c7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:25 PM"
+}

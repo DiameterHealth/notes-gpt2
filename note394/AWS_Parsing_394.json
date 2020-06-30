@@ -1,0 +1,872 @@
+{
+  "note": "Exam shows her right leg is stable, her left leg is unstable. There is tenderness down her foot and a small red tender area on her heel (2). ED:  CPR: 3 min  ACR: 10 min  AMR: 10 mins  LAPT: 15.5 hrs  She has 2-3 visits to the ED each year with different injury. The R is improving but the ankle pain and knee pain seem to be chronic and long-term.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1035,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 21,
+          "endOffset": 24,
+          "score": 0.9959341,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 21,
+          "endOffset": 34,
+          "score": 0.67227226,
+          "text": "leg is stable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8988049
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99465865,
+              "relationshipScore": 0.990448,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 15,
+              "endOffset": 20,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 45,
+          "endOffset": 48,
+          "score": 0.99550384,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "score": 0.53505635,
+          "text": "leg is unstable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.91015327
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99697673,
+              "relationshipScore": 0.9384827,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 40,
+              "endOffset": 44,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 71,
+          "endOffset": 81,
+          "score": 0.8050668,
+          "text": "tenderness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73299336
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.896142,
+              "relationshipScore": 0.99903035,
+              "relationshipType": "DIRECTION",
+              "id": 4,
+              "beginOffset": 82,
+              "endOffset": 86,
+              "text": "down",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99327505,
+              "relationshipScore": 0.9997453,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 91,
+              "endOffset": 95,
+              "text": "foot",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97614723,
+              "relationshipScore": 0.5393203,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 131,
+              "endOffset": 135,
+              "text": "heel",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 91,
+          "endOffset": 95,
+          "score": 0.99327505,
+          "text": "foot",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 112,
+          "endOffset": 118,
+          "score": 0.74425596,
+          "text": "tender",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7214217
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99327505,
+              "relationshipScore": 0.65972275,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 91,
+              "endOffset": 95,
+              "text": "foot",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97614723,
+              "relationshipScore": 0.99989974,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 131,
+              "endOffset": 135,
+              "text": "heel",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 131,
+          "endOffset": 135,
+          "score": 0.97614723,
+          "text": "heel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 146,
+          "endOffset": 149,
+          "score": 0.6343053,
+          "text": "CPR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 185,
+          "endOffset": 189,
+          "score": 0.25027642,
+          "text": "LAPT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 227,
+          "endOffset": 229,
+          "score": 0.9609592,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 255,
+          "endOffset": 261,
+          "score": 0.93357205,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42568374
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 290,
+          "endOffset": 295,
+          "score": 0.98490787,
+          "text": "ankle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 290,
+          "endOffset": 300,
+          "score": 0.8606308,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69512415
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 305,
+          "endOffset": 309,
+          "score": 0.9863327,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 305,
+          "endOffset": 314,
+          "score": 0.9463388,
+          "text": "knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.57693017
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8496939,
+              "relationshipScore": 0.99782526,
+              "relationshipType": "ACUITY",
+              "id": 17,
+              "beginOffset": 326,
+              "endOffset": 333,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99465865,
+            "id": 0,
+            "beginOffset": 15,
+            "endOffset": 20,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99697673,
+            "id": 2,
+            "beginOffset": 40,
+            "endOffset": 44,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.896142,
+            "id": 4,
+            "beginOffset": 82,
+            "endOffset": 86,
+            "text": "down",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.6165164,
+            "id": 7,
+            "beginOffset": 267,
+            "endOffset": 268,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8496939,
+            "id": 17,
+            "beginOffset": 326,
+            "endOffset": 333,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "35f04de7-f9e2-46e1-a45e-b2409e5018c6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "35f04de7-f9e2-46e1-a45e-b2409e5018c6"
+          ],
+          "Content-Length": [
+            "5366"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5366",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:18 GMT",
+          "x-amzn-RequestId": "35f04de7-f9e2-46e1-a45e-b2409e5018c6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1167,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "leg is stable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.67227226,
+          "beginOffset": 21,
+          "endOffset": 34,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99465865,
+              "relationshipScore": 0.990448,
+              "id": 0,
+              "beginOffset": 15,
+              "endOffset": 20,
+              "text": "right",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8988049
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.4489825
+            },
+            {
+              "description": "Pain in right leg",
+              "code": "M79.604",
+              "score": 0.4211625
+            },
+            {
+              "description": "Pain in right lower leg",
+              "code": "M79.661",
+              "score": 0.4028096
+            },
+            {
+              "description": "Contusion of right lower leg",
+              "code": "S80.11",
+              "score": 0.39066082
+            },
+            {
+              "description": "Other specified injuries of unspecified lower leg",
+              "code": "S89.80",
+              "score": 0.35094687
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "leg is unstable",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5350561,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99697673,
+              "relationshipScore": 0.9384827,
+              "id": 3,
+              "beginOffset": 40,
+              "endOffset": 44,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.91015327
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.47330266
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.44944072
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.40402967
+            },
+            {
+              "description": "Pain in left lower leg",
+              "code": "M79.662",
+              "score": 0.38736558
+            },
+            {
+              "description": "Other specified injuries of unspecified lower leg",
+              "code": "S89.80",
+              "score": 0.37701297
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "tenderness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.80506676,
+          "beginOffset": 71,
+          "endOffset": 81,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.896142,
+              "relationshipScore": 0.99903035,
+              "id": 7,
+              "beginOffset": 82,
+              "endOffset": 86,
+              "text": "down",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99327505,
+              "relationshipScore": 0.9997453,
+              "id": 8,
+              "beginOffset": 91,
+              "endOffset": 95,
+              "text": "foot",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97614723,
+              "relationshipScore": 0.5393203,
+              "id": 10,
+              "beginOffset": 131,
+              "endOffset": 135,
+              "text": "heel",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73299325
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in unspecified lower leg",
+              "code": "M79.669",
+              "score": 0.3624169
+            },
+            {
+              "description": "Pain in leg, unspecified",
+              "code": "M79.606",
+              "score": 0.30621034
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.28883186
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.26088575
+            },
+            {
+              "description": "Pain in left thigh",
+              "code": "M79.652",
+              "score": 0.24561343
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "tender",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.74425596,
+          "beginOffset": 112,
+          "endOffset": 118,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99327505,
+              "relationshipScore": 0.65972275,
+              "id": 8,
+              "beginOffset": 91,
+              "endOffset": 95,
+              "text": "foot",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97614723,
+              "relationshipScore": 0.99989974,
+              "id": 10,
+              "beginOffset": 131,
+              "endOffset": 135,
+              "text": "heel",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.72142166
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in unspecified lower leg",
+              "code": "M79.669",
+              "score": 0.37699914
+            },
+            {
+              "description": "Abdominal tenderness, unspecified site",
+              "code": "R10.819",
+              "score": 0.3526168
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.32850248
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.31456274
+            },
+            {
+              "description": "Pain in leg, unspecified",
+              "code": "M79.606",
+              "score": 0.3072975
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93357193,
+          "beginOffset": 255,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42568356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.43580544
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.4167864
+            },
+            {
+              "description": "Unspecified injury of left lower leg",
+              "code": "S89.92",
+              "score": 0.41483006
+            },
+            {
+              "description": "Contusion of right lower leg",
+              "code": "S80.11",
+              "score": 0.39745894
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.35785568
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8606308,
+          "beginOffset": 290,
+          "endOffset": 300,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69512403
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right ankle and joints of right foot",
+              "code": "M25.571",
+              "score": 0.41664946
+            },
+            {
+              "description": "Pain in left ankle and joints of left foot",
+              "code": "M25.572",
+              "score": 0.35577443
+            },
+            {
+              "description": "Pain in unspecified ankle and joints of unspecified foot",
+              "code": "M25.579",
+              "score": 0.3111929
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.218624
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.18109636
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "text": "knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9463388,
+          "beginOffset": 305,
+          "endOffset": 314,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8496938,
+              "relationshipScore": 0.99782526,
+              "id": 17,
+              "beginOffset": 326,
+              "endOffset": 333,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5769301
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.49385807
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.4450178
+            },
+            {
+              "description": "Pain in unspecified knee",
+              "code": "M25.569",
+              "score": 0.41473863
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.329418
+            },
+            {
+              "description": "Pain in right elbow",
+              "code": "M25.521",
+              "score": 0.24202959
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "560dc5e4-24ff-4d40-a121-09fcd49b7c76"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "560dc5e4-24ff-4d40-a121-09fcd49b7c76"
+          ],
+          "Content-Length": [
+            "6092"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6092",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:20 GMT",
+          "x-amzn-RequestId": "560dc5e4-24ff-4d40-a121-09fcd49b7c76"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 222,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "444d0d7d-59c3-42ae-aded-c3926e276a53"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "444d0d7d-59c3-42ae-aded-c3926e276a53"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:18 GMT",
+          "x-amzn-RequestId": "444d0d7d-59c3-42ae-aded-c3926e276a53"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:20 PM"
+}

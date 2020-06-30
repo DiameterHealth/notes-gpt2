@@ -1,0 +1,1277 @@
+{
+  "note": ". No fever, had history of fevers in the past. Had taken corticosteroid to treat eczema symptoms. No rash or itching in past. Also has taken benadryl 3-4 times a week for 2 months as well as oral antibiotics to treat MRSA with no reaction. No history of allergy. No fever today. No rash or itching today nor yesterday. Had colds this week, only sore throat.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1021,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 5,
+          "endOffset": 10,
+          "score": 0.9874856,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69193953
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94320375
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 27,
+          "endOffset": 33,
+          "score": 0.9952199,
+          "text": "fevers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48204935
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92584914
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 34,
+          "endOffset": 45,
+          "score": 0.9999635,
+          "text": "in the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9952199,
+              "relationshipScore": 0.99722195,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 27,
+              "endOffset": 33,
+              "text": "fevers",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.48204935
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.92584914
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 57,
+          "endOffset": 71,
+          "score": 0.6451116,
+          "text": "corticosteroid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 81,
+          "endOffset": 96,
+          "score": 0.6778354,
+          "text": "eczema symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75093126
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 101,
+          "endOffset": 105,
+          "score": 0.9968141,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7431958
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97304565
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 109,
+          "endOffset": 116,
+          "score": 0.996145,
+          "text": "itching",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.695624
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.980631
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 141,
+          "endOffset": 149,
+          "score": 0.9990202,
+          "text": "benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.94475955,
+              "relationshipScore": 0.99999785,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 150,
+              "endOffset": 166,
+              "text": "3-4 times a week",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.96617156,
+              "relationshipScore": 0.9999459,
+              "relationshipType": "DURATION",
+              "id": 4,
+              "beginOffset": 171,
+              "endOffset": 179,
+              "text": "2 months",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 191,
+          "endOffset": 207,
+          "score": 0.7052434,
+          "text": "oral antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 196,
+          "endOffset": 207,
+          "score": 0.9274859,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.83853805,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 5,
+              "beginOffset": 191,
+              "endOffset": 195,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "score": 0.98824894,
+          "text": "MRSA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9462631
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 254,
+          "endOffset": 261,
+          "score": 0.9208474,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.9335578
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 266,
+          "endOffset": 271,
+          "score": 0.9645742,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.72373796
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9622242
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 272,
+          "endOffset": 277,
+          "score": 0.99998534,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9645742,
+              "relationshipScore": 0.95290416,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 266,
+              "endOffset": 271,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.72373796
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9622242
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 282,
+          "endOffset": 286,
+          "score": 0.9968141,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86859405
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98364234
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 290,
+          "endOffset": 297,
+          "score": 0.9977598,
+          "text": "itching",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8684897
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.986637
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 298,
+          "endOffset": 303,
+          "score": 0.99982184,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9977598,
+              "relationshipScore": 0.8782579,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 290,
+              "endOffset": 297,
+              "text": "itching",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8684897
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.986637
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 298,
+          "endOffset": 303,
+          "score": 0.99982184,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9968141,
+              "relationshipScore": 0.83704484,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 282,
+              "endOffset": 286,
+              "text": "rash",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.86859405
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.98364234
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 308,
+          "endOffset": 317,
+          "score": 0.99998736,
+          "text": "yesterday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9977598,
+              "relationshipScore": 0.9613957,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 290,
+              "endOffset": 297,
+              "text": "itching",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8684897
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.986637
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 308,
+          "endOffset": 317,
+          "score": 0.99998736,
+          "text": "yesterday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9968141,
+              "relationshipScore": 0.8827895,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 282,
+              "endOffset": 286,
+              "text": "rash",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.86859405
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.98364234
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 323,
+          "endOffset": 328,
+          "score": 0.689216,
+          "text": "colds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5326338
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 329,
+          "endOffset": 338,
+          "score": 0.9997155,
+          "text": "this week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.76795095,
+              "relationshipScore": 0.90132797,
+              "relationshipType": "OVERLAP",
+              "id": 18,
+              "beginOffset": 345,
+              "endOffset": 356,
+              "text": "sore throat",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8685005
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 329,
+          "endOffset": 338,
+          "score": 0.9997155,
+          "text": "this week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.689216,
+              "relationshipScore": 0.99284863,
+              "relationshipType": "OVERLAP",
+              "id": 17,
+              "beginOffset": 323,
+              "endOffset": 328,
+              "text": "colds",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.5326338
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 345,
+          "endOffset": 356,
+          "score": 0.76795095,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8685005
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 350,
+          "endOffset": 356,
+          "score": 0.9826644,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0bfcdcc7-1f0e-402e-9085-eacb852dd602"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0bfcdcc7-1f0e-402e-9085-eacb852dd602"
+          ],
+          "Content-Length": [
+            "7828"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7828",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:34 GMT",
+          "x-amzn-RequestId": "0bfcdcc7-1f0e-402e-9085-eacb852dd602"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 638,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9874856,
+          "beginOffset": 5,
+          "endOffset": 10,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69193953
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94320375
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.77781177
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.49441692
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.3823764
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.37958506
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.37426606
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fevers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9952199,
+          "beginOffset": 27,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48204932
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92584914
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.73914
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.51277846
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.37454385
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.36018917
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.35602933
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "eczema symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6778354,
+          "beginOffset": 81,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7509312
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.67951757
+            },
+            {
+              "description": "Dermatitis, unspecified",
+              "code": "L30.9",
+              "score": 0.5813675
+            },
+            {
+              "description": "Personal history of diseases of the skin and subcutaneous tissue",
+              "code": "Z87.2",
+              "score": 0.57970643
+            },
+            {
+              "description": "Allergic contact dermatitis, unspecified cause",
+              "code": "L23.9",
+              "score": 0.51325154
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.5084264
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9968141,
+          "beginOffset": 101,
+          "endOffset": 105,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7431958
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97304565
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.73800737
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.45791355
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.41403532
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.40987802
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.3971772
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "itching",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.996145,
+          "beginOffset": 109,
+          "endOffset": 116,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69562393
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.980631
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.82731897
+            },
+            {
+              "description": "Other specified disorders of eye and adnexa",
+              "code": "H57.89",
+              "score": 0.70925796
+            },
+            {
+              "description": "Other pruritus",
+              "code": "L29.8",
+              "score": 0.63898796
+            },
+            {
+              "description": "Tinea cruris",
+              "code": "B35.6",
+              "score": 0.5885926
+            },
+            {
+              "description": "Anogenital pruritus, unspecified",
+              "code": "L29.3",
+              "score": 0.56895465
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "MRSA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98824894,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9462631
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Methicillin resistant Staphylococcus aureus infection as the cause of diseases classified elsewhere",
+              "code": "B95.62",
+              "score": 0.7569744
+            },
+            {
+              "description": "Methicillin resistant Staphylococcus aureus infection, unspecified site",
+              "code": "A49.02",
+              "score": 0.71316177
+            },
+            {
+              "description": "Personal history of Methicillin resistant Staphylococcus aureus infection",
+              "code": "Z86.14",
+              "score": 0.6982566
+            },
+            {
+              "description": "Pneumonia due to Methicillin resistant Staphylococcus aureus",
+              "code": "J15.212",
+              "score": 0.6471346
+            },
+            {
+              "description": "Sepsis due to Methicillin resistant Staphylococcus aureus",
+              "code": "A41.02",
+              "score": 0.6382387
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9208474,
+          "beginOffset": 254,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.9335578
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.7242897
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.64343613
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.63061184
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.6276887
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.60903764
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9645742,
+          "beginOffset": 266,
+          "endOffset": 271,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.72373796
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9622242
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.80857277
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.52967614
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4273491
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.42109022
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.41127917
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9968141,
+          "beginOffset": 282,
+          "endOffset": 286,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86859405
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98364234
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.73660475
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.4721635
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.44491458
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.442605
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.38651055
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "itching",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9977598,
+          "beginOffset": 290,
+          "endOffset": 297,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8684897
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.986637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.8116259
+            },
+            {
+              "description": "Other specified disorders of eye and adnexa",
+              "code": "H57.89",
+              "score": 0.68473417
+            },
+            {
+              "description": "Other pruritus",
+              "code": "L29.8",
+              "score": 0.57819504
+            },
+            {
+              "description": "Tinea cruris",
+              "code": "B35.6",
+              "score": 0.57637036
+            },
+            {
+              "description": "Anogenital pruritus, unspecified",
+              "code": "L29.3",
+              "score": 0.54330367
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "colds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6892161,
+          "beginOffset": 323,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.53263384
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.72466385
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.63492686
+            },
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.51755315
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.5158145
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.51345664
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.76795095,
+          "beginOffset": 345,
+          "endOffset": 356,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8685005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.7891136
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.548964
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.53534657
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.5069873
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.48127666
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2149f55-45e7-42ec-a47d-73d229ec7a8a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2149f55-45e7-42ec-a47d-73d229ec7a8a"
+          ],
+          "Content-Length": [
+            "8632"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8632",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:35 GMT",
+          "x-amzn-RequestId": "b2149f55-45e7-42ec-a47d-73d229ec7a8a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 620,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "benadryl",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.9990202,
+          "beginOffset": 141,
+          "endOffset": 149,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.94475955,
+              "relationshipScore": 0.99999785,
+              "id": 2,
+              "beginOffset": 150,
+              "endOffset": 166,
+              "text": "3-4 times a week",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.9661715,
+              "relationshipScore": 0.999946,
+              "id": 3,
+              "beginOffset": 171,
+              "endOffset": 179,
+              "text": "2 months",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Benadryl",
+              "code": "203457",
+              "score": 0.9437768
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Tablet [Benadryl]",
+              "code": "1049632",
+              "score": 0.7401185
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 25 MG Oral Capsule [Benadryl]",
+              "code": "1049910",
+              "score": 0.5568911
+            },
+            {
+              "description": "Vetadryl",
+              "code": "1310476",
+              "score": 0.46938977
+            },
+            {
+              "description": "Diphenhydramine Hydrochloride 0.01 MG/MG Topical Gel [Benadryl]",
+              "code": "1049725",
+              "score": 0.11818677
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c9f3dbe-a21a-4ece-bec0-ad7e763acc17"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c9f3dbe-a21a-4ece-bec0-ad7e763acc17"
+          ],
+          "Content-Length": [
+            "1050"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1050",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:34 GMT",
+          "x-amzn-RequestId": "0c9f3dbe-a21a-4ece-bec0-ad7e763acc17"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:35 PM"
+}

@@ -1,0 +1,167 @@
+{
+  "note": "doc. Clinical Conclusion: The patient was well and stable before and after treatment with ZMapp. She appears to be completely symptom free.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 128,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 90,
+          "endOffset": 95,
+          "score": 0.925078,
+          "text": "ZMapp",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75d1b30f-3f36-446f-b8c0-cd97d6bf4abe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75d1b30f-3f36-446f-b8c0-cd97d6bf4abe"
+          ],
+          "Content-Length": [
+            "200"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "200",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:06 GMT",
+          "x-amzn-RequestId": "75d1b30f-3f36-446f-b8c0-cd97d6bf4abe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 122,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1ef49699-daad-4829-8471-e2ee8e4858fe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1ef49699-daad-4829-8471-e2ee8e4858fe"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:06 GMT",
+          "x-amzn-RequestId": "1ef49699-daad-4829-8471-e2ee8e4858fe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 322,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ZMapp",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.925078,
+          "beginOffset": 90,
+          "endOffset": 95,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Zmax",
+              "code": "598022",
+              "score": 0.34070882
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet [Mapap]",
+              "code": "209375",
+              "score": 0.027726201
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Tablet [Mapap]",
+              "code": "209443",
+              "score": 0.014142937
+            },
+            {
+              "description": "8 HR Acetaminophen 650 MG Extended Release Oral Tablet [Mapap]",
+              "code": "1243439",
+              "score": 0.013433334
+            },
+            {
+              "description": "Mapap",
+              "code": "218205",
+              "score": 0.0076602944
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f38e6388-b34b-4c0c-a7f0-d0fc36ffed66"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f38e6388-b34b-4c0c-a7f0-d0fc36ffed66"
+          ],
+          "Content-Length": [
+            "681"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "681",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:06 GMT",
+          "x-amzn-RequestId": "f38e6388-b34b-4c0c-a7f0-d0fc36ffed66"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:06 PM"
+}

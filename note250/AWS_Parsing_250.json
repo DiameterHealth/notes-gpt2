@@ -1,0 +1,294 @@
+{
+  "note": "physician. There are other types of \"diseases\" and other \"symptoms\" that can go with them (for example, irritable bowel syndrome or chronic ear infections). Those should be controlled and managed by the appropriate physician with the attention of a primary care physician. They should be addressed by a physician with a specialty perspective and appropriate support teams such as the allergy team, the respiratory team, nutritional counselor, etc.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 411,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 104,
+          "endOffset": 128,
+          "score": 0.82178605,
+          "text": "irritable bowel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9066034
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 114,
+          "endOffset": 119,
+          "score": 0.8382034,
+          "text": "bowel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 140,
+          "endOffset": 143,
+          "score": 0.9466378,
+          "text": "ear",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 140,
+          "endOffset": 154,
+          "score": 0.98729604,
+          "text": "ear infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9409573
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9955764,
+              "relationshipScore": 0.99978465,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 132,
+              "endOffset": 139,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9955764,
+            "id": 3,
+            "beginOffset": 132,
+            "endOffset": 139,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e469677d-ed43-4bf2-a6ea-e38972477af5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e469677d-ed43-4bf2-a6ea-e38972477af5"
+          ],
+          "Content-Length": [
+            "1175"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1175",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:37 GMT",
+          "x-amzn-RequestId": "e469677d-ed43-4bf2-a6ea-e38972477af5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 459,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "irritable bowel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82178605,
+          "beginOffset": 104,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9066034
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Irritable bowel syndrome without diarrhea",
+              "code": "K58.9",
+              "score": 0.57867336
+            },
+            {
+              "description": "Irritable bowel syndrome with constipation",
+              "code": "K58.1",
+              "score": 0.5776364
+            },
+            {
+              "description": "Irritable bowel syndrome with diarrhea",
+              "code": "K58.0",
+              "score": 0.5430814
+            },
+            {
+              "description": "Irritability and anger",
+              "code": "R45.4",
+              "score": 0.38312924
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.37785235
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "ear infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98729604,
+          "beginOffset": 140,
+          "endOffset": 154,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9955764,
+              "relationshipScore": 0.99978465,
+              "id": 2,
+              "beginOffset": 132,
+              "endOffset": 139,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9409573
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Otitis media, unspecified, unspecified ear",
+              "code": "H66.90",
+              "score": 0.62056357
+            },
+            {
+              "description": "Otitis media, unspecified, bilateral",
+              "code": "H66.93",
+              "score": 0.56619906
+            },
+            {
+              "description": "Otitis media, unspecified, left ear",
+              "code": "H66.92",
+              "score": 0.5256282
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.38483265
+            },
+            {
+              "description": "Other specified disorders of ear",
+              "code": "H93.8X",
+              "score": 0.35951552
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c78f9d58-174e-4529-8126-74426ef89a2a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c78f9d58-174e-4529-8126-74426ef89a2a"
+          ],
+          "Content-Length": [
+            "1662"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1662",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:38 GMT",
+          "x-amzn-RequestId": "c78f9d58-174e-4529-8126-74426ef89a2a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 242,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "96c64c00-49c9-4ac7-acab-16985a263cad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "96c64c00-49c9-4ac7-acab-16985a263cad"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:37 GMT",
+          "x-amzn-RequestId": "96c64c00-49c9-4ac7-acab-16985a263cad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:38 PM"
+}

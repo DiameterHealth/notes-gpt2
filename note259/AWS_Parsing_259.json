@@ -1,0 +1,224 @@
+{
+  "note": "and his physician will continue to perform an ongoing evaluation of his medical condition. During this time, the PCP may recommend a PCP visit. If the physician has continued a follow-up with the patient after that day, a new PCP visit may be recommended. If a patient\u0027s PCP determines that he or she has an acute neurologic illness and that further evaluation in another office would be impractical or inappropriate, the patient should be transferred to one of our hospitals for evaluation without delay.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 301,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 314,
+          "endOffset": 332,
+          "score": 0.96425515,
+          "text": "neurologic illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43499744
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.479307
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.959669,
+              "relationshipScore": 0.9999949,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 308,
+              "endOffset": 313,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.959669,
+            "id": 0,
+            "beginOffset": 308,
+            "endOffset": 313,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "128aa261-6da8-4d61-89b2-b929b06509d7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "128aa261-6da8-4d61-89b2-b929b06509d7"
+          ],
+          "Content-Length": [
+            "723"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "723",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:50 GMT",
+          "x-amzn-RequestId": "128aa261-6da8-4d61-89b2-b929b06509d7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 434,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "neurologic illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96425515,
+          "beginOffset": 314,
+          "endOffset": 332,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.959669,
+              "relationshipScore": 0.9999949,
+              "id": 0,
+              "beginOffset": 308,
+              "endOffset": 313,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4349974
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47930703
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.73251164
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6725327
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6007687
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.5818643
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.54752123
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f3a770b1-f6d8-4291-9ecb-e5cafdceab6a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f3a770b1-f6d8-4291-9ecb-e5cafdceab6a"
+          ],
+          "Content-Length": [
+            "957"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "957",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:52 GMT",
+          "x-amzn-RequestId": "f3a770b1-f6d8-4291-9ecb-e5cafdceab6a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 224,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3736169f-d951-4fcd-9e6c-d6804cb4ca6f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3736169f-d951-4fcd-9e6c-d6804cb4ca6f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:50 GMT",
+          "x-amzn-RequestId": "3736169f-d951-4fcd-9e6c-d6804cb4ca6f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:52 PM"
+}

@@ -1,0 +1,763 @@
+{
+  "note": "Treatment:  Ibuprofen 1,5 g and metoclopramide 500 mg  This patient presented in October of last year with a headache and back pain the next morning. It worsened over time. Treatment: Ibuprofen 15 mg,  Metoclopramide 5 mg. This patient presented in February with no symptoms other than chest pain the day before. I suspect he was taking some form of anti-depression.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 575,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 12,
+          "endOffset": 21,
+          "score": 0.9902586,
+          "text": "Ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.90906554,
+              "relationshipScore": 0.9999776,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 22,
+              "endOffset": 27,
+              "text": "1,5 g",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 32,
+          "endOffset": 46,
+          "score": 0.9999443,
+          "text": "metoclopramide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.969086,
+              "relationshipScore": 0.9997904,
+              "relationshipType": "DOSAGE",
+              "id": 5,
+              "beginOffset": 47,
+              "endOffset": 54,
+              "text": "500 mg ",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 81,
+          "endOffset": 101,
+          "score": 0.9983071,
+          "text": "October of last year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99551046,
+              "relationshipScore": 0.8594608,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 109,
+              "endOffset": 117,
+              "text": "headache",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.74671006
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 81,
+          "endOffset": 101,
+          "score": 0.9983071,
+          "text": "October of last year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9756412,
+              "relationshipScore": 0.77131885,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 122,
+              "endOffset": 131,
+              "text": "back pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8113163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 109,
+          "endOffset": 117,
+          "score": 0.99551046,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74671006
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 122,
+          "endOffset": 126,
+          "score": 0.95790744,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 122,
+          "endOffset": 131,
+          "score": 0.9756412,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8113163
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 136,
+          "endOffset": 148,
+          "score": 0.8052349,
+          "text": "next morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99551046,
+              "relationshipScore": 0.94887435,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 109,
+              "endOffset": 117,
+              "text": "headache",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.74671006
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 136,
+          "endOffset": 148,
+          "score": 0.8052349,
+          "text": "next morning",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9756412,
+              "relationshipScore": 0.992007,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 122,
+              "endOffset": 131,
+              "text": "back pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8113163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 184,
+          "endOffset": 193,
+          "score": 0.99007165,
+          "text": "Ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9215885,
+              "relationshipScore": 0.9996618,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 194,
+              "endOffset": 199,
+              "text": "15 mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 202,
+          "endOffset": 216,
+          "score": 0.9998566,
+          "text": "Metoclopramide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.97059375,
+              "relationshipScore": 0.999647,
+              "relationshipType": "DOSAGE",
+              "id": 9,
+              "beginOffset": 217,
+              "endOffset": 222,
+              "text": "5 mg.",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 286,
+          "endOffset": 291,
+          "score": 0.9806231,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 286,
+          "endOffset": 296,
+          "score": 0.8367966,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69002086
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.48495618
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 301,
+          "endOffset": 311,
+          "score": 0.46620968,
+          "text": "day before",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8367966,
+              "relationshipScore": 0.96712744,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 286,
+              "endOffset": 296,
+              "text": "chest pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.69002086
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.48495618
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "173d1782-fbcd-48fd-a55f-39242515ee12"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "173d1782-fbcd-48fd-a55f-39242515ee12"
+          ],
+          "Content-Length": [
+            "4705"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4705",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:06 GMT",
+          "x-amzn-RequestId": "173d1782-fbcd-48fd-a55f-39242515ee12"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 415,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99551046,
+          "beginOffset": 109,
+          "endOffset": 117,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74671006
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7215567
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.55583334
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.49270996
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.44219336
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.40527385
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9756412,
+          "beginOffset": 122,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8113163
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.716169
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.69006246
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.6351863
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5876023
+            },
+            {
+              "description": "Cervicalgia",
+              "code": "M54.2",
+              "score": 0.5303289
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8367966,
+          "beginOffset": 286,
+          "endOffset": 296,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6900208
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.48495635
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.77734554
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.62500966
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6063683
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.53776014
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.50036454
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "26f4db43-4df9-464b-a82a-39bbadcafea6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "26f4db43-4df9-464b-a82a-39bbadcafea6"
+          ],
+          "Content-Length": [
+            "2050"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2050",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:07 GMT",
+          "x-amzn-RequestId": "26f4db43-4df9-464b-a82a-39bbadcafea6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 767,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9902586,
+          "beginOffset": 12,
+          "endOffset": 21,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.90906554,
+              "relationshipScore": 0.9999776,
+              "id": 1,
+              "beginOffset": 22,
+              "endOffset": 27,
+              "text": "1,5 g",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.7173392
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.018413447
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.014749698
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Genpril]",
+              "code": "206886",
+              "score": 0.012623606
+            },
+            {
+              "description": "2 ML Ibuprofen 10 MG/ML Injection [Neoprofen]",
+              "code": "637197",
+              "score": 0.011584567
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "metoclopramide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9999443,
+          "beginOffset": 32,
+          "endOffset": 46,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.969086,
+              "relationshipScore": 0.9997904,
+              "id": 3,
+              "beginOffset": 47,
+              "endOffset": 54,
+              "text": "500 mg ",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metoclopramide",
+              "code": "6915",
+              "score": 0.84547615
+            },
+            {
+              "description": "Metoclopramide 10 MG Oral Tablet",
+              "code": "311666",
+              "score": 0.78831506
+            },
+            {
+              "description": "Metoclopramide 5 MG Oral Tablet",
+              "code": "311668",
+              "score": 0.71645576
+            },
+            {
+              "description": "2 ML Metoclopramide 5 MG/ML Injection",
+              "code": "311670",
+              "score": 0.6757144
+            },
+            {
+              "description": "2 ML Metoclopramide 5 MG/ML Prefilled Syringe",
+              "code": "727619",
+              "score": 0.19061318
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99007165,
+          "beginOffset": 184,
+          "endOffset": 193,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9215885,
+              "relationshipScore": 0.9996618,
+              "id": 5,
+              "beginOffset": 194,
+              "endOffset": 199,
+              "text": "15 mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.8498212
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.031176558
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Genpril]",
+              "code": "206886",
+              "score": 0.009728605
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Addaprin]",
+              "code": "900434",
+              "score": 0.009220293
+            },
+            {
+              "description": "Ibuprofen 50 MG Chewable Tablet",
+              "code": "314047",
+              "score": 0.008632169
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Metoclopramide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9998566,
+          "beginOffset": 202,
+          "endOffset": 216,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.97059375,
+              "relationshipScore": 0.99964714,
+              "id": 7,
+              "beginOffset": 217,
+              "endOffset": 222,
+              "text": "5 mg.",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metoclopramide 5 MG Oral Tablet",
+              "code": "311668",
+              "score": 0.9796211
+            },
+            {
+              "description": "Metoclopramide 10 MG Oral Tablet",
+              "code": "311666",
+              "score": 0.9035871
+            },
+            {
+              "description": "Metoclopramide",
+              "code": "6915",
+              "score": 0.7842608
+            },
+            {
+              "description": "2 ML Metoclopramide 5 MG/ML Injection",
+              "code": "311670",
+              "score": 0.74299884
+            },
+            {
+              "description": "2 ML Metoclopramide 5 MG/ML Prefilled Syringe",
+              "code": "727619",
+              "score": 0.5405939
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0faa4e11-fac8-4999-9091-fa99071aba8c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0faa4e11-fac8-4999-9091-fa99071aba8c"
+          ],
+          "Content-Length": [
+            "3257"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3257",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:06 GMT",
+          "x-amzn-RequestId": "0faa4e11-fac8-4999-9091-fa99071aba8c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:07 PM"
+}

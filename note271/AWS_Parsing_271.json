@@ -1,0 +1,528 @@
+{
+  "note": "and function. As of 3 p.m., patient has been placed on morphine-assisted self-administration (MAS) to reduce pain. Medication will be increased as necessary to control pain. Patient is currently alert and oriented at observation level. Patient is not showing any signs that are suggestive of severe pain or fever. 8/5/2018 14:50:46 PM  722-728-0131  Lorraine M.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 405,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 109,
+          "endOffset": 113,
+          "score": 0.9739082,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5644606
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 168,
+          "endOffset": 172,
+          "score": 0.95967,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.58616257
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 185,
+          "endOffset": 194,
+          "score": 0.9999976,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9465452,
+              "relationshipScore": 0.56120574,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 205,
+              "endOffset": 213,
+              "text": "oriented",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.7572916
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 185,
+          "endOffset": 194,
+          "score": 0.9999976,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7379023,
+              "relationshipScore": 0.84885985,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 195,
+              "endOffset": 200,
+              "text": "alert",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.46214712
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 195,
+          "endOffset": 200,
+          "score": 0.7379023,
+          "text": "alert",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46214712
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 205,
+          "endOffset": 213,
+          "score": 0.9465452,
+          "text": "oriented",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7572916
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 299,
+          "endOffset": 303,
+          "score": 0.9932747,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4070543
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81344867
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 307,
+          "endOffset": 312,
+          "score": 0.9876132,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.46698192
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.91853046
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 314,
+          "endOffset": 322,
+          "score": 0.99979407,
+          "text": "8/5/2018",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 336,
+          "endOffset": 348,
+          "score": 0.86581224,
+          "text": "722-728-0131",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PHONE_OR_FAX",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 350,
+          "endOffset": 360,
+          "score": 0.9726949,
+          "text": "Lorraine M",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d6205b0f-f88f-4e6a-9e63-cd293526bcda"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d6205b0f-f88f-4e6a-9e63-cd293526bcda"
+          ],
+          "Content-Length": [
+            "2623"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2623",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:08 GMT",
+          "x-amzn-RequestId": "d6205b0f-f88f-4e6a-9e63-cd293526bcda"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 505,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9739082,
+          "beginOffset": 109,
+          "endOffset": 113,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5644605
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.70923
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5825044
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5455363
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5276698
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.51363933
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9596701,
+          "beginOffset": 168,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.58616257
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.73082715
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6335643
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5973682
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5745714
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.56879294
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "oriented",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9465452,
+          "beginOffset": 205,
+          "endOffset": 213,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7572916
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.74096954
+            },
+            {
+              "description": "Coma scale, best verbal response, oriented",
+              "code": "R40.225",
+              "score": 0.70330954
+            },
+            {
+              "description": "Paragonimiasis",
+              "code": "B66.4",
+              "score": 0.6216774
+            },
+            {
+              "description": "Clonorchiasis",
+              "code": "B66.1",
+              "score": 0.6133372
+            },
+            {
+              "description": "Strain of other muscle(s) and tendon(s) at lower leg level, unspecified leg",
+              "code": "S86.819",
+              "score": 0.5343608
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9932747,
+          "beginOffset": 299,
+          "endOffset": 303,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4070543
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81344867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.80578464
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.7002317
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6390152
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6315633
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.6282193
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9876132,
+          "beginOffset": 307,
+          "endOffset": 312,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.46698192
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9185306
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8840466
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.72878635
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.6172483
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5714673
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.5698809
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e92e1e70-8f81-4d54-8824-1821727efdfe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e92e1e70-8f81-4d54-8824-1821727efdfe"
+          ],
+          "Content-Length": [
+            "3389"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3389",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:09 GMT",
+          "x-amzn-RequestId": "e92e1e70-8f81-4d54-8824-1821727efdfe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 213,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f973eb9-593e-4897-8192-ff32e9f59406"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f973eb9-593e-4897-8192-ff32e9f59406"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:08 GMT",
+          "x-amzn-RequestId": "4f973eb9-593e-4897-8192-ff32e9f59406"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:09 PM"
+}

@@ -1,0 +1,216 @@
+{
+  "note": ". The patient has a history of smoking and drinking beer in addition to a history of chronic pancreatitis. The patient has a history of smoking 2–4 g/day. The patient was a heavy drinker. He also smoked heavily. All subjects were instructed to abstain from smoking for the next 24 h. They were also instructed to continue with low calorie consumption.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 224,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 93,
+          "endOffset": 105,
+          "score": 0.9988476,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.968825
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97780985,
+              "relationshipScore": 0.9995933,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 85,
+              "endOffset": 92,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.97780985,
+            "id": 0,
+            "beginOffset": 85,
+            "endOffset": 92,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c1d38ecf-3fc8-4791-a914-8d717c3c136a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c1d38ecf-3fc8-4791-a914-8d717c3c136a"
+          ],
+          "Content-Length": [
+            "669"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "669",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:58 GMT",
+          "x-amzn-RequestId": "c1d38ecf-3fc8-4791-a914-8d717c3c136a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 549,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "pancreatitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9988476,
+          "beginOffset": 93,
+          "endOffset": 105,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9778097,
+              "relationshipScore": 0.9995933,
+              "id": 0,
+              "beginOffset": 85,
+              "endOffset": 92,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.968825
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other chronic pancreatitis",
+              "code": "K86.1",
+              "score": 0.7288228
+            },
+            {
+              "description": "Acute pancreatitis without necrosis or infection, unspecified",
+              "code": "K85.90",
+              "score": 0.60771215
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.49985662
+            },
+            {
+              "description": "Acute pancreatitis, unspecified",
+              "code": "K85.9",
+              "score": 0.4608554
+            },
+            {
+              "description": "Other specified diseases of pancreas",
+              "code": "K86.89",
+              "score": 0.36477432
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4984b984-aa43-4320-9320-ca0891ccd52e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4984b984-aa43-4320-9320-ca0891ccd52e"
+          ],
+          "Content-Length": [
+            "942"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "942",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:58 GMT",
+          "x-amzn-RequestId": "4984b984-aa43-4320-9320-ca0891ccd52e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 189,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c59d54d8-b41b-440b-b6fb-be68c3dc4a15"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c59d54d8-b41b-440b-b6fb-be68c3dc4a15"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:58 GMT",
+          "x-amzn-RequestId": "c59d54d8-b41b-440b-b6fb-be68c3dc4a15"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:59 PM"
+}

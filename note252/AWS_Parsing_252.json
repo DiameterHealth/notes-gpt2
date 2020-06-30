@@ -1,0 +1,309 @@
+{
+  "note": "and range of motion. Brief Summary: The patient was referred to another physician to assist in his care as his condition deteriorated. No additional information to provide. C. Non-Cardiac Conditions  Treatment:  Oral antibiotic therapy administered. Cognitive behavioral therapy. Neurological assessment. Vascular evaluation to exclude ischemia. Imaging:  Cerebral MRI performed in accordance with the World Health Organization criteria. Results are pending.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 319,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "score": 0.49600336,
+          "text": "range of motion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7845951
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 212,
+          "endOffset": 235,
+          "score": 0.90812963,
+          "text": "Oral antibiotic therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 250,
+          "endOffset": 278,
+          "score": 0.91524917,
+          "text": "Cognitive behavioral therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 280,
+          "endOffset": 303,
+          "score": 0.58325064,
+          "text": "Neurological assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 305,
+          "endOffset": 324,
+          "score": 0.87115854,
+          "text": "Vascular evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 336,
+          "endOffset": 344,
+          "score": 0.9407142,
+          "text": "ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9124219
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 346,
+          "endOffset": 353,
+          "score": 0.90485346,
+          "text": "Imaging",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 356,
+          "endOffset": 368,
+          "score": 0.9867907,
+          "text": "Cerebral MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7437796,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 450,
+              "endOffset": 457,
+              "text": "pending",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5c7e49f6-8490-4271-9003-8b20983732fe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5c7e49f6-8490-4271-9003-8b20983732fe"
+          ],
+          "Content-Length": [
+            "1694"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1694",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:39 GMT",
+          "x-amzn-RequestId": "5c7e49f6-8490-4271-9003-8b20983732fe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 742,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "range of motion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49600336,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7845951
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stiffness of unspecified joint, not elsewhere classified",
+              "code": "M25.60",
+              "score": 0.7442208
+            },
+            {
+              "description": "Disorders of diaphragm",
+              "code": "J98.6",
+              "score": 0.69276327
+            },
+            {
+              "description": "Disorder of ligament, unspecified site",
+              "code": "M24.20",
+              "score": 0.66083956
+            },
+            {
+              "description": "Stiffness of unspecified hip, not elsewhere classified",
+              "code": "M25.659",
+              "score": 0.63762
+            },
+            {
+              "description": "Stiffness of right hand, not elsewhere classified",
+              "code": "M25.641",
+              "score": 0.62722075
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9407142,
+          "beginOffset": 336,
+          "endOffset": 344,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9124219
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.7901363
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.76293486
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.7534081
+            },
+            {
+              "description": "Ischemia and infarction of kidney",
+              "code": "N28.0",
+              "score": 0.6513455
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.6497193
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6aec287-c3b4-451c-94bf-1fde1008a532"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6aec287-c3b4-451c-94bf-1fde1008a532"
+          ],
+          "Content-Length": [
+            "1510"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1510",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:40 GMT",
+          "x-amzn-RequestId": "e6aec287-c3b4-451c-94bf-1fde1008a532"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 202,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b516bce9-2000-4d9a-91e4-6faabe9ab7f2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b516bce9-2000-4d9a-91e4-6faabe9ab7f2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:39 GMT",
+          "x-amzn-RequestId": "b516bce9-2000-4d9a-91e4-6faabe9ab7f2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:41 PM"
+}

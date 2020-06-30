@@ -1,0 +1,201 @@
+{
+  "note": "The patient has had no previous medical history, however there are no prior medical conditions that have been evaluated with the use of the laboratory system and screening tests for cancer. The patient was diagnosed by an oncology specialist (Clinical Oncology) with Stage 1B or 2b (Stage 2b is one of the four classes of oncology defined by the US Cancer Statistics Program.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 240,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 162,
+          "endOffset": 177,
+          "score": 0.49383104,
+          "text": "screening tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 182,
+          "endOffset": 188,
+          "score": 0.96136945,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621096
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 346,
+          "endOffset": 348,
+          "score": 0.16743018,
+          "text": "US",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b359ba43-f253-446d-9437-12b2cc0bdf6b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b359ba43-f253-446d-9437-12b2cc0bdf6b"
+          ],
+          "Content-Length": [
+            "572"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "572",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:33 GMT",
+          "x-amzn-RequestId": "b359ba43-f253-446d-9437-12b2cc0bdf6b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 325,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9613696,
+          "beginOffset": 182,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621096
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.7145519
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.6949139
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.68709445
+            },
+            {
+              "description": "Personal history of malignant neoplasm, unspecified",
+              "code": "Z85.9",
+              "score": 0.6835579
+            },
+            {
+              "description": "Malignant neoplasm of rectum",
+              "code": "C20",
+              "score": 0.6773426
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dedca763-cce2-4325-bc9e-47eb55e84f3b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "dedca763-cce2-4325-bc9e-47eb55e84f3b"
+          ],
+          "Content-Length": [
+            "776"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "776",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:33 GMT",
+          "x-amzn-RequestId": "dedca763-cce2-4325-bc9e-47eb55e84f3b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c90842b-5c7b-4461-bd80-5ab3d0b59e58"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c90842b-5c7b-4461-bd80-5ab3d0b59e58"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:33 GMT",
+          "x-amzn-RequestId": "6c90842b-5c7b-4461-bd80-5ab3d0b59e58"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:34 PM"
+}

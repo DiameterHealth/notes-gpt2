@@ -1,0 +1,354 @@
+{
+  "note": "If the bladder gets blocked, the bladder should be surgically repaired. A bladder pump to treat urinary symptoms may be prescribed to allow the bladder to regain its normal rhythm. You may need injections for this procedure. Diabetes: Follow your family doctor\u0027s advice about your treatment and diet whilst you are on these drugs. A blood glucose test may be done in the first 2 weeks of treatment and then monthly thereafter.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 365,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 7,
+          "endOffset": 14,
+          "score": 0.9777394,
+          "text": "bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 33,
+          "endOffset": 40,
+          "score": 0.98873967,
+          "text": "bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 51,
+          "endOffset": 70,
+          "score": 0.6214894,
+          "text": "surgically repaired",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 74,
+          "endOffset": 81,
+          "score": 0.86372674,
+          "text": "bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 96,
+          "endOffset": 112,
+          "score": 0.82190764,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6961393
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88054556,
+              "relationshipScore": 0.9373139,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 144,
+              "endOffset": 151,
+              "text": "bladder",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 144,
+          "endOffset": 151,
+          "score": 0.88054556,
+          "text": "bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 194,
+          "endOffset": 204,
+          "score": 0.3680954,
+          "text": "injections",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 225,
+          "endOffset": 233,
+          "score": 0.8013085,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82172453
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 333,
+          "endOffset": 351,
+          "score": 0.93762445,
+          "text": "blood glucose test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 371,
+          "endOffset": 384,
+          "score": 0.99234444,
+          "text": "first 2 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.93762445,
+              "relationshipScore": 0.8609157,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 333,
+              "endOffset": 351,
+              "text": "blood glucose test",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5141e3b5-0644-4f41-8005-375a59f0508d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5141e3b5-0644-4f41-8005-375a59f0508d"
+          ],
+          "Content-Length": [
+            "2186"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2186",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:54 GMT",
+          "x-amzn-RequestId": "5141e3b5-0644-4f41-8005-375a59f0508d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1216,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82190764,
+          "beginOffset": 96,
+          "endOffset": 112,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88054556,
+              "relationshipScore": 0.9373139,
+              "id": 4,
+              "beginOffset": 144,
+              "endOffset": 151,
+              "text": "bladder",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6961393
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.8188
+            },
+            {
+              "description": "Other symptoms and signs involving the genitourinary system",
+              "code": "R39.89",
+              "score": 0.68119067
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6679806
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.6477034
+            },
+            {
+              "description": "Benign prostatic hyperplasia with lower urinary tract symptoms",
+              "code": "N40.1",
+              "score": 0.6375455
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.80130845,
+          "beginOffset": 225,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82172453
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.6612205
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.611424
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.54846174
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.50258553
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.4950911
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c29d69ed-4a8d-4a49-ba0a-9a40540c7e56"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c29d69ed-4a8d-4a49-ba0a-9a40540c7e56"
+          ],
+          "Content-Length": [
+            "1806"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1806",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:56 GMT",
+          "x-amzn-RequestId": "c29d69ed-4a8d-4a49-ba0a-9a40540c7e56"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 259,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7d65750a-a603-4227-91c6-a4e0cb359a4f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7d65750a-a603-4227-91c6-a4e0cb359a4f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:54 GMT",
+          "x-amzn-RequestId": "7d65750a-a603-4227-91c6-a4e0cb359a4f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:56 PM"
+}

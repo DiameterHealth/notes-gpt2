@@ -1,0 +1,425 @@
+{
+  "note": "Tired for the most part, except when walking. Sleeping well every night. Good mood, no pain, no tiredness.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 112,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 5,
+          "score": 0.9195106,
+          "text": "Tired",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.654539
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 46,
+          "endOffset": 59,
+          "score": 0.83478785,
+          "text": "Sleeping well",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5786837
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 73,
+          "endOffset": 82,
+          "score": 0.8206366,
+          "text": "Good mood",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7194338
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 87,
+          "endOffset": 91,
+          "score": 0.9942537,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9339197
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97776574
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 96,
+          "endOffset": 105,
+          "score": 0.98922825,
+          "text": "tiredness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8848433
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9766137
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1b82ef89-3b31-428a-bd79-3a35ccb66f01"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1b82ef89-3b31-428a-bd79-3a35ccb66f01"
+          ],
+          "Content-Length": [
+            "1109"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1109",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:02 GMT",
+          "x-amzn-RequestId": "1b82ef89-3b31-428a-bd79-3a35ccb66f01"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 233,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Tired",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91951054,
+          "beginOffset": 0,
+          "endOffset": 5,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.654539
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8958689
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.8242379
+            },
+            {
+              "description": "Heat fatigue, transient",
+              "code": "T67.6",
+              "score": 0.680596
+            },
+            {
+              "description": "Exhaustion due to excessive exertion",
+              "code": "T73.3",
+              "score": 0.67590165
+            },
+            {
+              "description": "Exhaustion due to exposure",
+              "code": "T73.2",
+              "score": 0.6394752
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Sleeping well",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83478785,
+          "beginOffset": 46,
+          "endOffset": 59,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5786836
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.6430342
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.64265144
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.6179012
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.57424974
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.5242916
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Good mood",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8206366,
+          "beginOffset": 73,
+          "endOffset": 82,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7194338
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.5314302
+            },
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.33959848
+            },
+            {
+              "description": "Adjustment disorder with depressed mood",
+              "code": "F43.21",
+              "score": 0.33232522
+            },
+            {
+              "description": "Other specified persistent mood disorders",
+              "code": "F34.89",
+              "score": 0.28754395
+            },
+            {
+              "description": "Postpartum mood disturbance",
+              "code": "O90.6",
+              "score": 0.24585287
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9942537,
+          "beginOffset": 87,
+          "endOffset": 91,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9339197
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97776574
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6345068
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.48333782
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4575444
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.44223002
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.4359456
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "tiredness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98922825,
+          "beginOffset": 96,
+          "endOffset": 105,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8848433
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9766137
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.79916304
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.70153
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.6930215
+            },
+            {
+              "description": "Explosion and rupture of other pressurized tire, pipe or hose",
+              "code": "W37.8",
+              "score": 0.5781021
+            },
+            {
+              "description": "Heat fatigue, transient",
+              "code": "T67.6",
+              "score": 0.54641604
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "69fa0888-fc90-4fff-8498-b76b693da59b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "69fa0888-fc90-4fff-8498-b76b693da59b"
+          ],
+          "Content-Length": [
+            "3467"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3467",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:02 GMT",
+          "x-amzn-RequestId": "69fa0888-fc90-4fff-8498-b76b693da59b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 123,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9be56646-50c4-40e3-8e0e-3e42a7e3acc8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9be56646-50c4-40e3-8e0e-3e42a7e3acc8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:02 GMT",
+          "x-amzn-RequestId": "9be56646-50c4-40e3-8e0e-3e42a7e3acc8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:03 PM"
+}

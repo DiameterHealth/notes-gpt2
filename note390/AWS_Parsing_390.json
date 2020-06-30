@@ -1,0 +1,385 @@
+{
+  "note": ". Then started using a new formulation of K-Y toothpaste 3 times a day. Started using an antihistamine at 8 AM and again at 3 p.m. after that. Now it feels like I feel drugged. Took oral probiotics just to make me feel better. Took melatonin today. Took vitamin D at 10 AM and it was working like medicine.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 419,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 42,
+          "endOffset": 56,
+          "score": 0.78013897,
+          "text": "K-Y toothpaste",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.9764435,
+              "relationshipScore": 0.99996233,
+              "relationshipType": "FREQUENCY",
+              "id": 1,
+              "beginOffset": 57,
+              "endOffset": 70,
+              "text": "3 times a day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 89,
+          "endOffset": 102,
+          "score": 0.9831571,
+          "text": "antihistamine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.33176544,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "DURATION",
+              "id": 3,
+              "beginOffset": 106,
+              "endOffset": 110,
+              "text": "8 AM",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 187,
+          "endOffset": 197,
+          "score": 0.9882438,
+          "text": "probiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.6107599,
+              "relationshipScore": 0.9999995,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 182,
+              "endOffset": 186,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 232,
+          "endOffset": 241,
+          "score": 0.9995919,
+          "text": "melatonin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 242,
+          "endOffset": 247,
+          "score": 0.99989414,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9995919,
+              "relationshipScore": 0.96272355,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 232,
+              "endOffset": 241,
+              "text": "melatonin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 254,
+          "endOffset": 263,
+          "score": 0.99889886,
+          "text": "vitamin D",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.35300556,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "FREQUENCY",
+              "id": 8,
+              "beginOffset": 267,
+              "endOffset": 272,
+              "text": "10 AM",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cd7ae789-debe-42ea-938d-e9416b771be1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cd7ae789-debe-42ea-938d-e9416b771be1"
+          ],
+          "Content-Length": [
+            "2101"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2101",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:11 GMT",
+          "x-amzn-RequestId": "cd7ae789-debe-42ea-938d-e9416b771be1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 856,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c6389d1f-5d49-4f60-b885-c85be8497e55"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c6389d1f-5d49-4f60-b885-c85be8497e55"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:12 GMT",
+          "x-amzn-RequestId": "c6389d1f-5d49-4f60-b885-c85be8497e55"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 741,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "K-Y toothpaste",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.780139,
+          "beginOffset": 42,
+          "endOffset": 56,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.9764435,
+              "relationshipScore": 0.99996233,
+              "id": 1,
+              "beginOffset": 57,
+              "endOffset": 70,
+              "text": "3 times a day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vitamin K",
+              "code": "11258",
+              "score": 0.5185383
+            },
+            {
+              "description": "Vitamin K 2",
+              "code": "42781",
+              "score": 0.28298634
+            },
+            {
+              "description": "Vitamin K 1 0.5 MG Sublingual Tablet",
+              "code": "1923355",
+              "score": 0.2786852
+            },
+            {
+              "description": "Vitamin K 1",
+              "code": "8308",
+              "score": 0.12946153
+            },
+            {
+              "description": "Vitamin K 3",
+              "code": "6728",
+              "score": 0.09948208
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "melatonin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9995919,
+          "beginOffset": 232,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Melatonin",
+              "code": "6711",
+              "score": 0.9441739
+            },
+            {
+              "description": "Melatonin 5 MG Sublingual Tablet",
+              "code": "200007",
+              "score": 0.21803552
+            },
+            {
+              "description": "Melatonin 0.2 MG Oral Tablet",
+              "code": "199424",
+              "score": 0.21723732
+            },
+            {
+              "description": "Melatonin 10 MG Oral Capsule",
+              "code": "283433",
+              "score": 0.17057413
+            },
+            {
+              "description": "Melatonin 20 MG Oral Capsule",
+              "code": "846929",
+              "score": 0.1549816
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "vitamin D",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99889886,
+          "beginOffset": 254,
+          "endOffset": 263,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.35300556,
+              "relationshipScore": 0.99999857,
+              "id": 8,
+              "beginOffset": 267,
+              "endOffset": 272,
+              "text": "10 AM",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vitamin D",
+              "code": "11253",
+              "score": 0.95279074
+            },
+            {
+              "description": "Vitamin D 400 UNT Oral Tablet",
+              "code": "313706",
+              "score": 0.82599574
+            },
+            {
+              "description": "Vitamin A 5000 UNT / Vitamin D 400 UNT Oral Capsule",
+              "code": "314276",
+              "score": 0.010867367
+            },
+            {
+              "description": "Vitamin A 5000 UNT / Vitamin D 10000 UNT Oral Capsule",
+              "code": "283141",
+              "score": 0.010740253
+            },
+            {
+              "description": "Vitamin A 800 UNT / Vitamin D 400 UNT Oral Capsule",
+              "code": "701627",
+              "score": 0.0099891145
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8588a482-532e-453d-b612-e3e53edc9243"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8588a482-532e-453d-b612-e3e53edc9243"
+          ],
+          "Content-Length": [
+            "2226"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2226",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:11 GMT",
+          "x-amzn-RequestId": "8588a482-532e-453d-b612-e3e53edc9243"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:12 PM"
+}

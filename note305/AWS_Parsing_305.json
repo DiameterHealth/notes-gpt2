@@ -1,0 +1,524 @@
+{
+  "note": "until the infection has resolved. Prognosis:  Moderate. Comments: If a wound is large, or the infected area is larger than 1 cm in width, conservative treatment may not be adequate and treatment with antibiotics and anti-fungal meds may be required. Dry Skin  Drug Interactions  Cannabis Interaction: Cannabinoid agonists may interfere with the anti-inflammatory actions of marijuana. Marijuana smoking also reduces the effects of NSAID drugs such as ibuprofen.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 10,
+          "endOffset": 19,
+          "score": 0.9237128,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84276336
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 71,
+          "endOffset": 76,
+          "score": 0.9481516,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88932353
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 200,
+          "endOffset": 211,
+          "score": 0.8258583,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 216,
+          "endOffset": 232,
+          "score": 0.35459656,
+          "text": "anti-fungal meds",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 216,
+          "endOffset": 232,
+          "score": 0.91012526,
+          "text": "anti-fungal meds",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 254,
+          "endOffset": 258,
+          "score": 0.7186464,
+          "text": "Skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 301,
+          "endOffset": 321,
+          "score": 0.82008463,
+          "text": "Cannabinoid agonists",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 374,
+          "endOffset": 383,
+          "score": 0.5077879,
+          "text": "marijuana",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 385,
+          "endOffset": 394,
+          "score": 0.5005153,
+          "text": "Marijuana",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 431,
+          "endOffset": 442,
+          "score": 0.61481476,
+          "text": "NSAID drugs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.6247473
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 451,
+          "endOffset": 460,
+          "score": 0.9875513,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.540391
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0ec78b22-2a0e-42ab-86ed-adf8927fc347"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0ec78b22-2a0e-42ab-86ed-adf8927fc347"
+          ],
+          "Content-Length": [
+            "1918"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1918",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:59 GMT",
+          "x-amzn-RequestId": "0ec78b22-2a0e-42ab-86ed-adf8927fc347"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 412,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9237128,
+          "beginOffset": 10,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84276336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.81065965
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.77734464
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.74840957
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7452407
+            },
+            {
+              "description": "Cellulitis of left upper limb",
+              "code": "L03.114",
+              "score": 0.7246613
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9481516,
+          "beginOffset": 71,
+          "endOffset": 76,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88932353
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic effect of unspecified spider venom, accidental (unintentional)",
+              "code": "T63.301",
+              "score": 0.63326806
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.60673106
+            },
+            {
+              "description": "Disruption of external operation (surgical) wound, not elsewhere classified",
+              "code": "T81.31",
+              "score": 0.58258253
+            },
+            {
+              "description": "Laceration without foreign body of left hand",
+              "code": "S61.412",
+              "score": 0.55337226
+            },
+            {
+              "description": "Non-pressure chronic ulcer of other part of left foot with unspecified severity",
+              "code": "L97.529",
+              "score": 0.55148745
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4862456e-b2bd-4814-955a-6cf1bd0fe5f6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4862456e-b2bd-4814-955a-6cf1bd0fe5f6"
+          ],
+          "Content-Length": [
+            "1612"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1612",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:00 GMT",
+          "x-amzn-RequestId": "4862456e-b2bd-4814-955a-6cf1bd0fe5f6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 615,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "anti-fungal meds",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.3545966,
+          "beginOffset": 216,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "white-rot fungus extract",
+              "code": "968114",
+              "score": 0.6607677
+            },
+            {
+              "description": "Trichophyton (fungus)",
+              "code": "328140",
+              "score": 0.57847047
+            },
+            {
+              "description": "Rabbit anti-human T-lymphocyte globulin",
+              "code": "107044",
+              "score": 0.30367956
+            },
+            {
+              "description": "Lymphocyte Immune Globulin, Anti-Thymocyte Globulin",
+              "code": "1011",
+              "score": 0.26228648
+            },
+            {
+              "description": "bread mold fungus extract",
+              "code": "967721",
+              "score": 0.23712113
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Cannabinoid agonists",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8200846,
+          "beginOffset": 301,
+          "endOffset": 321,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cannabinol",
+              "code": "1976",
+              "score": 0.8047283
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "marijuana",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5077879,
+          "beginOffset": 374,
+          "endOffset": 383,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Picea mariana resin",
+              "code": "1311051",
+              "score": 0.07397665
+            },
+            {
+              "description": "Picea mariana leaf oil",
+              "code": "1362141",
+              "score": 0.007168845
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Marijuana",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5005153,
+          "beginOffset": 385,
+          "endOffset": 394,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Picea mariana resin",
+              "code": "1311051",
+              "score": 0.07397665
+            },
+            {
+              "description": "Picea mariana leaf oil",
+              "code": "1362141",
+              "score": 0.007168845
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "NSAID drugs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.61481476,
+          "beginOffset": 431,
+          "endOffset": 442,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.6247473
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "snail preparation",
+              "code": "1368534",
+              "score": 0.26730338
+            },
+            {
+              "description": "Nicotinamide adenine dinucleotide (NAD)",
+              "code": "1044975",
+              "score": 0.18776521
+            },
+            {
+              "description": "Garden snail mucin preparation",
+              "code": "1428846",
+              "score": 0.102121845
+            },
+            {
+              "description": "sea snail preparation",
+              "code": "1546397",
+              "score": 0.010027833
+            },
+            {
+              "description": "snowball sand verbena whole extract",
+              "code": "1737112",
+              "score": 0.0072329594
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9875513,
+          "beginOffset": 451,
+          "endOffset": 460,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5403911
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Nuprin]",
+              "code": "206893",
+              "score": 0.06792933
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Capsule [Motrin]",
+              "code": "606990",
+              "score": 0.050846513
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5a4c7253-ef25-41a9-99dd-24e36f2269d6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5a4c7253-ef25-41a9-99dd-24e36f2269d6"
+          ],
+          "Content-Length": [
+            "3050"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3050",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:59 GMT",
+          "x-amzn-RequestId": "5a4c7253-ef25-41a9-99dd-24e36f2269d6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:07:00 PM"
+}

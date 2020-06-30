@@ -1,0 +1,437 @@
+{
+  "note": ". The patient has a history of previous severe sepsis that occurred several years ago in a relative who was a very high-risk patient. The patient has been in the hospital 2 to 3 weeks and is in stable condition. The patient is a young white male age 20-30 years with no family history of severe sepsis. The patient has a chest infection.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 297,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 47,
+          "endOffset": 53,
+          "score": 0.9960615,
+          "text": "sepsis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94915855
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 68,
+          "endOffset": 85,
+          "score": 0.9992926,
+          "text": "several years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9960615,
+              "relationshipScore": 0.90665317,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 47,
+              "endOffset": 53,
+              "text": "sepsis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.94915855
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 171,
+          "endOffset": 183,
+          "score": 0.9799295,
+          "text": "2 to 3 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.64869416,
+              "relationshipScore": 0.896728,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 194,
+              "endOffset": 210,
+              "text": "stable condition",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.68148154
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 194,
+          "endOffset": 210,
+          "score": 0.64869416,
+          "text": "stable condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.68148154
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 250,
+          "endOffset": 255,
+          "score": 0.91050506,
+          "text": "20-30",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 295,
+          "endOffset": 301,
+          "score": 0.9947536,
+          "text": "sepsis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9206505
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8913165
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 321,
+          "endOffset": 326,
+          "score": 0.97710174,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 321,
+          "endOffset": 336,
+          "score": 0.9065648,
+          "text": "chest infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62013793
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5e8b94d9-2ebb-4721-882b-5a37e3a331f7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5e8b94d9-2ebb-4721-882b-5a37e3a331f7"
+          ],
+          "Content-Length": [
+            "2060"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2060",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:47 GMT",
+          "x-amzn-RequestId": "5e8b94d9-2ebb-4721-882b-5a37e3a331f7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 382,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sepsis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9960615,
+          "beginOffset": 47,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94915855
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.63955665
+            },
+            {
+              "description": "Severe sepsis with septic shock",
+              "code": "R65.21",
+              "score": 0.62349963
+            },
+            {
+              "description": "Severe sepsis without septic shock",
+              "code": "R65.20",
+              "score": 0.6034932
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.57225806
+            },
+            {
+              "description": "Sepsis due to Streptococcus pneumoniae",
+              "code": "A40.3",
+              "score": 0.4732181
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "stable condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64869416,
+          "beginOffset": 194,
+          "endOffset": 210,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.68148154
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.52045864
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.40016928
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.29181978
+            },
+            {
+              "description": "Unspecified degenerated conditions of globe",
+              "code": "H44.50",
+              "score": 0.20856832
+            },
+            {
+              "description": "Personality change due to known physiological condition",
+              "code": "F07.0",
+              "score": 0.14952046
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sepsis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9947536,
+          "beginOffset": 295,
+          "endOffset": 301,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9206505
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8913165
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.42877188
+            },
+            {
+              "description": "Severe sepsis with septic shock",
+              "code": "R65.21",
+              "score": 0.40722317
+            },
+            {
+              "description": "Severe sepsis without septic shock",
+              "code": "R65.20",
+              "score": 0.37856883
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.3678825
+            },
+            {
+              "description": "Sepsis due to Streptococcus pneumoniae",
+              "code": "A40.3",
+              "score": 0.29642096
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "chest infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9065648,
+          "beginOffset": 321,
+          "endOffset": 336,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6201378
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.3114135
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.3111172
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.25941336
+            },
+            {
+              "description": "Other postprocedural complications and disorders of the circulatory system, not elsewhere classified",
+              "code": "I97.89",
+              "score": 0.25698856
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.2548463
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "34f53e86-5990-4e6d-abb5-ae9f48995f04"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "34f53e86-5990-4e6d-abb5-ae9f48995f04"
+          ],
+          "Content-Length": [
+            "3086"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3086",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:47 GMT",
+          "x-amzn-RequestId": "34f53e86-5990-4e6d-abb5-ae9f48995f04"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 189,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0bea68c0-75f6-49d8-8a2a-fa67317718d5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0bea68c0-75f6-49d8-8a2a-fa67317718d5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:47 GMT",
+          "x-amzn-RequestId": "0bea68c0-75f6-49d8-8a2a-fa67317718d5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:48 PM"
+}

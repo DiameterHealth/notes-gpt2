@@ -1,0 +1,857 @@
+{
+  "note": "in the family. The history indicates no history of measles or other common childhood illnesses. There\u0027s no history of food allergies or recent travel to areas where measles is endemic. Allergies were present as part of the family history, however, the patient doesn\u0027t have severe allergies. At 4 years, there is a history of chronic fatigue, sleep disturbances, and fatigue.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 452,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 51,
+          "endOffset": 58,
+          "score": 0.9802981,
+          "text": "measles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8556479
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.86498195
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 75,
+          "endOffset": 94,
+          "score": 0.36577737,
+          "text": "childhood illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75871336
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88432574
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 118,
+          "endOffset": 132,
+          "score": 0.77825,
+          "text": "food allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6870481
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9097925
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 136,
+          "endOffset": 142,
+          "score": 0.9999993,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.70420754,
+              "relationshipScore": 0.587848,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 165,
+              "endOffset": 172,
+              "text": "measles",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.78832644
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 136,
+          "endOffset": 142,
+          "score": 0.9999993,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.77825,
+              "relationshipScore": 0.5120769,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 118,
+              "endOffset": 132,
+              "text": "food allergies",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.6870481
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9097925
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 136,
+          "endOffset": 142,
+          "score": 0.9999993,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.41341728,
+              "relationshipScore": 0.56733364,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 176,
+              "endOffset": 183,
+              "text": "endemic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 165,
+          "endOffset": 172,
+          "score": 0.70420754,
+          "text": "measles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78832644
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 176,
+          "endOffset": 183,
+          "score": 0.41341728,
+          "text": "endemic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 280,
+          "endOffset": 289,
+          "score": 0.6679464,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 294,
+          "endOffset": 301,
+          "score": 0.9778756,
+          "text": "4 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.998326,
+              "relationshipScore": 0.67233884,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 366,
+              "endOffset": 373,
+              "text": "fatigue",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.84419256
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 294,
+          "endOffset": 301,
+          "score": 0.9778756,
+          "text": "4 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9995436,
+              "relationshipScore": 0.6894345,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 333,
+              "endOffset": 340,
+              "text": "fatigue",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6895163
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 294,
+          "endOffset": 301,
+          "score": 0.9778756,
+          "text": "4 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9838806,
+              "relationshipScore": 0.743704,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 342,
+              "endOffset": 360,
+              "text": "sleep disturbances",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8279347
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 333,
+          "endOffset": 340,
+          "score": 0.9995436,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6895163
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9783885,
+              "relationshipScore": 0.99996924,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 325,
+              "endOffset": 332,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 342,
+          "endOffset": 360,
+          "score": 0.9838806,
+          "text": "sleep disturbances",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8279347
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 366,
+          "endOffset": 373,
+          "score": 0.998326,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84419256
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9783885,
+            "id": 6,
+            "beginOffset": 325,
+            "endOffset": 332,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ee30f235-35e4-45b5-9814-cf4258a812a3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ee30f235-35e4-45b5-9814-cf4258a812a3"
+          ],
+          "Content-Length": [
+            "4881"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4881",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:32 GMT",
+          "x-amzn-RequestId": "ee30f235-35e4-45b5-9814-cf4258a812a3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 515,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "measles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.980298,
+          "beginOffset": 51,
+          "endOffset": 58,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8556479
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.86498195
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Measles without complication",
+              "code": "B05.9",
+              "score": 0.5572763
+            },
+            {
+              "description": "Measles complicated by pneumonia",
+              "code": "B05.2",
+              "score": 0.51183134
+            },
+            {
+              "description": "Measles",
+              "code": "B05",
+              "score": 0.49332663
+            },
+            {
+              "description": "Measles complicated by encephalitis",
+              "code": "B05.0",
+              "score": 0.43416488
+            },
+            {
+              "description": "Other measles complications",
+              "code": "B05.89",
+              "score": 0.41206208
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "childhood illnesses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36577752,
+          "beginOffset": 75,
+          "endOffset": 94,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75871336
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88432574
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.53904665
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.43631154
+            },
+            {
+              "description": "Personal history of neglect in childhood",
+              "code": "Z62.812",
+              "score": 0.43055508
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.42475677
+            },
+            {
+              "description": "Other ill-defined heart diseases",
+              "code": "I51.89",
+              "score": 0.38683534
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "food allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77825,
+          "beginOffset": 118,
+          "endOffset": 132,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.687048
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9097925
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.36599907
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.35185754
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.3232699
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.32066768
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.26775393
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "measles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.70420754,
+          "beginOffset": 165,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7883264
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Measles without complication",
+              "code": "B05.9",
+              "score": 0.49999964
+            },
+            {
+              "description": "Measles complicated by pneumonia",
+              "code": "B05.2",
+              "score": 0.49439585
+            },
+            {
+              "description": "Measles",
+              "code": "B05",
+              "score": 0.46345738
+            },
+            {
+              "description": "Measles complicated by encephalitis",
+              "code": "B05.0",
+              "score": 0.41432375
+            },
+            {
+              "description": "Other measles complications",
+              "code": "B05.89",
+              "score": 0.40618187
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "endemic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4134172,
+          "beginOffset": 176,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Iodine-deficiency related (endemic) goiter, unspecified",
+              "code": "E01.2",
+              "score": 0.46937123
+            },
+            {
+              "description": "Iodine-deficiency related diffuse (endemic) goiter",
+              "code": "E01.0",
+              "score": 0.4436219
+            },
+            {
+              "description": "Nonvenereal syphilis",
+              "code": "A65",
+              "score": 0.39435995
+            },
+            {
+              "description": "Dry beriberi",
+              "code": "E51.11",
+              "score": 0.276572
+            },
+            {
+              "description": "Hemorrhagic fever with renal syndrome",
+              "code": "A98.5",
+              "score": 0.2672238
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6679465,
+          "beginOffset": 280,
+          "endOffset": 289,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.46609664
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.39875853
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.34553537
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.3343111
+            },
+            {
+              "description": "Allergy status to unspecified drugs, medicaments and biological substances status",
+              "code": "Z88.9",
+              "score": 0.3298411
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9995436,
+          "beginOffset": 333,
+          "endOffset": 340,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9783885,
+              "relationshipScore": 0.99996924,
+              "id": 6,
+              "beginOffset": 325,
+              "endOffset": 332,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68951637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8267156
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.82415825
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.69313854
+            },
+            {
+              "description": "Fatigue fracture of vertebra, site unspecified",
+              "code": "M48.40",
+              "score": 0.6170466
+            },
+            {
+              "description": "Other specified disorders of muscle",
+              "code": "M62.89",
+              "score": 0.5580347
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "sleep disturbances",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9838806,
+          "beginOffset": 342,
+          "endOffset": 360,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8279347
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.68439305
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.56997174
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.5062474
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.48864627
+            },
+            {
+              "description": "Sleep disorder not due to a substance or known physiological condition, unspecified",
+              "code": "F51.9",
+              "score": 0.44674006
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.998326,
+          "beginOffset": 366,
+          "endOffset": 373,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84419256
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8777731
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.82385784
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.77130294
+            },
+            {
+              "description": "Fatigue fracture of vertebra, site unspecified",
+              "code": "M48.40",
+              "score": 0.6988351
+            },
+            {
+              "description": "Other specified disorders of muscle",
+              "code": "M62.89",
+              "score": 0.6354239
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5d2ca6e1-d92a-44de-becf-ef53b7f7dbe0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5d2ca6e1-d92a-44de-becf-ef53b7f7dbe0"
+          ],
+          "Content-Length": [
+            "6538"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6538",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:33 GMT",
+          "x-amzn-RequestId": "5d2ca6e1-d92a-44de-becf-ef53b7f7dbe0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1a6651d-4980-470e-ac0e-49d4790704d6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1a6651d-4980-470e-ac0e-49d4790704d6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:32 GMT",
+          "x-amzn-RequestId": "b1a6651d-4980-470e-ac0e-49d4790704d6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:34 PM"
+}

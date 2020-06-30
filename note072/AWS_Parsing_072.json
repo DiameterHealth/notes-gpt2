@@ -1,0 +1,177 @@
+{
+  "note": "physician as soon as symptoms cease. Treatment: Allergy and nasal decongestant treatment.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 99,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 60,
+          "endOffset": 78,
+          "score": 0.45542604,
+          "text": "nasal decongestant",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 60,
+          "endOffset": 78,
+          "score": 0.626668,
+          "text": "nasal decongestant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c0dc2137-ad5c-49d5-8801-fd4a007c3bd0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c0dc2137-ad5c-49d5-8801-fd4a007c3bd0"
+          ],
+          "Content-Length": [
+            "386"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "386",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:10 GMT",
+          "x-amzn-RequestId": "c0dc2137-ad5c-49d5-8801-fd4a007c3bd0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 101,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "081d3fb5-66f1-464c-b260-edc9805017b3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "081d3fb5-66f1-464c-b260-edc9805017b3"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:10 GMT",
+          "x-amzn-RequestId": "081d3fb5-66f1-464c-b260-edc9805017b3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 217,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nasal decongestant",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.4554262,
+          "beginOffset": 60,
+          "endOffset": 78,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "basil allergenic extract",
+              "code": "899355",
+              "score": 0.035924673
+            },
+            {
+              "description": "Naja Naja Venom",
+              "code": "1310461",
+              "score": 0.03171674
+            },
+            {
+              "description": "Sus scrofa nasal mucosa preparation",
+              "code": "1311334",
+              "score": 0.02345582
+            },
+            {
+              "description": "neral",
+              "code": "1484865",
+              "score": 0.017753461
+            },
+            {
+              "description": "Natal orange extract",
+              "code": "1648141",
+              "score": 0.011451457
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "db96a4c0-a6fa-4f2f-8a1e-4d8e15316cf9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "db96a4c0-a6fa-4f2f-8a1e-4d8e15316cf9"
+          ],
+          "Content-Length": [
+            "647"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "647",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:10 GMT",
+          "x-amzn-RequestId": "db96a4c0-a6fa-4f2f-8a1e-4d8e15316cf9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:11 PM"
+}

@@ -1,0 +1,605 @@
+{
+  "note": ". Patient will not continue cholesterol-lowering medication on current medications. No history of cardiovascular disease, stroke, or MI. Have no use of lipid-lowering agents or lipid-mimicking medications. Report blood glucose, lipids, and HbA1C as normal. This is Medicare wellness visit. Patient reports with no complaints and is currently taking atorvastatin for lipid management and aspirin OTC daily. Patient will not continue cholesterol-lowering medication on current medications.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 537,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 28,
+          "endOffset": 59,
+          "score": 0.8372643,
+          "text": "cholesterol-lowering medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 63,
+          "endOffset": 70,
+          "score": 0.9999993,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8372643,
+              "relationshipScore": 0.6693816,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 28,
+              "endOffset": 59,
+              "text": "cholesterol-lowering medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 98,
+          "endOffset": 120,
+          "score": 0.9608523,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90823513
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93868804
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 122,
+          "endOffset": 128,
+          "score": 0.9909168,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94421214
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.893912
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 133,
+          "endOffset": 136,
+          "score": 0.95587814,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9198679
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9062348
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 152,
+          "endOffset": 173,
+          "score": 0.7381097,
+          "text": "lipid-lowering agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 177,
+          "endOffset": 204,
+          "score": 0.60294884,
+          "text": "lipid-mimicking medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 213,
+          "endOffset": 226,
+          "score": 0.9659435,
+          "text": "blood glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 228,
+          "endOffset": 234,
+          "score": 0.95093817,
+          "text": "lipids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 240,
+          "endOffset": 245,
+          "score": 0.99371696,
+          "text": "HbA1C",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.967272,
+              "relationshipScore": 0.99997497,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 249,
+              "endOffset": 255,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 332,
+          "endOffset": 341,
+          "score": 0.99999905,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.99741936,
+              "relationshipScore": 0.53354174,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 349,
+              "endOffset": 361,
+              "text": "atorvastatin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 349,
+          "endOffset": 361,
+          "score": 0.99741936,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 366,
+          "endOffset": 382,
+          "score": 0.61698616,
+          "text": "lipid management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 387,
+          "endOffset": 394,
+          "score": 0.58312136,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.96766704,
+              "relationshipScore": 0.99981815,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 399,
+              "endOffset": 404,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 432,
+          "endOffset": 463,
+          "score": 0.88221264,
+          "text": "cholesterol-lowering medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 467,
+          "endOffset": 474,
+          "score": 0.99999905,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.88221264,
+              "relationshipScore": 0.6693816,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 432,
+              "endOffset": 463,
+              "text": "cholesterol-lowering medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "af47fdf0-8d19-49ea-b30a-e19a2a5a2fd4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "af47fdf0-8d19-49ea-b30a-e19a2a5a2fd4"
+          ],
+          "Content-Length": [
+            "4175"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4175",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:49 GMT",
+          "x-amzn-RequestId": "af47fdf0-8d19-49ea-b30a-e19a2a5a2fd4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 534,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9608523,
+          "beginOffset": 98,
+          "endOffset": 120,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90823513
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93868804
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6387379
+            },
+            {
+              "description": "Endocarditis, valve unspecified",
+              "code": "I38",
+              "score": 0.5870702
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.5836414
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5820928
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5038879
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9909168,
+          "beginOffset": 122,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94421214
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.893912
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.78283733
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7779672
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.65358245
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.63432837
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.6096101
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95587814,
+          "beginOffset": 133,
+          "endOffset": 136,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9198679
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9062348
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.79938614
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7234937
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.6336176
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6193048
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.5925984
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5640dd16-7d58-4516-a229-179d8aa4c6da"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5640dd16-7d58-4516-a229-179d8aa4c6da"
+          ],
+          "Content-Length": [
+            "2628"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2628",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:49 GMT",
+          "x-amzn-RequestId": "5640dd16-7d58-4516-a229-179d8aa4c6da"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 445,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99741936,
+          "beginOffset": 349,
+          "endOffset": 361,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "atorvastatin",
+              "code": "83367",
+              "score": 0.9420543
+            },
+            {
+              "description": "atorvastatin 20 MG Oral Tablet",
+              "code": "617310",
+              "score": 0.8040979
+            },
+            {
+              "description": "atorvastatin 10 MG Oral Tablet",
+              "code": "617312",
+              "score": 0.78608227
+            },
+            {
+              "description": "atorvastatin 80 MG Oral Tablet",
+              "code": "259255",
+              "score": 0.64597
+            },
+            {
+              "description": "atorvastatin 40 MG Oral Tablet",
+              "code": "617311",
+              "score": 0.5089147
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5831216,
+          "beginOffset": 387,
+          "endOffset": 394,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.96766704,
+              "relationshipScore": 0.99981815,
+              "id": 2,
+              "beginOffset": 399,
+              "endOffset": 404,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            },
+            {
+              "description": "Aspirin 325 MG Oral Tablet [Ascriptin]",
+              "code": "830530",
+              "score": 0.23549667
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4b05106d-f607-4bcc-be2a-7cdd2ed8a93b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4b05106d-f607-4bcc-be2a-7cdd2ed8a93b"
+          ],
+          "Content-Length": [
+            "1487"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1487",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:49 GMT",
+          "x-amzn-RequestId": "4b05106d-f607-4bcc-be2a-7cdd2ed8a93b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:50 PM"
+}

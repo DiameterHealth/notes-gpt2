@@ -1,0 +1,731 @@
+{
+  "note": "__________________________________________________ QUESTION: __________________________________________________ __________________________________________ QUESTION: __________________________________________ __________________________________________ Question#1 1. During the week prior to your last surgery, did you have any pain or symptoms during your morning, evening or night time sleep (i.e. sore muscles, back, neck, headache, etc.)? If so please describe this pain. 2. During the week prior to your last surgery, did you have any severe pain in your lower back, back muscles, hip or leg?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2418,
+    "data": {
+      "entities": [
+        {
+          "id": 14,
+          "beginOffset": 300,
+          "endOffset": 307,
+          "score": 0.96791506,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 326,
+          "endOffset": 330,
+          "score": 0.97419226,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8417138
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 375,
+          "endOffset": 391,
+          "score": 0.5096721,
+          "text": "night time sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77179855
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 398,
+          "endOffset": 410,
+          "score": 0.56576324,
+          "text": "sore muscles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77572346
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9949308,
+              "relationshipScore": 0.9927537,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 412,
+              "endOffset": 416,
+              "text": "back",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99499077,
+              "relationshipScore": 0.95898205,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 418,
+              "endOffset": 422,
+              "text": "neck",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 403,
+          "endOffset": 410,
+          "score": 0.9667839,
+          "text": "muscles",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 412,
+          "endOffset": 416,
+          "score": 0.9949308,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 418,
+          "endOffset": 422,
+          "score": 0.99499077,
+          "text": "neck",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 424,
+          "endOffset": 432,
+          "score": 0.98024315,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92949843
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 468,
+          "endOffset": 472,
+          "score": 0.9761913,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83669686
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 512,
+          "endOffset": 519,
+          "score": 0.9751218,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 545,
+          "endOffset": 549,
+          "score": 0.9925781,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8896976
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9955989,
+              "relationshipScore": 0.99998856,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 558,
+              "endOffset": 563,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9874772,
+              "relationshipScore": 0.9999198,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 564,
+              "endOffset": 568,
+              "text": "back",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.4611382,
+              "relationshipScore": 0.9973315,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 570,
+              "endOffset": 582,
+              "text": "back muscles",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99542856,
+              "relationshipScore": 0.99906904,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 584,
+              "endOffset": 587,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9940461,
+              "relationshipScore": 0.9973573,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 7,
+              "beginOffset": 591,
+              "endOffset": 594,
+              "text": "leg",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 564,
+          "endOffset": 568,
+          "score": 0.9874772,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 570,
+          "endOffset": 582,
+          "score": 0.4611382,
+          "text": "back muscles",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 584,
+          "endOffset": 587,
+          "score": 0.99542856,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 591,
+          "endOffset": 594,
+          "score": 0.9940461,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9955989,
+            "id": 3,
+            "beginOffset": 558,
+            "endOffset": 563,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ec7d098-1ec2-45a1-8de4-d9c8f0bb77d2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ec7d098-1ec2-45a1-8de4-d9c8f0bb77d2"
+          ],
+          "Content-Length": [
+            "4302"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4302",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:44 GMT",
+          "x-amzn-RequestId": "2ec7d098-1ec2-45a1-8de4-d9c8f0bb77d2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2629,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97419226,
+          "beginOffset": 326,
+          "endOffset": 330,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8417138
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.68087476
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.55088013
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.50964767
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.50575656
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.49931917
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "night time sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5096721,
+          "beginOffset": 375,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7717986
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.7268106
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.702863
+            },
+            {
+              "description": "Generalized hyperhidrosis",
+              "code": "R61",
+              "score": 0.691844
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.64394933
+            },
+            {
+              "description": "Hypersomnia, unspecified",
+              "code": "G47.10",
+              "score": 0.61987865
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sore muscles",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.56576324,
+          "beginOffset": 398,
+          "endOffset": 410,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9949308,
+              "relationshipScore": 0.9927537,
+              "id": 4,
+              "beginOffset": 412,
+              "endOffset": 416,
+              "text": "back",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99499077,
+              "relationshipScore": 0.95898205,
+              "id": 5,
+              "beginOffset": 418,
+              "endOffset": 422,
+              "text": "neck",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77572346
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other lesions of oral mucosa",
+              "code": "K13.79",
+              "score": 0.5257168
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.4693314
+            },
+            {
+              "description": "Ocular pain, bilateral",
+              "code": "H57.13",
+              "score": 0.4188235
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.41592216
+            },
+            {
+              "description": "Myalgia, unspecified site",
+              "code": "M79.10",
+              "score": 0.40151405
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98024315,
+          "beginOffset": 424,
+          "endOffset": 432,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92949843
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.72765106
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.49559194
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.49000996
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.43071002
+            },
+            {
+              "description": "Myalgia, unspecified site",
+              "code": "M79.10",
+              "score": 0.41108263
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9761913,
+          "beginOffset": 468,
+          "endOffset": 472,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83669674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.513711
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.48439628
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.48106998
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.45682162
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.4403039
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9925781,
+          "beginOffset": 545,
+          "endOffset": 549,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9955989,
+              "relationshipScore": 0.99998856,
+              "id": 9,
+              "beginOffset": 558,
+              "endOffset": 563,
+              "text": "lower",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9874772,
+              "relationshipScore": 0.9999198,
+              "id": 10,
+              "beginOffset": 564,
+              "endOffset": 568,
+              "text": "back",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.4611382,
+              "relationshipScore": 0.9973315,
+              "id": 11,
+              "beginOffset": 570,
+              "endOffset": 582,
+              "text": "back muscles",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99542856,
+              "relationshipScore": 0.99906904,
+              "id": 12,
+              "beginOffset": 584,
+              "endOffset": 587,
+              "text": "hip",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9940461,
+              "relationshipScore": 0.9973573,
+              "id": 13,
+              "beginOffset": 591,
+              "endOffset": 594,
+              "text": "leg",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8896976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.44095227
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.3771706
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.35647893
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.3522935
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.3476148
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a50e444c-b373-4167-bb84-2554ee4eb291"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a50e444c-b373-4167-bb84-2554ee4eb291"
+          ],
+          "Content-Length": [
+            "5098"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5098",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:48 GMT",
+          "x-amzn-RequestId": "a50e444c-b373-4167-bb84-2554ee4eb291"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 881,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5ee83887-aaaf-4e7a-95aa-c15169a40f7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5ee83887-aaaf-4e7a-95aa-c15169a40f7c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:45 GMT",
+          "x-amzn-RequestId": "5ee83887-aaaf-4e7a-95aa-c15169a40f7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:48 PM"
+}

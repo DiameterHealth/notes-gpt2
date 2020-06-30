@@ -1,0 +1,288 @@
+{
+  "note": "(even a high dose aspirin may be needed) while you are adjusting. A doctor may want you to take an aspirin twice daily or three times a day, depending on the severity of the problem. ORTHOID:  Take this medicine on the same days you take any medicine called cyclosporine (which is made in pigs, chickens, and horses), or on the day it is prescribed (this usually takes a couple of days).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 676,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 18,
+          "endOffset": 25,
+          "score": 0.9990706,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 99,
+          "endOffset": 106,
+          "score": 0.99930084,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.9945897,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 107,
+              "endOffset": 139,
+              "text": "twice daily or three times a day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 258,
+          "endOffset": 270,
+          "score": 0.96609724,
+          "text": "cyclosporine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f7df8141-b835-4ae8-9770-c03d95f4482e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f7df8141-b835-4ae8-9770-c03d95f4482e"
+          ],
+          "Content-Length": [
+            "750"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "750",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:42 GMT",
+          "x-amzn-RequestId": "f7df8141-b835-4ae8-9770-c03d95f4482e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 270,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "048fd96a-a939-4a65-88f0-ebd3f709782b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "048fd96a-a939-4a65-88f0-ebd3f709782b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:43 GMT",
+          "x-amzn-RequestId": "048fd96a-a939-4a65-88f0-ebd3f709782b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 442,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9990706,
+          "beginOffset": 18,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            },
+            {
+              "description": "Aspirin 325 MG Oral Tablet [Ascriptin]",
+              "code": "830530",
+              "score": 0.23549667
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99930084,
+          "beginOffset": 99,
+          "endOffset": 106,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.9945897,
+              "relationshipScore": 0.99999964,
+              "id": 2,
+              "beginOffset": 107,
+              "endOffset": 139,
+              "text": "twice daily or three times a day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]",
+              "code": "724444",
+              "score": 0.16114618
+            },
+            {
+              "description": "Aspirin 500 MG Delayed Release Oral Tablet",
+              "code": "308409",
+              "score": 0.14790183
+            },
+            {
+              "description": "Aspirin 228 MG Chewing Gum",
+              "code": "853499",
+              "score": 0.10526551
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "cyclosporine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.96609724,
+          "beginOffset": 258,
+          "endOffset": 270,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cyclosporine",
+              "code": "3008",
+              "score": 0.9544011
+            },
+            {
+              "description": "Cyclosporine 0.5 MG/ML Ophthalmic Suspension",
+              "code": "351291",
+              "score": 0.82823294
+            },
+            {
+              "description": "Cyclosporine 100 MG Oral Capsule",
+              "code": "328160",
+              "score": 0.35921443
+            },
+            {
+              "description": "cyclosporine, modified 25 MG Oral Capsule",
+              "code": "835894",
+              "score": 0.27413982
+            },
+            {
+              "description": "cyclosporine, modified 50 MG Oral Capsule [Gengraf]",
+              "code": "1797521",
+              "score": 0.1470402
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2158c952-af73-46a3-92f8-e970b6d4dbac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2158c952-af73-46a3-92f8-e970b6d4dbac"
+          ],
+          "Content-Length": [
+            "2202"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2202",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:43 GMT",
+          "x-amzn-RequestId": "2158c952-af73-46a3-92f8-e970b6d4dbac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:43 PM"
+}

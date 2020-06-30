@@ -1,0 +1,1728 @@
+{
+  "note": ". The patient has had no significant change in the past 4 weeks or in previous years. They do not have any history of prior injuries or surgeries. They do have one recent cold sore on the inner forearm which they reported to be the culprit. Pain Classification Grade I - Moderate  Grade II - Severe  Grade III - Life-Threatening Level or Tendon Rupture A Grade I Injury A Grade II Injury Grade III Injury or Tendon Rupture A Grade IV Injury Grade 4 - Moderate Level or Tendon Rupture  Grade 5 - Life-Threatening Level or Tendon Rupture B Grade I Injury A Grade II Injury Grade III Injury or Tendon Rupture A Grade II Injury Grade IV Injury Grade 4 - Moderate Level or Tendon Rupture  Grade 5 - Life-Threatening Level or Tendon Rupture B Grade I Injury The patient is having a setback in their recovery after their initial diagnosis of Grade 3 injury.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2773,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 37,
+          "endOffset": 63,
+          "score": 0.37676996,
+          "text": "change in the past 4 weeks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 38,
+          "beginOffset": 44,
+          "endOffset": 63,
+          "score": 0.99811137,
+          "text": "in the past 4 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.37676996,
+              "relationshipScore": 0.93752843,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 37,
+              "endOffset": 63,
+              "text": "change in the past 4 weeks",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "beginOffset": 118,
+          "endOffset": 123,
+          "score": 0.99998605,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9750278,
+              "relationshipScore": 0.9060563,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 124,
+              "endOffset": 132,
+              "text": "injuries",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.62112635
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9136502
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 39,
+          "beginOffset": 118,
+          "endOffset": 123,
+          "score": 0.99998605,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9017143,
+              "relationshipScore": 0.7741171,
+              "relationshipType": "OVERLAP",
+              "id": 31,
+              "beginOffset": 136,
+              "endOffset": 145,
+              "text": "surgeries",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 124,
+          "endOffset": 132,
+          "score": 0.9750278,
+          "text": "injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62112635
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9136502
+            }
+          ]
+        },
+        {
+          "id": 31,
+          "beginOffset": 136,
+          "endOffset": 145,
+          "score": 0.9017143,
+          "text": "surgeries",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 40,
+          "beginOffset": 164,
+          "endOffset": 170,
+          "score": 0.9999993,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.90026945,
+              "relationshipScore": 0.99261284,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 171,
+              "endOffset": 180,
+              "text": "cold sore",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6528559
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 171,
+          "endOffset": 180,
+          "score": 0.90026945,
+          "text": "cold sore",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6528559
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.94307935,
+              "relationshipScore": 0.9987118,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 188,
+              "endOffset": 193,
+              "text": "inner",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9927031,
+              "relationshipScore": 0.99511504,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 194,
+              "endOffset": 201,
+              "text": "forearm",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 194,
+          "endOffset": 201,
+          "score": 0.9927031,
+          "text": "forearm",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 241,
+          "endOffset": 245,
+          "score": 0.96382606,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6653254
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "beginOffset": 241,
+          "endOffset": 260,
+          "score": 0.51486117,
+          "text": "Pain Classification",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5150342,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 33,
+              "beginOffset": 261,
+              "endOffset": 279,
+              "text": "Grade I - Moderate",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.82437336,
+              "relationshipScore": 0.99999726,
+              "relationshipType": "TEST_VALUE",
+              "id": 34,
+              "beginOffset": 281,
+              "endOffset": 298,
+              "text": "Grade II - Severe",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8246353,
+              "relationshipScore": 0.9999995,
+              "relationshipType": "TEST_VALUE",
+              "id": 35,
+              "beginOffset": 300,
+              "endOffset": 483,
+              "text": "Grade III - Life-Threatening Level or Tendon Rupture A Grade I Injury A Grade II Injury Grade III Injury or Tendon Rupture A Grade IV Injury Grade 4 - Moderate Level or Tendon Rupture",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 338,
+          "endOffset": 344,
+          "score": 0.89308274,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 338,
+          "endOffset": 352,
+          "score": 0.7200084,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93637747
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 363,
+          "endOffset": 369,
+          "score": 0.8863322,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8463531
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 381,
+          "endOffset": 387,
+          "score": 0.9554591,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9090026
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 394,
+          "endOffset": 404,
+          "score": 0.43439338,
+          "text": "III Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93841666
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 408,
+          "endOffset": 414,
+          "score": 0.9253826,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 408,
+          "endOffset": 422,
+          "score": 0.9286341,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9565321
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 434,
+          "endOffset": 440,
+          "score": 0.92470115,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8925162
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 460,
+          "endOffset": 483,
+          "score": 0.54273546,
+          "text": "Level or Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9311691
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 469,
+          "endOffset": 475,
+          "score": 0.9211421,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 521,
+          "endOffset": 527,
+          "score": 0.88170105,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 521,
+          "endOffset": 535,
+          "score": 0.81328446,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9084358
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 546,
+          "endOffset": 552,
+          "score": 0.8434005,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8300461
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 564,
+          "endOffset": 570,
+          "score": 0.9324791,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89897877
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 577,
+          "endOffset": 587,
+          "score": 0.4863703,
+          "text": "III Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.937799
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 591,
+          "endOffset": 597,
+          "score": 0.90614027,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 24,
+          "beginOffset": 591,
+          "endOffset": 605,
+          "score": 0.93742085,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9576628
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 617,
+          "endOffset": 623,
+          "score": 0.9243919,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90004396
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "beginOffset": 633,
+          "endOffset": 639,
+          "score": 0.9070347,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8844617
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "beginOffset": 659,
+          "endOffset": 682,
+          "score": 0.5452037,
+          "text": "Level or Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9338971
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 668,
+          "endOffset": 674,
+          "score": 0.90493286,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 720,
+          "endOffset": 726,
+          "score": 0.84872603,
+          "text": "Tendon",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 28,
+          "beginOffset": 720,
+          "endOffset": 734,
+          "score": 0.7975965,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87766373
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "beginOffset": 745,
+          "endOffset": 751,
+          "score": 0.8568649,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7729176
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "beginOffset": 843,
+          "endOffset": 849,
+          "score": 0.95228195,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8307025
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.94307935,
+            "id": 0,
+            "beginOffset": 188,
+            "endOffset": 193,
+            "text": "inner",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.5480464,
+            "id": 36,
+            "beginOffset": 485,
+            "endOffset": 682,
+            "text": "Grade 5 - Life-Threatening Level or Tendon Rupture B Grade I Injury A Grade II Injury Grade III Injury or Tendon Rupture A Grade II Injury Grade IV Injury Grade 4 - Moderate Level or Tendon Rupture",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.43230385,
+            "id": 37,
+            "beginOffset": 684,
+            "endOffset": 751,
+            "text": "Grade 5 - Life-Threatening Level or Tendon Rupture B Grade I Injury",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cdb9d557-bad6-4c19-8ca9-01f8006445f2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cdb9d557-bad6-4c19-8ca9-01f8006445f2"
+          ],
+          "Content-Length": [
+            "9821"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "9821",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:01 GMT",
+          "x-amzn-RequestId": "cdb9d557-bad6-4c19-8ca9-01f8006445f2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 3840,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "change in the past 4 weeks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37677,
+          "beginOffset": 37,
+          "endOffset": 63,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.7999292
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.7911903
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.7819195
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.76978374
+            },
+            {
+              "description": "Unspecified skin changes",
+              "code": "R23.9",
+              "score": 0.7566076
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9750278,
+          "beginOffset": 124,
+          "endOffset": 132,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62112623
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9136502
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.42713603
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.31869167
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.31262356
+            },
+            {
+              "description": "Contusion of right forearm",
+              "code": "S50.11",
+              "score": 0.31262228
+            },
+            {
+              "description": "Strain of unspecified muscle, fascia and tendon at shoulder and upper arm level, left arm",
+              "code": "S46.912",
+              "score": 0.26973042
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cold sore",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90026945,
+          "beginOffset": 171,
+          "endOffset": 180,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.94307935,
+              "relationshipScore": 0.9987118,
+              "id": 3,
+              "beginOffset": 188,
+              "endOffset": 193,
+              "text": "inner",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9927032,
+              "relationshipScore": 0.99511504,
+              "id": 4,
+              "beginOffset": 194,
+              "endOffset": 201,
+              "text": "forearm",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6528559
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.3464642
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.22400737
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.21971908
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.21859708
+            },
+            {
+              "description": "Effect of reduced temperature, unspecified",
+              "code": "T69.9",
+              "score": 0.20646243
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96382606,
+          "beginOffset": 241,
+          "endOffset": 245,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6653254
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.54245585
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.41607714
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.36662865
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.36042297
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.3229308
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7200084,
+          "beginOffset": 338,
+          "endOffset": 352,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93637747
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.74585915
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.6351534
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.6240274
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.5887267
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified forearm",
+              "code": "M66.839",
+              "score": 0.5643144
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88633215,
+          "beginOffset": 363,
+          "endOffset": 369,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84635305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.7250037
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.60497093
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5851599
+            },
+            {
+              "description": "Unspecified injury of left lower leg",
+              "code": "S89.92",
+              "score": 0.5461369
+            },
+            {
+              "description": "Unspecified injury to sacral spinal cord",
+              "code": "S34.139",
+              "score": 0.5446471
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9554591,
+          "beginOffset": 381,
+          "endOffset": 387,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9090026
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.72212523
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.60473424
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5919148
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.56713766
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5666686
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "III Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.43439335,
+          "beginOffset": 394,
+          "endOffset": 404,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93841666
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.61033
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5564935
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.53117555
+            },
+            {
+              "description": "Unspecified injury to sacral spinal cord",
+              "code": "S34.139",
+              "score": 0.5096875
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.47678766
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9286341,
+          "beginOffset": 408,
+          "endOffset": 422,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9565321
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.7757228
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.671858
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.66715246
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.629071
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified forearm",
+              "code": "M66.839",
+              "score": 0.59945697
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92470115,
+          "beginOffset": 434,
+          "endOffset": 440,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8925162
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.68496585
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.58724713
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5794012
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5438242
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.5352869
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "text": "Level or Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5427356,
+          "beginOffset": 460,
+          "endOffset": 483,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9311691
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.7611437
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, forearm",
+              "code": "M66.83",
+              "score": 0.68783635
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.6601444
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, hand",
+              "code": "M66.84",
+              "score": 0.64629424
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.6439287
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.81328446,
+          "beginOffset": 521,
+          "endOffset": 535,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9084358
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.77400035
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.67058164
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.66545653
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, hand",
+              "code": "M66.84",
+              "score": 0.6330568
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.631682
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8434005,
+          "beginOffset": 546,
+          "endOffset": 552,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8300461
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.7317299
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.61007017
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5972908
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.5525359
+            },
+            {
+              "description": "Unspecified injury of left lower leg",
+              "code": "S89.92",
+              "score": 0.5498611
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9324791,
+          "beginOffset": 564,
+          "endOffset": 570,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89897877
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.71081936
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.59587044
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5891762
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5597348
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.55091363
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "text": "III Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.48637018,
+          "beginOffset": 577,
+          "endOffset": 587,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93779886
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.6189262
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5533042
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.54026747
+            },
+            {
+              "description": "Unspecified injury to sacral spinal cord",
+              "code": "S34.139",
+              "score": 0.49082595
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.48008835
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93742096,
+          "beginOffset": 591,
+          "endOffset": 605,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9576628
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.7747806
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.67128956
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.66903013
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, hand",
+              "code": "M66.84",
+              "score": 0.6351842
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.62835336
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9243919,
+          "beginOffset": 617,
+          "endOffset": 623,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90004396
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.69981533
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.59264696
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5788949
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5422933
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.5330193
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9070347,
+          "beginOffset": 633,
+          "endOffset": 639,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8844617
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.6902435
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.59957963
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5891074
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5488649
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.543635
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "text": "Level or Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5452036,
+          "beginOffset": 659,
+          "endOffset": 682,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9338971
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.76321447
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.65687686
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.6506604
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, hand",
+              "code": "M66.84",
+              "score": 0.64422965
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.61386
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "text": "Tendon Rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7975965,
+          "beginOffset": 720,
+          "endOffset": 734,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87766373
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified site",
+              "code": "M66.80",
+              "score": 0.7452799
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.63959634
+            },
+            {
+              "description": "Spontaneous rupture of unspecified tendon",
+              "code": "M66.9",
+              "score": 0.6183737
+            },
+            {
+              "description": "Spontaneous rupture of other tendons, unspecified hand",
+              "code": "M66.849",
+              "score": 0.6054132
+            },
+            {
+              "description": "Rupture of artery",
+              "code": "I77.2",
+              "score": 0.5668418
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "text": "Injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8568649,
+          "beginOffset": 745,
+          "endOffset": 751,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7729176
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.68248415
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.58561206
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5652942
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.52572805
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5253958
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95228183,
+          "beginOffset": 843,
+          "endOffset": 849,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83070236
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.70236367
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.6530979
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.6141041
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.6119665
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.6044579
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c1ea98db-ff7e-44b4-a97f-9b360ed110c1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c1ea98db-ff7e-44b4-a97f-9b360ed110c1"
+          ],
+          "Content-Length": [
+            "16268"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "16268",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:05 GMT",
+          "x-amzn-RequestId": "c1ea98db-ff7e-44b4-a97f-9b360ed110c1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "efeb39ef-c2af-4014-94cd-7394b8fc9548"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "efeb39ef-c2af-4014-94cd-7394b8fc9548"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:01 GMT",
+          "x-amzn-RequestId": "efeb39ef-c2af-4014-94cd-7394b8fc9548"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:06 PM"
+}

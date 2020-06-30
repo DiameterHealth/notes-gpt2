@@ -1,0 +1,492 @@
+{
+  "note": "The fetus had been delivered earlier on Jan 1st with the midwife having indicated pre-term labor and a positive pregnancy test. The baby girl had a low gestational age at birth of 41 weeks and 8 days and was the 2nd of two girls. Procedure:  The uterus was divided into two chambers. One was an abdominal aorta from 7 cm to 11 cm in diameter and was divided in half.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 528,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 19,
+          "endOffset": 28,
+          "score": 0.38166192,
+          "text": "delivered",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.9996119,
+          "text": "Jan 1st",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.99984896,
+          "text": "Jan 1st",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8907973,
+              "relationshipScore": 0.65430856,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 112,
+              "endOffset": 121,
+              "text": "pregnancy",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.90797347
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.99984896,
+          "text": "Jan 1st",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9991309,
+              "relationshipScore": 0.6222491,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 112,
+              "endOffset": 126,
+              "text": "pregnancy test",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.99984896,
+          "text": "Jan 1st",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8082589,
+              "relationshipScore": 0.6050494,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 82,
+              "endOffset": 96,
+              "text": "pre-term labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.835577
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.99984896,
+          "text": "Jan 1st",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.38166192,
+              "relationshipScore": 0.94356,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 19,
+              "endOffset": 28,
+              "text": "delivered",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 82,
+          "endOffset": 96,
+          "score": 0.8082589,
+          "text": "pre-term labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.835577
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 112,
+          "endOffset": 121,
+          "score": 0.8907973,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90797347
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 112,
+          "endOffset": 126,
+          "score": 0.9991309,
+          "text": "pregnancy test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6256758,
+              "relationshipScore": 0.9997669,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 103,
+              "endOffset": 111,
+              "text": "positive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 148,
+          "endOffset": 167,
+          "score": 0.54235584,
+          "text": "low gestational age",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5307288
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 180,
+          "endOffset": 199,
+          "score": 0.6489563,
+          "text": "41 weeks and 8 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.54235584,
+              "relationshipScore": 0.8203812,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 148,
+              "endOffset": 167,
+              "text": "low gestational age",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.5307288
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 246,
+          "endOffset": 252,
+          "score": 0.97268414,
+          "text": "uterus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 295,
+          "endOffset": 310,
+          "score": 0.8848136,
+          "text": "abdominal aorta",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6721c26a-dec9-4ca1-b0a6-f37c91a0b892"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6721c26a-dec9-4ca1-b0a6-f37c91a0b892"
+          ],
+          "Content-Length": [
+            "3795"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3795",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:22 GMT",
+          "x-amzn-RequestId": "6721c26a-dec9-4ca1-b0a6-f37c91a0b892"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 400,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pre-term labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8082589,
+          "beginOffset": 82,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.835577
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified pre-eclampsia, third trimester",
+              "code": "O14.93",
+              "score": 0.6125539
+            },
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.59536135
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.5316606
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.5159648
+            },
+            {
+              "description": "Unspecified pre-eclampsia, unspecified trimester",
+              "code": "O14.90",
+              "score": 0.5038504
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8907973,
+          "beginOffset": 112,
+          "endOffset": 121,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9079736
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7157244
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.6244068
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6212033
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6104882
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.58283406
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "low gestational age",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5423559,
+          "beginOffset": 148,
+          "endOffset": 167,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5307289
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.5060928
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.4723659
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.40192658
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.39513472
+            },
+            {
+              "description": "Hypothyroidism, unspecified",
+              "code": "E03.9",
+              "score": 0.39150673
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b275125f-8dff-4641-978d-89ed6604cc31"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b275125f-8dff-4641-978d-89ed6604cc31"
+          ],
+          "Content-Length": [
+            "2177"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2177",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:23 GMT",
+          "x-amzn-RequestId": "b275125f-8dff-4641-978d-89ed6604cc31"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 213,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d88e429d-3582-4df1-83cd-a631c36ca67d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d88e429d-3582-4df1-83cd-a631c36ca67d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:22 GMT",
+          "x-amzn-RequestId": "d88e429d-3582-4df1-83cd-a631c36ca67d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:24 PM"
+}

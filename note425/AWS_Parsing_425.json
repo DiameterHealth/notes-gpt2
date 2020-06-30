@@ -1,0 +1,578 @@
+{
+  "note": "every time she falls. She is on bedrest as of today. The patient has an unremarkable history of stroke and hypertension with no prior heart failure symptoms, suggesting she is asymptomatic with respect to stroke. She has been stable for the last 4 years due in part to prior history and prior medications with a history of hypertension. Her medical chart is available at the patient\u0027s request.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 697,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 15,
+          "endOffset": 20,
+          "score": 0.79844403,
+          "text": "falls",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4336093
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 96,
+          "endOffset": 102,
+          "score": 0.99467385,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9497384
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 107,
+          "endOffset": 119,
+          "score": 0.9992223,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9498336
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 128,
+          "endOffset": 133,
+          "score": 0.999998,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8761792,
+              "relationshipScore": 0.5130492,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 176,
+              "endOffset": 188,
+              "text": "asymptomatic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 128,
+          "endOffset": 133,
+          "score": 0.999998,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.94177073,
+              "relationshipScore": 0.9284413,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 134,
+              "endOffset": 147,
+              "text": "heart failure",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.55120844
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 134,
+          "endOffset": 139,
+          "score": 0.9720604,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 134,
+          "endOffset": 147,
+          "score": 0.94177073,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55120844
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "score": 0.8761792,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 205,
+          "endOffset": 211,
+          "score": 0.93664736,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88683474
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 323,
+          "endOffset": 335,
+          "score": 0.9978648,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96905655
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cb9937ec-3cad-4867-b47f-a0d96f666364"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cb9937ec-3cad-4867-b47f-a0d96f666364"
+          ],
+          "Content-Length": [
+            "2348"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2348",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:13 GMT",
+          "x-amzn-RequestId": "cb9937ec-3cad-4867-b47f-a0d96f666364"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1135,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "falls",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7984441,
+          "beginOffset": 15,
+          "endOffset": 20,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4336094
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.8268226
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.79423857
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.75193256
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.7002684
+            },
+            {
+              "description": "Fall from, out of or through window",
+              "code": "W13.4",
+              "score": 0.6521088
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99467385,
+          "beginOffset": 96,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9497384
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.82007927
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6930237
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.6384385
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.635089
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.6035609
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9992223,
+          "beginOffset": 107,
+          "endOffset": 119,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9498336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8532938
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.805391
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.76379526
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.7568618
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.72030807
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94177073,
+          "beginOffset": 134,
+          "endOffset": 147,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5512083
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.79754734
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.7248954
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.67206776
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.6595426
+            },
+            {
+              "description": "Chronic diastolic (congestive) heart failure",
+              "code": "I50.32",
+              "score": 0.6309734
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8761792,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Asymptomatic varicose veins of bilateral lower extremities",
+              "code": "I83.93",
+              "score": 0.80984885
+            },
+            {
+              "description": "Asymptomatic menopausal state",
+              "code": "Z78.0",
+              "score": 0.7723025
+            },
+            {
+              "description": "Asymptomatic varicose veins of unspecified lower extremity",
+              "code": "I83.90",
+              "score": 0.69406253
+            },
+            {
+              "description": "Asymptomatic varicose veins of right lower extremity",
+              "code": "I83.91",
+              "score": 0.6584238
+            },
+            {
+              "description": "Asymptomatic varicose veins of lower extremities",
+              "code": "I83.9",
+              "score": 0.6355006
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93664736,
+          "beginOffset": 205,
+          "endOffset": 211,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88683486
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.8136751
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.80493087
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.667869
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.64264774
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.63528365
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9978648,
+          "beginOffset": 323,
+          "endOffset": 335,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96905655
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8599604
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.8008349
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.79746747
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7615729
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.7047816
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8c87f65e-7a0c-409a-baab-aa37899a1b26"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8c87f65e-7a0c-409a-baab-aa37899a1b26"
+          ],
+          "Content-Length": [
+            "5512"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5512",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:14 GMT",
+          "x-amzn-RequestId": "8c87f65e-7a0c-409a-baab-aa37899a1b26"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "abbb32a7-a29a-4f54-ad2d-2cffa3d951e5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "abbb32a7-a29a-4f54-ad2d-2cffa3d951e5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:13 GMT",
+          "x-amzn-RequestId": "abbb32a7-a29a-4f54-ad2d-2cffa3d951e5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:14 PM"
+}

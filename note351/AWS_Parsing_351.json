@@ -1,0 +1,753 @@
+{
+  "note": "(s),  3.1 FAST VETERINARY ACTIVITY On day 21, after being treated with a a cough and cough syrup (Sedelar), I have a small fever and a small bump on my neck. This is about 4,000mg of ibuprofen and a 30oz tube of AstraZeneca cough and cold medicine. What\u0027s with the cough and cold medicine? A week before I was hospitalized, I\u0027ve seen my doctor complaining about being a little dehydrated and having a little bit of heartburn.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 612,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 85,
+          "endOffset": 90,
+          "score": 0.646875,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 123,
+          "endOffset": 128,
+          "score": 0.99017626,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5822532
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 141,
+          "endOffset": 145,
+          "score": 0.93056446,
+          "text": "bump",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41894564
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.48017564
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96503264,
+              "relationshipScore": 0.9999988,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 152,
+              "endOffset": 156,
+              "text": "neck",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 152,
+          "endOffset": 156,
+          "score": 0.96503264,
+          "text": "neck",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 183,
+          "endOffset": 192,
+          "score": 0.98786736,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9854321,
+              "relationshipScore": 0.9999604,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "4,000mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.71686894,
+              "relationshipScore": 0.98563135,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 199,
+              "endOffset": 203,
+              "text": "30oz",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 212,
+          "endOffset": 229,
+          "score": 0.48101324,
+          "text": "AstraZeneca cough",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9854321,
+              "relationshipScore": 0.9693312,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "4,000mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.71686894,
+              "relationshipScore": 0.99923444,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 199,
+              "endOffset": 203,
+              "text": "30oz",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 224,
+          "endOffset": 229,
+          "score": 0.88615435,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4107119
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 265,
+          "endOffset": 270,
+          "score": 0.9700964,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7576445
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 290,
+          "endOffset": 303,
+          "score": 0.88891214,
+          "text": "A week before",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9906171,
+              "relationshipScore": 0.5112296,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 377,
+              "endOffset": 387,
+              "text": "dehydrated",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.90723985
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 377,
+          "endOffset": 387,
+          "score": 0.9906171,
+          "text": "dehydrated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90723985
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 415,
+          "endOffset": 424,
+          "score": 0.9976496,
+          "text": "heartburn",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.85406536
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "781f8dfa-d76b-41ea-a2c0-66125854ac5a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "781f8dfa-d76b-41ea-a2c0-66125854ac5a"
+          ],
+          "Content-Length": [
+            "3365"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3365",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:57 GMT",
+          "x-amzn-RequestId": "781f8dfa-d76b-41ea-a2c0-66125854ac5a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 490,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64687514,
+          "beginOffset": 85,
+          "endOffset": 90,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8038457
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.62391627
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5639494
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.556976
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5537329
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99017626,
+          "beginOffset": 123,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5822532
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6911267
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.43053976
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3910159
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.35837817
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.34511796
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bump",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93056446,
+          "beginOffset": 141,
+          "endOffset": 145,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96503264,
+              "relationshipScore": 0.9999988,
+              "id": 3,
+              "beginOffset": 152,
+              "endOffset": 156,
+              "text": "neck",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.41894564
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.48017552
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.67226124
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.63577294
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.60910237
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.56915486
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.55831933
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88615435,
+          "beginOffset": 224,
+          "endOffset": 229,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41071185
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.78694487
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.5627307
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.53116196
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5307772
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5072306
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9700964,
+          "beginOffset": 265,
+          "endOffset": 270,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7576445
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8134177
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6078074
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.56427133
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.55789024
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5124382
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "dehydrated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9906171,
+          "beginOffset": 377,
+          "endOffset": 387,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90723974
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dehydration",
+              "code": "E86.0",
+              "score": 0.7734192
+            },
+            {
+              "description": "Hyperemesis gravidarum with metabolic disturbance",
+              "code": "O21.1",
+              "score": 0.3886169
+            },
+            {
+              "description": "Dehydration of newborn",
+              "code": "P74.1",
+              "score": 0.37347862
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "heartburn",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9976496,
+          "beginOffset": 415,
+          "endOffset": 424,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.85406536
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heartburn",
+              "code": "R12",
+              "score": 0.7564016
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.48138934
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f3592da5-6233-4b58-a5b5-f87223b2ad2d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f3592da5-6233-4b58-a5b5-f87223b2ad2d"
+          ],
+          "Content-Length": [
+            "4257"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4257",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:59 GMT",
+          "x-amzn-RequestId": "f3592da5-6233-4b58-a5b5-f87223b2ad2d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 832,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.98786736,
+          "beginOffset": 183,
+          "endOffset": 192,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9854321,
+              "relationshipScore": 0.9999604,
+              "id": 0,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "4,000mg",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.71686894,
+              "relationshipScore": 0.98563135,
+              "id": 2,
+              "beginOffset": 199,
+              "endOffset": 203,
+              "text": "30oz",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Tablet",
+              "code": "1299021",
+              "score": 0.68811446
+            },
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.61897284
+            },
+            {
+              "description": "Ibuprofen 200 MG / Pseudoephedrine Hydrochloride 30 MG Oral Capsule",
+              "code": "1299018",
+              "score": 0.34097832
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.0810338
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.076889545
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "AstraZeneca cough",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.48101327,
+          "beginOffset": 212,
+          "endOffset": 229,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9854321,
+              "relationshipScore": 0.9693312,
+              "id": 0,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "4,000mg",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.71686894,
+              "relationshipScore": 0.99923444,
+              "id": 2,
+              "beginOffset": 199,
+              "endOffset": 203,
+              "text": "30oz",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "rough cocklebur pollen extract 40000 UNT/ML Injectable Solution",
+              "code": "1013991",
+              "score": 0.13178271
+            },
+            {
+              "description": "rough marshelder pollen extract 10000 UNT/ML Injectable Solution",
+              "code": "897955",
+              "score": 0.028084993
+            },
+            {
+              "description": "rough marshelder pollen extract 20000 UNT/ML Injectable Solution",
+              "code": "897957",
+              "score": 0.02342373
+            },
+            {
+              "description": "rough marshelder pollen extract 50 MG/ML Injectable Solution",
+              "code": "852535",
+              "score": 0.01724955
+            },
+            {
+              "description": "rough cocklebur pollen extract 10000 UNT/ML Injectable Solution",
+              "code": "1006490",
+              "score": 0.015899407
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b8f8b48f-831c-49b3-9287-7f2b1020bf3d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b8f8b48f-831c-49b3-9287-7f2b1020bf3d"
+          ],
+          "Content-Length": [
+            "2181"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2181",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:57 GMT",
+          "x-amzn-RequestId": "b8f8b48f-831c-49b3-9287-7f2b1020bf3d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:59 PM"
+}

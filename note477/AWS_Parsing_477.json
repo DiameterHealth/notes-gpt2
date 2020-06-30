@@ -1,0 +1,775 @@
+{
+  "note": "and symptoms. The history: The patient\u0027s mother had an acute onset of an anaphylactoid reaction. The patient was given a 2-dose series of OPV (Polio-Varicella- Oral Polio Vaccine) at approximately 2 months post-vaccination. On the subsequent checkup (months 3-15), the patient developed seizures in conjunction with a mild fever. The seizures stopped when the patient was discharged from the hospital.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 467,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 73,
+          "endOffset": 95,
+          "score": 0.9172639,
+          "text": "anaphylactoid reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7843901
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84762806,
+              "relationshipScore": 0.9987489,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 55,
+              "endOffset": 60,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 138,
+          "endOffset": 141,
+          "score": 0.23052277,
+          "text": "OPV",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 143,
+          "endOffset": 148,
+          "score": 0.7876815,
+          "text": "Polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.839749
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 143,
+          "endOffset": 178,
+          "score": 0.8127256,
+          "text": "Polio-Varicella- Oral Polio Vaccine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 149,
+          "endOffset": 158,
+          "score": 0.423984,
+          "text": "Varicella",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49424112
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 165,
+          "endOffset": 170,
+          "score": 0.516181,
+          "text": "Polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58685756
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 197,
+          "endOffset": 222,
+          "score": 0.93341154,
+          "text": "2 months post-vaccination",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.423984,
+              "relationshipScore": 0.6204807,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 149,
+              "endOffset": 158,
+              "text": "Varicella",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.49424112
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 197,
+          "endOffset": 222,
+          "score": 0.93341154,
+          "text": "2 months post-vaccination",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7876815,
+              "relationshipScore": 0.58567804,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 143,
+              "endOffset": 148,
+              "text": "Polio",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.839749
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 197,
+          "endOffset": 222,
+          "score": 0.93341154,
+          "text": "2 months post-vaccination",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8127256,
+              "relationshipScore": 0.7831701,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 143,
+              "endOffset": 178,
+              "text": "Polio-Varicella- Oral Polio Vaccine",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 197,
+          "endOffset": 222,
+          "score": 0.93341154,
+          "text": "2 months post-vaccination",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.516181,
+              "relationshipScore": 0.5775131,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 165,
+              "endOffset": 170,
+              "text": "Polio",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.58685756
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 251,
+          "endOffset": 262,
+          "score": 0.5258171,
+          "text": "months 3-15",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99578047,
+              "relationshipScore": 0.74946773,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 287,
+              "endOffset": 295,
+              "text": "seizures",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.77357614
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 251,
+          "endOffset": 262,
+          "score": 0.5258171,
+          "text": "months 3-15",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9804364,
+              "relationshipScore": 0.7150379,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 323,
+              "endOffset": 328,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.41626042
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.47451544
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 258,
+          "endOffset": 262,
+          "score": 0.41958416,
+          "text": "3-15",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 287,
+          "endOffset": 295,
+          "score": 0.99578047,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77357614
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 323,
+          "endOffset": 328,
+          "score": 0.9804364,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41626042
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47451544
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 334,
+          "endOffset": 342,
+          "score": 0.97343093,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8357571
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.84762806,
+            "id": 0,
+            "beginOffset": 55,
+            "endOffset": 60,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "18578bc2-a34e-4813-9eb8-4f482ba67972"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "18578bc2-a34e-4813-9eb8-4f482ba67972"
+          ],
+          "Content-Length": [
+            "5091"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5091",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:42 GMT",
+          "x-amzn-RequestId": "18578bc2-a34e-4813-9eb8-4f482ba67972"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 440,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "anaphylactoid reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9172638,
+          "beginOffset": 73,
+          "endOffset": 95,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8476279,
+              "relationshipScore": 0.9987489,
+              "id": 0,
+              "beginOffset": 55,
+              "endOffset": 60,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7843901
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.37097242
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.2904504
+            },
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.26705018
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.21670865
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.21495463
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7876815,
+          "beginOffset": 143,
+          "endOffset": 148,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.839749
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Target of (perceived) adverse discrimination and persecution",
+              "code": "Z60.5",
+              "score": 0.731857
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E11.43",
+              "score": 0.5600903
+            },
+            {
+              "description": "Acute poliomyelitis, unspecified",
+              "code": "A80.9",
+              "score": 0.4715507
+            },
+            {
+              "description": "Acute poliomyelitis",
+              "code": "A80",
+              "score": 0.46438238
+            },
+            {
+              "description": "Type 1 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E10.43",
+              "score": 0.45239946
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Varicella",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.42398402,
+          "beginOffset": 149,
+          "endOffset": 158,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49424112
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Varicella without complication",
+              "code": "B01.9",
+              "score": 0.6497096
+            },
+            {
+              "description": "Varicella with other complications",
+              "code": "B01.8",
+              "score": 0.5814337
+            },
+            {
+              "description": "Varicella [chickenpox]",
+              "code": "B01",
+              "score": 0.48609254
+            },
+            {
+              "description": "Varicella pneumonia",
+              "code": "B01.2",
+              "score": 0.47892603
+            },
+            {
+              "description": "Varicella keratitis",
+              "code": "B01.81",
+              "score": 0.46927747
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Polio",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.516181,
+          "beginOffset": 165,
+          "endOffset": 170,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58685756
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Target of (perceived) adverse discrimination and persecution",
+              "code": "Z60.5",
+              "score": 0.727711
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic autonomic (poly)neuropathy",
+              "code": "E11.43",
+              "score": 0.5450174
+            },
+            {
+              "description": "Acute poliomyelitis, unspecified",
+              "code": "A80.9",
+              "score": 0.44716358
+            },
+            {
+              "description": "Osteopathy after poliomyelitis, unspecified site",
+              "code": "M89.60",
+              "score": 0.44584996
+            },
+            {
+              "description": "Acute poliomyelitis",
+              "code": "A80",
+              "score": 0.43350232
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99578047,
+          "beginOffset": 287,
+          "endOffset": 295,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7735761
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.8821863
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.79229146
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.7755935
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.74004817
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.6968003
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9804364,
+          "beginOffset": 323,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41626045
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47451538
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7793327
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.56243366
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.452253
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.44683716
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4392533
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97343093,
+          "beginOffset": 334,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8357571
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.88677305
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.81446844
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.7836252
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.7399955
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.7055526
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f1f0c9df-f030-46b3-95b1-504baa832db9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f1f0c9df-f030-46b3-95b1-504baa832db9"
+          ],
+          "Content-Length": [
+            "5185"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5185",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:43 GMT",
+          "x-amzn-RequestId": "f1f0c9df-f030-46b3-95b1-504baa832db9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 212,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e8f97755-b234-4c39-8cae-a693a5909e31"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e8f97755-b234-4c39-8cae-a693a5909e31"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:42 GMT",
+          "x-amzn-RequestId": "e8f97755-b234-4c39-8cae-a693a5909e31"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:43 PM"
+}

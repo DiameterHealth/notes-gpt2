@@ -1,0 +1,542 @@
+{
+  "note": "All the tests described for the diagnosis are done within the first 24 hours of admission. All the tests show a significant degree of bilateral patellar dislocation and calcification of the synovial joint. The patient is transferred to orthopedic rehabilitation facility, where hip and patellar ligaments and their attachments are repaired, reattached to the femur, reconstructed, and the knee is immobilized again.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 716,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 8,
+          "endOffset": 13,
+          "score": 0.32784054,
+          "text": "tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 62,
+          "endOffset": 89,
+          "score": 0.97875273,
+          "text": "first 24 hours of admission",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.32784054,
+              "relationshipScore": 0.84743035,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 8,
+              "endOffset": 13,
+              "text": "tests",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 99,
+          "endOffset": 104,
+          "score": 0.6868453,
+          "text": "tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9342302,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 112,
+              "endOffset": 204,
+              "text": "significant degree of bilateral patellar dislocation and calcification of the synovial joint",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 144,
+          "endOffset": 164,
+          "score": 0.8635861,
+          "text": "patellar dislocation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91872865
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9947896,
+              "relationshipScore": 0.9992755,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 134,
+              "endOffset": 143,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 169,
+          "endOffset": 182,
+          "score": 0.8564855,
+          "text": "calcification",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6293244
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9947896,
+              "relationshipScore": 0.9528776,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 134,
+              "endOffset": 143,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9670433,
+              "relationshipScore": 0.99917763,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 190,
+              "endOffset": 204,
+              "text": "synovial joint",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 190,
+          "endOffset": 204,
+          "score": 0.9670433,
+          "text": "synovial joint",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 236,
+          "endOffset": 270,
+          "score": 0.5806223,
+          "text": "orthopedic rehabilitation facility",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 278,
+          "endOffset": 281,
+          "score": 0.9648963,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 286,
+          "endOffset": 304,
+          "score": 0.91499,
+          "text": "patellar ligaments",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 331,
+          "endOffset": 339,
+          "score": 0.6298417,
+          "text": "repaired",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 359,
+          "endOffset": 364,
+          "score": 0.9715081,
+          "text": "femur",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 366,
+          "endOffset": 379,
+          "score": 0.2731019,
+          "text": "reconstructed",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 389,
+          "endOffset": 393,
+          "score": 0.99139446,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 397,
+          "endOffset": 408,
+          "score": 0.60060954,
+          "text": "immobilized",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.55409354
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99139446,
+              "relationshipScore": 0.99978524,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 389,
+              "endOffset": 393,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9947896,
+            "id": 0,
+            "beginOffset": 134,
+            "endOffset": 143,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "74615225-d5c7-47d6-8990-869a66727dd5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "74615225-d5c7-47d6-8990-869a66727dd5"
+          ],
+          "Content-Length": [
+            "4058"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4058",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:34 GMT",
+          "x-amzn-RequestId": "74615225-d5c7-47d6-8990-869a66727dd5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 822,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "patellar dislocation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8635861,
+          "beginOffset": 144,
+          "endOffset": 164,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9947896,
+              "relationshipScore": 0.9992755,
+              "id": 0,
+              "beginOffset": 134,
+              "endOffset": 143,
+              "text": "bilateral",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91872865
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified dislocation of left patella",
+              "code": "S83.005",
+              "score": 0.34129453
+            },
+            {
+              "description": "Unspecified dislocation of right knee",
+              "code": "S83.104",
+              "score": 0.3405826
+            },
+            {
+              "description": "Unspecified dislocation of left hip",
+              "code": "S73.005",
+              "score": 0.3210916
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.2862376
+            },
+            {
+              "description": "Unspecified dislocation of right ulnohumeral joint",
+              "code": "S53.104",
+              "score": 0.27227494
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "calcification",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8564855,
+          "beginOffset": 169,
+          "endOffset": 182,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9947896,
+              "relationshipScore": 0.9528776,
+              "id": 0,
+              "beginOffset": 134,
+              "endOffset": 143,
+              "text": "bilateral",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9670433,
+              "relationshipScore": 0.99917763,
+              "id": 3,
+              "beginOffset": 190,
+              "endOffset": 204,
+              "text": "synovial joint",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6293244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atherosclerosis",
+              "code": "I70.90",
+              "score": 0.5685256
+            },
+            {
+              "description": "Unspecified atherosclerosis of native arteries of extremities, bilateral legs",
+              "code": "I70.203",
+              "score": 0.5662868
+            },
+            {
+              "description": "Atherosclerosis of aorta",
+              "code": "I70.0",
+              "score": 0.5569754
+            },
+            {
+              "description": "Atherosclerosis",
+              "code": "I70",
+              "score": 0.5398965
+            },
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.53643346
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "immobilized",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6006097,
+          "beginOffset": 397,
+          "endOffset": 408,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99139446,
+              "relationshipScore": 0.99978524,
+              "id": 7,
+              "beginOffset": 389,
+              "endOffset": 393,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5540937
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.6136057
+            },
+            {
+              "description": "Immobility syndrome (paraplegic)",
+              "code": "M62.3",
+              "score": 0.5604654
+            },
+            {
+              "description": "Functional quadriplegia",
+              "code": "R53.2",
+              "score": 0.5415944
+            },
+            {
+              "description": "Other specified functional intestinal disorders",
+              "code": "K59.8",
+              "score": 0.39375484
+            },
+            {
+              "description": "Functional urinary incontinence",
+              "code": "R39.81",
+              "score": 0.27991307
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a8232650-54f0-4f8c-bdc8-8c4fcf01c2f2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a8232650-54f0-4f8c-bdc8-8c4fcf01c2f2"
+          ],
+          "Content-Length": [
+            "2871"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2871",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:34 GMT",
+          "x-amzn-RequestId": "a8232650-54f0-4f8c-bdc8-8c4fcf01c2f2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7a7ef249-666e-439a-8d1a-d13175585e0b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7a7ef249-666e-439a-8d1a-d13175585e0b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:34 GMT",
+          "x-amzn-RequestId": "7a7ef249-666e-439a-8d1a-d13175585e0b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:35 PM"
+}

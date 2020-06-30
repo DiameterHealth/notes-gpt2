@@ -1,0 +1,276 @@
+{
+  "note": ".  Treatment: If the rash is very severe and is not improving, then the medical community recommend to discontinue all treatment and contact your health care provider who will administer the next best treatment. If the rash reappears for more than 3 days, then patients should also contact their health care provider who will determine if further testing is warranted and recommend the next best treatment.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 336,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 21,
+          "endOffset": 25,
+          "score": 0.98832625,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47801134
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 219,
+          "endOffset": 223,
+          "score": 0.93689495,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42666292
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46956596
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 238,
+          "endOffset": 254,
+          "score": 0.9508516,
+          "text": "more than 3 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93689495,
+              "relationshipScore": 0.702495,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 219,
+              "endOffset": 223,
+              "text": "rash",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.42666292
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.46956596
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "56c1e889-6307-4bbd-8d01-d6bb94e43dfa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "56c1e889-6307-4bbd-8d01-d6bb94e43dfa"
+          ],
+          "Content-Length": [
+            "967"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "967",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:57 GMT",
+          "x-amzn-RequestId": "56c1e889-6307-4bbd-8d01-d6bb94e43dfa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 467,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98832625,
+          "beginOffset": 21,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47801125
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.7842793
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.5180785
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.48408085
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.4723345
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.44072205
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93689495,
+          "beginOffset": 219,
+          "endOffset": 223,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42666295
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4695659
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.7050247
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.4428556
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.4241434
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.38250098
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.37594208
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e2fb0add-333a-4fea-8e9c-e5f3782e2ce0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e2fb0add-333a-4fea-8e9c-e5f3782e2ce0"
+          ],
+          "Content-Length": [
+            "1497"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1497",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:57 GMT",
+          "x-amzn-RequestId": "e2fb0add-333a-4fea-8e9c-e5f3782e2ce0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 200,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "59addaf3-7c6d-4e21-8572-6f0e174dbbbe"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "59addaf3-7c6d-4e21-8572-6f0e174dbbbe"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:57 GMT",
+          "x-amzn-RequestId": "59addaf3-7c6d-4e21-8572-6f0e174dbbbe"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:58 PM"
+}

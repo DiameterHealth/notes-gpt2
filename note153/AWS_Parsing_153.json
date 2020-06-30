@@ -1,0 +1,358 @@
+{
+  "note": ".  If that is unsuccessful, the patient will return the following week and will continue medication and therapy as instructed by her doctor. MANDATORY DIAGNOSIS  Medical history should include: history of pregnancy with documented menses, no other medical conditions, and no previous pelvic conditions. Diagnostic tests will include: Ultrasound examination: The ultrasound exam will be used to take a detailed look at the pelvic floor for signs or deformities.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 274,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 205,
+          "endOffset": 214,
+          "score": 0.9938838,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96814525
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 231,
+          "endOffset": 237,
+          "score": 0.97066045,
+          "text": "menses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6970885
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 303,
+          "endOffset": 319,
+          "score": 0.88679284,
+          "text": "Diagnostic tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 334,
+          "endOffset": 356,
+          "score": 0.54798025,
+          "text": "Ultrasound examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 362,
+          "endOffset": 377,
+          "score": 0.57219344,
+          "text": "ultrasound exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 422,
+          "endOffset": 434,
+          "score": 0.40224195,
+          "text": "pelvic floor",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 448,
+          "endOffset": 459,
+          "score": 0.8192453,
+          "text": "deformities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.63603204
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.40224195,
+              "relationshipScore": 0.99009645,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 422,
+              "endOffset": 434,
+              "text": "pelvic floor",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e89f9246-8034-4fed-85e5-19f7ca6f9452"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e89f9246-8034-4fed-85e5-19f7ca6f9452"
+          ],
+          "Content-Length": [
+            "1541"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1541",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:05 GMT",
+          "x-amzn-RequestId": "e89f9246-8034-4fed-85e5-19f7ca6f9452"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 994,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9938838,
+          "beginOffset": 205,
+          "endOffset": 214,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96814525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.64415205
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.5664969
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.45079598
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.40785593
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.40174162
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "menses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97066045,
+          "beginOffset": 231,
+          "endOffset": 237,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6970884
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Excessive and frequent menstruation with regular cycle",
+              "code": "N92.0",
+              "score": 0.5537164
+            },
+            {
+              "description": "Irregular menstruation, unspecified",
+              "code": "N92.6",
+              "score": 0.37992132
+            },
+            {
+              "description": "Other specified conditions associated with female genital organs and menstrual cycle",
+              "code": "N94.89",
+              "score": 0.37232953
+            },
+            {
+              "description": "Excessive, frequent and irregular menstruation",
+              "code": "N92",
+              "score": 0.29815271
+            },
+            {
+              "description": "Multiple endocrine neoplasia [MEN] syndrome, unspecified",
+              "code": "E31.20",
+              "score": 0.26038074
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "deformities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8192453,
+          "beginOffset": 448,
+          "endOffset": 459,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.40224198,
+              "relationshipScore": 0.99009645,
+              "id": 2,
+              "beginOffset": 422,
+              "endOffset": 434,
+              "text": "pelvic floor",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6360321
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.79577893
+            },
+            {
+              "description": "Other specified acquired deformities of musculoskeletal system",
+              "code": "M95.8",
+              "score": 0.74749666
+            },
+            {
+              "description": "Unspecified acquired deformity of unspecified limb",
+              "code": "M21.90",
+              "score": 0.7350155
+            },
+            {
+              "description": "Acquired deformity of musculoskeletal system, unspecified",
+              "code": "M95.9",
+              "score": 0.7068925
+            },
+            {
+              "description": "Other nail disorders",
+              "code": "L60.8",
+              "score": 0.62251955
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bbd187d8-aa48-45be-a728-3f11459e7a97"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bbd187d8-aa48-45be-a728-3f11459e7a97"
+          ],
+          "Content-Length": [
+            "2594"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2594",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:07 GMT",
+          "x-amzn-RequestId": "bbd187d8-aa48-45be-a728-3f11459e7a97"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3f97d5a2-039a-4c41-8d0f-6c5986e4d023"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3f97d5a2-039a-4c41-8d0f-6c5986e4d023"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:05 GMT",
+          "x-amzn-RequestId": "3f97d5a2-039a-4c41-8d0f-6c5986e4d023"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:07 PM"
+}

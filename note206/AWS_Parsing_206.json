@@ -1,0 +1,187 @@
+{
+  "note": ", up to and including the end of the third week after discharge. If symptoms persist or resolve, follow up with an infectious diseases specialist. Compliance / Compliance: Patient is required to notify family within 14 days of discharge. The patient must complete the following: a brief, electronic, informed consent form; annual physical and screening physical exam  Medical record review by an infectious diseases specialist at a hospital or health care provider with expertise in patient care, the clinical use of Ebola, and virus-specific precautions  Proforma discharge plan for the patient, including complete health information, including detailed questions about the patient\u0027s travels and contacts, all medical information, and any special precautions or restrictions The patient must complete and sign the following: Medical release forms  Personal statement for physician, referring physician, nursing team, healthcare administrator, and infectious diseases specialist  Copy of medical discharge form by the patient The patient must sign a consent form indicating that the patient has read, understood, and is voluntarily providing all information about the risks, risks, and benefits of being an Ebola patient to his or her provider, the hospital, and the U.S.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 918,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "score": 0.38626093,
+          "text": "infectious diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87451494
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 330,
+          "endOffset": 366,
+          "score": 0.34640726,
+          "text": "physical and screening physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f6070569-b19c-4097-b7ba-845d638da4d5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f6070569-b19c-4097-b7ba-845d638da4d5"
+          ],
+          "Content-Length": [
+            "452"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "452",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:29 GMT",
+          "x-amzn-RequestId": "f6070569-b19c-4097-b7ba-845d638da4d5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1012,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infectious diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38626072,
+          "beginOffset": 115,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87451494
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.775537
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.6513026
+            },
+            {
+              "description": "Other and unspecified infectious diseases",
+              "code": "B99",
+              "score": 0.6149067
+            },
+            {
+              "description": "Family history of other infectious and parasitic diseases",
+              "code": "Z83.1",
+              "score": 0.6088958
+            },
+            {
+              "description": "Unspecified mycosis",
+              "code": "B49",
+              "score": 0.5981749
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9340bee9-27ea-4e11-83bd-b57ea14caee3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9340bee9-27ea-4e11-83bd-b57ea14caee3"
+          ],
+          "Content-Length": [
+            "787"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "787",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:30 GMT",
+          "x-amzn-RequestId": "9340bee9-27ea-4e11-83bd-b57ea14caee3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 596,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "74e826ef-32ac-4467-b06b-cbf792a0f853"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "74e826ef-32ac-4467-b06b-cbf792a0f853"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:29 GMT",
+          "x-amzn-RequestId": "74e826ef-32ac-4467-b06b-cbf792a0f853"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:31 PM"
+}

@@ -1,0 +1,711 @@
+{
+  "note": ". History of stable angina pectoris, no prior myocardial infarction, no significant past medical history. RUN TIME: 10 days 1 week 5 days  TEST RESULT: Stable ECG. Clinical Relevance: This interesting patient presents with an aminophyllar fibrillation with normal sinus tachycardia associated with right ventricular hypertrophy without a tachycardia. Conclusion: In this instance it is a well formed patient with a normal ECG suggesting that he is a stable angina patient.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 596,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 13,
+          "endOffset": 35,
+          "score": 0.5020957,
+          "text": "stable angina pectoris",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95481986
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 40,
+          "endOffset": 45,
+          "score": 0.9999951,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93972695,
+              "relationshipScore": 0.7696308,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 46,
+              "endOffset": 67,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9029714
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.940099
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 46,
+          "endOffset": 67,
+          "score": 0.93972695,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9029714
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.940099
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 116,
+          "endOffset": 137,
+          "score": 0.65735924,
+          "text": "10 days 1 week 5 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9994978,
+              "relationshipScore": 0.7187361,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 159,
+              "endOffset": 162,
+              "text": "ECG",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 159,
+          "endOffset": 162,
+          "score": 0.9994978,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5875673,
+              "relationshipScore": 0.9984498,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 152,
+              "endOffset": 158,
+              "text": "Stable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 226,
+          "endOffset": 251,
+          "score": 0.8666036,
+          "text": "aminophyllar fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7995156
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 264,
+          "endOffset": 269,
+          "score": 0.70985585,
+          "text": "sinus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 264,
+          "endOffset": 281,
+          "score": 0.64989257,
+          "text": "sinus tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.735601
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 304,
+          "endOffset": 327,
+          "score": 0.73036265,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58161277
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9536186,
+              "relationshipScore": 0.99964523,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 298,
+              "endOffset": 303,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 338,
+          "endOffset": 349,
+          "score": 0.9699229,
+          "text": "tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44986907
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47366428
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7939693
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 422,
+          "endOffset": 425,
+          "score": 0.9993414,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8492104,
+              "relationshipScore": 0.9999982,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 415,
+              "endOffset": 421,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 450,
+          "endOffset": 463,
+          "score": 0.49322346,
+          "text": "stable angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4021865
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54324394
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9536186,
+            "id": 1,
+            "beginOffset": 298,
+            "endOffset": 303,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8d0a5e43-04db-4653-ab56-af7f3bee7779"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8d0a5e43-04db-4653-ab56-af7f3bee7779"
+          ],
+          "Content-Length": [
+            "3887"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3887",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:30 GMT",
+          "x-amzn-RequestId": "8d0a5e43-04db-4653-ab56-af7f3bee7779"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 580,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "stable angina pectoris",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5020957,
+          "beginOffset": 13,
+          "endOffset": 35,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95481986
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.82876706
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.7870092
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.68973583
+            },
+            {
+              "description": "Other forms of angina pectoris",
+              "code": "I20.8",
+              "score": 0.65908235
+            },
+            {
+              "description": "Postinfarction angina",
+              "code": "I23.7",
+              "score": 0.64509296
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93972695,
+          "beginOffset": 46,
+          "endOffset": 67,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9029714
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.940099
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8699146
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.78309643
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7760447
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.74821454
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.7462831
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "aminophyllar fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8666036,
+          "beginOffset": 226,
+          "endOffset": 251,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7995156
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.27272552
+            },
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.25772253
+            },
+            {
+              "description": "Leiomyoma of uterus, unspecified",
+              "code": "D25.9",
+              "score": 0.25129297
+            },
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.24847996
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.22850648
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sinus tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64989257,
+          "beginOffset": 264,
+          "endOffset": 281,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.735601
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.74210143
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.5411131
+            },
+            {
+              "description": "Ventricular tachycardia",
+              "code": "I47.2",
+              "score": 0.51946545
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.48292226
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.45015115
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "ventricular hypertrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73036265,
+          "beginOffset": 304,
+          "endOffset": 327,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9536186,
+              "relationshipScore": 0.99964523,
+              "id": 5,
+              "beginOffset": 298,
+              "endOffset": 303,
+              "text": "right",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58161277
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.64893615
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.6048467
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.5325539
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.47425774
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.45883676
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9699229,
+          "beginOffset": 338,
+          "endOffset": 349,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.449869
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47366425
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7939693
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.7705274
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.6206881
+            },
+            {
+              "description": "Ventricular tachycardia",
+              "code": "I47.2",
+              "score": 0.56271106
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.5334366
+            },
+            {
+              "description": "Cardiomyopathy, unspecified",
+              "code": "I42.9",
+              "score": 0.5048129
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "stable angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49322358,
+          "beginOffset": 450,
+          "endOffset": 463,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4021865
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54324394
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.86371684
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.8390971
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.7742182
+            },
+            {
+              "description": "Other forms of angina pectoris",
+              "code": "I20.8",
+              "score": 0.72206604
+            },
+            {
+              "description": "Angina pectoris with documented spasm",
+              "code": "I20.1",
+              "score": 0.6977431
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d2e5a45b-5f9a-47e2-b3db-b9b219c87a62"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d2e5a45b-5f9a-47e2-b3db-b9b219c87a62"
+          ],
+          "Content-Length": [
+            "5682"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5682",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:31 GMT",
+          "x-amzn-RequestId": "d2e5a45b-5f9a-47e2-b3db-b9b219c87a62"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 216,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eddc6f2d-21fa-40c4-b6a9-189144215981"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eddc6f2d-21fa-40c4-b6a9-189144215981"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:30 GMT",
+          "x-amzn-RequestId": "eddc6f2d-21fa-40c4-b6a9-189144215981"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:31 PM"
+}

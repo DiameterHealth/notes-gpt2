@@ -1,0 +1,422 @@
+{
+  "note": "Treatment: A 2 week course of   MEDICAID:  Treatment:  Routine follow up:  Patient 3, a 25 year old female with metastatic breast cancer, was prescribed oral doxorubicin 50 mg daily. Two weeks prior, patient reported a significant increase in weight that caused her to stop taking this medication and start on an oral chemotherapy regimen. Four weeks post treatment the patient reported that she had regressed to a pre diagnosis normal weight.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 400,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 83,
+          "endOffset": 84,
+          "score": 0.34068778,
+          "text": "3",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 88,
+          "endOffset": 90,
+          "score": 0.9957307,
+          "text": "25",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 123,
+          "endOffset": 129,
+          "score": 0.93606603,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 123,
+          "endOffset": 136,
+          "score": 0.9092001,
+          "text": "breast cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9856387
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 158,
+          "endOffset": 169,
+          "score": 0.9999362,
+          "text": "doxorubicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9728977,
+              "relationshipScore": 0.999985,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 1,
+              "beginOffset": 153,
+              "endOffset": 157,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9969214,
+              "relationshipScore": 0.99948394,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 170,
+              "endOffset": 175,
+              "text": "50 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99204624,
+              "relationshipScore": 0.9995192,
+              "relationshipType": "FREQUENCY",
+              "id": 4,
+              "beginOffset": 176,
+              "endOffset": 181,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 313,
+          "endOffset": 338,
+          "score": 0.9207495,
+          "text": "oral chemotherapy regimen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 340,
+          "endOffset": 355,
+          "score": 0.60444915,
+          "text": "Four weeks post",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.567232,
+              "relationshipScore": 0.7618325,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 429,
+              "endOffset": 442,
+              "text": "normal weight",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.42057586
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 429,
+          "endOffset": 442,
+          "score": 0.567232,
+          "text": "normal weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42057586
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "33960f33-190b-45a2-893b-1319bbb612db"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "33960f33-190b-45a2-893b-1319bbb612db"
+          ],
+          "Content-Length": [
+            "2319"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2319",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:43 GMT",
+          "x-amzn-RequestId": "33960f33-190b-45a2-893b-1319bbb612db"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "breast cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9092001,
+          "beginOffset": 123,
+          "endOffset": 136,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9856387
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of unspecified site of unspecified female breast",
+              "code": "C50.919",
+              "score": 0.76194483
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.66535234
+            },
+            {
+              "description": "Personal history of malignant neoplasm of breast",
+              "code": "Z85.3",
+              "score": 0.6213024
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of right female breast",
+              "code": "C50.911",
+              "score": 0.52648467
+            },
+            {
+              "description": "Malignant neoplasm of lower-outer quadrant of unspecified female breast",
+              "code": "C50.519",
+              "score": 0.50946844
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "normal weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.567232,
+          "beginOffset": 429,
+          "endOffset": 442,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4205759
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.7858907
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.7681573
+            },
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.7520372
+            },
+            {
+              "description": "Balanced translocation and insertion in normal individual",
+              "code": "Q95.0",
+              "score": 0.5696074
+            },
+            {
+              "description": "Finding of other specified substances, not normally found in blood",
+              "code": "R78.89",
+              "score": 0.56116843
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3c5e6609-a37f-4044-b739-4dee411d1153"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3c5e6609-a37f-4044-b739-4dee411d1153"
+          ],
+          "Content-Length": [
+            "1654"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1654",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:44 GMT",
+          "x-amzn-RequestId": "3c5e6609-a37f-4044-b739-4dee411d1153"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 668,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "doxorubicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9999362,
+          "beginOffset": 158,
+          "endOffset": 169,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9728977,
+              "relationshipScore": 0.9999851,
+              "id": 0,
+              "beginOffset": 153,
+              "endOffset": 157,
+              "text": "oral",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9969214,
+              "relationshipScore": 0.99948394,
+              "id": 2,
+              "beginOffset": 170,
+              "endOffset": 175,
+              "text": "50 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99204624,
+              "relationshipScore": 0.9995192,
+              "id": 3,
+              "beginOffset": 176,
+              "endOffset": 181,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Doxorubicin",
+              "code": "3639",
+              "score": 0.8893558
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 50 MG Injection",
+              "code": "1790095",
+              "score": 0.86573386
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 2 MG/ML Injectable Solution",
+              "code": "1191138",
+              "score": 0.42965168
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 20 MG Injection",
+              "code": "1872062",
+              "score": 0.30745023
+            },
+            {
+              "description": "Doxorubicin Hydrochloride 2 MG/ML Injectable Solution [Adriamycin]",
+              "code": "1799310",
+              "score": 0.14027992
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ace7fe93-42e1-48cc-befc-f900256f3dae"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ace7fe93-42e1-48cc-befc-f900256f3dae"
+          ],
+          "Content-Length": [
+            "1209"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1209",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:44 GMT",
+          "x-amzn-RequestId": "ace7fe93-42e1-48cc-befc-f900256f3dae"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:45 PM"
+}

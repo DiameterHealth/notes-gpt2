@@ -1,0 +1,747 @@
+{
+  "note": ". His examination presents a deep, warm-coloured skin rash on the face. He also exhibits an acute respiratory distress syndrome with a rapid decrease in breath sounds and sputum production. The patient is unable to move from the bed, though the bedside manner is good. He is treated for bronchostasis with the following treatments: Dronabinol, IV fluids and heparin. He is transferred to a ventilator and an artificial lung is used.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1195,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 35,
+          "endOffset": 39,
+          "score": 0.4974532,
+          "text": "warm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 49,
+          "endOffset": 53,
+          "score": 0.97018427,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 49,
+          "endOffset": 58,
+          "score": 0.6742322,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.68809634
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9866172,
+              "relationshipScore": 0.9993994,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 66,
+              "endOffset": 70,
+              "text": "face",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 66,
+          "endOffset": 70,
+          "score": 0.9866172,
+          "text": "face",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 98,
+          "endOffset": 127,
+          "score": 0.94078076,
+          "text": "respiratory distress syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.51001495
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5208487
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9703963,
+              "relationshipScore": 0.99947006,
+              "relationshipType": "ACUITY",
+              "id": 9,
+              "beginOffset": 92,
+              "endOffset": 97,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 153,
+          "endOffset": 166,
+          "score": 0.7546786,
+          "text": "breath sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.69590855
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 171,
+          "endOffset": 188,
+          "score": 0.91359437,
+          "text": "sputum production",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7577258
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.43837845
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 205,
+          "endOffset": 219,
+          "score": 0.898842,
+          "text": "unable to move",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42567906
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 287,
+          "endOffset": 300,
+          "score": 0.6987058,
+          "text": "bronchostasis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4748012
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 332,
+          "endOffset": 342,
+          "score": 0.9974347,
+          "text": "Dronabinol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 347,
+          "endOffset": 353,
+          "score": 0.9664891,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.98119926,
+              "relationshipScore": 0.99999535,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 344,
+              "endOffset": 346,
+              "text": "IV",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 358,
+          "endOffset": 365,
+          "score": 0.99942756,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 419,
+          "endOffset": 423,
+          "score": 0.73002344,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9703963,
+            "id": 9,
+            "beginOffset": 92,
+            "endOffset": 97,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fd6ad2cc-ebe4-4390-beaf-5366f02964fd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fd6ad2cc-ebe4-4390-beaf-5366f02964fd"
+          ],
+          "Content-Length": [
+            "3223"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3223",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:27 GMT",
+          "x-amzn-RequestId": "fd6ad2cc-ebe4-4390-beaf-5366f02964fd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 774,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "warm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4974531,
+          "beginOffset": 35,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.6414457
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.5259474
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.52076274
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.48422062
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.44988844
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6742322,
+          "beginOffset": 49,
+          "endOffset": 58,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9866172,
+              "relationshipScore": 0.9993994,
+              "id": 3,
+              "beginOffset": 66,
+              "endOffset": 70,
+              "text": "face",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6880964
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.60640675
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.31260356
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.29507118
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.28568548
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.25277936
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "respiratory distress syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94078076,
+          "beginOffset": 98,
+          "endOffset": 127,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9703963,
+              "relationshipScore": 0.99947006,
+              "id": 4,
+              "beginOffset": 92,
+              "endOffset": 97,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.510015
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5208487
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.5139259
+            },
+            {
+              "description": "Acute respiratory distress syndrome",
+              "code": "J80",
+              "score": 0.4601901
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.3508045
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.28425395
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.26530066
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "breath sounds",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7546786,
+          "beginOffset": 153,
+          "endOffset": 166,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.69590855
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.56295776
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.52426827
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.48610437
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.47839257
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.42599386
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "sputum production",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91359437,
+          "beginOffset": 171,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.75772583
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.4383783
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.79911256
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5228648
+            },
+            {
+              "description": "Abnormal product of conception, unspecified",
+              "code": "O02.9",
+              "score": 0.44697902
+            },
+            {
+              "description": "Abnormal microbiological findings in specimens from respiratory organs and thorax",
+              "code": "R84.5",
+              "score": 0.42308393
+            },
+            {
+              "description": "Allergic contact dermatitis due to other chemical products",
+              "code": "L23.5",
+              "score": 0.3726067
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "unable to move",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89884204,
+          "beginOffset": 205,
+          "endOffset": 219,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42567915
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Myoclonus",
+              "code": "G25.3",
+              "score": 0.7500095
+            },
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.7324677
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.6614548
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.6476529
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.6412946
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "bronchostasis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.69870573,
+          "beginOffset": 287,
+          "endOffset": 300,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4748011
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute bronchospasm",
+              "code": "J98.01",
+              "score": 0.42948252
+            },
+            {
+              "description": "Acute bronchitis, unspecified",
+              "code": "J20.9",
+              "score": 0.39244434
+            },
+            {
+              "description": "Acute bronchitis due to respiratory syncytial virus",
+              "code": "J20.5",
+              "score": 0.38985103
+            },
+            {
+              "description": "Acute bronchiolitis, unspecified",
+              "code": "J21.9",
+              "score": 0.32688922
+            },
+            {
+              "description": "Acute pulmonary manifestations due to radiation",
+              "code": "J70.0",
+              "score": 0.2895877
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6f9e7e27-c68b-4536-aaf8-8a5e6e3a07a8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6f9e7e27-c68b-4536-aaf8-8a5e6e3a07a8"
+          ],
+          "Content-Length": [
+            "5299"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5299",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:29 GMT",
+          "x-amzn-RequestId": "6f9e7e27-c68b-4536-aaf8-8a5e6e3a07a8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 683,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9664891,
+          "beginOffset": 347,
+          "endOffset": 353,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.98119926,
+              "relationshipScore": 0.99999547,
+              "id": 1,
+              "beginOffset": 344,
+              "endOffset": 346,
+              "text": "IV",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.7464297
+            },
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.15804675
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.013550429
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99942756,
+          "beginOffset": 358,
+          "endOffset": 365,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "heparin",
+              "code": "5224",
+              "score": 0.9407183
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 5000 UNT/ML Prefilled Syringe",
+              "code": "1798389",
+              "score": 0.6438545
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 5000 UNT/ML Injection",
+              "code": "1659263",
+              "score": 0.58301085
+            },
+            {
+              "description": "2 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658647",
+              "score": 0.57524097
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658659",
+              "score": 0.5256948
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3d9e5f9d-23f5-4f6c-bd6d-0da3e79f7db6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3d9e5f9d-23f5-4f6c-bd6d-0da3e79f7db6"
+          ],
+          "Content-Length": [
+            "1359"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1359",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:29 GMT",
+          "x-amzn-RequestId": "3d9e5f9d-23f5-4f6c-bd6d-0da3e79f7db6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:30 PM"
+}

@@ -1,0 +1,421 @@
+{
+  "note": "in 3 weeks and was still red. Worn T-shirt and jeans which have been clean for 4 days. Has no other known medical condition. Was treated in a clinic the day of rash, but it still had a reddish/buff-like appearance. Affected by (or linked to) a viral or bacterial infection? What is the most likely exposure to the disease?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 297,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 153,
+          "endOffset": 164,
+          "score": 0.9071401,
+          "text": "day of rash",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98394793,
+              "relationshipScore": 0.8641031,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 160,
+              "endOffset": 164,
+              "text": "rash",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.4103132
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 153,
+          "endOffset": 164,
+          "score": 0.9071401,
+          "text": "day of rash",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.5318394,
+              "relationshipScore": 0.7479089,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 185,
+              "endOffset": 213,
+              "text": "reddish/buff-like appearance",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.5430669
+                },
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.41612375
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 160,
+          "endOffset": 164,
+          "score": 0.98394793,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4103132
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 185,
+          "endOffset": 213,
+          "score": 0.5318394,
+          "text": "reddish/buff-like appearance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5430669
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41612375
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 244,
+          "endOffset": 272,
+          "score": 0.7897518,
+          "text": "viral or bacterial infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91198784
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 298,
+          "endOffset": 321,
+          "score": 0.51556355,
+          "text": "exposure to the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85783523
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46d7ad79-1a21-47b3-bd17-4f90b654e95f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46d7ad79-1a21-47b3-bd17-4f90b654e95f"
+          ],
+          "Content-Length": [
+            "1860"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1860",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:53 GMT",
+          "x-amzn-RequestId": "46d7ad79-1a21-47b3-bd17-4f90b654e95f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 378,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98394793,
+          "beginOffset": 160,
+          "endOffset": 164,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4103131
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.77351004
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.48498887
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.45372498
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.42616808
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.42340508
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "reddish/buff-like appearance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53183955,
+          "beginOffset": 185,
+          "endOffset": 213,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.543067
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41612375
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.82137036
+            },
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.73068315
+            },
+            {
+              "description": "Other symptoms and signs involving appearance and behavior",
+              "code": "R46.89",
+              "score": 0.7290546
+            },
+            {
+              "description": "Restlessness and agitation",
+              "code": "R45.1",
+              "score": 0.7008973
+            },
+            {
+              "description": "Unspecified jaundice",
+              "code": "R17",
+              "score": 0.6532906
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "viral or bacterial infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7897518,
+          "beginOffset": 244,
+          "endOffset": 272,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91198784
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.6613633
+            },
+            {
+              "description": "Bacterial infection, unspecified",
+              "code": "A49.9",
+              "score": 0.6330594
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.58188736
+            },
+            {
+              "description": "Viral wart, unspecified",
+              "code": "B07.9",
+              "score": 0.53321135
+            },
+            {
+              "description": "Viral carditis, unspecified",
+              "code": "B33.20",
+              "score": 0.5287942
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "exposure to the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5155635,
+          "beginOffset": 298,
+          "endOffset": 321,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8578352
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.67965543
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6200646
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6186155
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.6147316
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5654039
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c19e9f5-078d-48ec-85ef-a0f170822108"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c19e9f5-078d-48ec-85ef-a0f170822108"
+          ],
+          "Content-Length": [
+            "3204"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3204",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:54 GMT",
+          "x-amzn-RequestId": "6c19e9f5-078d-48ec-85ef-a0f170822108"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 183,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1412a01c-d07f-48d7-b1b4-9166dd5dd5a1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1412a01c-d07f-48d7-b1b4-9166dd5dd5a1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:54 GMT",
+          "x-amzn-RequestId": "1412a01c-d07f-48d7-b1b4-9166dd5dd5a1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:54 PM"
+}

@@ -1,0 +1,583 @@
+{
+  "note": "no psychiatric history and has never been diagnosed with depression. There are no drugs prescribed by the patient. She also has no history of eating disorders or any psychiatric disorders. The patient is currently taking no psychoactive or addictive substances. The patient has had several episodes of anxiety as a child, usually at the beginning of the school year. There is no history of alcoholism or drug abuse.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 542,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 57,
+          "endOffset": 67,
+          "score": 0.9938943,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9367602
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 142,
+          "endOffset": 158,
+          "score": 0.9870106,
+          "text": "eating disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85723644
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9635005
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 166,
+          "endOffset": 187,
+          "score": 0.95695007,
+          "text": "psychiatric disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9122848
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93311065
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 302,
+          "endOffset": 309,
+          "score": 0.99872464,
+          "text": "anxiety",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47978204
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5282001
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.48307905,
+              "relationshipScore": 0.9998031,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 290,
+              "endOffset": 298,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 354,
+          "endOffset": 365,
+          "score": 0.46614125,
+          "text": "school year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99872464,
+              "relationshipScore": 0.7456083,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 302,
+              "endOffset": 309,
+              "text": "anxiety",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.47978204
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.5282001
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 390,
+          "endOffset": 400,
+          "score": 0.80417204,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83441526
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88739944
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 404,
+          "endOffset": 414,
+          "score": 0.9017506,
+          "text": "drug abuse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70803463
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.90866923
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.48307905,
+            "id": 3,
+            "beginOffset": 290,
+            "endOffset": 298,
+            "text": "episodes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "16968bc7-be45-4b43-98b2-a7ee5667a5d4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "16968bc7-be45-4b43-98b2-a7ee5667a5d4"
+          ],
+          "Content-Length": [
+            "2381"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2381",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:05 GMT",
+          "x-amzn-RequestId": "16968bc7-be45-4b43-98b2-a7ee5667a5d4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 615,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9938943,
+          "beginOffset": 57,
+          "endOffset": 67,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9367602
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.8701171
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7153507
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.69965
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.67794335
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.6752384
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "eating disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9870106,
+          "beginOffset": 142,
+          "endOffset": 158,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8572363
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9635005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.5882236
+            },
+            {
+              "description": "Joint disorder, unspecified",
+              "code": "M25.9",
+              "score": 0.43411237
+            },
+            {
+              "description": "Nightmare disorder",
+              "code": "F51.5",
+              "score": 0.4290504
+            },
+            {
+              "description": "Eating disorders",
+              "code": "F50",
+              "score": 0.41985804
+            },
+            {
+              "description": "Schizoaffective disorder, unspecified",
+              "code": "F25.9",
+              "score": 0.4089755
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "psychiatric disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95695007,
+          "beginOffset": 166,
+          "endOffset": 187,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9122848
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93311065
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.73091996
+            },
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.55034506
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.53058654
+            },
+            {
+              "description": "Nightmare disorder",
+              "code": "F51.5",
+              "score": 0.5180854
+            },
+            {
+              "description": "Nonpsychotic mental disorder, unspecified",
+              "code": "F48.9",
+              "score": 0.5171322
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "anxiety",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99872464,
+          "beginOffset": 302,
+          "endOffset": 309,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.48307905,
+              "relationshipScore": 0.9998031,
+              "id": 3,
+              "beginOffset": 290,
+              "endOffset": 298,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47978216
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5282
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anxiety disorder, unspecified",
+              "code": "F41.9",
+              "score": 0.81365687
+            },
+            {
+              "description": "Generalized anxiety disorder",
+              "code": "F41.1",
+              "score": 0.6565971
+            },
+            {
+              "description": "Anxiety disorder due to known physiological condition",
+              "code": "F06.4",
+              "score": 0.56827694
+            },
+            {
+              "description": "Social phobia, unspecified",
+              "code": "F40.10",
+              "score": 0.5135944
+            },
+            {
+              "description": "Phobic anxiety disorder, unspecified",
+              "code": "F40.9",
+              "score": 0.4972215
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.804172,
+          "beginOffset": 390,
+          "endOffset": 400,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83441526
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88739944
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol dependence, uncomplicated",
+              "code": "F10.20",
+              "score": 0.69133776
+            },
+            {
+              "description": "Alcohol dependence, in remission",
+              "code": "F10.21",
+              "score": 0.6033747
+            },
+            {
+              "description": "Alcohol dependence with withdrawal, unspecified",
+              "code": "F10.239",
+              "score": 0.5844923
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.5493785
+            },
+            {
+              "description": "Alcohol abuse, in remission",
+              "code": "F10.11",
+              "score": 0.49387053
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "drug abuse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9017507,
+          "beginOffset": 404,
+          "endOffset": 414,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70803463
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.90866923
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other psychoactive substance abuse, uncomplicated",
+              "code": "F19.10",
+              "score": 0.6773138
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.5457552
+            },
+            {
+              "description": "Cocaine abuse, uncomplicated",
+              "code": "F14.10",
+              "score": 0.5166057
+            },
+            {
+              "description": "Opioid abuse, uncomplicated",
+              "code": "F11.10",
+              "score": 0.45399415
+            },
+            {
+              "description": "Cannabis abuse, uncomplicated",
+              "code": "F12.10",
+              "score": 0.44696835
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "934146ea-9ef5-40fe-b4e6-7e8c7de4a3e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "934146ea-9ef5-40fe-b4e6-7e8c7de4a3e2"
+          ],
+          "Content-Length": [
+            "4756"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "4756",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:06 GMT",
+          "x-amzn-RequestId": "934146ea-9ef5-40fe-b4e6-7e8c7de4a3e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "49b08fc7-b50a-4fa5-9ab8-8c1d8b5e41b6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "49b08fc7-b50a-4fa5-9ab8-8c1d8b5e41b6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:06 GMT",
+          "x-amzn-RequestId": "49b08fc7-b50a-4fa5-9ab8-8c1d8b5e41b6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:07 PM"
+}

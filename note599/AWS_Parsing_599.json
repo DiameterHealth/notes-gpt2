@@ -1,0 +1,409 @@
+{
+  "note": ". Prior history is: Patient\u0027s mother\u0027s history: My mother\u0027s grandmother had the disease; she died as a young woman. Patient\u0027s sister had the disease. Previous history is: All are recent transplant recipients. Patient has had multiple previous surgeries. Patient\u0027s partner has been diagnosed with the disease. Patient\u0027s husband has been on medication for depression. Patient\u0027s father was on medication for depression and had back pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1261,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 93,
+          "endOffset": 97,
+          "score": 0.98221374,
+          "text": "died",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94258606
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 179,
+          "endOffset": 185,
+          "score": 0.9999989,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.74892855,
+              "relationshipScore": 0.971854,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 186,
+              "endOffset": 196,
+              "text": "transplant",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 186,
+          "endOffset": 196,
+          "score": 0.74892855,
+          "text": "transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 243,
+          "endOffset": 252,
+          "score": 0.9664661,
+          "text": "surgeries",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 354,
+          "endOffset": 364,
+          "score": 0.99087256,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9537089
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 405,
+          "endOffset": 415,
+          "score": 0.99621505,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8946164
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 424,
+          "endOffset": 428,
+          "score": 0.9578746,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 424,
+          "endOffset": 433,
+          "score": 0.94685674,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.60433203
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c9f631b-56bf-4767-9c0d-82133c25ab78"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c9f631b-56bf-4767-9c0d-82133c25ab78"
+          ],
+          "Content-Length": [
+            "1714"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1714",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:26 GMT",
+          "x-amzn-RequestId": "0c9f631b-56bf-4767-9c0d-82133c25ab78"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 452,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "died",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98221374,
+          "beginOffset": 93,
+          "endOffset": 97,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94258606
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.8713811
+            },
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.66147166
+            },
+            {
+              "description": "Family history of sudden cardiac death",
+              "code": "Z82.41",
+              "score": 0.6219898
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.51455045
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of any duration with death due to other cause prior to regaining consciousness",
+              "code": "S06.368",
+              "score": 0.3758555
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99087256,
+          "beginOffset": 354,
+          "endOffset": 364,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9537089
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.7875812
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.62422806
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.50957656
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.5003405
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.47274736
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99621505,
+          "beginOffset": 405,
+          "endOffset": 415,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8946164
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.7853101
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6269136
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.54094905
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.5066536
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.4846684
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9468566,
+          "beginOffset": 424,
+          "endOffset": 433,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.604332
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.6445574
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.5537129
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.47307456
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.43797374
+            },
+            {
+              "description": "Lumbago with sciatica, unspecified side",
+              "code": "M54.40",
+              "score": 0.38201916
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2f42cfb0-8bf0-4633-9b7b-5b37bd1d9268"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "2f42cfb0-8bf0-4633-9b7b-5b37bd1d9268"
+          ],
+          "Content-Length": [
+            "3129"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "3129",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:27 GMT",
+          "x-amzn-RequestId": "2f42cfb0-8bf0-4633-9b7b-5b37bd1d9268"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 255,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "090f81a6-f6d0-43e6-a758-a113f6cd9d08"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "090f81a6-f6d0-43e6-a758-a113f6cd9d08"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:26 GMT",
+          "x-amzn-RequestId": "090f81a6-f6d0-43e6-a758-a113f6cd9d08"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:27 PM"
+}

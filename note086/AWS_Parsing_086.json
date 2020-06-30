@@ -1,0 +1,284 @@
+{
+  "note": "would have improved his MDM. How   did they get the diagnosis from his family doctors? My father has been taking statins for a long time. I believe the statins actually caused his problems with CKD. I don\u0027t know his details about that, but I do have some data pointing in that direction. I will discuss that further further in the next blog post, so stay tuned.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 279,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "score": 0.5886295,
+          "text": "statins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "score": 0.3746819,
+          "text": "statins",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 152,
+          "endOffset": 159,
+          "score": 0.49979934,
+          "text": "statins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 152,
+          "endOffset": 159,
+          "score": 0.32639015,
+          "text": "statins",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 194,
+          "endOffset": 197,
+          "score": 0.98378885,
+          "text": "CKD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9561305
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2691566f-bccc-44cf-a33c-34db53c11ca5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2691566f-bccc-44cf-a33c-34db53c11ca5"
+          ],
+          "Content-Length": [
+            "865"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "865",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:30 GMT",
+          "x-amzn-RequestId": "2691566f-bccc-44cf-a33c-34db53c11ca5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 332,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "CKD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98378885,
+          "beginOffset": 194,
+          "endOffset": 197,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9561305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.56207126
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.552446
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.0",
+              "score": 0.54864335
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.4772418
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease",
+              "code": "I12.0",
+              "score": 0.43841514
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fe3cf533-9da7-463d-a7b2-d5d4d1afeae2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fe3cf533-9da7-463d-a7b2-d5d4d1afeae2"
+          ],
+          "Content-Length": [
+            "1044"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1044",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:30 GMT",
+          "x-amzn-RequestId": "fe3cf533-9da7-463d-a7b2-d5d4d1afeae2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 335,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "statins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5886295,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Saffron Stain",
+              "code": "1363716",
+              "score": 0.080581285
+            },
+            {
+              "description": "Fluorexon stain",
+              "code": "25161",
+              "score": 0.06793344
+            },
+            {
+              "description": "Brevibacterium stationis",
+              "code": "1310908",
+              "score": 0.017809935
+            },
+            {
+              "description": "Fast green FCF stain",
+              "code": "1310705",
+              "score": 0.0055564237
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "statins",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.49979952,
+          "beginOffset": 152,
+          "endOffset": 159,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Saffron Stain",
+              "code": "1363716",
+              "score": 0.080581285
+            },
+            {
+              "description": "Fluorexon stain",
+              "code": "25161",
+              "score": 0.06793344
+            },
+            {
+              "description": "Brevibacterium stationis",
+              "code": "1310908",
+              "score": 0.017809935
+            },
+            {
+              "description": "Fast green FCF stain",
+              "code": "1310705",
+              "score": 0.0055564237
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bad54cf6-25dd-4087-a631-380beb003f5e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bad54cf6-25dd-4087-a631-380beb003f5e"
+          ],
+          "Content-Length": [
+            "1050"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1050",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:30 GMT",
+          "x-amzn-RequestId": "bad54cf6-25dd-4087-a631-380beb003f5e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:30 PM"
+}

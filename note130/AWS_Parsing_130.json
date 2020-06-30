@@ -1,0 +1,255 @@
+{
+  "note": "and is on high risk aspirin. The cardiopulmonary resuscitation protocol is being discussed as he has been stabilized with the use of a continuous positive airway pressure (CPAP) machine. Is the patient still compatible with the machine and would it be desirable if a chest x-ray were taken prior to the initiation of therapy? Or, would the patient be better off with continuous positive airway pressure (CPAP) alone, or would a noninvasive way of measuring airway pressure be an acceptable option?",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 376,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 20,
+          "endOffset": 27,
+          "score": 0.99794227,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 33,
+          "endOffset": 62,
+          "score": 0.39993748,
+          "text": "cardiopulmonary resuscitation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 267,
+          "endOffset": 272,
+          "score": 0.8707446,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 267,
+          "endOffset": 278,
+          "score": 0.87837934,
+          "text": "chest x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 290,
+          "endOffset": 295,
+          "score": 0.9999957,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.87837934,
+              "relationshipScore": 0.5775245,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 267,
+              "endOffset": 278,
+              "text": "chest x-ray",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 387,
+          "endOffset": 402,
+          "score": 0.9739826,
+          "text": "airway pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.29544178,
+              "relationshipScore": 0.999998,
+              "relationshipType": "TEST_VALUE",
+              "id": 4,
+              "beginOffset": 378,
+              "endOffset": 386,
+              "text": "positive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 457,
+          "endOffset": 472,
+          "score": 0.3112144,
+          "text": "airway pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5e791713-6bdc-4597-883b-7e2fa8f01a77"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5e791713-6bdc-4597-883b-7e2fa8f01a77"
+          ],
+          "Content-Length": [
+            "1658"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1658",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:29 GMT",
+          "x-amzn-RequestId": "5e791713-6bdc-4597-883b-7e2fa8f01a77"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 291,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f12ab8fc-5f1c-49a6-9f21-40da99774a1d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f12ab8fc-5f1c-49a6-9f21-40da99774a1d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:29 GMT",
+          "x-amzn-RequestId": "f12ab8fc-5f1c-49a6-9f21-40da99774a1d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 648,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99794227,
+          "beginOffset": 20,
+          "endOffset": 27,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a82cddf4-4e26-4cfc-9372-8472b3e125a0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a82cddf4-4e26-4cfc-9372-8472b3e125a0"
+          ],
+          "Content-Length": [
+            "695"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "695",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:29 GMT",
+          "x-amzn-RequestId": "a82cddf4-4e26-4cfc-9372-8472b3e125a0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:30 PM"
+}

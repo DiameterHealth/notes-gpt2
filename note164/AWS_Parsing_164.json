@@ -1,0 +1,347 @@
+{
+  "note": "is indicated. CPR is performed  at 1 day, with follow-up at 7 days and yearly thereafter. Lipid profile, physical examination, blood pressure, glucose level and creatinine level are noted. No change is seen in any parameters in the 12-18 year study period. Patient continues to have excellent renal function and is asymptomatic of the disease. Dose titration to a maximum of 3.0 mg/kg/day (30 mg daily at 3-day intervals) has been attempted.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 406,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 14,
+          "endOffset": 17,
+          "score": 0.8899959,
+          "text": "CPR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 35,
+          "endOffset": 40,
+          "score": 0.9906591,
+          "text": "1 day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.8899959,
+              "relationshipScore": 0.9428734,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 14,
+              "endOffset": 17,
+              "text": "CPR",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 90,
+          "endOffset": 103,
+          "score": 0.96005344,
+          "text": "Lipid profile",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 105,
+          "endOffset": 125,
+          "score": 0.97542983,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 127,
+          "endOffset": 141,
+          "score": 0.99796766,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 143,
+          "endOffset": 156,
+          "score": 0.9699317,
+          "text": "glucose level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6473442,
+              "relationshipScore": 0.7472713,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 189,
+              "endOffset": 198,
+              "text": "No change",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 161,
+          "endOffset": 177,
+          "score": 0.52329874,
+          "text": "creatinine level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6473442,
+              "relationshipScore": 0.953626,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 189,
+              "endOffset": 198,
+              "text": "No change",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 232,
+          "endOffset": 237,
+          "score": 0.8542504,
+          "text": "12-18",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 283,
+          "endOffset": 307,
+          "score": 0.5076574,
+          "text": "excellent renal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6030802
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 315,
+          "endOffset": 327,
+          "score": 0.4920927,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1c45e0af-7e0a-43ea-9671-c0d19109e39f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1c45e0af-7e0a-43ea-9671-c0d19109e39f"
+          ],
+          "Content-Length": [
+            "2431"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2431",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:26 GMT",
+          "x-amzn-RequestId": "1c45e0af-7e0a-43ea-9671-c0d19109e39f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 382,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "excellent renal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5076575,
+          "beginOffset": 283,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6030802
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.71438736
+            },
+            {
+              "description": "Other specified disorders of kidney and ureter",
+              "code": "N28.89",
+              "score": 0.6387925
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.5868131
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease",
+              "code": "I12.0",
+              "score": 0.5681348
+            },
+            {
+              "description": "Chronic kidney disease, stage 3 (moderate)",
+              "code": "N18.3",
+              "score": 0.52871025
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4920926,
+          "beginOffset": 315,
+          "endOffset": 327,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Asymptomatic varicose veins of bilateral lower extremities",
+              "code": "I83.93",
+              "score": 0.84070194
+            },
+            {
+              "description": "Asymptomatic menopausal state",
+              "code": "Z78.0",
+              "score": 0.7886294
+            },
+            {
+              "description": "Asymptomatic varicose veins of unspecified lower extremity",
+              "code": "I83.90",
+              "score": 0.7205936
+            },
+            {
+              "description": "Asymptomatic varicose veins of right lower extremity",
+              "code": "I83.91",
+              "score": 0.711793
+            },
+            {
+              "description": "Asymptomatic varicose veins of left lower extremity",
+              "code": "I83.92",
+              "score": 0.6914058
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f35c04ee-db6e-4b5c-ba43-a1525606d049"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f35c04ee-db6e-4b5c-ba43-a1525606d049"
+          ],
+          "Content-Length": [
+            "1591"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1591",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:27 GMT",
+          "x-amzn-RequestId": "f35c04ee-db6e-4b5c-ba43-a1525606d049"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 230,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fc7587b7-26c5-4e80-8d2f-ceae92311144"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fc7587b7-26c5-4e80-8d2f-ceae92311144"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:26 GMT",
+          "x-amzn-RequestId": "fc7587b7-26c5-4e80-8d2f-ceae92311144"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:27 PM"
+}

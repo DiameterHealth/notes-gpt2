@@ -1,0 +1,623 @@
+{
+  "note": ".  Intervention: Estradiol 100 mg iv every 2 hours will be infused for the first 7 days. Outcome: Recombinant HPV-16/18, genotype 2, low-risk HPV-16 and -18-associated disease. No progression. Conclusion: Estradiol 100 mg every 2 hours will not be effective against acute UTI in women with previous high-grade precancerous lesions. Key Points:  Low-grade carcinomas rarely progress and/or persist.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 367,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 17,
+          "endOffset": 26,
+          "score": 0.9791085,
+          "text": "Estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9933695,
+              "relationshipScore": 0.9999789,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 27,
+              "endOffset": 33,
+              "text": "100 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9967347,
+              "relationshipScore": 0.99999785,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 34,
+              "endOffset": 36,
+              "text": "iv",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99679464,
+              "relationshipScore": 0.9999939,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 37,
+              "endOffset": 50,
+              "text": "every 2 hours",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.7974892,
+              "relationshipScore": 0.999998,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 59,
+              "endOffset": 66,
+              "text": "infused",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.8352095,
+              "relationshipScore": 0.99999225,
+              "relationshipType": "DURATION",
+              "id": 5,
+              "beginOffset": 81,
+              "endOffset": 87,
+              "text": "7 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 75,
+          "endOffset": 87,
+          "score": 0.9852255,
+          "text": "first 7 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9791085,
+              "relationshipScore": 0.54135096,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 17,
+              "endOffset": 26,
+              "text": "Estradiol",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 114,
+          "endOffset": 119,
+          "score": 0.37730515,
+          "text": "16/18",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 205,
+          "endOffset": 214,
+          "score": 0.9759127,
+          "text": "Estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9960891,
+              "relationshipScore": 0.9999889,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 215,
+              "endOffset": 221,
+              "text": "100 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9904777,
+              "relationshipScore": 0.99999905,
+              "relationshipType": "FREQUENCY",
+              "id": 8,
+              "beginOffset": 222,
+              "endOffset": 235,
+              "text": "every 2 hours",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 272,
+          "endOffset": 275,
+          "score": 0.99921954,
+          "text": "UTI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96787864
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84165883,
+              "relationshipScore": 0.9999912,
+              "relationshipType": "ACUITY",
+              "id": 9,
+              "beginOffset": 266,
+              "endOffset": 271,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 310,
+          "endOffset": 330,
+          "score": 0.72793394,
+          "text": "precancerous lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93391734
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 355,
+          "endOffset": 365,
+          "score": 0.73904985,
+          "text": "carcinomas",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69246393
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.84165883,
+            "id": 9,
+            "beginOffset": 266,
+            "endOffset": 271,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "acaea596-6d6b-48fa-92a7-2a36a71b2f7a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "acaea596-6d6b-48fa-92a7-2a36a71b2f7a"
+          ],
+          "Content-Length": [
+            "3413"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3413",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:58 GMT",
+          "x-amzn-RequestId": "acaea596-6d6b-48fa-92a7-2a36a71b2f7a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 597,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "UTI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99921954,
+          "beginOffset": 272,
+          "endOffset": 275,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84165883,
+              "relationshipScore": 0.9999912,
+              "id": 0,
+              "beginOffset": 266,
+              "endOffset": 271,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96787864
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.69916344
+            },
+            {
+              "description": "Acute and subacute infective endocarditis",
+              "code": "I33.0",
+              "score": 0.5335606
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.48321253
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.4803089
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.45705056
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "precancerous lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72793394,
+          "beginOffset": 310,
+          "endOffset": 330,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93391734
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.6979454
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.64832395
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5669212
+            },
+            {
+              "description": "Disorder of pigmentation, unspecified",
+              "code": "L81.9",
+              "score": 0.56404775
+            },
+            {
+              "description": "Epidermal thickening, unspecified",
+              "code": "L85.9",
+              "score": 0.54159516
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "carcinomas",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7390499,
+          "beginOffset": 355,
+          "endOffset": 365,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69246393
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.7811714
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.7744451
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of unspecified female breast",
+              "code": "C50.919",
+              "score": 0.75649357
+            },
+            {
+              "description": "Squamous cell carcinoma of skin, unspecified",
+              "code": "C44.92",
+              "score": 0.7288247
+            },
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.7273348
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8ed1fae6-137b-4f65-9764-4e3b4d694ece"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8ed1fae6-137b-4f65-9764-4e3b4d694ece"
+          ],
+          "Content-Length": [
+            "2582"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2582",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:59 GMT",
+          "x-amzn-RequestId": "8ed1fae6-137b-4f65-9764-4e3b4d694ece"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1103,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9791085,
+          "beginOffset": 17,
+          "endOffset": 26,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9933695,
+              "relationshipScore": 0.999979,
+              "id": 1,
+              "beginOffset": 27,
+              "endOffset": 33,
+              "text": "100 mg",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9967347,
+              "relationshipScore": 0.99999785,
+              "id": 2,
+              "beginOffset": 34,
+              "endOffset": 36,
+              "text": "iv",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99679464,
+              "relationshipScore": 0.9999939,
+              "id": 3,
+              "beginOffset": 37,
+              "endOffset": 50,
+              "text": "every 2 hours",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.7974893,
+              "relationshipScore": 0.999998,
+              "id": 4,
+              "beginOffset": 59,
+              "endOffset": 66,
+              "text": "infused",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.8352094,
+              "relationshipScore": 0.99999225,
+              "id": 5,
+              "beginOffset": 81,
+              "endOffset": 87,
+              "text": "7 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "estradiol valerate 10 MG/ML Injectable Solution",
+              "code": "310189",
+              "score": 0.7400362
+            },
+            {
+              "description": "Estradiol",
+              "code": "4083",
+              "score": 0.4168433
+            },
+            {
+              "description": "estradiol valerate 20 MG/ML Injectable Solution",
+              "code": "310190",
+              "score": 0.39247656
+            },
+            {
+              "description": "90 DAY Estradiol 0.00417 MG/HR Vaginal Ring",
+              "code": "848342",
+              "score": 0.2906558
+            },
+            {
+              "description": "Estradiol 0.01 MG Vaginal Tablet",
+              "code": "884707",
+              "score": 0.27294305
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9759127,
+          "beginOffset": 205,
+          "endOffset": 214,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9960891,
+              "relationshipScore": 0.99998903,
+              "id": 7,
+              "beginOffset": 215,
+              "endOffset": 221,
+              "text": "100 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9904777,
+              "relationshipScore": 0.99999905,
+              "id": 8,
+              "beginOffset": 222,
+              "endOffset": 235,
+              "text": "every 2 hours",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "estradiol valerate 1 MG Oral Tablet",
+              "code": "978948",
+              "score": 0.9327941
+            },
+            {
+              "description": "Estradiol 1 MG Oral Tablet",
+              "code": "197658",
+              "score": 0.8548081
+            },
+            {
+              "description": "Estradiol 0.01 MG Vaginal Tablet",
+              "code": "884707",
+              "score": 0.8451052
+            },
+            {
+              "description": "Estradiol",
+              "code": "4083",
+              "score": 0.84040153
+            },
+            {
+              "description": "Estradiol 0.01 MG Vaginal Tablet [Yuvafem]",
+              "code": "1797113",
+              "score": 0.6746928
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5a425d96-53fd-4222-9813-ec6da7012e89"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5a425d96-53fd-4222-9813-ec6da7012e89"
+          ],
+          "Content-Length": [
+            "2433"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2433",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:59 GMT",
+          "x-amzn-RequestId": "5a425d96-53fd-4222-9813-ec6da7012e89"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:00 PM"
+}

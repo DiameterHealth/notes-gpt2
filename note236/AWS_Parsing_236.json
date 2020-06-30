@@ -1,0 +1,309 @@
+{
+  "note": ". Patients with suspected acute kidney injury should be managed conservatively and monitored until renal function returns to normal by performing a 24-hour urine collection and/or re-weighed urine. Cigarette Smoking: Patients smoking a minimum of 10 tobacco cigarettes per day, or less than once daily, should not be prescribed naltrexone.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 222,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "score": 0.9777769,
+          "text": "kidney",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 32,
+          "endOffset": 45,
+          "score": 0.9733802,
+          "text": "kidney injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9704507
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.68943423,
+              "relationshipScore": 0.99973375,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 26,
+              "endOffset": 31,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 99,
+          "endOffset": 113,
+          "score": 0.33977452,
+          "text": "renal function",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7328419,
+              "relationshipScore": 0.99746656,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 125,
+              "endOffset": 131,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 156,
+          "endOffset": 172,
+          "score": 0.40984035,
+          "text": "urine collection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 328,
+          "endOffset": 338,
+          "score": 0.9958578,
+          "text": "naltrexone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.68943423,
+            "id": 2,
+            "beginOffset": 26,
+            "endOffset": 31,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cb635dce-1dca-409e-9c8e-ab5bb78329c3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cb635dce-1dca-409e-9c8e-ab5bb78329c3"
+          ],
+          "Content-Length": [
+            "1527"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1527",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:14 GMT",
+          "x-amzn-RequestId": "cb635dce-1dca-409e-9c8e-ab5bb78329c3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 320,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "kidney injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9733802,
+          "beginOffset": 32,
+          "endOffset": 45,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.68943435,
+              "relationshipScore": 0.99973375,
+              "id": 0,
+              "beginOffset": 26,
+              "endOffset": 31,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9704507
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.845648
+            },
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.6548515
+            },
+            {
+              "description": "Unspecified injury of kidney",
+              "code": "S37.00",
+              "score": 0.63962966
+            },
+            {
+              "description": "Unspecified injury of unspecified kidney",
+              "code": "S37.009",
+              "score": 0.6395555
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.63682675
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7257bad2-eb80-42d7-bf13-61e7c82a9ec5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7257bad2-eb80-42d7-bf13-61e7c82a9ec5"
+          ],
+          "Content-Length": [
+            "893"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "893",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:15 GMT",
+          "x-amzn-RequestId": "7257bad2-eb80-42d7-bf13-61e7c82a9ec5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 447,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "naltrexone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9958578,
+          "beginOffset": 328,
+          "endOffset": 338,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Naltrexone",
+              "code": "7243",
+              "score": 0.9484273
+            },
+            {
+              "description": "Naltrexone 380 MG Injection",
+              "code": "637213",
+              "score": 0.40660936
+            },
+            {
+              "description": "Naltrexone hydrochloride 50 MG Oral Tablet",
+              "code": "1483744",
+              "score": 0.3985956
+            },
+            {
+              "description": "Naltrexone 380 MG Injection [Vivitrol]",
+              "code": "637216",
+              "score": 0.1105554
+            },
+            {
+              "description": "Abuse-Deterrent Morphine Sulfate 60 MG / Naltrexone hydrochloride 2.4 MG Extended Release Oral Capsule",
+              "code": "863854",
+              "score": 0.09167148
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "03c15808-06d4-4d0a-a24f-07ec3b72c726"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "03c15808-06d4-4d0a-a24f-07ec3b72c726"
+          ],
+          "Content-Length": [
+            "751"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "751",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:15 GMT",
+          "x-amzn-RequestId": "03c15808-06d4-4d0a-a24f-07ec3b72c726"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:15 PM"
+}

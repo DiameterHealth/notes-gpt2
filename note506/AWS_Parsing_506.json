@@ -1,0 +1,725 @@
+{
+  "note": ".  The patient is taking a drug to suppress the immune system called the anti-histamine Clarithromycin 1mg three times a day. He describes the symptoms as similar to an itchy rhinitis, except the symptoms are worse and last longer. No symptoms of allergic rhinitis are reported during treatment. Dr. Thomas D\u0027Agostino, professor of Otolaryngology, University of Southern California, Los Angeles, who is one of the authors of the article, wrote in an e-mail: \"Some dermatologists think allergy rhinitis is when you have a skin rash and sneezing similar to an allergic reaction, but our study shows that allergic rhinitis only happens with Clarithromycin.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 699,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 73,
+          "endOffset": 102,
+          "score": 0.6167537,
+          "text": "anti-histamine Clarithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9863501,
+              "relationshipScore": 0.9999938,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 103,
+              "endOffset": 106,
+              "text": "1mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9959518,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 107,
+              "endOffset": 124,
+              "text": "three times a day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 169,
+          "endOffset": 183,
+          "score": 0.56075746,
+          "text": "itchy rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.56899804
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 247,
+          "endOffset": 264,
+          "score": 0.9739024,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.60999286
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9328839
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 300,
+          "endOffset": 317,
+          "score": 0.969753,
+          "text": "Thomas D\u0027Agostino",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 319,
+          "endOffset": 328,
+          "score": 0.12444474,
+          "text": "professor",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 332,
+          "endOffset": 346,
+          "score": 0.19371663,
+          "text": "Otolaryngology",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 348,
+          "endOffset": 381,
+          "score": 0.9856161,
+          "text": "University of Southern California",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 383,
+          "endOffset": 394,
+          "score": 0.9789838,
+          "text": "Los Angeles",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 493,
+          "endOffset": 501,
+          "score": 0.92409223,
+          "text": "rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.65147424
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 521,
+          "endOffset": 525,
+          "score": 0.9831086,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 521,
+          "endOffset": 530,
+          "score": 0.75938916,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.807879
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 535,
+          "endOffset": 543,
+          "score": 0.98364383,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81931674
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 558,
+          "endOffset": 575,
+          "score": 0.86564285,
+          "text": "allergic reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41111976
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66903704
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 602,
+          "endOffset": 619,
+          "score": 0.926314,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8646936
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 638,
+          "endOffset": 652,
+          "score": 0.9858855,
+          "text": "Clarithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "091aaa5d-0ef6-4df4-9000-dedb1fb21949"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "091aaa5d-0ef6-4df4-9000-dedb1fb21949"
+          ],
+          "Content-Length": [
+            "3291"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3291",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:38 GMT",
+          "x-amzn-RequestId": "091aaa5d-0ef6-4df4-9000-dedb1fb21949"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 639,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "itchy rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.56075764,
+          "beginOffset": 169,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5689981
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.7614483
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.7231477
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.590082
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.5858189
+            },
+            {
+              "description": "Other pruritus",
+              "code": "L29.8",
+              "score": 0.5648844
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9739024,
+          "beginOffset": 247,
+          "endOffset": 264,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6099928
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93288386
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.80568403
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.6651285
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.5879827
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.57991487
+            },
+            {
+              "description": "Allergic rhinitis due to pollen",
+              "code": "J30.1",
+              "score": 0.5474494
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9240921,
+          "beginOffset": 493,
+          "endOffset": 501,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6514742
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.6139432
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.5430694
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.49180606
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.43787262
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.41680777
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.75938904,
+          "beginOffset": 521,
+          "endOffset": 530,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.807879
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.6877656
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.44405907
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.41784194
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.39563036
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.39124006
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98364383,
+          "beginOffset": 535,
+          "endOffset": 543,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81931674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sneezing",
+              "code": "R06.7",
+              "score": 0.6712168
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "allergic reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86564285,
+          "beginOffset": 558,
+          "endOffset": 575,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4111198
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66903704
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.510939
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.49946198
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.4683762
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.466825
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.44646806
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.926314,
+          "beginOffset": 602,
+          "endOffset": 619,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8646936
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.6963749
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.58368504
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.47320738
+            },
+            {
+              "description": "Allergic rhinitis due to pollen",
+              "code": "J30.1",
+              "score": 0.4580991
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.43960506
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a83b15f4-3886-4b63-b97e-a2faed444913"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a83b15f4-3886-4b63-b97e-a2faed444913"
+          ],
+          "Content-Length": [
+            "4438"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4438",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:40 GMT",
+          "x-amzn-RequestId": "a83b15f4-3886-4b63-b97e-a2faed444913"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 622,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "anti-histamine Clarithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.6167535,
+          "beginOffset": 73,
+          "endOffset": 102,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9863501,
+              "relationshipScore": 0.9999937,
+              "id": 1,
+              "beginOffset": 103,
+              "endOffset": 106,
+              "text": "1mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9959518,
+              "relationshipScore": 0.99999976,
+              "id": 2,
+              "beginOffset": 107,
+              "endOffset": 124,
+              "text": "three times a day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Clarithromycin 1000 MG Extended Release Oral Tablet",
+              "code": "597455",
+              "score": 0.79167086
+            },
+            {
+              "description": "Clarithromycin",
+              "code": "21212",
+              "score": 0.48082325
+            },
+            {
+              "description": "24 HR Clarithromycin 500 MG Extended Release Oral Tablet",
+              "code": "359385",
+              "score": 0.4603717
+            },
+            {
+              "description": "Histamine",
+              "code": "5333",
+              "score": 0.28244495
+            },
+            {
+              "description": "Clarithromycin 500 MG Oral Tablet",
+              "code": "197517",
+              "score": 0.14353138
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Clarithromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9858856,
+          "beginOffset": 638,
+          "endOffset": 652,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Clarithromycin",
+              "code": "21212",
+              "score": 0.9373888
+            },
+            {
+              "description": "24 HR Clarithromycin 500 MG Extended Release Oral Tablet",
+              "code": "359385",
+              "score": 0.66870725
+            },
+            {
+              "description": "Clarithromycin 250 MG Oral Tablet",
+              "code": "197516",
+              "score": 0.6656695
+            },
+            {
+              "description": "Clarithromycin 500 MG Oral Tablet",
+              "code": "197517",
+              "score": 0.5975106
+            },
+            {
+              "description": "Clarithromycin 1000 MG Extended Release Oral Tablet",
+              "code": "597455",
+              "score": 0.53279597
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d178f49a-d16a-4ff2-87c6-47e1a1274466"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d178f49a-d16a-4ff2-87c6-47e1a1274466"
+          ],
+          "Content-Length": [
+            "1708"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1708",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:40 GMT",
+          "x-amzn-RequestId": "d178f49a-d16a-4ff2-87c6-47e1a1274466"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:40 PM"
+}

@@ -1,0 +1,312 @@
+{
+  "note": "A surgical treatment should be undertaken. The patient was found to have an aortic dissection due to a tear in the aortic arch. The procedure to repair the aortic arch was performed through the pericardium, and a small, open incision was made in the aorta. The aortic dissection was repaired by reattaching the aortic arch with the use of arthroscopic suture.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 290,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 2,
+          "endOffset": 20,
+          "score": 0.2900401,
+          "text": "surgical treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 76,
+          "endOffset": 93,
+          "score": 0.9484464,
+          "text": "aortic dissection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 103,
+          "endOffset": 107,
+          "score": 0.56146175,
+          "text": "tear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44660425
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99784863,
+              "relationshipScore": 0.9995363,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 115,
+              "endOffset": 126,
+              "text": "aortic arch",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 115,
+          "endOffset": 126,
+          "score": 0.99784863,
+          "text": "aortic arch",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 145,
+          "endOffset": 151,
+          "score": 0.4793355,
+          "text": "repair",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 156,
+          "endOffset": 167,
+          "score": 0.9987704,
+          "text": "aortic arch",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 194,
+          "endOffset": 205,
+          "score": 0.96335375,
+          "text": "pericardium",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 220,
+          "endOffset": 233,
+          "score": 0.69019866,
+          "text": "open incision",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 250,
+          "endOffset": 255,
+          "score": 0.96104467,
+          "text": "aorta",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 261,
+          "endOffset": 278,
+          "score": 0.96243364,
+          "text": "aortic dissection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 283,
+          "endOffset": 291,
+          "score": 0.85991734,
+          "text": "repaired",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 311,
+          "endOffset": 322,
+          "score": 0.99711144,
+          "text": "aortic arch",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "13fc6e76-621d-4376-87b1-6cc00a688f0d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "13fc6e76-621d-4376-87b1-6cc00a688f0d"
+          ],
+          "Content-Length": [
+            "2244"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2244",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:03 GMT",
+          "x-amzn-RequestId": "13fc6e76-621d-4376-87b1-6cc00a688f0d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 412,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "tear",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5614616,
+          "beginOffset": 103,
+          "endOffset": 107,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99784863,
+              "relationshipScore": 0.9995363,
+              "id": 1,
+              "beginOffset": 115,
+              "endOffset": 126,
+              "text": "aortic arch",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4466041
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.5823921
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.5230639
+            },
+            {
+              "description": "Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic",
+              "code": "M75.100",
+              "score": 0.5119817
+            },
+            {
+              "description": "Sprain of anterior cruciate ligament of left knee",
+              "code": "S83.512",
+              "score": 0.47640988
+            },
+            {
+              "description": "Sprain of anterior cruciate ligament of unspecified knee",
+              "code": "S83.519",
+              "score": 0.36654952
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6a46f5d1-8932-4318-b117-41778aca5bf8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6a46f5d1-8932-4318-b117-41778aca5bf8"
+          ],
+          "Content-Length": [
+            "1008"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1008",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:04 GMT",
+          "x-amzn-RequestId": "6a46f5d1-8932-4318-b117-41778aca5bf8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 189,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f30a1d32-fe21-47ee-997a-d33f1cec4bdc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f30a1d32-fe21-47ee-997a-d33f1cec4bdc"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:03 GMT",
+          "x-amzn-RequestId": "f30a1d32-fe21-47ee-997a-d33f1cec4bdc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:04 PM"
+}

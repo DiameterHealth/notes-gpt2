@@ -1,0 +1,495 @@
+{
+  "note": "that continue, and have persisted since Sunday. In the ER, he presents with fevers of 37.8°C with elevated heart rate and a respiratory rate of 28 breaths/min, and his vital signs are labored. He has a large hematocrit of 54%, blood sodium of 135 mEq/L, blood carbon dioxide of 10 mm Hg, and blood sugar of 102 mg/dL.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1117,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 55,
+          "endOffset": 57,
+          "score": 0.9673336,
+          "text": "ER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 76,
+          "endOffset": 82,
+          "score": 0.97398347,
+          "text": "fevers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7597341
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 107,
+          "endOffset": 112,
+          "score": 0.928589,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 107,
+          "endOffset": 117,
+          "score": 0.99478096,
+          "text": "heart rate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7164584,
+              "relationshipScore": 0.9999013,
+              "relationshipType": "TEST_VALUE",
+              "id": 4,
+              "beginOffset": 98,
+              "endOffset": 106,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 124,
+          "endOffset": 140,
+          "score": 0.982884,
+          "text": "respiratory rate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99141335,
+              "relationshipScore": 0.9999895,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 144,
+              "endOffset": 146,
+              "text": "28",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.31705555,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_UNIT",
+              "id": 8,
+              "beginOffset": 147,
+              "endOffset": 158,
+              "text": "breaths/min",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 168,
+          "endOffset": 179,
+          "score": 0.91378415,
+          "text": "vital signs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 184,
+          "endOffset": 191,
+          "score": 0.50688607,
+          "text": "labored",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 202,
+          "endOffset": 218,
+          "score": 0.18120012,
+          "text": "large hematocrit",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99681646,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 222,
+              "endOffset": 224,
+              "text": "54",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99757224,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_UNIT",
+              "id": 12,
+              "beginOffset": 224,
+              "endOffset": 225,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 227,
+          "endOffset": 239,
+          "score": 0.9963883,
+          "text": "blood sodium",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9967962,
+              "relationshipScore": 0.99995637,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 243,
+              "endOffset": 246,
+              "text": "135",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99963343,
+              "relationshipScore": 0.99998856,
+              "relationshipType": "TEST_UNIT",
+              "id": 15,
+              "beginOffset": 247,
+              "endOffset": 252,
+              "text": "mEq/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 254,
+          "endOffset": 274,
+          "score": 0.99420726,
+          "text": "blood carbon dioxide",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7338599,
+              "relationshipScore": 0.9999969,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 278,
+              "endOffset": 280,
+              "text": "10",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.7783529,
+              "relationshipScore": 0.99037725,
+              "relationshipType": "TEST_UNIT",
+              "id": 18,
+              "beginOffset": 281,
+              "endOffset": 283,
+              "text": "mm",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 284,
+          "endOffset": 286,
+          "score": 0.6736312,
+          "text": "Hg",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7338599,
+              "relationshipScore": 0.99754214,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 278,
+              "endOffset": 280,
+              "text": "10",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.7783529,
+              "relationshipScore": 0.89159507,
+              "relationshipType": "TEST_UNIT",
+              "id": 18,
+              "beginOffset": 281,
+              "endOffset": 283,
+              "text": "mm",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 292,
+          "endOffset": 303,
+          "score": 0.9989542,
+          "text": "blood sugar",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9835276,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 21,
+              "beginOffset": 307,
+              "endOffset": 310,
+              "text": "102",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9983821,
+              "relationshipScore": 0.99996233,
+              "relationshipType": "TEST_UNIT",
+              "id": 22,
+              "beginOffset": 311,
+              "endOffset": 316,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f3fd5ad5-baf6-4844-b3b8-8ad6ceb4357f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f3fd5ad5-baf6-4844-b3b8-8ad6ceb4357f"
+          ],
+          "Content-Length": [
+            "4989"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4989",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:59 GMT",
+          "x-amzn-RequestId": "f3fd5ad5-baf6-4844-b3b8-8ad6ceb4357f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 404,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fevers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97398347,
+          "beginOffset": 76,
+          "endOffset": 82,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7597341
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8597713
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.64814603
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.5189846
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.51184076
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.50477076
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "labored",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.50688607,
+          "beginOffset": 184,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.64252573
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.52001154
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.5137479
+            },
+            {
+              "description": "Preterm labor without delivery, unspecified trimester",
+              "code": "O60.00",
+              "score": 0.4912929
+            },
+            {
+              "description": "Preterm labor",
+              "code": "O60",
+              "score": 0.47892156
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "22f7959a-e7aa-40f9-9b44-adb03544a4f0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "22f7959a-e7aa-40f9-9b44-adb03544a4f0"
+          ],
+          "Content-Length": [
+            "1268"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1268",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:59 GMT",
+          "x-amzn-RequestId": "22f7959a-e7aa-40f9-9b44-adb03544a4f0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 192,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "23273f09-45f1-456e-8284-942932df876e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "23273f09-45f1-456e-8284-942932df876e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:59 GMT",
+          "x-amzn-RequestId": "23273f09-45f1-456e-8284-942932df876e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:59 PM"
+}

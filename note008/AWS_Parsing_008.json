@@ -1,0 +1,431 @@
+{
+  "note": "Management of Infection:  Repeat any antibiotics prescribed and continue with as close to the same dosage as needed until the infection has been completely destroyed. Treatment:  Prophylaxis:  This patient should have access to a prophylactic. Antibiotics:  This patient should continue to receive the appropriate dose of antibiotics for the appropriate period of time. Prophylaxis:  This patient should be monitored for any signs of infection such as an increase in stools.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 325,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 14,
+          "endOffset": 23,
+          "score": 0.9615939,
+          "text": "Infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87560254
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 37,
+          "endOffset": 48,
+          "score": 0.8283216,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 126,
+          "endOffset": 135,
+          "score": 0.96154875,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91129667
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 179,
+          "endOffset": 190,
+          "score": 0.36514837,
+          "text": "Prophylaxis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 230,
+          "endOffset": 242,
+          "score": 0.48932534,
+          "text": "prophylactic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 244,
+          "endOffset": 255,
+          "score": 0.42613772,
+          "text": "Antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 244,
+          "endOffset": 255,
+          "score": 0.93382335,
+          "text": "Antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 322,
+          "endOffset": 333,
+          "score": 0.7471221,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 322,
+          "endOffset": 333,
+          "score": 0.9224376,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 370,
+          "endOffset": 381,
+          "score": 0.4704024,
+          "text": "Prophylaxis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 434,
+          "endOffset": 443,
+          "score": 0.9748618,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58313674
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 455,
+          "endOffset": 473,
+          "score": 0.39449084,
+          "text": "increase in stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.655927
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6e0a0242-2b33-4dca-bfaa-7e91417d635a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6e0a0242-2b33-4dca-bfaa-7e91417d635a"
+          ],
+          "Content-Length": [
+            "2140"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2140",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:08 GMT",
+          "x-amzn-RequestId": "6e0a0242-2b33-4dca-bfaa-7e91417d635a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1078,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9615939,
+          "beginOffset": 14,
+          "endOffset": 23,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8756025
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.802853
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.77617776
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7599795
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.7482329
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7196708
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96154875,
+          "beginOffset": 126,
+          "endOffset": 135,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91129667
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7618539
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.71319234
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7075732
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.7023152
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.66810906
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9748618,
+          "beginOffset": 434,
+          "endOffset": 443,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5831368
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.8091732
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.784116
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.76446253
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.717942
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.70992035
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "increase in stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39449093,
+          "beginOffset": 455,
+          "endOffset": 473,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65592694
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.75022745
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.7419688
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.74168974
+            },
+            {
+              "description": "Other abnormal findings in urine",
+              "code": "R82.998",
+              "score": 0.7102519
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.7053614
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c9608400-26d3-4bd7-90a1-28ca39101c54"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c9608400-26d3-4bd7-90a1-28ca39101c54"
+          ],
+          "Content-Length": [
+            "2959"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2959",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:09 GMT",
+          "x-amzn-RequestId": "c9608400-26d3-4bd7-90a1-28ca39101c54"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 239,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c18a46fc-8cad-4b92-8e20-09ebc2f2cd89"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c18a46fc-8cad-4b92-8e20-09ebc2f2cd89"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:09 GMT",
+          "x-amzn-RequestId": "c18a46fc-8cad-4b92-8e20-09ebc2f2cd89"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:10 PM"
+}

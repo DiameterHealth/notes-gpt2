@@ -1,0 +1,504 @@
+{
+  "note": "Patient is very happy, says she is not worried at all. Patient is excited about the pregnancy and has been doing yoga and self care daily. On exam she reports perfect prenatal heart. She has also never miscarried (had an ultrasound for a couple weeks ago and there was no embryo). Patient has recently had her hysterectomy and is feeling better.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 423,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 16,
+          "endOffset": 21,
+          "score": 0.39199093,
+          "text": "happy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 84,
+          "endOffset": 93,
+          "score": 0.9551473,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8888152
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 176,
+          "endOffset": 181,
+          "score": 0.6436948,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 202,
+          "endOffset": 212,
+          "score": 0.45324558,
+          "text": "miscarried",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 221,
+          "endOffset": 231,
+          "score": 0.9852615,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.50079334,
+              "relationshipScore": 0.9999957,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 269,
+              "endOffset": 278,
+              "text": "no embryo",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 236,
+          "endOffset": 237,
+          "score": 0.6420982,
+          "text": "a",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.45324558,
+              "relationshipScore": 0.77738595,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 202,
+              "endOffset": 212,
+              "text": "miscarried",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 236,
+          "endOffset": 237,
+          "score": 0.6420982,
+          "text": "a",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9852615,
+              "relationshipScore": 0.9301205,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 221,
+              "endOffset": 231,
+              "text": "ultrasound",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 238,
+          "endOffset": 254,
+          "score": 0.8754454,
+          "text": "couple weeks ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.45324558,
+              "relationshipScore": 0.7839605,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 202,
+              "endOffset": 212,
+              "text": "miscarried",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 238,
+          "endOffset": 254,
+          "score": 0.8754454,
+          "text": "couple weeks ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9852615,
+              "relationshipScore": 0.92200935,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 221,
+              "endOffset": 231,
+              "text": "ultrasound",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 293,
+          "endOffset": 301,
+          "score": 0.9999994,
+          "text": "recently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8282325,
+              "relationshipScore": 0.8311287,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 330,
+              "endOffset": 344,
+              "text": "feeling better",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.78342444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 293,
+          "endOffset": 301,
+          "score": 0.9999994,
+          "text": "recently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9972584,
+              "relationshipScore": 0.8509596,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 310,
+              "endOffset": 322,
+              "text": "hysterectomy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 310,
+          "endOffset": 322,
+          "score": 0.9972584,
+          "text": "hysterectomy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 330,
+          "endOffset": 344,
+          "score": 0.8282325,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78342444
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "19cbae39-b132-42e8-968f-c5837651ce7f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "19cbae39-b132-42e8-968f-c5837651ce7f"
+          ],
+          "Content-Length": [
+            "3879"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3879",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:31 GMT",
+          "x-amzn-RequestId": "19cbae39-b132-42e8-968f-c5837651ce7f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 378,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "happy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39199093,
+          "beginOffset": 16,
+          "endOffset": 21,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Angelman syndrome",
+              "code": "Q93.51",
+              "score": 0.5466566
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9551473,
+          "beginOffset": 84,
+          "endOffset": 93,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8888152
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.755712
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6988606
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6572556
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.64970964
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, insulin controlled",
+              "code": "O24.414",
+              "score": 0.6440031
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "miscarried",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.45324573,
+          "beginOffset": 202,
+          "endOffset": 212,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Threatened abortion",
+              "code": "O20.0",
+              "score": 0.5390857
+            },
+            {
+              "description": "Complete or unspecified spontaneous abortion without complication",
+              "code": "O03.9",
+              "score": 0.5317072
+            },
+            {
+              "description": "Dental caries",
+              "code": "K02",
+              "score": 0.47605407
+            },
+            {
+              "description": "Risk for dental caries, high",
+              "code": "Z91.843",
+              "score": 0.4748994
+            },
+            {
+              "description": "Immunization not carried out for other reason",
+              "code": "Z28.89",
+              "score": 0.45058048
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8282325,
+          "beginOffset": 330,
+          "endOffset": 344,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78342444
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Weakness",
+              "code": "R53.1",
+              "score": 0.8832619
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8831468
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.8558606
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.84028494
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.81838024
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "31bfe327-0816-4ab6-a5a5-f87013901caf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "31bfe327-0816-4ab6-a5a5-f87013901caf"
+          ],
+          "Content-Length": [
+            "2449"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2449",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:33 GMT",
+          "x-amzn-RequestId": "31bfe327-0816-4ab6-a5a5-f87013901caf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 203,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ce6c0c87-71fd-4892-913d-35212db18f85"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ce6c0c87-71fd-4892-913d-35212db18f85"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:31 GMT",
+          "x-amzn-RequestId": "ce6c0c87-71fd-4892-913d-35212db18f85"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:33 PM"
+}

@@ -1,0 +1,202 @@
+{
+  "note": "Assessment / Plan: Follow-up in 2 years  Assessment / Plan: Follow-up in 1 year  This information is available in the following report: www.maine.gov/dpp/pf/bwfplans.htm  The Department of Public Health encourages you to register with the Maine Division of Public Health to be notified of changes in the information contained on our website. By registering with the Division of Public Health, residents can be updated on all of the important information regarding the Maine Health Facts, including the most current list of required vaccinations, the status of Maine Medical Marijuana Program, and other important information.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 372,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 136,
+          "endOffset": 169,
+          "score": 0.9982938,
+          "text": "www.maine.gov/dpp/pf/bwfplans.htm",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "URL",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 175,
+          "endOffset": 202,
+          "score": 0.29680765,
+          "text": "Department of Public Health",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 239,
+          "endOffset": 270,
+          "score": 0.86125225,
+          "text": "Maine Division of Public Health",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 366,
+          "endOffset": 391,
+          "score": 0.50457877,
+          "text": "Division of Public Health",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 468,
+          "endOffset": 480,
+          "score": 0.45538703,
+          "text": "Maine Health",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 507,
+          "endOffset": 514,
+          "score": 0.99999845,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8488865,
+              "relationshipScore": 0.60944974,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 532,
+              "endOffset": 544,
+              "text": "vaccinations",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 532,
+          "endOffset": 544,
+          "score": 0.8488865,
+          "text": "vaccinations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3db4a47b-685b-4424-a826-054deabc3333"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3db4a47b-685b-4424-a826-054deabc3333"
+          ],
+          "Content-Length": [
+            "1516"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1516",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:50 GMT",
+          "x-amzn-RequestId": "3db4a47b-685b-4424-a826-054deabc3333"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 395,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a03531e4-0f27-41a6-8bcd-5b94b57c8ff3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a03531e4-0f27-41a6-8bcd-5b94b57c8ff3"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:51 GMT",
+          "x-amzn-RequestId": "a03531e4-0f27-41a6-8bcd-5b94b57c8ff3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 271,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "95c49433-6209-454b-99ab-694e4d62c977"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "95c49433-6209-454b-99ab-694e4d62c977"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:50 GMT",
+          "x-amzn-RequestId": "95c49433-6209-454b-99ab-694e4d62c977"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:51 PM"
+}

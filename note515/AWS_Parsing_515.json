@@ -1,0 +1,724 @@
+{
+  "note": ", and that he has experienced a recent significant drop in his PCT. He denies any impairment or neurologic disorder, and the history is nontraumatic. There is a recent fall, during which he reported that his vision was blurry throughout the daytime. (1) A second exam, with a low-power magnification, reveals clear retinal tears, as well. (2) The patient is noted to be in a good state of medical awareness, with no evidence of visual disturbances or seizure during the exam.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 458,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "score": 0.99999523,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.37130064,
+              "relationshipScore": 0.95936316,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 51,
+              "endOffset": 66,
+              "text": "drop in his PCT",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 51,
+          "endOffset": 66,
+          "score": 0.37130064,
+          "text": "drop in his PCT",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 82,
+          "endOffset": 115,
+          "score": 0.4894052,
+          "text": "impairment or neurologic disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5575407
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46850246
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9556647
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 136,
+          "endOffset": 148,
+          "score": 0.9008528,
+          "text": "nontraumatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43033734
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.507906
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 161,
+          "endOffset": 167,
+          "score": 0.9999651,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97264105,
+              "relationshipScore": 0.9744849,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 168,
+              "endOffset": 172,
+              "text": "fall",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.7619049
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 168,
+          "endOffset": 172,
+          "score": 0.97264105,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7619049
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 208,
+          "endOffset": 225,
+          "score": 0.84613645,
+          "text": "vision was blurry",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78252137
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 309,
+          "endOffset": 328,
+          "score": 0.7116062,
+          "text": "clear retinal tears",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.69596314
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 375,
+          "endOffset": 406,
+          "score": 0.63155967,
+          "text": "good state of medical awareness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44334823
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 428,
+          "endOffset": 447,
+          "score": 0.9750342,
+          "text": "visual disturbances",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6173027
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9849089
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 451,
+          "endOffset": 458,
+          "score": 0.98931175,
+          "text": "seizure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40780902
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9536228
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cb12d2a5-3acc-43b1-95c1-3ec52b574a39"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cb12d2a5-3acc-43b1-95c1-3ec52b574a39"
+          ],
+          "Content-Length": [
+            "2879"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2879",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:04 GMT",
+          "x-amzn-RequestId": "cb12d2a5-3acc-43b1-95c1-3ec52b574a39"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 669,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "drop in his PCT",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3713007,
+          "beginOffset": 51,
+          "endOffset": 66,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.664618
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.60409397
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.57557577
+            },
+            {
+              "description": "Palpitations",
+              "code": "R00.2",
+              "score": 0.5747834
+            },
+            {
+              "description": "Precipitous drop in hematocrit",
+              "code": "R71.0",
+              "score": 0.54901206
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "impairment or neurologic disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4894054,
+          "beginOffset": 82,
+          "endOffset": 115,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55754066
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46850243
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9556647
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.793585
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.564621
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.56372964
+            },
+            {
+              "description": "Mild cognitive impairment, so stated",
+              "code": "G31.84",
+              "score": 0.56359446
+            },
+            {
+              "description": "Other disorders of nervous system",
+              "code": "G98.8",
+              "score": 0.5535109
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nontraumatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9008528,
+          "beginOffset": 136,
+          "endOffset": 148,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43033734
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.50790596
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.83381796
+            },
+            {
+              "description": "Perforation of intestine (nontraumatic)",
+              "code": "K63.1",
+              "score": 0.81986505
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, intraventricular",
+              "code": "I61.5",
+              "score": 0.77435297
+            },
+            {
+              "description": "Nontraumatic intracranial hemorrhage, unspecified",
+              "code": "I62.9",
+              "score": 0.738834
+            },
+            {
+              "description": "Otorrhagia, unspecified ear",
+              "code": "H92.20",
+              "score": 0.6740522
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97264105,
+          "beginOffset": 168,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7619049
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.8282268
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.8101734
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.71042526
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.69728607
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.6905765
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "vision was blurry",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84613657,
+          "beginOffset": 208,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78252137
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.68035066
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.53945905
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.49798417
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.48479244
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.4753547
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "clear retinal tears",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7116063,
+          "beginOffset": 309,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.69596314
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified retinal vascular occlusion",
+              "code": "H34.9",
+              "score": 0.6056235
+            },
+            {
+              "description": "Retinal artery branch occlusion, unspecified eye",
+              "code": "H34.239",
+              "score": 0.54409546
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.51684695
+            },
+            {
+              "description": "Serous retinal detachment, unspecified eye",
+              "code": "H33.20",
+              "score": 0.46843022
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.45673716
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "good state of medical awareness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.63155967,
+          "beginOffset": 375,
+          "endOffset": 406,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44334823
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.7381983
+            },
+            {
+              "description": "Patient\u0027s noncompliance with other medical treatment and regimen",
+              "code": "Z91.19",
+              "score": 0.70928645
+            },
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.69662666
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.67798007
+            },
+            {
+              "description": "Patient\u0027s other noncompliance with medication regimen",
+              "code": "Z91.14",
+              "score": 0.67525566
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "visual disturbances",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9750342,
+          "beginOffset": 428,
+          "endOffset": 447,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6173027
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9849089
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.8177671
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.73604333
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.7151249
+            },
+            {
+              "description": "Visual discomfort, unspecified",
+              "code": "H53.149",
+              "score": 0.68875563
+            },
+            {
+              "description": "Visual discomfort, bilateral",
+              "code": "H53.143",
+              "score": 0.68507653
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "seizure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98931175,
+          "beginOffset": 451,
+          "endOffset": 458,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40780902
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9536228
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.91856235
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.8651111
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.80887073
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.7782953
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.7519278
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "67f5d6e5-63b9-4571-9b19-967e29732c98"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "67f5d6e5-63b9-4571-9b19-967e29732c98"
+          ],
+          "Content-Length": [
+            "6594"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6594",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:05 GMT",
+          "x-amzn-RequestId": "67f5d6e5-63b9-4571-9b19-967e29732c98"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 256,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b9168dec-efb5-4a8d-8d76-088ad6d41023"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b9168dec-efb5-4a8d-8d76-088ad6d41023"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:05 GMT",
+          "x-amzn-RequestId": "b9168dec-efb5-4a8d-8d76-088ad6d41023"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:05 PM"
+}

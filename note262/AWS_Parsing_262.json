@@ -1,0 +1,298 @@
+{
+  "note": "(UTIs) or other persistent infection. Prehospital Education and/or Coordination of Care: After a patient is stabilized by ED medical personnel, staff should take over all prehospital care to ensure that patient(s) and/or family members are able to participate, with appropriate documentation, in prehospital care at the site of ED arrival. Prehospital Communication and Documentation: Staff should document both patient-centered and hospital-centered care with prehospital charts and paperwork.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 282,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 1,
+          "endOffset": 5,
+          "score": 0.9583387,
+          "text": "UTIs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9043525
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 27,
+          "endOffset": 36,
+          "score": 0.99637103,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79581267
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.906443,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 16,
+              "endOffset": 26,
+              "text": "persistent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 122,
+          "endOffset": 124,
+          "score": 0.9959084,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 328,
+          "endOffset": 330,
+          "score": 0.99149525,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.906443,
+            "id": 1,
+            "beginOffset": 16,
+            "endOffset": 26,
+            "text": "persistent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "26feec58-9cf5-40f2-aa98-04f8bdce303d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "26feec58-9cf5-40f2-aa98-04f8bdce303d"
+          ],
+          "Content-Length": [
+            "1164"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1164",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:54 GMT",
+          "x-amzn-RequestId": "26feec58-9cf5-40f2-aa98-04f8bdce303d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 465,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "UTIs",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9583387,
+          "beginOffset": 1,
+          "endOffset": 5,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9043525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7253157
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.55444014
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.47230977
+            },
+            {
+              "description": "Pseudomonas (aeruginosa) (mallei) (pseudomallei) as the cause of diseases classified elsewhere",
+              "code": "B96.5",
+              "score": 0.46785644
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.46087405
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99637103,
+          "beginOffset": 27,
+          "endOffset": 36,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.90644294,
+              "relationshipScore": 0.99999857,
+              "id": 1,
+              "beginOffset": 16,
+              "endOffset": 26,
+              "text": "persistent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7958126
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.6797872
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6519312
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.64078355
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.6398149
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.6156906
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "23a0e263-bc02-42cb-99bc-c0ea2b503c5a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "23a0e263-bc02-42cb-99bc-c0ea2b503c5a"
+          ],
+          "Content-Length": [
+            "1764"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "1764",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:54 GMT",
+          "x-amzn-RequestId": "23a0e263-bc02-42cb-99bc-c0ea2b503c5a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8eeb23e8-87a6-4827-98a2-3baf05c692ff"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8eeb23e8-87a6-4827-98a2-3baf05c692ff"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:54 GMT",
+          "x-amzn-RequestId": "8eeb23e8-87a6-4827-98a2-3baf05c692ff"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:55 PM"
+}

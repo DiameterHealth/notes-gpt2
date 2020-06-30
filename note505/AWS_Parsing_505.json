@@ -1,0 +1,893 @@
+{
+  "note": "(tremors). Her right arm is numb, and her left foot is unsteady. She has a small left leg and a non-throbbing left femoral artery. No other abnormalities are present. Her family has two children. Her symptoms began 2 days earlier when she fell down and lost her balance on the way to the bathroom. She described the fall as \"very light and like a \u0027pop.\u0027",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1126,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 1,
+          "endOffset": 8,
+          "score": 0.9450676,
+          "text": "tremors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 21,
+          "endOffset": 24,
+          "score": 0.9885047,
+          "text": "arm",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 28,
+          "endOffset": 32,
+          "score": 0.9617313,
+          "text": "numb",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.54313004
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.6242883
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9928629,
+              "relationshipScore": 0.9999459,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 15,
+              "endOffset": 20,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885047,
+              "relationshipScore": 0.99985504,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 21,
+              "endOffset": 24,
+              "text": "arm",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9961599,
+              "relationshipScore": 0.7591048,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 42,
+              "endOffset": 46,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 47,
+          "endOffset": 51,
+          "score": 0.99399817,
+          "text": "foot",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 47,
+          "endOffset": 63,
+          "score": 0.45097098,
+          "text": "foot is unsteady",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5194895
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.52187955
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885047,
+              "relationshipScore": 0.98438996,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 21,
+              "endOffset": 24,
+              "text": "arm",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9961599,
+              "relationshipScore": 0.99477637,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 42,
+              "endOffset": 46,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 86,
+          "endOffset": 89,
+          "score": 0.9896131,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 96,
+          "endOffset": 129,
+          "score": 0.2193283,
+          "text": "non-throbbing left femoral artery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40327755
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9896131,
+              "relationshipScore": 0.673545,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 86,
+              "endOffset": 89,
+              "text": "leg",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9888672,
+              "relationshipScore": 0.7466908,
+              "relationshipType": "DIRECTION",
+              "id": 6,
+              "beginOffset": 110,
+              "endOffset": 114,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 115,
+          "endOffset": 129,
+          "score": 0.9770711,
+          "text": "femoral artery",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 140,
+          "endOffset": 153,
+          "score": 0.7393495,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.92127573
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 215,
+          "endOffset": 229,
+          "score": 0.9797743,
+          "text": "2 days earlier",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.95963776,
+              "relationshipScore": 0.6736268,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 253,
+              "endOffset": 269,
+              "text": "lost her balance",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8477472
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 215,
+          "endOffset": 229,
+          "score": 0.9797743,
+          "text": "2 days earlier",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7338512,
+              "relationshipScore": 0.881991,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 239,
+              "endOffset": 248,
+              "text": "fell down",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8529382
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 239,
+          "endOffset": 248,
+          "score": 0.7338512,
+          "text": "fell down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8529382
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 253,
+          "endOffset": 269,
+          "score": 0.95963776,
+          "text": "lost her balance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8477472
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 316,
+          "endOffset": 320,
+          "score": 0.90325004,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8456534
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9928629,
+            "id": 0,
+            "beginOffset": 15,
+            "endOffset": 20,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9961599,
+            "id": 2,
+            "beginOffset": 42,
+            "endOffset": 46,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.988884,
+            "id": 4,
+            "beginOffset": 81,
+            "endOffset": 85,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9888672,
+            "id": 6,
+            "beginOffset": 110,
+            "endOffset": 114,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "622c7bbb-69e0-47b7-a13a-69fbc156cf65"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "622c7bbb-69e0-47b7-a13a-69fbc156cf65"
+          ],
+          "Content-Length": [
+            "5321"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5321",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:37 GMT",
+          "x-amzn-RequestId": "622c7bbb-69e0-47b7-a13a-69fbc156cf65"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1138,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "tremors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9450676,
+          "beginOffset": 1,
+          "endOffset": 8,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tremor, unspecified",
+              "code": "R25.1",
+              "score": 0.76455986
+            },
+            {
+              "description": "Other specified forms of tremor",
+              "code": "G25.2",
+              "score": 0.6509039
+            },
+            {
+              "description": "Other symptoms and signs involving general sensations and perceptions",
+              "code": "R44.8",
+              "score": 0.5782454
+            },
+            {
+              "description": "Alcohol dependence with withdrawal, unspecified",
+              "code": "F10.239",
+              "score": 0.5380595
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.5152145
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "numb",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9617313,
+          "beginOffset": 28,
+          "endOffset": 32,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9928629,
+              "relationshipScore": 0.9999459,
+              "id": 1,
+              "beginOffset": 15,
+              "endOffset": 20,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885047,
+              "relationshipScore": 0.99985504,
+              "id": 2,
+              "beginOffset": 21,
+              "endOffset": 24,
+              "text": "arm",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9961599,
+              "relationshipScore": 0.7591048,
+              "id": 4,
+              "beginOffset": 42,
+              "endOffset": 46,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.54313016
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.6242883
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anesthesia of skin",
+              "code": "R20.0",
+              "score": 0.4196483
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.32053563
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.29726917
+            },
+            {
+              "description": "Chemical pneumonitis due to anesthesia",
+              "code": "J95.4",
+              "score": 0.24535167
+            },
+            {
+              "description": "Anesthesia and hypoesthesia of cornea, left eye",
+              "code": "H18.812",
+              "score": 0.19832666
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "foot is unsteady",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.45097098,
+          "beginOffset": 47,
+          "endOffset": 63,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885047,
+              "relationshipScore": 0.98438996,
+              "id": 2,
+              "beginOffset": 21,
+              "endOffset": 24,
+              "text": "arm",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9961599,
+              "relationshipScore": 0.99477637,
+              "id": 4,
+              "beginOffset": 42,
+              "endOffset": 46,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5194895
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.52187943
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.411361
+            },
+            {
+              "description": "Pain in left foot",
+              "code": "M79.672",
+              "score": 0.29002184
+            },
+            {
+              "description": "Unspecified abnormalities of gait and mobility",
+              "code": "R26.9",
+              "score": 0.26105583
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.2534864
+            },
+            {
+              "description": "Pain in right foot",
+              "code": "M79.671",
+              "score": 0.23185506
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "non-throbbing left femoral artery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.2193283,
+          "beginOffset": 96,
+          "endOffset": 129,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9896131,
+              "relationshipScore": 0.673545,
+              "id": 8,
+              "beginOffset": 86,
+              "endOffset": 89,
+              "text": "leg",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40327764
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atherosclerosis of native arteries of extremities, left leg",
+              "code": "I70.202",
+              "score": 0.2873536
+            },
+            {
+              "description": "Atherosclerosis of native arteries of extremities with gangrene, right leg",
+              "code": "I70.261",
+              "score": 0.22383484
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.2112109
+            },
+            {
+              "description": "Disorder of arteries and arterioles, unspecified",
+              "code": "I77.9",
+              "score": 0.18421037
+            },
+            {
+              "description": "Other specified disorders of arteries and arterioles",
+              "code": "I77.89",
+              "score": 0.16713434
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7393495,
+          "beginOffset": 140,
+          "endOffset": 153,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.92127573
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.43313703
+            },
+            {
+              "description": "Abnormal ultrasonic finding on antenatal screening of mother",
+              "code": "O28.3",
+              "score": 0.42046002
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.4040802
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.3925869
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.37517443
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "fell down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7338512,
+          "beginOffset": 239,
+          "endOffset": 248,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8529382
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.6927273
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.6922909
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.6026728
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.5829545
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.56611484
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "text": "lost her balance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95963776,
+          "beginOffset": 253,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8477472
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.67638254
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.39779797
+            },
+            {
+              "description": "Hypospadias, balanic",
+              "code": "Q54.0",
+              "score": 0.37979406
+            },
+            {
+              "description": "Other glycogen storage disease",
+              "code": "E74.09",
+              "score": 0.34671396
+            },
+            {
+              "description": "Ataxic gait",
+              "code": "R26.0",
+              "score": 0.3174189
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90325004,
+          "beginOffset": 316,
+          "endOffset": 320,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8456534
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.82851785
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.8093068
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.763754
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.7424541
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.73462075
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cee53d5c-6d3c-47e9-a408-c8206b84e75c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cee53d5c-6d3c-47e9-a408-c8206b84e75c"
+          ],
+          "Content-Length": [
+            "6823"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6823",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:38 GMT",
+          "x-amzn-RequestId": "cee53d5c-6d3c-47e9-a408-c8206b84e75c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1a08af05-e635-4fe4-8767-98ac3b594d24"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1a08af05-e635-4fe4-8767-98ac3b594d24"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:37 GMT",
+          "x-amzn-RequestId": "1a08af05-e635-4fe4-8767-98ac3b594d24"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:38 PM"
+}

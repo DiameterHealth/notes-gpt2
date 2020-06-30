@@ -1,0 +1,424 @@
+{
+  "note": "and is currently taking daily routine vitamin and mineral supplements. A thorough history is collected along with a physical examination. All history is reviewed with the patient\u0027s caregiver who notes no specific history of seizures or other neurologic concerns. A medical history is obtained from the caregiver which includes information regarding the patient\u0027s family and current and past medical history.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 297,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 7,
+          "endOffset": 16,
+          "score": 0.99999964,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.36103186,
+              "relationshipScore": 0.60819894,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 38,
+              "endOffset": 45,
+              "text": "vitamin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 7,
+          "endOffset": 16,
+          "score": 0.99999964,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.3487626,
+              "relationshipScore": 0.5106741,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 50,
+              "endOffset": 69,
+              "text": "mineral supplements",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 7,
+          "endOffset": 16,
+          "score": 0.99999964,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.93466324,
+              "relationshipScore": 0.5106741,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 50,
+              "endOffset": 69,
+              "text": "mineral supplements",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 38,
+          "endOffset": 45,
+          "score": 0.36103186,
+          "text": "vitamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.5255592,
+              "relationshipScore": 0.9988024,
+              "relationshipType": "FREQUENCY",
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 50,
+          "endOffset": 69,
+          "score": 0.93466324,
+          "text": "mineral supplements",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.5255592,
+              "relationshipScore": 0.7715305,
+              "relationshipType": "FREQUENCY",
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 50,
+          "endOffset": 69,
+          "score": 0.3487626,
+          "text": "mineral supplements",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 116,
+          "endOffset": 136,
+          "score": 0.66818625,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 224,
+          "endOffset": 232,
+          "score": 0.99140465,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78936714
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8035233
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a9d3ad50-5f8e-4e9f-b441-031a44815f8b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a9d3ad50-5f8e-4e9f-b441-031a44815f8b"
+          ],
+          "Content-Length": [
+            "2581"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2581",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:23 GMT",
+          "x-amzn-RequestId": "a9d3ad50-5f8e-4e9f-b441-031a44815f8b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 289,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99140465,
+          "beginOffset": 224,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7893671
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.80352336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.88625056
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.8177621
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.8115634
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.79141754
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.6910317
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "17e7ad9b-7668-4c4e-a0e1-27dcf127fe46"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "17e7ad9b-7668-4c4e-a0e1-27dcf127fe46"
+          ],
+          "Content-Length": [
+            "799"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "799",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:23 GMT",
+          "x-amzn-RequestId": "17e7ad9b-7668-4c4e-a0e1-27dcf127fe46"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "vitamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.36103207,
+          "beginOffset": 38,
+          "endOffset": 45,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.5255588,
+              "relationshipScore": 0.9988023,
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vitamin B Complex",
+              "code": "11251",
+              "score": 0.7734484
+            },
+            {
+              "description": "Vitamin B 12",
+              "code": "11248",
+              "score": 0.7394928
+            },
+            {
+              "description": "vitamin D3",
+              "code": "1244014",
+              "score": 0.56294787
+            },
+            {
+              "description": "Vitamin D",
+              "code": "11253",
+              "score": 0.4631989
+            },
+            {
+              "description": "Gitalin",
+              "code": "89791",
+              "score": 0.28433803
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "mineral supplements",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.93466324,
+          "beginOffset": 50,
+          "endOffset": 69,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.5255588,
+              "relationshipScore": 0.7715305,
+              "id": 0,
+              "beginOffset": 24,
+              "endOffset": 29,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Mineral Oil",
+              "code": "6972",
+              "score": 0.30300495
+            },
+            {
+              "description": "Mineral Oil 1000 MG/ML Enema",
+              "code": "205121",
+              "score": 0.26803884
+            },
+            {
+              "description": "Mineral Oil 0.2 MG/MG Ophthalmic Ointment",
+              "code": "708129",
+              "score": 0.07766466
+            },
+            {
+              "description": "Mineral Oil 1000 MG/ML Topical Oil",
+              "code": "1043719",
+              "score": 0.02183132
+            },
+            {
+              "description": "Heavy mineral oil",
+              "code": "258439",
+              "score": 0.013614693
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4b4fcfa3-9f46-413f-922a-daab03cfedcc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4b4fcfa3-9f46-413f-922a-daab03cfedcc"
+          ],
+          "Content-Length": [
+            "1517"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1517",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:23 GMT",
+          "x-amzn-RequestId": "4b4fcfa3-9f46-413f-922a-daab03cfedcc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:24 PM"
+}

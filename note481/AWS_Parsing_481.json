@@ -1,0 +1,661 @@
+{
+  "note": "The patient is prescribed an oral decongestant (decongestant combined with beta-2 agonists) which also affects sleep apnea. The patient states during the last 2-3 minutes on each breath he has experienced difficulty breathing. The patient also has an occasional history of difficulty breathing following a heart attack, or other coronary event. There is also a history of asthma.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 417,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 29,
+          "endOffset": 46,
+          "score": 0.94189095,
+          "text": "oral decongestant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 29,
+          "endOffset": 46,
+          "score": 0.71217966,
+          "text": "oral decongestant",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 48,
+          "endOffset": 60,
+          "score": 0.34685534,
+          "text": "decongestant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 48,
+          "endOffset": 60,
+          "score": 0.43834782,
+          "text": "decongestant",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 75,
+          "endOffset": 90,
+          "score": 0.37243345,
+          "text": "beta-2 agonists",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 75,
+          "endOffset": 90,
+          "score": 0.90393937,
+          "text": "beta-2 agonists",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 111,
+          "endOffset": 122,
+          "score": 0.9052526,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8786899
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 205,
+          "endOffset": 225,
+          "score": 0.9722024,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89881194
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 273,
+          "endOffset": 293,
+          "score": 0.9891683,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77093875
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.50623435,
+              "relationshipScore": 0.7969636,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 251,
+              "endOffset": 261,
+              "text": "occasional",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 306,
+          "endOffset": 311,
+          "score": 0.9625541,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 306,
+          "endOffset": 318,
+          "score": 0.92979616,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8262993
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 329,
+          "endOffset": 343,
+          "score": 0.68180335,
+          "text": "coronary event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40631333
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64731616
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 372,
+          "endOffset": 378,
+          "score": 0.9977463,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93461055
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.50623435,
+            "id": 6,
+            "beginOffset": 251,
+            "endOffset": 261,
+            "text": "occasional",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "647ed6ec-90ef-4cac-ad0d-7310bb470570"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "647ed6ec-90ef-4cac-ad0d-7310bb470570"
+          ],
+          "Content-Length": [
+            "2829"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2829",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:48 GMT",
+          "x-amzn-RequestId": "647ed6ec-90ef-4cac-ad0d-7310bb470570"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 528,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9052526,
+          "beginOffset": 111,
+          "endOffset": 122,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8786899
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.6831433
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5814365
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.45238394
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.3506742
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.33468762
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9722024,
+          "beginOffset": 205,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89881194
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.63589287
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.5595076
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.54092425
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.51675063
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.3866283
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9891683,
+          "beginOffset": 273,
+          "endOffset": 293,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5062342,
+              "relationshipScore": 0.7969636,
+              "id": 2,
+              "beginOffset": 251,
+              "endOffset": 261,
+              "text": "occasional",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7709387
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.6118359
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.54647243
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.5415356
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.48311144
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.3612295
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "heart attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92979604,
+          "beginOffset": 306,
+          "endOffset": 318,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8262993
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.79987836
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.76167196
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.6923558
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6719122
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.667301
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "coronary event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6818033,
+          "beginOffset": 329,
+          "endOffset": 343,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40631336
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64731616
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.81516844
+            },
+            {
+              "description": "Stenosis of coronary artery stent",
+              "code": "T82.855",
+              "score": 0.73227304
+            },
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.72945166
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.7277194
+            },
+            {
+              "description": "Coronary angioplasty status",
+              "code": "Z98.61",
+              "score": 0.72459555
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9977463,
+          "beginOffset": 372,
+          "endOffset": 378,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93461055
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.74799275
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.5362588
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.52302116
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.46589643
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.42608818
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d44c5e3e-39e9-429a-9c1a-07584d21c410"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d44c5e3e-39e9-429a-9c1a-07584d21c410"
+          ],
+          "Content-Length": [
+            "4626"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4626",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:49 GMT",
+          "x-amzn-RequestId": "d44c5e3e-39e9-429a-9c1a-07584d21c410"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 400,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "oral decongestant",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.7121797,
+          "beginOffset": 29,
+          "endOffset": 46,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Sus scrofa oral mucosa preparation",
+              "code": "1311232",
+              "score": 0.057650235
+            },
+            {
+              "description": "Bran",
+              "code": "104125",
+              "score": 0.04140119
+            },
+            {
+              "description": "Lyral",
+              "code": "1420141",
+              "score": 0.040037278
+            },
+            {
+              "description": "OAT BRAN",
+              "code": "253190",
+              "score": 0.022138478
+            },
+            {
+              "description": "neral",
+              "code": "1484865",
+              "score": 0.017227972
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "beta-2 agonists",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.90393937,
+          "beginOffset": 75,
+          "endOffset": 90,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "agalsidase beta",
+              "code": "338817",
+              "score": 0.92417675
+            },
+            {
+              "description": "beta-Alanine",
+              "code": "61",
+              "score": 0.9009821
+            },
+            {
+              "description": "follitropin beta",
+              "code": "25357",
+              "score": 0.90000075
+            },
+            {
+              "description": "beta Sitosterol",
+              "code": "47070",
+              "score": 0.87037325
+            },
+            {
+              "description": "epoetin beta",
+              "code": "105695",
+              "score": 0.8548945
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f7901ba3-d770-4edb-8892-30dffc2441e1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f7901ba3-d770-4edb-8892-30dffc2441e1"
+          ],
+          "Content-Length": [
+            "1161"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1161",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:48 GMT",
+          "x-amzn-RequestId": "f7901ba3-d770-4edb-8892-30dffc2441e1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:49 PM"
+}

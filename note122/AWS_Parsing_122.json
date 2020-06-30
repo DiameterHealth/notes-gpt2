@@ -1,0 +1,365 @@
+{
+  "note": ". PICU:  A room where patients can be stabilized while undergoing intensive care care. The National Healthcare Safety Network has compiled a list of the most common problems during emergency medicine visits at emergency medical services. These include:  Misdiagnosis  Misdiagnoses are defined as making a wrong diagnosis. For example, an initial chest X-ray is missed because the patient is obese or a diabetic and there is no evidence of pulmonary edema.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 298,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 2,
+          "endOffset": 6,
+          "score": 0.75550693,
+          "text": "PICU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 66,
+          "endOffset": 80,
+          "score": 0.8364972,
+          "text": "intensive care",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 181,
+          "endOffset": 199,
+          "score": 0.8846905,
+          "text": "emergency medicine",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 210,
+          "endOffset": 236,
+          "score": 0.98910064,
+          "text": "emergency medical services",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 346,
+          "endOffset": 351,
+          "score": 0.9718167,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 346,
+          "endOffset": 357,
+          "score": 0.8632032,
+          "text": "chest X-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4097319,
+              "relationshipScore": 0.999124,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 424,
+              "endOffset": 454,
+              "text": "no evidence of pulmonary edema",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 391,
+          "endOffset": 396,
+          "score": 0.8149108,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 402,
+          "endOffset": 410,
+          "score": 0.9271061,
+          "text": "diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5588601
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 439,
+          "endOffset": 454,
+          "score": 0.9016934,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65722275
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9700861
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c397264a-86ec-4f4b-a76a-05265823c6b6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c397264a-86ec-4f4b-a76a-05265823c6b6"
+          ],
+          "Content-Length": [
+            "1877"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1877",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:18 GMT",
+          "x-amzn-RequestId": "c397264a-86ec-4f4b-a76a-05265823c6b6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 449,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8149107,
+          "beginOffset": 391,
+          "endOffset": 396,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.8297806
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.7894213
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.7870805
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.6568366
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.602938
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9271061,
+          "beginOffset": 402,
+          "endOffset": 410,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5588601
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.85384405
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7671645
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.75079024
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.70471543
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.70212054
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9016934,
+          "beginOffset": 439,
+          "endOffset": 454,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6572228
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9700861
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic pulmonary edema",
+              "code": "J81.1",
+              "score": 0.73582673
+            },
+            {
+              "description": "Pulmonary edema",
+              "code": "J81",
+              "score": 0.6239644
+            },
+            {
+              "description": "Acute pulmonary edema",
+              "code": "J81.0",
+              "score": 0.6113
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.47552764
+            },
+            {
+              "description": "Left ventricular failure, unspecified",
+              "code": "I50.1",
+              "score": 0.44826126
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7dbb636e-4141-4cfa-b045-c479d7e87ff8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7dbb636e-4141-4cfa-b045-c479d7e87ff8"
+          ],
+          "Content-Length": [
+            "2177"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2177",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:19 GMT",
+          "x-amzn-RequestId": "7dbb636e-4141-4cfa-b045-c479d7e87ff8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "39737b3a-799e-4822-b461-abbee7b8f1e8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "39737b3a-799e-4822-b461-abbee7b8f1e8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:18 GMT",
+          "x-amzn-RequestId": "39737b3a-799e-4822-b461-abbee7b8f1e8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:19 PM"
+}

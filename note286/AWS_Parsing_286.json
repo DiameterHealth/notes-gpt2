@@ -1,0 +1,445 @@
+{
+  "note": "CONCLUSION:  The patient had transient ischemia without any systemic signs or symptoms. There is no evidence of a new heart rhythm as evident radiographs. © 2016 The Authors. American Heart Association.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 278,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 39,
+          "endOffset": 47,
+          "score": 0.99542385,
+          "text": "ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7467049
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.22953737,
+              "relationshipScore": 0.99999774,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 29,
+              "endOffset": 38,
+              "text": "transient",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 60,
+          "endOffset": 86,
+          "score": 0.69636655,
+          "text": "systemic signs or symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7888879
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.76971656
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 118,
+          "endOffset": 123,
+          "score": 0.82400805,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 118,
+          "endOffset": 130,
+          "score": 0.7302004,
+          "text": "heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.71099216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.69281095
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 142,
+          "endOffset": 153,
+          "score": 0.92165387,
+          "text": "radiographs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 157,
+          "endOffset": 161,
+          "score": 0.9892162,
+          "text": "2016",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 157,
+          "endOffset": 161,
+          "score": 0.9876687,
+          "text": "2016",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7302004,
+              "relationshipScore": 0.676793,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 118,
+              "endOffset": 130,
+              "text": "heart rhythm",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.71099216
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.69281095
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 157,
+          "endOffset": 161,
+          "score": 0.9876687,
+          "text": "2016",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.92165387,
+              "relationshipScore": 0.6823371,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 142,
+              "endOffset": 153,
+              "text": "radiographs",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 184,
+          "endOffset": 189,
+          "score": 0.7021209,
+          "text": "Heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.22953737,
+            "id": 2,
+            "beginOffset": 29,
+            "endOffset": 38,
+            "text": "transient",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fc4dcc72-1acb-4531-a3af-4c0642655437"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fc4dcc72-1acb-4531-a3af-4c0642655437"
+          ],
+          "Content-Length": [
+            "2634"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2634",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:27 GMT",
+          "x-amzn-RequestId": "fc4dcc72-1acb-4531-a3af-4c0642655437"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 413,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99542385,
+          "beginOffset": 39,
+          "endOffset": 47,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.22953704,
+              "relationshipScore": 0.99999774,
+              "id": 0,
+              "beginOffset": 29,
+              "endOffset": 38,
+              "text": "transient",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7467049
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.77769125
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.7045154
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.6944755
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.6858078
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.6455173
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "systemic signs or symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6963666,
+          "beginOffset": 60,
+          "endOffset": 86,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7888879
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.76971656
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8975084
+            },
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.8670723
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.86531997
+            },
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.8606084
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.8602125
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7302006,
+          "beginOffset": 118,
+          "endOffset": 130,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.71099216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6928109
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.7935945
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.78977346
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.7678505
+            },
+            {
+              "description": "Atrioventricular block, complete",
+              "code": "I44.2",
+              "score": 0.7339659
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.7238133
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "342f3182-22a7-4e4d-ac93-15a18f0a334d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "342f3182-22a7-4e4d-ac93-15a18f0a334d"
+          ],
+          "Content-Length": [
+            "2520"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2520",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:29 GMT",
+          "x-amzn-RequestId": "342f3182-22a7-4e4d-ac93-15a18f0a334d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 125,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "78015509-be2f-41b5-8713-b83d18ed1088"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "78015509-be2f-41b5-8713-b83d18ed1088"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:27 GMT",
+          "x-amzn-RequestId": "78015509-be2f-41b5-8713-b83d18ed1088"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:29 PM"
+}

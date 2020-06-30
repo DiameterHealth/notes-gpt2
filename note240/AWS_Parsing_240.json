@@ -1,0 +1,284 @@
+{
+  "note": "erythromycin. As we discussed earlier, there are two different forms of this condition – \"primary\", in which the symptoms start before birth, and \"secondary\", where they begin after birth. In many cases, the \"primary\" syndrome ends in a baby being born dead. But in other cases, this \"second stage\" of MDM may not be so obvious, and in this case there may be hope for a healthy baby.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 343,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "score": 0.998845,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 218,
+          "endOffset": 231,
+          "score": 0.35927653,
+          "text": "syndrome ends",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4609543
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 302,
+          "endOffset": 305,
+          "score": 0.5593836,
+          "text": "MDM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 370,
+          "endOffset": 377,
+          "score": 0.20944871,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8ba955cb-2844-441a-bdc7-b4b0c7b63f39"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8ba955cb-2844-441a-bdc7-b4b0c7b63f39"
+          ],
+          "Content-Length": [
+            "700"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "700",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:20 GMT",
+          "x-amzn-RequestId": "8ba955cb-2844-441a-bdc7-b4b0c7b63f39"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 562,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "syndrome ends",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35927647,
+          "beginOffset": 218,
+          "endOffset": 231,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4609543
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.666625
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.6500672
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.640791
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.63353723
+            },
+            {
+              "description": "Paralytic syndrome, unspecified",
+              "code": "G83.9",
+              "score": 0.6090808
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.20944864,
+          "beginOffset": 370,
+          "endOffset": 377,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.7433345
+            },
+            {
+              "description": "Encounter for health supervision and care of foundling",
+              "code": "Z76.1",
+              "score": 0.6886969
+            },
+            {
+              "description": "Encounter for procedure for purposes other than remedying health state, unspecified",
+              "code": "Z41.9",
+              "score": 0.623421
+            },
+            {
+              "description": "Encounter for other general examination",
+              "code": "Z00.8",
+              "score": 0.5852837
+            },
+            {
+              "description": "Healthy person accompanying sick person",
+              "code": "Z76.3",
+              "score": 0.57696706
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43929f0e-6401-4c0f-8e33-49aaa698426d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43929f0e-6401-4c0f-8e33-49aaa698426d"
+          ],
+          "Content-Length": [
+            "1532"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1532",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:22 GMT",
+          "x-amzn-RequestId": "43929f0e-6401-4c0f-8e33-49aaa698426d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 462,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.998845,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Erythromycin",
+              "code": "4053",
+              "score": 0.9361085
+            },
+            {
+              "description": "Erythromycin 250 MG Oral Tablet",
+              "code": "598006",
+              "score": 0.43545812
+            },
+            {
+              "description": "Erythromycin 250 MG Delayed Release Oral Capsule",
+              "code": "310154",
+              "score": 0.27387562
+            },
+            {
+              "description": "Erythromycin 0.02 MG/MG Topical Gel [Erygel]",
+              "code": "206212",
+              "score": 0.2429897
+            },
+            {
+              "description": "Erythromycin 0.005 MG/MG Ophthalmic Ointment",
+              "code": "310149",
+              "score": 0.23455147
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5c1c42a5-8cf5-4b41-9c21-5d676c804780"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5c1c42a5-8cf5-4b41-9c21-5d676c804780"
+          ],
+          "Content-Length": [
+            "708"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "708",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:20 GMT",
+          "x-amzn-RequestId": "5c1c42a5-8cf5-4b41-9c21-5d676c804780"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:22 PM"
+}

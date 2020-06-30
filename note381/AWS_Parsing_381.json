@@ -1,0 +1,356 @@
+{
+  "note": "He sleeps 6-8 hours and has a high O2 consumption of 10-11 L/h. The patient is having an episode of a fever and low-grade fever which is followed by a short night of sleep which is continued for 2.5-3 hours. The patient presents with OSA and is placed on continuous positive airway pressure. The O2 saturation value (Ss) is 10-11 L/h.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 269,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 102,
+          "endOffset": 107,
+          "score": 0.99032915,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8413417
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5879732,
+              "relationshipScore": 0.5285941,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 89,
+              "endOffset": 96,
+              "text": "episode",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 112,
+          "endOffset": 127,
+          "score": 0.48517156,
+          "text": "low-grade fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7782811
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 234,
+          "endOffset": 237,
+          "score": 0.968982,
+          "text": "OSA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7869304
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 296,
+          "endOffset": 309,
+          "score": 0.86839813,
+          "text": "O2 saturation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.2900195,
+              "relationshipScore": 0.99997485,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 324,
+              "endOffset": 333,
+              "text": "10-11 L/h",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.5879732,
+            "id": 0,
+            "beginOffset": 89,
+            "endOffset": 96,
+            "text": "episode",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1171d739-a49b-43b8-9be1-8f2d01391a5f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1171d739-a49b-43b8-9be1-8f2d01391a5f"
+          ],
+          "Content-Length": [
+            "1458"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1458",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:59 GMT",
+          "x-amzn-RequestId": "1171d739-a49b-43b8-9be1-8f2d01391a5f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 559,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99032915,
+          "beginOffset": 102,
+          "endOffset": 107,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.58797306,
+              "relationshipScore": 0.5285941,
+              "id": 0,
+              "beginOffset": 89,
+              "endOffset": 96,
+              "text": "episode",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8413417
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.831308
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5401395
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.5019638
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.49457622
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.45880213
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "low-grade fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.48517144,
+          "beginOffset": 112,
+          "endOffset": 127,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.778281
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.73844916
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4516217
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.41166127
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.39978847
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.39028436
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "OSA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.968982,
+          "beginOffset": 234,
+          "endOffset": 237,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7869304
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.6747925
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.55314475
+            },
+            {
+              "description": "Other sleep apnea",
+              "code": "G47.39",
+              "score": 0.31402642
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.30649573
+            },
+            {
+              "description": "Central sleep apnea in conditions classified elsewhere",
+              "code": "G47.37",
+              "score": 0.30610293
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "df730a0d-2489-4337-8667-4acc531e8f72"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "df730a0d-2489-4337-8667-4acc531e8f72"
+          ],
+          "Content-Length": [
+            "2161"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2161",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:59 GMT",
+          "x-amzn-RequestId": "df730a0d-2489-4337-8667-4acc531e8f72"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3b52a55f-fc0e-4955-8cc5-d5418e703642"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3b52a55f-fc0e-4955-8cc5-d5418e703642"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:59 GMT",
+          "x-amzn-RequestId": "3b52a55f-fc0e-4955-8cc5-d5418e703642"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:00 PM"
+}

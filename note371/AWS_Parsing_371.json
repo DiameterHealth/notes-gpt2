@@ -1,0 +1,369 @@
+{
+  "note": ".......................................... ........................................... ......................................................................... Response: Sulfonylureas are commonly associated with these conditions. Your health care provider should monitor you closely for signs and symptoms and refer you for medical evaluation if you have a change in your condition. ............................................................................................................................................................................................................................................................................................................... .............................................................................................................................................................................................................................................................................. Determining the cause of diarrhea in children .................................................................................................................................................................................................................................................................................................................... ............................................................................................................................................................................................................................................................................................................. ............................................................................................................................................................................................................................................................................................................. Determining the cause of diarrhea in children is a high priority for health care professionals. Your family physician can help establish the cause of your daughter\u0027s fever.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2446,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 171,
+          "endOffset": 184,
+          "score": 0.7223118,
+          "text": "Sulfonylureas",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 359,
+          "endOffset": 383,
+          "score": 0.72907025,
+          "text": "change in your condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42538455
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.50871295
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 985,
+          "endOffset": 993,
+          "score": 0.9858532,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5099385
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 1944,
+          "endOffset": 1952,
+          "score": 0.9902289,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6469406
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 2085,
+          "endOffset": 2090,
+          "score": 0.95230997,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56690985
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "10a028e9-8c0a-43a6-9308-b54dc0fa27e5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "10a028e9-8c0a-43a6-9308-b54dc0fa27e5"
+          ],
+          "Content-Length": [
+            "1048"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1048",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:37 GMT",
+          "x-amzn-RequestId": "10a028e9-8c0a-43a6-9308-b54dc0fa27e5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2251,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "change in your condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72907025,
+          "beginOffset": 359,
+          "endOffset": 383,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4253846
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.50871295
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.8600839
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.79491574
+            },
+            {
+              "description": "Unspecified skin changes",
+              "code": "R23.9",
+              "score": 0.785469
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.7845098
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.76905715
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9858531,
+          "beginOffset": 985,
+          "endOffset": 993,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5099384
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.88389826
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.6937601
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.65307057
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.64185643
+            },
+            {
+              "description": "Irritable bowel syndrome with diarrhea",
+              "code": "K58.0",
+              "score": 0.63902295
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9902289,
+          "beginOffset": 1944,
+          "endOffset": 1952,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6469405
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.8196779
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.5564186
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.54927665
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.5342493
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.52958655
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95230997,
+          "beginOffset": 2085,
+          "endOffset": 2090,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5669098
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7663611
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.50995964
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4305078
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4081459
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.343493
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "02419df9-ce80-46f9-a1eb-14f2e42b6432"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "02419df9-ce80-46f9-a1eb-14f2e42b6432"
+          ],
+          "Content-Length": [
+            "2840"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2840",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:41 GMT",
+          "x-amzn-RequestId": "02419df9-ce80-46f9-a1eb-14f2e42b6432"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1412,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e140a839-17b1-4bd3-b2a9-f4432cf1af53"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e140a839-17b1-4bd3-b2a9-f4432cf1af53"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:39 GMT",
+          "x-amzn-RequestId": "e140a839-17b1-4bd3-b2a9-f4432cf1af53"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:42 PM"
+}

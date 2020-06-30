@@ -1,0 +1,245 @@
+{
+  "note": "Intestinal bleeding       Intestinal obstruction       This is a potentially serious event and requires emergency medical treatment. A patient will require emergency medical care.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 132,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 19,
+          "score": 0.9011427,
+          "text": "Intestinal bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46290094
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 26,
+          "endOffset": 48,
+          "score": 0.9113056,
+          "text": "Intestinal obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6827737
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 156,
+          "endOffset": 178,
+          "score": 0.28210232,
+          "text": "emergency medical care",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "94ece27f-a241-4b55-992c-ea77857e5dbc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "94ece27f-a241-4b55-992c-ea77857e5dbc"
+          ],
+          "Content-Length": [
+            "645"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "645",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:26 GMT",
+          "x-amzn-RequestId": "94ece27f-a241-4b55-992c-ea77857e5dbc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 284,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Intestinal bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90114284,
+          "beginOffset": 0,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46290088
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.67902213
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.6302532
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a digestive system organ or structure complicating a digestive system procedure",
+              "code": "K91.61",
+              "score": 0.5412318
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.5217372
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.4988517
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Intestinal obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9113056,
+          "beginOffset": 26,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6827737
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified intestinal obstruction, unspecified as to partial versus complete obstruction",
+              "code": "K56.609",
+              "score": 0.7895843
+            },
+            {
+              "description": "Other specified diseases of intestine",
+              "code": "K63.89",
+              "score": 0.68142104
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.65532315
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.55154914
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.53933436
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ac9ab6ff-19c1-4ec8-9b0a-e6980d8d1256"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ac9ab6ff-19c1-4ec8-9b0a-e6980d8d1256"
+          ],
+          "Content-Length": [
+            "1645"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1645",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:26 GMT",
+          "x-amzn-RequestId": "ac9ab6ff-19c1-4ec8-9b0a-e6980d8d1256"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 129,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a87be703-bc78-421d-a436-d7fd13cf85c4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a87be703-bc78-421d-a436-d7fd13cf85c4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:26 GMT",
+          "x-amzn-RequestId": "a87be703-bc78-421d-a436-d7fd13cf85c4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:27 PM"
+}

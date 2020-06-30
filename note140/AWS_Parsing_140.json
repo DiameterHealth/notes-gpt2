@@ -1,0 +1,271 @@
+{
+  "note": "and then, within a month of his surgery, has a checkup with an eye sight specialist and a physical exam with an optometrist. If the patient\u0027s vision improves with surgery, he is then seen by the ophthalmologist every six weeks for check-ups through the year. Follow-up: A follow-up appointment is scheduled for 1 to 2 months after surgery, usually at the same time as the follow-up eye exams.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 421,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 10,
+          "endOffset": 31,
+          "score": 0.78762925,
+          "text": "within a month of his",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.84049314,
+              "relationshipScore": 0.9751432,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 32,
+              "endOffset": 39,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 32,
+          "endOffset": 39,
+          "score": 0.84049314,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 63,
+          "endOffset": 66,
+          "score": 0.8868598,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 90,
+          "endOffset": 103,
+          "score": 0.41500422,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 142,
+          "endOffset": 157,
+          "score": 0.3476224,
+          "text": "vision improves",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.46101967
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 163,
+          "endOffset": 170,
+          "score": 0.5430375,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 331,
+          "endOffset": 338,
+          "score": 0.9421415,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 382,
+          "endOffset": 385,
+          "score": 0.9072329,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 382,
+          "endOffset": 391,
+          "score": 0.85756737,
+          "text": "eye exams",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bdaf4fac-634b-4455-93c1-07a3e4a86bc6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bdaf4fac-634b-4455-93c1-07a3e4a86bc6"
+          ],
+          "Content-Length": [
+            "1757"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1757",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:45 GMT",
+          "x-amzn-RequestId": "bdaf4fac-634b-4455-93c1-07a3e4a86bc6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 565,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "vision improves",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.34762222,
+          "beginOffset": 142,
+          "endOffset": 157,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4610197
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.5847744
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.5576289
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.51625746
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.46225154
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.43385243
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6fe2b22d-8e81-4bef-8953-5bf46a901dd1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6fe2b22d-8e81-4bef-8953-5bf46a901dd1"
+          ],
+          "Content-Length": [
+            "699"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "699",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:45 GMT",
+          "x-amzn-RequestId": "6fe2b22d-8e81-4bef-8953-5bf46a901dd1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 253,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "39b03dc4-9ed5-4e5f-8b23-637f6a60c3be"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "39b03dc4-9ed5-4e5f-8b23-637f6a60c3be"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:45 GMT",
+          "x-amzn-RequestId": "39b03dc4-9ed5-4e5f-8b23-637f6a60c3be"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:46 PM"
+}

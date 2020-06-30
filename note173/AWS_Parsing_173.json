@@ -1,0 +1,496 @@
+{
+  "note": "; no evidence to advocate for continued medication at this time.\"  Summary: It appears to be a pretty standard report for what is a routine case for a very young girl with a history of multiple and/or acute episodes of tic and/or stuttering who, when taken to the doctor, did not receive the recommendation or the support, which, based on her prior histories of developmental issues, would have likely led to further diagnosis of autism based on the child\u0027s presentation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 455,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 219,
+          "endOffset": 222,
+          "score": 0.8747092,
+          "text": "tic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58846486
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.92844474,
+              "relationshipScore": 0.998319,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 206,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.39356568,
+              "relationshipScore": 0.99187547,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 207,
+              "endOffset": 215,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 230,
+          "endOffset": 240,
+          "score": 0.8916199,
+          "text": "stuttering",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.53232294
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.92844474,
+              "relationshipScore": 0.97648495,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 206,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.39356568,
+              "relationshipScore": 0.9358164,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 207,
+              "endOffset": 215,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 343,
+          "endOffset": 348,
+          "score": 0.9999956,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.82300687,
+              "relationshipScore": 0.6653307,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 362,
+              "endOffset": 382,
+              "text": "developmental issues",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.48262933
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 362,
+          "endOffset": 382,
+          "score": 0.82300687,
+          "text": "developmental issues",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48262933
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 430,
+          "endOffset": 436,
+          "score": 0.9739207,
+          "text": "autism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9451352
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.92844474,
+            "id": 0,
+            "beginOffset": 201,
+            "endOffset": 206,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.39356568,
+            "id": 1,
+            "beginOffset": 207,
+            "endOffset": 215,
+            "text": "episodes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "749fd568-b9e2-4056-a715-f4a40d023f40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "749fd568-b9e2-4056-a715-f4a40d023f40"
+          ],
+          "Content-Length": [
+            "2541"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2541",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:37 GMT",
+          "x-amzn-RequestId": "749fd568-b9e2-4056-a715-f4a40d023f40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 998,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "tic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8747092,
+          "beginOffset": 219,
+          "endOffset": 222,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.92844474,
+              "relationshipScore": 0.998319,
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 206,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.39356568,
+              "relationshipScore": 0.99187547,
+              "id": 1,
+              "beginOffset": 207,
+              "endOffset": 215,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58846486
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tic disorder, unspecified",
+              "code": "F95.9",
+              "score": 0.6158067
+            },
+            {
+              "description": "Other abnormal involuntary movements",
+              "code": "R25.8",
+              "score": 0.59457225
+            },
+            {
+              "description": "Trigeminal neuralgia",
+              "code": "G50.0",
+              "score": 0.51039743
+            },
+            {
+              "description": "Tic disorder",
+              "code": "F95",
+              "score": 0.503763
+            },
+            {
+              "description": "Open bite of other part of head",
+              "code": "S01.85",
+              "score": 0.49643472
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "stuttering",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8916199,
+          "beginOffset": 230,
+          "endOffset": 240,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.92844474,
+              "relationshipScore": 0.97648495,
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 206,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.39356568,
+              "relationshipScore": 0.9358164,
+              "id": 1,
+              "beginOffset": 207,
+              "endOffset": 215,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.53232294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adult onset fluency disorder",
+              "code": "F98.5",
+              "score": 0.38802207
+            },
+            {
+              "description": "Fluency disorder in conditions classified elsewhere",
+              "code": "R47.82",
+              "score": 0.38594273
+            },
+            {
+              "description": "Shigellosis due to Shigella dysenteriae",
+              "code": "A03.0",
+              "score": 0.33620715
+            },
+            {
+              "description": "Childhood onset fluency disorder",
+              "code": "F80.81",
+              "score": 0.23154514
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "developmental issues",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82300687,
+          "beginOffset": 362,
+          "endOffset": 382,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48262933
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Developmental disorder of scholastic skills, unspecified",
+              "code": "F81.9",
+              "score": 0.5001457
+            },
+            {
+              "description": "Mathematics disorder",
+              "code": "F81.2",
+              "score": 0.37094977
+            },
+            {
+              "description": "Unspecified disorder of psychological development",
+              "code": "F89",
+              "score": 0.36259368
+            },
+            {
+              "description": "Pervasive developmental disorder, unspecified",
+              "code": "F84.9",
+              "score": 0.32050434
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.31261536
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "autism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9739207,
+          "beginOffset": 430,
+          "endOffset": 436,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9451352
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Autistic disorder",
+              "code": "F84.0",
+              "score": 0.57336146
+            },
+            {
+              "description": "Encounter for autism screening",
+              "code": "Z13.41",
+              "score": 0.410805
+            },
+            {
+              "description": "Pervasive developmental disorder, unspecified",
+              "code": "F84.9",
+              "score": 0.40865898
+            },
+            {
+              "description": "Balanced rearrangement and structural marker, unspecified",
+              "code": "Q95.9",
+              "score": 0.4026713
+            },
+            {
+              "description": "Deletion from autosomes, unspecified",
+              "code": "Q93.9",
+              "score": 0.40214923
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1b6851f4-e4e2-4d0f-a939-eb72c8e985d3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1b6851f4-e4e2-4d0f-a939-eb72c8e985d3"
+          ],
+          "Content-Length": [
+            "3399"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3399",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:38 GMT",
+          "x-amzn-RequestId": "1b6851f4-e4e2-4d0f-a939-eb72c8e985d3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 239,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fdf882a8-6180-4e82-b38d-4d8914b98ba7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fdf882a8-6180-4e82-b38d-4d8914b98ba7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:37 GMT",
+          "x-amzn-RequestId": "fdf882a8-6180-4e82-b38d-4d8914b98ba7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:39 PM"
+}

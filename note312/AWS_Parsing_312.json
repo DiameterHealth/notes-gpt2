@@ -1,0 +1,299 @@
+{
+  "note": "without resorting to surgical intervention:  The primary goal is to maximize patient compliance by addressing underlying underlying medical concerns and providing education regarding safe and effective methods of treatment. Surgical treatment -  The primary goal of surgery is to relieve pain and reduce inflammation. Postoperative care -  The patient will be expected to remain in the hospital until the end of the 6 week period following surgery or until medically necessary surgery is performed.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 596,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 224,
+          "endOffset": 242,
+          "score": 0.19108905,
+          "text": "Surgical treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 266,
+          "endOffset": 273,
+          "score": 0.87843204,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 288,
+          "endOffset": 292,
+          "score": 0.9693831,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7756206
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 304,
+          "endOffset": 316,
+          "score": 0.97910154,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8397842
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 416,
+          "endOffset": 422,
+          "score": 0.7308437,
+          "text": "6 week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9554577,
+              "relationshipScore": 0.61351365,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 440,
+              "endOffset": 447,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 440,
+          "endOffset": 447,
+          "score": 0.9554577,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 477,
+          "endOffset": 484,
+          "score": 0.94242173,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1ced3cb9-4694-4cde-91e3-d20a883a6f52"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1ced3cb9-4694-4cde-91e3-d20a883a6f52"
+          ],
+          "Content-Length": [
+            "1508"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1508",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:08 GMT",
+          "x-amzn-RequestId": "1ced3cb9-4694-4cde-91e3-d20a883a6f52"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 399,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9693831,
+          "beginOffset": 288,
+          "endOffset": 292,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7756206
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7685732
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.65832156
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6395364
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.6044692
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.60400355
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97910154,
+          "beginOffset": 304,
+          "endOffset": 316,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8397842
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7288916
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.72764814
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.7264653
+            },
+            {
+              "description": "Unspecified appendicitis",
+              "code": "K37",
+              "score": 0.71215904
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6896767
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "91d177c1-5d17-4440-bb01-3d9d31027baa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "91d177c1-5d17-4440-bb01-3d9d31027baa"
+          ],
+          "Content-Length": [
+            "1393"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1393",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:09 GMT",
+          "x-amzn-RequestId": "91d177c1-5d17-4440-bb01-3d9d31027baa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "73e1efe6-77b9-4f63-8c37-616fdeaf3884"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "73e1efe6-77b9-4f63-8c37-616fdeaf3884"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:08 GMT",
+          "x-amzn-RequestId": "73e1efe6-77b9-4f63-8c37-616fdeaf3884"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:07:09 PM"
+}

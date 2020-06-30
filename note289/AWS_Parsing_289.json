@@ -1,0 +1,647 @@
+{
+  "note": ". The patient had a history of mild respiratory allergies to latex and a history of a runny nose when exposed to air. The patient and her co-workers at her home and work reported their concerns for a prolonged runny nose and sneezing to her primary care physician. A chest radiograph confirmed the presence of pulmonary emboli with the presence of small vessels present in the lungs (PVH\u003e3) and with mild signs of congestion on chest radiograph.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 854,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 36,
+          "endOffset": 57,
+          "score": 0.86546475,
+          "text": "respiratory allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.52932024
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 86,
+          "endOffset": 96,
+          "score": 0.9710704,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7669482
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 92,
+          "endOffset": 96,
+          "score": 0.912405,
+          "text": "nose",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 210,
+          "endOffset": 220,
+          "score": 0.9514993,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8641118
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 216,
+          "endOffset": 220,
+          "score": 0.97353137,
+          "text": "nose",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 225,
+          "endOffset": 233,
+          "score": 0.97449875,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7598614
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 267,
+          "endOffset": 272,
+          "score": 0.9656754,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 267,
+          "endOffset": 283,
+          "score": 0.91823465,
+          "text": "chest radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7323219,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 298,
+              "endOffset": 326,
+              "text": "presence of pulmonary emboli",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.30009285,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 336,
+              "endOffset": 382,
+              "text": "presence of small vessels present in the lungs",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7108535,
+              "relationshipScore": 0.9984742,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 387,
+              "endOffset": 389,
+              "text": "\u003e3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 310,
+          "endOffset": 326,
+          "score": 0.9332955,
+          "text": "pulmonary emboli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8661614
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98828596,
+              "relationshipScore": 0.9862497,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 377,
+              "endOffset": 382,
+              "text": "lungs",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 377,
+          "endOffset": 382,
+          "score": 0.98828596,
+          "text": "lungs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 384,
+          "endOffset": 387,
+          "score": 0.1683272,
+          "text": "PVH",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7108535,
+              "relationshipScore": 0.9977469,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 387,
+              "endOffset": 389,
+              "text": "\u003e3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 384,
+          "endOffset": 387,
+          "score": 0.677939,
+          "text": "PVH",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47566688
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98828596,
+              "relationshipScore": 0.91254693,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 377,
+              "endOffset": 382,
+              "text": "lungs",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 414,
+          "endOffset": 424,
+          "score": 0.9384406,
+          "text": "congestion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5777629
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 428,
+          "endOffset": 433,
+          "score": 0.9819608,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 428,
+          "endOffset": 444,
+          "score": 0.9210662,
+          "text": "chest radiograph",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5156484,
+              "relationshipScore": 0.99997926,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 400,
+              "endOffset": 424,
+              "text": "mild signs of congestion",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9596a3e6-1625-48c6-82e0-6904fe94183e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9596a3e6-1625-48c6-82e0-6904fe94183e"
+          ],
+          "Content-Length": [
+            "4354"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4354",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:31 GMT",
+          "x-amzn-RequestId": "9596a3e6-1625-48c6-82e0-6904fe94183e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1004,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "respiratory allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86546475,
+          "beginOffset": 36,
+          "endOffset": 57,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.52932024
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.632006
+            },
+            {
+              "description": "Family history of other diseases of the respiratory system",
+              "code": "Z83.6",
+              "score": 0.60065246
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.55349535
+            },
+            {
+              "description": "Acute respiratory failure with hypoxia",
+              "code": "J96.01",
+              "score": 0.5346024
+            },
+            {
+              "description": "Respiratory tuberculosis unspecified",
+              "code": "A15.9",
+              "score": 0.52767444
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9710704,
+          "beginOffset": 86,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7669482
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.6964759
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.4826637
+            },
+            {
+              "description": "Orthopnea",
+              "code": "R06.01",
+              "score": 0.44734228
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.42178062
+            },
+            {
+              "description": "Nasal congestion",
+              "code": "R09.81",
+              "score": 0.38604528
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9514993,
+          "beginOffset": 210,
+          "endOffset": 220,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8641118
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.6744307
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.45887554
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.42848226
+            },
+            {
+              "description": "Orthopnea",
+              "code": "R06.01",
+              "score": 0.3623995
+            },
+            {
+              "description": "Nasal congestion",
+              "code": "R09.81",
+              "score": 0.34221795
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "sneezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97449875,
+          "beginOffset": 225,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75986135
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sneezing",
+              "code": "R06.7",
+              "score": 0.5871879
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pulmonary emboli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9332955,
+          "beginOffset": 310,
+          "endOffset": 326,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98828596,
+              "relationshipScore": 0.9862497,
+              "id": 8,
+              "beginOffset": 377,
+              "endOffset": 382,
+              "text": "lungs",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8661614
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other pulmonary embolism without acute cor pulmonale",
+              "code": "I26.99",
+              "score": 0.7092155
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.6755539
+            },
+            {
+              "description": "Pulmonary embolism without acute cor pulmonale",
+              "code": "I26.9",
+              "score": 0.58116317
+            },
+            {
+              "description": "Other pulmonary embolism with acute cor pulmonale",
+              "code": "I26.09",
+              "score": 0.5153062
+            },
+            {
+              "description": "Pulmonary embolism",
+              "code": "I26",
+              "score": 0.48476475
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "congestion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9384405,
+          "beginOffset": 414,
+          "endOffset": 424,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.57776284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.74510545
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.6231609
+            },
+            {
+              "description": "Nasal congestion",
+              "code": "R09.81",
+              "score": 0.5880174
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.50905555
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.47444582
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e4bbf4f3-374d-4e29-87b5-bb9f91d6db2d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e4bbf4f3-374d-4e29-87b5-bb9f91d6db2d"
+          ],
+          "Content-Length": [
+            "4352"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4352",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:32 GMT",
+          "x-amzn-RequestId": "e4bbf4f3-374d-4e29-87b5-bb9f91d6db2d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 227,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b11dc06e-63ec-437a-82eb-5b5786457fa4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b11dc06e-63ec-437a-82eb-5b5786457fa4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:32 GMT",
+          "x-amzn-RequestId": "b11dc06e-63ec-437a-82eb-5b5786457fa4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:33 PM"
+}

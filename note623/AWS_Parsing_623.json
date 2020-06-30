@@ -1,0 +1,492 @@
+{
+  "note": "suffered from chronic fatigue syndrome for 3 years. The patient states that depression is the most disabling symptom that is interfering with his life. __________________________________________________________________________ Table 1 __________________________________________________________________________ Name Depression Bipolar Affective Disorder Chronic Fatigue Syndrome __________________________________________________________________________ 1. __________________________________________________________________________ 2. __________________________________________________________________________ 3. __________________________________________________________________________ 4. __________________________________________________________________________ 5. __________________________________________________________________________ 6. __________________________________________________________________________ 7. __________________________________________________________________________ 8. __________________________________________________________________________ 9. __________________________________________________________________________ 10. __________________________________________________________________________ 11. __________________________________________________________________________ 12.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2403,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 22,
+          "endOffset": 38,
+          "score": 0.85003555,
+          "text": "fatigue syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96272254
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98648155,
+              "relationshipScore": 0.9994048,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 14,
+              "endOffset": 21,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.44208446,
+              "relationshipScore": 1.0,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 39,
+              "endOffset": 50,
+              "text": "for 3 years",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 43,
+          "endOffset": 50,
+          "score": 0.6695576,
+          "text": "3 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.85003555,
+              "relationshipScore": 0.98080987,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 22,
+              "endOffset": 38,
+              "text": "fatigue syndrome",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.96272254
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 76,
+          "endOffset": 86,
+          "score": 0.9936904,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7314601
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 326,
+          "endOffset": 352,
+          "score": 0.7536623,
+          "text": "Bipolar Affective Disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94384944
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 361,
+          "endOffset": 377,
+          "score": 0.8841757,
+          "text": "Fatigue Syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9776677
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84268975,
+              "relationshipScore": 0.9505451,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 353,
+              "endOffset": 360,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98648155,
+            "id": 0,
+            "beginOffset": 14,
+            "endOffset": 21,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.44208446,
+            "id": 2,
+            "beginOffset": 39,
+            "endOffset": 50,
+            "text": "for 3 years",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.84268975,
+            "id": 5,
+            "beginOffset": 353,
+            "endOffset": 360,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9082413f-819f-4f3e-8145-4df20df7eb64"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9082413f-819f-4f3e-8145-4df20df7eb64"
+          ],
+          "Content-Length": [
+            "2517"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2517",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:12 GMT",
+          "x-amzn-RequestId": "9082413f-819f-4f3e-8145-4df20df7eb64"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2385,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fatigue syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85003555,
+          "beginOffset": 22,
+          "endOffset": 38,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98648155,
+              "relationshipScore": 0.9994048,
+              "id": 0,
+              "beginOffset": 14,
+              "endOffset": 21,
+              "text": "chronic",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.44208467,
+              "relationshipScore": 1.0,
+              "id": 2,
+              "beginOffset": 39,
+              "endOffset": 50,
+              "text": "for 3 years",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96272254
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.71957004
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.690846
+            },
+            {
+              "description": "Chronic pain syndrome",
+              "code": "G89.4",
+              "score": 0.62710845
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.61718607
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6006185
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9936904,
+          "beginOffset": 76,
+          "endOffset": 86,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7314601
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.72878677
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6234646
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.5915115
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.5840622
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.53484976
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Bipolar Affective Disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.75366217,
+          "beginOffset": 326,
+          "endOffset": 352,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94384944
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.53365326
+            },
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.3960615
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.38380557
+            },
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.34052032
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.30216286
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Fatigue Syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8841757,
+          "beginOffset": 361,
+          "endOffset": 377,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84268975,
+              "relationshipScore": 0.9505451,
+              "id": 5,
+              "beginOffset": 353,
+              "endOffset": 360,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9776677
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.7156932
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7034797
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.6523201
+            },
+            {
+              "description": "Chronic pain syndrome",
+              "code": "G89.4",
+              "score": 0.6199109
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.55116665
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f4d2b2ee-37f0-4e69-a2b8-298d21192284"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f4d2b2ee-37f0-4e69-a2b8-298d21192284"
+          ],
+          "Content-Length": [
+            "3434"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3434",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:15 GMT",
+          "x-amzn-RequestId": "f4d2b2ee-37f0-4e69-a2b8-298d21192284"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1167,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0cbddecd-b5cc-4a86-9787-0ae6a2e4b4fb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0cbddecd-b5cc-4a86-9787-0ae6a2e4b4fb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:13 GMT",
+          "x-amzn-RequestId": "0cbddecd-b5cc-4a86-9787-0ae6a2e4b4fb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:16 PM"
+}

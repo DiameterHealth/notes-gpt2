@@ -1,0 +1,212 @@
+{
+  "note": ". I am expecting you to stay in this facility until discharge. We plan the next three weeks of treatment here for physical therapy and occupational therapy and have no intention of stopping. The best thing for you is to stay with us so that, in case of emergency, you can reach us immediately. Sincere thanks,  Dr. David C. Cuddy, Chief of Neurosurgery - University of Texas Health Science Center  In September 2011, The Cleveland Clinic Medical Center\u0027s policy was revised to say that the doctor-patient relationship \"should include discussions of other issues of concern and discuss the possible need for discharge.\" When the changes occurred, there was not even a debate over whether to allow a patient to seek \"exercise of any kind\" at home.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 612,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 75,
+          "endOffset": 91,
+          "score": 0.9969139,
+          "text": "next three weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.97553307,
+              "relationshipScore": 0.6477401,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 114,
+              "endOffset": 130,
+              "text": "physical therapy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 114,
+          "endOffset": 130,
+          "score": 0.97553307,
+          "text": "physical therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 135,
+          "endOffset": 155,
+          "score": 0.9796821,
+          "text": "occupational therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 315,
+          "endOffset": 329,
+          "score": 0.99792165,
+          "text": "David C. Cuddy",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 340,
+          "endOffset": 352,
+          "score": 0.44726628,
+          "text": "Neurosurgery",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 355,
+          "endOffset": 396,
+          "score": 0.99533325,
+          "text": "University of Texas Health Science Center",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 401,
+          "endOffset": 415,
+          "score": 0.99681026,
+          "text": "September 2011",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 421,
+          "endOffset": 452,
+          "score": 0.9895169,
+          "text": "Cleveland Clinic Medical Center",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9b3a9bd9-c4b7-4ec8-a224-96b3fed3ce69"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9b3a9bd9-c4b7-4ec8-a224-96b3fed3ce69"
+          ],
+          "Content-Length": [
+            "1686"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1686",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:42 GMT",
+          "x-amzn-RequestId": "9b3a9bd9-c4b7-4ec8-a224-96b3fed3ce69"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 524,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a1c7ed96-bcfc-4932-a0ee-fac920bfa97c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a1c7ed96-bcfc-4932-a0ee-fac920bfa97c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:43 GMT",
+          "x-amzn-RequestId": "a1c7ed96-bcfc-4932-a0ee-fac920bfa97c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 614,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "58427f2c-85b1-4164-b7a9-1952d78aefea"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "58427f2c-85b1-4164-b7a9-1952d78aefea"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:43 GMT",
+          "x-amzn-RequestId": "58427f2c-85b1-4164-b7a9-1952d78aefea"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:44 PM"
+}

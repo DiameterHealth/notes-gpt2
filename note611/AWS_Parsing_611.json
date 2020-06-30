@@ -1,0 +1,239 @@
+{
+  "note": "_______________ I have had this for the past year and had never had any other symptoms before my last symptom but now every morning I feel extremely bloated and have very loose stools . I had an IV for my stools but they came out really bad and I have been dealing with these symptoms for the last 2 weeks so I decided to get checked up.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 338,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 149,
+          "endOffset": 156,
+          "score": 0.9319784,
+          "text": "bloated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9010262
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 171,
+          "endOffset": 183,
+          "score": 0.9555993,
+          "text": "loose stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.901561
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICATION",
+          "attribute": {
+            "type": "ROUTE_OR_MODE",
+            "score": 0.3909721,
+            "id": 0,
+            "beginOffset": 195,
+            "endOffset": 197,
+            "text": "IV",
+            "category": "MEDICATION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ae4e876-b60c-4174-b15f-7c55f4f5a828"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ae4e876-b60c-4174-b15f-7c55f4f5a828"
+          ],
+          "Content-Length": [
+            "621"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "621",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:46 GMT",
+          "x-amzn-RequestId": "2ae4e876-b60c-4174-b15f-7c55f4f5a828"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 368,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "bloated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9319784,
+          "beginOffset": 149,
+          "endOffset": 156,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9010262
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abdominal distension (gaseous)",
+              "code": "R14.0",
+              "score": 0.659313
+            },
+            {
+              "description": "Other specified disorders of veins",
+              "code": "I87.8",
+              "score": 0.5831065
+            },
+            {
+              "description": "Other specified disorders of bladder",
+              "code": "N32.89",
+              "score": 0.50964874
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "loose stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9555993,
+          "beginOffset": 171,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.901561
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.8118623
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.65731204
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.59459025
+            },
+            {
+              "description": "Fecal impaction",
+              "code": "K56.41",
+              "score": 0.5577382
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.5103125
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3973fc66-1118-4501-b539-ee758234b358"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3973fc66-1118-4501-b539-ee758234b358"
+          ],
+          "Content-Length": [
+            "1171"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1171",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:46 GMT",
+          "x-amzn-RequestId": "3973fc66-1118-4501-b539-ee758234b358"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 213,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "45a630b4-992c-4ed1-b48e-30e93eb14e5f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "45a630b4-992c-4ed1-b48e-30e93eb14e5f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:46 GMT",
+          "x-amzn-RequestId": "45a630b4-992c-4ed1-b48e-30e93eb14e5f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:47 PM"
+}

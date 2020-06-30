@@ -1,0 +1,381 @@
+{
+  "note": "who found the pt to have elevated liver enzymes. The nephrologist determined the pt was in need of endoscopic treatment for hepatic necrosis, and the endoscopic procedure was performed. The postoperative nephrologist followed up with a 1 to 3-year follow-up appointment to review serum and urine values. After the nephrologist reviewed these outcomes, he determined the pt was stable and would be suitable for endoscopic treatment of hepatic necrosis.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 321,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 25,
+          "endOffset": 47,
+          "score": 0.5535129,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69355136
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 34,
+          "endOffset": 39,
+          "score": 0.7584857,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 34,
+          "endOffset": 47,
+          "score": 0.9976835,
+          "text": "liver enzymes",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9818278,
+              "relationshipScore": 0.99999917,
+              "relationshipType": "TEST_VALUE",
+              "id": 4,
+              "beginOffset": 25,
+              "endOffset": 33,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 99,
+          "endOffset": 119,
+          "score": 0.42018276,
+          "text": "endoscopic treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 124,
+          "endOffset": 140,
+          "score": 0.95183206,
+          "text": "hepatic necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8866168
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 150,
+          "endOffset": 170,
+          "score": 0.41116893,
+          "text": "endoscopic procedure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 280,
+          "endOffset": 302,
+          "score": 0.3694695,
+          "text": "serum and urine values",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.40557826,
+              "relationshipScore": 0.70972073,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 377,
+              "endOffset": 383,
+              "text": "stable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 410,
+          "endOffset": 430,
+          "score": 0.3672364,
+          "text": "endoscopic treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 434,
+          "endOffset": 450,
+          "score": 0.89149463,
+          "text": "hepatic necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7171629
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "909b52cb-a3a2-4fcf-a3e9-e7820ac6ff13"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "909b52cb-a3a2-4fcf-a3e9-e7820ac6ff13"
+          ],
+          "Content-Length": [
+            "2154"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2154",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:00 GMT",
+          "x-amzn-RequestId": "909b52cb-a3a2-4fcf-a3e9-e7820ac6ff13"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5535129,
+          "beginOffset": 25,
+          "endOffset": 47,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69355136
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal results of liver function studies",
+              "code": "R94.5",
+              "score": 0.5282518
+            },
+            {
+              "description": "Abnormal levels of other serum enzymes",
+              "code": "R74.8",
+              "score": 0.5054302
+            },
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.31534562
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.2715936
+            },
+            {
+              "description": "Unspecified jaundice",
+              "code": "R17",
+              "score": 0.25957522
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hepatic necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95183206,
+          "beginOffset": 124,
+          "endOffset": 140,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8866168
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.5420016
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.46420732
+            },
+            {
+              "description": "Gangrene, not elsewhere classified",
+              "code": "I96",
+              "score": 0.4624495
+            },
+            {
+              "description": "Other specified noninflammatory disorders of uterus",
+              "code": "N85.8",
+              "score": 0.4499803
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.36033276
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hepatic necrosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89149463,
+          "beginOffset": 434,
+          "endOffset": 450,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71716297
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.6300986
+            },
+            {
+              "description": "Other specified noninflammatory disorders of uterus",
+              "code": "N85.8",
+              "score": 0.5778177
+            },
+            {
+              "description": "Gangrene, not elsewhere classified",
+              "code": "I96",
+              "score": 0.56306463
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.5440753
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.45298767
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53dc7164-bba5-429d-ba26-2990f5632411"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53dc7164-bba5-429d-ba26-2990f5632411"
+          ],
+          "Content-Length": [
+            "2301"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2301",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:01 GMT",
+          "x-amzn-RequestId": "53dc7164-bba5-429d-ba26-2990f5632411"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 229,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "aab77232-14fa-4912-9146-7de0aef40149"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "aab77232-14fa-4912-9146-7de0aef40149"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:00 GMT",
+          "x-amzn-RequestId": "aab77232-14fa-4912-9146-7de0aef40149"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:01 PM"
+}

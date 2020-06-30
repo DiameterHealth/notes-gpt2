@@ -1,0 +1,327 @@
+{
+  "note": "in both the shoulder and wrist. This patient has received limited assistance with a shoulder-bandaged, wrist-bandaged orthotic device for the past 6 months. This patient\u0027s pain is severe and persistent, requiring constant reassessment of this patient\u0027s pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 252,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 12,
+          "endOffset": 20,
+          "score": 0.993536,
+          "text": "shoulder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 25,
+          "endOffset": 30,
+          "score": 0.9937239,
+          "text": "wrist",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 84,
+          "endOffset": 92,
+          "score": 0.9724152,
+          "text": "shoulder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 103,
+          "endOffset": 108,
+          "score": 0.969696,
+          "text": "wrist",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 172,
+          "endOffset": 176,
+          "score": 0.9762896,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42157635
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6391621,
+              "relationshipScore": 0.99426633,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 191,
+              "endOffset": 201,
+              "text": "persistent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 253,
+          "endOffset": 257,
+          "score": 0.9749977,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42893246
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.6451034,
+            "id": 0,
+            "beginOffset": 3,
+            "endOffset": 7,
+            "text": "both",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6391621,
+            "id": 6,
+            "beginOffset": 191,
+            "endOffset": 201,
+            "text": "persistent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0e6f6c52-baa7-48a3-b292-1f3c283bfa7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0e6f6c52-baa7-48a3-b292-1f3c283bfa7c"
+          ],
+          "Content-Length": [
+            "1604"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1604",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:57 GMT",
+          "x-amzn-RequestId": "0e6f6c52-baa7-48a3-b292-1f3c283bfa7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 381,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9762896,
+          "beginOffset": 172,
+          "endOffset": 176,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.639162,
+              "relationshipScore": 0.99426633,
+              "id": 6,
+              "beginOffset": 191,
+              "endOffset": 201,
+              "text": "persistent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42157635
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.49227428
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.45111218
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4161304
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.41213802
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.38070682
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9749977,
+          "beginOffset": 253,
+          "endOffset": 257,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42893243
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7111135
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.64674604
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6315151
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5957291
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.58433783
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "202522a2-302d-4dc0-b97c-ffe8f9d2e91f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "202522a2-302d-4dc0-b97c-ffe8f9d2e91f"
+          ],
+          "Content-Length": [
+            "1440"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1440",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:58 GMT",
+          "x-amzn-RequestId": "202522a2-302d-4dc0-b97c-ffe8f9d2e91f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 167,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "76e1a672-8c47-4a9b-a573-2693306fa62a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "76e1a672-8c47-4a9b-a573-2693306fa62a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:57 GMT",
+          "x-amzn-RequestId": "76e1a672-8c47-4a9b-a573-2693306fa62a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:59 PM"
+}

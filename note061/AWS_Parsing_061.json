@@ -1,0 +1,468 @@
+{
+  "note": "to assess the progress of his infection. Outcome: The patient\u0027s condition worsens in two weeks. Conclusion: This study showed the efficacy of the novel nonsteroidal anti-inflammatory drug, mefenamic acid, used in conjunction with a cyclophosphamide antibiotic in the treatment of C. difficile infection. Comments: I used this information to guide my study of the role of mefenamic acid in the treatment of C.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 390,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 30,
+          "endOffset": 39,
+          "score": 0.9576585,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63446546
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 152,
+          "endOffset": 187,
+          "score": 0.5844609,
+          "text": "nonsteroidal anti-inflammatory drug",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 189,
+          "endOffset": 203,
+          "score": 0.99239916,
+          "text": "mefenamic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 189,
+          "endOffset": 203,
+          "score": 0.33512336,
+          "text": "mefenamic acid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 232,
+          "endOffset": 248,
+          "score": 0.6217384,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 249,
+          "endOffset": 259,
+          "score": 0.7245742,
+          "text": "antibiotic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 280,
+          "endOffset": 302,
+          "score": 0.9442759,
+          "text": "C. difficile infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9476867
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 371,
+          "endOffset": 385,
+          "score": 0.9956475,
+          "text": "mefenamic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 371,
+          "endOffset": 385,
+          "score": 0.35627028,
+          "text": "mefenamic acid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 406,
+          "endOffset": 407,
+          "score": 0.46922538,
+          "text": "C",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "137b9e0d-68aa-420b-b3ce-2ec8417f94eb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "137b9e0d-68aa-420b-b3ce-2ec8417f94eb"
+          ],
+          "Content-Length": [
+            "1755"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1755",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:51 GMT",
+          "x-amzn-RequestId": "137b9e0d-68aa-420b-b3ce-2ec8417f94eb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 471,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9576585,
+          "beginOffset": 30,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63446546
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7989773
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.76801467
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.75696295
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.75110096
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7130895
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "C. difficile infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9442759,
+          "beginOffset": 280,
+          "endOffset": 302,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9476867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.6691987
+            },
+            {
+              "description": "Other intraoperative complications of digestive system",
+              "code": "K91.81",
+              "score": 0.47631213
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.46200132
+            },
+            {
+              "description": "Other postprocedural complications and disorders of the circulatory system, not elsewhere classified",
+              "code": "I97.89",
+              "score": 0.4501169
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.44915965
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "C",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.46922538,
+          "beginOffset": 406,
+          "endOffset": 407,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.73596805
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.73465157
+            },
+            {
+              "description": "Chronic viral hepatitis C",
+              "code": "B18.2",
+              "score": 0.71957034
+            },
+            {
+              "description": "Other primary thrombophilia",
+              "code": "D68.59",
+              "score": 0.65766793
+            },
+            {
+              "description": "Hereditary deficiency of other clotting factors",
+              "code": "D68.2",
+              "score": 0.5543904
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8ff7c18a-0742-46e3-b1c7-400590577a64"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8ff7c18a-0742-46e3-b1c7-400590577a64"
+          ],
+          "Content-Length": [
+            "2321"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2321",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:52 GMT",
+          "x-amzn-RequestId": "8ff7c18a-0742-46e3-b1c7-400590577a64"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "mefenamic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99239916,
+          "beginOffset": 189,
+          "endOffset": 203,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "hydroxycitric acid",
+              "code": "1312602",
+              "score": 0.7160706
+            },
+            {
+              "description": "Succinic Acid",
+              "code": "37255",
+              "score": 0.59140635
+            },
+            {
+              "description": "triphosphoric acid",
+              "code": "1364529",
+              "score": 0.5428232
+            },
+            {
+              "description": "Phytic Acid",
+              "code": "8302",
+              "score": 0.3828647
+            },
+            {
+              "description": "CAPRYLHYDROXAMIC ACID",
+              "code": "1307145",
+              "score": 0.2717228
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.62173814,
+          "beginOffset": 232,
+          "endOffset": 248,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cyclophosphamide",
+              "code": "3002",
+              "score": 0.9661273
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Tablet",
+              "code": "197549",
+              "score": 0.46281326
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Capsule",
+              "code": "1437968",
+              "score": 0.46233806
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Tablet",
+              "code": "197550",
+              "score": 0.45201918
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Capsule",
+              "code": "1437969",
+              "score": 0.41543615
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "mefenamic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9956475,
+          "beginOffset": 371,
+          "endOffset": 385,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "benzenesulfonic acid",
+              "code": "993243",
+              "score": 0.8005101
+            },
+            {
+              "description": "hydroxycitric acid",
+              "code": "1312602",
+              "score": 0.71607035
+            },
+            {
+              "description": "ANAZOLENE ACID",
+              "code": "1440972",
+              "score": 0.5921926
+            },
+            {
+              "description": "Succinic Acid",
+              "code": "37255",
+              "score": 0.59140635
+            },
+            {
+              "description": "kojic acid",
+              "code": "1426451",
+              "score": 0.5700144
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6e6c6a07-702d-46fd-b2f0-bc55c8599396"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6e6c6a07-702d-46fd-b2f0-bc55c8599396"
+          ],
+          "Content-Length": [
+            "1848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:51 GMT",
+          "x-amzn-RequestId": "6e6c6a07-702d-46fd-b2f0-bc55c8599396"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:52 PM"
+}

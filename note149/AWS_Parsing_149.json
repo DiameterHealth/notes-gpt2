@@ -1,0 +1,880 @@
+{
+  "note": "and unstable angina pectoris to the hospital in a suspected myocardial infarction with acute heart failure.Placement of amiodarone 1mg/kg with intravenous infusions of 20% dextrose, 15% calcium chloride solution for 2 h at 36-40 C. She was given 5 mL of an ice cold crystalloid solution for preinjection of an i.v. bolus of 15 mcg of amiodarone 100 mcg/ml at 0.5 μg.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 963,
+    "data": {
+      "entities": [
+        {
+          "id": 20,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "score": 0.5574061,
+          "text": "unstable angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6179756
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 60,
+          "endOffset": 81,
+          "score": 0.9435632,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9668588
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 93,
+          "endOffset": 98,
+          "score": 0.96710914,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 23,
+          "beginOffset": 93,
+          "endOffset": 106,
+          "score": 0.9789074,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97966856
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8235699,
+              "relationshipScore": 0.9997459,
+              "relationshipType": "ACUITY",
+              "id": 22,
+              "beginOffset": 87,
+              "endOffset": 92,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 120,
+          "endOffset": 130,
+          "score": 0.99973685,
+          "text": "amiodarone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9477478,
+              "relationshipScore": 0.99996376,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 131,
+              "endOffset": 137,
+              "text": "1mg/kg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.7637223,
+              "relationshipScore": 0.71754116,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 143,
+              "endOffset": 154,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8759792,
+              "relationshipScore": 0.9999778,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 155,
+              "endOffset": 164,
+              "text": "infusions",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 172,
+          "endOffset": 180,
+          "score": 0.9964059,
+          "text": "dextrose",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.7637223,
+              "relationshipScore": 0.99786085,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 143,
+              "endOffset": 154,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8759792,
+              "relationshipScore": 0.9972453,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 155,
+              "endOffset": 164,
+              "text": "infusions",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.9282695,
+              "relationshipScore": 1.0,
+              "relationshipType": "STRENGTH",
+              "id": 5,
+              "beginOffset": 168,
+              "endOffset": 171,
+              "text": "20%",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 186,
+          "endOffset": 202,
+          "score": 0.99870527,
+          "text": "calcium chloride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "STRENGTH",
+              "score": 0.9688149,
+              "relationshipScore": 0.94293636,
+              "relationshipType": "STRENGTH",
+              "id": 7,
+              "beginOffset": 182,
+              "endOffset": 185,
+              "text": "15%",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.98547935,
+              "relationshipScore": 0.99945515,
+              "relationshipType": "FORM",
+              "id": 9,
+              "beginOffset": 203,
+              "endOffset": 211,
+              "text": "solution",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.33220696,
+              "relationshipScore": 0.9774325,
+              "relationshipType": "DURATION",
+              "id": 10,
+              "beginOffset": 216,
+              "endOffset": 219,
+              "text": "2 h",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8362887,
+              "relationshipScore": 0.6671445,
+              "relationshipType": "DOSAGE",
+              "id": 11,
+              "beginOffset": 246,
+              "endOffset": 250,
+              "text": "5 mL",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 266,
+          "endOffset": 277,
+          "score": 0.7093128,
+          "text": "crystalloid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.8362887,
+              "relationshipScore": 0.99952614,
+              "relationshipType": "DOSAGE",
+              "id": 11,
+              "beginOffset": 246,
+              "endOffset": 250,
+              "text": "5 mL",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9557542,
+              "relationshipScore": 1.0,
+              "relationshipType": "FORM",
+              "id": 13,
+              "beginOffset": 278,
+              "endOffset": 286,
+              "text": "solution",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.85649157,
+              "relationshipScore": 0.98276293,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 14,
+              "beginOffset": 310,
+              "endOffset": 314,
+              "text": "i.v.",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9518235,
+              "relationshipScore": 0.9991555,
+              "relationshipType": "FORM",
+              "id": 15,
+              "beginOffset": 315,
+              "endOffset": 320,
+              "text": "bolus",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8260278,
+              "relationshipScore": 0.52208716,
+              "relationshipType": "DOSAGE",
+              "id": 19,
+              "beginOffset": 359,
+              "endOffset": 365,
+              "text": "0.5 μg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 334,
+          "endOffset": 344,
+          "score": 0.99965453,
+          "text": "amiodarone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.85649157,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 14,
+              "beginOffset": 310,
+              "endOffset": 314,
+              "text": "i.v.",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9518235,
+              "relationshipScore": 0.9977431,
+              "relationshipType": "FORM",
+              "id": 15,
+              "beginOffset": 315,
+              "endOffset": 320,
+              "text": "bolus",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9718374,
+              "relationshipScore": 0.99996245,
+              "relationshipType": "DOSAGE",
+              "id": 16,
+              "beginOffset": 324,
+              "endOffset": 330,
+              "text": "15 mcg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.5308437,
+              "relationshipScore": 0.99995744,
+              "relationshipType": "STRENGTH",
+              "id": 18,
+              "beginOffset": 345,
+              "endOffset": 355,
+              "text": "100 mcg/ml",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8260278,
+              "relationshipScore": 0.9999881,
+              "relationshipType": "DOSAGE",
+              "id": 19,
+              "beginOffset": 359,
+              "endOffset": 365,
+              "text": "0.5 μg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8235699,
+            "id": 22,
+            "beginOffset": 87,
+            "endOffset": 92,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d0fa2833-0df8-40be-829b-706eb781bfee"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d0fa2833-0df8-40be-829b-706eb781bfee"
+          ],
+          "Content-Length": [
+            "6193"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6193",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:58 GMT",
+          "x-amzn-RequestId": "d0fa2833-0df8-40be-829b-706eb781bfee"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 465,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "unstable angina",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5574061,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6179756
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.8142758
+            },
+            {
+              "description": "Unstable angina",
+              "code": "I20.0",
+              "score": 0.77123016
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5760778
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.51304114
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.47221646
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9435632,
+          "beginOffset": 60,
+          "endOffset": 81,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9668588
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.66474813
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6311696
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.6297323
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.60039693
+            },
+            {
+              "description": "Unstable angina",
+              "code": "I20.0",
+              "score": 0.5458509
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9789074,
+          "beginOffset": 93,
+          "endOffset": 106,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.82357,
+              "relationshipScore": 0.9997459,
+              "id": 2,
+              "beginOffset": 87,
+              "endOffset": 92,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97966856
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.49332345
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.43898934
+            },
+            {
+              "description": "Acute systolic (congestive) heart failure",
+              "code": "I50.21",
+              "score": 0.42568973
+            },
+            {
+              "description": "Acute on chronic diastolic (congestive) heart failure",
+              "code": "I50.33",
+              "score": 0.39788765
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.3843848
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "48fbf001-1228-4e72-b01b-01a10321b932"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "48fbf001-1228-4e72-b01b-01a10321b932"
+          ],
+          "Content-Length": [
+            "2516"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2516",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:00 GMT",
+          "x-amzn-RequestId": "48fbf001-1228-4e72-b01b-01a10321b932"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 2462,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "amiodarone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99973685,
+          "beginOffset": 120,
+          "endOffset": 130,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9477478,
+              "relationshipScore": 0.99996364,
+              "id": 1,
+              "beginOffset": 131,
+              "endOffset": 137,
+              "text": "1mg/kg",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.7637224,
+              "relationshipScore": 0.71754116,
+              "id": 2,
+              "beginOffset": 143,
+              "endOffset": 154,
+              "text": "intravenous",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8759792,
+              "relationshipScore": 0.9999777,
+              "id": 3,
+              "beginOffset": 155,
+              "endOffset": 164,
+              "text": "infusions",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Amiodarone",
+              "code": "703",
+              "score": 0.91316026
+            },
+            {
+              "description": "100 ML Amiodarone hydrochloride 1.5 MG/ML Injection",
+              "code": "1046406",
+              "score": 0.6838827
+            },
+            {
+              "description": "Amiodarone hydrochloride 50 MG/ML Injectable Solution",
+              "code": "833532",
+              "score": 0.5621484
+            },
+            {
+              "description": "200 ML Amiodarone hydrochloride 1.8 MG/ML Injection",
+              "code": "849876",
+              "score": 0.40828902
+            },
+            {
+              "description": "100 ML Amiodarone hydrochloride 1.5 MG/ML Injection [Nexterone]",
+              "code": "1046408",
+              "score": 0.18702792
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "calcium chloride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99870527,
+          "beginOffset": 186,
+          "endOffset": 202,
+          "attributes": [
+            {
+              "type": "STRENGTH",
+              "score": 0.9688149,
+              "relationshipScore": 0.94293624,
+              "id": 6,
+              "beginOffset": 182,
+              "endOffset": 185,
+              "text": "15%",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.98547935,
+              "relationshipScore": 0.99945503,
+              "id": 8,
+              "beginOffset": 203,
+              "endOffset": 211,
+              "text": "solution",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.332207,
+              "relationshipScore": 0.9774325,
+              "id": 9,
+              "beginOffset": 216,
+              "endOffset": 219,
+              "text": "2 h",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8362887,
+              "relationshipScore": 0.6671445,
+              "id": 10,
+              "beginOffset": 246,
+              "endOffset": 250,
+              "text": "5 mL",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Microencapsulated Potassium Chloride 15 MEQ Extended Release Oral Tablet",
+              "code": "403888",
+              "score": 0.97899604
+            },
+            {
+              "description": "Calcium Chloride",
+              "code": "1901",
+              "score": 0.94261545
+            },
+            {
+              "description": "Calcium Chloride 0.002 MEQ/ML / Potassium Chloride 0.004 MEQ/ML / Sodium Chloride 0.147 MEQ/ML Irrigation Solution",
+              "code": "847621",
+              "score": 0.79328364
+            },
+            {
+              "description": "Calcium Carbonate 80 MG/ML Oral Suspension",
+              "code": "308901",
+              "score": 0.76442707
+            },
+            {
+              "description": "Microencapsulated Potassium Chloride 15 MEQ Extended Release Oral Tablet [Klor-Con]",
+              "code": "832731",
+              "score": 0.72208023
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "amiodarone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99965453,
+          "beginOffset": 334,
+          "endOffset": 344,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.8564917,
+              "relationshipScore": 1.0,
+              "id": 13,
+              "beginOffset": 310,
+              "endOffset": 314,
+              "text": "i.v.",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9518235,
+              "relationshipScore": 0.9977431,
+              "id": 14,
+              "beginOffset": 315,
+              "endOffset": 320,
+              "text": "bolus",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9718374,
+              "relationshipScore": 0.99996245,
+              "id": 15,
+              "beginOffset": 324,
+              "endOffset": 330,
+              "text": "15 mcg",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.5308437,
+              "relationshipScore": 0.99995744,
+              "id": 17,
+              "beginOffset": 345,
+              "endOffset": 355,
+              "text": "100 mcg/ml",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8260278,
+              "relationshipScore": 0.9999881,
+              "id": 18,
+              "beginOffset": 359,
+              "endOffset": 365,
+              "text": "0.5 μg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "100 ML Amiodarone hydrochloride 1.5 MG/ML Injection",
+              "code": "1046406",
+              "score": 0.98006094
+            },
+            {
+              "description": "18 ML Amiodarone hydrochloride 50 MG/ML Injection",
+              "code": "1663248",
+              "score": 0.67670256
+            },
+            {
+              "description": "9 ML Amiodarone hydrochloride 50 MG/ML Injection",
+              "code": "1663244",
+              "score": 0.60667163
+            },
+            {
+              "description": "100 ML Amiodarone hydrochloride 1.5 MG/ML Injection [Nexterone]",
+              "code": "1046408",
+              "score": 0.4663702
+            },
+            {
+              "description": "Amiodarone hydrochloride 50 MG/ML Injectable Solution",
+              "code": "833532",
+              "score": 0.42845687
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e76def55-9af1-4f0b-8d8b-59152a860d33"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e76def55-9af1-4f0b-8d8b-59152a860d33"
+          ],
+          "Content-Length": [
+            "4192"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4192",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:00 GMT",
+          "x-amzn-RequestId": "e76def55-9af1-4f0b-8d8b-59152a860d33"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:01 PM"
+}

@@ -1,0 +1,323 @@
+{
+  "note": "If the fever does not go away, call your healthcare provider! If any of the symptoms worsen, please contact your healthcare provider. What to do next:  1. Make sure you get enough rest and fluids  2. If you are having any heart problems, check your echocardiogram and cardiac catheterization  3. If you are pregnant, talk to your healthcare provider about how you are feeling now and how to prepare for delivery  4.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 307,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 7,
+          "endOffset": 12,
+          "score": 0.93786114,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68823135
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 222,
+          "endOffset": 227,
+          "score": 0.96562153,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 222,
+          "endOffset": 236,
+          "score": 0.7939945,
+          "text": "heart problems",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7788489
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 249,
+          "endOffset": 263,
+          "score": 0.9820477,
+          "text": "echocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 268,
+          "endOffset": 291,
+          "score": 0.63832265,
+          "text": "cardiac catheterization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 307,
+          "endOffset": 315,
+          "score": 0.987677,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.907473
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d01149b6-8478-4781-b3c4-77bd17ef4e7e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d01149b6-8478-4781-b3c4-77bd17ef4e7e"
+          ],
+          "Content-Length": [
+            "1120"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1120",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:25 GMT",
+          "x-amzn-RequestId": "d01149b6-8478-4781-b3c4-77bd17ef4e7e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 511,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93786114,
+          "beginOffset": 7,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68823135
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.77401483
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.53129554
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45645195
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.43322152
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.4130759
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "heart problems",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7939943,
+          "beginOffset": 222,
+          "endOffset": 236,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7788489
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.780155
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.67776424
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.65619934
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.6384064
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.63223284
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.987677,
+          "beginOffset": 307,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.907473
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7512184
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.605108
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.565453
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.51610374
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.5038637
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7936bca9-417e-4e56-8b4e-671c9f4b4cc7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7936bca9-417e-4e56-8b4e-671c9f4b4cc7"
+          ],
+          "Content-Length": [
+            "2096"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2096",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:26 GMT",
+          "x-amzn-RequestId": "7936bca9-417e-4e56-8b4e-671c9f4b4cc7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 223,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "091a559b-9a2b-477a-b4f4-725269d836cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "091a559b-9a2b-477a-b4f4-725269d836cb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:25 GMT",
+          "x-amzn-RequestId": "091a559b-9a2b-477a-b4f4-725269d836cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:26 PM"
+}

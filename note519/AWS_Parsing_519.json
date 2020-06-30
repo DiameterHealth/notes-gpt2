@@ -1,0 +1,785 @@
+{
+  "note": ". He/she was referred by a primary care physician. The patient is a male in his 30s, 5\u002710\", 210lbs and he has shoulder pain in his right shoulder, just above the elbow. The patient\u0027s physical therapist has been working with him for the past 4 months to reduce the pain and improve function. The primary care practitioner referred the patient and had been trying for 3 months to get the patient on a stronger NSAID/pain reliever in order to limit pain and reduce inflammation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 550,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 80,
+          "endOffset": 83,
+          "score": 0.87815416,
+          "text": "30s",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 110,
+          "endOffset": 118,
+          "score": 0.94724774,
+          "text": "shoulder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 110,
+          "endOffset": 123,
+          "score": 0.8276374,
+          "text": "shoulder pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.45660618
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49851757
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99747723,
+              "relationshipScore": 0.9997737,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 131,
+              "endOffset": 136,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9917006,
+              "relationshipScore": 0.9921198,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 137,
+              "endOffset": 145,
+              "text": "shoulder",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9199674,
+              "relationshipScore": 0.9915133,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 152,
+              "endOffset": 157,
+              "text": "above",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97490376,
+              "relationshipScore": 0.961208,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 162,
+              "endOffset": 167,
+              "text": "elbow",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "score": 0.9917006,
+          "text": "shoulder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 162,
+          "endOffset": 167,
+          "score": 0.97490376,
+          "text": "elbow",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 236,
+          "endOffset": 249,
+          "score": 0.99968755,
+          "text": "past 4 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9546111,
+              "relationshipScore": 0.6239299,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 264,
+              "endOffset": 268,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.40348223
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.51734185
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 236,
+          "endOffset": 249,
+          "score": 0.99968755,
+          "text": "past 4 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.65033096,
+              "relationshipScore": 0.6414496,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 273,
+              "endOffset": 289,
+              "text": "improve function",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.68824804
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 264,
+          "endOffset": 268,
+          "score": 0.9546111,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40348223
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51734185
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 273,
+          "endOffset": 289,
+          "score": 0.65033096,
+          "text": "improve function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68824804
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 366,
+          "endOffset": 374,
+          "score": 0.7692456,
+          "text": "3 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.35700148,
+              "relationshipScore": 0.6056845,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 414,
+              "endOffset": 418,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 366,
+          "endOffset": 374,
+          "score": 0.7692456,
+          "text": "3 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.38721555,
+              "relationshipScore": 0.642879,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 408,
+              "endOffset": 413,
+              "text": "NSAID",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 366,
+          "endOffset": 374,
+          "score": 0.7692456,
+          "text": "3 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.5942368,
+              "relationshipScore": 0.6250473,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 414,
+              "endOffset": 427,
+              "text": "pain reliever",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 408,
+          "endOffset": 413,
+          "score": 0.38721555,
+          "text": "NSAID",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 414,
+          "endOffset": 418,
+          "score": 0.35700148,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 414,
+          "endOffset": 427,
+          "score": 0.5942368,
+          "text": "pain reliever",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 446,
+          "endOffset": 450,
+          "score": 0.9785271,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7849106
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 462,
+          "endOffset": 474,
+          "score": 0.98259497,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7687859
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99747723,
+            "id": 1,
+            "beginOffset": 131,
+            "endOffset": 136,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9199674,
+            "id": 3,
+            "beginOffset": 152,
+            "endOffset": 157,
+            "text": "above",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f4902382-9f2b-483c-8ad5-e2bd99917961"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f4902382-9f2b-483c-8ad5-e2bd99917961"
+          ],
+          "Content-Length": [
+            "5540"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5540",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:10 GMT",
+          "x-amzn-RequestId": "f4902382-9f2b-483c-8ad5-e2bd99917961"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 850,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "shoulder pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8276374,
+          "beginOffset": 110,
+          "endOffset": 123,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99747723,
+              "relationshipScore": 0.9997737,
+              "id": 2,
+              "beginOffset": 131,
+              "endOffset": 136,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9917006,
+              "relationshipScore": 0.9921198,
+              "id": 3,
+              "beginOffset": 137,
+              "endOffset": 145,
+              "text": "shoulder",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.91996735,
+              "relationshipScore": 0.9915133,
+              "id": 4,
+              "beginOffset": 152,
+              "endOffset": 157,
+              "text": "above",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97490376,
+              "relationshipScore": 0.961208,
+              "id": 5,
+              "beginOffset": 162,
+              "endOffset": 167,
+              "text": "elbow",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.45660618
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49851745
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right shoulder",
+              "code": "M25.511",
+              "score": 0.52327543
+            },
+            {
+              "description": "Pain in right elbow",
+              "code": "M25.521",
+              "score": 0.37941357
+            },
+            {
+              "description": "Pain in left shoulder",
+              "code": "M25.512",
+              "score": 0.37711757
+            },
+            {
+              "description": "Pain in unspecified shoulder",
+              "code": "M25.519",
+              "score": 0.3675131
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.36520877
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9546111,
+          "beginOffset": 264,
+          "endOffset": 268,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40348223
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51734173
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7112433
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6314512
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6049815
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5899286
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5654766
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "improve function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.650331,
+          "beginOffset": 273,
+          "endOffset": 289,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6882479
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7852217
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.74115926
+            },
+            {
+              "description": "Abnormal results of kidney function studies",
+              "code": "R94.4",
+              "score": 0.7355346
+            },
+            {
+              "description": "Other malaise",
+              "code": "R53.81",
+              "score": 0.69058686
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.6857103
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35700148,
+          "beginOffset": 414,
+          "endOffset": 418,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7858502
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.68688196
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6541543
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6383237
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.6299953
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9785271,
+          "beginOffset": 446,
+          "endOffset": 450,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7849105
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7845263
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.7218828
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.70569736
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.65611935
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6554632
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98259497,
+          "beginOffset": 462,
+          "endOffset": 474,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.76878595
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.8201859
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.78428304
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.7782228
+            },
+            {
+              "description": "Unspecified appendicitis",
+              "code": "K37",
+              "score": 0.77606577
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.77376753
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "701dd61d-3142-4b25-adff-38fa095b4dd6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "701dd61d-3142-4b25-adff-38fa095b4dd6"
+          ],
+          "Content-Length": [
+            "4682"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4682",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:11 GMT",
+          "x-amzn-RequestId": "701dd61d-3142-4b25-adff-38fa095b4dd6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 256,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bac13853-a0c0-4dd2-99fb-796a2dddefd1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bac13853-a0c0-4dd2-99fb-796a2dddefd1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:10 GMT",
+          "x-amzn-RequestId": "bac13853-a0c0-4dd2-99fb-796a2dddefd1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:11 PM"
+}

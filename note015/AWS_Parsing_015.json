@@ -1,0 +1,447 @@
+{
+  "note": ". Patient may require follow-up with neurologist. Management of complications: This patient has a mild-to-moderate form of PCP associated with a mild cerebrovascular event that the medical staff believes is not life-threatening. Although there is no evidence of significant structural damage, there has been some loss of left-side vision, decreased awareness and balance, and difficulty swallowing.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 336,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "score": 0.7894601,
+          "text": "cerebrovascular event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5689285
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 274,
+          "endOffset": 291,
+          "score": 0.92607903,
+          "text": "structural damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4090158
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94082075
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 313,
+          "endOffset": 337,
+          "score": 0.9699249,
+          "text": "loss of left-side vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9096101
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4928296
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 339,
+          "endOffset": 370,
+          "score": 0.92071354,
+          "text": "decreased awareness and balance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92369235
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 376,
+          "endOffset": 397,
+          "score": 0.9875946,
+          "text": "difficulty swallowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91964734
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.46898916
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.7779848,
+            "id": 0,
+            "beginOffset": 321,
+            "endOffset": 330,
+            "text": "left-side",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9255d6d9-11a9-4215-ba4a-fbeef55f9d70"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9255d6d9-11a9-4215-ba4a-fbeef55f9d70"
+          ],
+          "Content-Length": [
+            "1418"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1418",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:32 GMT",
+          "x-amzn-RequestId": "9255d6d9-11a9-4215-ba4a-fbeef55f9d70"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 441,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cerebrovascular event",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78946,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56892854
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction due to embolism of unspecified cerebral artery",
+              "code": "I63.40",
+              "score": 0.7256179
+            },
+            {
+              "description": "Cerebrovascular disease, unspecified",
+              "code": "I67.9",
+              "score": 0.7079045
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.6925459
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6711975
+            },
+            {
+              "description": "Cerebral infarction due to thrombosis of unspecified cerebral artery",
+              "code": "I63.30",
+              "score": 0.6638847
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "structural damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92607903,
+          "beginOffset": 274,
+          "endOffset": 291,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4090158
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94082075
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of teeth and supporting structures",
+              "code": "K08.89",
+              "score": 0.61796254
+            },
+            {
+              "description": "Other nail disorders",
+              "code": "L60.8",
+              "score": 0.59172153
+            },
+            {
+              "description": "Other specified disorders of bone density and structure, unspecified site",
+              "code": "M85.80",
+              "score": 0.5804635
+            },
+            {
+              "description": "Anoxic brain damage, not elsewhere classified",
+              "code": "G93.1",
+              "score": 0.57381845
+            },
+            {
+              "description": "Disorder of bone density and structure, unspecified",
+              "code": "M85.9",
+              "score": 0.5589516
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "loss of left-side vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9699249,
+          "beginOffset": 313,
+          "endOffset": 337,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90961
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4928296
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.62026536
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.59208727
+            },
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.56670535
+            },
+            {
+              "description": "Unqualified visual loss, both eyes",
+              "code": "H54.3",
+              "score": 0.5402183
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.5100265
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "decreased awareness and balance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92071354,
+          "beginOffset": 339,
+          "endOffset": 370,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92369235
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.7546473
+            },
+            {
+              "description": "Other symptoms and signs involving cognitive functions and awareness",
+              "code": "R41.89",
+              "score": 0.702375
+            },
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.64441055
+            },
+            {
+              "description": "Other lack of coordination",
+              "code": "R27.8",
+              "score": 0.6135721
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.61109215
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "difficulty swallowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9875946,
+          "beginOffset": 376,
+          "endOffset": 397,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91964734
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4689891
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dysphagia, unspecified",
+              "code": "R13.10",
+              "score": 0.8304127
+            },
+            {
+              "description": "Dysphagia",
+              "code": "R13.1",
+              "score": 0.63926303
+            },
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.6245443
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.5933602
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.54833466
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "32575963-6a83-48ef-9adb-7bb3ffce3960"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "32575963-6a83-48ef-9adb-7bb3ffce3960"
+          ],
+          "Content-Length": [
+            "3941"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3941",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:32 GMT",
+          "x-amzn-RequestId": "32575963-6a83-48ef-9adb-7bb3ffce3960"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 184,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9854ee0b-e5ba-4e0c-833d-bd575ee06a2f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9854ee0b-e5ba-4e0c-833d-bd575ee06a2f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:32 GMT",
+          "x-amzn-RequestId": "9854ee0b-e5ba-4e0c-833d-bd575ee06a2f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:32 PM"
+}

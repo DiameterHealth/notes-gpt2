@@ -1,0 +1,235 @@
+{
+  "note": "Treatment:  If you are diagnosed with fever after a prolonged period, and/or with only urinary symptoms, then a hospital admission may be required. This procedure will not improve the prognosis and will usually result in hospital discharge in 3-5 days. If you feel you have been exposed to a pathogen, the first place to seek support is with your GP, who will have a better information to share with the medical team.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 38,
+          "endOffset": 43,
+          "score": 0.9869774,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54276735
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 87,
+          "endOffset": 103,
+          "score": 0.82890975,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.805294
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f5ee5b5-512b-4931-b8ed-9f9786013f71"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f5ee5b5-512b-4931-b8ed-9f9786013f71"
+          ],
+          "Content-Length": [
+            "450"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "450",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:54 GMT",
+          "x-amzn-RequestId": "4f5ee5b5-512b-4931-b8ed-9f9786013f71"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 382,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9869774,
+          "beginOffset": 38,
+          "endOffset": 43,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5427673
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7761308
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5346781
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.43509153
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4236502
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.41049442
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "urinary symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82890975,
+          "beginOffset": 87,
+          "endOffset": 103,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.805294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.80276144
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6811055
+            },
+            {
+              "description": "Other symptoms and signs involving the genitourinary system",
+              "code": "R39.89",
+              "score": 0.67179286
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.64914745
+            },
+            {
+              "description": "Anuria and oliguria",
+              "code": "R34",
+              "score": 0.64681196
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "87523472-dd18-46b2-b586-b50893b8212e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "87523472-dd18-46b2-b586-b50893b8212e"
+          ],
+          "Content-Length": [
+            "1451"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1451",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:54 GMT",
+          "x-amzn-RequestId": "87523472-dd18-46b2-b586-b50893b8212e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd546fb9-db1f-45a5-8e48-8868c3f3eb32"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd546fb9-db1f-45a5-8e48-8868c3f3eb32"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:54 GMT",
+          "x-amzn-RequestId": "bd546fb9-db1f-45a5-8e48-8868c3f3eb32"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:55 PM"
+}

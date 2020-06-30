@@ -1,0 +1,688 @@
+{
+  "note": ", then every 3 months thereafter until resolution or discontinuance of the medication. Treatment:  Avoidance during active illness, for at least 7 days. Outcome:   Medication was taken at a reduced dose, in the hope that the infection would recur  Nausea, vomiting, dyspepsia, headache  Patient 1 ******** N/A  1.0 Initial Assessment:  Erythema multiforme of the mouth, tongue and/or throat, with nausea and vomiting.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 729,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 225,
+          "endOffset": 234,
+          "score": 0.9153665,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.838521
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 248,
+          "endOffset": 254,
+          "score": 0.9959657,
+          "text": "Nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4418195
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5611298
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 256,
+          "endOffset": 264,
+          "score": 0.9972909,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42994615
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5937478
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 266,
+          "endOffset": 275,
+          "score": 0.99833953,
+          "text": "dyspepsia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.488036
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "score": 0.9988097,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5606347
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 336,
+          "endOffset": 344,
+          "score": 0.51455206,
+          "text": "Erythema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9870008,
+              "relationshipScore": 0.99384886,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 363,
+              "endOffset": 368,
+              "text": "mouth",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9622809,
+              "relationshipScore": 0.8472961,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 370,
+              "endOffset": 376,
+              "text": "tongue",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99624676,
+              "relationshipScore": 0.9761327,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 384,
+              "endOffset": 390,
+              "text": "throat",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 363,
+          "endOffset": 368,
+          "score": 0.9870008,
+          "text": "mouth",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 370,
+          "endOffset": 376,
+          "score": 0.9622809,
+          "text": "tongue",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 384,
+          "endOffset": 390,
+          "score": 0.99624676,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 397,
+          "endOffset": 403,
+          "score": 0.996579,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66736835
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 408,
+          "endOffset": 416,
+          "score": 0.99572575,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5568662
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6ee6d3d3-e801-48ee-b5c2-5a25e76dc88b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6ee6d3d3-e801-48ee-b5c2-5a25e76dc88b"
+          ],
+          "Content-Length": [
+            "2783"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2783",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:02 GMT",
+          "x-amzn-RequestId": "6ee6d3d3-e801-48ee-b5c2-5a25e76dc88b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 782,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9153664,
+          "beginOffset": 225,
+          "endOffset": 234,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83852094
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.75943583
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.70596254
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.70188457
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6895747
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.65438646
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9959657,
+          "beginOffset": 248,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4418195
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56112975
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.7571366
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.69807714
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.58139765
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.53287274
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.45982704
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9972909,
+          "beginOffset": 256,
+          "endOffset": 264,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42994618
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5937478
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.7494555
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.7244215
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.49155366
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.48110113
+            },
+            {
+              "description": "Hematemesis",
+              "code": "K92.0",
+              "score": 0.47185898
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "dyspepsia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99833953,
+          "beginOffset": 266,
+          "endOffset": 275,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48803592
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.8181307
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.64165765
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6005863
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.5889642
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.55946183
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9988097,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.56063473
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6951487
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.55738723
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.51946884
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.47282678
+            },
+            {
+              "description": "Myalgia, unspecified site",
+              "code": "M79.10",
+              "score": 0.45795333
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Erythema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.51455194,
+          "beginOffset": 336,
+          "endOffset": 344,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9870008,
+              "relationshipScore": 0.99384886,
+              "id": 6,
+              "beginOffset": 363,
+              "endOffset": 368,
+              "text": "mouth",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9622809,
+              "relationshipScore": 0.8472961,
+              "id": 7,
+              "beginOffset": 370,
+              "endOffset": 376,
+              "text": "tongue",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99624676,
+              "relationshipScore": 0.9761327,
+              "id": 8,
+              "beginOffset": 384,
+              "endOffset": 390,
+              "text": "throat",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.6218086
+            },
+            {
+              "description": "Other diseases of pharynx",
+              "code": "J39.2",
+              "score": 0.5141151
+            },
+            {
+              "description": "Joint disorder, unspecified",
+              "code": "M25.9",
+              "score": 0.45715004
+            },
+            {
+              "description": "Rosacea, unspecified",
+              "code": "L71.9",
+              "score": 0.43325067
+            },
+            {
+              "description": "Erythema intertrigo",
+              "code": "L30.4",
+              "score": 0.40561092
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.996579,
+          "beginOffset": 397,
+          "endOffset": 403,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66736835
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.77405196
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.6388248
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5732929
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.49706724
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.438389
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99572575,
+          "beginOffset": 408,
+          "endOffset": 416,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5568661
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.76486385
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.6288303
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5931882
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.47268423
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.41771668
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "de72b225-8b3b-4c72-805c-811e8146ccc1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "de72b225-8b3b-4c72-805c-811e8146ccc1"
+          ],
+          "Content-Length": [
+            "5926"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5926",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:03 GMT",
+          "x-amzn-RequestId": "de72b225-8b3b-4c72-805c-811e8146ccc1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "56611bd8-672a-44a5-9fc1-9d27b990dc7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "56611bd8-672a-44a5-9fc1-9d27b990dc7c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:02 GMT",
+          "x-amzn-RequestId": "56611bd8-672a-44a5-9fc1-9d27b990dc7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:03 PM"
+}

@@ -1,0 +1,714 @@
+{
+  "note": "This could be associated with a severe leaky gut , possibly with colitis. , possibly with , possibly with Recent vomiting and/or diarrhea. Hepatic Metabolism  Hepatic enzymes such as alanine aminotransferase and lactate dehydrogenase can rise if the patient\u0027s water intake is inadequate and electrolyte deficits are present. These enzymes also can rise in severe acute water intoxication such as drowning.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 370,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 39,
+          "endOffset": 48,
+          "score": 0.5547239,
+          "text": "leaky gut",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78154457
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 45,
+          "endOffset": 48,
+          "score": 0.9281579,
+          "text": "gut",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 65,
+          "endOffset": 72,
+          "score": 0.9762573,
+          "text": "colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9441254
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 106,
+          "endOffset": 112,
+          "score": 0.99999726,
+          "text": "Recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9987418,
+              "relationshipScore": 0.8878639,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 129,
+              "endOffset": 137,
+              "text": "diarrhea",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.5493471
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 106,
+          "endOffset": 112,
+          "score": 0.99999726,
+          "text": "Recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9885283,
+              "relationshipScore": 0.9544204,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 113,
+              "endOffset": 121,
+              "text": "vomiting",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.68297344
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 113,
+          "endOffset": 121,
+          "score": 0.9885283,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68297344
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 129,
+          "endOffset": 137,
+          "score": 0.9987418,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5493471
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 139,
+          "endOffset": 157,
+          "score": 0.5831019,
+          "text": "Hepatic Metabolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5961138
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 139,
+          "endOffset": 157,
+          "score": 0.6160058,
+          "text": "Hepatic Metabolism",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 159,
+          "endOffset": 174,
+          "score": 0.9749204,
+          "text": "Hepatic enzymes",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.28323504,
+              "relationshipScore": 0.8734843,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 220,
+              "endOffset": 233,
+              "text": "dehydrogenase",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 183,
+          "endOffset": 207,
+          "score": 0.8498098,
+          "text": "alanine aminotransferase",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.28323504,
+              "relationshipScore": 0.9992699,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 220,
+              "endOffset": 233,
+              "text": "dehydrogenase",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 212,
+          "endOffset": 219,
+          "score": 0.9095408,
+          "text": "lactate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.28323504,
+              "relationshipScore": 0.9999962,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 220,
+              "endOffset": 233,
+              "text": "dehydrogenase",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 276,
+          "endOffset": 311,
+          "score": 0.49164966,
+          "text": "inadequate and electrolyte deficits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.67062366
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 369,
+          "endOffset": 387,
+          "score": 0.61987466,
+          "text": "water intoxication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78309053
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8491365,
+              "relationshipScore": 0.9999082,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 363,
+              "endOffset": 368,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8491365,
+            "id": 7,
+            "beginOffset": 363,
+            "endOffset": 368,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd008c08-3d30-4c6a-a41f-448f3005081c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd008c08-3d30-4c6a-a41f-448f3005081c"
+          ],
+          "Content-Length": [
+            "4287"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4287",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:30 GMT",
+          "x-amzn-RequestId": "bd008c08-3d30-4c6a-a41f-448f3005081c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 474,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "leaky gut",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.554724,
+          "beginOffset": 39,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78154457
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Leakage of other specified internal prosthetic devices, implants and grafts",
+              "code": "T85.638",
+              "score": 0.6033536
+            },
+            {
+              "description": "Cerebrospinal fluid leak",
+              "code": "G96.0",
+              "score": 0.58472604
+            },
+            {
+              "description": "Cerebrospinal fluid leak from spinal puncture",
+              "code": "G97.0",
+              "score": 0.5341737
+            },
+            {
+              "description": "Other mechanical complication of other prosthetic devices, implants and grafts of genital tract",
+              "code": "T83.498",
+              "score": 0.52134126
+            },
+            {
+              "description": "Leakage of biological heart valve graft",
+              "code": "T82.223",
+              "score": 0.50280786
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9762573,
+          "beginOffset": 65,
+          "endOffset": 72,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9441253
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.8419472
+            },
+            {
+              "description": "Infectious gastroenteritis and colitis, unspecified",
+              "code": "A09",
+              "score": 0.67411095
+            },
+            {
+              "description": "Ulcerative colitis, unspecified, without complications",
+              "code": "K51.90",
+              "score": 0.641819
+            },
+            {
+              "description": "Other specified noninfective gastroenteritis and colitis",
+              "code": "K52.89",
+              "score": 0.6310276
+            },
+            {
+              "description": "Indeterminate colitis",
+              "code": "K52.3",
+              "score": 0.56981647
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9885283,
+          "beginOffset": 113,
+          "endOffset": 121,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68297344
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.76178396
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.6710777
+            },
+            {
+              "description": "Vomiting",
+              "code": "R11.1",
+              "score": 0.53345376
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.52735287
+            },
+            {
+              "description": "Hematemesis",
+              "code": "K92.0",
+              "score": 0.5112074
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9987418,
+          "beginOffset": 129,
+          "endOffset": 137,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54934716
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.8397135
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.6981009
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.6467503
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.6441921
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.6335872
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Hepatic Metabolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5831019,
+          "beginOffset": 139,
+          "endOffset": 157,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59611374
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.6340036
+            },
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.4905543
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.48632696
+            },
+            {
+              "description": "Chronic hepatic failure without coma",
+              "code": "K72.10",
+              "score": 0.43794066
+            },
+            {
+              "description": "Metabolic encephalopathy",
+              "code": "G93.41",
+              "score": 0.42804667
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "inadequate and electrolyte deficits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49164978,
+          "beginOffset": 276,
+          "endOffset": 311,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6706237
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disorders of electrolyte and fluid balance, not elsewhere classified",
+              "code": "E87.8",
+              "score": 0.5752492
+            },
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.5129661
+            },
+            {
+              "description": "Lack of adequate food and safe drinking water",
+              "code": "Z59.4",
+              "score": 0.3667095
+            },
+            {
+              "description": "Other lack of coordination",
+              "code": "R27.8",
+              "score": 0.34916255
+            },
+            {
+              "description": "Inadequate parental supervision and control",
+              "code": "Z62.0",
+              "score": 0.34120026
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "water intoxication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.61987466,
+          "beginOffset": 369,
+          "endOffset": 387,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.84913635,
+              "relationshipScore": 0.9999082,
+              "id": 7,
+              "beginOffset": 363,
+              "endOffset": 368,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78309053
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol abuse with intoxication, unspecified",
+              "code": "F10.129",
+              "score": 0.5730491
+            },
+            {
+              "description": "Fluid overload, unspecified",
+              "code": "E87.70",
+              "score": 0.40673625
+            },
+            {
+              "description": "Other stimulant use, unspecified with intoxication, unspecified",
+              "code": "F15.929",
+              "score": 0.39613122
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.37376046
+            },
+            {
+              "description": "Other specified pleural conditions",
+              "code": "J94.8",
+              "score": 0.34975928
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a0420f93-c544-4c72-9e89-73d969603e17"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a0420f93-c544-4c72-9e89-73d969603e17"
+          ],
+          "Content-Length": [
+            "5429"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5429",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:31 GMT",
+          "x-amzn-RequestId": "a0420f93-c544-4c72-9e89-73d969603e17"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a2c17c86-ca29-431f-a61b-b8659b23a812"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a2c17c86-ca29-431f-a61b-b8659b23a812"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:30 GMT",
+          "x-amzn-RequestId": "a2c17c86-ca29-431f-a61b-b8659b23a812"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:31 PM"
+}

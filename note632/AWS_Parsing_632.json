@@ -1,0 +1,558 @@
+{
+  "note": ".  Cases have been reported in this period of time: June 2011, April 2013, November 2013. Laboratory Criteria  The patient tested positive for streptococcal pharyngitis, and the clinical presentation was consistent with this type of infection. Patients were treated with ceftriaxone 100 µg/kg (for 6 days) and penicillin 100 g/day (for 4 days). Case Summary  A 21-year-old man presented to the Emergency Department with a temperature of 38.2oC and a cough.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 383,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 52,
+          "endOffset": 61,
+          "score": 0.9997631,
+          "text": "June 2011",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 63,
+          "endOffset": 73,
+          "score": 0.99976474,
+          "text": "April 2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 75,
+          "endOffset": 88,
+          "score": 0.9999467,
+          "text": "November 2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 143,
+          "endOffset": 168,
+          "score": 0.9702533,
+          "text": "streptococcal pharyngitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9646552
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 233,
+          "endOffset": 242,
+          "score": 0.9784248,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9138432
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 271,
+          "endOffset": 282,
+          "score": 0.9995316,
+          "text": "ceftriaxone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.96976703,
+              "relationshipScore": 0.9988834,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 283,
+              "endOffset": 292,
+              "text": "100 µg/kg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.9790661,
+              "relationshipScore": 0.9999672,
+              "relationshipType": "DURATION",
+              "id": 2,
+              "beginOffset": 298,
+              "endOffset": 304,
+              "text": "6 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 310,
+          "endOffset": 320,
+          "score": 0.9990901,
+          "text": "penicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.7603772,
+              "relationshipScore": 0.99522614,
+              "relationshipType": "DOSAGE",
+              "id": 4,
+              "beginOffset": 321,
+              "endOffset": 330,
+              "text": "100 g/day",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.910747,
+              "relationshipScore": 0.9999522,
+              "relationshipType": "DURATION",
+              "id": 5,
+              "beginOffset": 336,
+              "endOffset": 342,
+              "text": "4 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 361,
+          "endOffset": 363,
+          "score": 0.9236031,
+          "text": "21",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 394,
+          "endOffset": 414,
+          "score": 0.9973018,
+          "text": "Emergency Department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 422,
+          "endOffset": 433,
+          "score": 0.90876275,
+          "text": "temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.95424074,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 437,
+              "endOffset": 443,
+              "text": "38.2oC",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 450,
+          "endOffset": 455,
+          "score": 0.9358985,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5933847
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e026c92a-82b6-4197-8fad-4e25f0141ab3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e026c92a-82b6-4197-8fad-4e25f0141ab3"
+          ],
+          "Content-Length": [
+            "3001"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3001",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:27 GMT",
+          "x-amzn-RequestId": "e026c92a-82b6-4197-8fad-4e25f0141ab3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 447,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "streptococcal pharyngitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9702533,
+          "beginOffset": 143,
+          "endOffset": 168,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9646552
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.7214036
+            },
+            {
+              "description": "Streptococcal sepsis, unspecified",
+              "code": "A40.9",
+              "score": 0.60531276
+            },
+            {
+              "description": "Acute streptococcal tonsillitis, unspecified",
+              "code": "J03.00",
+              "score": 0.5487061
+            },
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.52928865
+            },
+            {
+              "description": "Unspecified streptococcus as the cause of diseases classified elsewhere",
+              "code": "B95.5",
+              "score": 0.49118444
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9784248,
+          "beginOffset": 233,
+          "endOffset": 242,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9138432
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.70676464
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.6967229
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.666388
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6155432
+            },
+            {
+              "description": "Infectious gastroenteritis and colitis, unspecified",
+              "code": "A09",
+              "score": 0.6083931
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9358985,
+          "beginOffset": 450,
+          "endOffset": 455,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5933846
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8766103
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.65503955
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6388345
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.61097187
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.59035534
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "00dd5fdd-c666-4d6e-91ed-ebb94b85d946"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "00dd5fdd-c666-4d6e-91ed-ebb94b85d946"
+          ],
+          "Content-Length": [
+            "2171"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2171",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:29 GMT",
+          "x-amzn-RequestId": "00dd5fdd-c666-4d6e-91ed-ebb94b85d946"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 800,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ceftriaxone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9995316,
+          "beginOffset": 271,
+          "endOffset": 282,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9697669,
+              "relationshipScore": 0.9988832,
+              "id": 1,
+              "beginOffset": 283,
+              "endOffset": 292,
+              "text": "100 µg/kg",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.9790661,
+              "relationshipScore": 0.9999672,
+              "id": 2,
+              "beginOffset": 298,
+              "endOffset": 304,
+              "text": "6 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ceftriaxone 100 MG/ML Injectable Solution",
+              "code": "309090",
+              "score": 0.94827795
+            },
+            {
+              "description": "Ceftriaxone",
+              "code": "2193",
+              "score": 0.7128078
+            },
+            {
+              "description": "Ceftriaxone 1000 MG Injection",
+              "code": "1665021",
+              "score": 0.65694827
+            },
+            {
+              "description": "Ceftriaxone 500 MG Injection",
+              "code": "1665005",
+              "score": 0.5881734
+            },
+            {
+              "description": "Ceftriaxone 2000 MG Injection",
+              "code": "1665046",
+              "score": 0.47577253
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "penicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9990901,
+          "beginOffset": 310,
+          "endOffset": 320,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.7603774,
+              "relationshipScore": 0.99522614,
+              "id": 4,
+              "beginOffset": 321,
+              "endOffset": 330,
+              "text": "100 g/day",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.910747,
+              "relationshipScore": 0.9999522,
+              "id": 5,
+              "beginOffset": 336,
+              "endOffset": 342,
+              "text": "4 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Penicillin G",
+              "code": "7980",
+              "score": 0.97780913
+            },
+            {
+              "description": "Penicillin",
+              "code": "70618",
+              "score": 0.7833776
+            },
+            {
+              "description": "Penicillin G Sodium 100000 UNT/ML Injectable Solution",
+              "code": "745302",
+              "score": 0.7434337
+            },
+            {
+              "description": "Penicillin V",
+              "code": "7984",
+              "score": 0.57565975
+            },
+            {
+              "description": "50 ML Penicillin G Potassium 20000 UNT/ML Injection",
+              "code": "207390",
+              "score": 0.39989734
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "97b3bd02-5f80-4a7a-a8a9-2ab582aa118e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "97b3bd02-5f80-4a7a-a8a9-2ab582aa118e"
+          ],
+          "Content-Length": [
+            "1918"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1918",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:27 GMT",
+          "x-amzn-RequestId": "97b3bd02-5f80-4a7a-a8a9-2ab582aa118e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:29 PM"
+}

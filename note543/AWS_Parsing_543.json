@@ -1,0 +1,495 @@
+{
+  "note": "been in remission from cancer since March 1997 and has been treated with chemotherapy twice while keeping his diabetes. The patient\u0027s symptoms are improving and he is also able to engage in activities which are normally very physically and mentally draining. If the patient\u0027s diabetes is monitored weekly then the probability of recurrent disease development should be greatly reduced.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 314,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 23,
+          "endOffset": 29,
+          "score": 0.9302545,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93774444
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 30,
+          "endOffset": 35,
+          "score": 0.41862527,
+          "text": "since",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9302545,
+              "relationshipScore": 0.5249517,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 23,
+              "endOffset": 29,
+              "text": "cancer",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.93774444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 36,
+          "endOffset": 46,
+          "score": 0.99992347,
+          "text": "March 1997",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 36,
+          "endOffset": 46,
+          "score": 0.7759219,
+          "text": "March 1997",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9302545,
+              "relationshipScore": 0.8108519,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 23,
+              "endOffset": 29,
+              "text": "cancer",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.93774444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 73,
+          "endOffset": 85,
+          "score": 0.9050596,
+          "text": "chemotherapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 110,
+          "endOffset": 118,
+          "score": 0.9767669,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89053226
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 225,
+          "endOffset": 257,
+          "score": 0.36859477,
+          "text": "physically and mentally draining",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.58803284
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.65902674
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 276,
+          "endOffset": 284,
+          "score": 0.9606692,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8934935
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 329,
+          "endOffset": 346,
+          "score": 0.3664576,
+          "text": "recurrent disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8740406
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5014a08b-4225-4e76-a6b5-73c8fcbbca3b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5014a08b-4225-4e76-a6b5-73c8fcbbca3b"
+          ],
+          "Content-Length": [
+            "2276"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2276",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:50 GMT",
+          "x-amzn-RequestId": "5014a08b-4225-4e76-a6b5-73c8fcbbca3b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9302545,
+          "beginOffset": 23,
+          "endOffset": 29,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93774444
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.7629106
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.74458426
+            },
+            {
+              "description": "Personal history of malignant neoplasm, unspecified",
+              "code": "Z85.9",
+              "score": 0.7419278
+            },
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.7368017
+            },
+            {
+              "description": "Malignant neoplasm of rectum",
+              "code": "C20",
+              "score": 0.73110473
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9767669,
+          "beginOffset": 110,
+          "endOffset": 118,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89053226
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8442938
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.75782806
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.73899394
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.7163491
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.7057797
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "physically and mentally draining",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36859477,
+          "beginOffset": 225,
+          "endOffset": 257,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.58803284
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.6590267
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7124971
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.6828208
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.672004
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.6537439
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.65223104
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9606692,
+          "beginOffset": 276,
+          "endOffset": 284,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8934935
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.85571486
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.81937706
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.77140504
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.74697834
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7122986
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "recurrent disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3664576,
+          "beginOffset": 329,
+          "endOffset": 346,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8740406
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.773534
+            },
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.76384807
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.73895407
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.71019113
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7089676
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "26755048-4ddd-46ce-8c2d-560ced28db74"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "26755048-4ddd-46ce-8c2d-560ced28db74"
+          ],
+          "Content-Length": [
+            "3870"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3870",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:50 GMT",
+          "x-amzn-RequestId": "26755048-4ddd-46ce-8c2d-560ced28db74"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 182,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0e8e015b-e9da-4b31-8008-7d008d64ad61"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0e8e015b-e9da-4b31-8008-7d008d64ad61"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:50 GMT",
+          "x-amzn-RequestId": "0e8e015b-e9da-4b31-8008-7d008d64ad61"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:50 PM"
+}

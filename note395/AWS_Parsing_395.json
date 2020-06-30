@@ -1,0 +1,371 @@
+{
+  "note": ". He has seen specialists, but has been unable to resolve the problem with any other treatment. Surgical removal of both eyes is performed. Examination in the emergency room is suggestive of retinal detachment. The patient requests surgical intervention and follow-up is at 3 months. PIPI On the patient\u0027s initial appearance, a diagnosis of retinal detachments and cataracts is made.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 416,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 96,
+          "endOffset": 112,
+          "score": 0.8119451,
+          "text": "Surgical removal",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 121,
+          "endOffset": 125,
+          "score": 0.98668474,
+          "text": "eyes",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 159,
+          "endOffset": 173,
+          "score": 0.97409576,
+          "text": "emergency room",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 191,
+          "endOffset": 209,
+          "score": 0.9091764,
+          "text": "retinal detachment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.888625
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 232,
+          "endOffset": 253,
+          "score": 0.37315547,
+          "text": "surgical intervention",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 274,
+          "endOffset": 282,
+          "score": 0.9632493,
+          "text": "3 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.37315547,
+              "relationshipScore": 0.8960344,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 232,
+              "endOffset": 253,
+              "text": "surgical intervention",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 341,
+          "endOffset": 360,
+          "score": 0.94168204,
+          "text": "retinal detachments",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166264
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 365,
+          "endOffset": 374,
+          "score": 0.94383264,
+          "text": "cataracts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9248796
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.7713479,
+            "id": 0,
+            "beginOffset": 116,
+            "endOffset": 120,
+            "text": "both",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2063c20c-066d-44fc-8e4f-18bdcc352b6c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2063c20c-066d-44fc-8e4f-18bdcc352b6c"
+          ],
+          "Content-Length": [
+            "1908"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1908",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:20 GMT",
+          "x-amzn-RequestId": "2063c20c-066d-44fc-8e4f-18bdcc352b6c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 379,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "retinal detachment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9091764,
+          "beginOffset": 191,
+          "endOffset": 209,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.888625
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Serous retinal detachment, unspecified eye",
+              "code": "H33.20",
+              "score": 0.4663726
+            },
+            {
+              "description": "Unspecified retinal vascular occlusion",
+              "code": "H34.9",
+              "score": 0.43095836
+            },
+            {
+              "description": "Total retinal detachment, unspecified eye",
+              "code": "H33.059",
+              "score": 0.37574455
+            },
+            {
+              "description": "Serous retinal detachment, left eye",
+              "code": "H33.22",
+              "score": 0.31742892
+            },
+            {
+              "description": "Serous retinal detachment, right eye",
+              "code": "H33.21",
+              "score": 0.3096103
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "retinal detachments",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94168204,
+          "beginOffset": 341,
+          "endOffset": 360,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9166264
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified retinal vascular occlusion",
+              "code": "H34.9",
+              "score": 0.4975826
+            },
+            {
+              "description": "Serous retinal detachment, unspecified eye",
+              "code": "H33.20",
+              "score": 0.4637073
+            },
+            {
+              "description": "Total retinal detachment, unspecified eye",
+              "code": "H33.059",
+              "score": 0.35715878
+            },
+            {
+              "description": "Other retinal detachments",
+              "code": "H33.8",
+              "score": 0.31564873
+            },
+            {
+              "description": "Unspecified retinal detachment with retinal break",
+              "code": "H33.00",
+              "score": 0.2956738
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cataracts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94383264,
+          "beginOffset": 365,
+          "endOffset": 374,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9248796
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified cataract",
+              "code": "H26.9",
+              "score": 0.8155369
+            },
+            {
+              "description": "Cataract extraction status, unspecified eye",
+              "code": "Z98.49",
+              "score": 0.71412736
+            },
+            {
+              "description": "Cataract extraction status",
+              "code": "Z98.4",
+              "score": 0.6838665
+            },
+            {
+              "description": "Unspecified secondary cataract",
+              "code": "H26.40",
+              "score": 0.59522855
+            },
+            {
+              "description": "Other specified cataract",
+              "code": "H26.8",
+              "score": 0.5811021
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b95b6385-4dcc-460a-b386-4ed140c470d4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b95b6385-4dcc-460a-b386-4ed140c470d4"
+          ],
+          "Content-Length": [
+            "2210"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2210",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:20 GMT",
+          "x-amzn-RequestId": "b95b6385-4dcc-460a-b386-4ed140c470d4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "920d64fd-5440-4946-b289-f31ed8ba616b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "920d64fd-5440-4946-b289-f31ed8ba616b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:20 GMT",
+          "x-amzn-RequestId": "920d64fd-5440-4946-b289-f31ed8ba616b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:21 PM"
+}

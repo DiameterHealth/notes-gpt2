@@ -1,0 +1,795 @@
+{
+  "note": "in both eyes. She has a history of heart failure, hypertension, dyslipidemia, diabetes mellitus, and dysmotility and has been previously treated with nifedipine. Her recent physical exam was unremarkable, but a routine neurological evaluation revealed a right hemianopic stupor of the left eye [ ]. A routine neurological examination was performed and was unremarkable. The patient\u0027s blood pressure was 110/70 mm Hg; the urine output was 18 cc/min; and the blood creatine level was 1140 mg/dL.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 828,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 8,
+          "endOffset": 12,
+          "score": 0.97533345,
+          "text": "eyes",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 35,
+          "endOffset": 40,
+          "score": 0.98964185,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 35,
+          "endOffset": 48,
+          "score": 0.98837423,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96830785
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 50,
+          "endOffset": 62,
+          "score": 0.9985574,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9732905
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 64,
+          "endOffset": 76,
+          "score": 0.9983014,
+          "text": "dyslipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97468626
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 78,
+          "endOffset": 95,
+          "score": 0.9901451,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684056
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 101,
+          "endOffset": 112,
+          "score": 0.9564053,
+          "text": "dysmotility",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9494685
+            }
+          ]
+        },
+        {
+          "id": 29,
+          "beginOffset": 126,
+          "endOffset": 136,
+          "score": 0.999964,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9978104,
+              "relationshipScore": 0.70116657,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 150,
+              "endOffset": 160,
+              "text": "nifedipine",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 150,
+          "endOffset": 160,
+          "score": 0.9978104,
+          "text": "nifedipine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 30,
+          "beginOffset": 166,
+          "endOffset": 172,
+          "score": 0.99998295,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.93596,
+              "relationshipScore": 0.9934769,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 173,
+              "endOffset": 186,
+              "text": "physical exam",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 173,
+          "endOffset": 186,
+          "score": 0.93596,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9842944,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 191,
+              "endOffset": 203,
+              "text": "unremarkable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 211,
+          "endOffset": 242,
+          "score": 0.35172382,
+          "text": "routine neurological evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.85080284,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 254,
+              "endOffset": 293,
+              "text": "right hemianopic stupor of the left eye",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 260,
+          "endOffset": 277,
+          "score": 0.60401726,
+          "text": "hemianopic stupor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6228653
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 290,
+          "endOffset": 293,
+          "score": 0.991691,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 301,
+          "endOffset": 333,
+          "score": 0.42615172,
+          "text": "routine neurological examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9641298,
+              "relationshipScore": 0.9999932,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 356,
+              "endOffset": 368,
+              "text": "unremarkable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 384,
+          "endOffset": 398,
+          "score": 0.9946444,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9972709,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 403,
+              "endOffset": 409,
+              "text": "110/70",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 413,
+          "endOffset": 415,
+          "score": 0.47921145,
+          "text": "Hg",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9972709,
+              "relationshipScore": 0.62126994,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 403,
+              "endOffset": 409,
+              "text": "110/70",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.8455656,
+              "relationshipScore": 0.99211204,
+              "relationshipType": "TEST_UNIT",
+              "id": 21,
+              "beginOffset": 410,
+              "endOffset": 412,
+              "text": "mm",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 421,
+          "endOffset": 433,
+          "score": 0.99512804,
+          "text": "urine output",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9897766,
+              "relationshipScore": 0.99947757,
+              "relationshipType": "TEST_VALUE",
+              "id": 24,
+              "beginOffset": 438,
+              "endOffset": 440,
+              "text": "18",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.97097135,
+              "relationshipScore": 0.9985292,
+              "relationshipType": "TEST_UNIT",
+              "id": 25,
+              "beginOffset": 441,
+              "endOffset": 447,
+              "text": "cc/min",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "beginOffset": 457,
+          "endOffset": 477,
+          "score": 0.9907314,
+          "text": "blood creatine level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9832153,
+              "relationshipScore": 0.9890159,
+              "relationshipType": "TEST_VALUE",
+              "id": 27,
+              "beginOffset": 482,
+              "endOffset": 486,
+              "text": "1140",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99845505,
+              "relationshipScore": 0.9542183,
+              "relationshipType": "TEST_UNIT",
+              "id": 28,
+              "beginOffset": 487,
+              "endOffset": 492,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.69460166,
+            "id": 0,
+            "beginOffset": 3,
+            "endOffset": 7,
+            "text": "both",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.91701955,
+            "id": 3,
+            "beginOffset": 254,
+            "endOffset": 259,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9971794,
+            "id": 4,
+            "beginOffset": 285,
+            "endOffset": 289,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "79331aa6-d804-4e51-bdc0-c945f3547c04"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "79331aa6-d804-4e51-bdc0-c945f3547c04"
+          ],
+          "Content-Length": [
+            "6707"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6707",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:17 GMT",
+          "x-amzn-RequestId": "79331aa6-d804-4e51-bdc0-c945f3547c04"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 853,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98837423,
+          "beginOffset": 35,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96830785
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.6320841
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.5810796
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.5211368
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.4926549
+            },
+            {
+              "description": "Chronic diastolic (congestive) heart failure",
+              "code": "I50.32",
+              "score": 0.49050966
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9985574,
+          "beginOffset": 50,
+          "endOffset": 62,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9732905
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7553364
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.74880356
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.73924255
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.6713752
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.65393513
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "dyslipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9983014,
+          "beginOffset": 64,
+          "endOffset": 76,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97468626
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hyperlipidemia, unspecified",
+              "code": "E78.5",
+              "score": 0.58630836
+            },
+            {
+              "description": "Other hyperlipidemia",
+              "code": "E78.49",
+              "score": 0.32487074
+            },
+            {
+              "description": "Mixed hyperlipidemia",
+              "code": "E78.2",
+              "score": 0.28064454
+            },
+            {
+              "description": "Pure hyperglyceridemia",
+              "code": "E78.1",
+              "score": 0.26581812
+            },
+            {
+              "description": "Lipoprotein deficiency",
+              "code": "E78.6",
+              "score": 0.23670654
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9901451,
+          "beginOffset": 78,
+          "endOffset": 95,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684056
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7945361
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.75209916
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7092299
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.67186975
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.63999814
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "hemianopic stupor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60401726,
+          "beginOffset": 260,
+          "endOffset": 277,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6228653
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stupor",
+              "code": "R40.1",
+              "score": 0.23595771
+            },
+            {
+              "description": "Somnolence, stupor and coma",
+              "code": "R40",
+              "score": 0.18703216
+            },
+            {
+              "description": "Homonymous bilateral field defects, right side",
+              "code": "H53.461",
+              "score": 0.14994332
+            },
+            {
+              "description": "Other recurrent depressive disorders",
+              "code": "F33.8",
+              "score": 0.14907521
+            },
+            {
+              "description": "Late syphilitic oculopathy",
+              "code": "A52.71",
+              "score": 0.14866687
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cf273963-4137-4bfa-a43d-3d7ccb28511e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cf273963-4137-4bfa-a43d-3d7ccb28511e"
+          ],
+          "Content-Length": [
+            "3874"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3874",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:18 GMT",
+          "x-amzn-RequestId": "cf273963-4137-4bfa-a43d-3d7ccb28511e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 399,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nifedipine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9978104,
+          "beginOffset": 150,
+          "endOffset": 160,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Nifedipine",
+              "code": "7417",
+              "score": 0.9838306
+            },
+            {
+              "description": "Osmotic 24 HR Nifedipine 60 MG Extended Release Oral Tablet",
+              "code": "1812013",
+              "score": 0.8063975
+            },
+            {
+              "description": "Osmotic 24 HR Nifedipine 30 MG Extended Release Oral Tablet",
+              "code": "1812011",
+              "score": 0.791681
+            },
+            {
+              "description": "Osmotic 24 HR Nifedipine 90 MG Extended Release Oral Tablet",
+              "code": "1812015",
+              "score": 0.7647451
+            },
+            {
+              "description": "Nifedipine 20 MG Oral Capsule",
+              "code": "198033",
+              "score": 0.6992131
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5fcbee54-d762-4c1f-a58b-d28a825e0742"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5fcbee54-d762-4c1f-a58b-d28a825e0742"
+          ],
+          "Content-Length": [
+            "746"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "746",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:17 GMT",
+          "x-amzn-RequestId": "5fcbee54-d762-4c1f-a58b-d28a825e0742"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:19 PM"
+}

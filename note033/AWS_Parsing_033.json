@@ -1,0 +1,950 @@
+{
+  "note": "The patient is referred to the orthopaedic surgeon. The orthopaedic surgeon will carefully diagnose the diagnosis which is a combination of patella dislocation and degenerative changes in both hips. The surgical procedure will be divided into an emergency intervention and a planned follow-up. Discussion:  The patient who did not have a history of hip fracture prior to a previous hip replacement procedure due to a complete rupture of the calcified synovium within 10 weeks of the previous hip fracture will develop anterior compartment syndrome in the second attempt [1].",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 961,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 140,
+          "endOffset": 147,
+          "score": 0.76477283,
+          "text": "patella",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 140,
+          "endOffset": 159,
+          "score": 0.95333487,
+          "text": "patella dislocation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95901316
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9169379,
+              "relationshipScore": 0.96490157,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 188,
+              "endOffset": 192,
+              "text": "both",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9945416,
+              "relationshipScore": 0.74307483,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 193,
+              "endOffset": 197,
+              "text": "hips",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 164,
+          "endOffset": 184,
+          "score": 0.965971,
+          "text": "degenerative changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.892837
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.76477283,
+              "relationshipScore": 0.9768897,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 140,
+              "endOffset": 147,
+              "text": "patella",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9169379,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 188,
+              "endOffset": 192,
+              "text": "both",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9945416,
+              "relationshipScore": 0.9999938,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 193,
+              "endOffset": 197,
+              "text": "hips",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 193,
+          "endOffset": 197,
+          "score": 0.9945416,
+          "text": "hips",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 203,
+          "endOffset": 221,
+          "score": 0.4958578,
+          "text": "surgical procedure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 349,
+          "endOffset": 352,
+          "score": 0.98146534,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 349,
+          "endOffset": 361,
+          "score": 0.915145,
+          "text": "hip fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9654507
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6526137
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 362,
+          "endOffset": 367,
+          "score": 0.9999695,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9201621,
+              "relationshipScore": 0.69210476,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 382,
+              "endOffset": 397,
+              "text": "hip replacement",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 362,
+          "endOffset": 367,
+          "score": 0.9999695,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.915145,
+              "relationshipScore": 0.6961568,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 349,
+              "endOffset": 361,
+              "text": "hip fracture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9654507
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.6526137
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 382,
+          "endOffset": 385,
+          "score": 0.9643943,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 382,
+          "endOffset": 397,
+          "score": 0.9201621,
+          "text": "hip replacement",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 417,
+          "endOffset": 433,
+          "score": 0.60264933,
+          "text": "complete rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8213218
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 441,
+          "endOffset": 459,
+          "score": 0.5116717,
+          "text": "calcified synovium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8027429
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9741201,
+              "relationshipScore": 0.88793474,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 492,
+              "endOffset": 495,
+              "text": "hip",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 467,
+          "endOffset": 475,
+          "score": 0.6670213,
+          "text": "10 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.5116717,
+              "relationshipScore": 0.959226,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 441,
+              "endOffset": 459,
+              "text": "calcified synovium",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8027429
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 467,
+          "endOffset": 475,
+          "score": 0.6670213,
+          "text": "10 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.796087,
+              "relationshipScore": 0.71590286,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 492,
+              "endOffset": 504,
+              "text": "hip fracture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9746712
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 467,
+          "endOffset": 475,
+          "score": 0.6670213,
+          "text": "10 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.60264933,
+              "relationshipScore": 0.7209428,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 417,
+              "endOffset": 433,
+              "text": "complete rupture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8213218
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 492,
+          "endOffset": 495,
+          "score": 0.9741201,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 492,
+          "endOffset": 504,
+          "score": 0.796087,
+          "text": "hip fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9746712
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 527,
+          "endOffset": 538,
+          "score": 0.52071816,
+          "text": "compartment",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 527,
+          "endOffset": 547,
+          "score": 0.60316885,
+          "text": "compartment syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94302654
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.94514245,
+              "relationshipScore": 0.99987066,
+              "relationshipType": "DIRECTION",
+              "id": 6,
+              "beginOffset": 518,
+              "endOffset": 526,
+              "text": "anterior",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9169379,
+            "id": 1,
+            "beginOffset": 188,
+            "endOffset": 192,
+            "text": "both",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.94514245,
+            "id": 6,
+            "beginOffset": 518,
+            "endOffset": 526,
+            "text": "anterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "529259c6-9665-49c7-b92d-083f2772c3cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "529259c6-9665-49c7-b92d-083f2772c3cb"
+          ],
+          "Content-Length": [
+            "6875"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6875",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:54 GMT",
+          "x-amzn-RequestId": "529259c6-9665-49c7-b92d-083f2772c3cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1091,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "patella dislocation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95333487,
+          "beginOffset": 140,
+          "endOffset": 159,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9169379,
+              "relationshipScore": 0.96490157,
+              "id": 3,
+              "beginOffset": 188,
+              "endOffset": 192,
+              "text": "both",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9945416,
+              "relationshipScore": 0.74307483,
+              "id": 4,
+              "beginOffset": 193,
+              "endOffset": 197,
+              "text": "hips",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95901316
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified dislocation of left patella",
+              "code": "S83.005",
+              "score": 0.46054325
+            },
+            {
+              "description": "Unspecified dislocation of right knee",
+              "code": "S83.104",
+              "score": 0.45671368
+            },
+            {
+              "description": "Unspecified dislocation of left hip",
+              "code": "S73.005",
+              "score": 0.35710257
+            },
+            {
+              "description": "Unspecified fracture of right patella",
+              "code": "S82.001",
+              "score": 0.3329882
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.33155605
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "degenerative changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9659709,
+          "beginOffset": 164,
+          "endOffset": 184,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.76477295,
+              "relationshipScore": 0.9768897,
+              "id": 1,
+              "beginOffset": 140,
+              "endOffset": 147,
+              "text": "patella",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9169379,
+              "relationshipScore": 0.99999964,
+              "id": 3,
+              "beginOffset": 188,
+              "endOffset": 192,
+              "text": "both",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9945416,
+              "relationshipScore": 0.9999938,
+              "id": 4,
+              "beginOffset": 193,
+              "endOffset": 197,
+              "text": "hips",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.892837
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bilateral primary osteoarthritis of knee",
+              "code": "M17.0",
+              "score": 0.61715156
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, right knee",
+              "code": "M17.11",
+              "score": 0.6136864
+            },
+            {
+              "description": "Primary osteoarthritis, left ankle and foot",
+              "code": "M19.072",
+              "score": 0.57450604
+            },
+            {
+              "description": "Other intervertebral disc degeneration, lumbar region",
+              "code": "M51.36",
+              "score": 0.5494959
+            },
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.5466503
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "hip fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.915145,
+          "beginOffset": 349,
+          "endOffset": 361,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9654507
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.65261376
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of unspecified part of neck of unspecified femur",
+              "code": "S72.009",
+              "score": 0.5499308
+            },
+            {
+              "description": "Fracture of unspecified part of neck of right femur",
+              "code": "S72.001",
+              "score": 0.47887388
+            },
+            {
+              "description": "Fracture of unspecified part of neck of left femur",
+              "code": "S72.002",
+              "score": 0.43941808
+            },
+            {
+              "description": "Osteophyte, right hip",
+              "code": "M25.751",
+              "score": 0.28218716
+            },
+            {
+              "description": "Pain in hip",
+              "code": "M25.55",
+              "score": 0.2774873
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "complete rupture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6026494,
+          "beginOffset": 417,
+          "endOffset": 433,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8213218
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Complete rotator cuff tear or rupture of right shoulder, not specified as traumatic",
+              "code": "M75.121",
+              "score": 0.42038307
+            },
+            {
+              "description": "Complete or unspecified spontaneous abortion without complication",
+              "code": "O03.9",
+              "score": 0.41025504
+            },
+            {
+              "description": "Atrioventricular block, complete",
+              "code": "I44.2",
+              "score": 0.40346938
+            },
+            {
+              "description": "Traumatic rupture of unspecified ear drum",
+              "code": "S09.20",
+              "score": 0.39821282
+            },
+            {
+              "description": "Traumatic rupture of lumbar intervertebral disc",
+              "code": "S33.0",
+              "score": 0.3663034
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "calcified synovium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5116719,
+          "beginOffset": 441,
+          "endOffset": 459,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9741201,
+              "relationshipScore": 0.88793474,
+              "id": 11,
+              "beginOffset": 492,
+              "endOffset": 495,
+              "text": "hip",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8027429
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of synovium and tendon, unspecified site",
+              "code": "M67.80",
+              "score": 0.31273693
+            },
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.2707216
+            },
+            {
+              "description": "Atherosclerosis of other arteries",
+              "code": "I70.8",
+              "score": 0.24156708
+            },
+            {
+              "description": "Coronary atherosclerosis due to calcified coronary lesion",
+              "code": "I25.84",
+              "score": 0.23656094
+            },
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.22386491
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "hip fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79608697,
+          "beginOffset": 492,
+          "endOffset": 504,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9746712
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of unspecified part of neck of unspecified femur",
+              "code": "S72.009",
+              "score": 0.37599292
+            },
+            {
+              "description": "Fracture of unspecified part of neck of right femur",
+              "code": "S72.001",
+              "score": 0.34445783
+            },
+            {
+              "description": "Fracture of unspecified part of neck of left femur",
+              "code": "S72.002",
+              "score": 0.31664324
+            },
+            {
+              "description": "Osteophyte, right hip",
+              "code": "M25.751",
+              "score": 0.18681827
+            },
+            {
+              "description": "Osteophyte, left hip",
+              "code": "M25.752",
+              "score": 0.17141254
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "compartment syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60316885,
+          "beginOffset": 527,
+          "endOffset": 547,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.94514245,
+              "relationshipScore": 0.99987066,
+              "id": 12,
+              "beginOffset": 518,
+              "endOffset": 526,
+              "text": "anterior",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94302654
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.28356662
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.260558
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.23399666
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.22865207
+            },
+            {
+              "description": "Compartment syndrome, unspecified",
+              "code": "T79.A0",
+              "score": 0.22097889
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "23f4ed1b-d2ed-465f-9cc7-9d4d1a2e9734"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "23f4ed1b-d2ed-465f-9cc7-9d4d1a2e9734"
+          ],
+          "Content-Length": [
+            "6567"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6567",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:55 GMT",
+          "x-amzn-RequestId": "23f4ed1b-d2ed-465f-9cc7-9d4d1a2e9734"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4bb35ae8-dd8f-4b8a-91e7-8c48e39906bc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4bb35ae8-dd8f-4b8a-91e7-8c48e39906bc"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:54 GMT",
+          "x-amzn-RequestId": "4bb35ae8-dd8f-4b8a-91e7-8c48e39906bc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:55 PM"
+}

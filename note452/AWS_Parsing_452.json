@@ -1,0 +1,442 @@
+{
+  "note": ". He has been observed to increase his appetite and drink a lot of fluids. History shows patient has had multiple episodes of fever (mild, moderate, severe), sinus infection. Patient has had a negative smear test for West Nile. Patient is concerned about other family members being exposed to this virus. He has a long history of heart murmur at presentation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 378,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 39,
+          "endOffset": 47,
+          "score": 0.33395556,
+          "text": "appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 126,
+          "endOffset": 131,
+          "score": 0.9951023,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4759892
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.46443024,
+              "relationshipScore": 0.99808335,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 114,
+              "endOffset": 122,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 158,
+          "endOffset": 163,
+          "score": 0.87030345,
+          "text": "sinus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 158,
+          "endOffset": 173,
+          "score": 0.81429166,
+          "text": "sinus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.41178405
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58553344
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 202,
+          "endOffset": 212,
+          "score": 0.8874509,
+          "text": "smear test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9312033,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 193,
+              "endOffset": 201,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 217,
+          "endOffset": 226,
+          "score": 0.43512955,
+          "text": "West Nile",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 330,
+          "endOffset": 335,
+          "score": 0.9726716,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 330,
+          "endOffset": 342,
+          "score": 0.9091396,
+          "text": "heart murmur",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62804383
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.46443024,
+            "id": 3,
+            "beginOffset": 114,
+            "endOffset": 122,
+            "text": "episodes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b5a9276-83b7-4809-9c0f-26cf9bef33dd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b5a9276-83b7-4809-9c0f-26cf9bef33dd"
+          ],
+          "Content-Length": [
+            "2111"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2111",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:56 GMT",
+          "x-amzn-RequestId": "2b5a9276-83b7-4809-9c0f-26cf9bef33dd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 457,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "appetite",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3339555,
+          "beginOffset": 39,
+          "endOffset": 47,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.7011642
+            },
+            {
+              "description": "Adverse effect of appetite depressants",
+              "code": "T50.5X5",
+              "score": 0.45438334
+            },
+            {
+              "description": "Anorexia nervosa, restricting type",
+              "code": "F50.01",
+              "score": 0.4347579
+            },
+            {
+              "description": "Anorexia nervosa, unspecified",
+              "code": "F50.00",
+              "score": 0.4071056
+            },
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.381284
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9951023,
+          "beginOffset": 126,
+          "endOffset": 131,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.46443024,
+              "relationshipScore": 0.99808335,
+              "id": 1,
+              "beginOffset": 114,
+              "endOffset": 122,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47598922
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.63986206
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.38442776
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3454913
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.31503412
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.30442256
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sinus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8142916,
+          "beginOffset": 158,
+          "endOffset": 173,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.411784
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5855335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic sinusitis, unspecified",
+              "code": "J32.9",
+              "score": 0.5233555
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.36993417
+            },
+            {
+              "description": "Chronic maxillary sinusitis",
+              "code": "J32.0",
+              "score": 0.35268396
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.33375078
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.3136899
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "heart murmur",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9091396,
+          "beginOffset": 330,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6280437
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac murmur, unspecified",
+              "code": "R01.1",
+              "score": 0.63681054
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.43793866
+            },
+            {
+              "description": "Right heart failure, unspecified",
+              "code": "I50.810",
+              "score": 0.41536152
+            },
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.41192237
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.38447183
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6b67386-6876-4ecc-9ca4-f6a7f5b0ac30"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6b67386-6876-4ecc-9ca4-f6a7f5b0ac30"
+          ],
+          "Content-Length": [
+            "2887"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2887",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:57 GMT",
+          "x-amzn-RequestId": "e6b67386-6876-4ecc-9ca4-f6a7f5b0ac30"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 190,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0e0e8b89-34cc-4e40-8772-1f491197feec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0e0e8b89-34cc-4e40-8772-1f491197feec"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:56 GMT",
+          "x-amzn-RequestId": "0e0e8b89-34cc-4e40-8772-1f491197feec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:57 PM"
+}

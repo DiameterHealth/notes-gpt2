@@ -1,0 +1,540 @@
+{
+  "note": ". He states that on Monday he was fine, Tuesday he got febrile, which was his first complaint of cough for 3 days; Wednesday he had no symptoms at all, on friday he was sick. He took antibiotics on friday with no clear improvement (on friday he was sick, took antibiotics with no improvement, on friday felt better, on friday did not take any antibiotics).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 958,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 20,
+          "endOffset": 26,
+          "score": 0.9999856,
+          "text": "Monday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.83235043,
+              "relationshipScore": 0.6809421,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 55,
+              "endOffset": 62,
+              "text": "febrile",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6273444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 40,
+          "endOffset": 47,
+          "score": 0.99942255,
+          "text": "Tuesday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.83235043,
+              "relationshipScore": 0.7766077,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 55,
+              "endOffset": 62,
+              "text": "febrile",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6273444
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 55,
+          "endOffset": 62,
+          "score": 0.83235043,
+          "text": "febrile",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6273444
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 97,
+          "endOffset": 102,
+          "score": 0.9872541,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8572195
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.58626974,
+              "relationshipScore": 0.99999917,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 103,
+              "endOffset": 113,
+              "text": "for 3 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 115,
+          "endOffset": 124,
+          "score": 0.9999813,
+          "text": "Wednesday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9872541,
+              "relationshipScore": 0.61286724,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 97,
+              "endOffset": 102,
+              "text": "cough",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8572195
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 183,
+          "endOffset": 194,
+          "score": 0.778477,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 183,
+          "endOffset": 194,
+          "score": 0.8060609,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 198,
+          "endOffset": 204,
+          "score": 0.9998147,
+          "text": "friday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.778477,
+              "relationshipScore": 0.8338551,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 183,
+              "endOffset": 194,
+              "text": "antibiotics",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 198,
+          "endOffset": 204,
+          "score": 0.9998147,
+          "text": "friday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8060609,
+              "relationshipScore": 0.8338551,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 183,
+              "endOffset": 194,
+              "text": "antibiotics",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 213,
+          "endOffset": 230,
+          "score": 0.40263218,
+          "text": "clear improvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43868664
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5685269
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 260,
+          "endOffset": 271,
+          "score": 0.8293815,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 260,
+          "endOffset": 271,
+          "score": 0.8799599,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 343,
+          "endOffset": 354,
+          "score": 0.79658085,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.73941743
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 343,
+          "endOffset": 354,
+          "score": 0.84176177,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.58626974,
+            "id": 5,
+            "beginOffset": 103,
+            "endOffset": 113,
+            "text": "for 3 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fe7e6fb9-94bc-488b-a6b7-74d302c9989d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fe7e6fb9-94bc-488b-a6b7-74d302c9989d"
+          ],
+          "Content-Length": [
+            "4171"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4171",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:36 GMT",
+          "x-amzn-RequestId": "fe7e6fb9-94bc-488b-a6b7-74d302c9989d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 424,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "febrile",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83235043,
+          "beginOffset": 55,
+          "endOffset": 62,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.62734437
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6809558
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.5576554
+            },
+            {
+              "description": "Complex febrile convulsions",
+              "code": "R56.01",
+              "score": 0.46609676
+            },
+            {
+              "description": "Febrile convulsions",
+              "code": "R56.0",
+              "score": 0.41302076
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.39921284
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9872541,
+          "beginOffset": 97,
+          "endOffset": 102,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5862695,
+              "relationshipScore": 0.99999917,
+              "id": 2,
+              "beginOffset": 103,
+              "endOffset": 113,
+              "text": "for 3 days",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.85721946
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8243538
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6016303
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.5374663
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.52500945
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5002763
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "clear improvement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40263218,
+          "beginOffset": 213,
+          "endOffset": 230,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43868655
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5685269
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.8179534
+            },
+            {
+              "description": "Postnasal drip",
+              "code": "R09.82",
+              "score": 0.74785376
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.738166
+            },
+            {
+              "description": "Malignant neoplasm of unspecified kidney, except renal pelvis",
+              "code": "C64.9",
+              "score": 0.6818267
+            },
+            {
+              "description": "Malignant neoplasm of kidney, except renal pelvis",
+              "code": "C64",
+              "score": 0.61273605
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "203e97c6-ce2f-492c-9c31-09c86131d248"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "203e97c6-ce2f-492c-9c31-09c86131d248"
+          ],
+          "Content-Length": [
+            "2232"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2232",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:37 GMT",
+          "x-amzn-RequestId": "203e97c6-ce2f-492c-9c31-09c86131d248"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 265,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "96402fe7-9f8c-4841-84d2-dcd5afb61bdb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "96402fe7-9f8c-4841-84d2-dcd5afb61bdb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:37 GMT",
+          "x-amzn-RequestId": "96402fe7-9f8c-4841-84d2-dcd5afb61bdb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:37 PM"
+}

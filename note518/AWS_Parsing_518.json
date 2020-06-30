@@ -1,0 +1,520 @@
+{
+  "note": "lasting for the last 5 days. The patient\u0027s wife claims to hear faint voices in her sleep that sometimes call, \"Lunch!\" The patient has been under care for 2 months with a history of an irregular heart rhythm with a prior MI in the past. The man is aware of having had past MI. The patient has had multiple hospitalizations for his \"seizures\" and was admitted two weeks ago to a psychiatric unit.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 627,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 63,
+          "endOffset": 75,
+          "score": 0.41148123,
+          "text": "faint voices",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7946796
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 185,
+          "endOffset": 207,
+          "score": 0.72352165,
+          "text": "irregular heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.45457157
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 195,
+          "endOffset": 200,
+          "score": 0.7424215,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 215,
+          "endOffset": 220,
+          "score": 0.9999963,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.979451,
+              "relationshipScore": 0.98228914,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 221,
+              "endOffset": 223,
+              "text": "MI",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.91512305
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 221,
+          "endOffset": 223,
+          "score": 0.979451,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91512305
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 224,
+          "endOffset": 235,
+          "score": 0.9999465,
+          "text": "in the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.979451,
+              "relationshipScore": 0.9836436,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 221,
+              "endOffset": 223,
+              "text": "MI",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.91512305
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 224,
+          "endOffset": 235,
+          "score": 0.9999465,
+          "text": "in the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.72352165,
+              "relationshipScore": 0.55634195,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 185,
+              "endOffset": 207,
+              "text": "irregular heart rhythm",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.45457157
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 273,
+          "endOffset": 276,
+          "score": 0.9681673,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87936056
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 332,
+          "endOffset": 340,
+          "score": 0.99126434,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79451865
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.37452045,
+            "id": 1,
+            "beginOffset": 16,
+            "endOffset": 27,
+            "text": "last 5 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f48a8b9e-5fb5-4c17-b446-476043f0d0b5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f48a8b9e-5fb5-4c17-b446-476043f0d0b5"
+          ],
+          "Content-Length": [
+            "2670"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2670",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:09 GMT",
+          "x-amzn-RequestId": "f48a8b9e-5fb5-4c17-b446-476043f0d0b5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 594,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "faint voices",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4114811,
+          "beginOffset": 63,
+          "endOffset": 75,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7946796
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.70303214
+            },
+            {
+              "description": "Other speech disturbances",
+              "code": "R47.89",
+              "score": 0.6843499
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.6050085
+            },
+            {
+              "description": "Dysphonia",
+              "code": "R49.0",
+              "score": 0.5150752
+            },
+            {
+              "description": "Other voice and resonance disorders",
+              "code": "R49.8",
+              "score": 0.5087737
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "irregular heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72352165,
+          "beginOffset": 185,
+          "endOffset": 207,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.45457155
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.7105471
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.51754385
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.46709335
+            },
+            {
+              "description": "Re-entry ventricular arrhythmia",
+              "code": "I47.0",
+              "score": 0.41118333
+            },
+            {
+              "description": "Irregular menstruation, unspecified",
+              "code": "N92.6",
+              "score": 0.4044633
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.979451,
+          "beginOffset": 221,
+          "endOffset": 223,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91512305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.85834956
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7277244
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7070349
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.69471776
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.67713726
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9681673,
+          "beginOffset": 273,
+          "endOffset": 276,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87936056
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8412853
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.72674346
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.69881546
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6982262
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.69279796
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9912642,
+          "beginOffset": 332,
+          "endOffset": 340,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79451865
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.8582578
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.7841059
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.7639007
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.72065926
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.6543464
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4dd0b7be-2442-45a3-b461-d076ccb73d0f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4dd0b7be-2442-45a3-b461-d076ccb73d0f"
+          ],
+          "Content-Length": [
+            "3724"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3724",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:09 GMT",
+          "x-amzn-RequestId": "4dd0b7be-2442-45a3-b461-d076ccb73d0f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 228,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9641271b-ece4-41ef-834c-872056ef484a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9641271b-ece4-41ef-834c-872056ef484a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:09 GMT",
+          "x-amzn-RequestId": "9641271b-ece4-41ef-834c-872056ef484a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:09 PM"
+}

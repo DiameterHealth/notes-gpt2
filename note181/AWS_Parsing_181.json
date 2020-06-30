@@ -1,0 +1,609 @@
+{
+  "note": "annually. Pulmonology Management:  The patient is on bronchodilator medication and is at risk for future episodes of pulmonary exacerbation. Management of Chronic Intracranial Haemorrhage  Intracranial haemorrhage is the most frequent and most serious complication of stroke. Intracranial haemorrhaging can occur when blood is drawn in an out-of-hospital setting to prevent or reduce bleeding. In a hospital or inpatient setting, clotting factors in the blood may protect against further blood loss.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 455,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 53,
+          "endOffset": 67,
+          "score": 0.2977622,
+          "text": "bronchodilator",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 53,
+          "endOffset": 78,
+          "score": 0.82992595,
+          "text": "bronchodilator medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 117,
+          "endOffset": 139,
+          "score": 0.9126577,
+          "text": "pulmonary exacerbation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77937764
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 163,
+          "endOffset": 187,
+          "score": 0.98619175,
+          "text": "Intracranial Haemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9142034
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.96745133,
+              "relationshipScore": 0.99997675,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 189,
+          "endOffset": 213,
+          "score": 0.9405042,
+          "text": "Intracranial haemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86821747
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.96745133,
+              "relationshipScore": 0.6823625,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 268,
+          "endOffset": 274,
+          "score": 0.98519796,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.945836
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 276,
+          "endOffset": 302,
+          "score": 0.8522301,
+          "text": "Intracranial haemorrhaging",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8483417
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 384,
+          "endOffset": 392,
+          "score": 0.9844619,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.563801
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 488,
+          "endOffset": 498,
+          "score": 0.6301865,
+          "text": "blood loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.41771474
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.96745133,
+            "id": 2,
+            "beginOffset": 155,
+            "endOffset": 162,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9e09dd20-fa12-4d35-8a05-9b065bb6f054"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9e09dd20-fa12-4d35-8a05-9b065bb6f054"
+          ],
+          "Content-Length": [
+            "2457"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2457",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:48 GMT",
+          "x-amzn-RequestId": "9e09dd20-fa12-4d35-8a05-9b065bb6f054"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 623,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pulmonary exacerbation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9126577,
+          "beginOffset": 117,
+          "endOffset": 139,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7793777
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.4081983
+            },
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.3915898
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.31895694
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.304091
+            },
+            {
+              "description": "Solitary pulmonary nodule",
+              "code": "R91.1",
+              "score": 0.28798953
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Intracranial Haemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98619175,
+          "beginOffset": 163,
+          "endOffset": 187,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.96745133,
+              "relationshipScore": 0.99997675,
+              "id": 1,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9142034
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nontraumatic intracranial hemorrhage, unspecified",
+              "code": "I62.9",
+              "score": 0.409616
+            },
+            {
+              "description": "Unspecified intracranial injury",
+              "code": "S06.9X",
+              "score": 0.3863197
+            },
+            {
+              "description": "Unspecified focal traumatic brain injury with loss of consciousness of unspecified duration",
+              "code": "S06.309",
+              "score": 0.37088904
+            },
+            {
+              "description": "Abnormal brain scan",
+              "code": "R94.02",
+              "score": 0.36822006
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.31405383
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Intracranial haemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9405042,
+          "beginOffset": 189,
+          "endOffset": 213,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.96745133,
+              "relationshipScore": 0.6823625,
+              "id": 1,
+              "beginOffset": 155,
+              "endOffset": 162,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8682174
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nontraumatic intracranial hemorrhage, unspecified",
+              "code": "I62.9",
+              "score": 0.44296467
+            },
+            {
+              "description": "Unspecified intracranial injury",
+              "code": "S06.9X",
+              "score": 0.40277484
+            },
+            {
+              "description": "Unspecified focal traumatic brain injury with loss of consciousness of unspecified duration",
+              "code": "S06.309",
+              "score": 0.39627045
+            },
+            {
+              "description": "Abnormal brain scan",
+              "code": "R94.02",
+              "score": 0.3897354
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.34374064
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98519796,
+          "beginOffset": 268,
+          "endOffset": 274,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.945836
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.65537053
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.6007356
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.46728122
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.45095387
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.45043004
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Intracranial haemorrhaging",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8522301,
+          "beginOffset": 276,
+          "endOffset": 302,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8483417
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nontraumatic intracranial hemorrhage, unspecified",
+              "code": "I62.9",
+              "score": 0.5046782
+            },
+            {
+              "description": "Abnormal brain scan",
+              "code": "R94.02",
+              "score": 0.47413507
+            },
+            {
+              "description": "Unspecified focal traumatic brain injury with loss of consciousness of unspecified duration",
+              "code": "S06.309",
+              "score": 0.47278473
+            },
+            {
+              "description": "Unspecified intracranial injury",
+              "code": "S06.9X",
+              "score": 0.46573508
+            },
+            {
+              "description": "Unspecified focal traumatic brain injury",
+              "code": "S06.30",
+              "score": 0.3980645
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9844619,
+          "beginOffset": 384,
+          "endOffset": 392,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56380093
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.725513
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.61115825
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.5890818
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.5842997
+            },
+            {
+              "description": "Coagulation defect, unspecified",
+              "code": "D68.9",
+              "score": 0.5799197
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "blood loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6301865,
+          "beginOffset": 488,
+          "endOffset": 498,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.41771472
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.69205195
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.65606517
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.6313706
+            },
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.5929481
+            },
+            {
+              "description": "Postprocedural hemorrhage of a digestive system organ or structure following a digestive system procedure",
+              "code": "K91.840",
+              "score": 0.5727417
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "643b7151-f59e-4fc1-8f96-30bbda27a96e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "643b7151-f59e-4fc1-8f96-30bbda27a96e"
+          ],
+          "Content-Length": [
+            "5872"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5872",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:48 GMT",
+          "x-amzn-RequestId": "643b7151-f59e-4fc1-8f96-30bbda27a96e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 240,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cfaeb285-e252-465e-a82d-9ee14af881c8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cfaeb285-e252-465e-a82d-9ee14af881c8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:48 GMT",
+          "x-amzn-RequestId": "cfaeb285-e252-465e-a82d-9ee14af881c8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:49 PM"
+}

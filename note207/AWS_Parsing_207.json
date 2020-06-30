@@ -1,0 +1,941 @@
+{
+  "note": "She did have a second transient stroke in 2013 when she was having her third child. She received an MRI with a CT angiogram in early 2013 for a subdural cyst and is now back to normal. Presentation: Stroke of the inferior occipital white matter with a T12 lesion at a V3.0 to V5.5 location (Figure 1). No other neurological deficit.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 741,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "score": 0.99709654,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.877669
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.2938853,
+              "relationshipScore": 1.0,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 22,
+              "endOffset": 31,
+              "text": "transient",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 42,
+          "endOffset": 46,
+          "score": 0.9988035,
+          "text": "2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 42,
+          "endOffset": 46,
+          "score": 0.99884963,
+          "text": "2013",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99709654,
+              "relationshipScore": 0.97525996,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 32,
+              "endOffset": 38,
+              "text": "stroke",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.877669
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 100,
+          "endOffset": 103,
+          "score": 0.9829358,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.70476604,
+              "relationshipScore": 0.8802503,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 199,
+              "endOffset": 270,
+              "text": "Stroke of the inferior occipital white matter with a T12 lesion at a V3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 111,
+          "endOffset": 123,
+          "score": 0.92589545,
+          "text": "CT angiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6922377,
+              "relationshipScore": 0.99999833,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 144,
+              "endOffset": 157,
+              "text": "subdural cyst",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4815814,
+              "relationshipScore": 0.99999833,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 177,
+              "endOffset": 183,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.70476604,
+              "relationshipScore": 0.999997,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 199,
+              "endOffset": 270,
+              "text": "Stroke of the inferior occipital white matter with a T12 lesion at a V3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 127,
+          "endOffset": 137,
+          "score": 0.8856885,
+          "text": "early 2013",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9829358,
+              "relationshipScore": 0.59862626,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 100,
+              "endOffset": 103,
+              "text": "MRI",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 127,
+          "endOffset": 137,
+          "score": 0.8856885,
+          "text": "early 2013",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9592092,
+              "relationshipScore": 0.6866813,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 144,
+              "endOffset": 157,
+              "text": "subdural cyst",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.81335104
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 127,
+          "endOffset": 137,
+          "score": 0.8856885,
+          "text": "early 2013",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.92589545,
+              "relationshipScore": 0.9392581,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 111,
+              "endOffset": 123,
+              "text": "CT angiogram",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 133,
+          "endOffset": 137,
+          "score": 0.99780685,
+          "text": "2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 144,
+          "endOffset": 157,
+          "score": 0.9592092,
+          "text": "subdural cyst",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.81335104
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 169,
+          "endOffset": 183,
+          "score": 0.6110406,
+          "text": "back to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6309636
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 199,
+          "endOffset": 205,
+          "score": 0.9672094,
+          "text": "Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85160005
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9741828,
+              "relationshipScore": 0.9998882,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 213,
+              "endOffset": 221,
+              "text": "inferior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8826586,
+              "relationshipScore": 0.99674666,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 222,
+              "endOffset": 244,
+              "text": "occipital white matter",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.53327686,
+              "relationshipScore": 0.6300165,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 268,
+              "endOffset": 270,
+              "text": "V3",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 222,
+          "endOffset": 244,
+          "score": 0.8826586,
+          "text": "occipital white matter",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 252,
+          "endOffset": 255,
+          "score": 0.91914994,
+          "text": "T12",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 256,
+          "endOffset": 262,
+          "score": 0.9313767,
+          "text": "lesion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7029524
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9741828,
+              "relationshipScore": 0.9964587,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 213,
+              "endOffset": 221,
+              "text": "inferior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8826586,
+              "relationshipScore": 0.9831134,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 222,
+              "endOffset": 244,
+              "text": "occipital white matter",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.91914994,
+              "relationshipScore": 0.99941456,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 252,
+              "endOffset": 255,
+              "text": "T12",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.53327686,
+              "relationshipScore": 0.99813277,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 268,
+              "endOffset": 270,
+              "text": "V3",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 268,
+          "endOffset": 270,
+          "score": 0.53327686,
+          "text": "V3",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 311,
+          "endOffset": 331,
+          "score": 0.9078859,
+          "text": "neurological deficit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.55971885
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89079183
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.2938853,
+            "id": 4,
+            "beginOffset": 22,
+            "endOffset": 31,
+            "text": "transient",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9741828,
+            "id": 0,
+            "beginOffset": 213,
+            "endOffset": 221,
+            "text": "inferior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.79090214,
+            "id": 18,
+            "beginOffset": 271,
+            "endOffset": 278,
+            "text": "0 to V5",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.5233287,
+            "id": 19,
+            "beginOffset": 302,
+            "endOffset": 331,
+            "text": "No other neurological deficit",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "014c6d6f-c19c-4d69-8c62-85cdca4ea02c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "014c6d6f-c19c-4d69-8c62-85cdca4ea02c"
+          ],
+          "Content-Length": [
+            "7681"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7681",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:32 GMT",
+          "x-amzn-RequestId": "014c6d6f-c19c-4d69-8c62-85cdca4ea02c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 782,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99709654,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.29388514,
+              "relationshipScore": 1.0,
+              "id": 0,
+              "beginOffset": 22,
+              "endOffset": 31,
+              "text": "transient",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.877669
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7688056
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7189494
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.6444057
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.56423813
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.559408
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "subdural cyst",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9592092,
+          "beginOffset": 144,
+          "endOffset": 157,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.81335104
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Traumatic subdural hemorrhage with loss of consciousness of unspecified duration",
+              "code": "S06.5X9",
+              "score": 0.49174273
+            },
+            {
+              "description": "Traumatic subdural hemorrhage without loss of consciousness",
+              "code": "S06.5X0",
+              "score": 0.3366345
+            },
+            {
+              "description": "Cyst of kidney, acquired",
+              "code": "N28.1",
+              "score": 0.27584827
+            },
+            {
+              "description": "Unspecified ovarian cyst, right side",
+              "code": "N83.201",
+              "score": 0.26228976
+            },
+            {
+              "description": "Pilonidal cyst without abscess",
+              "code": "L05.91",
+              "score": 0.25955918
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "back to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.61104083,
+          "beginOffset": 169,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6309636
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified injury of lower back",
+              "code": "S39.92",
+              "score": 0.38456047
+            },
+            {
+              "description": "Muscle spasm of back",
+              "code": "M62.830",
+              "score": 0.3778525
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.3587487
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.34883332
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.30139115
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9672094,
+          "beginOffset": 199,
+          "endOffset": 205,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9741828,
+              "relationshipScore": 0.9998882,
+              "id": 5,
+              "beginOffset": 213,
+              "endOffset": 221,
+              "text": "inferior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88265866,
+              "relationshipScore": 0.99674666,
+              "id": 6,
+              "beginOffset": 222,
+              "endOffset": 244,
+              "text": "occipital white matter",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.53327686,
+              "relationshipScore": 0.6300165,
+              "id": 9,
+              "beginOffset": 268,
+              "endOffset": 270,
+              "text": "V3",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85160005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.650359
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6122024
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.48210734
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.4564153
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.45419207
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "lesion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9313767,
+          "beginOffset": 256,
+          "endOffset": 262,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9741828,
+              "relationshipScore": 0.9964587,
+              "id": 5,
+              "beginOffset": 213,
+              "endOffset": 221,
+              "text": "inferior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.88265866,
+              "relationshipScore": 0.9831134,
+              "id": 6,
+              "beginOffset": 222,
+              "endOffset": 244,
+              "text": "occipital white matter",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9191498,
+              "relationshipScore": 0.99941456,
+              "id": 7,
+              "beginOffset": 252,
+              "endOffset": 255,
+              "text": "T12",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.53327686,
+              "relationshipScore": 0.99813277,
+              "id": 9,
+              "beginOffset": 268,
+              "endOffset": 270,
+              "text": "V3",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7029524
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of brain, unspecified",
+              "code": "G93.9",
+              "score": 0.6358989
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6137222
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.6079813
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.5750739
+            },
+            {
+              "description": "Melanocytic nevi of trunk",
+              "code": "D22.5",
+              "score": 0.5392713
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "neurological deficit",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9078859,
+          "beginOffset": 311,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5597189
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89079183
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.85937196
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7387609
+            },
+            {
+              "description": "Other disorders of nervous system",
+              "code": "G98.8",
+              "score": 0.66106457
+            },
+            {
+              "description": "Other lack of coordination",
+              "code": "R27.8",
+              "score": 0.6419686
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5885128
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3d34d072-1cf6-403d-bb60-40c87e885985"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3d34d072-1cf6-403d-bb60-40c87e885985"
+          ],
+          "Content-Length": [
+            "6137"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6137",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:33 GMT",
+          "x-amzn-RequestId": "3d34d072-1cf6-403d-bb60-40c87e885985"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 192,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "97c84cf8-d418-45e6-b435-f16ff09e0b91"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "97c84cf8-d418-45e6-b435-f16ff09e0b91"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:32 GMT",
+          "x-amzn-RequestId": "97c84cf8-d418-45e6-b435-f16ff09e0b91"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:33 PM"
+}

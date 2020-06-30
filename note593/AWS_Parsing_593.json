@@ -1,0 +1,377 @@
+{
+  "note": ". He comes to us 2 days before his 26 th birthday and has never been to the emergency room before. We discuss taking acetylcysteine 3 times per day until he does urate and cough down blood (not shown on the chart, but is likely not needed to reach goal). This s not an ED case we are going to treat it as a respiratory infection that we know can be better brought under control by acetylcysteine and other medications.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 331,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 76,
+          "endOffset": 90,
+          "score": 0.9091574,
+          "text": "emergency room",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 117,
+          "endOffset": 131,
+          "score": 0.9934782,
+          "text": "acetylcysteine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.77200776,
+              "relationshipScore": 0.9999863,
+              "relationshipType": "FREQUENCY",
+              "id": 1,
+              "beginOffset": 132,
+              "endOffset": 147,
+              "text": "3 times per day",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 172,
+          "endOffset": 177,
+          "score": 0.77752787,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4837377
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 269,
+          "endOffset": 271,
+          "score": 0.9518362,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 307,
+          "endOffset": 328,
+          "score": 0.9022841,
+          "text": "respiratory infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91567594
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 381,
+          "endOffset": 395,
+          "score": 0.9856769,
+          "text": "acetylcysteine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2d0ac512-125b-4ce5-812c-21df41079489"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2d0ac512-125b-4ce5-812c-21df41079489"
+          ],
+          "Content-Length": [
+            "1314"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1314",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:16 GMT",
+          "x-amzn-RequestId": "2d0ac512-125b-4ce5-812c-21df41079489"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 400,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77752775,
+          "beginOffset": 172,
+          "endOffset": 177,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48373765
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8463937
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6719459
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.66282153
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.59654266
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.5820933
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "respiratory infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9022841,
+          "beginOffset": 307,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91567594
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.68141586
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.65230715
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.61829805
+            },
+            {
+              "description": "Respiratory syncytial virus as the cause of diseases classified elsewhere",
+              "code": "B97.4",
+              "score": 0.60676473
+            },
+            {
+              "description": "Acidosis",
+              "code": "E87.2",
+              "score": 0.60088813
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "321bec9e-0c37-41dd-b7c8-82026a4a574f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "321bec9e-0c37-41dd-b7c8-82026a4a574f"
+          ],
+          "Content-Length": [
+            "1416"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1416",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:17 GMT",
+          "x-amzn-RequestId": "321bec9e-0c37-41dd-b7c8-82026a4a574f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 435,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "acetylcysteine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9934782,
+          "beginOffset": 117,
+          "endOffset": 131,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.77200776,
+              "relationshipScore": 0.9999864,
+              "id": 1,
+              "beginOffset": 132,
+              "endOffset": 147,
+              "text": "3 times per day",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetylcysteine",
+              "code": "197",
+              "score": 0.9681733
+            },
+            {
+              "description": "Acetylcysteine 100 MG/ML Inhalant Solution",
+              "code": "307718",
+              "score": 0.77991265
+            },
+            {
+              "description": "Acetylcysteine 200 MG/ML Inhalant Solution",
+              "code": "307719",
+              "score": 0.76887935
+            },
+            {
+              "description": "30 ML Acetylcysteine 200 MG/ML Injection",
+              "code": "465377",
+              "score": 0.72171664
+            },
+            {
+              "description": "Acetylcysteine 600 MG Oral Capsule",
+              "code": "606971",
+              "score": 0.5156275
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "acetylcysteine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9856769,
+          "beginOffset": 381,
+          "endOffset": 395,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetylcysteine",
+              "code": "197",
+              "score": 0.9681733
+            },
+            {
+              "description": "Acetylcysteine 100 MG/ML Inhalant Solution",
+              "code": "307718",
+              "score": 0.77991265
+            },
+            {
+              "description": "Acetylcysteine 200 MG/ML Inhalant Solution",
+              "code": "307719",
+              "score": 0.76887935
+            },
+            {
+              "description": "30 ML Acetylcysteine 200 MG/ML Injection",
+              "code": "465377",
+              "score": 0.72171664
+            },
+            {
+              "description": "Acetylcysteine 600 MG Oral Capsule",
+              "code": "606971",
+              "score": 0.5156275
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "38da09ec-f824-42b8-8c47-73530fa5d744"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "38da09ec-f824-42b8-8c47-73530fa5d744"
+          ],
+          "Content-Length": [
+            "1533"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1533",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:16 GMT",
+          "x-amzn-RequestId": "38da09ec-f824-42b8-8c47-73530fa5d744"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:17 PM"
+}

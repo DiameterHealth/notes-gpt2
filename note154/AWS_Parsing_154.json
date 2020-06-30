@@ -1,0 +1,226 @@
+{
+  "note": ". It is not certain that this will lead to continued reduction in the number of days in the hospital. Treatment:  Patient was given oral rehydration solution. After 4 days she was discharged home. Outcomes (N \u003d 4): Outcome at 6 weeks was confirmed to be a reduction in the hospital stay from 24+3 days to 7+2 days (p \u003d 0.0009) although the improvement did not last.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 132,
+          "endOffset": 148,
+          "score": 0.6651973,
+          "text": "oral rehydration",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 137,
+          "endOffset": 148,
+          "score": 0.58023185,
+          "text": "rehydration",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.3288546,
+              "relationshipScore": 0.999998,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 0,
+              "beginOffset": 132,
+              "endOffset": 136,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9552362,
+              "relationshipScore": 0.99418926,
+              "relationshipType": "FORM",
+              "id": 2,
+              "beginOffset": 149,
+              "endOffset": 157,
+              "text": "solution",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.39142695,
+              "relationshipScore": 0.99976534,
+              "relationshipType": "DURATION",
+              "id": 3,
+              "beginOffset": 165,
+              "endOffset": 171,
+              "text": "4 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "52baddc6-727e-471e-94f6-4b4b57f918f5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "52baddc6-727e-471e-94f6-4b4b57f918f5"
+          ],
+          "Content-Length": [
+            "1025"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1025",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:07 GMT",
+          "x-amzn-RequestId": "52baddc6-727e-471e-94f6-4b4b57f918f5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 264,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "36349cd0-e723-490c-a760-8631baafbe9c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "36349cd0-e723-490c-a760-8631baafbe9c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:08 GMT",
+          "x-amzn-RequestId": "36349cd0-e723-490c-a760-8631baafbe9c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 411,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "rehydration",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5802319,
+          "beginOffset": 137,
+          "endOffset": 148,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.32885456,
+              "relationshipScore": 0.999998,
+              "id": 0,
+              "beginOffset": 132,
+              "endOffset": 136,
+              "text": "oral",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.9552362,
+              "relationshipScore": 0.9941894,
+              "id": 2,
+              "beginOffset": 149,
+              "endOffset": 157,
+              "text": "solution",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.3914267,
+              "relationshipScore": 0.99976534,
+              "id": 3,
+              "beginOffset": 165,
+              "endOffset": 171,
+              "text": "4 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "calcium chloride, dihydration",
+              "code": "221069",
+              "score": 0.014919617
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8273531c-b5e4-4852-b379-f53177bd3bfc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8273531c-b5e4-4852-b379-f53177bd3bfc"
+          ],
+          "Content-Length": [
+            "779"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "779",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:08 GMT",
+          "x-amzn-RequestId": "8273531c-b5e4-4852-b379-f53177bd3bfc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:08 PM"
+}

@@ -1,0 +1,381 @@
+{
+  "note": "Opiates and Benzodiazepines: Patient may only see the doctor/practitioner who prescribed them unless the patient is unable to reach someone, in which case the doctor may decide to prescribe inpatient rehab. (See: \"Dissociative Hallucinations and Inpatient Rehab,\" below)  Opiate Injection: Patient may receive an injection of opioid medication as needed; this is often combined with Injections of a narcotic other than methadone.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 340,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 7,
+          "score": 0.6805425,
+          "text": "Opiates",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 12,
+          "endOffset": 27,
+          "score": 0.9730997,
+          "text": "Benzodiazepines",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 190,
+          "endOffset": 205,
+          "score": 0.30130038,
+          "text": "inpatient rehab",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 214,
+          "endOffset": 241,
+          "score": 0.35618043,
+          "text": "Dissociative Hallucinations",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88039243
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 272,
+          "endOffset": 288,
+          "score": 0.9328224,
+          "text": "Opiate Injection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 313,
+          "endOffset": 343,
+          "score": 0.19959407,
+          "text": "injection of opioid medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 326,
+          "endOffset": 343,
+          "score": 0.57082814,
+          "text": "opioid medication",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.9195718,
+              "relationshipScore": 0.9999975,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 344,
+              "endOffset": 353,
+              "text": "as needed",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.40039816,
+              "relationshipScore": 0.95381314,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 383,
+              "endOffset": 393,
+              "text": "Injections",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 383,
+          "endOffset": 393,
+          "score": 0.5360662,
+          "text": "Injections",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 399,
+          "endOffset": 407,
+          "score": 0.34175757,
+          "text": "narcotic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 399,
+          "endOffset": 407,
+          "score": 0.6409162,
+          "text": "narcotic",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.40039816,
+              "relationshipScore": 0.99959105,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 383,
+              "endOffset": 393,
+              "text": "Injections",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 419,
+          "endOffset": 428,
+          "score": 0.9988526,
+          "text": "methadone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.40039816,
+              "relationshipScore": 0.9140706,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 383,
+              "endOffset": 393,
+              "text": "Injections",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3c4b310c-0cac-49d4-9829-2bca0ca09b79"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3c4b310c-0cac-49d4-9829-2bca0ca09b79"
+          ],
+          "Content-Length": [
+            "2797"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2797",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:33 GMT",
+          "x-amzn-RequestId": "3c4b310c-0cac-49d4-9829-2bca0ca09b79"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 355,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Dissociative Hallucinations",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35618043,
+          "beginOffset": 214,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8803923
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dissociative and conversion disorder, unspecified",
+              "code": "F44.9",
+              "score": 0.35189217
+            },
+            {
+              "description": "Dissociative fugue",
+              "code": "F44.1",
+              "score": 0.35162613
+            },
+            {
+              "description": "Dissociative stupor",
+              "code": "F44.2",
+              "score": 0.3250814
+            },
+            {
+              "description": "Dissociative amnesia",
+              "code": "F44.0",
+              "score": 0.30814755
+            },
+            {
+              "description": "Other specified conduction disorders",
+              "code": "I45.89",
+              "score": 0.302204
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fe2448ff-101d-41dd-88bc-83b0174e2cd8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fe2448ff-101d-41dd-88bc-83b0174e2cd8"
+          ],
+          "Content-Length": [
+            "736"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "736",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:33 GMT",
+          "x-amzn-RequestId": "fe2448ff-101d-41dd-88bc-83b0174e2cd8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 578,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "text": "methadone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9988526,
+          "beginOffset": 419,
+          "endOffset": 428,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.40039802,
+              "relationshipScore": 0.9140707,
+              "id": 4,
+              "beginOffset": 383,
+              "endOffset": 393,
+              "text": "Injections",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Methadone",
+              "code": "6813",
+              "score": 0.9499141
+            },
+            {
+              "description": "Methadone Hydrochloride 10 MG/ML Injectable Solution",
+              "code": "864714",
+              "score": 0.80585164
+            },
+            {
+              "description": "Methadone Hydrochloride 10 MG Oral Tablet",
+              "code": "864706",
+              "score": 0.5671119
+            },
+            {
+              "description": "Methadone Hydrochloride 5 MG Oral Tablet",
+              "code": "864718",
+              "score": 0.33571872
+            },
+            {
+              "description": "Methadone Hydrochloride 40 MG Tablet for Oral Suspension",
+              "code": "864978",
+              "score": 0.30901062
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b97b9975-93cd-42ae-bb5f-be955e2c8c7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b97b9975-93cd-42ae-bb5f-be955e2c8c7c"
+          ],
+          "Content-Length": [
+            "889"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "889",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:33 GMT",
+          "x-amzn-RequestId": "b97b9975-93cd-42ae-bb5f-be955e2c8c7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:34 PM"
+}

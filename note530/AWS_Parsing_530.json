@@ -1,0 +1,496 @@
+{
+  "note": ", and now with no new illness. No rash or other symptoms. I am going to wait until my rash returns and then see if there is a correlation! 2 out of 2 found this review helpful Soothing. On 4/23/17, 3 hours after taking Zyrtec, I experienced a rash that began 12 hours after ingestion. The rash started 3 hours ago and stopped 12 hours after.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 285,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 22,
+          "endOffset": 29,
+          "score": 0.7334251,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5669545
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8544466
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 34,
+          "endOffset": 38,
+          "score": 0.9881209,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.747567
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9778798
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 86,
+          "endOffset": 90,
+          "score": 0.9093022,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50440776
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 189,
+          "endOffset": 196,
+          "score": 0.9999845,
+          "text": "4/23/17",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 219,
+          "endOffset": 225,
+          "score": 0.9986784,
+          "text": "Zyrtec",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 243,
+          "endOffset": 247,
+          "score": 0.9975079,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68912226
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4954037
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 289,
+          "endOffset": 293,
+          "score": 0.9959259,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7363215
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "82e704f9-3a1f-4269-8042-54cd20b3e6e7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "82e704f9-3a1f-4269-8042-54cd20b3e6e7"
+          ],
+          "Content-Length": [
+            "1441"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "1441",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:27 GMT",
+          "x-amzn-RequestId": "82e704f9-3a1f-4269-8042-54cd20b3e6e7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 393,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73342496,
+          "beginOffset": 22,
+          "endOffset": 29,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5669543
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8544466
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.8731205
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.77886385
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.73235923
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.69859827
+            },
+            {
+              "description": "Malingerer [conscious simulation]",
+              "code": "Z76.5",
+              "score": 0.6640638
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9881209,
+          "beginOffset": 34,
+          "endOffset": 38,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.747567
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9778798
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.831969
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.5700094
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.56344223
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.51839197
+            },
+            {
+              "description": "Rubella without complication",
+              "code": "B06.9",
+              "score": 0.45461792
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9093022,
+          "beginOffset": 86,
+          "endOffset": 90,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5044077
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.7464149
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.5239023
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.51730853
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.51369137
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.43948296
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9975079,
+          "beginOffset": 243,
+          "endOffset": 247,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68912226
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49540377
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.7668571
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.47592562
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.4358964
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.40785334
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.3953124
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9959259,
+          "beginOffset": 289,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7363214
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.73581725
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.47434837
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.42814314
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.41501293
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.40651864
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "686ea3be-2771-47f0-ac78-7f60e0f5202d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "686ea3be-2771-47f0-ac78-7f60e0f5202d"
+          ],
+          "Content-Length": [
+            "3616"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3616",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:29 GMT",
+          "x-amzn-RequestId": "686ea3be-2771-47f0-ac78-7f60e0f5202d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 628,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Zyrtec",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.9986784,
+          "beginOffset": 219,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Zyrtec",
+              "code": "58930",
+              "score": 0.9388035
+            },
+            {
+              "description": "cetirizine hydrochloride 10 MG Oral Tablet [Zyrtec]",
+              "code": "1020026",
+              "score": 0.8326088
+            },
+            {
+              "description": "cetirizine hydrochloride 10 MG Oral Capsule [Zyrtec]",
+              "code": "1020023",
+              "score": 0.486505
+            },
+            {
+              "description": "Zyrtec-D",
+              "code": "353102",
+              "score": 0.37121415
+            },
+            {
+              "description": "12 HR cetirizine hydrochloride 5 MG / Pseudoephedrine Hydrochloride 120 MG Extended Release Oral Tablet [Zyrtec-D]",
+              "code": "1014583",
+              "score": 0.33901218
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "062e1a0a-77ea-43e2-b16b-f3b45a1cd416"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "062e1a0a-77ea-43e2-b16b-f3b45a1cd416"
+          ],
+          "Content-Length": [
+            "758"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "758",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:28 GMT",
+          "x-amzn-RequestId": "062e1a0a-77ea-43e2-b16b-f3b45a1cd416"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:29 PM"
+}

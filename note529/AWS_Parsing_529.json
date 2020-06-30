@@ -1,0 +1,178 @@
+{
+  "note": "We are given a written history/physical. BETWEEN DAN PEPINO (Hospitalist) and GISELA TAVARES (NURSE), the patient will be examined by a Nurse. The examination of the abdomen is performed by DAN PEPINO. TASK: The primary concern will be the fetal heart rate and the progress of the fetus.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 227,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 49,
+          "endOffset": 52,
+          "score": 0.7901129,
+          "text": "DAN",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 78,
+          "endOffset": 92,
+          "score": 0.8002936,
+          "text": "GISELA TAVARES",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 136,
+          "endOffset": 141,
+          "score": 0.2951278,
+          "text": "Nurse",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 166,
+          "endOffset": 173,
+          "score": 0.98547363,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 190,
+          "endOffset": 193,
+          "score": 0.85944283,
+          "text": "DAN",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 246,
+          "endOffset": 251,
+          "score": 0.8476333,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3513ef5a-9b58-4f7b-bf98-22fdf967eff7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3513ef5a-9b58-4f7b-bf98-22fdf967eff7"
+          ],
+          "Content-Length": [
+            "968"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "968",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:27 GMT",
+          "x-amzn-RequestId": "3513ef5a-9b58-4f7b-bf98-22fdf967eff7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 196,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "32af32e7-81f2-41f4-ae60-9332fdc4b814"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "32af32e7-81f2-41f4-ae60-9332fdc4b814"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:27 GMT",
+          "x-amzn-RequestId": "32af32e7-81f2-41f4-ae60-9332fdc4b814"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 166,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6171783b-d25b-431f-a62c-ba10f935c390"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6171783b-d25b-431f-a62c-ba10f935c390"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:27 GMT",
+          "x-amzn-RequestId": "6171783b-d25b-431f-a62c-ba10f935c390"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:28 PM"
+}

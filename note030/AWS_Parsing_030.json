@@ -1,0 +1,227 @@
+{
+  "note": "Innovative management:  The patient was managed within her institutional setting in the most efficient way possible. The fetus was delivered at term in a breech presentation. Conclusion:  Our experience suggests the use of a cedric clamp, similar to that used in many other settings outside the United States, should be considered. References: (2, 4, 5)  1. Tuck, S. F. (2009). \"Tuck Technique in the Emergency Department.\"",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 268,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 0,
+          "endOffset": 21,
+          "score": 0.5116343,
+          "text": "Innovative management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 154,
+          "endOffset": 173,
+          "score": 0.76598316,
+          "text": "breech presentation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6817148
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 295,
+          "endOffset": 308,
+          "score": 0.93020993,
+          "text": "United States",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 364,
+          "endOffset": 369,
+          "score": 0.4172597,
+          "text": "S. F.",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 371,
+          "endOffset": 375,
+          "score": 0.89402664,
+          "text": "2009",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 401,
+          "endOffset": 421,
+          "score": 0.9951774,
+          "text": "Emergency Department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6ae2c279-1b49-4064-b078-15aa84a94c82"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6ae2c279-1b49-4064-b078-15aa84a94c82"
+          ],
+          "Content-Length": [
+            "1080"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1080",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:49 GMT",
+          "x-amzn-RequestId": "6ae2c279-1b49-4064-b078-15aa84a94c82"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "breech presentation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7659833,
+          "beginOffset": 154,
+          "endOffset": 173,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6817148
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Maternal care for breech presentation",
+              "code": "O32.1",
+              "score": 0.7624972
+            },
+            {
+              "description": "Other ascites",
+              "code": "R18.8",
+              "score": 0.7537888
+            },
+            {
+              "description": "Obstructed labor due to breech presentation",
+              "code": "O64.1",
+              "score": 0.65103024
+            },
+            {
+              "description": "Maternal care for breech presentation, not applicable or unspecified",
+              "code": "O32.1XX0",
+              "score": 0.61725503
+            },
+            {
+              "description": "Maternal care for breech presentation, fetus 4",
+              "code": "O32.1XX4",
+              "score": 0.6020847
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "37dace0f-0124-489a-96c3-072075eeb4d0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "37dace0f-0124-489a-96c3-072075eeb4d0"
+          ],
+          "Content-Length": [
+            "797"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "797",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:50 GMT",
+          "x-amzn-RequestId": "37dace0f-0124-489a-96c3-072075eeb4d0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 219,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8993801d-2d94-4ce3-8045-e979af519430"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8993801d-2d94-4ce3-8045-e979af519430"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:49 GMT",
+          "x-amzn-RequestId": "8993801d-2d94-4ce3-8045-e979af519430"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:50 PM"
+}

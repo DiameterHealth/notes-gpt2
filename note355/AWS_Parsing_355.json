@@ -1,0 +1,948 @@
+{
+  "note": ". He also has no prior signs or symptoms of diabetes mellitus or other risk factors such as obesity, smoking or alcohol use. The patient denies self-administration of any medications. The patient has no significant medical or family history of thyroid disease or diabetes. A recent blood test for a total cholesterol level and triglyceride levels is normal. An electrocardiogram performed at the same time as the eye exam shows no abnormalities or abnormalities of the mitral annulus or anterior wall of the heart.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 539,
+    "data": {
+      "entities": [
+        {
+          "id": 18,
+          "beginOffset": 17,
+          "endOffset": 22,
+          "score": 0.9999962,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.990114,
+              "relationshipScore": 0.508313,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 44,
+              "endOffset": 61,
+              "text": "diabetes mellitus",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.85580295
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.8831528
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 44,
+          "endOffset": 61,
+          "score": 0.990114,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85580295
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8831528
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 92,
+          "endOffset": 99,
+          "score": 0.9651649,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.928916
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.44521958
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 244,
+          "endOffset": 251,
+          "score": 0.909573,
+          "text": "thyroid",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 244,
+          "endOffset": 259,
+          "score": 0.9796974,
+          "text": "thyroid disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9291074
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9471686
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 263,
+          "endOffset": 271,
+          "score": 0.9894447,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93267214
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88829935
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 275,
+          "endOffset": 281,
+          "score": 0.9999968,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9901265,
+              "relationshipScore": 0.97366375,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 282,
+              "endOffset": 292,
+              "text": "blood test",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 275,
+          "endOffset": 281,
+          "score": 0.9999968,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.99099976,
+              "relationshipScore": 0.51152694,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 327,
+              "endOffset": 346,
+              "text": "triglyceride levels",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 275,
+          "endOffset": 281,
+          "score": 0.9999968,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9581236,
+              "relationshipScore": 0.69577426,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 299,
+              "endOffset": 322,
+              "text": "total cholesterol level",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 282,
+          "endOffset": 292,
+          "score": 0.9901265,
+          "text": "blood test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 299,
+          "endOffset": 322,
+          "score": 0.9581236,
+          "text": "total cholesterol level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.97877854,
+              "relationshipScore": 0.7752196,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 350,
+              "endOffset": 356,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 327,
+          "endOffset": 346,
+          "score": 0.99099976,
+          "text": "triglyceride levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.97877854,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 350,
+              "endOffset": 356,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 361,
+          "endOffset": 378,
+          "score": 0.980056,
+          "text": "electrocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 413,
+          "endOffset": 416,
+          "score": 0.9411639,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 413,
+          "endOffset": 421,
+          "score": 0.9686067,
+          "text": "eye exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98639584,
+              "relationshipScore": 0.9999981,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 428,
+              "endOffset": 513,
+              "text": "no abnormalities or abnormalities of the mitral annulus or anterior wall of the heart",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 431,
+          "endOffset": 444,
+          "score": 0.95532954,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7880747
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9362039
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9411639,
+              "relationshipScore": 0.8289113,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 413,
+              "endOffset": 416,
+              "text": "eye",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.86735713,
+              "relationshipScore": 0.7835724,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 469,
+              "endOffset": 483,
+              "text": "mitral annulus",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8775204,
+              "relationshipScore": 0.9951219,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 487,
+              "endOffset": 495,
+              "text": "anterior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.5931322,
+              "relationshipScore": 0.5759319,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 496,
+              "endOffset": 513,
+              "text": "wall of the heart",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 448,
+          "endOffset": 461,
+          "score": 0.8432478,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.753618
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8583871
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9411639,
+              "relationshipScore": 0.66230303,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 413,
+              "endOffset": 416,
+              "text": "eye",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.86735713,
+              "relationshipScore": 0.97619665,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 469,
+              "endOffset": 483,
+              "text": "mitral annulus",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8775204,
+              "relationshipScore": 0.99916613,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 487,
+              "endOffset": 495,
+              "text": "anterior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.5931322,
+              "relationshipScore": 0.8121768,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 496,
+              "endOffset": 513,
+              "text": "wall of the heart",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 469,
+          "endOffset": 483,
+          "score": 0.86735713,
+          "text": "mitral annulus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 496,
+          "endOffset": 513,
+          "score": 0.5931322,
+          "text": "wall of the heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.8775204,
+            "id": 3,
+            "beginOffset": 487,
+            "endOffset": 495,
+            "text": "anterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "aa4201d1-420c-4f4a-9d81-f6901cea3543"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "aa4201d1-420c-4f4a-9d81-f6901cea3543"
+          ],
+          "Content-Length": [
+            "7451"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7451",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:04 GMT",
+          "x-amzn-RequestId": "aa4201d1-420c-4f4a-9d81-f6901cea3543"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 888,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.990114,
+          "beginOffset": 44,
+          "endOffset": 61,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85580295
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8831528
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.90344095
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.80264974
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7997371
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7840219
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.78235614
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9651649,
+          "beginOffset": 92,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.928916
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.44521958
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.8978159
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.8173051
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.78545654
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.74853396
+            },
+            {
+              "description": "Other obesity",
+              "code": "E66.8",
+              "score": 0.7396785
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "thyroid disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9796974,
+          "beginOffset": 244,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9291074
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9471686
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of thyroid, unspecified",
+              "code": "E07.9",
+              "score": 0.5380187
+            },
+            {
+              "description": "Autoimmune thyroiditis",
+              "code": "E06.3",
+              "score": 0.31397197
+            },
+            {
+              "description": "Hypothyroidism, unspecified",
+              "code": "E03.9",
+              "score": 0.28596103
+            },
+            {
+              "description": "Thyroiditis, unspecified",
+              "code": "E06.9",
+              "score": 0.27718872
+            },
+            {
+              "description": "Nontoxic single thyroid nodule",
+              "code": "E04.1",
+              "score": 0.26811117
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9894447,
+          "beginOffset": 263,
+          "endOffset": 271,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93267214
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88829935
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7033465
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.66917545
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.5579732
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.49561858
+            },
+            {
+              "description": "Family history of other endocrine, nutritional and metabolic diseases",
+              "code": "Z83.49",
+              "score": 0.48269635
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95532954,
+          "beginOffset": 431,
+          "endOffset": 444,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9411639,
+              "relationshipScore": 0.8289113,
+              "id": 5,
+              "beginOffset": 413,
+              "endOffset": 416,
+              "text": "eye",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.86735713,
+              "relationshipScore": 0.7835724,
+              "id": 8,
+              "beginOffset": 469,
+              "endOffset": 483,
+              "text": "mitral annulus",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8775205,
+              "relationshipScore": 0.9951219,
+              "id": 9,
+              "beginOffset": 487,
+              "endOffset": 495,
+              "text": "anterior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.5931322,
+              "relationshipScore": 0.5759319,
+              "id": 10,
+              "beginOffset": 496,
+              "endOffset": 513,
+              "text": "wall of the heart",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7880746
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9362039
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.6386764
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.6248162
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.61615586
+            },
+            {
+              "description": "Abnormal ultrasonic finding on antenatal screening of mother",
+              "code": "O28.3",
+              "score": 0.6015236
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other abdominal regions, including retroperitoneum",
+              "code": "R93.5",
+              "score": 0.59772205
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8432479,
+          "beginOffset": 448,
+          "endOffset": 461,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9411639,
+              "relationshipScore": 0.66230303,
+              "id": 5,
+              "beginOffset": 413,
+              "endOffset": 416,
+              "text": "eye",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.86735713,
+              "relationshipScore": 0.97619665,
+              "id": 8,
+              "beginOffset": 469,
+              "endOffset": 483,
+              "text": "mitral annulus",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8775205,
+              "relationshipScore": 0.99916613,
+              "id": 9,
+              "beginOffset": 487,
+              "endOffset": 495,
+              "text": "anterior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.5931322,
+              "relationshipScore": 0.8121768,
+              "id": 10,
+              "beginOffset": 496,
+              "endOffset": 513,
+              "text": "wall of the heart",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.753618
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.85838723
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.6279671
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.62553376
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other abdominal regions, including retroperitoneum",
+              "code": "R93.5",
+              "score": 0.58970195
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.58725196
+            },
+            {
+              "description": "Abnormal ultrasonic finding on antenatal screening of mother",
+              "code": "O28.3",
+              "score": 0.56703323
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1febde79-ae86-41f0-b587-cdb43a0830b8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1febde79-ae86-41f0-b587-cdb43a0830b8"
+          ],
+          "Content-Length": [
+            "6300"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6300",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:05 GMT",
+          "x-amzn-RequestId": "1febde79-ae86-41f0-b587-cdb43a0830b8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 256,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bc0fec78-aa00-4556-9b4c-696b8370b072"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bc0fec78-aa00-4556-9b4c-696b8370b072"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:04 GMT",
+          "x-amzn-RequestId": "bc0fec78-aa00-4556-9b4c-696b8370b072"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:05 PM"
+}

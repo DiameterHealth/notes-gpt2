@@ -1,0 +1,212 @@
+{
+  "note": "that arose from a history of severe trauma to genitalia at birth.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 383,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 36,
+          "endOffset": 42,
+          "score": 0.8158391,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5565927
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6455467,
+              "relationshipScore": 0.9930515,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 46,
+              "endOffset": 55,
+              "text": "genitalia",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 46,
+          "endOffset": 55,
+          "score": 0.6455467,
+          "text": "genitalia",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "62c5c8fe-5049-4f8a-8210-d6a3f241e18e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "62c5c8fe-5049-4f8a-8210-d6a3f241e18e"
+          ],
+          "Content-Length": [
+            "639"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "639",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:53 GMT",
+          "x-amzn-RequestId": "62c5c8fe-5049-4f8a-8210-d6a3f241e18e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 565,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8158391,
+          "beginOffset": 36,
+          "endOffset": 42,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.64554673,
+              "relationshipScore": 0.9930515,
+              "id": 1,
+              "beginOffset": 46,
+              "endOffset": 55,
+              "text": "genitalia",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55659276
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.70029265
+            },
+            {
+              "description": "Personal history of other (healed) physical injury and trauma",
+              "code": "Z87.828",
+              "score": 0.640021
+            },
+            {
+              "description": "Other postprocedural complications and disorders of genitourinary system",
+              "code": "N99.89",
+              "score": 0.58923286
+            },
+            {
+              "description": "Personal history of (healed) traumatic fracture",
+              "code": "Z87.81",
+              "score": 0.5824336
+            },
+            {
+              "description": "Contusion of thorax, unspecified",
+              "code": "S20.20",
+              "score": 0.53658473
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "06025e5f-6ab1-4127-85d4-ea77f1d4527b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "06025e5f-6ab1-4127-85d4-ea77f1d4527b"
+          ],
+          "Content-Length": [
+            "967"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "967",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:53 GMT",
+          "x-amzn-RequestId": "06025e5f-6ab1-4127-85d4-ea77f1d4527b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 125,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "21fa080e-074f-4364-a640-c3b297250b34"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "21fa080e-074f-4364-a640-c3b297250b34"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:53 GMT",
+          "x-amzn-RequestId": "21fa080e-074f-4364-a640-c3b297250b34"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:54 PM"
+}

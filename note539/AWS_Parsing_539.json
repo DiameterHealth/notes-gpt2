@@ -1,0 +1,394 @@
+{
+  "note": ".  Possible benefits  A previous visit for a back condition does not have any effect on pain in this latest visit  This visit can help you identify areas in your back which could benefit from extra attention and may prompt a thorough evaluation. This visit may help identify factors that may alter your pain level in future visits, and may improve your pain management planning  This meeting may trigger a brief discussion about past visits for the same health condition.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 321,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 45,
+          "endOffset": 59,
+          "score": 0.62626386,
+          "text": "back condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 88,
+          "endOffset": 92,
+          "score": 0.8338482,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9240961,
+              "relationshipScore": 0.80262834,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 162,
+              "endOffset": 166,
+              "text": "back",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 162,
+          "endOffset": 166,
+          "score": 0.9240961,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 303,
+          "endOffset": 307,
+          "score": 0.8071563,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44387683
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 303,
+          "endOffset": 313,
+          "score": 0.5253071,
+          "text": "pain level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 353,
+          "endOffset": 357,
+          "score": 0.92509806,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50504726
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47432563
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 353,
+          "endOffset": 368,
+          "score": 0.9587818,
+          "text": "pain management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "614d8688-78cd-426c-ace5-6e5e3ae7c69e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "614d8688-78cd-426c-ace5-6e5e3ae7c69e"
+          ],
+          "Content-Length": [
+            "1494"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1494",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:45 GMT",
+          "x-amzn-RequestId": "614d8688-78cd-426c-ace5-6e5e3ae7c69e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 453,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "back condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.62626386,
+          "beginOffset": 45,
+          "endOffset": 59,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.73320836
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.6627164
+            },
+            {
+              "description": "Muscle spasm of back",
+              "code": "M62.830",
+              "score": 0.6625116
+            },
+            {
+              "description": "Unspecified injury of lower back",
+              "code": "S39.92",
+              "score": 0.6534985
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.6066177
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8338483,
+          "beginOffset": 88,
+          "endOffset": 92,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9240961,
+              "relationshipScore": 0.80262834,
+              "id": 2,
+              "beginOffset": 162,
+              "endOffset": 166,
+              "text": "back",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7272187
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6464464
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.633825
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5883342
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.58472645
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.80715626,
+          "beginOffset": 303,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4438768
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6634127
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5535899
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.53070176
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.52460045
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.4929838
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92509806,
+          "beginOffset": 353,
+          "endOffset": 357,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50504726
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47432557
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6505301
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.43273938
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.4295427
+            },
+            {
+              "description": "Glossodynia",
+              "code": "K14.6",
+              "score": 0.38447708
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.3776203
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f42cc523-d1bd-40cb-9e26-4c6c39c8f242"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f42cc523-d1bd-40cb-9e26-4c6c39c8f242"
+          ],
+          "Content-Length": [
+            "2694"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2694",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:46 GMT",
+          "x-amzn-RequestId": "f42cc523-d1bd-40cb-9e26-4c6c39c8f242"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 233,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "592a2c6c-21de-4024-b54b-fe76b804c330"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "592a2c6c-21de-4024-b54b-fe76b804c330"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:45 GMT",
+          "x-amzn-RequestId": "592a2c6c-21de-4024-b54b-fe76b804c330"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:46 PM"
+}

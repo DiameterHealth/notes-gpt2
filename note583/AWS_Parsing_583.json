@@ -1,0 +1,507 @@
+{
+  "note": "not been on medications with monoamine oxidase inhibitor or noradrenaline reuptake inhibitor for at least 3 weeks or more. The patient has a family history of mood disorders. The patient\u0027s physician or psychiatrist recommends a diagnosis of unipolar depressive disorder. The patient agrees, but he or she cannot be put on SSRI antidepressants because of lack of evidence of response within 2 weeks.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 259,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 29,
+          "endOffset": 56,
+          "score": 0.9106897,
+          "text": "monoamine oxidase inhibitor",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 29,
+          "endOffset": 56,
+          "score": 0.370576,
+          "text": "monoamine oxidase inhibitor",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 60,
+          "endOffset": 92,
+          "score": 0.4903634,
+          "text": "noradrenaline reuptake inhibitor",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 60,
+          "endOffset": 92,
+          "score": 0.61217666,
+          "text": "noradrenaline reuptake inhibitor",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 159,
+          "endOffset": 173,
+          "score": 0.9881059,
+          "text": "mood disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9400258
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 241,
+          "endOffset": 269,
+          "score": 0.94102466,
+          "text": "unipolar depressive disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9703525
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 322,
+          "endOffset": 342,
+          "score": 0.7263636,
+          "text": "SSRI antidepressants",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 327,
+          "endOffset": 342,
+          "score": 0.3026986,
+          "text": "antidepressants",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 354,
+          "endOffset": 382,
+          "score": 0.73154646,
+          "text": "lack of evidence of response",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40632483
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.34889305,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 383,
+              "endOffset": 397,
+              "text": "within 2 weeks",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.34889305,
+            "id": 6,
+            "beginOffset": 383,
+            "endOffset": 397,
+            "text": "within 2 weeks",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "22022110-c47f-4aca-9ae0-0c10e73274e9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "22022110-c47f-4aca-9ae0-0c10e73274e9"
+          ],
+          "Content-Length": [
+            "2142"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2142",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:01 GMT",
+          "x-amzn-RequestId": "22022110-c47f-4aca-9ae0-0c10e73274e9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "mood disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9881059,
+          "beginOffset": 159,
+          "endOffset": 173,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9400258
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.3101126
+            },
+            {
+              "description": "Anxiety disorder, unspecified",
+              "code": "F41.9",
+              "score": 0.24736202
+            },
+            {
+              "description": "Adjustment disorder with depressed mood",
+              "code": "F43.21",
+              "score": 0.24494351
+            },
+            {
+              "description": "Other specified persistent mood disorders",
+              "code": "F34.89",
+              "score": 0.20081647
+            },
+            {
+              "description": "Mood disorder due to known physiological condition, unspecified",
+              "code": "F06.30",
+              "score": 0.13776012
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "unipolar depressive disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94102466,
+          "beginOffset": 241,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9703525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.51036054
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.3396225
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.30609977
+            },
+            {
+              "description": "Major depressive disorder, single episode, moderate",
+              "code": "F32.1",
+              "score": 0.29484367
+            },
+            {
+              "description": "Major depressive disorder, recurrent, unspecified",
+              "code": "F33.9",
+              "score": 0.28478885
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "lack of evidence of response",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73154646,
+          "beginOffset": 354,
+          "endOffset": 382,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.34889317,
+              "relationshipScore": 0.99999964,
+              "id": 3,
+              "beginOffset": 383,
+              "endOffset": 397,
+              "text": "within 2 weeks",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40632483
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8599809
+            },
+            {
+              "description": "Unspecified lack of coordination",
+              "code": "R27.9",
+              "score": 0.8239519
+            },
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.79672277
+            },
+            {
+              "description": "Homelessness",
+              "code": "Z59.0",
+              "score": 0.79274905
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.78785294
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0d3b5be4-7e0d-4bea-858a-f7ee32a4e8e3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0d3b5be4-7e0d-4bea-858a-f7ee32a4e8e3"
+          ],
+          "Content-Length": [
+            "2428"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2428",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:02 GMT",
+          "x-amzn-RequestId": "0d3b5be4-7e0d-4bea-858a-f7ee32a4e8e3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "monoamine oxidase inhibitor",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9106897,
+          "beginOffset": 29,
+          "endOffset": 56,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "GLUCOSE OXIDASE",
+              "code": "1427073",
+              "score": 0.6920493
+            },
+            {
+              "description": "fibrinolysis inhibitor",
+              "code": "353110",
+              "score": 0.41937518
+            },
+            {
+              "description": "C1 esterase inhibitor (human) 3000 UNT Injection",
+              "code": "1926825",
+              "score": 0.03797048
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX",
+              "code": "314504",
+              "score": 0.020690536
+            },
+            {
+              "description": "C1 esterase inhibitor (human) 500 UNT Injection [Cinryze]",
+              "code": "809871",
+              "score": 0.016793566
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "noradrenaline reuptake inhibitor",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.49036327,
+          "beginOffset": 60,
+          "endOffset": 92,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "fibrinolysis inhibitor",
+              "code": "353110",
+              "score": 0.31675735
+            },
+            {
+              "description": "C1 esterase inhibitor (human) 3000 UNT Injection",
+              "code": "1926825",
+              "score": 0.15176503
+            },
+            {
+              "description": "C1 esterase inhibitor (human) 2000 UNT Injection",
+              "code": "1926818",
+              "score": 0.07085767
+            },
+            {
+              "description": "ANTI-INHIBITOR COAGULANT COMPLEX",
+              "code": "314504",
+              "score": 0.06779734
+            },
+            {
+              "description": "C1 esterase inhibitor",
+              "code": "1599832",
+              "score": 0.047268476
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "SSRI antidepressants",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.72636366,
+          "beginOffset": 322,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "dipentaerythrityl tri-polyhydroxystearate",
+              "code": "1733677",
+              "score": 0.021242717
+            },
+            {
+              "description": "1,1,3-TRI(3-TERT-BUTYL-4-HYDROXY-6-METHYLPHENYL)BUTANE",
+              "code": "1872247",
+              "score": 0.014662518
+            },
+            {
+              "description": "PPG-51/SMDI copolymer",
+              "code": "1721621",
+              "score": 0.014630897
+            },
+            {
+              "description": "PPG-12-SMDI COPOLYMER",
+              "code": "1440239",
+              "score": 0.007889509
+            },
+            {
+              "description": "PEG-8 \u0026 SMDI copolymer",
+              "code": "1366992",
+              "score": 0.006685912
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "650b87ec-a3fc-4df3-9e0f-10abbe3b9360"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "650b87ec-a3fc-4df3-9e0f-10abbe3b9360"
+          ],
+          "Content-Length": [
+            "2096"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2096",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:01 GMT",
+          "x-amzn-RequestId": "650b87ec-a3fc-4df3-9e0f-10abbe3b9360"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:02 PM"
+}

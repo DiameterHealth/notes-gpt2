@@ -1,0 +1,601 @@
+{
+  "note": "no history of cardiovascular disease or dementia. There was no history of seizures or other motor disability. The clinical features of the disease are consistent with that of chronic myasthenia gravis. Management: Treatment of these patients will include both medication and lifestyle modifications. In all cases, a combination of anticholinergic agents will be sufficient to improve the symptoms of depression.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 312,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 14,
+          "endOffset": 36,
+          "score": 0.95042425,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86793625
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9567934
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 40,
+          "endOffset": 48,
+          "score": 0.9943733,
+          "text": "dementia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94029796
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.96536946
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 74,
+          "endOffset": 82,
+          "score": 0.98944074,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88259155
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9604295
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 92,
+          "endOffset": 108,
+          "score": 0.8896211,
+          "text": "motor disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87667596
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8854156
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 183,
+          "endOffset": 200,
+          "score": 0.8961407,
+          "text": "myasthenia gravis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96897787
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98396444,
+              "relationshipScore": 0.9999846,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 175,
+              "endOffset": 182,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 275,
+          "endOffset": 298,
+          "score": 0.7798063,
+          "text": "lifestyle modifications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 331,
+          "endOffset": 353,
+          "score": 0.32220265,
+          "text": "anticholinergic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 331,
+          "endOffset": 353,
+          "score": 0.77569807,
+          "text": "anticholinergic agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 400,
+          "endOffset": 410,
+          "score": 0.98992413,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8218014
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98396444,
+            "id": 5,
+            "beginOffset": 175,
+            "endOffset": 182,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "781a4a7c-2b08-483d-821a-7dd09f86e2ba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "781a4a7c-2b08-483d-821a-7dd09f86e2ba"
+          ],
+          "Content-Length": [
+            "2370"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2370",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:01 GMT",
+          "x-amzn-RequestId": "781a4a7c-2b08-483d-821a-7dd09f86e2ba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 838,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95042425,
+          "beginOffset": 14,
+          "endOffset": 36,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86793625
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9567933
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.69795287
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.6761862
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.6240726
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.58314073
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.53829855
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "dementia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9943733,
+          "beginOffset": 40,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94029796
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.96536946
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified dementia without behavioral disturbance",
+              "code": "F03.90",
+              "score": 0.8386482
+            },
+            {
+              "description": "Vascular dementia without behavioral disturbance",
+              "code": "F01.50",
+              "score": 0.7345547
+            },
+            {
+              "description": "Unspecified dementia with behavioral disturbance",
+              "code": "F03.91",
+              "score": 0.71303105
+            },
+            {
+              "description": "Dementia in other diseases classified elsewhere without behavioral disturbance",
+              "code": "F02.80",
+              "score": 0.6851132
+            },
+            {
+              "description": "Dementia with Lewy bodies",
+              "code": "G31.83",
+              "score": 0.65884066
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98944074,
+          "beginOffset": 74,
+          "endOffset": 82,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88259155
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9604295
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.67919624
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.6647254
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.63723737
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.53480107
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.5052235
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "motor disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88962096,
+          "beginOffset": 92,
+          "endOffset": 108,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87667596
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8854156
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Limitation of activities due to disability",
+              "code": "Z73.6",
+              "score": 0.47469345
+            },
+            {
+              "description": "Abnormal reflex",
+              "code": "R29.2",
+              "score": 0.3776798
+            },
+            {
+              "description": "Unspecified intellectual disabilities",
+              "code": "F79",
+              "score": 0.34371787
+            },
+            {
+              "description": "Family history of intellectual disabilities",
+              "code": "Z81.0",
+              "score": 0.32828307
+            },
+            {
+              "description": "Pure motor lacunar syndrome",
+              "code": "G46.5",
+              "score": 0.26603976
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "myasthenia gravis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8961407,
+          "beginOffset": 183,
+          "endOffset": 200,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98396444,
+              "relationshipScore": 0.9999846,
+              "id": 4,
+              "beginOffset": 175,
+              "endOffset": 182,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96897787
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Myasthenia gravis without (acute) exacerbation",
+              "code": "G70.00",
+              "score": 0.34248197
+            },
+            {
+              "description": "Myasthenia gravis with (acute) exacerbation",
+              "code": "G70.01",
+              "score": 0.21003509
+            },
+            {
+              "description": "Myasthenia gravis",
+              "code": "G70.0",
+              "score": 0.20066914
+            },
+            {
+              "description": "Myasthenia gravis and other myoneural disorders",
+              "code": "G70",
+              "score": 0.17109954
+            },
+            {
+              "description": "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+              "code": "E05.90",
+              "score": 0.13951907
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98992413,
+          "beginOffset": 400,
+          "endOffset": 410,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82180136
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.889035
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.7697238
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7613723
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.6897388
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.68724084
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "837e00ff-19d0-4ab0-8990-f02e486d267f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "837e00ff-19d0-4ab0-8990-f02e486d267f"
+          ],
+          "Content-Length": [
+            "5028"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5028",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:02 GMT",
+          "x-amzn-RequestId": "837e00ff-19d0-4ab0-8990-f02e486d267f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 431,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "anticholinergic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.32220286,
+          "beginOffset": 331,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lipotropic Agents",
+              "code": "6436",
+              "score": 0.0516948
+            },
+            {
+              "description": "AVENS EXTRACT",
+              "code": "1313319",
+              "score": 0.044349685
+            },
+            {
+              "description": "Vitex agnus-castus whole extract",
+              "code": "1441400",
+              "score": 0.0055181715
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "917996f9-ac4e-4211-bfa2-078185801d2e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "917996f9-ac4e-4211-bfa2-078185801d2e"
+          ],
+          "Content-Length": [
+            "486"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "486",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:01 GMT",
+          "x-amzn-RequestId": "917996f9-ac4e-4211-bfa2-078185801d2e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:03 PM"
+}

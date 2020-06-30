@@ -1,0 +1,533 @@
+{
+  "note": "She did not see or hear an audible noise. The patient is now attempting to walk on both legs. She states she has been walking at this point for 24 hours and her leg is in a lot of pain. She does not want treatment for her ankle due to the severe pain, but is concerned there might be damage and she may need surgery.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 496,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 27,
+          "endOffset": 40,
+          "score": 0.44191536,
+          "text": "audible noise",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5509489
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8201799
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 61,
+          "endOffset": 79,
+          "score": 0.40012968,
+          "text": "attempting to walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4881613
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.7547337,
+              "relationshipScore": 0.99999344,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 83,
+              "endOffset": 87,
+              "text": "both",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99380374,
+              "relationshipScore": 0.9998228,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 88,
+              "endOffset": 92,
+              "text": "legs",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 88,
+          "endOffset": 92,
+          "score": 0.99380374,
+          "text": "legs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 161,
+          "endOffset": 164,
+          "score": 0.9775779,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 180,
+          "endOffset": 184,
+          "score": 0.98569715,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7995134
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9775779,
+              "relationshipScore": 0.97328883,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "leg",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 222,
+          "endOffset": 227,
+          "score": 0.96188515,
+          "text": "ankle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 246,
+          "endOffset": 250,
+          "score": 0.99437886,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66030467
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 284,
+          "endOffset": 290,
+          "score": 0.789762,
+          "text": "damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 308,
+          "endOffset": 315,
+          "score": 0.94650066,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.7547337,
+            "id": 0,
+            "beginOffset": 83,
+            "endOffset": 87,
+            "text": "both",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dca27950-5523-425d-9879-f23e3c0c7dc6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dca27950-5523-425d-9879-f23e3c0c7dc6"
+          ],
+          "Content-Length": [
+            "2456"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2456",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:45 GMT",
+          "x-amzn-RequestId": "dca27950-5523-425d-9879-f23e3c0c7dc6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 669,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "audible noise",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.44191548,
+          "beginOffset": 27,
+          "endOffset": 40,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.550949
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8201799
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tinnitus, unspecified ear",
+              "code": "H93.19",
+              "score": 0.49036148
+            },
+            {
+              "description": "Tinnitus, bilateral",
+              "code": "H93.13",
+              "score": 0.4836874
+            },
+            {
+              "description": "Contact with and (suspected) exposure to noise",
+              "code": "Z77.122",
+              "score": 0.4408055
+            },
+            {
+              "description": "Tinnitus, left ear",
+              "code": "H93.12",
+              "score": 0.3661066
+            },
+            {
+              "description": "Tinnitus, right ear",
+              "code": "H93.11",
+              "score": 0.36093807
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "attempting to walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40012956,
+          "beginOffset": 61,
+          "endOffset": 79,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.75473356,
+              "relationshipScore": 0.99999344,
+              "id": 2,
+              "beginOffset": 83,
+              "endOffset": 87,
+              "text": "both",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99380374,
+              "relationshipScore": 0.9998228,
+              "id": 3,
+              "beginOffset": 88,
+              "endOffset": 92,
+              "text": "legs",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4881614
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.7461235
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.5922384
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.4860659
+            },
+            {
+              "description": "Personal history of self-harm",
+              "code": "Z91.5",
+              "score": 0.48505673
+            },
+            {
+              "description": "Ataxic gait",
+              "code": "R26.0",
+              "score": 0.38058826
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98569715,
+          "beginOffset": 180,
+          "endOffset": 184,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9775779,
+              "relationshipScore": 0.97328883,
+              "id": 4,
+              "beginOffset": 161,
+              "endOffset": 164,
+              "text": "leg",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7995134
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.503797
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.37517858
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.34511566
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.3395608
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.33658546
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99437886,
+          "beginOffset": 246,
+          "endOffset": 250,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6603047
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.47813213
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.3459079
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.31589124
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.31471184
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.3129387
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78976196,
+          "beginOffset": 284,
+          "endOffset": 290,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anoxic brain damage, not elsewhere classified",
+              "code": "G93.1",
+              "score": 0.64612603
+            },
+            {
+              "description": "Other nail disorders",
+              "code": "L60.8",
+              "score": 0.6422652
+            },
+            {
+              "description": "Liver disease, unspecified",
+              "code": "K76.9",
+              "score": 0.6383963
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.611876
+            },
+            {
+              "description": "Disorder of brain, unspecified",
+              "code": "G93.9",
+              "score": 0.5786559
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6540f098-a880-42e8-87ce-ce943b7b8e3b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6540f098-a880-42e8-87ce-ce943b7b8e3b"
+          ],
+          "Content-Length": [
+            "3848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:46 GMT",
+          "x-amzn-RequestId": "6540f098-a880-42e8-87ce-ce943b7b8e3b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 198,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b8c5eb4-86f3-4d72-89b5-f42b23114eb1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b8c5eb4-86f3-4d72-89b5-f42b23114eb1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:45 GMT",
+          "x-amzn-RequestId": "2b8c5eb4-86f3-4d72-89b5-f42b23114eb1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:46 PM"
+}

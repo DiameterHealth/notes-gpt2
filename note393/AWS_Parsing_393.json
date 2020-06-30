@@ -1,0 +1,465 @@
+{
+  "note": "on admission. He appears to be at risk of having pneumonia, he\u0027s also taking a number of medications and has had some recent episodes of diarrhea. The temperature is 38.6C and he\u0027s not in isolation, he has no fever control or other symptoms that would suggest he\u0027s sick nor has he been to the doctor in weeks.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 563,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 49,
+          "endOffset": 58,
+          "score": 0.99691963,
+          "text": "pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9409253
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 118,
+          "endOffset": 124,
+          "score": 0.9998542,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.999099,
+              "relationshipScore": 0.8753194,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 137,
+              "endOffset": 145,
+              "text": "diarrhea",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.82745785
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "score": 0.999099,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.82745785
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.46561068,
+              "relationshipScore": 0.99058807,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 125,
+              "endOffset": 133,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 151,
+          "endOffset": 162,
+          "score": 0.9722115,
+          "text": "temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9962214,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 166,
+              "endOffset": 171,
+              "text": "38.6C",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 209,
+          "endOffset": 214,
+          "score": 0.7554339,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.636112
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8094172
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 265,
+          "endOffset": 269,
+          "score": 0.67867523,
+          "text": "sick",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 300,
+          "endOffset": 308,
+          "score": 0.64918125,
+          "text": "in weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.67867523,
+              "relationshipScore": 0.64339364,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 265,
+              "endOffset": 269,
+              "text": "sick",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.46561068,
+            "id": 1,
+            "beginOffset": 125,
+            "endOffset": 133,
+            "text": "episodes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ec030971-724c-408d-b989-2492513e4f89"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ec030971-724c-408d-b989-2492513e4f89"
+          ],
+          "Content-Length": [
+            "2453"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2453",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:16 GMT",
+          "x-amzn-RequestId": "ec030971-724c-408d-b989-2492513e4f89"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 458,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pneumonia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99691963,
+          "beginOffset": 49,
+          "endOffset": 58,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9409253
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pneumonia, unspecified organism",
+              "code": "J18.9",
+              "score": 0.81543666
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.7323614
+            },
+            {
+              "description": "Bronchopneumonia, unspecified organism",
+              "code": "J18.0",
+              "score": 0.69381756
+            },
+            {
+              "description": "Personal history of pneumonia (recurrent)",
+              "code": "Z87.01",
+              "score": 0.678017
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.67176497
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.999099,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4656106,
+              "relationshipScore": 0.99058807,
+              "id": 1,
+              "beginOffset": 125,
+              "endOffset": 133,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.82745785
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.84591
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.6009812
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.57797897
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.56232536
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.55392915
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7554338,
+          "beginOffset": 209,
+          "endOffset": 214,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63611186
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8094172
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.88618594
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.6492244
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5437909
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.5295804
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.5217061
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "sick",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6786751,
+          "beginOffset": 265,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.89319426
+            },
+            {
+              "description": "Contact with and (suspected) exposure to unspecified communicable disease",
+              "code": "Z20.9",
+              "score": 0.8186399
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.7785279
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.77294075
+            },
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.73669493
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2783df4-a1c9-43e0-949a-4a082184230d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2783df4-a1c9-43e0-949a-4a082184230d"
+          ],
+          "Content-Length": [
+            "3045"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3045",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:17 GMT",
+          "x-amzn-RequestId": "b2783df4-a1c9-43e0-949a-4a082184230d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 185,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "51738995-f50f-4e20-8f2e-c017c3946bd9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "51738995-f50f-4e20-8f2e-c017c3946bd9"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:16 GMT",
+          "x-amzn-RequestId": "51738995-f50f-4e20-8f2e-c017c3946bd9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:17 PM"
+}

@@ -1,0 +1,832 @@
+{
+  "note": "or trauma. The eye pain is most pronounced when he looks at direct light sources in a bright room such as a windowsill. No peripheral changes are noted with no known vascular disease or other obvious cause for the visual disturbance. At night or during deep sleep, the patient experiences light sensitivity which includes a blurred background behind the eyes due to a reduced or decreased peripheral illumination.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 749,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 3,
+          "endOffset": 9,
+          "score": 0.9656694,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65086037
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.47677678
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 15,
+          "endOffset": 18,
+          "score": 0.9873121,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 15,
+          "endOffset": 23,
+          "score": 0.91656786,
+          "text": "eye pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8414222
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 123,
+          "endOffset": 141,
+          "score": 0.83758724,
+          "text": "peripheral changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5271373
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.91941214
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 166,
+          "endOffset": 182,
+          "score": 0.935903,
+          "text": "vascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5772512
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93181896
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 214,
+          "endOffset": 232,
+          "score": 0.9609463,
+          "text": "visual disturbance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.663274
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.76310396
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 234,
+          "endOffset": 242,
+          "score": 0.9999932,
+          "text": "At night",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.44123396,
+              "relationshipScore": 0.76819223,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 253,
+              "endOffset": 263,
+              "text": "deep sleep",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6023417
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 253,
+          "endOffset": 263,
+          "score": 0.44123396,
+          "text": "deep sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6023417
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 289,
+          "endOffset": 306,
+          "score": 0.8706592,
+          "text": "light sensitivity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8358125
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 324,
+          "endOffset": 331,
+          "score": 0.5327351,
+          "text": "blurred",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9321205,
+              "relationshipScore": 0.9974981,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 343,
+              "endOffset": 349,
+              "text": "behind",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9930934,
+              "relationshipScore": 0.9916962,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 354,
+              "endOffset": 358,
+              "text": "eyes",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 354,
+          "endOffset": 358,
+          "score": 0.9930934,
+          "text": "eyes",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 379,
+          "endOffset": 412,
+          "score": 0.5940052,
+          "text": "decreased peripheral illumination",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.473854
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.5628133
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9930934,
+              "relationshipScore": 0.734302,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 354,
+              "endOffset": 358,
+              "text": "eyes",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.53065974,
+            "id": 1,
+            "beginOffset": 123,
+            "endOffset": 133,
+            "text": "peripheral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9321205,
+            "id": 2,
+            "beginOffset": 343,
+            "endOffset": 349,
+            "text": "behind",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.55919564,
+            "id": 4,
+            "beginOffset": 389,
+            "endOffset": 399,
+            "text": "peripheral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "38156c83-1b3e-4529-ad08-eab5473991f9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "38156c83-1b3e-4529-ad08-eab5473991f9"
+          ],
+          "Content-Length": [
+            "3957"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3957",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:36 GMT",
+          "x-amzn-RequestId": "38156c83-1b3e-4529-ad08-eab5473991f9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 858,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96566933,
+          "beginOffset": 3,
+          "endOffset": 9,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6508603
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.47677678
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.7453466
+            },
+            {
+              "description": "Unspecified injury of heart, unspecified with or without hemopericardium",
+              "code": "S26.90",
+              "score": 0.59249485
+            },
+            {
+              "description": "Other postprocedural complications and disorders of genitourinary system",
+              "code": "N99.89",
+              "score": 0.59182024
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5408533
+            },
+            {
+              "description": "Contusion of thorax, unspecified",
+              "code": "S20.20",
+              "score": 0.5039661
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "eye pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.916568,
+          "beginOffset": 15,
+          "endOffset": 23,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8414222
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.7151958
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.6900876
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.68170106
+            },
+            {
+              "description": "Ocular pain, bilateral",
+              "code": "H57.13",
+              "score": 0.63161343
+            },
+            {
+              "description": "Low vision, one eye, unspecified eye",
+              "code": "H54.50",
+              "score": 0.5038951
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "peripheral changes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83758724,
+          "beginOffset": 123,
+          "endOffset": 141,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5271372
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.91941214
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.8270254
+            },
+            {
+              "description": "Unspecified skin changes",
+              "code": "R23.9",
+              "score": 0.77969265
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.75859046
+            },
+            {
+              "description": "Venous insufficiency (chronic) (peripheral)",
+              "code": "I87.2",
+              "score": 0.74976116
+            },
+            {
+              "description": "Polyneuropathy, unspecified",
+              "code": "G62.9",
+              "score": 0.73167175
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "vascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.935903,
+          "beginOffset": 166,
+          "endOffset": 182,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57725126
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93181896
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.82511705
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.8218674
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic peripheral angiopathy without gangrene",
+              "code": "E11.51",
+              "score": 0.8195388
+            },
+            {
+              "description": "Unspecified atherosclerosis",
+              "code": "I70.90",
+              "score": 0.7485083
+            },
+            {
+              "description": "Systemic involvement of connective tissue, unspecified",
+              "code": "M35.9",
+              "score": 0.7324975
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "visual disturbance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9609463,
+          "beginOffset": 214,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66327393
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.76310396
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.7817272
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.7577329
+            },
+            {
+              "description": "Visual discomfort, unspecified",
+              "code": "H53.149",
+              "score": 0.60367674
+            },
+            {
+              "description": "Visual discomfort, bilateral",
+              "code": "H53.143",
+              "score": 0.6000943
+            },
+            {
+              "description": "Transient visual loss, unspecified eye",
+              "code": "H53.129",
+              "score": 0.5456704
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "deep sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.44123396,
+          "beginOffset": 253,
+          "endOffset": 263,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6023417
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.628985
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.56105906
+            },
+            {
+              "description": "Hypersomnia, unspecified",
+              "code": "G47.10",
+              "score": 0.55075413
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.54052466
+            },
+            {
+              "description": "Deep dyspareunia",
+              "code": "N94.12",
+              "score": 0.5325202
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "light sensitivity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8706592,
+          "beginOffset": 289,
+          "endOffset": 306,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8358125
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.68791854
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.5913567
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.5388354
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.5012637
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.45405433
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "blurred",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53273517,
+          "beginOffset": 324,
+          "endOffset": 331,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9321205,
+              "relationshipScore": 0.9974981,
+              "id": 10,
+              "beginOffset": 343,
+              "endOffset": 349,
+              "text": "behind",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9930934,
+              "relationshipScore": 0.9916962,
+              "id": 11,
+              "beginOffset": 354,
+              "endOffset": 358,
+              "text": "eyes",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.7347996
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.64283055
+            },
+            {
+              "description": "Melanocytic nevi, unspecified",
+              "code": "D22.9",
+              "score": 0.57906157
+            },
+            {
+              "description": "Other benign neoplasm of skin of unspecified part of face",
+              "code": "D23.30",
+              "score": 0.54287964
+            },
+            {
+              "description": "Other benign neoplasm of skin of other parts of face",
+              "code": "D23.39",
+              "score": 0.53080934
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "decreased peripheral illumination",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.59400547,
+          "beginOffset": 379,
+          "endOffset": 412,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9930934,
+              "relationshipScore": 0.734302,
+              "id": 11,
+              "beginOffset": 354,
+              "endOffset": 358,
+              "text": "eyes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4738541
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.5628132
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.67848486
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.6503018
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.60840124
+            },
+            {
+              "description": "Other abnormal glucose",
+              "code": "R73.09",
+              "score": 0.5611868
+            },
+            {
+              "description": "Polyneuropathy, unspecified",
+              "code": "G62.9",
+              "score": 0.5599721
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9a22c344-55c1-4aa7-9c12-d1f237d7cde5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9a22c344-55c1-4aa7-9c12-d1f237d7cde5"
+          ],
+          "Content-Length": [
+            "7114"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7114",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:38 GMT",
+          "x-amzn-RequestId": "9a22c344-55c1-4aa7-9c12-d1f237d7cde5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "03e712d9-b612-48b8-a5dd-87b48ce2c47b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "03e712d9-b612-48b8-a5dd-87b48ce2c47b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:36 GMT",
+          "x-amzn-RequestId": "03e712d9-b612-48b8-a5dd-87b48ce2c47b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:38 PM"
+}

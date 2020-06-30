@@ -1,0 +1,610 @@
+{
+  "note": ". It is his next course of treatment. He returns as normal at six weeks\u0027 follow-up but develops a fever in two weeks and is again a nonpersonality, noncompliance. He returns for three-day visits and during the third, he has a spontaneous bowel movement. The first is unremarkable. There is not an obvious cause for the bowel movement. The second visit, two weeks later, is the classic \"rediscovery\" of the colonic polyp and it is excised and placed in a bag.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 521,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 98,
+          "endOffset": 103,
+          "score": 0.9658919,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6347711
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 104,
+          "endOffset": 116,
+          "score": 0.99524117,
+          "text": "in two weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9658919,
+              "relationshipScore": 0.95460135,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 98,
+              "endOffset": 103,
+              "text": "fever",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6347711
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 104,
+          "endOffset": 116,
+          "score": 0.99524117,
+          "text": "in two weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7383487,
+              "relationshipScore": 0.5824474,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 132,
+              "endOffset": 146,
+              "text": "nonpersonality",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 132,
+          "endOffset": 146,
+          "score": 0.7383487,
+          "text": "nonpersonality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 148,
+          "endOffset": 161,
+          "score": 0.5043332,
+          "text": "noncompliance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 178,
+          "endOffset": 187,
+          "score": 0.5903108,
+          "text": "three-day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.648938,
+              "relationshipScore": 0.79105633,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 226,
+              "endOffset": 252,
+              "text": "spontaneous bowel movement",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.70592624
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 226,
+          "endOffset": 252,
+          "score": 0.648938,
+          "text": "spontaneous bowel movement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.70592624
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 238,
+          "endOffset": 243,
+          "score": 0.80369544,
+          "text": "bowel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 319,
+          "endOffset": 324,
+          "score": 0.9577997,
+          "text": "bowel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 319,
+          "endOffset": 333,
+          "score": 0.81191987,
+          "text": "bowel movement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.53237665
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6550102
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9577997,
+              "relationshipScore": 0.70662373,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 319,
+              "endOffset": 324,
+              "text": "bowel",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 353,
+          "endOffset": 368,
+          "score": 0.9968094,
+          "text": "two weeks later",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.842812,
+              "relationshipScore": 0.8042127,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 406,
+              "endOffset": 419,
+              "text": "colonic polyp",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8615481
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 406,
+          "endOffset": 419,
+          "score": 0.842812,
+          "text": "colonic polyp",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8615481
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 430,
+          "endOffset": 437,
+          "score": 0.6387995,
+          "text": "excised",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6d49943a-bb29-4680-a1b8-50f0f3aa053c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6d49943a-bb29-4680-a1b8-50f0f3aa053c"
+          ],
+          "Content-Length": [
+            "3615"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3615",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:50 GMT",
+          "x-amzn-RequestId": "6d49943a-bb29-4680-a1b8-50f0f3aa053c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 528,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9658919,
+          "beginOffset": 98,
+          "endOffset": 103,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63477105
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.78508157
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5478529
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45093623
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.43740416
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.41206864
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "nonpersonality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73834866,
+          "beginOffset": 132,
+          "endOffset": 146,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Antisocial personality disorder",
+              "code": "F60.2",
+              "score": 0.7490747
+            },
+            {
+              "description": "Homelessness",
+              "code": "Z59.0",
+              "score": 0.7218803
+            },
+            {
+              "description": "Personal history of self-harm",
+              "code": "Z91.5",
+              "score": 0.695815
+            },
+            {
+              "description": "Narcissistic personality disorder",
+              "code": "F60.81",
+              "score": 0.66350436
+            },
+            {
+              "description": "Other specific personality disorders",
+              "code": "F60.89",
+              "score": 0.61036825
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "noncompliance",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5043333,
+          "beginOffset": 148,
+          "endOffset": 161,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Patient\u0027s noncompliance with other medical treatment and regimen",
+              "code": "Z91.19",
+              "score": 0.8633239
+            },
+            {
+              "description": "Patient\u0027s other noncompliance with medication regimen",
+              "code": "Z91.14",
+              "score": 0.7845979
+            },
+            {
+              "description": "Patient\u0027s noncompliance with medical treatment and regimen",
+              "code": "Z91.1",
+              "score": 0.7002516
+            },
+            {
+              "description": "Patient\u0027s noncompliance with dietary regimen",
+              "code": "Z91.11",
+              "score": 0.591498
+            },
+            {
+              "description": "Patient\u0027s noncompliance with renal dialysis",
+              "code": "Z91.15",
+              "score": 0.57618237
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "spontaneous bowel movement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6489379,
+          "beginOffset": 226,
+          "endOffset": 252,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7059262
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disease of intestine, unspecified",
+              "code": "K63.9",
+              "score": 0.6052692
+            },
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.584862
+            },
+            {
+              "description": "Complete or unspecified spontaneous abortion without complication",
+              "code": "O03.9",
+              "score": 0.56466454
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.56071496
+            },
+            {
+              "description": "Threatened abortion",
+              "code": "O20.0",
+              "score": 0.5440398
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "bowel movement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.81191987,
+          "beginOffset": 319,
+          "endOffset": 333,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.53237665
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.65501016
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disease of intestine, unspecified",
+              "code": "K63.9",
+              "score": 0.6920855
+            },
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.6709333
+            },
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.6237007
+            },
+            {
+              "description": "Irritable bowel syndrome with constipation",
+              "code": "K58.1",
+              "score": 0.57382745
+            },
+            {
+              "description": "Irritable bowel syndrome without diarrhea",
+              "code": "K58.9",
+              "score": 0.5618665
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "colonic polyp",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8428122,
+          "beginOffset": 406,
+          "endOffset": 419,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8615481
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Polyp of colon",
+              "code": "K63.5",
+              "score": 0.7276366
+            },
+            {
+              "description": "Personal history of colonic polyps",
+              "code": "Z86.010",
+              "score": 0.7170269
+            },
+            {
+              "description": "Benign neoplasm of descending colon",
+              "code": "D12.4",
+              "score": 0.66715306
+            },
+            {
+              "description": "Benign neoplasm of colon, unspecified",
+              "code": "D12.6",
+              "score": 0.6594903
+            },
+            {
+              "description": "Benign neoplasm of sigmoid colon",
+              "code": "D12.5",
+              "score": 0.6577723
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "09c40c4e-8852-4e73-adb6-ece24e087e45"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "09c40c4e-8852-4e73-adb6-ece24e087e45"
+          ],
+          "Content-Length": [
+            "4230"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4230",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:50 GMT",
+          "x-amzn-RequestId": "09c40c4e-8852-4e73-adb6-ece24e087e45"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6d7761a6-6846-4697-99f2-a8877729d028"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6d7761a6-6846-4697-99f2-a8877729d028"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:50 GMT",
+          "x-amzn-RequestId": "6d7761a6-6846-4697-99f2-a8877729d028"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:50 PM"
+}

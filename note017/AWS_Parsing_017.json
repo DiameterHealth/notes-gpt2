@@ -1,0 +1,569 @@
+{
+  "note": ".  Management of Infected Cat:  1) All cats will have to be isolated from other cats for 48 hrs post treatment – if not managed early enough in the episode, infection can be highly severe and lead to permanent ulcerative skin lesions. 2) All cat will need to be checked for any new infections and their current vaccinations. Treatment of Ulcer:  All of the above needs to be kept a constant constant watch for infections and/or signs of skin irritation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 552,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "score": 0.4031038,
+          "text": "Infected",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 157,
+          "endOffset": 166,
+          "score": 0.97411114,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7658293
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 210,
+          "endOffset": 233,
+          "score": 0.6175731,
+          "text": "ulcerative skin lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.869572
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 221,
+          "endOffset": 225,
+          "score": 0.9822259,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 282,
+          "endOffset": 292,
+          "score": 0.94817096,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86050534
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 303,
+          "endOffset": 310,
+          "score": 0.9999572,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.873508,
+              "relationshipScore": 0.867878,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 311,
+              "endOffset": 323,
+              "text": "vaccinations",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 311,
+          "endOffset": 323,
+          "score": 0.873508,
+          "text": "vaccinations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 338,
+          "endOffset": 343,
+          "score": 0.9618374,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8296519
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 410,
+          "endOffset": 420,
+          "score": 0.9809964,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75019336
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 437,
+          "endOffset": 441,
+          "score": 0.996014,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 437,
+          "endOffset": 452,
+          "score": 0.91561365,
+          "text": "skin irritation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5071298
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "61dfa576-3cdf-4283-a38b-06cc9abd3ccc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "61dfa576-3cdf-4283-a38b-06cc9abd3ccc"
+          ],
+          "Content-Length": [
+            "2260"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2260",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:33 GMT",
+          "x-amzn-RequestId": "61dfa576-3cdf-4283-a38b-06cc9abd3ccc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 565,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Infected",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40310377,
+          "beginOffset": 17,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7945955
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.7703878
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7371018
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.70023286
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6960283
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97411114,
+          "beginOffset": 157,
+          "endOffset": 166,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7658293
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7735153
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.7533656
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.70364535
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.684269
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.67104983
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ulcerative skin lesions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.61757314,
+          "beginOffset": 210,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.869572
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.47527885
+            },
+            {
+              "description": "Dermatitis, unspecified",
+              "code": "L30.9",
+              "score": 0.36291853
+            },
+            {
+              "description": "Disorder of pigmentation, unspecified",
+              "code": "L81.9",
+              "score": 0.36121088
+            },
+            {
+              "description": "Malignant melanoma of skin, unspecified",
+              "code": "C43.9",
+              "score": 0.35546142
+            },
+            {
+              "description": "Other seborrheic keratosis",
+              "code": "L82.1",
+              "score": 0.35322705
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94817084,
+          "beginOffset": 282,
+          "endOffset": 292,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86050534
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.77213216
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.72451675
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.69882697
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.6877147
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6792214
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9618373,
+          "beginOffset": 338,
+          "endOffset": 343,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82965183
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.6666923
+            },
+            {
+              "description": "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K27.9",
+              "score": 0.63160855
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.61778724
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.5971248
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.5920463
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9809964,
+          "beginOffset": 410,
+          "endOffset": 420,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75019336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7588881
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.70816416
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.64862305
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.64268684
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.62047154
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "skin irritation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91561365,
+          "beginOffset": 437,
+          "endOffset": 452,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5071297
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.706981
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.6150638
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.5584542
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.5571942
+            },
+            {
+              "description": "Other specified disorders of the skin and subcutaneous tissue",
+              "code": "L98.8",
+              "score": 0.5474651
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "22e19932-38e5-465a-988c-4ec7042aa0cf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "22e19932-38e5-465a-988c-4ec7042aa0cf"
+          ],
+          "Content-Length": [
+            "5426"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5426",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:34 GMT",
+          "x-amzn-RequestId": "22e19932-38e5-465a-988c-4ec7042aa0cf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "39917728-7f80-44b7-859b-69744822879b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "39917728-7f80-44b7-859b-69744822879b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:33 GMT",
+          "x-amzn-RequestId": "39917728-7f80-44b7-859b-69744822879b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:34 PM"
+}

@@ -1,0 +1,236 @@
+{
+  "note": ", or as noted, as of today with NSAIDs. Etiology  The illness is thought to be caused by a virus. Diagnosis   Imaging  As part of the clinical investigation it is helpful to obtain a CT or MRI of the brain, or a repeat of some of the earlier blood tests; however, this is usually not needed when we make the diagnosis in many cases.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 278,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 21,
+          "endOffset": 26,
+          "score": 0.9995559,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.50712067,
+              "relationshipScore": 0.72590894,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 32,
+              "endOffset": 38,
+              "text": "NSAIDs",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 21,
+          "endOffset": 26,
+          "score": 0.9995559,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.48385248,
+              "relationshipScore": 0.72590894,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 32,
+              "endOffset": 38,
+              "text": "NSAIDs",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "score": 0.48385248,
+          "text": "NSAIDs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 32,
+          "endOffset": 38,
+          "score": 0.50712067,
+          "text": "NSAIDs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 110,
+          "endOffset": 117,
+          "score": 0.77132285,
+          "text": "Imaging",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 183,
+          "endOffset": 185,
+          "score": 0.7782054,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 189,
+          "endOffset": 192,
+          "score": 0.89995784,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 200,
+          "endOffset": 205,
+          "score": 0.98718053,
+          "text": "brain",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 242,
+          "endOffset": 253,
+          "score": 0.9760976,
+          "text": "blood tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "84338679-28f0-46b2-97b5-27a536ebcdfd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "84338679-28f0-46b2-97b5-27a536ebcdfd"
+          ],
+          "Content-Length": [
+            "1902"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1902",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:31 GMT",
+          "x-amzn-RequestId": "84338679-28f0-46b2-97b5-27a536ebcdfd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 261,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7741f763-2cd3-4866-8263-cc07b2a6b839"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7741f763-2cd3-4866-8263-cc07b2a6b839"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:31 GMT",
+          "x-amzn-RequestId": "7741f763-2cd3-4866-8263-cc07b2a6b839"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 267,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4270da3f-2938-4e79-b973-40c3a9a0d3ca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4270da3f-2938-4e79-b973-40c3a9a0d3ca"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:31 GMT",
+          "x-amzn-RequestId": "4270da3f-2938-4e79-b973-40c3a9a0d3ca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:32 PM"
+}

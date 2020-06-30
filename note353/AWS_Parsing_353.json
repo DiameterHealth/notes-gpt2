@@ -1,0 +1,589 @@
+{
+  "note": ". Patient has a positive cultures for Methicillin-resistant Staphylococcus and Clostridium. Patient presents for follow-up care. DISCUSSION The patient is in the first week of a chronic illness. Patient was sick for approximately 8 days and has been hospitalized for approximately a week. Patient has cough and fever and does not recover when he is rested and well. The patient is receiving a course of a 4 day course of 4 ticlopram, but he has failed to recover.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 554,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "score": 0.9847172,
+          "text": "cultures",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.81433696,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 16,
+              "endOffset": 24,
+              "text": "positive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 38,
+          "endOffset": 90,
+          "score": 0.5288312,
+          "text": "Methicillin-resistant Staphylococcus and Clostridium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88038015
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 162,
+          "endOffset": 172,
+          "score": 0.97736937,
+          "text": "first week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8608532,
+              "relationshipScore": 0.8099759,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 186,
+              "endOffset": 193,
+              "text": "illness",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.44203576
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 186,
+          "endOffset": 193,
+          "score": 0.8608532,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44203576
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9889327,
+              "relationshipScore": 0.9999839,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 178,
+              "endOffset": 185,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 207,
+          "endOffset": 211,
+          "score": 0.54244906,
+          "text": "sick",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.3793447,
+              "relationshipScore": 0.9999738,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 216,
+              "endOffset": 236,
+              "text": "approximately 8 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 230,
+          "endOffset": 236,
+          "score": 0.99826473,
+          "text": "8 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.54244906,
+              "relationshipScore": 0.9067726,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 207,
+              "endOffset": 211,
+              "text": "sick",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 301,
+          "endOffset": 306,
+          "score": 0.9959358,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87332046
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 311,
+          "endOffset": 316,
+          "score": 0.99337184,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.793792
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 423,
+          "endOffset": 432,
+          "score": 0.9933009,
+          "text": "ticlopram",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.9412694,
+              "relationshipScore": 0.9999976,
+              "relationshipType": "DURATION",
+              "id": 0,
+              "beginOffset": 405,
+              "endOffset": 417,
+              "text": "4 day course",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.5348407,
+              "relationshipScore": 0.9999995,
+              "relationshipType": "DOSAGE",
+              "id": 1,
+              "beginOffset": 421,
+              "endOffset": 422,
+              "text": "4",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9889327,
+            "id": 4,
+            "beginOffset": 178,
+            "endOffset": 185,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.3793447,
+            "id": 7,
+            "beginOffset": 216,
+            "endOffset": 236,
+            "text": "approximately 8 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9a9512d1-0d6a-4ea6-af06-77e2e49cb1f3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9a9512d1-0d6a-4ea6-af06-77e2e49cb1f3"
+          ],
+          "Content-Length": [
+            "3655"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3655",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:01 GMT",
+          "x-amzn-RequestId": "9a9512d1-0d6a-4ea6-af06-77e2e49cb1f3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 672,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Methicillin-resistant Staphylococcus and Clostridium",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.52883106,
+          "beginOffset": 38,
+          "endOffset": 90,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88038015
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.6189339
+            },
+            {
+              "description": "Methicillin resistant Staphylococcus aureus infection as the cause of diseases classified elsewhere",
+              "code": "B95.62",
+              "score": 0.57148206
+            },
+            {
+              "description": "Sepsis due to Methicillin susceptible Staphylococcus aureus",
+              "code": "A41.01",
+              "score": 0.5587458
+            },
+            {
+              "description": "Unspecified staphylococcus as the cause of diseases classified elsewhere",
+              "code": "B95.8",
+              "score": 0.51461864
+            },
+            {
+              "description": "Other specified bacterial agents as the cause of diseases classified elsewhere",
+              "code": "B96.89",
+              "score": 0.5054885
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8608534,
+          "beginOffset": 186,
+          "endOffset": 193,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9889327,
+              "relationshipScore": 0.9999839,
+              "id": 1,
+              "beginOffset": 178,
+              "endOffset": 185,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4420358
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.73354477
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6350246
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.55081964
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.5374639
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.50652295
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sick",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.54244906,
+          "beginOffset": 207,
+          "endOffset": 211,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.3793445,
+              "relationshipScore": 0.9999738,
+              "id": 4,
+              "beginOffset": 216,
+              "endOffset": 236,
+              "text": "approximately 8 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.81057066
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.69662637
+            },
+            {
+              "description": "Contact with and (suspected) exposure to unspecified communicable disease",
+              "code": "Z20.9",
+              "score": 0.6870134
+            },
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.63831973
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.63206303
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9959358,
+          "beginOffset": 301,
+          "endOffset": 306,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87332046
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8597069
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.64815354
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.6418614
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.6352379
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6148568
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99337184,
+          "beginOffset": 311,
+          "endOffset": 316,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.793792
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8508691
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.60010755
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.5266802
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5115298
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.47022158
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "31048eb3-0692-4043-be9e-2abd8df4807b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "31048eb3-0692-4043-be9e-2abd8df4807b"
+          ],
+          "Content-Length": [
+            "3941"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3941",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:02 GMT",
+          "x-amzn-RequestId": "31048eb3-0692-4043-be9e-2abd8df4807b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 351,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e54e669b-cf70-4142-ae58-a74cbf28f726"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e54e669b-cf70-4142-ae58-a74cbf28f726"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:01 GMT",
+          "x-amzn-RequestId": "e54e669b-cf70-4142-ae58-a74cbf28f726"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:02 PM"
+}

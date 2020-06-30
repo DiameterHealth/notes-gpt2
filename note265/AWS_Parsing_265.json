@@ -1,0 +1,646 @@
+{
+  "note": "The patient has made no previous treatment or medications for this disorder and had a normal cardiac history to date. However, the patient\u0027s risk of death has increased recently (7.3% vs. 5.1%. He took anticoagulants, beta blocker, and vaso active agents for his hypertension at that time). The cardiac output was normal (97% of baseline), he presented with a very severe case of myocardial ischemia with a left anterior descending block.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 819,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 67,
+          "endOffset": 75,
+          "score": 0.6803512,
+          "text": "disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77008384
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 149,
+          "endOffset": 154,
+          "score": 0.97861314,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9398513
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 169,
+          "endOffset": 177,
+          "score": 0.9999988,
+          "text": "recently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97861314,
+              "relationshipScore": 0.6442879,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 149,
+              "endOffset": 154,
+              "text": "death",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9398513
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 202,
+          "endOffset": 216,
+          "score": 0.482351,
+          "text": "anticoagulants",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 202,
+          "endOffset": 216,
+          "score": 0.6455813,
+          "text": "anticoagulants",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 218,
+          "endOffset": 230,
+          "score": 0.94543546,
+          "text": "beta blocker",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 218,
+          "endOffset": 230,
+          "score": 0.59276766,
+          "text": "beta blocker",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 236,
+          "endOffset": 240,
+          "score": 0.5028427,
+          "text": "vaso",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 263,
+          "endOffset": 275,
+          "score": 0.9958021,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9638786
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 276,
+          "endOffset": 288,
+          "score": 0.95935917,
+          "text": "at that time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9958021,
+              "relationshipScore": 0.8643727,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 263,
+              "endOffset": 275,
+              "text": "hypertension",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9638786
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 295,
+          "endOffset": 309,
+          "score": 0.87646437,
+          "text": "cardiac output",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9202312,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 314,
+              "endOffset": 320,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7090246,
+              "relationshipScore": 0.9999908,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 322,
+              "endOffset": 324,
+              "text": "97",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9739086,
+              "relationshipScore": 0.9999937,
+              "relationshipType": "TEST_UNIT",
+              "id": 15,
+              "beginOffset": 324,
+              "endOffset": 325,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 380,
+          "endOffset": 399,
+          "score": 0.7787929,
+          "text": "myocardial ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9045173
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9494442,
+              "relationshipScore": 0.6055033,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 412,
+              "endOffset": 420,
+              "text": "anterior",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 421,
+          "endOffset": 431,
+          "score": 0.47186258,
+          "text": "descending",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.96170574,
+            "id": 0,
+            "beginOffset": 407,
+            "endOffset": 411,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9494442,
+            "id": 1,
+            "beginOffset": 412,
+            "endOffset": 420,
+            "text": "anterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3360a216-e9e6-4e18-8440-3bbebe1faad9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3360a216-e9e6-4e18-8440-3bbebe1faad9"
+          ],
+          "Content-Length": [
+            "4062"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4062",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:00 GMT",
+          "x-amzn-RequestId": "3360a216-e9e6-4e18-8440-3bbebe1faad9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 552,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6803511,
+          "beginOffset": 67,
+          "endOffset": 75,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7700837
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Parkinson\u0027s disease",
+              "code": "G20",
+              "score": 0.8303386
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.79499227
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.76221323
+            },
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.75352865
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.7146018
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97861314,
+          "beginOffset": 149,
+          "endOffset": 154,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9398513
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.82991236
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.7935328
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.7932508
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.76577646
+            },
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.7166882
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9958021,
+          "beginOffset": 263,
+          "endOffset": 275,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9638786
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.8581921
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8504328
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.8186476
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7977176
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.7472209
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "myocardial ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7787928,
+          "beginOffset": 380,
+          "endOffset": 399,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9494442,
+              "relationshipScore": 0.6055033,
+              "id": 5,
+              "beginOffset": 412,
+              "endOffset": 420,
+              "text": "anterior",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9045173
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.82908803
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.76507807
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.72342193
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.6570803
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.6251998
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f4cfac66-1961-4f09-a80b-c1f407b96fe8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f4cfac66-1961-4f09-a80b-c1f407b96fe8"
+          ],
+          "Content-Length": [
+            "3216"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3216",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:02 GMT",
+          "x-amzn-RequestId": "f4cfac66-1961-4f09-a80b-c1f407b96fe8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 474,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "beta blocker",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.59276766,
+          "beginOffset": 218,
+          "endOffset": 230,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Interferon-beta",
+              "code": "4381",
+              "score": 0.9176571
+            },
+            {
+              "description": "beta Sitosterol",
+              "code": "47070",
+              "score": 0.8796279
+            },
+            {
+              "description": "agalsidase beta",
+              "code": "338817",
+              "score": 0.8782597
+            },
+            {
+              "description": "follitropin beta",
+              "code": "25357",
+              "score": 0.83672863
+            },
+            {
+              "description": "beta tocopherol",
+              "code": "1792723",
+              "score": 0.7755595
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "vaso",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5028426,
+          "beginOffset": 236,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Wasp Venoms",
+              "code": "11291",
+              "score": 0.44054085
+            },
+            {
+              "description": "TICK-BORN ENCEPHALITIS VACC",
+              "code": "236736",
+              "score": 0.27638665
+            },
+            {
+              "description": "ONCORHYNCHUS MASOU SPERM DNA",
+              "code": "1432979",
+              "score": 0.1797663
+            },
+            {
+              "description": "WASP VENOM PROTEIN",
+              "code": "260051",
+              "score": 0.16761324
+            },
+            {
+              "description": "German wasp venom protein",
+              "code": "1297531",
+              "score": 0.15677813
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ef9b83a7-a543-44a8-ab97-f87008e160af"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ef9b83a7-a543-44a8-ab97-f87008e160af"
+          ],
+          "Content-Length": [
+            "1206"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1206",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:00 GMT",
+          "x-amzn-RequestId": "ef9b83a7-a543-44a8-ab97-f87008e160af"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:02 PM"
+}

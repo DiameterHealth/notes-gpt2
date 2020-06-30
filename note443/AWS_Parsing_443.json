@@ -1,0 +1,792 @@
+{
+  "note": "a history of migraines (with a duration of at least 6 months) and recent migraines have been accompanied by depression. She seems to be experiencing major depressive episodes which she has been struggling with for several years now. She is currently taking antidepressant medication for bipolar or manic depressive disorder. Her past medical history appears to be in order. [This information is based on the patient\u0027s self-reported history and is self-reported]  Current Medical History The patient reports that she takes the antidepressant antidepressant drug, venlafaxine (Effexor XL; GlaxoSmithKline), to treat bipolar disorder.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 685,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 13,
+          "endOffset": 22,
+          "score": 0.9986279,
+          "text": "migraines",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9330174
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 66,
+          "endOffset": 72,
+          "score": 0.99999774,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9795486,
+              "relationshipScore": 0.5751846,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 108,
+              "endOffset": 118,
+              "text": "depression",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8441303
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 66,
+          "endOffset": 72,
+          "score": 0.99999774,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9951639,
+              "relationshipScore": 0.8039272,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 73,
+              "endOffset": 82,
+              "text": "migraines",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.83183193
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 73,
+          "endOffset": 82,
+          "score": 0.9951639,
+          "text": "migraines",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83183193
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 108,
+          "endOffset": 118,
+          "score": 0.9795486,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8441303
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 149,
+          "endOffset": 174,
+          "score": 0.73752403,
+          "text": "major depressive episodes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65783787
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4287994,
+              "relationshipScore": 0.999292,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 214,
+              "endOffset": 227,
+              "text": "several years",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 240,
+          "endOffset": 249,
+          "score": 0.99999905,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9141831,
+              "relationshipScore": 0.5365531,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 298,
+              "endOffset": 323,
+              "text": "manic depressive disorder",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9727523
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 240,
+          "endOffset": 249,
+          "score": 0.99999905,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.96128273,
+              "relationshipScore": 0.78133637,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 257,
+              "endOffset": 282,
+              "text": "antidepressant medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 257,
+          "endOffset": 282,
+          "score": 0.96128273,
+          "text": "antidepressant medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 287,
+          "endOffset": 294,
+          "score": 0.8519226,
+          "text": "bipolar",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.912948
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 298,
+          "endOffset": 323,
+          "score": 0.9141831,
+          "text": "manic depressive disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9727523
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 562,
+          "endOffset": 573,
+          "score": 0.99891686,
+          "text": "venlafaxine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 575,
+          "endOffset": 585,
+          "score": 0.9144462,
+          "text": "Effexor XL",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 587,
+          "endOffset": 602,
+          "score": 0.9533966,
+          "text": "GlaxoSmithKline",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 614,
+          "endOffset": 630,
+          "score": 0.98616856,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97327244
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.4287994,
+            "id": 7,
+            "beginOffset": 214,
+            "endOffset": 227,
+            "text": "several years",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "48c5d461-fc06-4eb1-9029-cbcab9ac9738"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "48c5d461-fc06-4eb1-9029-cbcab9ac9738"
+          ],
+          "Content-Length": [
+            "4252"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4252",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:43 GMT",
+          "x-amzn-RequestId": "48c5d461-fc06-4eb1-9029-cbcab9ac9738"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 596,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "migraines",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9986279,
+          "beginOffset": 13,
+          "endOffset": 22,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9330174
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.7409001
+            },
+            {
+              "description": "Migraine with aura, not intractable, without status migrainosus",
+              "code": "G43.109",
+              "score": 0.60153836
+            },
+            {
+              "description": "Migraine, unspecified, not intractable",
+              "code": "G43.90",
+              "score": 0.46817803
+            },
+            {
+              "description": "Migraine, unspecified, intractable, without status migrainosus",
+              "code": "G43.919",
+              "score": 0.44886085
+            },
+            {
+              "description": "Migraine, unspecified",
+              "code": "G43.9",
+              "score": 0.4378952
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "migraines",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9951639,
+          "beginOffset": 73,
+          "endOffset": 82,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83183193
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.75030446
+            },
+            {
+              "description": "Migraine with aura, not intractable, without status migrainosus",
+              "code": "G43.109",
+              "score": 0.5868145
+            },
+            {
+              "description": "Migraine, unspecified, intractable, without status migrainosus",
+              "code": "G43.919",
+              "score": 0.48220345
+            },
+            {
+              "description": "Migraine, unspecified, not intractable",
+              "code": "G43.90",
+              "score": 0.48044163
+            },
+            {
+              "description": "Migraine, unspecified",
+              "code": "G43.9",
+              "score": 0.47658983
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9795486,
+          "beginOffset": 108,
+          "endOffset": 118,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8441302
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.8675046
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7193209
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.6901104
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.6432921
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.6344083
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "major depressive episodes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73752403,
+          "beginOffset": 149,
+          "endOffset": 174,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.42879927,
+              "relationshipScore": 0.999292,
+              "id": 4,
+              "beginOffset": 214,
+              "endOffset": 227,
+              "text": "several years",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65783787
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.808679
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.6707704
+            },
+            {
+              "description": "Major depressive disorder, single episode, mild",
+              "code": "F32.0",
+              "score": 0.5970101
+            },
+            {
+              "description": "Major depressive disorder, single episode, moderate",
+              "code": "F32.1",
+              "score": 0.58046585
+            },
+            {
+              "description": "Major depressive disorder, recurrent, unspecified",
+              "code": "F33.9",
+              "score": 0.5596397
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "bipolar",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8519226,
+          "beginOffset": 287,
+          "endOffset": 294,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.912948
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.65964866
+            },
+            {
+              "description": "Bipolar disorder, current episode manic without psychotic features, unspecified",
+              "code": "F31.10",
+              "score": 0.35511407
+            },
+            {
+              "description": "Bipolar disorder, current episode hypomanic",
+              "code": "F31.0",
+              "score": 0.33137855
+            },
+            {
+              "description": "Bipolar disorder, current episode mixed, unspecified",
+              "code": "F31.60",
+              "score": 0.32712144
+            },
+            {
+              "description": "Other bipolar disorder",
+              "code": "F31.89",
+              "score": 0.3133386
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "manic depressive disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9141831,
+          "beginOffset": 298,
+          "endOffset": 323,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9727523
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Manic episode, unspecified",
+              "code": "F30.9",
+              "score": 0.61095583
+            },
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.507582
+            },
+            {
+              "description": "Manic episode",
+              "code": "F30",
+              "score": 0.4065817
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.39062217
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.37519634
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98616856,
+          "beginOffset": 614,
+          "endOffset": 630,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97327244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.6787281
+            },
+            {
+              "description": "Bipolar disorder",
+              "code": "F31",
+              "score": 0.39105457
+            },
+            {
+              "description": "Bipolar II disorder",
+              "code": "F31.81",
+              "score": 0.3387558
+            },
+            {
+              "description": "Bipolar disorder, current episode mixed, unspecified",
+              "code": "F31.60",
+              "score": 0.3377993
+            },
+            {
+              "description": "Bipolar disorder, current episode manic without psychotic features, unspecified",
+              "code": "F31.10",
+              "score": 0.33660352
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4a1888cb-3a3a-4e60-8728-d94d090cbe2c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4a1888cb-3a3a-4e60-8728-d94d090cbe2c"
+          ],
+          "Content-Length": [
+            "5674"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5674",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:44 GMT",
+          "x-amzn-RequestId": "4a1888cb-3a3a-4e60-8728-d94d090cbe2c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 473,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "venlafaxine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99891686,
+          "beginOffset": 562,
+          "endOffset": 573,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "venlafaxine",
+              "code": "39786",
+              "score": 0.9353269
+            },
+            {
+              "description": "24 HR venlafaxine 150 MG Extended Release Oral Capsule",
+              "code": "313581",
+              "score": 0.78222823
+            },
+            {
+              "description": "24 HR venlafaxine 75 MG Extended Release Oral Tablet",
+              "code": "808753",
+              "score": 0.7228417
+            },
+            {
+              "description": "24 HR venlafaxine 75 MG Extended Release Oral Capsule",
+              "code": "313585",
+              "score": 0.6922243
+            },
+            {
+              "description": "24 HR venlafaxine 37.5 MG Extended Release Oral Tablet",
+              "code": "808751",
+              "score": 0.6282339
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Effexor XL",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.91444606,
+          "beginOffset": 575,
+          "endOffset": 585,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "24 HR venlafaxine 75 MG Extended Release Oral Capsule [Effexor]",
+              "code": "729929",
+              "score": 0.88051414
+            },
+            {
+              "description": "Effexor",
+              "code": "151692",
+              "score": 0.49229717
+            },
+            {
+              "description": "24 HR venlafaxine 150 MG Extended Release Oral Capsule [Effexor]",
+              "code": "729931",
+              "score": 0.38044053
+            },
+            {
+              "description": "XL-DOL",
+              "code": "1193449",
+              "score": 0.29980117
+            },
+            {
+              "description": "24 HR venlafaxine 37.5 MG Extended Release Oral Capsule [Effexor]",
+              "code": "729932",
+              "score": 0.22135769
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4222d01e-2f14-48d0-b30a-6e5e163f7502"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4222d01e-2f14-48d0-b30a-6e5e163f7502"
+          ],
+          "Content-Length": [
+            "1453"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1453",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:43 GMT",
+          "x-amzn-RequestId": "4222d01e-2f14-48d0-b30a-6e5e163f7502"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:44 PM"
+}

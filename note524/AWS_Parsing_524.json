@@ -1,0 +1,187 @@
+{
+  "note": "THE MEDICINAL USE OF THE SODA INDUCED CHOLESTEROL SIDE EFFECTS BASIC  - The body can utilize some of the substances released from the kidneys. The kidneys do not normally release substances to the blood (and vice versa), but as the body is forced to take in a significant amount of fluid due to dehydration, the body produces a substance that it can use in place of the normal urine.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 306,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 134,
+          "endOffset": 141,
+          "score": 0.8612775,
+          "text": "kidneys",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 147,
+          "endOffset": 154,
+          "score": 0.82502854,
+          "text": "kidneys",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 295,
+          "endOffset": 306,
+          "score": 0.9634102,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50448966
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4c849e69-2180-442a-a8cc-218c21ee4323"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4c849e69-2180-442a-a8cc-218c21ee4323"
+          ],
+          "Content-Length": [
+            "553"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "553",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:21 GMT",
+          "x-amzn-RequestId": "4c849e69-2180-442a-a8cc-218c21ee4323"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 289,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9634101,
+          "beginOffset": 295,
+          "endOffset": 306,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50448954
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dehydration",
+              "code": "E86.0",
+              "score": 0.8544104
+            },
+            {
+              "description": "Dehydration of newborn",
+              "code": "P74.1",
+              "score": 0.44229642
+            },
+            {
+              "description": "Hyperemesis gravidarum with metabolic disturbance",
+              "code": "O21.1",
+              "score": 0.41170904
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f2fb43f2-ae0f-4296-8717-b26471adc6f6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f2fb43f2-ae0f-4296-8717-b26471adc6f6"
+          ],
+          "Content-Length": [
+            "536"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "536",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:21 GMT",
+          "x-amzn-RequestId": "f2fb43f2-ae0f-4296-8717-b26471adc6f6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75c12131-154b-437b-a7cf-5c4ca68d9aa6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75c12131-154b-437b-a7cf-5c4ca68d9aa6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:21 GMT",
+          "x-amzn-RequestId": "75c12131-154b-437b-a7cf-5c4ca68d9aa6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:21 PM"
+}

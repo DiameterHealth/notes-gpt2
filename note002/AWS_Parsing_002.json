@@ -1,0 +1,303 @@
+{
+  "note": "a prescription for home oxygen. (This will take a few days to get back on). The nurse who spoke to him before he left told him he looked fine but they would need to do an examination of his body for any other signs of illness. They may have to do another exam at another time. A full recovery is likely with only short-term effects, although the doctor will discuss it with his patient, and if they are in pain they may call in a pain specialist.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 402,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 24,
+          "endOffset": 30,
+          "score": 0.8796272,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 190,
+          "endOffset": 194,
+          "score": 0.30957517,
+          "text": "body",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 313,
+          "endOffset": 331,
+          "score": 0.52362704,
+          "text": "short-term effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66642976
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 406,
+          "endOffset": 410,
+          "score": 0.9127764,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6017834
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 430,
+          "endOffset": 434,
+          "score": 0.6205894,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dcf96f75-8a9b-407c-83d5-611de18a0431"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dcf96f75-8a9b-407c-83d5-611de18a0431"
+          ],
+          "Content-Length": [
+            "899"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "899",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:00 GMT",
+          "x-amzn-RequestId": "dcf96f75-8a9b-407c-83d5-611de18a0431"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 706,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "short-term effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.523627,
+          "beginOffset": 313,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.66642976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other amnesia",
+              "code": "R41.3",
+              "score": 0.5011186
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.45165965
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.42366433
+            },
+            {
+              "description": "Unspecified effects of vibration",
+              "code": "T75.20",
+              "score": 0.3483008
+            },
+            {
+              "description": "Effect of deprivation, unspecified",
+              "code": "T73.9",
+              "score": 0.34801447
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9127764,
+          "beginOffset": 406,
+          "endOffset": 410,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6017834
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5709416
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.46795803
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.45181137
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.45089716
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.4382879
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.62058926,
+          "beginOffset": 430,
+          "endOffset": 434,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.71386236
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5400355
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5169864
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.51684344
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5127828
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fc7c5c1b-7d1b-4faf-8983-837bf977da50"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fc7c5c1b-7d1b-4faf-8983-837bf977da50"
+          ],
+          "Content-Length": [
+            "1950"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1950",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:00 GMT",
+          "x-amzn-RequestId": "fc7c5c1b-7d1b-4faf-8983-837bf977da50"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 261,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "74d655d2-4abc-44ec-9fb9-db8bf30f715a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "74d655d2-4abc-44ec-9fb9-db8bf30f715a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:00 GMT",
+          "x-amzn-RequestId": "74d655d2-4abc-44ec-9fb9-db8bf30f715a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:02 PM"
+}

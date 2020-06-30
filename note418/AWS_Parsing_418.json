@@ -1,0 +1,626 @@
+{
+  "note": "in the morning. He has a history of myocardial infarction in his 30s and was receiving high dose aspirin, ibuprofen, and acetaminophen for 2 weeks prior to this illness. A chest x-ray shows an anterior left wall radiate compression on CT scan. The patient is on a stable dose tibiotraceridine for his acute chest pain. The patient is under observation and is on his way to the cardiac center.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 407,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 36,
+          "endOffset": 57,
+          "score": 0.9521609,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9547365
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 65,
+          "endOffset": 68,
+          "score": 0.9993087,
+          "text": "30s",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 97,
+          "endOffset": 104,
+          "score": 0.9995988,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 106,
+          "endOffset": 115,
+          "score": 0.99283904,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 121,
+          "endOffset": 134,
+          "score": 0.99974734,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.6689796,
+              "relationshipScore": 0.9999889,
+              "relationshipType": "DURATION",
+              "id": 8,
+              "beginOffset": 139,
+              "endOffset": 146,
+              "text": "2 weeks",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 147,
+          "endOffset": 152,
+          "score": 0.99999917,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9995988,
+              "relationshipScore": 0.51450706,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 97,
+              "endOffset": 104,
+              "text": "aspirin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 147,
+          "endOffset": 152,
+          "score": 0.99999917,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.99974734,
+              "relationshipScore": 0.5626398,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 121,
+              "endOffset": 134,
+              "text": "acetaminophen",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 172,
+          "endOffset": 177,
+          "score": 0.9668733,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 172,
+          "endOffset": 183,
+          "score": 0.8929369,
+          "text": "chest x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6047121,
+              "relationshipScore": 0.99806756,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 193,
+              "endOffset": 231,
+              "text": "anterior left wall radiate compression",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 207,
+          "endOffset": 211,
+          "score": 0.53359836,
+          "text": "wall",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 235,
+          "endOffset": 242,
+          "score": 0.9811504,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6047121,
+              "relationshipScore": 0.99995995,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 193,
+              "endOffset": 231,
+              "text": "anterior left wall radiate compression",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 276,
+          "endOffset": 292,
+          "score": 0.9920603,
+          "text": "tibiotraceridine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 307,
+          "endOffset": 312,
+          "score": 0.98545146,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 307,
+          "endOffset": 317,
+          "score": 0.9624334,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6979057
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9491354,
+              "relationshipScore": 0.99985266,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 301,
+              "endOffset": 306,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 377,
+          "endOffset": 391,
+          "score": 0.7332526,
+          "text": "cardiac center",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9101253,
+            "id": 1,
+            "beginOffset": 193,
+            "endOffset": 201,
+            "text": "anterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.92372775,
+            "id": 2,
+            "beginOffset": 202,
+            "endOffset": 206,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9491354,
+            "id": 11,
+            "beginOffset": 301,
+            "endOffset": 306,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "55bf717e-c0d4-48e5-a3a3-7e35d458ab36"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "55bf717e-c0d4-48e5-a3a3-7e35d458ab36"
+          ],
+          "Content-Length": [
+            "4430"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4430",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:56 GMT",
+          "x-amzn-RequestId": "55bf717e-c0d4-48e5-a3a3-7e35d458ab36"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 533,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9521609,
+          "beginOffset": 36,
+          "endOffset": 57,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9547365
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.86617607
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7848601
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7551966
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.748139
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.7329297
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9624334,
+          "beginOffset": 307,
+          "endOffset": 317,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9491353,
+              "relationshipScore": 0.99985266,
+              "id": 5,
+              "beginOffset": 301,
+              "endOffset": 306,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69790566
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.46971267
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.36080313
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.31314656
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.2984778
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.248809
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "190da4e3-c5ad-466e-93bf-862a17870353"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "190da4e3-c5ad-466e-93bf-862a17870353"
+          ],
+          "Content-Length": [
+            "1605"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1605",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:57 GMT",
+          "x-amzn-RequestId": "190da4e3-c5ad-466e-93bf-862a17870353"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 719,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9995988,
+          "beginOffset": 97,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99283904,
+          "beginOffset": 106,
+          "endOffset": 115,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768029
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99974734,
+          "beginOffset": 121,
+          "endOffset": 134,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.6689796,
+              "relationshipScore": 0.9999889,
+              "id": 3,
+              "beginOffset": 139,
+              "endOffset": 146,
+              "text": "2 weeks",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet",
+              "code": "313782",
+              "score": 0.59314084
+            },
+            {
+              "description": "Acetaminophen 80 MG Chewable Tablet",
+              "code": "307696",
+              "score": 0.052708153
+            },
+            {
+              "description": "Acetaminophen 160 MG Rectal Suppository",
+              "code": "247650",
+              "score": 0.023880403
+            },
+            {
+              "description": "Acetaminophen 32 MG/ML Oral Solution",
+              "code": "307675",
+              "score": 0.015335798
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "543aa3a7-62b5-4702-915b-c7757539b8cd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "543aa3a7-62b5-4702-915b-c7757539b8cd"
+          ],
+          "Content-Length": [
+            "2149"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2149",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:56 GMT",
+          "x-amzn-RequestId": "543aa3a7-62b5-4702-915b-c7757539b8cd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:58 PM"
+}

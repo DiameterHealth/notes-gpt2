@@ -1,0 +1,874 @@
+{
+  "note": "within 30 min. Rash remained red and itchy. Took Advil today with history of headache for 3 hrs. Headache eased but now feels better. Nodulglycem/clariflyc/albuterol for mild to moderate pain. I take Zithromax 2x a day. 17.7/28.1/9.8 3 8 6 PM 2mg. 4 8 6 PM 1mg. 17.8/29.8/9.8 3 9 7 AM My husband says that I seem to be improving but the rash continues.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 514,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 15,
+          "endOffset": 19,
+          "score": 0.9548618,
+          "text": "Rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 29,
+          "endOffset": 32,
+          "score": 0.52376807,
+          "text": "red",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 37,
+          "endOffset": 42,
+          "score": 0.915999,
+          "text": "itchy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 49,
+          "endOffset": 54,
+          "score": 0.99930155,
+          "text": "Advil",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 55,
+          "endOffset": 60,
+          "score": 0.99996316,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9961111,
+              "relationshipScore": 0.92620414,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 77,
+              "endOffset": 85,
+              "text": "headache",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.57430404
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 55,
+          "endOffset": 60,
+          "score": 0.99996316,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "BRAND_NAME",
+              "score": 0.99930155,
+              "relationshipScore": 0.9598267,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 49,
+              "endOffset": 54,
+              "text": "Advil",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 77,
+          "endOffset": 85,
+          "score": 0.9961111,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57430404
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 97,
+          "endOffset": 105,
+          "score": 0.84491307,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 120,
+          "endOffset": 132,
+          "score": 0.44606546,
+          "text": "feels better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7092408
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 134,
+          "endOffset": 145,
+          "score": 0.64877164,
+          "text": "Nodulglycem",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 146,
+          "endOffset": 155,
+          "score": 0.76941866,
+          "text": "clariflyc",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 156,
+          "endOffset": 165,
+          "score": 0.99921405,
+          "text": "albuterol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 187,
+          "endOffset": 191,
+          "score": 0.9846906,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50007
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 200,
+          "endOffset": 209,
+          "score": 0.99655056,
+          "text": "Zithromax",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.98778266,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "FREQUENCY",
+              "id": 5,
+              "beginOffset": 210,
+              "endOffset": 218,
+              "text": "2x a day",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.21540079,
+              "relationshipScore": 0.91525495,
+              "relationshipType": "DURATION",
+              "id": 6,
+              "beginOffset": 234,
+              "endOffset": 242,
+              "text": "3 8 6 PM",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.755166,
+              "relationshipScore": 0.99971765,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 243,
+              "endOffset": 246,
+              "text": "2mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.47134855,
+              "relationshipScore": 0.99990463,
+              "relationshipType": "FREQUENCY",
+              "id": 8,
+              "beginOffset": 248,
+              "endOffset": 256,
+              "text": "4 8 6 PM",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.8397044,
+              "relationshipScore": 0.98879284,
+              "relationshipType": "DOSAGE",
+              "id": 9,
+              "beginOffset": 257,
+              "endOffset": 260,
+              "text": "1mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 337,
+          "endOffset": 341,
+          "score": 0.9687104,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46448955
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "de071fa8-3f85-4110-9ffc-b6659eb0dfc3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "de071fa8-3f85-4110-9ffc-b6659eb0dfc3"
+          ],
+          "Content-Length": [
+            "4002"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4002",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:25 GMT",
+          "x-amzn-RequestId": "de071fa8-3f85-4110-9ffc-b6659eb0dfc3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 405,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9548618,
+          "beginOffset": 15,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.6736763
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.3935661
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.375817
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.35670188
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.3368068
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "red",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.52376807,
+          "beginOffset": 29,
+          "endOffset": 32,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.664678
+            },
+            {
+              "description": "Other specified disorders of eye and adnexa",
+              "code": "H57.89",
+              "score": 0.6317511
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.5249075
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.5197783
+            },
+            {
+              "description": "Unspecified complication of procedure",
+              "code": "T81.9",
+              "score": 0.47469935
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "itchy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.915999,
+          "beginOffset": 37,
+          "endOffset": 42,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.6673227
+            },
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.50733143
+            },
+            {
+              "description": "Other pruritus",
+              "code": "L29.8",
+              "score": 0.47820893
+            },
+            {
+              "description": "Unspecified epiphora, unspecified side",
+              "code": "H04.209",
+              "score": 0.4214569
+            },
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.41351545
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9961111,
+          "beginOffset": 77,
+          "endOffset": 85,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57430416
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.49508023
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.36333874
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.28712782
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.28310674
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.27275485
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8449129,
+          "beginOffset": 97,
+          "endOffset": 105,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.58839446
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.46587527
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.3691421
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.3494673
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.31518805
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "feels better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.44606546,
+          "beginOffset": 120,
+          "endOffset": 132,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7092408
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.65151453
+            },
+            {
+              "description": "Cramp and spasm",
+              "code": "R25.2",
+              "score": 0.57859313
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.5784524
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.57668877
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.5757932
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9846906,
+          "beginOffset": 187,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50007004
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6119128
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5396359
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5249764
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5215489
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4998092
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9687104,
+          "beginOffset": 337,
+          "endOffset": 341,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46448955
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.7212866
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.4342712
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.40290818
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.39697814
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.388928
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "37f6962f-1778-47a7-a7b3-1b70286a29c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "37f6962f-1778-47a7-a7b3-1b70286a29c5"
+          ],
+          "Content-Length": [
+            "5401"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5401",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:26 GMT",
+          "x-amzn-RequestId": "37f6962f-1778-47a7-a7b3-1b70286a29c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 840,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Advil",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99930155,
+          "beginOffset": 49,
+          "endOffset": 54,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Advil",
+              "code": "153010",
+              "score": 0.977985
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Advil]",
+              "code": "153008",
+              "score": 0.5848424
+            },
+            {
+              "description": "Advil PM",
+              "code": "643061",
+              "score": 0.3980371
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Capsule [Advil]",
+              "code": "731533",
+              "score": 0.36623162
+            },
+            {
+              "description": "Ibuprofen 100 MG Oral Tablet [Advil]",
+              "code": "731535",
+              "score": 0.21762179
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "albuterol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99921405,
+          "beginOffset": 156,
+          "endOffset": 165,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Albuterol",
+              "code": "435",
+              "score": 0.9363242
+            },
+            {
+              "description": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [ProAir]",
+              "code": "745752",
+              "score": 0.7874798
+            },
+            {
+              "description": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Proventil]",
+              "code": "746763",
+              "score": 0.5446777
+            },
+            {
+              "description": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler [Ventolin]",
+              "code": "859088",
+              "score": 0.53866017
+            },
+            {
+              "description": "200 ACTUAT Albuterol 0.09 MG/ACTUAT Dry Powder Inhaler [ProAir]",
+              "code": "1649961",
+              "score": 0.4601095
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Zithromax",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99655056,
+          "beginOffset": 200,
+          "endOffset": 209,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.98778266,
+              "relationshipScore": 0.99999976,
+              "id": 5,
+              "beginOffset": 210,
+              "endOffset": 218,
+              "text": "2x a day",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.21540082,
+              "relationshipScore": 0.91525495,
+              "id": 6,
+              "beginOffset": 234,
+              "endOffset": 242,
+              "text": "3 8 6 PM",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.7551661,
+              "relationshipScore": 0.99971765,
+              "id": 7,
+              "beginOffset": 243,
+              "endOffset": 246,
+              "text": "2mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.47134864,
+              "relationshipScore": 0.99990463,
+              "id": 8,
+              "beginOffset": 248,
+              "endOffset": 256,
+              "text": "4 8 6 PM",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.83970445,
+              "relationshipScore": 0.98879284,
+              "id": 9,
+              "beginOffset": 257,
+              "endOffset": 260,
+              "text": "1mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Azithromycin 1000 MG Powder for Oral Suspension [Zithromax]",
+              "code": "861417",
+              "score": 0.6890018
+            },
+            {
+              "description": "Zithromax",
+              "code": "196474",
+              "score": 0.4210637
+            },
+            {
+              "description": "Azithromycin 500 MG Oral Tablet [Zithromax]",
+              "code": "226827",
+              "score": 0.14829947
+            },
+            {
+              "description": "Azithromycin 600 MG Oral Tablet [Zithromax]",
+              "code": "211511",
+              "score": 0.12364592
+            },
+            {
+              "description": "Azithromycin 500 MG Injection [Zithromax]",
+              "code": "1668240",
+              "score": 0.12245132
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f33a651c-5c17-4ea1-a368-6a6fc2230665"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f33a651c-5c17-4ea1-a368-6a6fc2230665"
+          ],
+          "Content-Length": [
+            "2865"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2865",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:25 GMT",
+          "x-amzn-RequestId": "f33a651c-5c17-4ea1-a368-6a6fc2230665"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:26 PM"
+}

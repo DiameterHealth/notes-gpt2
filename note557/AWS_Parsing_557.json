@@ -1,0 +1,900 @@
+{
+  "note": "(including self-assessments) as per routine. Investigations The patient reports no fever or rash, but has a low-grade fever (38.4-42.7 degreesC). Laboratory Results Abnormal immunization results are present. The history includes the following: a history of travel to Asia and Europe with a history of common cold;  a recent family history of chickenpox;  a previous history of severe illness and difficulty keeping weight and/or sleeping;  a history of asthma and chronic obstructive pulmonary disease (COPD);  an unexplained weight loss; and  excessive weight gain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 567,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 83,
+          "endOffset": 88,
+          "score": 0.99416095,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8900277
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9584093
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 92,
+          "endOffset": 96,
+          "score": 0.9991967,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84575737
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97817117
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 108,
+          "endOffset": 123,
+          "score": 0.3741222,
+          "text": "low-grade fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64122766
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 267,
+          "endOffset": 271,
+          "score": 0.9543247,
+          "text": "Asia",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 276,
+          "endOffset": 282,
+          "score": 0.9307582,
+          "text": "Europe",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 308,
+          "endOffset": 312,
+          "score": 0.47000003,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 342,
+          "endOffset": 352,
+          "score": 0.98912734,
+          "text": "chickenpox",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8377282
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 384,
+          "endOffset": 391,
+          "score": 0.86609685,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40937835
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 396,
+          "endOffset": 437,
+          "score": 0.9348009,
+          "text": "difficulty keeping weight and/or sleeping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86290103
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 453,
+          "endOffset": 459,
+          "score": 0.99737287,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93193936
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 472,
+          "endOffset": 501,
+          "score": 0.95532495,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9532971
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99390256,
+              "relationshipScore": 0.9999863,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 464,
+              "endOffset": 471,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 503,
+          "endOffset": 507,
+          "score": 0.9930601,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.906311
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99390256,
+              "relationshipScore": 0.96535605,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 464,
+              "endOffset": 471,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 526,
+          "endOffset": 537,
+          "score": 0.9765539,
+          "text": "weight loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7494138
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 554,
+          "endOffset": 565,
+          "score": 0.97515,
+          "text": "weight gain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81933707
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.99390256,
+            "id": 8,
+            "beginOffset": 464,
+            "endOffset": 471,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b512b7fa-6e49-41a2-a34e-1431082cab6b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b512b7fa-6e49-41a2-a34e-1431082cab6b"
+          ],
+          "Content-Length": [
+            "3435"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3435",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:09 GMT",
+          "x-amzn-RequestId": "b512b7fa-6e49-41a2-a34e-1431082cab6b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 728,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99416095,
+          "beginOffset": 83,
+          "endOffset": 88,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8900277
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9584093
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8208767
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5973811
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.4933167
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.477527
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45540938
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9991967,
+          "beginOffset": 92,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84575737
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97817117
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.81263584
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.5102857
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.5073411
+            },
+            {
+              "description": "Generalized skin eruption due to drugs and medicaments taken internally",
+              "code": "L27.0",
+              "score": 0.44719565
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.4463378
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "low-grade fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3741222,
+          "beginOffset": 108,
+          "endOffset": 123,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64122766
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6477948
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.41233477
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.382757
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.33067945
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3193529
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "cold",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.47000003,
+          "beginOffset": 308,
+          "endOffset": 312,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.6388861
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.50652575
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.4488402
+            },
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.40854716
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.38984048
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "chickenpox",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98912734,
+          "beginOffset": 342,
+          "endOffset": 352,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8377282
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Varicella without complication",
+              "code": "B01.9",
+              "score": 0.33374423
+            },
+            {
+              "description": "Varicella [chickenpox]",
+              "code": "B01",
+              "score": 0.23491569
+            },
+            {
+              "description": "Varicella pneumonia",
+              "code": "B01.2",
+              "score": 0.17532519
+            },
+            {
+              "description": "Varicella meningitis",
+              "code": "B01.0",
+              "score": 0.16433257
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86609685,
+          "beginOffset": 384,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40937835
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6412684
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.46421432
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.44072852
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.3997848
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.37698823
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "difficulty keeping weight and/or sleeping",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9348009,
+          "beginOffset": 396,
+          "endOffset": 437,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.862901
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.4246321
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.4011698
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.3969047
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.32243535
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.31744304
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99737287,
+          "beginOffset": 453,
+          "endOffset": 459,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93193924
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7219645
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.5234434
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.51952684
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.49416623
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.47712138
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95532507,
+          "beginOffset": 472,
+          "endOffset": 501,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99390256,
+              "relationshipScore": 0.9999863,
+              "id": 8,
+              "beginOffset": 464,
+              "endOffset": 471,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9532971
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7108601
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.5807286
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.47159186
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.46765718
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.44946203
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9930601,
+          "beginOffset": 503,
+          "endOffset": 507,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99390256,
+              "relationshipScore": 0.96535605,
+              "id": 8,
+              "beginOffset": 464,
+              "endOffset": 471,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.906311
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7866486
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6706436
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.53668445
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.53377324
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.53004766
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "weight loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9765539,
+          "beginOffset": 526,
+          "endOffset": 537,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7494138
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.7454815
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.5524209
+            },
+            {
+              "description": "Excessive weight gain in pregnancy, third trimester",
+              "code": "O26.03",
+              "score": 0.38140258
+            },
+            {
+              "description": "Excessive weight gain in pregnancy, second trimester",
+              "code": "O26.02",
+              "score": 0.37574705
+            },
+            {
+              "description": "Excessive and redundant skin and subcutaneous tissue",
+              "code": "L98.7",
+              "score": 0.35641176
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "weight gain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97515,
+          "beginOffset": 554,
+          "endOffset": 565,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81933707
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.85969484
+            },
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.7198201
+            },
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.70422685
+            },
+            {
+              "description": "Adult failure to thrive",
+              "code": "R62.7",
+              "score": 0.63827264
+            },
+            {
+              "description": "Excessive weight gain in pregnancy",
+              "code": "O26.0",
+              "score": 0.6032669
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c870c349-b03a-4d2d-b576-b554c7ad3016"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c870c349-b03a-4d2d-b576-b554c7ad3016"
+          ],
+          "Content-Length": [
+            "8850"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8850",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:10 GMT",
+          "x-amzn-RequestId": "c870c349-b03a-4d2d-b576-b554c7ad3016"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 259,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3cf03dbb-21e4-4af6-b5ea-78855aad742d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3cf03dbb-21e4-4af6-b5ea-78855aad742d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:09 GMT",
+          "x-amzn-RequestId": "3cf03dbb-21e4-4af6-b5ea-78855aad742d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:10 PM"
+}

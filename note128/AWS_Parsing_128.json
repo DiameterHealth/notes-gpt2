@@ -1,0 +1,431 @@
+{
+  "note": "I am told she has a low chance of a re-hospitalization as she also has a pacemaker but she does have mild left lateral subdural hematoma and is in stable condition. The MRI is not available at this time. PANTHER: A 5-year-old patient with an aortic dissection and a mild hematoma has been stabilized on mechanical ventilation with a portable pump.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 287,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 119,
+          "endOffset": 136,
+          "score": 0.9473292,
+          "text": "subdural hematoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8223521
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.98799455,
+              "relationshipScore": 0.92993945,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 106,
+              "endOffset": 110,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.97959304,
+              "relationshipScore": 0.94364357,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 111,
+              "endOffset": 118,
+              "text": "lateral",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 147,
+          "endOffset": 163,
+          "score": 0.6469952,
+          "text": "stable condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65343696
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 169,
+          "endOffset": 172,
+          "score": 0.9752999,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 190,
+          "endOffset": 202,
+          "score": 0.99999774,
+          "text": "at this time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9752999,
+              "relationshipScore": 0.9826444,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 169,
+              "endOffset": 172,
+              "text": "MRI",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 204,
+          "endOffset": 211,
+          "score": 0.19119613,
+          "text": "PANTHER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 215,
+          "endOffset": 216,
+          "score": 0.9090667,
+          "text": "5",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 242,
+          "endOffset": 259,
+          "score": 0.93548185,
+          "text": "aortic dissection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 271,
+          "endOffset": 279,
+          "score": 0.9691422,
+          "text": "hematoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8058126
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.98799455,
+            "id": 0,
+            "beginOffset": 106,
+            "endOffset": 110,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.97959304,
+            "id": 1,
+            "beginOffset": 111,
+            "endOffset": 118,
+            "text": "lateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6af5a5fc-ce9e-45e9-9211-1c3ec0eabac9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6af5a5fc-ce9e-45e9-9211-1c3ec0eabac9"
+          ],
+          "Content-Length": [
+            "2440"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2440",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:27 GMT",
+          "x-amzn-RequestId": "6af5a5fc-ce9e-45e9-9211-1c3ec0eabac9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 498,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "subdural hematoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9473292,
+          "beginOffset": 119,
+          "endOffset": 136,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.98799455,
+              "relationshipScore": 0.92993945,
+              "id": 0,
+              "beginOffset": 106,
+              "endOffset": 110,
+              "text": "left",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.97959304,
+              "relationshipScore": 0.94364357,
+              "id": 1,
+              "beginOffset": 111,
+              "endOffset": 118,
+              "text": "lateral",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8223521
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Traumatic subdural hemorrhage with loss of consciousness of unspecified duration",
+              "code": "S06.5X9",
+              "score": 0.55012417
+            },
+            {
+              "description": "Traumatic subdural hemorrhage without loss of consciousness",
+              "code": "S06.5X0",
+              "score": 0.36037415
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of unspecified duration",
+              "code": "S06.369",
+              "score": 0.30640563
+            },
+            {
+              "description": "Personal history of other diseases of the circulatory system",
+              "code": "Z86.79",
+              "score": 0.26151115
+            },
+            {
+              "description": "Traumatic subdural hemorrhage",
+              "code": "S06.5X",
+              "score": 0.25070766
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "stable condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.64699525,
+          "beginOffset": 147,
+          "endOffset": 163,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.65343696
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.6208778
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.5083302
+            },
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.44465232
+            },
+            {
+              "description": "Unspecified degenerated conditions of globe",
+              "code": "H44.50",
+              "score": 0.40095326
+            },
+            {
+              "description": "Keratoconus, stable",
+              "code": "H18.61",
+              "score": 0.31977588
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hematoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9691422,
+          "beginOffset": 271,
+          "endOffset": 279,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8058126
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.6153921
+            },
+            {
+              "description": "Postprocedural hematoma of skin and subcutaneous tissue following other procedure",
+              "code": "L76.32",
+              "score": 0.5944399
+            },
+            {
+              "description": "Contusion of lower back and pelvis",
+              "code": "S30.0",
+              "score": 0.5264091
+            },
+            {
+              "description": "Contusion of scalp",
+              "code": "S00.03",
+              "score": 0.50655097
+            },
+            {
+              "description": "Contusion of thorax, unspecified",
+              "code": "S20.20",
+              "score": 0.48796102
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46c9d3c5-eb90-4503-aa26-512234732068"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46c9d3c5-eb90-4503-aa26-512234732068"
+          ],
+          "Content-Length": [
+            "2683"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2683",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:27 GMT",
+          "x-amzn-RequestId": "46c9d3c5-eb90-4503-aa26-512234732068"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 188,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53a1075a-2be8-440b-b6cd-7cba307519b4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53a1075a-2be8-440b-b6cd-7cba307519b4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:27 GMT",
+          "x-amzn-RequestId": "53a1075a-2be8-440b-b6cd-7cba307519b4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:28 PM"
+}

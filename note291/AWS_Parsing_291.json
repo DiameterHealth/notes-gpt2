@@ -1,0 +1,482 @@
+{
+  "note": ".  01:21:10 (T): _______________________________________________________________  WALKER: ________________________________________________  AP:  Routine physical exam today. Patient is able to walk and walk and walk. Physical examination of the hand was normal. 01:23:01 (T): _______________________________________________________________  WALKER: ________________________________________________  AP:  There are no symptoms that are expected to cause concern in the near future. 01:24:20 (T): _______________________________________________________________  WALKER: ________________________________________________  AP:  There is no history of any history of neurological or muscular disease that was noted in the patient, and there is no evidence of significant changes in his motor behavior, as shown by the examiner.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2100,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 140,
+          "endOffset": 142,
+          "score": 0.4448415,
+          "text": "AP",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 153,
+          "endOffset": 166,
+          "score": 0.6364186,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 167,
+          "endOffset": 172,
+          "score": 0.65110666,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.6364186,
+              "relationshipScore": 0.9890297,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 153,
+              "endOffset": 166,
+              "text": "physical exam",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 185,
+          "endOffset": 215,
+          "score": 0.5332365,
+          "text": "able to walk and walk and walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.57817614
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.4448415,
+              "relationshipScore": 0.6335673,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 140,
+              "endOffset": 142,
+              "text": "AP",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 217,
+          "endOffset": 237,
+          "score": 0.8500179,
+          "text": "Physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7978033,
+              "relationshipScore": 0.99935526,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 254,
+              "endOffset": 260,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 245,
+          "endOffset": 249,
+          "score": 0.9756874,
+          "text": "hand",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 399,
+          "endOffset": 401,
+          "score": 0.30879927,
+          "text": "AP",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 618,
+          "endOffset": 620,
+          "score": 0.3213097,
+          "text": "AP",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 661,
+          "endOffset": 693,
+          "score": 0.87254477,
+          "text": "neurological or muscular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5851762
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9231498
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3213097,
+              "relationshipScore": 0.646309,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 8,
+              "beginOffset": 618,
+              "endOffset": 620,
+              "text": "AP",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 765,
+          "endOffset": 794,
+          "score": 0.91411275,
+          "text": "changes in his motor behavior",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.643293
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6863962
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3213097,
+              "relationshipScore": 0.88592887,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 8,
+              "beginOffset": 618,
+              "endOffset": 620,
+              "text": "AP",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "52a1ca94-5ff3-4cf4-b37c-3adef5022b24"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "52a1ca94-5ff3-4cf4-b37c-3adef5022b24"
+          ],
+          "Content-Length": [
+            "3045"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3045",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:39 GMT",
+          "x-amzn-RequestId": "52a1ca94-5ff3-4cf4-b37c-3adef5022b24"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2232,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "able to walk and walk and walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5332365,
+          "beginOffset": 185,
+          "endOffset": 215,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.4448415,
+              "relationshipScore": 0.6335673,
+              "id": 0,
+              "beginOffset": 140,
+              "endOffset": 142,
+              "text": "AP",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5781762
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.6138671
+            },
+            {
+              "description": "Dependence on other enabling machines and devices",
+              "code": "Z99.89",
+              "score": 0.51624346
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.50132436
+            },
+            {
+              "description": "Unspecified abnormalities of gait and mobility",
+              "code": "R26.9",
+              "score": 0.4011681
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.39061418
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "neurological or muscular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87254477,
+          "beginOffset": 661,
+          "endOffset": 693,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3213097,
+              "relationshipScore": 0.646309,
+              "id": 4,
+              "beginOffset": 618,
+              "endOffset": 620,
+              "text": "AP",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5851762
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9231498
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.5896396
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.5028861
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.4967903
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.4797396
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.47154394
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "changes in his motor behavior",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9141126,
+          "beginOffset": 765,
+          "endOffset": 794,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3213097,
+              "relationshipScore": 0.88592887,
+              "id": 4,
+              "beginOffset": 618,
+              "endOffset": 620,
+              "text": "AP",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.643293
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6863962
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving appearance and behavior",
+              "code": "R46.89",
+              "score": 0.72652453
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.63702327
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.63260776
+            },
+            {
+              "description": "Spontaneous ecchymoses",
+              "code": "R23.3",
+              "score": 0.56163734
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.55740565
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "afb85399-7461-4e74-8630-ca323d79b894"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "afb85399-7461-4e74-8630-ca323d79b894"
+          ],
+          "Content-Length": [
+            "2947"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2947",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:42 GMT",
+          "x-amzn-RequestId": "afb85399-7461-4e74-8630-ca323d79b894"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1259,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ae86c3ec-00f2-422f-a284-aec7c78a539c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ae86c3ec-00f2-422f-a284-aec7c78a539c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:40 GMT",
+          "x-amzn-RequestId": "ae86c3ec-00f2-422f-a284-aec7c78a539c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:42 PM"
+}

@@ -1,0 +1,852 @@
+{
+  "note": "Physical Examination: She had no obvious signs of trauma apart from a moderately raised, erythematous rash over her breast. No obvious hemorrhage or abscess. No acute trauma was present. Laboratory Results: Her urine was positive for blood. Her serum glucose was normal. Abdominal pain and difficulty walking was noted on physical examination. She stated she was suffering from an unexplained pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 578,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 0,
+          "endOffset": 20,
+          "score": 0.64666456,
+          "text": "Physical Examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.578249,
+              "relationshipScore": 0.9998647,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 30,
+              "endOffset": 87,
+              "text": "no obvious signs of trauma apart from a moderately raised",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.37870204,
+              "relationshipScore": 0.9996259,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 89,
+              "endOffset": 122,
+              "text": "erythematous rash over her breast",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.73818,
+              "relationshipScore": 0.99997926,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 124,
+              "endOffset": 156,
+              "text": "No obvious hemorrhage or abscess",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.62438804,
+              "relationshipScore": 0.99999106,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 158,
+              "endOffset": 185,
+              "text": "No acute trauma was present",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 50,
+          "endOffset": 56,
+          "score": 0.77602816,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44507667
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8074546
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 89,
+          "endOffset": 106,
+          "score": 0.41564482,
+          "text": "erythematous rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.71455306
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.8148276,
+              "relationshipScore": 0.99934644,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 107,
+              "endOffset": 111,
+              "text": "over",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9973201,
+              "relationshipScore": 0.9995908,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 116,
+              "endOffset": 122,
+              "text": "breast",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 116,
+          "endOffset": 122,
+          "score": 0.9973201,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 135,
+          "endOffset": 145,
+          "score": 0.9828472,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8355012
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97147626
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 149,
+          "endOffset": 156,
+          "score": 0.99456716,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8460193
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98441654
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "score": 0.97409916,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.79185015
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9731323
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9481015,
+              "relationshipScore": 0.99999344,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 161,
+              "endOffset": 166,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 187,
+          "endOffset": 197,
+          "score": 0.35756594,
+          "text": "Laboratory",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 211,
+          "endOffset": 216,
+          "score": 0.8562471,
+          "text": "urine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.64983577,
+              "relationshipScore": 0.9982962,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 221,
+              "endOffset": 229,
+              "text": "positive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 245,
+          "endOffset": 258,
+          "score": 0.9673719,
+          "text": "serum glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9712147,
+              "relationshipScore": 0.9999893,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 263,
+              "endOffset": 269,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 271,
+          "endOffset": 285,
+          "score": 0.8046532,
+          "text": "Abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5974775
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 290,
+          "endOffset": 308,
+          "score": 0.9509851,
+          "text": "difficulty walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7372721
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 322,
+          "endOffset": 342,
+          "score": 0.5994197,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 393,
+          "endOffset": 397,
+          "score": 0.9858971,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6698968
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.8148276,
+            "id": 0,
+            "beginOffset": 107,
+            "endOffset": 111,
+            "text": "over",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9481015,
+            "id": 6,
+            "beginOffset": 161,
+            "endOffset": 166,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd6ea1c8-af3b-47c0-b92c-3526810db798"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd6ea1c8-af3b-47c0-b92c-3526810db798"
+          ],
+          "Content-Length": [
+            "5313"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5313",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:33 GMT",
+          "x-amzn-RequestId": "bd6ea1c8-af3b-47c0-b92c-3526810db798"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 810,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.776028,
+          "beginOffset": 50,
+          "endOffset": 56,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4450765
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8074545
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.71448326
+            },
+            {
+              "description": "Personal history of other (healed) physical injury and trauma",
+              "code": "Z87.828",
+              "score": 0.6174295
+            },
+            {
+              "description": "Personal history of (healed) traumatic fracture",
+              "code": "Z87.81",
+              "score": 0.55959874
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.5418085
+            },
+            {
+              "description": "Other postprocedural complications and disorders of genitourinary system",
+              "code": "N99.89",
+              "score": 0.54048073
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "erythematous rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41564482,
+          "beginOffset": 89,
+          "endOffset": 106,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.8148276,
+              "relationshipScore": 0.99934644,
+              "id": 2,
+              "beginOffset": 107,
+              "endOffset": 111,
+              "text": "over",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9973201,
+              "relationshipScore": 0.9995908,
+              "id": 3,
+              "beginOffset": 116,
+              "endOffset": 122,
+              "text": "breast",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7145531
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.59058094
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.5490057
+            },
+            {
+              "description": "Other specified disorders of tympanic membrane, bilateral",
+              "code": "H73.893",
+              "score": 0.44676223
+            },
+            {
+              "description": "Other specified disorders of tympanic membrane, left ear",
+              "code": "H73.892",
+              "score": 0.3880238
+            },
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.35896748
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9828472,
+          "beginOffset": 135,
+          "endOffset": 145,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8355012
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97147626
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.6327273
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.60405767
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of unspecified duration",
+              "code": "S06.369",
+              "score": 0.5390434
+            },
+            {
+              "description": "Nontraumatic intracranial hemorrhage, unspecified",
+              "code": "I62.9",
+              "score": 0.5315886
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, intraventricular",
+              "code": "I61.5",
+              "score": 0.49230155
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99456716,
+          "beginOffset": 149,
+          "endOffset": 156,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8460193
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.98441654
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cutaneous abscess, unspecified",
+              "code": "L02.91",
+              "score": 0.56914794
+            },
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.5145158
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.5134265
+            },
+            {
+              "description": "Cutaneous abscess of limb",
+              "code": "L02.41",
+              "score": 0.50471
+            },
+            {
+              "description": "Periapical abscess without sinus",
+              "code": "K04.7",
+              "score": 0.4848123
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "trauma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97409916,
+          "beginOffset": 167,
+          "endOffset": 173,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9481015,
+              "relationshipScore": 0.99999344,
+              "id": 6,
+              "beginOffset": 161,
+              "endOffset": 166,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7918501
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9731323
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.4897893
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.41964972
+            },
+            {
+              "description": "Personal history of other (healed) physical injury and trauma",
+              "code": "Z87.828",
+              "score": 0.3924325
+            },
+            {
+              "description": "Unspecified injury of heart, unspecified with or without hemopericardium",
+              "code": "S26.90",
+              "score": 0.38869184
+            },
+            {
+              "description": "Other postprocedural complications and disorders of genitourinary system",
+              "code": "N99.89",
+              "score": 0.37120652
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8046532,
+          "beginOffset": 271,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5974775
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.59796053
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.50495297
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.4523571
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.44488078
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.44382122
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "difficulty walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9509851,
+          "beginOffset": 290,
+          "endOffset": 308,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7372721
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.625356
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.37832567
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.3156595
+            },
+            {
+              "description": "Feeding difficulties",
+              "code": "R63.3",
+              "score": 0.2705435
+            },
+            {
+              "description": "Disorder of written expression",
+              "code": "F81.81",
+              "score": 0.24538156
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9858971,
+          "beginOffset": 393,
+          "endOffset": 397,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6698967
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6757121
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.597966
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.56700337
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5563121
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5439092
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2f47f88a-da0b-4026-9bdf-2df3b1fe935f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2f47f88a-da0b-4026-9bdf-2df3b1fe935f"
+          ],
+          "Content-Length": [
+            "6567"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6567",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:34 GMT",
+          "x-amzn-RequestId": "2f47f88a-da0b-4026-9bdf-2df3b1fe935f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "92a46f75-e1dc-401a-b437-155639531c38"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "92a46f75-e1dc-401a-b437-155639531c38"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:33 GMT",
+          "x-amzn-RequestId": "92a46f75-e1dc-401a-b437-155639531c38"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:34 PM"
+}

@@ -1,0 +1,450 @@
+{
+  "note": ". Tonsils and salivary glands are affected but are not needed. Treatment of the Ulcer: This will be with cortisone cream, non toxic antiseptic, and with the following medications for the period of healing. Treatment of the Ulcer: This will be with cortisone cream, non toxic antiseptic, and with the following medications for the period of healing. Pain medications should never be used during the period of healing to try and shorten healing time for this condition.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 2,
+          "endOffset": 9,
+          "score": 0.8058974,
+          "text": "Tonsils",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 14,
+          "endOffset": 29,
+          "score": 0.97101116,
+          "text": "salivary glands",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 80,
+          "endOffset": 85,
+          "score": 0.87255377,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8217105
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 105,
+          "endOffset": 114,
+          "score": 0.9159773,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.9888137,
+              "relationshipScore": 0.99992573,
+              "relationshipType": "FORM",
+              "id": 3,
+              "beginOffset": 115,
+              "endOffset": 120,
+              "text": "cream",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 223,
+          "endOffset": 228,
+          "score": 0.89126796,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8789401
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "score": 0.9176113,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.99071306,
+              "relationshipScore": 0.99995196,
+              "relationshipType": "FORM",
+              "id": 5,
+              "beginOffset": 258,
+              "endOffset": 263,
+              "text": "cream",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 349,
+          "endOffset": 353,
+          "score": 0.66327786,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 349,
+          "endOffset": 365,
+          "score": 0.94578993,
+          "text": "Pain medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9d454e09-1563-4fdc-8cfa-36b3a19ec4cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9d454e09-1563-4fdc-8cfa-36b3a19ec4cb"
+          ],
+          "Content-Length": [
+            "1775"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1775",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:08 GMT",
+          "x-amzn-RequestId": "9d454e09-1563-4fdc-8cfa-36b3a19ec4cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1063,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87255377,
+          "beginOffset": 80,
+          "endOffset": 85,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8217105
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.585117
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.54546
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.5321375
+            },
+            {
+              "description": "Personal history of diseases of the skin and subcutaneous tissue",
+              "code": "Z87.2",
+              "score": 0.5154936
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.5043098
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8912679,
+          "beginOffset": 223,
+          "endOffset": 228,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87894005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.68666476
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.66673833
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.65148944
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.6481418
+            },
+            {
+              "description": "Personal history of diseases of the skin and subcutaneous tissue",
+              "code": "Z87.2",
+              "score": 0.6317211
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6632777,
+          "beginOffset": 349,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.70569456
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5038598
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.47834358
+            },
+            {
+              "description": "Glossodynia",
+              "code": "K14.6",
+              "score": 0.43150836
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.41473034
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "53bf71b8-1848-4356-9ae0-c0667b534717"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "53bf71b8-1848-4356-9ae0-c0667b534717"
+          ],
+          "Content-Length": [
+            "2427"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2427",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:10 GMT",
+          "x-amzn-RequestId": "53bf71b8-1848-4356-9ae0-c0667b534717"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 376,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9159773,
+          "beginOffset": 105,
+          "endOffset": 114,
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.9888137,
+              "relationshipScore": 0.9999256,
+              "id": 1,
+              "beginOffset": 115,
+              "endOffset": 120,
+              "text": "cream",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cortisone",
+              "code": "2878",
+              "score": 0.9124645
+            },
+            {
+              "description": "cortisone acetate 25 MG Oral Tablet",
+              "code": "828248",
+              "score": 0.022357235
+            },
+            {
+              "description": "Cortisone 5 MG Oral Tablet",
+              "code": "197545",
+              "score": 0.01133083
+            },
+            {
+              "description": "Cortisone 10 MG Oral Tablet",
+              "code": "197543",
+              "score": 0.0063046603
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9176113,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.99071306,
+              "relationshipScore": 0.99995196,
+              "id": 3,
+              "beginOffset": 258,
+              "endOffset": 263,
+              "text": "cream",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cortisone",
+              "code": "2878",
+              "score": 0.9124645
+            },
+            {
+              "description": "cortisone acetate 25 MG Oral Tablet",
+              "code": "828248",
+              "score": 0.022357235
+            },
+            {
+              "description": "Cortisone 5 MG Oral Tablet",
+              "code": "197545",
+              "score": 0.01133083
+            },
+            {
+              "description": "Cortisone 10 MG Oral Tablet",
+              "code": "197543",
+              "score": 0.0063046603
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3120ef4a-1d3b-457b-9bf0-4df1ff5fae04"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3120ef4a-1d3b-457b-9bf0-4df1ff5fae04"
+          ],
+          "Content-Length": [
+            "1397"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1397",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:09 GMT",
+          "x-amzn-RequestId": "3120ef4a-1d3b-457b-9bf0-4df1ff5fae04"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:10 PM"
+}

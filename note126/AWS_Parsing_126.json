@@ -1,0 +1,526 @@
+{
+  "note": "The patient was brought to the ED with a history of fainting and chest pain that had recurred prior to his admission. He was transferred to the surgical ICU where he received an initial chest x-ray and an EKG. At auscultation, there was an extremely shallow, left-to-right T wave in the lateral inferior oblique, with a peak amplitude of ~3mm.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 605,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 31,
+          "endOffset": 33,
+          "score": 0.99957734,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 52,
+          "endOffset": 60,
+          "score": 0.97228235,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.641257
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "score": 0.9833852,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 65,
+          "endOffset": 75,
+          "score": 0.95756453,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.75560975
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "score": 0.99998426,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.95756453,
+              "relationshipScore": 0.50289965,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 65,
+              "endOffset": 75,
+              "text": "chest pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.75560975
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 144,
+          "endOffset": 156,
+          "score": 0.9474555,
+          "text": "surgical ICU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 186,
+          "endOffset": 191,
+          "score": 0.96492904,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 186,
+          "endOffset": 197,
+          "score": 0.9408683,
+          "text": "chest x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 205,
+          "endOffset": 208,
+          "score": 0.99859124,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.30246755,
+              "relationshipScore": 0.99983716,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 240,
+              "endOffset": 257,
+              "text": "extremely shallow",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.90368724,
+              "relationshipScore": 0.9995704,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 259,
+              "endOffset": 311,
+              "text": "left-to-right T wave in the lateral inferior oblique",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5878457,
+              "relationshipScore": 0.9997392,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 320,
+              "endOffset": 342,
+              "text": "peak amplitude of ~3mm",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 259,
+          "endOffset": 279,
+          "score": 0.6401519,
+          "text": "left-to-right T wave",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.90566796
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9435513,
+              "relationshipScore": 0.8893335,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 287,
+              "endOffset": 294,
+              "text": "lateral",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.91891867,
+              "relationshipScore": 0.9942061,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 295,
+              "endOffset": 303,
+              "text": "inferior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3001351,
+              "relationshipScore": 0.7934463,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 304,
+              "endOffset": 311,
+              "text": "oblique",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 304,
+          "endOffset": 311,
+          "score": 0.3001351,
+          "text": "oblique",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9435513,
+            "id": 2,
+            "beginOffset": 287,
+            "endOffset": 294,
+            "text": "lateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.91891867,
+            "id": 3,
+            "beginOffset": 295,
+            "endOffset": 303,
+            "text": "inferior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3ff5d17e-d28b-4ffe-8d85-6fc8d1d8684a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3ff5d17e-d28b-4ffe-8d85-6fc8d1d8684a"
+          ],
+          "Content-Length": [
+            "3907"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3907",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:25 GMT",
+          "x-amzn-RequestId": "3ff5d17e-d28b-4ffe-8d85-6fc8d1d8684a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 641,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97228235,
+          "beginOffset": 52,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6412569
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.848734
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.6966988
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.6556358
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.6158369
+            },
+            {
+              "description": "Other pulmonary collapse",
+              "code": "J98.19",
+              "score": 0.6140507
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95756453,
+          "beginOffset": 65,
+          "endOffset": 75,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7556097
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.7691892
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.613645
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6021091
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.5423792
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.49228257
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "left-to-right T wave",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6401518,
+          "beginOffset": 259,
+          "endOffset": 279,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9435513,
+              "relationshipScore": 0.8893335,
+              "id": 5,
+              "beginOffset": 287,
+              "endOffset": 294,
+              "text": "lateral",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.91891867,
+              "relationshipScore": 0.9942061,
+              "id": 6,
+              "beginOffset": 295,
+              "endOffset": 303,
+              "text": "inferior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.3001352,
+              "relationshipScore": 0.7934463,
+              "id": 7,
+              "beginOffset": 304,
+              "endOffset": 311,
+              "text": "oblique",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.905668
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.6765572
+            },
+            {
+              "description": "Right lower quadrant pain",
+              "code": "R10.31",
+              "score": 0.66046524
+            },
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.6131645
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.603183
+            },
+            {
+              "description": "Pain in left finger(s)",
+              "code": "M79.645",
+              "score": 0.546235
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e423c869-8928-4ae3-9b43-4c96f67934ad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e423c869-8928-4ae3-9b43-4c96f67934ad"
+          ],
+          "Content-Length": [
+            "2468"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2468",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:26 GMT",
+          "x-amzn-RequestId": "e423c869-8928-4ae3-9b43-4c96f67934ad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 186,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "29c2cb0d-0b51-4205-9359-aab557752887"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "29c2cb0d-0b51-4205-9359-aab557752887"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:26 GMT",
+          "x-amzn-RequestId": "29c2cb0d-0b51-4205-9359-aab557752887"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:26 PM"
+}

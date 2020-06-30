@@ -1,0 +1,329 @@
+{
+  "note": "physician for evaluation. This was her sixth year on the medication and she had no adverse effects. The patient was seen for a well visit with no major complaints. For seasonal allergies, continue on OTC medications and schedule her next visit with primary care physician for evaluation. This was her sixth year on the medication and she had no adverse effects.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 0,
+          "endOffset": 9,
+          "score": 0.1501939,
+          "text": "physician",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 83,
+          "endOffset": 98,
+          "score": 0.93752575,
+          "text": "adverse effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64571375
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87947166
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 168,
+          "endOffset": 186,
+          "score": 0.86147904,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7626541
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 200,
+          "endOffset": 215,
+          "score": 0.9710641,
+          "text": "OTC medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 345,
+          "endOffset": 360,
+          "score": 0.9350011,
+          "text": "adverse effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6227876
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.86952424
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b9f4c92b-5cc1-4351-a315-62be2be283f9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b9f4c92b-5cc1-4351-a315-62be2be283f9"
+          ],
+          "Content-Length": [
+            "1084"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1084",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:38 GMT",
+          "x-amzn-RequestId": "b9f4c92b-5cc1-4351-a315-62be2be283f9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1237,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "adverse effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93752575,
+          "beginOffset": 83,
+          "endOffset": 98,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64571375
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87947166
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.7715372
+            },
+            {
+              "description": "Other adverse effects, not elsewhere classified",
+              "code": "T78.8",
+              "score": 0.7153944
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6802111
+            },
+            {
+              "description": "Adverse effect of local astringents and local detergents",
+              "code": "T49.2X5",
+              "score": 0.67268765
+            },
+            {
+              "description": "Adverse effect of unspecified drugs, medicaments and biological substances",
+              "code": "T50.905",
+              "score": 0.66686636
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86147904,
+          "beginOffset": 168,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7626541
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.7171394
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.45117038
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.4102065
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.40423957
+            },
+            {
+              "description": "Other specified dermatitis",
+              "code": "L30.8",
+              "score": 0.4031917
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "adverse effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9350011,
+          "beginOffset": 345,
+          "endOffset": 360,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6227876
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.86952424
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.79648477
+            },
+            {
+              "description": "Other adverse effects, not elsewhere classified",
+              "code": "T78.8",
+              "score": 0.7063677
+            },
+            {
+              "description": "Adverse effect of local astringents and local detergents",
+              "code": "T49.2X5",
+              "score": 0.6915335
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6877852
+            },
+            {
+              "description": "Adverse effect of unspecified drugs, medicaments and biological substances",
+              "code": "T50.905",
+              "score": 0.671677
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "56ac08a4-36be-41f8-aa9c-3ccb1a27f41e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "56ac08a4-36be-41f8-aa9c-3ccb1a27f41e"
+          ],
+          "Content-Length": [
+            "2388"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2388",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:39 GMT",
+          "x-amzn-RequestId": "56ac08a4-36be-41f8-aa9c-3ccb1a27f41e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 190,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2d87c6a9-ac42-4381-9d36-216d638e8e8f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2d87c6a9-ac42-4381-9d36-216d638e8e8f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:38 GMT",
+          "x-amzn-RequestId": "2d87c6a9-ac42-4381-9d36-216d638e8e8f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:39 PM"
+}

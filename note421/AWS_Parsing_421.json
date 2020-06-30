@@ -1,0 +1,479 @@
+{
+  "note": "She has recently changed her diet from very spicy food to more refined food. After some testing, I find out my patient has a thyroid disorder, which requires me to make a T2c (thyrotoxicosis 2-c). She is also on Ciprofloxacin, because he is at high risk for thromboembolic events. I start her on 250 mL of Fosamax every 12 hr and then increase doses after 4 weeks, as she does not tolerate oral therapy well at all.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 384,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 125,
+          "endOffset": 132,
+          "score": 0.7052783,
+          "text": "thyroid",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 125,
+          "endOffset": 141,
+          "score": 0.9215982,
+          "text": "thyroid disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9533559
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 176,
+          "endOffset": 190,
+          "score": 0.482913,
+          "text": "thyrotoxicosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56120545
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 212,
+          "endOffset": 225,
+          "score": 0.9980003,
+          "text": "Ciprofloxacin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 258,
+          "endOffset": 279,
+          "score": 0.91570455,
+          "text": "thromboembolic events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7850861
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 306,
+          "endOffset": 313,
+          "score": 0.99962795,
+          "text": "Fosamax",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9970963,
+              "relationshipScore": 0.9999114,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 296,
+              "endOffset": 302,
+              "text": "250 mL",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9696306,
+              "relationshipScore": 0.99986386,
+              "relationshipType": "FREQUENCY",
+              "id": 4,
+              "beginOffset": 314,
+              "endOffset": 325,
+              "text": "every 12 hr",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.4650948,
+              "relationshipScore": 0.999851,
+              "relationshipType": "DURATION",
+              "id": 5,
+              "beginOffset": 356,
+              "endOffset": 363,
+              "text": "4 weeks",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 390,
+          "endOffset": 402,
+          "score": 0.9509122,
+          "text": "oral therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2a08285a-bd6c-4d34-b9a9-684670fa340a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2a08285a-bd6c-4d34-b9a9-684670fa340a"
+          ],
+          "Content-Length": [
+            "1926"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1926",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:01 GMT",
+          "x-amzn-RequestId": "2a08285a-bd6c-4d34-b9a9-684670fa340a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 454,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "thyroid disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9215982,
+          "beginOffset": 125,
+          "endOffset": 141,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9533559
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of thyroid, unspecified",
+              "code": "E07.9",
+              "score": 0.7291091
+            },
+            {
+              "description": "Malignant neoplasm of thyroid gland",
+              "code": "C73",
+              "score": 0.5091549
+            },
+            {
+              "description": "Autoimmune thyroiditis",
+              "code": "E06.3",
+              "score": 0.46395922
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.4472104
+            },
+            {
+              "description": "Hypothyroidism, unspecified",
+              "code": "E03.9",
+              "score": 0.42863604
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "thyrotoxicosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.482913,
+          "beginOffset": 176,
+          "endOffset": 190,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56120545
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Thyrotoxicosis, unspecified without thyrotoxic crisis or storm",
+              "code": "E05.90",
+              "score": 0.737079
+            },
+            {
+              "description": "Nontoxic goiter, unspecified",
+              "code": "E04.9",
+              "score": 0.6383007
+            },
+            {
+              "description": "Thyrotoxicosis, unspecified with thyrotoxic crisis or storm",
+              "code": "E05.91",
+              "score": 0.528155
+            },
+            {
+              "description": "Thyrotoxicosis factitia without thyrotoxic crisis or storm",
+              "code": "E05.40",
+              "score": 0.5004782
+            },
+            {
+              "description": "Other thyrotoxicosis without thyrotoxic crisis or storm",
+              "code": "E05.80",
+              "score": 0.43842128
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "thromboembolic events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9157046,
+          "beginOffset": 258,
+          "endOffset": 279,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78508604
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute embolism and thrombosis of unspecified vein",
+              "code": "I82.90",
+              "score": 0.6228442
+            },
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.6079232
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified deep veins of unspecified lower extremity",
+              "code": "I82.409",
+              "score": 0.58858174
+            },
+            {
+              "description": "Acute embolism and thrombosis of right femoral vein",
+              "code": "I82.411",
+              "score": 0.48864022
+            },
+            {
+              "description": "Personal history of other venous thrombosis and embolism",
+              "code": "Z86.718",
+              "score": 0.48082006
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8307d8f4-9516-4d41-b4bd-44367c3a845a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8307d8f4-9516-4d41-b4bd-44367c3a845a"
+          ],
+          "Content-Length": [
+            "2364"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2364",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:02 GMT",
+          "x-amzn-RequestId": "8307d8f4-9516-4d41-b4bd-44367c3a845a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 702,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Ciprofloxacin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9980003,
+          "beginOffset": 212,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ciprofloxacin",
+              "code": "2551",
+              "score": 0.9697585
+            },
+            {
+              "description": "Ciprofloxacin 500 MG Oral Tablet",
+              "code": "309309",
+              "score": 0.7840675
+            },
+            {
+              "description": "Ciprofloxacin 3 MG/ML Ophthalmic Solution",
+              "code": "309307",
+              "score": 0.7004249
+            },
+            {
+              "description": "20 ML Ciprofloxacin 10 MG/ML Injection",
+              "code": "1665227",
+              "score": 0.5252197
+            },
+            {
+              "description": "200 ML Ciprofloxacin 2 MG/ML Injection",
+              "code": "1665212",
+              "score": 0.36037454
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Fosamax",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99962795,
+          "beginOffset": 306,
+          "endOffset": 313,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9970963,
+              "relationshipScore": 0.9999114,
+              "id": 1,
+              "beginOffset": 296,
+              "endOffset": 302,
+              "text": "250 mL",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9696306,
+              "relationshipScore": 0.99986386,
+              "id": 3,
+              "beginOffset": 314,
+              "endOffset": 325,
+              "text": "every 12 hr",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.4650948,
+              "relationshipScore": 0.999851,
+              "id": 4,
+              "beginOffset": 356,
+              "endOffset": 363,
+              "text": "4 weeks",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Fosamax",
+              "code": "114265",
+              "score": 0.79536736
+            },
+            {
+              "description": "Topamax",
+              "code": "220343",
+              "score": 0.47292513
+            },
+            {
+              "description": "Alendronic acid 70 MG Oral Tablet [Fosamax]",
+              "code": "904433",
+              "score": 0.050952993
+            },
+            {
+              "description": "Fosamax Plus D",
+              "code": "607553",
+              "score": 0.03170647
+            },
+            {
+              "description": "topiramate 100 MG Oral Tablet [Topamax]",
+              "code": "151228",
+              "score": 0.01818463
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dc527b4f-611f-4bae-b85d-f0145f6139c1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dc527b4f-611f-4bae-b85d-f0145f6139c1"
+          ],
+          "Content-Length": [
+            "1766"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1766",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:02 GMT",
+          "x-amzn-RequestId": "dc527b4f-611f-4bae-b85d-f0145f6139c1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:03 PM"
+}

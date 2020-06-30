@@ -1,0 +1,275 @@
+{
+  "note": "She is a very beautiful, healthy looking, and healthy little girl. This is probably the most perfect ultrasound picture we have ever seen. We would love to help you find a couple who can adopt her. Her parents and grandparents would give her the first 3 years of her life to know and love her. Her parents, grandparents and foster parents would be very loving and willing to go the extra mile to be a great home.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 287,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 25,
+          "endOffset": 32,
+          "score": 0.53799796,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4754014
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 46,
+          "endOffset": 53,
+          "score": 0.7676806,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7217249
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 101,
+          "endOffset": 111,
+          "score": 0.84291524,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 148,
+          "endOffset": 152,
+          "score": 0.4369452,
+          "text": "love",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 284,
+          "endOffset": 288,
+          "score": 0.29976454,
+          "text": "love",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 324,
+          "endOffset": 330,
+          "score": 0.22816633,
+          "text": "foster",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "21383322-6760-4604-beaa-45204fd94830"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "21383322-6760-4604-beaa-45204fd94830"
+          ],
+          "Content-Length": [
+            "1054"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1054",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:56 GMT",
+          "x-amzn-RequestId": "21383322-6760-4604-beaa-45204fd94830"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 353,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5379978,
+          "beginOffset": 25,
+          "endOffset": 32,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47540113
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.8129229
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7966224
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.77555996
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.7579815
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.74801123
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.76768047,
+          "beginOffset": 46,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7217248
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.80870175
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.8051139
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.79815143
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.7630622
+            },
+            {
+              "description": "Type 2 diabetes mellitus with other skin ulcer",
+              "code": "E11.622",
+              "score": 0.75035524
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e4218490-100e-4a6c-bac2-a35c71ec3139"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e4218490-100e-4a6c-bac2-a35c71ec3139"
+          ],
+          "Content-Length": [
+            "1587"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1587",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:57 GMT",
+          "x-amzn-RequestId": "e4218490-100e-4a6c-bac2-a35c71ec3139"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3e16e045-240a-4a0b-8262-84f8d9f20dea"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3e16e045-240a-4a0b-8262-84f8d9f20dea"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:56 GMT",
+          "x-amzn-RequestId": "3e16e045-240a-4a0b-8262-84f8d9f20dea"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:57 PM"
+}

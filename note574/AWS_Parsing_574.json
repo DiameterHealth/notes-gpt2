@@ -1,0 +1,1265 @@
+{
+  "note": "BMC Ultrasound -  UPSC: 26:11, 13 y/o M presents to ED for an abdominal pain with micturition difficulty, he says he\u0027s been trying to go without for about 3 days. Pt says may be due to increased food intake which may be an indicator of GI obstruction. UPSC: 21:17, 11y/o M presents to ED complaining of increased nausea  BP: 110/75  Fever: 103.4 (BP 90)  Urea: .7 mg/L (SB/FAST)  Blood:  Glycosylated hemoglobin: .02 (SB/FAST)  Hematocrit: 32.5%  PROC/ED:  Radiographs: Osteomalacia was found on MR  Physical Exam: Pain on QTc, tenderness on LQS, pain on NSTEMI, swollen right knee.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2405,
+    "data": {
+      "entities": [
+        {
+          "id": 20,
+          "beginOffset": 0,
+          "endOffset": 14,
+          "score": 0.556914,
+          "text": "BMC Ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 31,
+          "endOffset": 33,
+          "score": 0.9272634,
+          "text": "13",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 52,
+          "endOffset": 54,
+          "score": 0.99571,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 62,
+          "endOffset": 76,
+          "score": 0.92854476,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7842143
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 82,
+          "endOffset": 104,
+          "score": 0.6071646,
+          "text": "micturition difficulty",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7956648
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 185,
+          "endOffset": 206,
+          "score": 0.38046974,
+          "text": "increased food intake",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67261076
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 236,
+          "endOffset": 238,
+          "score": 0.5421222,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 236,
+          "endOffset": 250,
+          "score": 0.85829705,
+          "text": "GI obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57190526
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 265,
+          "endOffset": 268,
+          "score": 0.3528058,
+          "text": "11y",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 285,
+          "endOffset": 287,
+          "score": 0.9590372,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 313,
+          "endOffset": 319,
+          "score": 0.9923631,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9072297
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 321,
+          "endOffset": 323,
+          "score": 0.99222356,
+          "text": "BP",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9985203,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 22,
+              "beginOffset": 325,
+              "endOffset": 331,
+              "text": "110/75",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 333,
+          "endOffset": 338,
+          "score": 0.97451854,
+          "text": "Fever",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99857616,
+              "relationshipScore": 0.99997425,
+              "relationshipType": "TEST_VALUE",
+              "id": 24,
+              "beginOffset": 340,
+              "endOffset": 345,
+              "text": "103.4",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 333,
+          "endOffset": 338,
+          "score": 0.7763049,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5976721
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 347,
+          "endOffset": 349,
+          "score": 0.9954508,
+          "text": "BP",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99112433,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 26,
+              "beginOffset": 350,
+              "endOffset": 352,
+              "text": "90",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "beginOffset": 355,
+          "endOffset": 359,
+          "score": 0.95775574,
+          "text": "Urea",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.97290844,
+              "relationshipScore": 0.99351066,
+              "relationshipType": "TEST_VALUE",
+              "id": 28,
+              "beginOffset": 362,
+              "endOffset": 363,
+              "text": "7",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9682976,
+              "relationshipScore": 0.9903743,
+              "relationshipType": "TEST_UNIT",
+              "id": 29,
+              "beginOffset": 364,
+              "endOffset": 368,
+              "text": "mg/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 30,
+          "beginOffset": 370,
+          "endOffset": 372,
+          "score": 0.7402026,
+          "text": "SB",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 31,
+          "beginOffset": 373,
+          "endOffset": 377,
+          "score": 0.17442489,
+          "text": "FAST",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 32,
+          "beginOffset": 380,
+          "endOffset": 385,
+          "score": 0.4613962,
+          "text": "Blood",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 33,
+          "beginOffset": 388,
+          "endOffset": 411,
+          "score": 0.9644016,
+          "text": "Glycosylated hemoglobin",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.72225726,
+              "relationshipScore": 0.99996877,
+              "relationshipType": "TEST_VALUE",
+              "id": 34,
+              "beginOffset": 414,
+              "endOffset": 416,
+              "text": "02",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 35,
+          "beginOffset": 418,
+          "endOffset": 420,
+          "score": 0.6312248,
+          "text": "SB",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.72225726,
+              "relationshipScore": 0.8974666,
+              "relationshipType": "TEST_VALUE",
+              "id": 34,
+              "beginOffset": 414,
+              "endOffset": 416,
+              "text": "02",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "beginOffset": 421,
+          "endOffset": 425,
+          "score": 0.1333531,
+          "text": "FAST",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 37,
+          "beginOffset": 428,
+          "endOffset": 438,
+          "score": 0.99487525,
+          "text": "Hematocrit",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9981623,
+              "relationshipScore": 0.9999956,
+              "relationshipType": "TEST_VALUE",
+              "id": 38,
+              "beginOffset": 440,
+              "endOffset": 444,
+              "text": "32.5",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9985153,
+              "relationshipScore": 0.99990666,
+              "relationshipType": "TEST_UNIT",
+              "id": 39,
+              "beginOffset": 444,
+              "endOffset": 445,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 40,
+          "beginOffset": 457,
+          "endOffset": 468,
+          "score": 0.99624264,
+          "text": "Radiographs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.23849677,
+              "relationshipScore": 0.99121726,
+              "relationshipType": "TEST_VALUE",
+              "id": 41,
+              "beginOffset": 470,
+              "endOffset": 492,
+              "text": "Osteomalacia was found",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 470,
+          "endOffset": 482,
+          "score": 0.879807,
+          "text": "Osteomalacia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56407094
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "beginOffset": 496,
+          "endOffset": 498,
+          "score": 0.6560747,
+          "text": "MR",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.23849677,
+              "relationshipScore": 0.99711335,
+              "relationshipType": "TEST_VALUE",
+              "id": 41,
+              "beginOffset": 470,
+              "endOffset": 492,
+              "text": "Osteomalacia was found",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 43,
+          "beginOffset": 500,
+          "endOffset": 513,
+          "score": 0.9151037,
+          "text": "Physical Exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.23849677,
+              "relationshipScore": 0.947548,
+              "relationshipType": "TEST_VALUE",
+              "id": 41,
+              "beginOffset": 470,
+              "endOffset": 492,
+              "text": "Osteomalacia was found",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 515,
+          "endOffset": 519,
+          "score": 0.950746,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 528,
+          "endOffset": 538,
+          "score": 0.7716918,
+          "text": "tenderness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.58879703
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.92739135,
+              "relationshipScore": 0.9982691,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 542,
+              "endOffset": 545,
+              "text": "LQS",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 542,
+          "endOffset": 545,
+          "score": 0.92739135,
+          "text": "LQS",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 547,
+          "endOffset": 551,
+          "score": 0.95436394,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 555,
+          "endOffset": 561,
+          "score": 0.90517366,
+          "text": "NSTEMI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7085371
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 563,
+          "endOffset": 570,
+          "score": 0.9189247,
+          "text": "swollen",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6479818
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9977907,
+              "relationshipScore": 0.9998411,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 571,
+              "endOffset": 576,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9949469,
+              "relationshipScore": 0.99885786,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 577,
+              "endOffset": 581,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 577,
+          "endOffset": 581,
+          "score": 0.9949469,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9977907,
+            "id": 2,
+            "beginOffset": 571,
+            "endOffset": 576,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c24711e1-aa9d-47a8-9b08-93f8a926072b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c24711e1-aa9d-47a8-9b08-93f8a926072b"
+          ],
+          "Content-Length": [
+            "9434"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "9434",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:48 GMT",
+          "x-amzn-RequestId": "c24711e1-aa9d-47a8-9b08-93f8a926072b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1175,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92854476,
+          "beginOffset": 62,
+          "endOffset": 76,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78421426
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.7334155
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.6217123
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.5867736
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.55939883
+            },
+            {
+              "description": "Left upper quadrant pain",
+              "code": "R10.12",
+              "score": 0.54679924
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "micturition difficulty",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6071646,
+          "beginOffset": 82,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7956648
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Frequency of micturition",
+              "code": "R35.0",
+              "score": 0.7450108
+            },
+            {
+              "description": "Painful micturition, unspecified",
+              "code": "R30.9",
+              "score": 0.73065746
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7164158
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.7053993
+            },
+            {
+              "description": "Nocturia",
+              "code": "R35.1",
+              "score": 0.6901295
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "increased food intake",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38046962,
+          "beginOffset": 185,
+          "endOffset": 206,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67261076
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.6572096
+            },
+            {
+              "description": "Imbalance of constituents of food intake",
+              "code": "E63.1",
+              "score": 0.34927312
+            },
+            {
+              "description": "Other specified disorders of veins",
+              "code": "I87.8",
+              "score": 0.33517942
+            },
+            {
+              "description": "Portal hypertension",
+              "code": "K76.6",
+              "score": 0.32018882
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.304122
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "GI obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85829705,
+          "beginOffset": 236,
+          "endOffset": 250,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57190526
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified intestinal obstruction, unspecified as to partial versus complete obstruction",
+              "code": "K56.609",
+              "score": 0.6145374
+            },
+            {
+              "description": "Obstructive and reflux uropathy, unspecified",
+              "code": "N13.9",
+              "score": 0.4690565
+            },
+            {
+              "description": "Obstruction of bile duct",
+              "code": "K83.1",
+              "score": 0.44676176
+            },
+            {
+              "description": "Obstructive hypertrophic cardiomyopathy",
+              "code": "I42.1",
+              "score": 0.44273728
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.3927415
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9923631,
+          "beginOffset": 313,
+          "endOffset": 319,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9072297
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.85640615
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.8094715
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.6911641
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.63692605
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.54338366
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7763049,
+          "beginOffset": 333,
+          "endOffset": 338,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5976722
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8235926
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.6457106
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.516661
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.51194227
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.51028806
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Osteomalacia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.879807,
+          "beginOffset": 470,
+          "endOffset": 482,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56407094
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adult osteomalacia, unspecified",
+              "code": "M83.9",
+              "score": 0.5644125
+            },
+            {
+              "description": "Other adult osteomalacia",
+              "code": "M83.8",
+              "score": 0.5568728
+            },
+            {
+              "description": "Adult osteomalacia",
+              "code": "M83",
+              "score": 0.50783366
+            },
+            {
+              "description": "Senile osteomalacia",
+              "code": "M83.1",
+              "score": 0.49660605
+            },
+            {
+              "description": "Aluminum bone disease",
+              "code": "M83.4",
+              "score": 0.47107846
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.950746,
+          "beginOffset": 515,
+          "endOffset": 519,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.38201466
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.3564023
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.3531689
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.3221409
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.31890693
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "tenderness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7716917,
+          "beginOffset": 528,
+          "endOffset": 538,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.92739135,
+              "relationshipScore": 0.9982691,
+              "id": 10,
+              "beginOffset": 542,
+              "endOffset": 545,
+              "text": "LQS",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.58879685
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in unspecified lower leg",
+              "code": "M79.669",
+              "score": 0.33268267
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.29962772
+            },
+            {
+              "description": "Abdominal tenderness, unspecified site",
+              "code": "R10.819",
+              "score": 0.28739092
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.2862403
+            },
+            {
+              "description": "Pain in leg, unspecified",
+              "code": "M79.606",
+              "score": 0.2678069
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9543638,
+          "beginOffset": 547,
+          "endOffset": 551,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.37342575
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.35845205
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.35553288
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.3227911
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.31845075
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "NSTEMI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90517366,
+          "beginOffset": 555,
+          "endOffset": 561,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70853704
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.613327
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.43672985
+            },
+            {
+              "description": "Subsequent non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I22.2",
+              "score": 0.43119532
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.42255035
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.35532397
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "swollen",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9189247,
+          "beginOffset": 563,
+          "endOffset": 570,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9977907,
+              "relationshipScore": 0.9998411,
+              "id": 14,
+              "beginOffset": 571,
+              "endOffset": 576,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9949469,
+              "relationshipScore": 0.99885786,
+              "id": 15,
+              "beginOffset": 577,
+              "endOffset": 581,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.64798176
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Effusion, right knee",
+              "code": "M25.461",
+              "score": 0.66758215
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.5869643
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.5535514
+            },
+            {
+              "description": "Effusion, left knee",
+              "code": "M25.462",
+              "score": 0.55290693
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.55143535
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6b53e5ab-ec41-49f0-85b6-042b70042919"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6b53e5ab-ec41-49f0-85b6-042b70042919"
+          ],
+          "Content-Length": [
+            "8538"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8538",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:50 GMT",
+          "x-amzn-RequestId": "6b53e5ab-ec41-49f0-85b6-042b70042919"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 361,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cbb759b6-6f48-4e9a-a67e-41a13faeb177"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cbb759b6-6f48-4e9a-a67e-41a13faeb177"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:48 GMT",
+          "x-amzn-RequestId": "cbb759b6-6f48-4e9a-a67e-41a13faeb177"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:50 PM"
+}

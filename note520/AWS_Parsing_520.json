@@ -1,0 +1,1124 @@
+{
+  "note": ". He has had a recent bout of upper respiratory tract infection. The patient is receiving intramuscular antibiotics. Patient #1   Blood cultures taken 3 days prior to admission: Enterococcus bacteria was positive. Laboratory Test Results: C.difficile, 0.02 mg/L; Methicillin-Sulfa, 0.04 mg/L; Vancomycin 0.05 mg/L; Mucositis, \u003c 0.1 mg/L; Antibiotics: C.difficile, 1 g/3 days; Methicillin-Sulfa, 4 g/3 days; Vancomycin, 4 g/3 days; Mucositis \u003c 0.1 mg/L.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 933,
+    "data": {
+      "entities": [
+        {
+          "id": 35,
+          "beginOffset": 15,
+          "endOffset": 21,
+          "score": 0.9999956,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.6967584,
+              "relationshipScore": 0.9400115,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 30,
+              "endOffset": 63,
+              "text": "upper respiratory tract infection",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.89440906
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 30,
+          "endOffset": 63,
+          "score": 0.6967584,
+          "text": "upper respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89440906
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.96322244,
+              "relationshipScore": 0.9697986,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 30,
+              "endOffset": 35,
+              "text": "upper",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 36,
+          "endOffset": 53,
+          "score": 0.93330365,
+          "text": "respiratory tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 90,
+          "endOffset": 115,
+          "score": 0.7569946,
+          "text": "intramuscular antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 104,
+          "endOffset": 115,
+          "score": 0.98667043,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.78153604,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 90,
+              "endOffset": 103,
+              "text": "intramuscular",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 130,
+          "endOffset": 144,
+          "score": 0.9707619,
+          "text": "Blood cultures",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 36,
+          "beginOffset": 151,
+          "endOffset": 157,
+          "score": 0.98946875,
+          "text": "3 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.42935482,
+              "relationshipScore": 0.5891935,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 178,
+              "endOffset": 199,
+              "text": "Enterococcus bacteria",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.74877036
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "beginOffset": 151,
+          "endOffset": 157,
+          "score": 0.98946875,
+          "text": "3 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.49037164,
+              "relationshipScore": 0.5891935,
+              "relationshipType": "OVERLAP",
+              "id": 22,
+              "beginOffset": 178,
+              "endOffset": 199,
+              "text": "Enterococcus bacteria",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 36,
+          "beginOffset": 151,
+          "endOffset": 157,
+          "score": 0.98946875,
+          "text": "3 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9707619,
+              "relationshipScore": 0.9777411,
+              "relationshipType": "OVERLAP",
+              "id": 21,
+              "beginOffset": 130,
+              "endOffset": 144,
+              "text": "Blood cultures",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "beginOffset": 158,
+          "endOffset": 176,
+          "score": 0.9272955,
+          "text": "prior to admission",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.42935482,
+              "relationshipScore": 0.8321758,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 178,
+              "endOffset": 199,
+              "text": "Enterococcus bacteria",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.74877036
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "beginOffset": 158,
+          "endOffset": 176,
+          "score": 0.9272955,
+          "text": "prior to admission",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.49037164,
+              "relationshipScore": 0.8321758,
+              "relationshipType": "OVERLAP",
+              "id": 22,
+              "beginOffset": 178,
+              "endOffset": 199,
+              "text": "Enterococcus bacteria",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 178,
+          "endOffset": 199,
+          "score": 0.49037164,
+          "text": "Enterococcus bacteria",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98496,
+              "relationshipScore": 0.9999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 23,
+              "beginOffset": 204,
+              "endOffset": 212,
+              "text": "positive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 178,
+          "endOffset": 199,
+          "score": 0.42935482,
+          "text": "Enterococcus bacteria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74877036
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 214,
+          "endOffset": 229,
+          "score": 0.91354185,
+          "text": "Laboratory Test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 25,
+          "beginOffset": 239,
+          "endOffset": 250,
+          "score": 0.3790105,
+          "text": "C.difficile",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9916967,
+              "relationshipScore": 0.9941292,
+              "relationshipType": "TEST_VALUE",
+              "id": 26,
+              "beginOffset": 252,
+              "endOffset": 256,
+              "text": "0.02",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9579568,
+              "relationshipScore": 0.997661,
+              "relationshipType": "TEST_UNIT",
+              "id": 27,
+              "beginOffset": 257,
+              "endOffset": 261,
+              "text": "mg/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.60812306,
+              "relationshipScore": 0.8288102,
+              "relationshipType": "TEST_VALUE",
+              "id": 28,
+              "beginOffset": 282,
+              "endOffset": 286,
+              "text": "0.04",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9722152,
+              "relationshipScore": 0.6105112,
+              "relationshipType": "TEST_UNIT",
+              "id": 29,
+              "beginOffset": 287,
+              "endOffset": 291,
+              "text": "mg/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.70824677,
+              "relationshipScore": 0.989186,
+              "relationshipType": "TEST_VALUE",
+              "id": 30,
+              "beginOffset": 304,
+              "endOffset": 308,
+              "text": "0.05",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.90860623,
+              "relationshipScore": 0.94782835,
+              "relationshipType": "TEST_UNIT",
+              "id": 31,
+              "beginOffset": 309,
+              "endOffset": 313,
+              "text": "mg/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.38389987,
+              "relationshipScore": 0.9855818,
+              "relationshipType": "TEST_VALUE",
+              "id": 32,
+              "beginOffset": 326,
+              "endOffset": 331,
+              "text": "\u003c 0.1",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.8664929,
+              "relationshipScore": 0.78447,
+              "relationshipType": "TEST_UNIT",
+              "id": 33,
+              "beginOffset": 332,
+              "endOffset": 336,
+              "text": "mg/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 275,
+          "endOffset": 280,
+          "score": 0.8940013,
+          "text": "Sulfa",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 293,
+          "endOffset": 303,
+          "score": 0.99843484,
+          "text": "Vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.69946826,
+              "relationshipScore": 0.9379999,
+              "relationshipType": "DOSAGE",
+              "id": 5,
+              "beginOffset": 282,
+              "endOffset": 291,
+              "text": "0.04 mg/L",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.5148889,
+              "relationshipScore": 0.9999975,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 304,
+              "endOffset": 313,
+              "text": "0.05 mg/L",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 315,
+          "endOffset": 324,
+          "score": 0.7244023,
+          "text": "Mucositis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71493703
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "beginOffset": 338,
+          "endOffset": 349,
+          "score": 0.34615085,
+          "text": "Antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 351,
+          "endOffset": 362,
+          "score": 0.29788607,
+          "text": "C.difficile",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8009617
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 376,
+          "endOffset": 387,
+          "score": 0.34085536,
+          "text": "Methicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.87656885,
+              "relationshipScore": 0.9090971,
+              "relationshipType": "DURATION",
+              "id": 11,
+              "beginOffset": 399,
+              "endOffset": 405,
+              "text": "3 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 388,
+          "endOffset": 393,
+          "score": 0.9932427,
+          "text": "Sulfa",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.8020393,
+              "relationshipScore": 0.93958783,
+              "relationshipType": "DOSAGE",
+              "id": 10,
+              "beginOffset": 395,
+              "endOffset": 398,
+              "text": "4 g",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 407,
+          "endOffset": 417,
+          "score": 0.9985581,
+          "text": "Vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.653016,
+              "relationshipScore": 0.99878424,
+              "relationshipType": "DOSAGE",
+              "id": 13,
+              "beginOffset": 419,
+              "endOffset": 422,
+              "text": "4 g",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.6915991,
+              "relationshipScore": 0.999728,
+              "relationshipType": "DURATION",
+              "id": 14,
+              "beginOffset": 423,
+              "endOffset": 429,
+              "text": "3 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 431,
+          "endOffset": 440,
+          "score": 0.8577706,
+          "text": "Mucositis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7991565
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.96322244,
+            "id": 0,
+            "beginOffset": 30,
+            "endOffset": 35,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "01a33f65-ccaf-450f-a3ae-7b343fac5dde"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "01a33f65-ccaf-450f-a3ae-7b343fac5dde"
+          ],
+          "Content-Length": [
+            "9688"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "9688",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:11 GMT",
+          "x-amzn-RequestId": "01a33f65-ccaf-450f-a3ae-7b343fac5dde"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1101,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "upper respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6967584,
+          "beginOffset": 30,
+          "endOffset": 63,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89440906
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.6642468
+            },
+            {
+              "description": "Disease of upper respiratory tract, unspecified",
+              "code": "J39.9",
+              "score": 0.54393685
+            },
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.45169702
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.41174436
+            },
+            {
+              "description": "Congenital malformation of upper alimentary tract, unspecified",
+              "code": "Q40.9",
+              "score": 0.3745815
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Enterococcus bacteria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4293549,
+          "beginOffset": 178,
+          "endOffset": 199,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7487702
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Enterococcus as the cause of diseases classified elsewhere",
+              "code": "B95.2",
+              "score": 0.64439636
+            },
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.62781173
+            },
+            {
+              "description": "Other specified bacterial agents as the cause of diseases classified elsewhere",
+              "code": "B96.89",
+              "score": 0.5931026
+            },
+            {
+              "description": "Sepsis due to Enterococcus",
+              "code": "A41.81",
+              "score": 0.4648139
+            },
+            {
+              "description": "Pneumonia due to other specified bacteria",
+              "code": "J15.8",
+              "score": 0.4556074
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Mucositis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7244023,
+          "beginOffset": 315,
+          "endOffset": 324,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71493703
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Oral mucositis (ulcerative), unspecified",
+              "code": "K12.30",
+              "score": 0.59964645
+            },
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.4553467
+            },
+            {
+              "description": "Acute ethmoidal sinusitis, unspecified",
+              "code": "J01.20",
+              "score": 0.44054243
+            },
+            {
+              "description": "Nasal mucositis (ulcerative)",
+              "code": "J34.81",
+              "score": 0.36790386
+            },
+            {
+              "description": "Oral mucositis (ulcerative) due to radiation",
+              "code": "K12.33",
+              "score": 0.3486212
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Mucositis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8577706,
+          "beginOffset": 431,
+          "endOffset": 440,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79915637
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Oral mucositis (ulcerative), unspecified",
+              "code": "K12.30",
+              "score": 0.68250906
+            },
+            {
+              "description": "Acute ethmoidal sinusitis, unspecified",
+              "code": "J01.20",
+              "score": 0.50193036
+            },
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.49171358
+            },
+            {
+              "description": "Nasal mucositis (ulcerative)",
+              "code": "J34.81",
+              "score": 0.4203305
+            },
+            {
+              "description": "Gastrointestinal mucositis (ulcerative)",
+              "code": "K92.81",
+              "score": 0.40939406
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8f32c98b-a5c3-404b-871b-2c3184a13bc4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8f32c98b-a5c3-404b-871b-2c3184a13bc4"
+          ],
+          "Content-Length": [
+            "3108"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3108",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:15 GMT",
+          "x-amzn-RequestId": "8f32c98b-a5c3-404b-871b-2c3184a13bc4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 2397,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "Sulfa",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8940012,
+          "beginOffset": 275,
+          "endOffset": 280,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Calcium Sulfate",
+              "code": "1925",
+              "score": 0.7975104
+            },
+            {
+              "description": "nickel sulfate",
+              "code": "31738",
+              "score": 0.77932996
+            },
+            {
+              "description": "Sulfur",
+              "code": "10223",
+              "score": 0.6821314
+            },
+            {
+              "description": "lithium sulfate",
+              "code": "28818",
+              "score": 0.6189573
+            },
+            {
+              "description": "diethyl sulfate",
+              "code": "1428869",
+              "score": 0.59569335
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99843484,
+          "beginOffset": 293,
+          "endOffset": 303,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.6994682,
+              "relationshipScore": 0.9379999,
+              "id": 3,
+              "beginOffset": 282,
+              "endOffset": 291,
+              "text": "0.04 mg/L",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.51488894,
+              "relationshipScore": 0.9999975,
+              "id": 5,
+              "beginOffset": 304,
+              "endOffset": 313,
+              "text": "0.05 mg/L",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vancomycin",
+              "code": "11124",
+              "score": 0.5646465
+            },
+            {
+              "description": "Vancomycin 1000 MG Injection",
+              "code": "1807513",
+              "score": 0.33894938
+            },
+            {
+              "description": "Vancomycin 500 MG Injection",
+              "code": "1807516",
+              "score": 0.21561095
+            },
+            {
+              "description": "Vancomycin 50 MG/ML Injectable Solution",
+              "code": "313572",
+              "score": 0.16899326
+            },
+            {
+              "description": "Vancomycin 100 MG/ML Injectable Solution",
+              "code": "239209",
+              "score": 0.11538761
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Methicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.34085527,
+          "beginOffset": 376,
+          "endOffset": 387,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.87656885,
+              "relationshipScore": 0.9090971,
+              "id": 9,
+              "beginOffset": 399,
+              "endOffset": 405,
+              "text": "3 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Methicillin Sodium",
+              "code": "267073",
+              "score": 0.948525
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "Sulfa",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9932427,
+          "beginOffset": 388,
+          "endOffset": 393,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.80203927,
+              "relationshipScore": 0.93958783,
+              "id": 8,
+              "beginOffset": 395,
+              "endOffset": 398,
+              "text": "4 g",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "1 ML Epoetin Alfa 4000 UNT/ML Injection",
+              "code": "239999",
+              "score": 0.8812058
+            },
+            {
+              "description": "ferrous sulfate",
+              "code": "24947",
+              "score": 0.7495239
+            },
+            {
+              "description": "Calcium Sulfate",
+              "code": "1925",
+              "score": 0.7148874
+            },
+            {
+              "description": "thallium sulfate",
+              "code": "1309339",
+              "score": 0.6220434
+            },
+            {
+              "description": "1 ML Epoetin Alfa 4000 UNT/ML Injection [Procrit]",
+              "code": "205924",
+              "score": 0.4582725
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "Vancomycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9985581,
+          "beginOffset": 407,
+          "endOffset": 417,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.653016,
+              "relationshipScore": 0.99878436,
+              "id": 11,
+              "beginOffset": 419,
+              "endOffset": 422,
+              "text": "4 g",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.69159895,
+              "relationshipScore": 0.9997279,
+              "id": 12,
+              "beginOffset": 423,
+              "endOffset": 429,
+              "text": "3 days",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Vancomycin 1000 MG Injection",
+              "code": "1807513",
+              "score": 0.9084328
+            },
+            {
+              "description": "Vancomycin",
+              "code": "11124",
+              "score": 0.71834457
+            },
+            {
+              "description": "Vancomycin 500 MG Injection",
+              "code": "1807516",
+              "score": 0.40551648
+            },
+            {
+              "description": "200 ML Vancomycin 5 MG/ML Injection",
+              "code": "1807508",
+              "score": 0.21215816
+            },
+            {
+              "description": "Vancomycin 750 MG Injection",
+              "code": "1807518",
+              "score": 0.17675085
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a63e2bcd-95fe-46e0-ac39-60c7acbaad60"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a63e2bcd-95fe-46e0-ac39-60c7acbaad60"
+          ],
+          "Content-Length": [
+            "3657"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3657",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:14 GMT",
+          "x-amzn-RequestId": "a63e2bcd-95fe-46e0-ac39-60c7acbaad60"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:16 PM"
+}

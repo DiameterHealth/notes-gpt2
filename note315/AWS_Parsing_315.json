@@ -1,0 +1,473 @@
+{
+  "note": "If any progression was observed, he was prescribed a high-dose, anti-estrogenic medication to prevent ovulation. If no growth or change had been noted after two months of treatment, he was started on the prescribed estradiol and progesterone meds, at a time when he menstruated and began taking a daily oral contraceptive. At the end of the first year of follow up, the patient had not menstruated at all.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 498,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 64,
+          "endOffset": 90,
+          "score": 0.8739438,
+          "text": "anti-estrogenic medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 102,
+          "endOffset": 111,
+          "score": 0.5379409,
+          "text": "ovulation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "score": 0.96655613,
+          "text": "estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.69550574,
+              "relationshipScore": 0.97243315,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 297,
+              "endOffset": 302,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42174774,
+              "relationshipScore": 0.8868897,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 303,
+              "endOffset": 307,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 229,
+          "endOffset": 246,
+          "score": 0.82757294,
+          "text": "progesterone meds",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 229,
+          "endOffset": 246,
+          "score": 0.976041,
+          "text": "progesterone meds",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "score": 0.958686,
+          "text": "at a time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.976041,
+              "relationshipScore": 0.58693224,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 229,
+              "endOffset": 246,
+              "text": "progesterone meds",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "score": 0.958686,
+          "text": "at a time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.616716,
+              "relationshipScore": 0.5584466,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 308,
+              "endOffset": 321,
+              "text": "contraceptive",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "score": 0.958686,
+          "text": "at a time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.71103454,
+              "relationshipScore": 0.57711136,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 297,
+              "endOffset": 321,
+              "text": "daily oral contraceptive",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 257,
+          "score": 0.958686,
+          "text": "at a time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.82757294,
+              "relationshipScore": 0.58693224,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 229,
+              "endOffset": 246,
+              "text": "progesterone meds",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 297,
+          "endOffset": 321,
+          "score": 0.71103454,
+          "text": "daily oral contraceptive",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 308,
+          "endOffset": 321,
+          "score": 0.616716,
+          "text": "contraceptive",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.69550574,
+              "relationshipScore": 0.9939266,
+              "relationshipType": "FREQUENCY",
+              "id": 2,
+              "beginOffset": 297,
+              "endOffset": 302,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42174774,
+              "relationshipScore": 0.9999975,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 303,
+              "endOffset": 307,
+              "text": "oral",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "911d1c0b-ab8a-44d2-bc01-b2b796a6743d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "911d1c0b-ab8a-44d2-bc01-b2b796a6743d"
+          ],
+          "Content-Length": [
+            "3717"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3717",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:13 GMT",
+          "x-amzn-RequestId": "911d1c0b-ab8a-44d2-bc01-b2b796a6743d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 293,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ovulation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5379409,
+          "beginOffset": 102,
+          "endOffset": 111,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Mittelschmerz",
+              "code": "N94.0",
+              "score": 0.8338263
+            },
+            {
+              "description": "Ovulation bleeding",
+              "code": "N92.3",
+              "score": 0.76511717
+            },
+            {
+              "description": "Complications of attempted introduction of fertilized ovum following in vitro fertilization",
+              "code": "N98.2",
+              "score": 0.7191294
+            },
+            {
+              "description": "Hyperstimulation of ovaries",
+              "code": "N98.1",
+              "score": 0.65076244
+            },
+            {
+              "description": "Irregular menstruation, unspecified",
+              "code": "N92.6",
+              "score": 0.6401763
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a97669e7-30df-421b-9c5b-64e7c84b4dd5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a97669e7-30df-421b-9c5b-64e7c84b4dd5"
+          ],
+          "Content-Length": [
+            "711"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "711",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:13 GMT",
+          "x-amzn-RequestId": "a97669e7-30df-421b-9c5b-64e7c84b4dd5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 681,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "estradiol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.96655613,
+          "beginOffset": 215,
+          "endOffset": 224,
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.6955056,
+              "relationshipScore": 0.97243315,
+              "id": 2,
+              "beginOffset": 297,
+              "endOffset": 302,
+              "text": "daily",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42174777,
+              "relationshipScore": 0.8868896,
+              "id": 3,
+              "beginOffset": 303,
+              "endOffset": 307,
+              "text": "oral",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Estradiol",
+              "code": "4083",
+              "score": 0.9305705
+            },
+            {
+              "description": "Ethinyl Estradiol",
+              "code": "4124",
+              "score": 0.7262235
+            },
+            {
+              "description": "Estradiol 2 MG Oral Tablet",
+              "code": "197659",
+              "score": 0.59628475
+            },
+            {
+              "description": "Estradiol 1 MG Oral Tablet",
+              "code": "197658",
+              "score": 0.55817115
+            },
+            {
+              "description": "168 HR Estradiol 0.00104 MG/HR Transdermal System",
+              "code": "242333",
+              "score": 0.49923164
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "progesterone meds",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.82757294,
+          "beginOffset": 229,
+          "endOffset": 246,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Progesterone",
+              "code": "8727",
+              "score": 0.9489437
+            },
+            {
+              "description": "Progesterone 10 MG/ML Vaginal Cream",
+              "code": "199508",
+              "score": 0.25581825
+            },
+            {
+              "description": "Progesterone 0.08 MG/MG Vaginal Gel [Prochieve]",
+              "code": "351825",
+              "score": 0.13687725
+            },
+            {
+              "description": "Progesterone 200 MG Oral Capsule [Prometrium]",
+              "code": "261319",
+              "score": 0.12231729
+            },
+            {
+              "description": "Progesterone 100 MG Vaginal Tablet [Endometrin]",
+              "code": "725098",
+              "score": 0.10598388
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1ebdabd3-e6aa-4492-b011-a3daed84328c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1ebdabd3-e6aa-4492-b011-a3daed84328c"
+          ],
+          "Content-Length": [
+            "1652"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1652",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:13 GMT",
+          "x-amzn-RequestId": "1ebdabd3-e6aa-4492-b011-a3daed84328c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:07:14 PM"
+}

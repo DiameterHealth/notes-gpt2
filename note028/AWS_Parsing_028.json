@@ -1,0 +1,318 @@
+{
+  "note": ".  Summary:    A woman\u0027s risk of developing breast cancer can be reduced by taking a daily multivitamin, and even more when there is an additional benefit. The best way to take this is by taking a multivitamin that includes the mineral DHA (docosahexaenoic acid).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 405,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 44,
+          "endOffset": 50,
+          "score": 0.92358273,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 44,
+          "endOffset": 57,
+          "score": 0.922349,
+          "text": "breast cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96601725
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 91,
+          "endOffset": 103,
+          "score": 0.99879587,
+          "text": "multivitamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FREQUENCY",
+              "score": 0.8526974,
+              "relationshipScore": 0.9999964,
+              "relationshipType": "FREQUENCY",
+              "id": 1,
+              "beginOffset": 85,
+              "endOffset": 90,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 197,
+          "endOffset": 209,
+          "score": 0.90201306,
+          "text": "multivitamin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 228,
+          "endOffset": 239,
+          "score": 0.99070543,
+          "text": "mineral DHA",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 241,
+          "endOffset": 261,
+          "score": 0.9966587,
+          "text": "docosahexaenoic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "086581a3-0f97-4454-a30a-0bc61c243436"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "086581a3-0f97-4454-a30a-0bc61c243436"
+          ],
+          "Content-Length": [
+            "1232"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1232",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:46 GMT",
+          "x-amzn-RequestId": "086581a3-0f97-4454-a30a-0bc61c243436"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 369,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "breast cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.922349,
+          "beginOffset": 44,
+          "endOffset": 57,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96601725
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of unspecified site of unspecified female breast",
+              "code": "C50.919",
+              "score": 0.7994525
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.75787127
+            },
+            {
+              "description": "Personal history of malignant neoplasm of breast",
+              "code": "Z85.3",
+              "score": 0.7105171
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of right female breast",
+              "code": "C50.911",
+              "score": 0.6776594
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.66049385
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1634d01f-aca3-4f10-ad25-556835aadc24"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1634d01f-aca3-4f10-ad25-556835aadc24"
+          ],
+          "Content-Length": [
+            "859"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "859",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:47 GMT",
+          "x-amzn-RequestId": "1634d01f-aca3-4f10-ad25-556835aadc24"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 458,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "mineral DHA",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99070543,
+          "beginOffset": 228,
+          "endOffset": 239,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Schizochytrium DHA oil",
+              "code": "1538275",
+              "score": 0.5752069
+            },
+            {
+              "description": "Crypthecodinium cohnii dha oil",
+              "code": "1307710",
+              "score": 0.3061534
+            },
+            {
+              "description": "Mineral Oil 0.2 MG/MG Ophthalmic Ointment",
+              "code": "708129",
+              "score": 0.053737644
+            },
+            {
+              "description": "ULKENIA DHA OIL",
+              "code": "1430391",
+              "score": 0.030204697
+            },
+            {
+              "description": "Mineral Oil 1000 MG/ML Enema",
+              "code": "205121",
+              "score": 0.02102022
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "docosahexaenoic acid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9966587,
+          "beginOffset": 241,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "octanoic acid",
+              "code": "20178",
+              "score": 0.92582196
+            },
+            {
+              "description": "ANAZOLENE ACID",
+              "code": "1440972",
+              "score": 0.59334004
+            },
+            {
+              "description": "adipic acid",
+              "code": "17050",
+              "score": 0.41840106
+            },
+            {
+              "description": "benzenesulfonic acid",
+              "code": "993243",
+              "score": 0.39584747
+            },
+            {
+              "description": "Phytic Acid",
+              "code": "8302",
+              "score": 0.32969025
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1359d75e-d914-479f-806c-40e5b364c5f8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1359d75e-d914-479f-806c-40e5b364c5f8"
+          ],
+          "Content-Length": [
+            "1245"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1245",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:47 GMT",
+          "x-amzn-RequestId": "1359d75e-d914-479f-806c-40e5b364c5f8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:48 PM"
+}

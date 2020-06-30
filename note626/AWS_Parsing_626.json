@@ -1,0 +1,669 @@
+{
+  "note": ". Patient has skin rash around face and lips. Case Summary  A 34 year old female presented to our unit 3 days after a trip to China as the sole companion of a family member. She had a headache, runny nose and sore throat. She took an over-the-counter cold and cough medications as recommended. She started having severe skin rashes about 1 week after returning home.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 584,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 14,
+          "endOffset": 18,
+          "score": 0.96730685,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 14,
+          "endOffset": 23,
+          "score": 0.87155545,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.54769045
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.45375967,
+              "relationshipScore": 0.9998073,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 24,
+              "endOffset": 30,
+              "text": "around",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.91667193,
+              "relationshipScore": 0.98600316,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 31,
+              "endOffset": 35,
+              "text": "face",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.90304965,
+              "relationshipScore": 0.9995894,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 40,
+              "endOffset": 44,
+              "text": "lips",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 31,
+          "endOffset": 35,
+          "score": 0.91667193,
+          "text": "face",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 40,
+          "endOffset": 44,
+          "score": 0.90304965,
+          "text": "lips",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 62,
+          "endOffset": 64,
+          "score": 0.99382895,
+          "text": "34",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 126,
+          "endOffset": 131,
+          "score": 0.99970055,
+          "text": "China",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 184,
+          "endOffset": 192,
+          "score": 0.997451,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8793139
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 194,
+          "endOffset": 204,
+          "score": 0.96593505,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8458397
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 200,
+          "endOffset": 204,
+          "score": 0.9817981,
+          "text": "nose",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 209,
+          "endOffset": 220,
+          "score": 0.85876316,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8778779
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 214,
+          "endOffset": 220,
+          "score": 0.9948602,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 234,
+          "endOffset": 255,
+          "score": 0.3154082,
+          "text": "over-the-counter cold",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 260,
+          "endOffset": 265,
+          "score": 0.41518015,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 260,
+          "endOffset": 277,
+          "score": 0.8248212,
+          "text": "cough medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 320,
+          "endOffset": 324,
+          "score": 0.98220634,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 320,
+          "endOffset": 331,
+          "score": 0.93022364,
+          "text": "skin rashes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81744117
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 338,
+          "endOffset": 344,
+          "score": 0.9826751,
+          "text": "1 week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93022364,
+              "relationshipScore": 0.971658,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 320,
+              "endOffset": 331,
+              "text": "skin rashes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.81744117
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.45375967,
+            "id": 1,
+            "beginOffset": 24,
+            "endOffset": 30,
+            "text": "around",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "479a4b32-1b93-4316-9643-0571c6e0f44b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "479a4b32-1b93-4316-9643-0571c6e0f44b"
+          ],
+          "Content-Length": [
+            "3956"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3956",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:18 GMT",
+          "x-amzn-RequestId": "479a4b32-1b93-4316-9643-0571c6e0f44b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 650,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "skin rash",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87155545,
+          "beginOffset": 14,
+          "endOffset": 23,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.45375958,
+              "relationshipScore": 0.9998073,
+              "id": 2,
+              "beginOffset": 24,
+              "endOffset": 30,
+              "text": "around",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.91667193,
+              "relationshipScore": 0.98600316,
+              "id": 3,
+              "beginOffset": 31,
+              "endOffset": 35,
+              "text": "face",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.90304965,
+              "relationshipScore": 0.9995894,
+              "id": 4,
+              "beginOffset": 40,
+              "endOffset": 44,
+              "text": "lips",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5476905
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.6478559
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.39227098
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.34695047
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.29688472
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.29607797
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.997451,
+          "beginOffset": 184,
+          "endOffset": 192,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8793139
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.48656464
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.2830139
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.26552224
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.2207035
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.19943237
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "runny nose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96593505,
+          "beginOffset": 194,
+          "endOffset": 204,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8458397
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.550141
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.37519184
+            },
+            {
+              "description": "Orthopnea",
+              "code": "R06.01",
+              "score": 0.33934015
+            },
+            {
+              "description": "Nasal congestion",
+              "code": "R09.81",
+              "score": 0.33132184
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.3296014
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8587632,
+          "beginOffset": 209,
+          "endOffset": 220,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8778779
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.5444857
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.32983166
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.31199604
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.27561608
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.27522236
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41518015,
+          "beginOffset": 260,
+          "endOffset": 265,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.4646733
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.28817603
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.27618307
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.25894004
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.19752093
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "skin rashes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93022364,
+          "beginOffset": 320,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81744117
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.60238487
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.33032435
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.30981696
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.29435614
+            },
+            {
+              "description": "Other skin changes",
+              "code": "R23.8",
+              "score": 0.29323435
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dfd1c323-a46d-4250-8ac9-912f139ee59a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dfd1c323-a46d-4250-8ac9-912f139ee59a"
+          ],
+          "Content-Length": [
+            "4485"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4485",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:20 GMT",
+          "x-amzn-RequestId": "dfd1c323-a46d-4250-8ac9-912f139ee59a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 223,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "00a4db1f-aaba-4a23-be66-b1c0b5e0b992"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "00a4db1f-aaba-4a23-be66-b1c0b5e0b992"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:18 GMT",
+          "x-amzn-RequestId": "00a4db1f-aaba-4a23-be66-b1c0b5e0b992"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:20 PM"
+}

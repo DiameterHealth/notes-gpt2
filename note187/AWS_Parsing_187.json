@@ -1,0 +1,770 @@
+{
+  "note": "After one week in the ICU, she developed a right lower quadrant low back pain that did not respond to rest; this was seen by the OR at 7 months. Her blood pressure was within normal limits. She received a 1 month postop antibiotic treatment with 1 g of gentamicin daily and this was successful in treating a 2 day history of pain with anorexia.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 755,
+    "data": {
+      "entities": [
+        {
+          "id": 12,
+          "beginOffset": 22,
+          "endOffset": 25,
+          "score": 0.99889416,
+          "text": "ICU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 55,
+          "endOffset": 63,
+          "score": 0.9635036,
+          "text": "quadrant",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 68,
+          "endOffset": 72,
+          "score": 0.9920962,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 68,
+          "endOffset": 77,
+          "score": 0.8724515,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5876842
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99393773,
+              "relationshipScore": 0.98853123,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 43,
+              "endOffset": 48,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.99296653,
+              "relationshipScore": 0.9993181,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 49,
+              "endOffset": 54,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9635036,
+              "relationshipScore": 0.99366575,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 55,
+              "endOffset": 63,
+              "text": "quadrant",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.996627,
+              "relationshipScore": 0.96952474,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 64,
+              "endOffset": 67,
+              "text": "low",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9920962,
+              "relationshipScore": 0.8603099,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 68,
+              "endOffset": 72,
+              "text": "back",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 129,
+          "endOffset": 131,
+          "score": 0.73057276,
+          "text": "OR",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 149,
+          "endOffset": 163,
+          "score": 0.9750319,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.97494817,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 168,
+              "endOffset": 188,
+              "text": "within normal limits",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 149,
+          "endOffset": 188,
+          "score": 0.41441628,
+          "text": "blood pressure was within normal limits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4689049
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 205,
+          "endOffset": 212,
+          "score": 0.9777786,
+          "text": "1 month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.71597,
+              "relationshipScore": 0.58315337,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 220,
+              "endOffset": 240,
+              "text": "antibiotic treatment",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 213,
+          "endOffset": 219,
+          "score": 0.9936826,
+          "text": "postop",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.71597,
+              "relationshipScore": 0.66033167,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 220,
+              "endOffset": 240,
+              "text": "antibiotic treatment",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 220,
+          "endOffset": 240,
+          "score": 0.71597,
+          "text": "antibiotic treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 253,
+          "endOffset": 263,
+          "score": 0.99897575,
+          "text": "gentamicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99406624,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "DOSAGE",
+              "id": 5,
+              "beginOffset": 246,
+              "endOffset": 249,
+              "text": "1 g",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9432179,
+              "relationshipScore": 0.9999491,
+              "relationshipType": "FREQUENCY",
+              "id": 7,
+              "beginOffset": 264,
+              "endOffset": 269,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 308,
+          "endOffset": 313,
+          "score": 0.8679712,
+          "text": "2 day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9935842,
+              "relationshipScore": 0.8813958,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 335,
+              "endOffset": 343,
+              "text": "anorexia",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.78925437
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 308,
+          "endOffset": 313,
+          "score": 0.8679712,
+          "text": "2 day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.96848124,
+              "relationshipScore": 0.811305,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 325,
+              "endOffset": 329,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8050845
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 325,
+          "endOffset": 329,
+          "score": 0.96848124,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8050845
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 335,
+          "endOffset": 343,
+          "score": 0.9935842,
+          "text": "anorexia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78925437
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99393773,
+            "id": 0,
+            "beginOffset": 43,
+            "endOffset": 48,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99296653,
+            "id": 1,
+            "beginOffset": 49,
+            "endOffset": 54,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.996627,
+            "id": 3,
+            "beginOffset": 64,
+            "endOffset": 67,
+            "text": "low",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "88e5733e-9307-4748-b3ef-7364c2b83bdd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "88e5733e-9307-4748-b3ef-7364c2b83bdd"
+          ],
+          "Content-Length": [
+            "5869"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5869",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:56 GMT",
+          "x-amzn-RequestId": "88e5733e-9307-4748-b3ef-7364c2b83bdd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 632,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8724514,
+          "beginOffset": 68,
+          "endOffset": 77,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.99393773,
+              "relationshipScore": 0.98853123,
+              "id": 0,
+              "beginOffset": 43,
+              "endOffset": 48,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.99296653,
+              "relationshipScore": 0.9993181,
+              "id": 1,
+              "beginOffset": 49,
+              "endOffset": 54,
+              "text": "lower",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9635036,
+              "relationshipScore": 0.99366575,
+              "id": 2,
+              "beginOffset": 55,
+              "endOffset": 63,
+              "text": "quadrant",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.996627,
+              "relationshipScore": 0.96952474,
+              "id": 3,
+              "beginOffset": 64,
+              "endOffset": 67,
+              "text": "low",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.58768415
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.65332663
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.46165502
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.39285272
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.3880728
+            },
+            {
+              "description": "Lumbago with sciatica, unspecified side",
+              "code": "M54.40",
+              "score": 0.36331043
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "blood pressure was within normal limits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41441628,
+          "beginOffset": 149,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.468905
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.78604215
+            },
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.7481592
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.72795814
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.6994892
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.689273
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96848124,
+          "beginOffset": 325,
+          "endOffset": 329,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.80508447
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5475626
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5447749
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5297138
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5269063
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5119309
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "anorexia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9935842,
+          "beginOffset": 335,
+          "endOffset": 343,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78925437
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.79683495
+            },
+            {
+              "description": "Anorexia nervosa, restricting type",
+              "code": "F50.01",
+              "score": 0.55285686
+            },
+            {
+              "description": "Anorexia nervosa, unspecified",
+              "code": "F50.00",
+              "score": 0.53711087
+            },
+            {
+              "description": "Anoxic brain damage, not elsewhere classified",
+              "code": "G93.1",
+              "score": 0.5240642
+            },
+            {
+              "description": "Hypoxemia",
+              "code": "R09.02",
+              "score": 0.48838276
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "983f8579-8d15-43ae-a7b7-f6ffae874d6b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "983f8579-8d15-43ae-a7b7-f6ffae874d6b"
+          ],
+          "Content-Length": [
+            "3377"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3377",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:57 GMT",
+          "x-amzn-RequestId": "983f8579-8d15-43ae-a7b7-f6ffae874d6b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 653,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "gentamicin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99897575,
+          "beginOffset": 253,
+          "endOffset": 263,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.99406624,
+              "relationshipScore": 0.9999993,
+              "id": 0,
+              "beginOffset": 246,
+              "endOffset": 249,
+              "text": "1 g",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9432179,
+              "relationshipScore": 0.999949,
+              "id": 2,
+              "beginOffset": 264,
+              "endOffset": 269,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Gentamicin",
+              "code": "1596450",
+              "score": 0.81213355
+            },
+            {
+              "description": "100 ML Gentamicin 1 MG/ML Injection",
+              "code": "242816",
+              "score": 0.31454828
+            },
+            {
+              "description": "100 ML Gentamicin 0.9 MG/ML Injection",
+              "code": "310474",
+              "score": 0.2763135
+            },
+            {
+              "description": "100 ML Gentamicin 1.2 MG/ML Injection",
+              "code": "1870631",
+              "score": 0.27563444
+            },
+            {
+              "description": "Gentamicin 10 MG/ML Injectable Solution",
+              "code": "239204",
+              "score": 0.2045805
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0b9dafe2-04ca-4226-af42-82cbe044de53"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0b9dafe2-04ca-4226-af42-82cbe044de53"
+          ],
+          "Content-Length": [
+            "997"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "997",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:56 GMT",
+          "x-amzn-RequestId": "0b9dafe2-04ca-4226-af42-82cbe044de53"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:57 PM"
+}

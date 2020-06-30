@@ -1,0 +1,451 @@
+{
+  "note": ".  Post Procedure: As with any surgery patients should follow up for pain, blood pressure, swelling, mood, and appearance at the end of the procedure. Results:  No significant side effects.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 208,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 3,
+          "endOffset": 17,
+          "score": 0.5916539,
+          "text": "Post Procedure",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9347077,
+              "relationshipScore": 0.7396024,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 31,
+              "endOffset": 38,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 31,
+          "endOffset": 38,
+          "score": 0.9347077,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 69,
+          "endOffset": 73,
+          "score": 0.9917183,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5251549
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 75,
+          "endOffset": 89,
+          "score": 0.915126,
+          "text": "blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6778709
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 91,
+          "endOffset": 99,
+          "score": 0.98915684,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414368
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 101,
+          "endOffset": 105,
+          "score": 0.9082705,
+          "text": "mood",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6081641
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "score": 0.95548683,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5674891
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9022078
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cfa2bcbf-9f87-4500-8e5b-a41a84cba4ec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cfa2bcbf-9f87-4500-8e5b-a41a84cba4ec"
+          ],
+          "Content-Length": [
+            "1633"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1633",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:28 GMT",
+          "x-amzn-RequestId": "cfa2bcbf-9f87-4500-8e5b-a41a84cba4ec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1084,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9917183,
+          "beginOffset": 69,
+          "endOffset": 73,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5251548
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.668306
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.49530265
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.47684187
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4604048
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.45327783
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.915126,
+          "beginOffset": 75,
+          "endOffset": 89,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67787087
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8037344
+            },
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.79747427
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.7135992
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7027925
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.69953936
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98915684,
+          "beginOffset": 91,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414368
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.77501464
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.7484407
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6953575
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.6633062
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.66154826
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "mood",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9082705,
+          "beginOffset": 101,
+          "endOffset": 105,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6081641
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.7330932
+            },
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.552658
+            },
+            {
+              "description": "Adjustment disorder with depressed mood",
+              "code": "F43.21",
+              "score": 0.52547365
+            },
+            {
+              "description": "Unhappiness",
+              "code": "R45.2",
+              "score": 0.41044188
+            },
+            {
+              "description": "Other specified persistent mood disorders",
+              "code": "F34.89",
+              "score": 0.38486886
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95548683,
+          "beginOffset": 176,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5674891
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9022077
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.72037446
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.68976766
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.6549753
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.6341662
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.6136914
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0925dcdd-dd10-47c7-bcda-831713baa239"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0925dcdd-dd10-47c7-bcda-831713baa239"
+          ],
+          "Content-Length": [
+            "3790"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3790",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:29 GMT",
+          "x-amzn-RequestId": "0925dcdd-dd10-47c7-bcda-831713baa239"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 129,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1397a517-f2a3-4011-b928-9f1ec7c2616f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1397a517-f2a3-4011-b928-9f1ec7c2616f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:28 GMT",
+          "x-amzn-RequestId": "1397a517-f2a3-4011-b928-9f1ec7c2616f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:30 PM"
+}

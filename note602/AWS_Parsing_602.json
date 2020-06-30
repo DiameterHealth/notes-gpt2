@@ -1,0 +1,678 @@
+{
+  "note": "for a history of diabetes mellitus, and has been taking sulfonylureas/Glucophage for the past six months. Pt was taking metformin (200 mg/d) for one year when he was referred for evaluation; he is taking metformin for an additional year. This past history was significant with regard to the potential for recurrent episodes of diabetes. A complete physical examination was conducted, and he was given insulin, glyburide, and sulfonylureas/Glucophage.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 452,
+    "data": {
+      "entities": [
+        {
+          "id": 10,
+          "beginOffset": 17,
+          "endOffset": 34,
+          "score": 0.9875634,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9701417
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 56,
+          "endOffset": 69,
+          "score": 0.9244072,
+          "text": "sulfonylureas",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 70,
+          "endOffset": 80,
+          "score": 0.987317,
+          "text": "Glucophage",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 89,
+          "endOffset": 104,
+          "score": 0.99985373,
+          "text": "past six months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9244072,
+              "relationshipScore": 0.74711853,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 56,
+              "endOffset": 69,
+              "text": "sulfonylureas",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 89,
+          "endOffset": 104,
+          "score": 0.99985373,
+          "text": "past six months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "BRAND_NAME",
+              "score": 0.987317,
+              "relationshipScore": 0.92037106,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 70,
+              "endOffset": 80,
+              "text": "Glucophage",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 120,
+          "endOffset": 129,
+          "score": 0.9996947,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.924193,
+              "relationshipScore": 0.99999714,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 131,
+              "endOffset": 139,
+              "text": "200 mg/d",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.5310729,
+              "relationshipScore": 0.9999988,
+              "relationshipType": "DURATION",
+              "id": 4,
+              "beginOffset": 145,
+              "endOffset": 153,
+              "text": "one year",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 204,
+          "endOffset": 213,
+          "score": 0.99958664,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 238,
+          "endOffset": 247,
+          "score": 0.4272377,
+          "text": "This past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9924109,
+              "relationshipScore": 0.7788992,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 327,
+              "endOffset": 335,
+              "text": "diabetes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.95304394
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 327,
+          "endOffset": 335,
+          "score": 0.9924109,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95304394
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 348,
+          "endOffset": 368,
+          "score": 0.5476509,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 401,
+          "endOffset": 408,
+          "score": 0.9942227,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 410,
+          "endOffset": 419,
+          "score": 0.99970216,
+          "text": "glyburide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 425,
+          "endOffset": 438,
+          "score": 0.9228878,
+          "text": "sulfonylureas",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 439,
+          "endOffset": 449,
+          "score": 0.9907222,
+          "text": "Glucophage",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "129f8e8c-0b03-4528-9b56-3bbab68c498b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "129f8e8c-0b03-4528-9b56-3bbab68c498b"
+          ],
+          "Content-Length": [
+            "3472"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3472",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:31 GMT",
+          "x-amzn-RequestId": "129f8e8c-0b03-4528-9b56-3bbab68c498b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 406,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9875634,
+          "beginOffset": 17,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9701417
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.82700354
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.74439275
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.7320177
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.71771
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.69706774
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9924109,
+          "beginOffset": 327,
+          "endOffset": 335,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95304394
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8101717
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.71689093
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.66470087
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.6541496
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.6334356
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "72a019d1-1035-44ce-9cef-61f67aa85380"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "72a019d1-1035-44ce-9cef-61f67aa85380"
+          ],
+          "Content-Length": [
+            "1653"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1653",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:32 GMT",
+          "x-amzn-RequestId": "72a019d1-1035-44ce-9cef-61f67aa85380"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 651,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "Glucophage",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.987317,
+          "beginOffset": 70,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Glucophage",
+              "code": "151827",
+              "score": 0.9541858
+            },
+            {
+              "description": "Metformin hydrochloride 1000 MG Oral Tablet [Glucophage]",
+              "code": "861006",
+              "score": 0.6885627
+            },
+            {
+              "description": "Metformin hydrochloride 500 MG Oral Tablet [Glucophage]",
+              "code": "861008",
+              "score": 0.6842977
+            },
+            {
+              "description": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet [Glucophage]",
+              "code": "860977",
+              "score": 0.40969887
+            },
+            {
+              "description": "Metformin hydrochloride 850 MG Oral Tablet [Glucophage]",
+              "code": "861012",
+              "score": 0.36259976
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9996947,
+          "beginOffset": 120,
+          "endOffset": 129,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9241929,
+              "relationshipScore": 0.99999714,
+              "id": 3,
+              "beginOffset": 131,
+              "endOffset": 139,
+              "text": "200 mg/d",
+              "traits": []
+            },
+            {
+              "type": "DURATION",
+              "score": 0.5310727,
+              "relationshipScore": 0.9999988,
+              "id": 4,
+              "beginOffset": 145,
+              "endOffset": 153,
+              "text": "one year",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metformin",
+              "code": "6809",
+              "score": 0.8709542
+            },
+            {
+              "description": "Modified 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "1807915",
+              "score": 0.7665723
+            },
+            {
+              "description": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "860975",
+              "score": 0.7111854
+            },
+            {
+              "description": "Osmotic 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "1807917",
+              "score": 0.70321006
+            },
+            {
+              "description": "Metformin hydrochloride 1000 MG Oral Tablet",
+              "code": "861004",
+              "score": 0.12239671
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "metformin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99958664,
+          "beginOffset": 204,
+          "endOffset": 213,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metformin",
+              "code": "6809",
+              "score": 0.9605534
+            },
+            {
+              "description": "Modified 24 HR Metformin hydrochloride 1000 MG Extended Release Oral Tablet",
+              "code": "1807888",
+              "score": 0.7820786
+            },
+            {
+              "description": "Metformin hydrochloride 1000 MG Oral Tablet",
+              "code": "861004",
+              "score": 0.7678351
+            },
+            {
+              "description": "Osmotic 24 HR Metformin hydrochloride 1000 MG Extended Release Oral Tablet",
+              "code": "1807894",
+              "score": 0.7441846
+            },
+            {
+              "description": "Modified 24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet",
+              "code": "1807915",
+              "score": 0.7260273
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9942227,
+          "beginOffset": 401,
+          "endOffset": 408,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Insulin Glargine",
+              "code": "274783",
+              "score": 0.87097144
+            },
+            {
+              "description": "insulin, isophane",
+              "code": "1605101",
+              "score": 0.8187334
+            },
+            {
+              "description": "Insulin, Aspart, Human",
+              "code": "51428",
+              "score": 0.80659676
+            },
+            {
+              "description": "Ultralente Insulin, Human",
+              "code": "221110",
+              "score": 0.5593505
+            },
+            {
+              "description": "Insulin Lispro",
+              "code": "86009",
+              "score": 0.5334955
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "glyburide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99970216,
+          "beginOffset": 410,
+          "endOffset": 419,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Glyburide",
+              "code": "4815",
+              "score": 0.964439
+            },
+            {
+              "description": "Glyburide 3 MG Oral Tablet",
+              "code": "310536",
+              "score": 0.48018813
+            },
+            {
+              "description": "Glyburide 2.5 MG Oral Tablet",
+              "code": "310534",
+              "score": 0.4462958
+            },
+            {
+              "description": "Glyburide 3 MG Oral Tablet [Glynase]",
+              "code": "881409",
+              "score": 0.39908448
+            },
+            {
+              "description": "Glyburide 1.5 MG Oral Tablet",
+              "code": "314000",
+              "score": 0.33475316
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "Glucophage",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.9907222,
+          "beginOffset": 439,
+          "endOffset": 449,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Glucophage",
+              "code": "151827",
+              "score": 0.9541858
+            },
+            {
+              "description": "Metformin hydrochloride 1000 MG Oral Tablet [Glucophage]",
+              "code": "861006",
+              "score": 0.6885627
+            },
+            {
+              "description": "Metformin hydrochloride 500 MG Oral Tablet [Glucophage]",
+              "code": "861008",
+              "score": 0.6842977
+            },
+            {
+              "description": "24 HR Metformin hydrochloride 500 MG Extended Release Oral Tablet [Glucophage]",
+              "code": "860977",
+              "score": 0.40969887
+            },
+            {
+              "description": "Metformin hydrochloride 850 MG Oral Tablet [Glucophage]",
+              "code": "861012",
+              "score": 0.36259976
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ce0cfd7e-b3c0-48ba-992c-31437663b59e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ce0cfd7e-b3c0-48ba-992c-31437663b59e"
+          ],
+          "Content-Length": [
+            "4565"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4565",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:31 GMT",
+          "x-amzn-RequestId": "ce0cfd7e-b3c0-48ba-992c-31437663b59e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:32 PM"
+}

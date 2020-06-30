@@ -1,0 +1,590 @@
+{
+  "note": ".  Case Number: 17-02582  Date: 05/01/2013  Location: Dallas, TX, USA  Case Characteristics: The patient was a 36 yr old black female, who presented to the ED complaining of abdominal pain and nausea that was being relieved by gastric tube placement at the time of presentation. There were no underlying medical conditions known at the time of presentation (pulmonary emphysema, chronic obstructive pulmonary disease, renal failure).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 555,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 16,
+          "endOffset": 24,
+          "score": 0.88199383,
+          "text": "17-02582",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PHONE_OR_FAX",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 32,
+          "endOffset": 42,
+          "score": 0.99995816,
+          "text": "05/01/2013",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 54,
+          "endOffset": 69,
+          "score": 0.81959754,
+          "text": "Dallas, TX, USA",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 111,
+          "endOffset": 113,
+          "score": 0.9999864,
+          "text": "36",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 156,
+          "endOffset": 158,
+          "score": 0.99932456,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 174,
+          "endOffset": 188,
+          "score": 0.9261251,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83537185
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 193,
+          "endOffset": 199,
+          "score": 0.9988312,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7579472
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 227,
+          "endOffset": 249,
+          "score": 0.9235903,
+          "text": "gastric tube placement",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 257,
+          "endOffset": 277,
+          "score": 0.84202564,
+          "text": "time of presentation",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9235903,
+              "relationshipScore": 0.94977933,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 227,
+              "endOffset": 249,
+              "text": "gastric tube placement",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 336,
+          "endOffset": 356,
+          "score": 0.92989117,
+          "text": "time of presentation",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9450756,
+              "relationshipScore": 0.72690046,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 358,
+              "endOffset": 377,
+              "text": "pulmonary emphysema",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9745377
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 336,
+          "endOffset": 356,
+          "score": 0.92989117,
+          "text": "time of presentation",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97221166,
+              "relationshipScore": 0.5961974,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 387,
+              "endOffset": 416,
+              "text": "obstructive pulmonary disease",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9693192
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 358,
+          "endOffset": 377,
+          "score": 0.9450756,
+          "text": "pulmonary emphysema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9745377
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 387,
+          "endOffset": 416,
+          "score": 0.97221166,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9693192
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9916488,
+              "relationshipScore": 0.99975044,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 379,
+              "endOffset": 386,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 418,
+          "endOffset": 431,
+          "score": 0.98056096,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97064495
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9916488,
+            "id": 3,
+            "beginOffset": 379,
+            "endOffset": 386,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "01519c54-3661-4ef1-9841-bc6fb23328ee"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "01519c54-3661-4ef1-9841-bc6fb23328ee"
+          ],
+          "Content-Length": [
+            "3796"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3796",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:43 GMT",
+          "x-amzn-RequestId": "01519c54-3661-4ef1-9841-bc6fb23328ee"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 593,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9261251,
+          "beginOffset": 174,
+          "endOffset": 188,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83537185
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.7682637
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.6543089
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.59074455
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.5687751
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.55797833
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9988312,
+          "beginOffset": 193,
+          "endOffset": 199,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7579472
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.7980647
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.7637244
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.5857112
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5829946
+            },
+            {
+              "description": "Vomiting without nausea",
+              "code": "R11.11",
+              "score": 0.46265185
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pulmonary emphysema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9450756,
+          "beginOffset": 358,
+          "endOffset": 377,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9745377
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emphysema, unspecified",
+              "code": "J43.9",
+              "score": 0.47400936
+            },
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.41840884
+            },
+            {
+              "description": "Pulmonary fibrosis, unspecified",
+              "code": "J84.10",
+              "score": 0.41121233
+            },
+            {
+              "description": "Other emphysema",
+              "code": "J43.8",
+              "score": 0.35700482
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.35254636
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97221166,
+          "beginOffset": 387,
+          "endOffset": 416,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9916488,
+              "relationshipScore": 0.99975044,
+              "id": 3,
+              "beginOffset": 379,
+              "endOffset": 386,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9693192
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.77239674
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6140788
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.51945066
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.4661871
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.41612306
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98056096,
+          "beginOffset": 418,
+          "endOffset": 431,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97064495
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.72736895
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.67833424
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.6694325
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.5621816
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.5220068
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "31de400c-d0df-4113-ac46-8ccadbf89507"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "31de400c-d0df-4113-ac46-8ccadbf89507"
+          ],
+          "Content-Length": [
+            "3721"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3721",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:44 GMT",
+          "x-amzn-RequestId": "31de400c-d0df-4113-ac46-8ccadbf89507"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 225,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c95e3bf6-04a5-4a8a-a242-099c7a68f38b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c95e3bf6-04a5-4a8a-a242-099c7a68f38b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:44 GMT",
+          "x-amzn-RequestId": "c95e3bf6-04a5-4a8a-a242-099c7a68f38b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:44 PM"
+}

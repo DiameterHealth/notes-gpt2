@@ -1,0 +1,410 @@
+{
+  "note": "for some period of time prior to the fall. The patient has been receiving care for hypertension at her primary care office since she was 45 years old. Her history of stroke is documented and she was brought in to our center for evaluation after being observed by two emergency department physicians. Her history of stroke was not in contrast to the stroke-free time of the two physicians when the patient arrived at our center.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 291,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 24,
+          "endOffset": 29,
+          "score": 0.9999957,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7567585,
+              "relationshipScore": 0.8193861,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 37,
+              "endOffset": 41,
+              "text": "fall",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.42542955
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 37,
+          "endOffset": 41,
+          "score": 0.7567585,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42542955
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 83,
+          "endOffset": 95,
+          "score": 0.99588877,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96652436
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 137,
+          "endOffset": 139,
+          "score": 0.99990785,
+          "text": "45",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 166,
+          "endOffset": 172,
+          "score": 0.98875123,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9596528
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 267,
+          "endOffset": 287,
+          "score": 0.98766905,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 315,
+          "endOffset": 321,
+          "score": 0.98704344,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94746697
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 333,
+          "endOffset": 341,
+          "score": 0.4587091,
+          "text": "contrast",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0feeaf4f-2d23-411d-a0de-adc82db1bdc2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0feeaf4f-2d23-411d-a0de-adc82db1bdc2"
+          ],
+          "Content-Length": [
+            "1715"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1715",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:21 GMT",
+          "x-amzn-RequestId": "0feeaf4f-2d23-411d-a0de-adc82db1bdc2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 649,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7567585,
+          "beginOffset": 37,
+          "endOffset": 41,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42542952
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.836759
+            },
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.80467606
+            },
+            {
+              "description": "Fall from, out of or through window",
+              "code": "W13.4",
+              "score": 0.73016846
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.7289354
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.72743386
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99588877,
+          "beginOffset": 83,
+          "endOffset": 95,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96652436
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.84026724
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7516283
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.75030184
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7292588
+            },
+            {
+              "description": "Hypertension secondary to endocrine disorders",
+              "code": "I15.2",
+              "score": 0.67169243
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98875123,
+          "beginOffset": 166,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9596528
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7878183
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.66885
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.60847425
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.6005697
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.60044974
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98704344,
+          "beginOffset": 315,
+          "endOffset": 321,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94746697
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7791402
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6667811
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.584725
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.5706953
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.56344146
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "350a5b6b-1542-41f8-9a48-5aa94f47303f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "350a5b6b-1542-41f8-9a48-5aa94f47303f"
+          ],
+          "Content-Length": [
+            "3252"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3252",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:22 GMT",
+          "x-amzn-RequestId": "350a5b6b-1542-41f8-9a48-5aa94f47303f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 225,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c3b4176a-b8a1-4260-808b-01943b9bf9b1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c3b4176a-b8a1-4260-808b-01943b9bf9b1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:22 GMT",
+          "x-amzn-RequestId": "c3b4176a-b8a1-4260-808b-01943b9bf9b1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:22 PM"
+}

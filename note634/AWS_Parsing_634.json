@@ -1,0 +1,628 @@
+{
+  "note": "No physical examination, pain on x-ray, or ultrasound of hips found. No other injuries. Discussion There have been a number of cases reported that present with similar symptoms [28-31]. Our patient was a middle aged white female. Her presentation was unusual as she presented with 3 orthopaedic conditions, R and L knee pain, ankle pain, and lumbar pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 536,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 3,
+          "endOffset": 23,
+          "score": 0.44273356,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 25,
+          "endOffset": 29,
+          "score": 0.28610831,
+          "text": "pain",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.3192139,
+              "relationshipScore": 0.969381,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 69,
+              "endOffset": 86,
+              "text": "No other injuries",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 25,
+          "endOffset": 29,
+          "score": 0.9053872,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96261275,
+              "relationshipScore": 0.9702609,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 57,
+              "endOffset": 61,
+              "text": "hips",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 33,
+          "endOffset": 38,
+          "score": 0.99309057,
+          "text": "x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.3192139,
+              "relationshipScore": 0.9034613,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 69,
+              "endOffset": 86,
+              "text": "No other injuries",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 43,
+          "endOffset": 53,
+          "score": 0.9860227,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.3192139,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 69,
+              "endOffset": 86,
+              "text": "No other injuries",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 57,
+          "endOffset": 61,
+          "score": 0.96261275,
+          "text": "hips",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 78,
+          "endOffset": 86,
+          "score": 0.9733051,
+          "text": "injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4365233
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9614696
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 315,
+          "endOffset": 319,
+          "score": 0.9961188,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 315,
+          "endOffset": 324,
+          "score": 0.83287585,
+          "text": "knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47709492
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9727173,
+              "relationshipScore": 0.5828238,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 307,
+              "endOffset": 308,
+              "text": "R",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9972102,
+              "relationshipScore": 0.9990921,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 313,
+              "endOffset": 314,
+              "text": "L",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 326,
+          "endOffset": 331,
+          "score": 0.9815028,
+          "text": "ankle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 326,
+          "endOffset": 336,
+          "score": 0.942865,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67925
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 342,
+          "endOffset": 348,
+          "score": 0.74105674,
+          "text": "lumbar",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 342,
+          "endOffset": 353,
+          "score": 0.9129472,
+          "text": "lumbar pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.59863394
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9727173,
+            "id": 1,
+            "beginOffset": 307,
+            "endOffset": 308,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9972102,
+            "id": 2,
+            "beginOffset": 313,
+            "endOffset": 314,
+            "text": "L",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e7f2451f-5331-49f6-8a79-481d97186d7a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e7f2451f-5331-49f6-8a79-481d97186d7a"
+          ],
+          "Content-Length": [
+            "3967"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3967",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:30 GMT",
+          "x-amzn-RequestId": "e7f2451f-5331-49f6-8a79-481d97186d7a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 621,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9053873,
+          "beginOffset": 25,
+          "endOffset": 29,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96261275,
+              "relationshipScore": 0.9702609,
+              "id": 1,
+              "beginOffset": 57,
+              "endOffset": 61,
+              "text": "hips",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.73524547
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6850266
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.66311264
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.65759325
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.6482924
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9733051,
+          "beginOffset": 78,
+          "endOffset": 86,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.43652323
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9614696
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.84424436
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.7375441
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.6855214
+            },
+            {
+              "description": "Pain in right hand",
+              "code": "M79.641",
+              "score": 0.67761993
+            },
+            {
+              "description": "Sciatica, left side",
+              "code": "M54.32",
+              "score": 0.6542297
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.83287585,
+          "beginOffset": 315,
+          "endOffset": 324,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9727173,
+              "relationshipScore": 0.5828238,
+              "id": 3,
+              "beginOffset": 307,
+              "endOffset": 308,
+              "text": "R",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9972102,
+              "relationshipScore": 0.9990921,
+              "id": 4,
+              "beginOffset": 313,
+              "endOffset": 314,
+              "text": "L",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4770949
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right knee",
+              "code": "M25.561",
+              "score": 0.5114392
+            },
+            {
+              "description": "Pain in unspecified knee",
+              "code": "M25.569",
+              "score": 0.49652594
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.48920193
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.37530106
+            },
+            {
+              "description": "Pain in left thigh",
+              "code": "M79.652",
+              "score": 0.30967894
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.942865,
+          "beginOffset": 326,
+          "endOffset": 336,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67924994
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right ankle and joints of right foot",
+              "code": "M25.571",
+              "score": 0.49202713
+            },
+            {
+              "description": "Pain in unspecified ankle and joints of unspecified foot",
+              "code": "M25.579",
+              "score": 0.4712095
+            },
+            {
+              "description": "Pain in left ankle and joints of left foot",
+              "code": "M25.572",
+              "score": 0.44193715
+            },
+            {
+              "description": "Pain in left knee",
+              "code": "M25.562",
+              "score": 0.275982
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.24179418
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "lumbar pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9129472,
+          "beginOffset": 342,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.59863394
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.479629
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.4250698
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.37133968
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.33085203
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.3258687
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "20cd5179-6a24-416f-80ff-369dac1b3447"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "20cd5179-6a24-416f-80ff-369dac1b3447"
+          ],
+          "Content-Length": [
+            "3769"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3769",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:31 GMT",
+          "x-amzn-RequestId": "20cd5179-6a24-416f-80ff-369dac1b3447"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a53ce709-86de-4f6d-80b0-403d5d4f470e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a53ce709-86de-4f6d-80b0-403d5d4f470e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:30 GMT",
+          "x-amzn-RequestId": "a53ce709-86de-4f6d-80b0-403d5d4f470e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:31 PM"
+}

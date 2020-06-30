@@ -1,0 +1,428 @@
+{
+  "note": ".  Outcome: Continued excellent functional outcomes after 3 years  Comments: Patient has tolerated therapy well. Significant improvement in symptom scores of FM and chronic pelvic pain syndrome was noted after 4 months of medical treatment, and was maintained for 4 years. The improvement in pain and disability was maintained throughout the study, with a sustained rate of improvement of \u003e70%. In conclusion, this well-designed RCT found medical treatment of FM plus chronic pelvic pain syndrome to be effective and safe.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 380,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 173,
+          "endOffset": 193,
+          "score": 0.98316413,
+          "text": "pelvic pain syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9469851
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9963475,
+              "relationshipScore": 0.99994516,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 165,
+              "endOffset": 172,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 292,
+          "endOffset": 296,
+          "score": 0.948958,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45674983
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 301,
+          "endOffset": 311,
+          "score": 0.6777444,
+          "text": "disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46359807
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 476,
+          "endOffset": 496,
+          "score": 0.9782139,
+          "text": "pelvic pain syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9424133
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9879579,
+              "relationshipScore": 0.9997664,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 468,
+              "endOffset": 475,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9963475,
+            "id": 0,
+            "beginOffset": 165,
+            "endOffset": 172,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9879579,
+            "id": 4,
+            "beginOffset": 468,
+            "endOffset": 475,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4823a5fd-e8ce-4d1e-9833-1788bbf07a72"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4823a5fd-e8ce-4d1e-9833-1788bbf07a72"
+          ],
+          "Content-Length": [
+            "1689"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1689",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:42 GMT",
+          "x-amzn-RequestId": "4823a5fd-e8ce-4d1e-9833-1788bbf07a72"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 519,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "pelvic pain syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98316413,
+          "beginOffset": 173,
+          "endOffset": 193,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9963475,
+              "relationshipScore": 0.99994516,
+              "id": 0,
+              "beginOffset": 165,
+              "endOffset": 172,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9469851
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.5479275
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.48431227
+            },
+            {
+              "description": "Other chronic pain",
+              "code": "G89.29",
+              "score": 0.40998748
+            },
+            {
+              "description": "Chronic pain syndrome",
+              "code": "G89.4",
+              "score": 0.40248796
+            },
+            {
+              "description": "Pain in unspecified joint",
+              "code": "M25.50",
+              "score": 0.39263025
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.948958,
+          "beginOffset": 292,
+          "endOffset": 296,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45674968
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6973876
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.56970125
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.55961496
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.54480356
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5324961
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6777443,
+          "beginOffset": 301,
+          "endOffset": 311,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.463598
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Limitation of activities due to disability",
+              "code": "Z73.6",
+              "score": 0.73984194
+            },
+            {
+              "description": "Family history of other disabilities and chronic diseases leading to disablement, not elsewhere classified",
+              "code": "Z82.8",
+              "score": 0.6504546
+            },
+            {
+              "description": "Unspecified intellectual disabilities",
+              "code": "F79",
+              "score": 0.6055648
+            },
+            {
+              "description": "Developmental disorder of scholastic skills, unspecified",
+              "code": "F81.9",
+              "score": 0.6037456
+            },
+            {
+              "description": "Unspecified disorder of psychological development",
+              "code": "F89",
+              "score": 0.55900055
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pelvic pain syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9782139,
+          "beginOffset": 476,
+          "endOffset": 496,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9879579,
+              "relationshipScore": 0.9997664,
+              "id": 4,
+              "beginOffset": 468,
+              "endOffset": 475,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9424133
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.49128386
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.43870085
+            },
+            {
+              "description": "Chronic pain syndrome",
+              "code": "G89.4",
+              "score": 0.35537758
+            },
+            {
+              "description": "Other chronic pain",
+              "code": "G89.29",
+              "score": 0.35073256
+            },
+            {
+              "description": "Pain in unspecified joint",
+              "code": "M25.50",
+              "score": 0.31765014
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3c5db356-d13b-493e-97ed-cc81a6e0fb34"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3c5db356-d13b-493e-97ed-cc81a6e0fb34"
+          ],
+          "Content-Length": [
+            "3175"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3175",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:42 GMT",
+          "x-amzn-RequestId": "3c5db356-d13b-493e-97ed-cc81a6e0fb34"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 250,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7f692121-7a80-4577-9ae3-f36bb505546b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7f692121-7a80-4577-9ae3-f36bb505546b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:42 GMT",
+          "x-amzn-RequestId": "7f692121-7a80-4577-9ae3-f36bb505546b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:42 PM"
+}

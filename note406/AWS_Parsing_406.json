@@ -1,0 +1,515 @@
+{
+  "note": "but no symptoms of anaphylactic shock. In fact, the patient did not have any symptoms of anaphylactic shock at all. All his symptoms of allergic rhinitis were consistent with a minor, viral upper respiratory tract infection. He did not develop anaphylactoid reactions, so he should not have been anaphylactic to the rhinocorticoids. At the end of 1943, he was examined by two different physicians at the same institution.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 457,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 19,
+          "endOffset": 37,
+          "score": 0.98119515,
+          "text": "anaphylactic shock",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6128154
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9338964
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 89,
+          "endOffset": 107,
+          "score": 0.9836934,
+          "text": "anaphylactic shock",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56874865
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9105837
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 136,
+          "endOffset": 153,
+          "score": 0.9752906,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46392667
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 184,
+          "endOffset": 223,
+          "score": 0.7110801,
+          "text": "viral upper respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9336713
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 196,
+          "endOffset": 213,
+          "score": 0.870803,
+          "text": "respiratory tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 244,
+          "endOffset": 267,
+          "score": 0.9557625,
+          "text": "anaphylactoid reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6141265
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9350363
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 296,
+          "endOffset": 308,
+          "score": 0.65348417,
+          "text": "anaphylactic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 347,
+          "endOffset": 351,
+          "score": 0.92361027,
+          "text": "1943",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9318878,
+            "id": 0,
+            "beginOffset": 190,
+            "endOffset": 195,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed5f423a-2270-4ba6-bbe5-12222d4d5fb1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed5f423a-2270-4ba6-bbe5-12222d4d5fb1"
+          ],
+          "Content-Length": [
+            "1873"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1873",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:37 GMT",
+          "x-amzn-RequestId": "ed5f423a-2270-4ba6-bbe5-12222d4d5fb1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 559,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "anaphylactic shock",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98119515,
+          "beginOffset": 19,
+          "endOffset": 37,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6128153
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9338964
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.6256564
+            },
+            {
+              "description": "Anaphylactic reaction due to other food products",
+              "code": "T78.09",
+              "score": 0.5354977
+            },
+            {
+              "description": "Shock, unspecified",
+              "code": "R57.9",
+              "score": 0.4649037
+            },
+            {
+              "description": "Anaphylactic reaction due to fruits and vegetables",
+              "code": "T78.04",
+              "score": 0.3696974
+            },
+            {
+              "description": "Personal history of anaphylaxis",
+              "code": "Z87.892",
+              "score": 0.35591936
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "anaphylactic shock",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9836934,
+          "beginOffset": 89,
+          "endOffset": 107,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56874865
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9105837
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.5331729
+            },
+            {
+              "description": "Anaphylactic reaction due to other food products",
+              "code": "T78.09",
+              "score": 0.47643608
+            },
+            {
+              "description": "Shock, unspecified",
+              "code": "R57.9",
+              "score": 0.39489278
+            },
+            {
+              "description": "Personal history of anaphylaxis",
+              "code": "Z87.892",
+              "score": 0.32117587
+            },
+            {
+              "description": "Anaphylactic reaction due to fruits and vegetables",
+              "code": "T78.04",
+              "score": 0.31825238
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9752906,
+          "beginOffset": 136,
+          "endOffset": 153,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4639267
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.7042193
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.51496637
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.43455648
+            },
+            {
+              "description": "Allergic rhinitis due to pollen",
+              "code": "J30.1",
+              "score": 0.42665252
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.41716304
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "viral upper respiratory tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7110803,
+          "beginOffset": 184,
+          "endOffset": 223,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9336713
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.5281367
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.40603176
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.36971363
+            },
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.34988812
+            },
+            {
+              "description": "Viral wart, unspecified",
+              "code": "B07.9",
+              "score": 0.29425162
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "anaphylactoid reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9557625,
+          "beginOffset": 244,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6141265
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9350363
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.45980635
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.40620005
+            },
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.3614354
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.33348763
+            },
+            {
+              "description": "Adjustment disorder, unspecified",
+              "code": "F43.20",
+              "score": 0.2795793
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "anaphylactic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65348417,
+          "beginOffset": 296,
+          "endOffset": 308,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.5494902
+            },
+            {
+              "description": "Anaphylactic reaction due to other food products",
+              "code": "T78.09",
+              "score": 0.50924253
+            },
+            {
+              "description": "Anaphylactic reaction due to peanuts",
+              "code": "T78.01",
+              "score": 0.37206793
+            },
+            {
+              "description": "Personal history of anaphylaxis",
+              "code": "Z87.892",
+              "score": 0.36180058
+            },
+            {
+              "description": "Anaphylactic reaction due to fruits and vegetables",
+              "code": "T78.04",
+              "score": 0.35572484
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "872651a0-b03f-4728-908a-81978a18473d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "872651a0-b03f-4728-908a-81978a18473d"
+          ],
+          "Content-Length": [
+            "4474"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4474",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:38 GMT",
+          "x-amzn-RequestId": "872651a0-b03f-4728-908a-81978a18473d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a2c956e8-4d9e-41a4-a5c8-0c689dd19903"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a2c956e8-4d9e-41a4-a5c8-0c689dd19903"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:37 GMT",
+          "x-amzn-RequestId": "a2c956e8-4d9e-41a4-a5c8-0c689dd19903"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:38 PM"
+}

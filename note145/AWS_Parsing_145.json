@@ -1,0 +1,395 @@
+{
+  "note": "Other: (I did not have information on this)  Notes:  Diagnosis:  Bacterial Endocarditis  Diagnosis:  Bacterial Endocarditis  Radiologic Findings:   The patient had a 5 day history of a right coronary arrythmomalacia at the time of presentation. A computed tomography (CT) scan was normal. The patient had not traveled recently. The patient was not taking any medication at the time of the investigation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 65,
+          "endOffset": 87,
+          "score": 0.95373493,
+          "text": "Bacterial Endocarditis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.970665
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 101,
+          "endOffset": 123,
+          "score": 0.96826863,
+          "text": "Bacterial Endocarditis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9682919
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 125,
+          "endOffset": 144,
+          "score": 0.3237119,
+          "text": "Radiologic Findings",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 166,
+          "endOffset": 171,
+          "score": 0.8870752,
+          "text": "5 day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98086846,
+              "relationshipScore": 0.8196125,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 191,
+              "endOffset": 215,
+              "text": "coronary arrythmomalacia",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.930337
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 191,
+          "endOffset": 215,
+          "score": 0.98086846,
+          "text": "coronary arrythmomalacia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.930337
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.84536684,
+              "relationshipScore": 0.9859925,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 185,
+              "endOffset": 190,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 247,
+          "endOffset": 276,
+          "score": 0.96959877,
+          "text": "computed tomography (CT) scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9750347,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 281,
+              "endOffset": 287,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.84536684,
+            "id": 0,
+            "beginOffset": 185,
+            "endOffset": 190,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a4dd47d3-169d-4c17-999e-9cae92a81142"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a4dd47d3-169d-4c17-999e-9cae92a81142"
+          ],
+          "Content-Length": [
+            "2095"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2095",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:53 GMT",
+          "x-amzn-RequestId": "a4dd47d3-169d-4c17-999e-9cae92a81142"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 600,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Bacterial Endocarditis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95373493,
+          "beginOffset": 65,
+          "endOffset": 87,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.970665
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute and subacute infective endocarditis",
+              "code": "I33.0",
+              "score": 0.73412806
+            },
+            {
+              "description": "Bacterial meningitis, unspecified",
+              "code": "G00.9",
+              "score": 0.54283327
+            },
+            {
+              "description": "Other specified bacterial agents as the cause of diseases classified elsewhere",
+              "code": "B96.89",
+              "score": 0.54155195
+            },
+            {
+              "description": "Bacterial infection, unspecified",
+              "code": "A49.9",
+              "score": 0.45988148
+            },
+            {
+              "description": "Viral endocarditis",
+              "code": "B33.21",
+              "score": 0.45531213
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Bacterial Endocarditis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96826863,
+          "beginOffset": 101,
+          "endOffset": 123,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9682919
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute and subacute infective endocarditis",
+              "code": "I33.0",
+              "score": 0.713555
+            },
+            {
+              "description": "Endocarditis, valve unspecified",
+              "code": "I38",
+              "score": 0.6759599
+            },
+            {
+              "description": "Bacterial meningitis, unspecified",
+              "code": "G00.9",
+              "score": 0.55526817
+            },
+            {
+              "description": "Other specified bacterial agents as the cause of diseases classified elsewhere",
+              "code": "B96.89",
+              "score": 0.54576814
+            },
+            {
+              "description": "Bacterial infection, unspecified",
+              "code": "A49.9",
+              "score": 0.46298018
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "coronary arrythmomalacia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98086846,
+          "beginOffset": 191,
+          "endOffset": 215,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.84536684,
+              "relationshipScore": 0.9859925,
+              "id": 2,
+              "beginOffset": 185,
+              "endOffset": 190,
+              "text": "right",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.930337
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.49054283
+            },
+            {
+              "description": "Malformation of coronary vessels",
+              "code": "Q24.5",
+              "score": 0.39610994
+            },
+            {
+              "description": "Presence of coronary angioplasty implant and graft",
+              "code": "Z95.5",
+              "score": 0.39003447
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.38224864
+            },
+            {
+              "description": "Coronary angioplasty status",
+              "code": "Z98.61",
+              "score": 0.38067758
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "972256bc-b190-4dd8-af0a-4dab6e45375c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "972256bc-b190-4dd8-af0a-4dab6e45375c"
+          ],
+          "Content-Length": [
+            "2536"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2536",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:53 GMT",
+          "x-amzn-RequestId": "972256bc-b190-4dd8-af0a-4dab6e45375c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b00489e9-723b-456a-8a63-f72c51d0d415"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b00489e9-723b-456a-8a63-f72c51d0d415"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:53 GMT",
+          "x-amzn-RequestId": "b00489e9-723b-456a-8a63-f72c51d0d415"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:53 PM"
+}

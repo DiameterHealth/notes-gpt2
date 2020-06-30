@@ -1,0 +1,553 @@
+{
+  "note": "The physician believes the patient has a transient onset with no apparent cardiac abnormality, and that he may have left ventricular dysfunction secondary to coronary revascularization. The patient was not a candidate for atrial fibrillation treatment. In the current setting, the physician electively monitors for atrial fibrillation as he did in the current scenario. He believes the patient has atrial fibrillation and is awaiting an emergency cardiac procedure.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 419,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 74,
+          "endOffset": 93,
+          "score": 0.9381421,
+          "text": "cardiac abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64058
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9229976
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 121,
+          "endOffset": 144,
+          "score": 0.93825847,
+          "text": "ventricular dysfunction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66869485
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.87745255,
+              "relationshipScore": 0.99945456,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 116,
+              "endOffset": 120,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 158,
+          "endOffset": 184,
+          "score": 0.39497513,
+          "text": "coronary revascularization",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77420324
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 158,
+          "endOffset": 184,
+          "score": 0.758654,
+          "text": "coronary revascularization",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 222,
+          "endOffset": 241,
+          "score": 0.94206166,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9061773
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 260,
+          "endOffset": 267,
+          "score": 0.9999951,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9628174,
+              "relationshipScore": 0.6836202,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 315,
+              "endOffset": 334,
+              "text": "atrial fibrillation",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9552342
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 315,
+          "endOffset": 334,
+          "score": 0.9628174,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9552342
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 398,
+          "endOffset": 417,
+          "score": 0.97545093,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92602086
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.87745255,
+            "id": 0,
+            "beginOffset": 116,
+            "endOffset": 120,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ab9d358c-4583-4e9c-a966-83e134ba1e1c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ab9d358c-4583-4e9c-a966-83e134ba1e1c"
+          ],
+          "Content-Length": [
+            "2357"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2357",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:30 GMT",
+          "x-amzn-RequestId": "ab9d358c-4583-4e9c-a966-83e134ba1e1c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 662,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiac abnormality",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9381421,
+          "beginOffset": 74,
+          "endOffset": 93,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64058
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9229976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.6997328
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.69558156
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.64655864
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.64623046
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.6453234
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ventricular dysfunction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93825847,
+          "beginOffset": 121,
+          "endOffset": 144,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.87745255,
+              "relationshipScore": 0.99945456,
+              "id": 1,
+              "beginOffset": 116,
+              "endOffset": 120,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66869485
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.7305423
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.66964716
+            },
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.6482239
+            },
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.64514256
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",
+              "code": "I13.2",
+              "score": 0.6386492
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "coronary revascularization",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39497513,
+          "beginOffset": 158,
+          "endOffset": 184,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77420324
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.74250215
+            },
+            {
+              "description": "Coronary angioplasty status",
+              "code": "Z98.61",
+              "score": 0.6637358
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.6241899
+            },
+            {
+              "description": "Presence of coronary angioplasty implant and graft",
+              "code": "Z95.5",
+              "score": 0.62413806
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.61372036
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94206166,
+          "beginOffset": 222,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9061773
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.82328516
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.7882785
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.7568958
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.7394688
+            },
+            {
+              "description": "Unspecified atrial flutter",
+              "code": "I48.92",
+              "score": 0.6464933
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96281725,
+          "beginOffset": 315,
+          "endOffset": 334,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9552342
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.8791942
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.83767223
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.80058163
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.7831038
+            },
+            {
+              "description": "Unspecified atrial flutter",
+              "code": "I48.92",
+              "score": 0.7227355
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97545093,
+          "beginOffset": 398,
+          "endOffset": 417,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92602086
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.8627779
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.8349223
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.80142754
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.79090863
+            },
+            {
+              "description": "Ventricular fibrillation",
+              "code": "I49.01",
+              "score": 0.70717305
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8a21abc6-f0d1-4de4-924e-4cb35bbcf29e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8a21abc6-f0d1-4de4-924e-4cb35bbcf29e"
+          ],
+          "Content-Length": [
+            "4737"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4737",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:32 GMT",
+          "x-amzn-RequestId": "8a21abc6-f0d1-4de4-924e-4cb35bbcf29e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 254,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "106a214a-054f-4b8d-b762-7dbd5c62d97d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "106a214a-054f-4b8d-b762-7dbd5c62d97d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:32 GMT",
+          "x-amzn-RequestId": "106a214a-054f-4b8d-b762-7dbd5c62d97d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:32 PM"
+}

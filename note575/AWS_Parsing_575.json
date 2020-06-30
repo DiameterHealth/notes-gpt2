@@ -1,0 +1,531 @@
+{
+  "note": ". At the age of 20, he had a sudden onset of headache and photophobia which subsided within weeks. SUMMARY OF THE PREVENTION OF PRESENT CHOLERA A well-planned preventive regimen, in conjunction with regular eye examinations, can help avert a relapse of the disease. It can also delay the onset of complications in patients who have been diagnosed with chronic or recurring peptic ulcer disease and those who are at increased risk for this disease.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 454,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 16,
+          "endOffset": 18,
+          "score": 0.99931145,
+          "text": "20",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 45,
+          "endOffset": 53,
+          "score": 0.9981554,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9223644
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4460521,
+              "relationshipScore": 0.9959906,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 29,
+              "endOffset": 35,
+              "text": "sudden",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 58,
+          "endOffset": 69,
+          "score": 0.99851984,
+          "text": "photophobia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8654818
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4460521,
+              "relationshipScore": 0.9631477,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 29,
+              "endOffset": 35,
+              "text": "sudden",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 159,
+          "endOffset": 177,
+          "score": 0.56451565,
+          "text": "preventive regimen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 207,
+          "endOffset": 210,
+          "score": 0.82628393,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 242,
+          "endOffset": 264,
+          "score": 0.25171143,
+          "text": "relapse of the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9087436
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 297,
+          "endOffset": 310,
+          "score": 0.380472,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9935607,
+              "relationshipScore": 0.6147421,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 352,
+              "endOffset": 359,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 373,
+          "endOffset": 393,
+          "score": 0.97508734,
+          "text": "peptic ulcer disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92159355
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.4460521,
+            "id": 1,
+            "beginOffset": 29,
+            "endOffset": 35,
+            "text": "sudden",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9935607,
+            "id": 6,
+            "beginOffset": 352,
+            "endOffset": 359,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "414953f5-673b-49dc-96fc-5e72cf82d67b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "414953f5-673b-49dc-96fc-5e72cf82d67b"
+          ],
+          "Content-Length": [
+            "2525"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2525",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:50 GMT",
+          "x-amzn-RequestId": "414953f5-673b-49dc-96fc-5e72cf82d67b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 629,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9981554,
+          "beginOffset": 45,
+          "endOffset": 53,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44605213,
+              "relationshipScore": 0.9959906,
+              "id": 0,
+              "beginOffset": 29,
+              "endOffset": 35,
+              "text": "sudden",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9223644
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7616637
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.54840946
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.51742685
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.49707744
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.4351726
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "photophobia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99851984,
+          "beginOffset": 58,
+          "endOffset": 69,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44605213,
+              "relationshipScore": 0.9631477,
+              "id": 0,
+              "beginOffset": 29,
+              "endOffset": 35,
+              "text": "sudden",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8654818
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Visual discomfort, unspecified",
+              "code": "H53.149",
+              "score": 0.61755466
+            },
+            {
+              "description": "Visual discomfort, bilateral",
+              "code": "H53.143",
+              "score": 0.60500056
+            },
+            {
+              "description": "Visual discomfort, left eye",
+              "code": "H53.142",
+              "score": 0.52905536
+            },
+            {
+              "description": "Visual discomfort, right eye",
+              "code": "H53.141",
+              "score": 0.48158613
+            },
+            {
+              "description": "Visual discomfort",
+              "code": "H53.14",
+              "score": 0.4598307
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "relapse of the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.25171134,
+          "beginOffset": 242,
+          "endOffset": 264,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9087436
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.47206333
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.41055083
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.40163365
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.38997287
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.38944533
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38047206,
+          "beginOffset": 297,
+          "endOffset": 310,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9935607,
+              "relationshipScore": 0.6147421,
+              "id": 6,
+              "beginOffset": 352,
+              "endOffset": 359,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified complication of procedure",
+              "code": "T81.9",
+              "score": 0.6526399
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.64113116
+            },
+            {
+              "description": "Other complications of anesthesia",
+              "code": "T88.59",
+              "score": 0.6233348
+            },
+            {
+              "description": "Adverse effect of unspecified anesthetic",
+              "code": "T41.45",
+              "score": 0.6061054
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.5934322
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "peptic ulcer disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97508734,
+          "beginOffset": 373,
+          "endOffset": 393,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92159355
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K27.9",
+              "score": 0.70674783
+            },
+            {
+              "description": "Personal history of peptic ulcer disease",
+              "code": "Z87.11",
+              "score": 0.5388517
+            },
+            {
+              "description": "Chronic or unspecified peptic ulcer, site unspecified, with perforation",
+              "code": "K27.5",
+              "score": 0.53275424
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.51669747
+            },
+            {
+              "description": "Ulcer of esophagus without bleeding",
+              "code": "K22.10",
+              "score": 0.44224712
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0874ffa0-e2da-4201-ac04-3783ca753a2e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0874ffa0-e2da-4201-ac04-3783ca753a2e"
+          ],
+          "Content-Length": [
+            "4266"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4266",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:51 GMT",
+          "x-amzn-RequestId": "0874ffa0-e2da-4201-ac04-3783ca753a2e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a89d9aca-da4b-4c40-bd9c-8cc39b8a5f9c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a89d9aca-da4b-4c40-bd9c-8cc39b8a5f9c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:50 GMT",
+          "x-amzn-RequestId": "a89d9aca-da4b-4c40-bd9c-8cc39b8a5f9c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:51 PM"
+}

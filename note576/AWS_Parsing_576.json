@@ -1,0 +1,322 @@
+{
+  "note": "He is also experiencing pain in the distal joints at night which increases on waking up. He has had a number of visits to a gynaecologist over the past few years where antibiotics were given. A total of 28 visits in the past year. The patient has had a total of 11 gynaecological operations since 2005 and has had both local and systemic antibiotics.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 361,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 24,
+          "endOffset": 28,
+          "score": 0.9919172,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414932
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9716349,
+              "relationshipScore": 0.99999416,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 36,
+              "endOffset": 42,
+              "text": "distal",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9954424,
+              "relationshipScore": 0.9993261,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 43,
+              "endOffset": 49,
+              "text": "joints",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 43,
+          "endOffset": 49,
+          "score": 0.9954424,
+          "text": "joints",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 168,
+          "endOffset": 179,
+          "score": 0.76271737,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 265,
+          "endOffset": 290,
+          "score": 0.2570918,
+          "text": "gynaecological operations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 297,
+          "endOffset": 301,
+          "score": 0.99821484,
+          "text": "2005",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 297,
+          "endOffset": 301,
+          "score": 0.99900216,
+          "text": "2005",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.2570918,
+              "relationshipScore": 0.7729819,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 265,
+              "endOffset": 290,
+              "text": "gynaecological operations",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 329,
+          "endOffset": 349,
+          "score": 0.7236089,
+          "text": "systemic antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 338,
+          "endOffset": 349,
+          "score": 0.3665027,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9716349,
+            "id": 0,
+            "beginOffset": 36,
+            "endOffset": 42,
+            "text": "distal",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a5963a67-72e5-4007-87e3-26a32eefdd97"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a5963a67-72e5-4007-87e3-26a32eefdd97"
+          ],
+          "Content-Length": [
+            "2241"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2241",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:51 GMT",
+          "x-amzn-RequestId": "a5963a67-72e5-4007-87e3-26a32eefdd97"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 374,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9919172,
+          "beginOffset": 24,
+          "endOffset": 28,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9716349,
+              "relationshipScore": 0.99999416,
+              "id": 1,
+              "beginOffset": 36,
+              "endOffset": 42,
+              "text": "distal",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9954424,
+              "relationshipScore": 0.9993261,
+              "id": 2,
+              "beginOffset": 43,
+              "endOffset": 49,
+              "text": "joints",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7414932
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6456481
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.60042846
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.54852295
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.5268852
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5256558
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c3545ff8-d9a2-4f57-962c-fa8793417f56"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c3545ff8-d9a2-4f57-962c-fa8793417f56"
+          ],
+          "Content-Length": [
+            "967"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "967",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:51 GMT",
+          "x-amzn-RequestId": "c3545ff8-d9a2-4f57-962c-fa8793417f56"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5e4665c1-c8ef-4ade-974c-7397699671a5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5e4665c1-c8ef-4ade-974c-7397699671a5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:51 GMT",
+          "x-amzn-RequestId": "5e4665c1-c8ef-4ade-974c-7397699671a5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:52 PM"
+}

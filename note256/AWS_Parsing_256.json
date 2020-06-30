@@ -1,0 +1,236 @@
+{
+  "note": ", if they are prescribed. (MDM): Refer to cardiologist for additional monitoring. Continue on current medications, if they are prescribed. Gastrointestinal (GI):  A full blood count with chemistry panel should be obtained at the time you are transported, if possible. with chemistry panel should be obtained at the time you are transported, if possible. Immediate administration of a complete blood count is recommended at arrival in the emergency department.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 400,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 139,
+          "endOffset": 155,
+          "score": 0.31099355,
+          "text": "Gastrointestinal",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 157,
+          "endOffset": 159,
+          "score": 0.3753485,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 165,
+          "endOffset": 181,
+          "score": 0.37809289,
+          "text": "full blood count",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 187,
+          "endOffset": 202,
+          "score": 0.98529434,
+          "text": "chemistry panel",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 222,
+          "endOffset": 228,
+          "score": 0.9796779,
+          "text": "at the",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.98529434,
+              "relationshipScore": 0.6670416,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 187,
+              "endOffset": 202,
+              "text": "chemistry panel",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 273,
+          "endOffset": 288,
+          "score": 0.96384853,
+          "text": "chemistry panel",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 308,
+          "endOffset": 319,
+          "score": 0.5665988,
+          "text": "at the time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.96384853,
+              "relationshipScore": 0.8272529,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 273,
+              "endOffset": 288,
+              "text": "chemistry panel",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 384,
+          "endOffset": 404,
+          "score": 0.32731622,
+          "text": "complete blood count",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 438,
+          "endOffset": 458,
+          "score": 0.99438334,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c6b2bf5-0b6e-448b-938a-ddfe02f08d40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c6b2bf5-0b6e-448b-938a-ddfe02f08d40"
+          ],
+          "Content-Length": [
+            "1998"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1998",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:47 GMT",
+          "x-amzn-RequestId": "0c6b2bf5-0b6e-448b-938a-ddfe02f08d40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 264,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "549676d1-fefe-44fc-9ee8-846870b21b61"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "549676d1-fefe-44fc-9ee8-846870b21b61"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:48 GMT",
+          "x-amzn-RequestId": "549676d1-fefe-44fc-9ee8-846870b21b61"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 213,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cd2c6a53-d776-48ab-96b9-cb781b4d8a3b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cd2c6a53-d776-48ab-96b9-cb781b4d8a3b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:48 GMT",
+          "x-amzn-RequestId": "cd2c6a53-d776-48ab-96b9-cb781b4d8a3b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:48 PM"
+}

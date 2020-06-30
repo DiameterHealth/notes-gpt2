@@ -1,0 +1,536 @@
+{
+  "note": "and mobility. Discharge to other home or nursing home. Treatment:  Immediately discontinue all antiemetics, antiemetic titers. Administer fluid boluses on a frequent basis with the following schedule: 5 mL/kg as tolerated. Administer IV fluids as indicated. Monitor the patient for signs of dehydration. Monitor body temperature and electrolyte levels. For patients with signs of decreased cardiac output (decreased maximal heart rate \u003c90 beats/min), provide oxygen as needed on a continuous basis.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 479,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 95,
+          "endOffset": 106,
+          "score": 0.8291563,
+          "text": "antiemetics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 108,
+          "endOffset": 125,
+          "score": 0.6058076,
+          "text": "antiemetic titers",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 138,
+          "endOffset": 143,
+          "score": 0.8442911,
+          "text": "fluid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.788345,
+              "relationshipScore": 0.9999846,
+              "relationshipType": "FORM",
+              "id": 2,
+              "beginOffset": 144,
+              "endOffset": 151,
+              "text": "boluses",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.2968786,
+              "relationshipScore": 0.8947543,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "5 mL/kg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 138,
+          "endOffset": 151,
+          "score": 0.7356844,
+          "text": "fluid boluses",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 234,
+          "endOffset": 243,
+          "score": 0.6958995,
+          "text": "IV fluids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 237,
+          "endOffset": 243,
+          "score": 0.97026604,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.2968786,
+              "relationshipScore": 0.9640313,
+              "relationshipType": "DOSAGE",
+              "id": 3,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "5 mL/kg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9707545,
+              "relationshipScore": 0.9999987,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 234,
+              "endOffset": 236,
+              "text": "IV",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 291,
+          "endOffset": 302,
+          "score": 0.9796734,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 312,
+          "endOffset": 328,
+          "score": 0.9624851,
+          "text": "body temperature",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 333,
+          "endOffset": 351,
+          "score": 0.9736866,
+          "text": "electrolyte levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 380,
+          "endOffset": 404,
+          "score": 0.6851291,
+          "text": "decreased cardiac output",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73356456
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 390,
+          "endOffset": 404,
+          "score": 0.9760562,
+          "text": "cardiac output",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8418836,
+              "relationshipScore": 0.9999585,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 380,
+              "endOffset": 389,
+              "text": "decreased",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 416,
+          "endOffset": 434,
+          "score": 0.88083726,
+          "text": "maximal heart rate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9135665,
+              "relationshipScore": 0.9770781,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 406,
+              "endOffset": 415,
+              "text": "decreased",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9594258,
+              "relationshipScore": 0.9985238,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 435,
+              "endOffset": 438,
+              "text": "\u003c90",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 424,
+          "endOffset": 429,
+          "score": 0.9044005,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 459,
+          "endOffset": 465,
+          "score": 0.7825471,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a418f939-9b03-4617-8b77-6eaf8f5aa143"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a418f939-9b03-4617-8b77-6eaf8f5aa143"
+          ],
+          "Content-Length": [
+            "3914"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3914",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:08 GMT",
+          "x-amzn-RequestId": "a418f939-9b03-4617-8b77-6eaf8f5aa143"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 467,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9796734,
+          "beginOffset": 291,
+          "endOffset": 302,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dehydration",
+              "code": "E86.0",
+              "score": 0.84373206
+            },
+            {
+              "description": "Dehydration of newborn",
+              "code": "P74.1",
+              "score": 0.44192648
+            },
+            {
+              "description": "Hyperemesis gravidarum with metabolic disturbance",
+              "code": "O21.1",
+              "score": 0.40779692
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "decreased cardiac output",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6851291,
+          "beginOffset": 380,
+          "endOffset": 404,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73356456
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anuria and oliguria",
+              "code": "R34",
+              "score": 0.6003823
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.46220896
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.44536513
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.44169226
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.43799317
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0403dc51-ae4d-41f3-a8cc-87eed23bd859"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0403dc51-ae4d-41f3-a8cc-87eed23bd859"
+          ],
+          "Content-Length": [
+            "1177"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1177",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:09 GMT",
+          "x-amzn-RequestId": "0403dc51-ae4d-41f3-a8cc-87eed23bd859"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 727,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fluid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8442911,
+          "beginOffset": 138,
+          "endOffset": 143,
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.7883452,
+              "relationshipScore": 0.9999846,
+              "id": 1,
+              "beginOffset": 144,
+              "endOffset": 151,
+              "text": "boluses",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.2968786,
+              "relationshipScore": 0.8947543,
+              "id": 2,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "5 mL/kg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.274201
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.019166656
+            },
+            {
+              "description": "1 ML rabies virus vaccine flury-lep strain 2.5 UNT/ML Injection",
+              "code": "830460",
+              "score": 0.013149562
+            },
+            {
+              "description": "1 ML rabies virus vaccine flury-lep strain 2.5 UNT/ML Injection [RabAvert]",
+              "code": "830463",
+              "score": 0.011055501
+            },
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.010227694
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.97026604,
+          "beginOffset": 237,
+          "endOffset": 243,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.2968786,
+              "relationshipScore": 0.96403116,
+              "id": 2,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "5 mL/kg",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9707545,
+              "relationshipScore": 0.99999857,
+              "id": 3,
+              "beginOffset": 234,
+              "endOffset": 236,
+              "text": "IV",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.05217126
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.019403687
+            },
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.0059261792
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a043150a-ed06-4950-af28-1a8e115afcc5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a043150a-ed06-4950-af28-1a8e115afcc5"
+          ],
+          "Content-Length": [
+            "1836"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1836",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:08 GMT",
+          "x-amzn-RequestId": "a043150a-ed06-4950-af28-1a8e115afcc5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:09 PM"
+}

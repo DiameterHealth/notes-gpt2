@@ -1,0 +1,235 @@
+{
+  "note": ".  VAGINAL HAEMORRHOID:  Patient was not monitored at all during her entire hospitalization. She did not receive the standard of care vaginal douching. It may be that the severity in her condition was not as severe, thus making it more difficult for her to urinate. The patient\u0027s case is an example of why vaginal douching and other forms of female genital mutilation are not acceptable.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 234,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 3,
+          "endOffset": 22,
+          "score": 0.4551423,
+          "text": "VAGINAL HAEMORRHOID",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7000639
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 349,
+          "endOffset": 367,
+          "score": 0.71888465,
+          "text": "genital mutilation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55546033
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3601c69a-ef19-4044-93bb-536468d11ea3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3601c69a-ef19-4044-93bb-536468d11ea3"
+          ],
+          "Content-Length": [
+            "469"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "469",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:40 GMT",
+          "x-amzn-RequestId": "3601c69a-ef19-4044-93bb-536468d11ea3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 519,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "VAGINAL HAEMORRHOID",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4551423,
+          "beginOffset": 3,
+          "endOffset": 22,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7000638
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.42280462
+            },
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.3719862
+            },
+            {
+              "description": "Candidiasis of vulva and vagina",
+              "code": "B37.3",
+              "score": 0.3180597
+            },
+            {
+              "description": "Postmenopausal atrophic vaginitis",
+              "code": "N95.2",
+              "score": 0.29550216
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.24421917
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "genital mutilation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7188845,
+          "beginOffset": 349,
+          "endOffset": 367,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5554604
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Female genital mutilation status, unspecified",
+              "code": "N90.810",
+              "score": 0.69885504
+            },
+            {
+              "description": "Female genital mutilation status",
+              "code": "N90.81",
+              "score": 0.6767594
+            },
+            {
+              "description": "Other specified conditions associated with female genital organs and menstrual cycle",
+              "code": "N94.89",
+              "score": 0.64049816
+            },
+            {
+              "description": "Female genital mutilation Type I status",
+              "code": "N90.811",
+              "score": 0.63312846
+            },
+            {
+              "description": "Other female genital mutilation status",
+              "code": "N90.818",
+              "score": 0.60537624
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2edf603a-b3a6-4a1d-8619-5e266f0a6b40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2edf603a-b3a6-4a1d-8619-5e266f0a6b40"
+          ],
+          "Content-Length": [
+            "1562"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1562",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:42 GMT",
+          "x-amzn-RequestId": "2edf603a-b3a6-4a1d-8619-5e266f0a6b40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "91935c48-da5b-409b-bd11-7199fd053188"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "91935c48-da5b-409b-bd11-7199fd053188"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:40 GMT",
+          "x-amzn-RequestId": "91935c48-da5b-409b-bd11-7199fd053188"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:42 PM"
+}

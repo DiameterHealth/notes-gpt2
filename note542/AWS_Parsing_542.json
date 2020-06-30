@@ -1,0 +1,334 @@
+{
+  "note": "for a complete nephrolithiasis treatment including removal of the nephric duct as required. His current nephrology history including use of steroids and antihypertensives was negative. On the post surgery management he was given the option of receiving a combined oral antidiabetic and steroid medication if desired. The pt was scheduled for treatment two months later. The nephrologist was advised of the need to monitor this patient for several years due to the potential for long-term renal failure.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 598,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 15,
+          "endOffset": 30,
+          "score": 0.952776,
+          "text": "nephrolithiasis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89960957
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9363845,
+              "relationshipScore": 0.99054927,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 66,
+              "endOffset": 78,
+              "text": "nephric duct",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 51,
+          "endOffset": 78,
+          "score": 0.83504546,
+          "text": "removal of the nephric duct",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 66,
+          "endOffset": 78,
+          "score": 0.9363845,
+          "text": "nephric duct",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 140,
+          "endOffset": 148,
+          "score": 0.48394522,
+          "text": "steroids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 140,
+          "endOffset": 148,
+          "score": 0.89982104,
+          "text": "steroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 153,
+          "endOffset": 170,
+          "score": 0.92839104,
+          "text": "antihypertensives",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 153,
+          "endOffset": 170,
+          "score": 0.7857553,
+          "text": "antihypertensives",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 192,
+          "endOffset": 196,
+          "score": 0.92663205,
+          "text": "post",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.7673783,
+              "relationshipScore": 0.98631185,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 197,
+              "endOffset": 204,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 197,
+          "endOffset": 204,
+          "score": 0.7673783,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 264,
+          "endOffset": 281,
+          "score": 0.9841644,
+          "text": "oral antidiabetic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 286,
+          "endOffset": 304,
+          "score": 0.91606253,
+          "text": "steroid medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 478,
+          "endOffset": 501,
+          "score": 0.3948144,
+          "text": "long-term renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94913405
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.42310855,
+            "id": 8,
+            "beginOffset": 175,
+            "endOffset": 183,
+            "text": "negative",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e9a71417-5621-429b-b81b-898851e9f9bd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e9a71417-5621-429b-b81b-898851e9f9bd"
+          ],
+          "Content-Length": [
+            "2791"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2791",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:48 GMT",
+          "x-amzn-RequestId": "e9a71417-5621-429b-b81b-898851e9f9bd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 407,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "long-term renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3948144,
+          "beginOffset": 478,
+          "endOffset": 501,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94913393
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.55992293
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.5313767
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.45486078
+            },
+            {
+              "description": "Long QT syndrome",
+              "code": "I45.81",
+              "score": 0.44684172
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.43431884
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f17b4e6-7b09-47b8-9e16-728c35b44b25"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f17b4e6-7b09-47b8-9e16-728c35b44b25"
+          ],
+          "Content-Length": [
+            "712"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "712",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:50 GMT",
+          "x-amzn-RequestId": "4f17b4e6-7b09-47b8-9e16-728c35b44b25"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 238,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "42adf896-6c9c-4554-9ade-0950997f0a6d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "42adf896-6c9c-4554-9ade-0950997f0a6d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:48 GMT",
+          "x-amzn-RequestId": "42adf896-6c9c-4554-9ade-0950997f0a6d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:50 PM"
+}

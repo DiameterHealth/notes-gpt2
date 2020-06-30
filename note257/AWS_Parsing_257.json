@@ -1,0 +1,425 @@
+{
+  "note": "After a short waiting period, patient was allowed to return to work in a job requiring physical contact with coworkers. In the next two years, following a short recurrence on follow-up exam, the patient experienced significant worsening. Over the next 12 months, the patient underwent a surgical procedure to insert a port on his abdomen. During this procedure, which involved the removal of the tumor, the patient experienced moderate-to-severe bleeding, which resulted in extensive local tissue damage and the complete removal of the tumor.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 391,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 247,
+          "endOffset": 261,
+          "score": 0.9451839,
+          "text": "next 12 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.67083377,
+              "relationshipScore": 0.63497645,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 287,
+              "endOffset": 305,
+              "text": "surgical procedure",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 287,
+          "endOffset": 305,
+          "score": 0.67083377,
+          "text": "surgical procedure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 330,
+          "endOffset": 337,
+          "score": 0.9892077,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 381,
+          "endOffset": 401,
+          "score": 0.8731766,
+          "text": "removal of the tumor",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 396,
+          "endOffset": 401,
+          "score": 0.92656755,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88335353
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 446,
+          "endOffset": 454,
+          "score": 0.98806804,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43741727
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 484,
+          "endOffset": 503,
+          "score": 0.5484748,
+          "text": "local tissue damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8295786
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 490,
+          "endOffset": 496,
+          "score": 0.52707624,
+          "text": "tissue",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 512,
+          "endOffset": 541,
+          "score": 0.3176426,
+          "text": "complete removal of the tumor",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 536,
+          "endOffset": 541,
+          "score": 0.9233391,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8425979
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d961c9a4-b864-457f-b695-fdc8f86b5624"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d961c9a4-b864-457f-b695-fdc8f86b5624"
+          ],
+          "Content-Length": [
+            "2089"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2089",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:48 GMT",
+          "x-amzn-RequestId": "d961c9a4-b864-457f-b695-fdc8f86b5624"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 557,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92656755,
+          "beginOffset": 396,
+          "endOffset": 401,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88335353
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.56426924
+            },
+            {
+              "description": "Carcinoma in situ of hard palate",
+              "code": "D00.05",
+              "score": 0.51184654
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.48346984
+            },
+            {
+              "description": "Squamous cell carcinoma of skin, unspecified",
+              "code": "C44.92",
+              "score": 0.47064283
+            },
+            {
+              "description": "Malignant neoplasm of unspecified kidney, except renal pelvis",
+              "code": "C64.9",
+              "score": 0.45451844
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98806804,
+          "beginOffset": 446,
+          "endOffset": 454,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4374173
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.63958204
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.6344283
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.5775754
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a digestive system organ or structure complicating a digestive system procedure",
+              "code": "K91.61",
+              "score": 0.55392253
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.5509488
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "local tissue damage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5484748,
+          "beginOffset": 484,
+          "endOffset": 503,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8295786
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Soft tissue disorder, unspecified",
+              "code": "M79.9",
+              "score": 0.78967315
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.773084
+            },
+            {
+              "description": "Other nail disorders",
+              "code": "L60.8",
+              "score": 0.7338572
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.723362
+            },
+            {
+              "description": "Localized hypertrichosis",
+              "code": "L68.2",
+              "score": 0.6878514
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9233391,
+          "beginOffset": 536,
+          "endOffset": 541,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8425978
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.6739611
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.6566243
+            },
+            {
+              "description": "Carcinoma in situ of hard palate",
+              "code": "D00.05",
+              "score": 0.61779493
+            },
+            {
+              "description": "Squamous cell carcinoma of skin, unspecified",
+              "code": "C44.92",
+              "score": 0.6051872
+            },
+            {
+              "description": "Malignant neoplasm of unspecified kidney, except renal pelvis",
+              "code": "C64.9",
+              "score": 0.58717406
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cf107bdf-97bc-4ba0-bdff-4d23cf4832a4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cf107bdf-97bc-4ba0-bdff-4d23cf4832a4"
+          ],
+          "Content-Length": [
+            "3151"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3151",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:49 GMT",
+          "x-amzn-RequestId": "cf107bdf-97bc-4ba0-bdff-4d23cf4832a4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "62e9acc5-bc39-459c-bb1a-a859ea984780"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "62e9acc5-bc39-459c-bb1a-a859ea984780"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:48 GMT",
+          "x-amzn-RequestId": "62e9acc5-bc39-459c-bb1a-a859ea984780"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:50 PM"
+}

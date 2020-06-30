@@ -1,0 +1,212 @@
+{
+  "note": ".  Dose: 0.01 mg/kg/dose for three hours. Notes: At this dosage, there are no clinically significant toxicities reported. Clinical Significance: The drug appears to be safe for use in humans. Further Information  Always consult your healthcare provider to ensure the information displayed on this page applies to your personal circumstances.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 321,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 101,
+          "endOffset": 111,
+          "score": 0.94197947,
+          "text": "toxicities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4095071
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87212783
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICATION",
+          "attribute": {
+            "type": "DOSAGE",
+            "score": 0.7238593,
+            "id": 0,
+            "beginOffset": 9,
+            "endOffset": 19,
+            "text": "0.01 mg/kg",
+            "category": "MEDICATION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICATION",
+          "attribute": {
+            "type": "DURATION",
+            "score": 0.673499,
+            "id": 1,
+            "beginOffset": 29,
+            "endOffset": 40,
+            "text": "three hours",
+            "category": "MEDICATION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "52465980-094c-48ea-bf60-7631247592d6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "52465980-094c-48ea-bf60-7631247592d6"
+          ],
+          "Content-Length": [
+            "654"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "654",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:40 GMT",
+          "x-amzn-RequestId": "52465980-094c-48ea-bf60-7631247592d6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 441,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "toxicities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94197947,
+          "beginOffset": 101,
+          "endOffset": 111,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40950707
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87212783
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Poisoning by unspecified drugs, medicaments and biological substances, accidental (unintentional)",
+              "code": "T50.901",
+              "score": 0.61570555
+            },
+            {
+              "description": "Toxic effect of unspecified substance, accidental (unintentional)",
+              "code": "T65.91",
+              "score": 0.517554
+            },
+            {
+              "description": "Toxic encephalopathy",
+              "code": "G92",
+              "score": 0.48681018
+            },
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.47718024
+            },
+            {
+              "description": "Other melanin hyperpigmentation",
+              "code": "L81.4",
+              "score": 0.41004175
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "79f614a7-ce09-4f6c-84a2-1fa6d38e6a8c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "79f614a7-ce09-4f6c-84a2-1fa6d38e6a8c"
+          ],
+          "Content-Length": [
+            "876"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "876",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:40 GMT",
+          "x-amzn-RequestId": "79f614a7-ce09-4f6c-84a2-1fa6d38e6a8c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 220,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9e3476a8-3a86-4dea-982d-f5b74c84b552"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9e3476a8-3a86-4dea-982d-f5b74c84b552"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:40 GMT",
+          "x-amzn-RequestId": "9e3476a8-3a86-4dea-982d-f5b74c84b552"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:41 PM"
+}

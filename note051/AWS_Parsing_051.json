@@ -1,0 +1,777 @@
+{
+  "note": "/ stroke (AML \u003d Aortic Meningocele; Stroke \u003d Ischemic Stroke); is in poor physical condition (obese) with a history of multiple coronary arteries blocked by clots; has been prescribed at least 10 antiplatelet agents in the past month; and has had an ECG demonstrating ACS and T-wave inversions suggestive of ACS. Outcome: Discharged successfully with normal T-wave morphology and full restoration of function.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 417,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 2,
+          "endOffset": 8,
+          "score": 0.9384996,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9356706
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 10,
+          "endOffset": 13,
+          "score": 0.99158514,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684041
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 16,
+          "endOffset": 34,
+          "score": 0.8992936,
+          "text": "Aortic Meningocele",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9463338
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 36,
+          "endOffset": 42,
+          "score": 0.9688274,
+          "text": "Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9452035
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "score": 0.93117195,
+          "text": "Ischemic Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9660081
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 69,
+          "endOffset": 92,
+          "score": 0.7153852,
+          "text": "poor physical condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47760293
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40972364
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "score": 0.81136787,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 128,
+          "endOffset": 145,
+          "score": 0.6170553,
+          "text": "coronary arteries",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 128,
+          "endOffset": 162,
+          "score": 0.8453242,
+          "text": "coronary arteries blocked by clots",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8776234
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 196,
+          "endOffset": 215,
+          "score": 0.4688002,
+          "text": "antiplatelet agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 216,
+          "endOffset": 233,
+          "score": 0.9964568,
+          "text": "in the past month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.4688002,
+              "relationshipScore": 0.9585347,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 196,
+              "endOffset": 215,
+              "text": "antiplatelet agents",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 250,
+          "endOffset": 253,
+          "score": 0.98544854,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 268,
+          "endOffset": 271,
+          "score": 0.36822727,
+          "text": "ACS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 308,
+          "endOffset": 311,
+          "score": 0.7405252,
+          "text": "ACS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7370258
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 358,
+          "endOffset": 375,
+          "score": 0.7851005,
+          "text": "T-wave morphology",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.39598957,
+              "relationshipScore": 0.9999316,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 351,
+              "endOffset": 357,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8120309,
+              "relationshipScore": 0.9998455,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 380,
+              "endOffset": 408,
+              "text": "full restoration of function",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fbe24cb0-aea5-4e98-aa99-211799720fba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fbe24cb0-aea5-4e98-aa99-211799720fba"
+          ],
+          "Content-Length": [
+            "3552"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3552",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:37 GMT",
+          "x-amzn-RequestId": "fbe24cb0-aea5-4e98-aa99-211799720fba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 581,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9384996,
+          "beginOffset": 2,
+          "endOffset": 8,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9356706
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7384146
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7138629
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.6074674
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.56208843
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.56073904
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "AML",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99158514,
+          "beginOffset": 10,
+          "endOffset": 13,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684041
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute myeloblastic leukemia, not having achieved remission",
+              "code": "C92.00",
+              "score": 0.54316735
+            },
+            {
+              "description": "Acute promyelocytic leukemia, not having achieved remission",
+              "code": "C92.40",
+              "score": 0.45889837
+            },
+            {
+              "description": "Acute monoblastic/monocytic leukemia, not having achieved remission",
+              "code": "C93.00",
+              "score": 0.3731554
+            },
+            {
+              "description": "Acute myeloblastic leukemia, in remission",
+              "code": "C92.01",
+              "score": 0.33983222
+            },
+            {
+              "description": "Acute myeloblastic leukemia, in relapse",
+              "code": "C92.02",
+              "score": 0.29386744
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Aortic Meningocele",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8992936,
+          "beginOffset": 16,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9463338
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rheumatic disorders of both mitral and aortic valves",
+              "code": "I08.0",
+              "score": 0.54512066
+            },
+            {
+              "description": "Atherosclerosis of aorta",
+              "code": "I70.0",
+              "score": 0.51203835
+            },
+            {
+              "description": "Aortic aneurysm of unspecified site, without rupture",
+              "code": "I71.9",
+              "score": 0.4671791
+            },
+            {
+              "description": "Nonrheumatic aortic (valve) stenosis",
+              "code": "I35.0",
+              "score": 0.42111245
+            },
+            {
+              "description": "Nonrheumatic aortic (valve) insufficiency",
+              "code": "I35.1",
+              "score": 0.41691914
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9688274,
+          "beginOffset": 36,
+          "endOffset": 42,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9452035
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7137325
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.71174836
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.5580464
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.5513295
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.51983595
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Ischemic Stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93117195,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9660081
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6737089
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.6717347
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.65609825
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.5961683
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.5591081
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "poor physical condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.715385,
+          "beginOffset": 69,
+          "endOffset": 92,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47760293
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40972355
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.63591427
+            },
+            {
+              "description": "Stress, not elsewhere classified",
+              "code": "Z73.3",
+              "score": 0.580637
+            },
+            {
+              "description": "Physical restraint status",
+              "code": "Z78.1",
+              "score": 0.57574904
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.5653997
+            },
+            {
+              "description": "Impulse disorder, unspecified",
+              "code": "F63.9",
+              "score": 0.55465657
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.81136775,
+          "beginOffset": 94,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.7597824
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.69218594
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.6251833
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.53524965
+            },
+            {
+              "description": "Other obesity",
+              "code": "E66.8",
+              "score": 0.45059606
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "coronary arteries blocked by clots",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8453242,
+          "beginOffset": 128,
+          "endOffset": 162,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8776234
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.58108354
+            },
+            {
+              "description": "Stenosis of coronary artery stent",
+              "code": "T82.855",
+              "score": 0.4928298
+            },
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.4891749
+            },
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.4575678
+            },
+            {
+              "description": "Coronary artery dissection",
+              "code": "I25.42",
+              "score": 0.4329795
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "ACS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36822715,
+          "beginOffset": 268,
+          "endOffset": 271,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.6995256
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.5609968
+            },
+            {
+              "description": "Other forms of acute ischemic heart disease",
+              "code": "I24.8",
+              "score": 0.51956344
+            },
+            {
+              "description": "Acute (reversible) ischemia of intestine, part and extent unspecified",
+              "code": "K55.059",
+              "score": 0.5047282
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.4952072
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "ACS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7405252,
+          "beginOffset": 308,
+          "endOffset": 311,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7370258
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.73142207
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.583094
+            },
+            {
+              "description": "Other forms of acute ischemic heart disease",
+              "code": "I24.8",
+              "score": 0.5178702
+            },
+            {
+              "description": "Acute (reversible) ischemia of intestine, part and extent unspecified",
+              "code": "K55.059",
+              "score": 0.49099815
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.48721927
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cb22533d-357b-46d4-b502-ecefa354d4a0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cb22533d-357b-46d4-b502-ecefa354d4a0"
+          ],
+          "Content-Length": [
+            "7710"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7710",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:37 GMT",
+          "x-amzn-RequestId": "cb22533d-357b-46d4-b502-ecefa354d4a0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "14a70506-2cc1-43ef-93e0-2061abac441a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "14a70506-2cc1-43ef-93e0-2061abac441a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:37 GMT",
+          "x-amzn-RequestId": "14a70506-2cc1-43ef-93e0-2061abac441a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:37 PM"
+}

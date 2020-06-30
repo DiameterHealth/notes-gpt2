@@ -1,0 +1,471 @@
+{
+  "note": "This pregnancy was planned and she was evaluated with a c-section at 37 weeks. She did all prenatal tests and no fetal anomalies were suspected or detected. Her pregnancy was a bit more complicated and she had a small amniotic sac that developed early in labor (2 days ago). She underwent a laparotomy later the same day. I am going to make the judgment call that this was a result of her premature delivery, probably due to the amniotic sac or because of the placenta.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 489,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 5,
+          "endOffset": 14,
+          "score": 0.94455725,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93435943
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 56,
+          "endOffset": 65,
+          "score": 0.93398553,
+          "text": "c-section",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 69,
+          "endOffset": 77,
+          "score": 0.96493053,
+          "text": "37 weeks",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.93398553,
+              "relationshipScore": 0.98546857,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 56,
+              "endOffset": 65,
+              "text": "c-section",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 91,
+          "endOffset": 105,
+          "score": 0.76528025,
+          "text": "prenatal tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8594895,
+              "relationshipScore": 0.9999987,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 110,
+              "endOffset": 128,
+              "text": "no fetal anomalies",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 113,
+          "endOffset": 128,
+          "score": 0.7900312,
+          "text": "fetal anomalies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8919572
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.90630525
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 161,
+          "endOffset": 170,
+          "score": 0.9908929,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94034445
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 291,
+          "endOffset": 301,
+          "score": 0.82334745,
+          "text": "laparotomy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 302,
+          "endOffset": 320,
+          "score": 0.9110903,
+          "text": "later the same day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.82334745,
+              "relationshipScore": 0.99448735,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 291,
+              "endOffset": 301,
+              "text": "laparotomy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 389,
+          "endOffset": 407,
+          "score": 0.7556992,
+          "text": "premature delivery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8164375
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 429,
+          "endOffset": 441,
+          "score": 0.7423341,
+          "text": "amniotic sac",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 460,
+          "endOffset": 468,
+          "score": 0.9961383,
+          "text": "placenta",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "60f66848-6d6d-4f1b-8457-bff978b61b44"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "60f66848-6d6d-4f1b-8457-bff978b61b44"
+          ],
+          "Content-Length": [
+            "2766"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2766",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:30 GMT",
+          "x-amzn-RequestId": "60f66848-6d6d-4f1b-8457-bff978b61b44"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 474,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94455725,
+          "beginOffset": 5,
+          "endOffset": 14,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93435943
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6608417
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.63331413
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.6203086
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6119221
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, insulin controlled",
+              "code": "O24.414",
+              "score": 0.60420626
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fetal anomalies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7900312,
+          "beginOffset": 113,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89195734
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.90630525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malformation of coronary vessels",
+              "code": "Q24.5",
+              "score": 0.43087682
+            },
+            {
+              "description": "Obstructed labor, unspecified",
+              "code": "O66.9",
+              "score": 0.2984372
+            },
+            {
+              "description": "Genetic anomalies of leukocytes",
+              "code": "D72.0",
+              "score": 0.28686982
+            },
+            {
+              "description": "Other specified alveolar anomalies",
+              "code": "M26.79",
+              "score": 0.2723202
+            },
+            {
+              "description": "Unspecified alveolar anomaly",
+              "code": "M26.70",
+              "score": 0.26535866
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9908929,
+          "beginOffset": 161,
+          "endOffset": 170,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94034445
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6460293
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6139211
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.59434444
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.58583194
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, insulin controlled",
+              "code": "O24.414",
+              "score": 0.5725145
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "premature delivery",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7556993,
+          "beginOffset": 389,
+          "endOffset": 407,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8164375
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.45285597
+            },
+            {
+              "description": "Other premature depolarization",
+              "code": "I49.49",
+              "score": 0.44506717
+            },
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.40932706
+            },
+            {
+              "description": "Unspecified premature depolarization",
+              "code": "I49.40",
+              "score": 0.3935134
+            },
+            {
+              "description": "Junctional premature depolarization",
+              "code": "I49.2",
+              "score": 0.331358
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d76d9f4b-eb4b-4220-b0dc-ee49c3fea411"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d76d9f4b-eb4b-4220-b0dc-ee49c3fea411"
+          ],
+          "Content-Length": [
+            "3113"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3113",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:30 GMT",
+          "x-amzn-RequestId": "d76d9f4b-eb4b-4220-b0dc-ee49c3fea411"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 266,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2806fafb-9dec-49af-8fc1-01e7868566e0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2806fafb-9dec-49af-8fc1-01e7868566e0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:30 GMT",
+          "x-amzn-RequestId": "2806fafb-9dec-49af-8fc1-01e7868566e0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:31 PM"
+}

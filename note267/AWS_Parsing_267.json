@@ -1,0 +1,661 @@
+{
+  "note": "He stated that she \"became aggressive and was refusing care.\" The patient presented with the following presentation: Headache, visual hallucinations, abdominal pain. The ED physician stated that she was having a seizure. The family stated that the patient had been in a vegetative state for 6 days. It was noted that the patient \"has not been able to eat in 48 hours and has a low energy level.\" She was placed in a ventilator and started on a feeding tube.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 424,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 117,
+          "endOffset": 125,
+          "score": 0.9966505,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.82989633
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 127,
+          "endOffset": 148,
+          "score": 0.96157765,
+          "text": "visual hallucinations",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9059738
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 150,
+          "endOffset": 164,
+          "score": 0.97978663,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8419263
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 170,
+          "endOffset": 172,
+          "score": 0.80898637,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 212,
+          "endOffset": 219,
+          "score": 0.98548156,
+          "text": "seizure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5526752
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 270,
+          "endOffset": 286,
+          "score": 0.87640357,
+          "text": "vegetative state",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.68640834
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6050771,
+              "relationshipScore": 0.99999666,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 287,
+              "endOffset": 297,
+              "text": "for 6 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 291,
+          "endOffset": 297,
+          "score": 0.51130575,
+          "text": "6 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.87640357,
+              "relationshipScore": 0.9878135,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 270,
+              "endOffset": 286,
+              "text": "vegetative state",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.68640834
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 343,
+          "endOffset": 354,
+          "score": 0.6322146,
+          "text": "able to eat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.58850044
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 355,
+          "endOffset": 366,
+          "score": 0.99952555,
+          "text": "in 48 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.57685375,
+              "relationshipScore": 0.6284658,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 377,
+              "endOffset": 393,
+              "text": "low energy level",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.65983903
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 355,
+          "endOffset": 366,
+          "score": 0.99952555,
+          "text": "in 48 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.6322146,
+              "relationshipScore": 0.9574388,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 343,
+              "endOffset": 354,
+              "text": "able to eat",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.58850044
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 377,
+          "endOffset": 393,
+          "score": 0.57685375,
+          "text": "low energy level",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65983903
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6050771,
+            "id": 5,
+            "beginOffset": 287,
+            "endOffset": 297,
+            "text": "for 6 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1177e0df-bf57-4920-a614-860ea2c15c54"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1177e0df-bf57-4920-a614-860ea2c15c54"
+          ],
+          "Content-Length": [
+            "3334"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3334",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:03 GMT",
+          "x-amzn-RequestId": "1177e0df-bf57-4920-a614-860ea2c15c54"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 779,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9966505,
+          "beginOffset": 117,
+          "endOffset": 125,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8298963
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5313634
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.32751158
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.27877662
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.27631694
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.2549628
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "visual hallucinations",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9615777,
+          "beginOffset": 127,
+          "endOffset": 148,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9059738
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hallucinations, unspecified",
+              "code": "R44.3",
+              "score": 0.5408456
+            },
+            {
+              "description": "Visual hallucinations",
+              "code": "R44.1",
+              "score": 0.4970101
+            },
+            {
+              "description": "Other hallucinations",
+              "code": "R44.2",
+              "score": 0.42709234
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.40750003
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.37092027
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97978663,
+          "beginOffset": 150,
+          "endOffset": 164,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84192616
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.62060934
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.478261
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.39246076
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.38776618
+            },
+            {
+              "description": "Right upper quadrant pain",
+              "code": "R10.11",
+              "score": 0.38104367
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "seizure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98548144,
+          "beginOffset": 212,
+          "endOffset": 219,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.552675
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.73480177
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.6597196
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.5732017
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.5316802
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.48750967
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "vegetative state",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.87640357,
+          "beginOffset": 270,
+          "endOffset": 286,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6050771,
+              "relationshipScore": 0.99999666,
+              "id": 5,
+              "beginOffset": 287,
+              "endOffset": 297,
+              "text": "for 6 days",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6864083
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified postprocedural states",
+              "code": "Z98.890",
+              "score": 0.54920137
+            },
+            {
+              "description": "Persistent vegetative state",
+              "code": "R40.3",
+              "score": 0.46451923
+            },
+            {
+              "description": "Acute and subacute infective endocarditis",
+              "code": "I33.0",
+              "score": 0.4447453
+            },
+            {
+              "description": "Stupor",
+              "code": "R40.1",
+              "score": 0.4197518
+            },
+            {
+              "description": "Asymptomatic menopausal state",
+              "code": "Z78.0",
+              "score": 0.3973848
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "able to eat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6322147,
+          "beginOffset": 343,
+          "endOffset": 354,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5885005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs concerning food and fluid intake",
+              "code": "R63.8",
+              "score": 0.7861233
+            },
+            {
+              "description": "Adult failure to thrive",
+              "code": "R62.7",
+              "score": 0.6693342
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.63162065
+            },
+            {
+              "description": "Dysphagia, unspecified",
+              "code": "R13.10",
+              "score": 0.6276035
+            },
+            {
+              "description": "Hypoglycemia, unspecified",
+              "code": "E16.2",
+              "score": 0.571118
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "low energy level",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.57685375,
+          "beginOffset": 377,
+          "endOffset": 393,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6598391
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.686745
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.6385984
+            },
+            {
+              "description": "Very low level of personal hygiene",
+              "code": "R46.0",
+              "score": 0.6231342
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.60386455
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.59203607
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ff938fb3-99ae-4924-b697-58a672323191"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ff938fb3-99ae-4924-b697-58a672323191"
+          ],
+          "Content-Length": [
+            "5027"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5027",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:03 GMT",
+          "x-amzn-RequestId": "ff938fb3-99ae-4924-b697-58a672323191"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 231,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5821a82b-a9bc-4cb0-bf0e-37f2f4e63372"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5821a82b-a9bc-4cb0-bf0e-37f2f4e63372"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:03 GMT",
+          "x-amzn-RequestId": "5821a82b-a9bc-4cb0-bf0e-37f2f4e63372"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:04 PM"
+}

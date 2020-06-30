@@ -1,0 +1,543 @@
+{
+  "note": "Pain worsens, pt becomes agitated, attempts to walk and loses control of R knee. No change in pain on xray. Date of Presentation: 1/18/13  Time of Symptoms onset: 12:29 pm  Age at Presentation: 20 y/o  Height and Weight: 5\u00279-5\u002711″; 130 lbs. Previous Medications: N/A  Additional Comments:  Presentation:  Pt stands and looks down with a frown.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 450,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 0,
+          "endOffset": 4,
+          "score": 0.79226434,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4750514
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "score": 0.9834589,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87026745
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 35,
+          "endOffset": 69,
+          "score": 0.9059979,
+          "text": "attempts to walk and loses control",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5033912
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 75,
+          "endOffset": 79,
+          "score": 0.9906317,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 84,
+          "endOffset": 98,
+          "score": 0.90534693,
+          "text": "change in pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86577505
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8709143
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 102,
+          "endOffset": 106,
+          "score": 0.85930383,
+          "text": "xray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 130,
+          "endOffset": 137,
+          "score": 0.9994024,
+          "text": "1/18/13",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 194,
+          "endOffset": 196,
+          "score": 0.99650013,
+          "text": "20",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 202,
+          "endOffset": 208,
+          "score": 0.98203343,
+          "text": "Height",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9594488,
+              "relationshipScore": 0.93905604,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 232,
+              "endOffset": 235,
+              "text": "130",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 213,
+          "endOffset": 219,
+          "score": 0.9975973,
+          "text": "Weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98013395,
+              "relationshipScore": 0.99999726,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 221,
+              "endOffset": 230,
+              "text": "5\u00279-5\u002711″",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9594488,
+              "relationshipScore": 0.99998415,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 232,
+              "endOffset": 235,
+              "text": "130",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9994086,
+              "relationshipScore": 0.99960023,
+              "relationshipType": "TEST_UNIT",
+              "id": 14,
+              "beginOffset": 236,
+              "endOffset": 239,
+              "text": "lbs",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 319,
+          "endOffset": 329,
+          "score": 0.52727365,
+          "text": "looks down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46258444
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9846572,
+            "id": 0,
+            "beginOffset": 73,
+            "endOffset": 74,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b44a4756-b906-4947-9db7-7886e119ea85"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b44a4756-b906-4947-9db7-7886e119ea85"
+          ],
+          "Content-Length": [
+            "3098"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3098",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:51 GMT",
+          "x-amzn-RequestId": "b44a4756-b906-4947-9db7-7886e119ea85"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1088,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79226434,
+          "beginOffset": 0,
+          "endOffset": 4,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47505137
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.74931914
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5430373
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.52893376
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.52268755
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5115694
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "agitated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98345876,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87026733
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Restlessness and agitation",
+              "code": "R45.1",
+              "score": 0.743248
+            },
+            {
+              "description": "Restless legs syndrome",
+              "code": "G25.81",
+              "score": 0.64206916
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.58427864
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.57020324
+            },
+            {
+              "description": "Acute stress reaction",
+              "code": "F43.0",
+              "score": 0.47678035
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "attempts to walk and loses control",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9059979,
+          "beginOffset": 35,
+          "endOffset": 69,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.50339115
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.6265018
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.6194972
+            },
+            {
+              "description": "Restlessness and agitation",
+              "code": "R45.1",
+              "score": 0.53680325
+            },
+            {
+              "description": "Attention and concentration deficit",
+              "code": "R41.840",
+              "score": 0.5272653
+            },
+            {
+              "description": "Personal history of self-harm",
+              "code": "Z91.5",
+              "score": 0.48816147
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "change in pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90534693,
+          "beginOffset": 84,
+          "endOffset": 98,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86577505
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8709143
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6453717
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6040068
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.56795096
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.56247413
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.53170407
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "looks down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5272738,
+          "beginOffset": 319,
+          "endOffset": 329,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46258447
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8450674
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.79213893
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.7760171
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.76683545
+            },
+            {
+              "description": "Xerosis cutis",
+              "code": "L85.3",
+              "score": 0.74018776
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8596ea52-c372-462d-86e5-786d0d027784"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8596ea52-c372-462d-86e5-786d0d027784"
+          ],
+          "Content-Length": [
+            "3392"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3392",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:53 GMT",
+          "x-amzn-RequestId": "8596ea52-c372-462d-86e5-786d0d027784"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 216,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0a1fa123-704a-45f5-9b2e-d131f3d3b6a0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0a1fa123-704a-45f5-9b2e-d131f3d3b6a0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:52 GMT",
+          "x-amzn-RequestId": "0a1fa123-704a-45f5-9b2e-d131f3d3b6a0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:53 PM"
+}

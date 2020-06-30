@@ -1,0 +1,425 @@
+{
+  "note": "Physical examination, diagnostic imaging such as X-ray, MRI, ultrasound, and laboratory studies are normal. The patient is prescribed an anti-inflammatory medication and prescribed a short rest interval of 3 to 6 weeks. After the 4- and 8-week rest intervals, the patient is instructed to resume exercise. The patient returns to the surgeon for evaluation and a biopsy is performed for right femoral tunnel syndrome and calcified synovitis.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 379,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 0,
+          "endOffset": 20,
+          "score": 0.81988114,
+          "text": "Physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 22,
+          "endOffset": 40,
+          "score": 0.9809372,
+          "text": "diagnostic imaging",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 49,
+          "endOffset": 54,
+          "score": 0.99355716,
+          "text": "X-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 56,
+          "endOffset": 59,
+          "score": 0.9884654,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 61,
+          "endOffset": 71,
+          "score": 0.9978319,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 77,
+          "endOffset": 95,
+          "score": 0.8237036,
+          "text": "laboratory studies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.92915165,
+              "relationshipScore": 0.99998116,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 100,
+              "endOffset": 106,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 137,
+          "endOffset": 165,
+          "score": 0.4761213,
+          "text": "anti-inflammatory medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 362,
+          "endOffset": 368,
+          "score": 0.9855692,
+          "text": "biopsy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 392,
+          "endOffset": 406,
+          "score": 0.87548906,
+          "text": "femoral tunnel",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 392,
+          "endOffset": 415,
+          "score": 0.7180068,
+          "text": "femoral tunnel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9549801
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9571002,
+              "relationshipScore": 0.99451506,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 386,
+              "endOffset": 391,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 420,
+          "endOffset": 439,
+          "score": 0.6503163,
+          "text": "calcified synovitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83392364
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9571002,
+              "relationshipScore": 0.807234,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 386,
+              "endOffset": 391,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.87548906,
+              "relationshipScore": 0.86977136,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 392,
+              "endOffset": 406,
+              "text": "femoral tunnel",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9571002,
+            "id": 0,
+            "beginOffset": 386,
+            "endOffset": 391,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "add62f26-036c-4293-9ad8-60d39a393153"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "add62f26-036c-4293-9ad8-60d39a393153"
+          ],
+          "Content-Length": [
+            "3007"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3007",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:10 GMT",
+          "x-amzn-RequestId": "add62f26-036c-4293-9ad8-60d39a393153"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 490,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "femoral tunnel syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7180068,
+          "beginOffset": 392,
+          "endOffset": 415,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9571002,
+              "relationshipScore": 0.99451506,
+              "id": 0,
+              "beginOffset": 386,
+              "endOffset": 391,
+              "text": "right",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9549801
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of unspecified part of neck of right femur",
+              "code": "S72.001",
+              "score": 0.55274856
+            },
+            {
+              "description": "Carpal tunnel syndrome, right upper limb",
+              "code": "G56.01",
+              "score": 0.49188554
+            },
+            {
+              "description": "Carpal tunnel syndrome, unspecified upper limb",
+              "code": "G56.00",
+              "score": 0.4876161
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.39102125
+            },
+            {
+              "description": "Tarsal tunnel syndrome, bilateral lower limbs",
+              "code": "G57.53",
+              "score": 0.3893457
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "calcified synovitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6503163,
+          "beginOffset": 420,
+          "endOffset": 439,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9571002,
+              "relationshipScore": 0.807234,
+              "id": 0,
+              "beginOffset": 386,
+              "endOffset": 391,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.87548906,
+              "relationshipScore": 0.86977136,
+              "id": 2,
+              "beginOffset": 392,
+              "endOffset": 406,
+              "text": "femoral tunnel",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83392364
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.4329471
+            },
+            {
+              "description": "Synovitis and tenosynovitis, unspecified",
+              "code": "M65.9",
+              "score": 0.4263135
+            },
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.41560543
+            },
+            {
+              "description": "Coronary atherosclerosis due to calcified coronary lesion",
+              "code": "I25.84",
+              "score": 0.35573107
+            },
+            {
+              "description": "Atherosclerosis of other arteries",
+              "code": "I70.8",
+              "score": 0.32286248
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4f576441-e9fb-4622-bcd1-8408f6e2e28f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4f576441-e9fb-4622-bcd1-8408f6e2e28f"
+          ],
+          "Content-Length": [
+            "2064"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2064",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:12 GMT",
+          "x-amzn-RequestId": "4f576441-e9fb-4622-bcd1-8408f6e2e28f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 212,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6dfd06ef-e790-42ca-8d18-ee3fe5ef6a53"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6dfd06ef-e790-42ca-8d18-ee3fe5ef6a53"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:10 GMT",
+          "x-amzn-RequestId": "6dfd06ef-e790-42ca-8d18-ee3fe5ef6a53"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:12 PM"
+}

@@ -1,0 +1,521 @@
+{
+  "note": "The patient states that he is able to sleep through the night, but still has a \"puffy\" face and difficulty breathing when he sleeps. During sleep, the patient has a very noticeable and frequent \"sneeze.\"  His sleep apnea is well controlled with continuous positive airway pressure and a CPAP machine. The patient\u0027s sleep apnea is due, in part, to his diet in which he eats relatively high amounts of carbohydrates, but also has high protein, low fat diets, and low alcohol consumption.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 487,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 30,
+          "endOffset": 43,
+          "score": 0.8237467,
+          "text": "able to sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.61487454
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 80,
+          "endOffset": 85,
+          "score": 0.6265235,
+          "text": "puffy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5245375
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9495698,
+              "relationshipScore": 0.8967212,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 87,
+              "endOffset": 91,
+              "text": "face",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 87,
+          "endOffset": 91,
+          "score": 0.9495698,
+          "text": "face",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 96,
+          "endOffset": 116,
+          "score": 0.96039295,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91974634
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 195,
+          "endOffset": 201,
+          "score": 0.9215333,
+          "text": "sneeze",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6493795
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.39824495,
+              "relationshipScore": 0.99930704,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 185,
+              "endOffset": 193,
+              "text": "frequent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 209,
+          "endOffset": 220,
+          "score": 0.9596924,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45293328
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 315,
+          "endOffset": 326,
+          "score": 0.91205215,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8382696
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.39824495,
+            "id": 4,
+            "beginOffset": 185,
+            "endOffset": 193,
+            "text": "frequent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3a6503f4-e68a-4403-953d-c1d46a05ad55"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3a6503f4-e68a-4403-953d-c1d46a05ad55"
+          ],
+          "Content-Length": [
+            "2025"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2025",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:37 GMT",
+          "x-amzn-RequestId": "3a6503f4-e68a-4403-953d-c1d46a05ad55"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 699,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "able to sleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8237466,
+          "beginOffset": 30,
+          "endOffset": 43,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6148745
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.7300305
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.7022563
+            },
+            {
+              "description": "Somnolence",
+              "code": "R40.0",
+              "score": 0.6786901
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.6659906
+            },
+            {
+              "description": "Hypersomnia, unspecified",
+              "code": "G47.10",
+              "score": 0.6576504
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "puffy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.62652344,
+          "beginOffset": 80,
+          "endOffset": 85,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9495698,
+              "relationshipScore": 0.8967212,
+              "id": 2,
+              "beginOffset": 87,
+              "endOffset": 91,
+              "text": "face",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.52453744
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hydrocephalus, unspecified",
+              "code": "G91.9",
+              "score": 0.5594236
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.5523626
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.504169
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.48241454
+            },
+            {
+              "description": "Localized swelling, mass and lump, unspecified",
+              "code": "R22.9",
+              "score": 0.48158866
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "difficulty breathing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96039295,
+          "beginOffset": 96,
+          "endOffset": 116,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.91974634
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6137031
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.61013144
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.6034943
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.5974096
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.47278216
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "sneeze",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9215334,
+          "beginOffset": 195,
+          "endOffset": 201,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.39824495,
+              "relationshipScore": 0.99930704,
+              "id": 4,
+              "beginOffset": 185,
+              "endOffset": 193,
+              "text": "frequent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6493796
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sneezing",
+              "code": "R06.7",
+              "score": 0.5976558
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9596924,
+          "beginOffset": 209,
+          "endOffset": 220,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45293334
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.63767534
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.60169303
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.41216007
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.36260554
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.2925436
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91205215,
+          "beginOffset": 315,
+          "endOffset": 326,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83826965
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.656451
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5512309
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.43850714
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.36708105
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.312435
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75542605-b64b-4e78-a54d-d15b881ec391"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75542605-b64b-4e78-a54d-d15b881ec391"
+          ],
+          "Content-Length": [
+            "4052"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4052",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:38 GMT",
+          "x-amzn-RequestId": "75542605-b64b-4e78-a54d-d15b881ec391"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 249,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f75ce061-2a54-41a4-adb8-12aac0ca1207"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f75ce061-2a54-41a4-adb8-12aac0ca1207"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:37 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:37 GMT",
+          "x-amzn-RequestId": "f75ce061-2a54-41a4-adb8-12aac0ca1207"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:39 PM"
+}

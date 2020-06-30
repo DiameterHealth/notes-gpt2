@@ -1,0 +1,197 @@
+{
+  "note": "Pupil function tests suggest that this patient is not a candidate for a reflux sleep study and has a healthy lifestyle.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 125,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 5,
+          "score": 0.94591504,
+          "text": "Pupil",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 0,
+          "endOffset": 14,
+          "score": 0.50549173,
+          "text": "Pupil function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 0,
+          "endOffset": 20,
+          "score": 0.62963396,
+          "text": "Pupil function tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 72,
+          "endOffset": 90,
+          "score": 0.7313128,
+          "text": "reflux sleep study",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "333b1a9b-df8b-47a6-8eec-124caced241c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "333b1a9b-df8b-47a6-8eec-124caced241c"
+          ],
+          "Content-Length": [
+            "684"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "684",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:40 GMT",
+          "x-amzn-RequestId": "333b1a9b-df8b-47a6-8eec-124caced241c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Pupil function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.50549173,
+          "beginOffset": 0,
+          "endOffset": 14,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other anomalies of pupillary function",
+              "code": "H57.09",
+              "score": 0.53046614
+            },
+            {
+              "description": "Abnormal results of kidney function studies",
+              "code": "R94.4",
+              "score": 0.482062
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.46561608
+            },
+            {
+              "description": "Unspecified anomaly of pupillary function",
+              "code": "H57.00",
+              "score": 0.37316418
+            },
+            {
+              "description": "Functional quadriplegia",
+              "code": "R53.2",
+              "score": 0.36418372
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "96da5329-46f2-49c9-bd28-29f91b83e7a6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "96da5329-46f2-49c9-bd28-29f91b83e7a6"
+          ],
+          "Content-Length": [
+            "718"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "718",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:40 GMT",
+          "x-amzn-RequestId": "96da5329-46f2-49c9-bd28-29f91b83e7a6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 104,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1eaa4cc-117f-47c4-ba2d-bdb0af7df893"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1eaa4cc-117f-47c4-ba2d-bdb0af7df893"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:40 GMT",
+          "x-amzn-RequestId": "b1eaa4cc-117f-47c4-ba2d-bdb0af7df893"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:41 PM"
+}

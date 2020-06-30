@@ -1,0 +1,1314 @@
+{
+  "note": "The patient reports regular menstruation. Patient has been on blood thinners for 20 years. Patient has no medications for asthma, diabetes, hypertension, diabetes mellitus, heart failure, osteoporosis, or hypertension. Patient is currently losing weight due to abdominal surgery 5 years ago. Patient is not currently menstruating. Patient does not have uterine fibroids, or uterine scar tissue, or uterus prolapse. Patient is currently taking 1 mg pyridoxine hydrochloride daily.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1071,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 20,
+          "endOffset": 40,
+          "score": 0.7173583,
+          "text": "regular menstruation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4479192
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46736097
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 62,
+          "endOffset": 76,
+          "score": 0.40720683,
+          "text": "blood thinners",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.71265644,
+              "relationshipScore": 1.0,
+              "relationshipType": "DURATION",
+              "id": 3,
+              "beginOffset": 81,
+              "endOffset": 89,
+              "text": "20 years",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 62,
+          "endOffset": 76,
+          "score": 0.8282608,
+          "text": "blood thinners",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 22,
+          "beginOffset": 81,
+          "endOffset": 89,
+          "score": 0.55784667,
+          "text": "20 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8282608,
+              "relationshipScore": 0.96970874,
+              "relationshipType": "OVERLAP",
+              "id": 20,
+              "beginOffset": 62,
+              "endOffset": 76,
+              "text": "blood thinners",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 81,
+          "endOffset": 89,
+          "score": 0.55784667,
+          "text": "20 years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.40720683,
+              "relationshipScore": 0.96970874,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 62,
+              "endOffset": 76,
+              "text": "blood thinners",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 122,
+          "endOffset": 128,
+          "score": 0.9886699,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9301864
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.63810766
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 130,
+          "endOffset": 138,
+          "score": 0.99346995,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94165885
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7354629
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 140,
+          "endOffset": 152,
+          "score": 0.9986904,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95122814
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.75978667
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 154,
+          "endOffset": 171,
+          "score": 0.9939126,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9547601
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7432559
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 173,
+          "endOffset": 178,
+          "score": 0.9903216,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 173,
+          "endOffset": 186,
+          "score": 0.9894855,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97289914
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7525023
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 188,
+          "endOffset": 200,
+          "score": 0.99870884,
+          "text": "osteoporosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96386105
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7143574
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 205,
+          "endOffset": 217,
+          "score": 0.99898833,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94543207
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87187576
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 230,
+          "endOffset": 239,
+          "score": 0.99999475,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.732919,
+              "relationshipScore": 0.94603395,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 240,
+              "endOffset": 253,
+              "text": "losing weight",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.67606956
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 240,
+          "endOffset": 253,
+          "score": 0.732919,
+          "text": "losing weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67606956
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 261,
+          "endOffset": 278,
+          "score": 0.73384,
+          "text": "abdominal surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 24,
+          "beginOffset": 279,
+          "endOffset": 290,
+          "score": 0.9990056,
+          "text": "5 years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.73384,
+              "relationshipScore": 0.94211775,
+              "relationshipType": "OVERLAP",
+              "id": 21,
+              "beginOffset": 261,
+              "endOffset": 278,
+              "text": "abdominal surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 279,
+          "endOffset": 290,
+          "score": 0.9990056,
+          "text": "5 years ago",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.732919,
+              "relationshipScore": 0.79297376,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 240,
+              "endOffset": 253,
+              "text": "losing weight",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.67606956
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 307,
+          "endOffset": 316,
+          "score": 0.999995,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.3681952,
+              "relationshipScore": 0.9455978,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 317,
+              "endOffset": 329,
+              "text": "menstruating",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 317,
+          "endOffset": 329,
+          "score": 0.3681952,
+          "text": "menstruating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 353,
+          "endOffset": 369,
+          "score": 0.97474796,
+          "text": "uterine fibroids",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87469894
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9051835
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 374,
+          "endOffset": 393,
+          "score": 0.9443689,
+          "text": "uterine scar tissue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57611185
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89741576
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 398,
+          "endOffset": 404,
+          "score": 0.9373686,
+          "text": "uterus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 398,
+          "endOffset": 413,
+          "score": 0.8977358,
+          "text": "uterus prolapse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8198994
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93012244
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 448,
+          "endOffset": 472,
+          "score": 0.9385161,
+          "text": "pyridoxine hydrochloride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.96699166,
+              "relationshipScore": 0.9999919,
+              "relationshipType": "DOSAGE",
+              "id": 4,
+              "beginOffset": 443,
+              "endOffset": 447,
+              "text": "1 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9964378,
+              "relationshipScore": 0.99986804,
+              "relationshipType": "FREQUENCY",
+              "id": 6,
+              "beginOffset": 473,
+              "endOffset": 478,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d20fdc1c-b266-4519-b76e-1105306b1fc2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d20fdc1c-b266-4519-b76e-1105306b1fc2"
+          ],
+          "Content-Length": [
+            "7214"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7214",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:51 GMT",
+          "x-amzn-RequestId": "d20fdc1c-b266-4519-b76e-1105306b1fc2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1374,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "regular menstruation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7173581,
+          "beginOffset": 20,
+          "endOffset": 40,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4479192
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46736103
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Excessive and frequent menstruation with regular cycle",
+              "code": "N92.0",
+              "score": 0.7670382
+            },
+            {
+              "description": "Irregular menstruation, unspecified",
+              "code": "N92.6",
+              "score": 0.6706576
+            },
+            {
+              "description": "Excessive and frequent menstruation with irregular cycle",
+              "code": "N92.1",
+              "score": 0.63185054
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.5885861
+            },
+            {
+              "description": "Dysmenorrhea, unspecified",
+              "code": "N94.6",
+              "score": 0.50646746
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9886699,
+          "beginOffset": 122,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9301864
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6381078
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6601365
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.4824018
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.48189238
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.41233024
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.40593618
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99346995,
+          "beginOffset": 130,
+          "endOffset": 138,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94165885
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.73546284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8273918
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7384952
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7335254
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.6684816
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.6662295
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9986904,
+          "beginOffset": 140,
+          "endOffset": 152,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95122814
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7597867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.84567285
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.81923103
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7801207
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7760582
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.7017787
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9939126,
+          "beginOffset": 154,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9547601
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7432559
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.85387796
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.77741736
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7466269
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.7164298
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.707625
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9894855,
+          "beginOffset": 173,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97289914
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7525023
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.73844916
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6913413
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.63030905
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.60517454
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",
+              "code": "I13.2",
+              "score": 0.570092
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "osteoporosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99870884,
+          "beginOffset": 188,
+          "endOffset": 200,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96386105
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7143573
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Age-related osteoporosis without current pathological fracture",
+              "code": "M81.0",
+              "score": 0.7493088
+            },
+            {
+              "description": "Other osteoporosis without current pathological fracture",
+              "code": "M81.8",
+              "score": 0.46296382
+            },
+            {
+              "description": "Age-related osteoporosis with current pathological fracture, unspecified site",
+              "code": "M80.00",
+              "score": 0.43770978
+            },
+            {
+              "description": "Family history of osteoporosis",
+              "code": "Z82.62",
+              "score": 0.38096917
+            },
+            {
+              "description": "Localized osteoporosis [Lequesne]",
+              "code": "M81.6",
+              "score": 0.37540877
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99898833,
+          "beginOffset": 205,
+          "endOffset": 217,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94543207
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.87187576
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.82009315
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7788835
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.73688895
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.69647557
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.6267894
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "losing weight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7329191,
+          "beginOffset": 240,
+          "endOffset": 253,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67606956
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.5714389
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.55239654
+            },
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.38888618
+            },
+            {
+              "description": "Excessive weight gain in pregnancy, unspecified trimester",
+              "code": "O26.00",
+              "score": 0.3387775
+            },
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.33252767
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "menstruating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3681952,
+          "beginOffset": 317,
+          "endOffset": 329,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Excessive and frequent menstruation with regular cycle",
+              "code": "N92.0",
+              "score": 0.6375304
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.57851
+            },
+            {
+              "description": "Other specified conditions associated with female genital organs and menstrual cycle",
+              "code": "N94.89",
+              "score": 0.5699061
+            },
+            {
+              "description": "Irregular menstruation, unspecified",
+              "code": "N92.6",
+              "score": 0.4932005
+            },
+            {
+              "description": "Excessive and frequent menstruation with irregular cycle",
+              "code": "N92.1",
+              "score": 0.46791834
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "uterine fibroids",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97474796,
+          "beginOffset": 353,
+          "endOffset": 369,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87469894
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9051835
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Leiomyoma of uterus, unspecified",
+              "code": "D25.9",
+              "score": 0.5889404
+            },
+            {
+              "description": "Other benign neoplasm of uterus, unspecified",
+              "code": "D26.9",
+              "score": 0.4969329
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.4911087
+            },
+            {
+              "description": "Malignant neoplasm of uterus, part unspecified",
+              "code": "C55",
+              "score": 0.41607097
+            },
+            {
+              "description": "Hypertrophy of uterus",
+              "code": "N85.2",
+              "score": 0.3045895
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "uterine scar tissue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9443689,
+          "beginOffset": 374,
+          "endOffset": 393,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.57611185
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89741576
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.5458927
+            },
+            {
+              "description": "Scar conditions and fibrosis of skin",
+              "code": "L90.5",
+              "score": 0.498552
+            },
+            {
+              "description": "History of uterine scar from previous surgery",
+              "code": "Z98.891",
+              "score": 0.44982025
+            },
+            {
+              "description": "Secondary uterine inertia",
+              "code": "O62.1",
+              "score": 0.32496995
+            },
+            {
+              "description": "Other uterine inertia",
+              "code": "O62.2",
+              "score": 0.30127424
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "uterus prolapse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8977358,
+          "beginOffset": 398,
+          "endOffset": 413,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8198994
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93012244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Leiomyoma of uterus, unspecified",
+              "code": "D25.9",
+              "score": 0.53974634
+            },
+            {
+              "description": "Uterovaginal prolapse, unspecified",
+              "code": "N81.4",
+              "score": 0.50021106
+            },
+            {
+              "description": "Rectal prolapse",
+              "code": "K62.3",
+              "score": 0.43298304
+            },
+            {
+              "description": "Nonrheumatic mitral (valve) prolapse",
+              "code": "I34.1",
+              "score": 0.42068067
+            },
+            {
+              "description": "Hypertrophy of uterus",
+              "code": "N85.2",
+              "score": 0.3813415
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d0687281-4301-4bac-b5df-f85b1964bd03"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d0687281-4301-4bac-b5df-f85b1964bd03"
+          ],
+          "Content-Length": [
+            "10650"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "10650",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:53 GMT",
+          "x-amzn-RequestId": "d0687281-4301-4bac-b5df-f85b1964bd03"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 598,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "blood thinners",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.40720686,
+          "beginOffset": 62,
+          "endOffset": 76,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.71265644,
+              "relationshipScore": 1.0,
+              "id": 1,
+              "beginOffset": 81,
+              "endOffset": 89,
+              "text": "20 years",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Dragon\u0027s Blood extract",
+              "code": "1372005",
+              "score": 0.66596866
+            },
+            {
+              "description": "Anguilla rostrata blood serum",
+              "code": "1313312",
+              "score": 0.62883705
+            },
+            {
+              "description": "BUTCHER\u0027S BROOM Preparation",
+              "code": "236614",
+              "score": 0.33906066
+            },
+            {
+              "description": "Technetium Tc-99M Red Blood Cells",
+              "code": "1729152",
+              "score": 0.26341096
+            },
+            {
+              "description": "Sus scrofa blood preparation",
+              "code": "1311272",
+              "score": 0.25770223
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pyridoxine hydrochloride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9385161,
+          "beginOffset": 448,
+          "endOffset": 472,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.96699166,
+              "relationshipScore": 0.9999919,
+              "id": 2,
+              "beginOffset": 443,
+              "endOffset": 447,
+              "text": "1 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.9964378,
+              "relationshipScore": 0.99986804,
+              "id": 4,
+              "beginOffset": 473,
+              "endOffset": 478,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Pyridoxine Hydrochloride 25 MG Oral Tablet",
+              "code": "1100457",
+              "score": 0.7945635
+            },
+            {
+              "description": "pyridoxine",
+              "code": "684879",
+              "score": 0.7911752
+            },
+            {
+              "description": "Melatonin 1 MG / pyridoxine 10 MG Oral Tablet",
+              "code": "865093",
+              "score": 0.7679017
+            },
+            {
+              "description": "PYRIDOXINE DIPALMITATE",
+              "code": "1314231",
+              "score": 0.4982
+            },
+            {
+              "description": "Pyridoxine Hydrochloride 100 MG/ML Injectable Solution",
+              "code": "312736",
+              "score": 0.4648445
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "54540366-1145-42dd-908d-019eac1d3d61"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "54540366-1145-42dd-908d-019eac1d3d61"
+          ],
+          "Content-Length": [
+            "1799"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1799",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:51 GMT",
+          "x-amzn-RequestId": "54540366-1145-42dd-908d-019eac1d3d61"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:53 PM"
+}

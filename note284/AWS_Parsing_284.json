@@ -1,0 +1,431 @@
+{
+  "note": "(SJG:  I\u0027m so glad someone did that.) In the ER, this patient had a heart defect and aortic dissection. After an EKG, he was put on a statin (which was not an option for the rest of the hospital\u0027s patients). He was released 1-2 days later after the nurse found an EKG that showed aortic dissection. In the interim, the nurse had noticed the irregular heart rhythm from the patient\u0027s ECG, but had never been told it was fainting.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 465,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 45,
+          "endOffset": 47,
+          "score": 0.9922363,
+          "text": "ER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 68,
+          "endOffset": 73,
+          "score": 0.94300264,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 68,
+          "endOffset": 80,
+          "score": 0.8845239,
+          "text": "heart defect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88983876
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 85,
+          "endOffset": 102,
+          "score": 0.9432993,
+          "text": "aortic dissection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 113,
+          "endOffset": 116,
+          "score": 0.9952004,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 134,
+          "endOffset": 140,
+          "score": 0.6236523,
+          "text": "statin",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 224,
+          "endOffset": 238,
+          "score": 0.98172164,
+          "text": "1-2 days later",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.91565675,
+              "relationshipScore": 0.51589626,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 280,
+              "endOffset": 297,
+              "text": "aortic dissection",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 224,
+          "endOffset": 238,
+          "score": 0.98172164,
+          "text": "1-2 days later",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.99658704,
+              "relationshipScore": 0.5053409,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 264,
+              "endOffset": 267,
+              "text": "EKG",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 264,
+          "endOffset": 267,
+          "score": 0.99658704,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 280,
+          "endOffset": 297,
+          "score": 0.91565675,
+          "text": "aortic dissection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 341,
+          "endOffset": 363,
+          "score": 0.5039171,
+          "text": "irregular heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.60809594
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 351,
+          "endOffset": 356,
+          "score": 0.48937154,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 383,
+          "endOffset": 386,
+          "score": 0.9510181,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 419,
+          "endOffset": 427,
+          "score": 0.9291764,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.542752
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "77fd210b-f9c9-4035-ab7f-86a6c5c759e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "77fd210b-f9c9-4035-ab7f-86a6c5c759e2"
+          ],
+          "Content-Length": [
+            "2873"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2873",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:25 GMT",
+          "x-amzn-RequestId": "77fd210b-f9c9-4035-ab7f-86a6c5c759e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 578,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "heart defect",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.884524,
+          "beginOffset": 68,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88983876
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.69101244
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.6722259
+            },
+            {
+              "description": "Conduction disorder, unspecified",
+              "code": "I45.9",
+              "score": 0.6570954
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.63458586
+            },
+            {
+              "description": "Palpitations",
+              "code": "R00.2",
+              "score": 0.60336816
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "irregular heart rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5039171,
+          "beginOffset": 341,
+          "endOffset": 363,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.60809594
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.77354836
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.6285791
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.53577554
+            },
+            {
+              "description": "Re-entry ventricular arrhythmia",
+              "code": "I47.0",
+              "score": 0.49385527
+            },
+            {
+              "description": "Other irregular eye movements",
+              "code": "H55.89",
+              "score": 0.4868077
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "fainting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9291764,
+          "beginOffset": 419,
+          "endOffset": 427,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.54275197
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.8996595
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.7553754
+            },
+            {
+              "description": "Other pulmonary collapse",
+              "code": "J98.19",
+              "score": 0.67961466
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.6635727
+            },
+            {
+              "description": "Repeated falls",
+              "code": "R29.6",
+              "score": 0.6586803
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c77b285-3fe3-478c-aa76-2cfe429956ef"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c77b285-3fe3-478c-aa76-2cfe429956ef"
+          ],
+          "Content-Length": [
+            "2111"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2111",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:25 GMT",
+          "x-amzn-RequestId": "6c77b285-3fe3-478c-aa76-2cfe429956ef"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 242,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "db9b7938-172f-41c9-a1d8-b6e983634447"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "db9b7938-172f-41c9-a1d8-b6e983634447"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:25 GMT",
+          "x-amzn-RequestId": "db9b7938-172f-41c9-a1d8-b6e983634447"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:26 PM"
+}

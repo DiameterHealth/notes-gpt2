@@ -1,0 +1,379 @@
+{
+  "note": "including chills. However s his coughing still persists and seems like it will subside when s next dose of his medication is dosed. This indicates s his immune system is starting to react to his new illness. This patient has been taking antibiotics and is being monitored for infections. The case illustrates some common signs a patient may experience after coming down with a severe flu like infection.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 239,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 10,
+          "endOffset": 16,
+          "score": 0.98875564,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84638673
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 32,
+          "endOffset": 40,
+          "score": 0.9428058,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6335162
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 237,
+          "endOffset": 248,
+          "score": 0.71443456,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 237,
+          "endOffset": 248,
+          "score": 0.7979514,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 276,
+          "endOffset": 286,
+          "score": 0.968122,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9017146
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 384,
+          "endOffset": 402,
+          "score": 0.36984083,
+          "text": "flu like infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5513041
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51386476
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "77033e98-2a25-4d39-9964-92e25e7c9edf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "77033e98-2a25-4d39-9964-92e25e7c9edf"
+          ],
+          "Content-Length": [
+            "1201"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1201",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:32 GMT",
+          "x-amzn-RequestId": "77033e98-2a25-4d39-9964-92e25e7c9edf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98875564,
+          "beginOffset": 10,
+          "endOffset": 16,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.84638673
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.70960635
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.4965562
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.31196526
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.3040923
+            },
+            {
+              "description": "Lassa fever",
+              "code": "A96.2",
+              "score": 0.2925734
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "coughing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9428058,
+          "beginOffset": 32,
+          "endOffset": 40,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6335161
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.8418887
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.68797016
+            },
+            {
+              "description": "Abnormalities of breathing",
+              "code": "R06",
+              "score": 0.6787264
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6565226
+            },
+            {
+              "description": "Encounter for screening for other bacterial diseases",
+              "code": "Z11.2",
+              "score": 0.6519794
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.968122,
+          "beginOffset": 276,
+          "endOffset": 286,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9017146
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.7964315
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.76156
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7579546
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.72658193
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.7115322
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "flu like infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3698409,
+          "beginOffset": 384,
+          "endOffset": 402,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55130404
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51386476
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.834538
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.6565516
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.62697273
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.62484014
+            },
+            {
+              "description": "Viral infection, unspecified",
+              "code": "B34.9",
+              "score": 0.59555686
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d35612fc-264f-4ca2-9358-63b2eadcd232"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d35612fc-264f-4ca2-9358-63b2eadcd232"
+          ],
+          "Content-Length": [
+            "2907"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2907",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:32 GMT",
+          "x-amzn-RequestId": "d35612fc-264f-4ca2-9358-63b2eadcd232"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c4e03f5-7e6a-48a2-bb15-233d74c6a812"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c4e03f5-7e6a-48a2-bb15-233d74c6a812"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:32 GMT",
+          "x-amzn-RequestId": "6c4e03f5-7e6a-48a2-bb15-233d74c6a812"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:33 PM"
+}

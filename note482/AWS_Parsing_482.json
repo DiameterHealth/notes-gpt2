@@ -1,0 +1,458 @@
+{
+  "note": "for the diagnosis of hypogonadism and the management of hyperglycemia. The pt was observed by an ENT specialist on 6 occasions to rule out primary, secondary or tertiary causes of hyperglycemia. The primary cause of hypoglycemia was discussed, and the pt was referred to a urologist for the diagnosis and management of chronic renal failure. The next visit (T3) was in order for a follow-up of the kidney function.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 333,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 21,
+          "endOffset": 33,
+          "score": 0.9899374,
+          "text": "hypogonadism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9652103
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 56,
+          "endOffset": 69,
+          "score": 0.99801445,
+          "text": "hyperglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9452172
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 180,
+          "endOffset": 193,
+          "score": 0.9988122,
+          "text": "hyperglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9591509
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 216,
+          "endOffset": 228,
+          "score": 0.99814034,
+          "text": "hypoglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93065923
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 327,
+          "endOffset": 340,
+          "score": 0.99312663,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97695655
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9638863,
+              "relationshipScore": 0.9996624,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 319,
+              "endOffset": 326,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 398,
+          "endOffset": 404,
+          "score": 0.98583466,
+          "text": "kidney",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9638863,
+            "id": 5,
+            "beginOffset": 319,
+            "endOffset": 326,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dfab845c-17ac-4b52-8278-1702efe0bc56"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dfab845c-17ac-4b52-8278-1702efe0bc56"
+          ],
+          "Content-Length": [
+            "1612"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1612",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:49 GMT",
+          "x-amzn-RequestId": "dfab845c-17ac-4b52-8278-1702efe0bc56"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 447,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "hypogonadism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9899374,
+          "beginOffset": 21,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9652103
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Testicular hypofunction",
+              "code": "E29.1",
+              "score": 0.5931873
+            },
+            {
+              "description": "Postprocedural testicular hypofunction",
+              "code": "E89.5",
+              "score": 0.4002918
+            },
+            {
+              "description": "Testicular hyperfunction",
+              "code": "E29.0",
+              "score": 0.39180112
+            },
+            {
+              "description": "Testicular pain, unspecified",
+              "code": "N50.819",
+              "score": 0.38715544
+            },
+            {
+              "description": "Hypopituitarism",
+              "code": "E23.0",
+              "score": 0.34066498
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hyperglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99801445,
+          "beginOffset": 56,
+          "endOffset": 69,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9452173
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.729042
+            },
+            {
+              "description": "Hyperglycemia, unspecified",
+              "code": "R73.9",
+              "score": 0.71347755
+            },
+            {
+              "description": "Other specified diabetes mellitus with hyperglycemia",
+              "code": "E13.65",
+              "score": 0.54756206
+            },
+            {
+              "description": "Type 1 diabetes mellitus with hyperglycemia",
+              "code": "E10.65",
+              "score": 0.5389134
+            },
+            {
+              "description": "Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)",
+              "code": "E13.00",
+              "score": 0.4820833
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hyperglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9988122,
+          "beginOffset": 180,
+          "endOffset": 193,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9591509
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.63004464
+            },
+            {
+              "description": "Hyperglycemia, unspecified",
+              "code": "R73.9",
+              "score": 0.6291009
+            },
+            {
+              "description": "Other specified diabetes mellitus with hyperglycemia",
+              "code": "E13.65",
+              "score": 0.4469142
+            },
+            {
+              "description": "Type 1 diabetes mellitus with hyperglycemia",
+              "code": "E10.65",
+              "score": 0.43943533
+            },
+            {
+              "description": "Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)",
+              "code": "E13.00",
+              "score": 0.41017276
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hypoglycemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99814034,
+          "beginOffset": 216,
+          "endOffset": 228,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93065923
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus with hypoglycemia without coma",
+              "code": "E11.649",
+              "score": 0.5116425
+            },
+            {
+              "description": "Hypoglycemia, unspecified",
+              "code": "E16.2",
+              "score": 0.5077018
+            },
+            {
+              "description": "Other specified diabetes mellitus with hypoglycemia without coma",
+              "code": "E13.649",
+              "score": 0.34771588
+            },
+            {
+              "description": "Type 1 diabetes mellitus with hypoglycemia without coma",
+              "code": "E10.649",
+              "score": 0.3377391
+            },
+            {
+              "description": "Other hypoglycemia",
+              "code": "E16.1",
+              "score": 0.33646202
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99312663,
+          "beginOffset": 327,
+          "endOffset": 340,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9638863,
+              "relationshipScore": 0.9996624,
+              "id": 4,
+              "beginOffset": 319,
+              "endOffset": 326,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97695655
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.5906785
+            },
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.5798585
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.5029115
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.49441525
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.48878977
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ea0a9cb0-55c5-4015-a7b1-f92b0a4ec4a2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ea0a9cb0-55c5-4015-a7b1-f92b0a4ec4a2"
+          ],
+          "Content-Length": [
+            "3962"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3962",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:49 GMT",
+          "x-amzn-RequestId": "ea0a9cb0-55c5-4015-a7b1-f92b0a4ec4a2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "58f43529-fdc4-48c2-bcc8-66d594f4dea6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "58f43529-fdc4-48c2-bcc8-66d594f4dea6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:49 GMT",
+          "x-amzn-RequestId": "58f43529-fdc4-48c2-bcc8-66d594f4dea6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:50 PM"
+}

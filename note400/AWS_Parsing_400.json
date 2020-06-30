@@ -1,0 +1,996 @@
+{
+  "note": "despite antimicrobial therapy. Laboratory findings include chills and fever, neutropenia, neutropenic white blood cells, elevated liver enzymes, and elevated serum creatine kinase. This is the diagnosis of the early post-streptococcal syndrome. An erythematous reaction is frequently observed to the wound. Early post-streptococcal serum sickness syndrome (EPSS) can cause a variety of clinical signs and symptoms including fever, fatigue, and pain in extremities.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 609,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 8,
+          "endOffset": 21,
+          "score": 0.3771347,
+          "text": "antimicrobial",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 8,
+          "endOffset": 29,
+          "score": 0.78997254,
+          "text": "antimicrobial therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 59,
+          "endOffset": 65,
+          "score": 0.99213904,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69293976
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 70,
+          "endOffset": 75,
+          "score": 0.99263614,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5552354
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 77,
+          "endOffset": 88,
+          "score": 0.99792504,
+          "text": "neutropenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7282133
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 90,
+          "endOffset": 119,
+          "score": 0.607852,
+          "text": "neutropenic white blood cells",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.760438
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 102,
+          "endOffset": 119,
+          "score": 0.6548316,
+          "text": "white blood cells",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 121,
+          "endOffset": 143,
+          "score": 0.5470425,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8389139
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 130,
+          "endOffset": 135,
+          "score": 0.5727251,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 130,
+          "endOffset": 143,
+          "score": 0.9938524,
+          "text": "liver enzymes",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99973625,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 121,
+              "endOffset": 129,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 149,
+          "endOffset": 179,
+          "score": 0.41533098,
+          "text": "elevated serum creatine kinase",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58034617
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 158,
+          "endOffset": 179,
+          "score": 0.92813456,
+          "text": "serum creatine kinase",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9975432,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 149,
+              "endOffset": 157,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 210,
+          "endOffset": 243,
+          "score": 0.37465772,
+          "text": "early post-streptococcal syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96703845
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 269,
+          "score": 0.76364917,
+          "text": "erythematous reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7381142
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 300,
+          "endOffset": 305,
+          "score": 0.9342258,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91821676
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 313,
+          "endOffset": 355,
+          "score": 0.6699044,
+          "text": "post-streptococcal serum sickness syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96472687
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 424,
+          "endOffset": 429,
+          "score": 0.9967719,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.82427466
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 431,
+          "endOffset": 438,
+          "score": 0.99916244,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90748674
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 444,
+          "endOffset": 448,
+          "score": 0.8526361,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67615163
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96386325,
+              "relationshipScore": 0.98978895,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 452,
+              "endOffset": 463,
+              "text": "extremities",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 452,
+          "endOffset": 463,
+          "score": 0.96386325,
+          "text": "extremities",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "50de6ecb-7d0d-4f7e-b201-1158eec5d4f7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "50de6ecb-7d0d-4f7e-b201-1158eec5d4f7"
+          ],
+          "Content-Length": [
+            "4534"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4534",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:25 GMT",
+          "x-amzn-RequestId": "50de6ecb-7d0d-4f7e-b201-1158eec5d4f7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 712,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chills",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99213904,
+          "beginOffset": 59,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69293976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.53048354
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.37809038
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.27608484
+            },
+            {
+              "description": "Paratyphoid fever, unspecified",
+              "code": "A01.4",
+              "score": 0.2118788
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.20254013
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99263614,
+          "beginOffset": 70,
+          "endOffset": 75,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5552354
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6242503
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.34576297
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.31509113
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.2876951
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.28640056
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "neutropenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99792504,
+          "beginOffset": 77,
+          "endOffset": 88,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7282133
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.5029157
+            },
+            {
+              "description": "Neutropenia",
+              "code": "D70",
+              "score": 0.26774126
+            },
+            {
+              "description": "Neutropenia due to infection",
+              "code": "D70.3",
+              "score": 0.25677845
+            },
+            {
+              "description": "Neutropenic splenomegaly",
+              "code": "D73.81",
+              "score": 0.21671584
+            },
+            {
+              "description": "Cyclic neutropenia",
+              "code": "D70.4",
+              "score": 0.20382297
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "neutropenic white blood cells",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60785204,
+          "beginOffset": 90,
+          "endOffset": 119,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.760438
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.26973924
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.25310862
+            },
+            {
+              "description": "Disorder of white blood cells, unspecified",
+              "code": "D72.9",
+              "score": 0.22790389
+            },
+            {
+              "description": "Decreased white blood cell count, unspecified",
+              "code": "D72.819",
+              "score": 0.20750093
+            },
+            {
+              "description": "Neutropenic splenomegaly",
+              "code": "D73.81",
+              "score": 0.19857879
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5470425,
+          "beginOffset": 121,
+          "endOffset": 143,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8389139
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal levels of other serum enzymes",
+              "code": "R74.8",
+              "score": 0.46644735
+            },
+            {
+              "description": "Abnormal results of liver function studies",
+              "code": "R94.5",
+              "score": 0.4658815
+            },
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.35689113
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.2849997
+            },
+            {
+              "description": "Unspecified jaundice",
+              "code": "R17",
+              "score": 0.25397104
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "elevated serum creatine kinase",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4153309,
+          "beginOffset": 149,
+          "endOffset": 179,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.58034617
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.4995724
+            },
+            {
+              "description": "Abnormal results of liver function studies",
+              "code": "R94.5",
+              "score": 0.39655998
+            },
+            {
+              "description": "Abnormal levels of other serum enzymes",
+              "code": "R74.8",
+              "score": 0.38954824
+            },
+            {
+              "description": "Nonspecific elevation of levels of transaminase and lactic acid dehydrogenase [LDH]",
+              "code": "R74.0",
+              "score": 0.35390824
+            },
+            {
+              "description": "Elevated white blood cell count, unspecified",
+              "code": "D72.829",
+              "score": 0.3357212
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "early post-streptococcal syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37465772,
+          "beginOffset": 210,
+          "endOffset": 243,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96703845
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute streptococcal tonsillitis, unspecified",
+              "code": "J03.00",
+              "score": 0.26005498
+            },
+            {
+              "description": "Postconcussional syndrome",
+              "code": "F07.81",
+              "score": 0.20547985
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.20353818
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.18598996
+            },
+            {
+              "description": "Takotsubo syndrome",
+              "code": "I51.81",
+              "score": 0.16804865
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "erythematous reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.763649,
+          "beginOffset": 248,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7381141
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.53873783
+            },
+            {
+              "description": "Other specified disorders of tympanic membrane, bilateral",
+              "code": "H73.893",
+              "score": 0.44480926
+            },
+            {
+              "description": "Other specified disorders of tympanic membrane, left ear",
+              "code": "H73.892",
+              "score": 0.36886424
+            },
+            {
+              "description": "Other diseases of pharynx",
+              "code": "J39.2",
+              "score": 0.3604374
+            },
+            {
+              "description": "Actinic keratosis",
+              "code": "L57.0",
+              "score": 0.3258126
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "wound",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9342258,
+          "beginOffset": 300,
+          "endOffset": 305,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91821676
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Toxic effect of unspecified spider venom, accidental (unintentional)",
+              "code": "T63.301",
+              "score": 0.56844664
+            },
+            {
+              "description": "Disruption of external operation (surgical) wound, not elsewhere classified",
+              "code": "T81.31",
+              "score": 0.50839233
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.49885115
+            },
+            {
+              "description": "Laceration without foreign body of right eyelid and periocular area",
+              "code": "S01.111",
+              "score": 0.49058333
+            },
+            {
+              "description": "Laceration without foreign body of left hand",
+              "code": "S61.412",
+              "score": 0.46803817
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "post-streptococcal serum sickness syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6699045,
+          "beginOffset": 313,
+          "endOffset": 355,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96472687
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Contact with and (suspected) exposure to other bacterial communicable diseases",
+              "code": "Z20.818",
+              "score": 0.19782653
+            },
+            {
+              "description": "Contact with and (suspected) exposure to unspecified communicable disease",
+              "code": "Z20.9",
+              "score": 0.19508353
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.19220573
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.19203722
+            },
+            {
+              "description": "Postconcussional syndrome",
+              "code": "F07.81",
+              "score": 0.18743849
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9967719,
+          "beginOffset": 424,
+          "endOffset": 429,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8242748
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6750987
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4286492
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.3598515
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3301893
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.32166472
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9991623,
+          "beginOffset": 431,
+          "endOffset": 438,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90748674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8266752
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.7423673
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.70616895
+            },
+            {
+              "description": "Fatigue fracture of vertebra, site unspecified",
+              "code": "M48.40",
+              "score": 0.65480804
+            },
+            {
+              "description": "Age-related physical debility",
+              "code": "R54",
+              "score": 0.58718646
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8526361,
+          "beginOffset": 444,
+          "endOffset": 448,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96386325,
+              "relationshipScore": 0.98978895,
+              "id": 14,
+              "beginOffset": 452,
+              "endOffset": 463,
+              "text": "extremities",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67615163
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.67145705
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.64663255
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.61979616
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5992815
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.57606584
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7f0d016d-9cf8-488f-9e23-6c8330927e41"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7f0d016d-9cf8-488f-9e23-6c8330927e41"
+          ],
+          "Content-Length": [
+            "9550"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "9550",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:26 GMT",
+          "x-amzn-RequestId": "7f0d016d-9cf8-488f-9e23-6c8330927e41"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 222,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "795ef621-4377-42e1-a5ce-d7d73556fadd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "795ef621-4377-42e1-a5ce-d7d73556fadd"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:26 GMT",
+          "x-amzn-RequestId": "795ef621-4377-42e1-a5ce-d7d73556fadd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:27 PM"
+}

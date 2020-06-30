@@ -1,0 +1,395 @@
+{
+  "note": "has been ruled out as primary management. Intensive care has been instituted after 2-3 days of onset. I\u0027ll update if I hear of anything new. Rhodesian Opossum (Orangutan)  (Gymnogyps californicus) Status:  Tentative A 28 year old male has a significant history of diabetes mellitus for 11 years. He also has type 2 diabetes. He is obese and had an end-stage renal insufficiency.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 343,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 42,
+          "endOffset": 56,
+          "score": 0.5768412,
+          "text": "Intensive care",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 83,
+          "endOffset": 91,
+          "score": 0.9972825,
+          "text": "2-3 days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.5768412,
+              "relationshipScore": 0.92269653,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 42,
+              "endOffset": 56,
+              "text": "Intensive care",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 218,
+          "endOffset": 220,
+          "score": 0.91499525,
+          "text": "28",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 264,
+          "endOffset": 281,
+          "score": 0.98627836,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96795774
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 308,
+          "endOffset": 323,
+          "score": 0.82255125,
+          "text": "type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9523068
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 331,
+          "endOffset": 336,
+          "score": 0.8870373,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5260236
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 348,
+          "endOffset": 377,
+          "score": 0.70149255,
+          "text": "end-stage renal insufficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9617413
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4c9b3162-73c1-4494-8d18-cf40d26ff163"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4c9b3162-73c1-4494-8d18-cf40d26ff163"
+          ],
+          "Content-Length": [
+            "1598"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1598",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:56 GMT",
+          "x-amzn-RequestId": "4c9b3162-73c1-4494-8d18-cf40d26ff163"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes mellitus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98627836,
+          "beginOffset": 264,
+          "endOffset": 281,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96795774
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7584095
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7492503
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.6849902
+            },
+            {
+              "description": "Type 2 diabetes mellitus with foot ulcer",
+              "code": "E11.621",
+              "score": 0.6710985
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.66726583
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8225513,
+          "beginOffset": 308,
+          "endOffset": 323,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9523068
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8045346
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.79763794
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.78180784
+            },
+            {
+              "description": "Type 2 diabetes mellitus with foot ulcer",
+              "code": "E11.621",
+              "score": 0.73617333
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7188871
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "obese",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8870373,
+          "beginOffset": 331,
+          "endOffset": 336,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5260237
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.77602303
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.72809297
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.71857935
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.5403893
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.50656587
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "end-stage renal insufficiency",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.70149255,
+          "beginOffset": 348,
+          "endOffset": 377,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9617413
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease",
+              "code": "I12.0",
+              "score": 0.6131173
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.52872103
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.52532816
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.5138203
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.49337253
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c7f36eae-f04a-4405-8eb0-4de3ccb8684d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c7f36eae-f04a-4405-8eb0-4de3ccb8684d"
+          ],
+          "Content-Length": [
+            "3261"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3261",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:56 GMT",
+          "x-amzn-RequestId": "c7f36eae-f04a-4405-8eb0-4de3ccb8684d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 224,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f45c8558-3497-4c8c-b56a-e5869d0c1e1a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f45c8558-3497-4c8c-b56a-e5869d0c1e1a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:56 GMT",
+          "x-amzn-RequestId": "f45c8558-3497-4c8c-b56a-e5869d0c1e1a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:57 PM"
+}

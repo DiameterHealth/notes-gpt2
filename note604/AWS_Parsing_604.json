@@ -1,0 +1,273 @@
+{
+  "note": "Not hungry. 1. This chart shows what you\u0027re actually dealing with before the diet and/or supplement. 2. For example let\u0027s say that you\u0027ve been doing this for a month and have been taking a supplement with a weight loss of 10lbs. Your blood glucose levels would probably be looking something like this  \"Blood Glucose:  normal, (G6PDH + G7PDH), but not at healthy range.\"  \"Blood Glucose:  low, (G6PDH -G7PDH).\" 3.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 530,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 207,
+          "endOffset": 218,
+          "score": 0.5033924,
+          "text": "weight loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 234,
+          "endOffset": 254,
+          "score": 0.9284044,
+          "text": "blood glucose levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 303,
+          "endOffset": 316,
+          "score": 0.9775009,
+          "text": "Blood Glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.95841336,
+              "relationshipScore": 0.99975723,
+              "relationshipType": "TEST_VALUE",
+              "id": 3,
+              "beginOffset": 318,
+              "endOffset": 325,
+              "text": " normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 328,
+          "endOffset": 342,
+          "score": 0.415224,
+          "text": "G6PDH + G7PDH)",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.37160546,
+              "relationshipScore": 0.99992204,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 348,
+              "endOffset": 368,
+              "text": "not at healthy range",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 373,
+          "endOffset": 386,
+          "score": 0.9708955,
+          "text": "Blood Glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9448427,
+              "relationshipScore": 0.9999701,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 388,
+              "endOffset": 392,
+              "text": " low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 395,
+          "endOffset": 408,
+          "score": 0.7100085,
+          "text": "G6PDH -G7PDH)",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6124721,
+              "relationshipScore": 0.9075774,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 411,
+              "endOffset": 412,
+              "text": "3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2d7150b2-e7f4-4b73-9ad7-a5831a0b62fa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2d7150b2-e7f4-4b73-9ad7-a5831a0b62fa"
+          ],
+          "Content-Length": [
+            "2010"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2010",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:34 GMT",
+          "x-amzn-RequestId": "2d7150b2-e7f4-4b73-9ad7-a5831a0b62fa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 402,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "weight loss",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5033924,
+          "beginOffset": 207,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal weight loss",
+              "code": "R63.4",
+              "score": 0.7658763
+            },
+            {
+              "description": "Abnormal weight gain",
+              "code": "R63.5",
+              "score": 0.54041505
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.48292583
+            },
+            {
+              "description": "Volume depletion, unspecified",
+              "code": "E86.9",
+              "score": 0.42885372
+            },
+            {
+              "description": "Anorexia",
+              "code": "R63.0",
+              "score": 0.39943102
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9661bf4e-06a5-47ab-bcf5-0c85c8ca2274"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9661bf4e-06a5-47ab-bcf5-0c85c8ca2274"
+          ],
+          "Content-Length": [
+            "629"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "629",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:35 GMT",
+          "x-amzn-RequestId": "9661bf4e-06a5-47ab-bcf5-0c85c8ca2274"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 286,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "aa012dae-df55-4b1c-9481-ba4d59041dc8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "aa012dae-df55-4b1c-9481-ba4d59041dc8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:34 GMT",
+          "x-amzn-RequestId": "aa012dae-df55-4b1c-9481-ba4d59041dc8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:35 PM"
+}

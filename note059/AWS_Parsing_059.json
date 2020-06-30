@@ -1,0 +1,325 @@
+{
+  "note": "Pap and PCT were instructed \"to proceed as per protocol; to allow for additional growth\". The mass was aspirated and the tissue was biopsied, and sent to Pathology for histological evaluation. An Endovascular ultrasound of the right breast was performed with the patient sitting on the ultrasound table. Immediately following ultrasound, the patient was moved to the recovery room, with immediate medical intervention, if indicated.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 511,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 0,
+          "endOffset": 3,
+          "score": 0.85028815,
+          "text": "Pap",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 94,
+          "endOffset": 98,
+          "score": 0.86413485,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6814626
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 121,
+          "endOffset": 127,
+          "score": 0.48883906,
+          "text": "tissue",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 132,
+          "endOffset": 140,
+          "score": 0.9715156,
+          "text": "biopsied",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 154,
+          "endOffset": 163,
+          "score": 0.9040515,
+          "text": "Pathology",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 154,
+          "endOffset": 163,
+          "score": 0.8801932,
+          "text": "Pathology",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 168,
+          "endOffset": 191,
+          "score": 0.47080943,
+          "text": "histological evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 196,
+          "endOffset": 219,
+          "score": 0.80526537,
+          "text": "Endovascular ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 233,
+          "endOffset": 239,
+          "score": 0.990289,
+          "text": "breast",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 286,
+          "endOffset": 296,
+          "score": 0.9836827,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 304,
+          "endOffset": 315,
+          "score": 0.9999989,
+          "text": "Immediately",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.99373794,
+              "relationshipScore": 0.9334652,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 326,
+              "endOffset": 336,
+              "text": "ultrasound",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 326,
+          "endOffset": 336,
+          "score": 0.99373794,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 367,
+          "endOffset": 380,
+          "score": 0.69394296,
+          "text": "recovery room",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99572796,
+            "id": 1,
+            "beginOffset": 227,
+            "endOffset": 232,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3d87dc87-2dc6-4397-a7a3-56119f813ca7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3d87dc87-2dc6-4397-a7a3-56119f813ca7"
+          ],
+          "Content-Length": [
+            "2563"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2563",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:49 GMT",
+          "x-amzn-RequestId": "3d87dc87-2dc6-4397-a7a3-56119f813ca7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 604,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86413485,
+          "beginOffset": 94,
+          "endOffset": 98,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6814626
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Intra-abdominal and pelvic swelling, mass and lump, unspecified site",
+              "code": "R19.00",
+              "score": 0.58503944
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.5595996
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.55129063
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.5387167
+            },
+            {
+              "description": "Left lower quadrant abdominal swelling, mass and lump",
+              "code": "R19.04",
+              "score": 0.5315505
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d9e230fb-a3a0-48b7-a23c-087d14dd657e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d9e230fb-a3a0-48b7-a23c-087d14dd657e"
+          ],
+          "Content-Length": [
+            "816"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "816",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:49 GMT",
+          "x-amzn-RequestId": "d9e230fb-a3a0-48b7-a23c-087d14dd657e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3a5cd846-e3dc-4648-9285-10be41a52ea0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3a5cd846-e3dc-4648-9285-10be41a52ea0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:49 GMT",
+          "x-amzn-RequestId": "3a5cd846-e3dc-4648-9285-10be41a52ea0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:50 PM"
+}

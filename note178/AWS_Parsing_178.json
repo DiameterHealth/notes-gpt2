@@ -1,0 +1,286 @@
+{
+  "note": "if no change in performance; if improvement in performance, follow-up in 2 months. Outcome:   Patient assessment:    Cognitive:   General medical:   Lung evaluation:    Physical exam:   Mental health care:   Pre-specified follow-up: 1-2 years  Outcome:   Patient assessment:    Cognitive:   General medical:   Lung evaluation:    Physical exam:   Mental health care:   Treatment:   Outcome:  Patient assessment:    Cognitive:   General medical:   Lung evaluation:    Physical exam:   Mental health care:   Outcome:   Patient assessment:    Patient and family assessment:   Overall physical performance, with and without neurological symptoms:  Pre-specified follow-up: 4 months.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 630,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 149,
+          "endOffset": 153,
+          "score": 0.85380095,
+          "text": "Lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 169,
+          "endOffset": 182,
+          "score": 0.45573074,
+          "text": "Physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 310,
+          "endOffset": 314,
+          "score": 0.90389097,
+          "text": "Lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 310,
+          "endOffset": 325,
+          "score": 0.3808368,
+          "text": "Lung evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 330,
+          "endOffset": 343,
+          "score": 0.743053,
+          "text": "Physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 447,
+          "endOffset": 451,
+          "score": 0.8990437,
+          "text": "Lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 447,
+          "endOffset": 462,
+          "score": 0.38651118,
+          "text": "Lung evaluation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 467,
+          "endOffset": 480,
+          "score": 0.7481707,
+          "text": "Physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 620,
+          "endOffset": 641,
+          "score": 0.86170805,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.6586881
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 669,
+          "endOffset": 677,
+          "score": 0.5116317,
+          "text": "4 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.86170805,
+              "relationshipScore": 0.6055904,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 620,
+              "endOffset": 641,
+              "text": "neurological symptoms",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "NEGATION",
+                  "score": 0.6586881
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd474e19-99e1-4809-9333-44740c24a192"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd474e19-99e1-4809-9333-44740c24a192"
+          ],
+          "Content-Length": [
+            "1960"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1960",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:43 GMT",
+          "x-amzn-RequestId": "bd474e19-99e1-4809-9333-44740c24a192"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 702,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86170805,
+          "beginOffset": 620,
+          "endOffset": 641,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.658688
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.76209944
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.7218999
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.68728465
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5472939
+            },
+            {
+              "description": "Manic episode, severe, without psychotic symptoms",
+              "code": "F30.13",
+              "score": 0.42997503
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1d4c4da-801b-4ecb-afdb-b85397b0859d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1d4c4da-801b-4ecb-afdb-b85397b0859d"
+          ],
+          "Content-Length": [
+            "815"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "815",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:44 GMT",
+          "x-amzn-RequestId": "b1d4c4da-801b-4ecb-afdb-b85397b0859d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 413,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4e7ffed2-0f24-4650-b94a-66b6b529d3d4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4e7ffed2-0f24-4650-b94a-66b6b529d3d4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:44 GMT",
+          "x-amzn-RequestId": "4e7ffed2-0f24-4650-b94a-66b6b529d3d4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:45 PM"
+}

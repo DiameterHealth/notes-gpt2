@@ -1,0 +1,588 @@
+{
+  "note": "and follow any instructions by your specialist. Dietary Restrictions: Take only water-containing beverages to avoid dehydration; if you are pregnant, please consult your clinician prior to taking or discontinuing the drug. Uptake of Drug: The oral LD50 is approximately 4mg/kg/hr. For more information, please contact your clinician. Comments: This drug is approved by the FDA for use in animals to control inflammation and pain resulting from various infectious diseases such as HIV, hepatitis C, cytomegalovirus (CMV), and varicella.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 322,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 116,
+          "endOffset": 127,
+          "score": 0.9739018,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90584576
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 140,
+          "endOffset": 148,
+          "score": 0.99164057,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9465414
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 407,
+          "endOffset": 419,
+          "score": 0.7774128,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6920776
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 424,
+          "endOffset": 428,
+          "score": 0.97503906,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8538398
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 452,
+          "endOffset": 471,
+          "score": 0.47089463,
+          "text": "infectious diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569041
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 480,
+          "endOffset": 483,
+          "score": 0.97772205,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9472627
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 485,
+          "endOffset": 496,
+          "score": 0.9815019,
+          "text": "hepatitis C",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9745058
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 498,
+          "endOffset": 513,
+          "score": 0.8243998,
+          "text": "cytomegalovirus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.925053
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 515,
+          "endOffset": 518,
+          "score": 0.7750678,
+          "text": "CMV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83141565
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cf276eee-ac08-48e6-a69a-064d7e87c5e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cf276eee-ac08-48e6-a69a-064d7e87c5e2"
+          ],
+          "Content-Length": [
+            "1828"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1828",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:34 GMT",
+          "x-amzn-RequestId": "cf276eee-ac08-48e6-a69a-064d7e87c5e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 445,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9739018,
+          "beginOffset": 116,
+          "endOffset": 127,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90584576
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dehydration",
+              "code": "E86.0",
+              "score": 0.78706664
+            },
+            {
+              "description": "Dehydration of newborn",
+              "code": "P74.1",
+              "score": 0.43417022
+            },
+            {
+              "description": "Hyperemesis gravidarum with metabolic disturbance",
+              "code": "O21.1",
+              "score": 0.39430517
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99164057,
+          "beginOffset": 140,
+          "endOffset": 148,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9465414
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7219905
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.5776255
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5414269
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.48367324
+            },
+            {
+              "description": "Pregnant state",
+              "code": "Z33",
+              "score": 0.48142964
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "inflammation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7774128,
+          "beginOffset": 407,
+          "endOffset": 419,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6920775
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.6692955
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.60842144
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.60357416
+            },
+            {
+              "description": "Unspecified appendicitis",
+              "code": "K37",
+              "score": 0.5769241
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.57393014
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97503906,
+          "beginOffset": 424,
+          "endOffset": 428,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8538398
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5716998
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.4822295
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.46158674
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.45322204
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.44764358
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "infectious diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.47089463,
+          "beginOffset": 452,
+          "endOffset": 471,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569041
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.688551
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.55785376
+            },
+            {
+              "description": "Other and unspecified infectious diseases",
+              "code": "B99",
+              "score": 0.55660295
+            },
+            {
+              "description": "Infectious gastroenteritis and colitis, unspecified",
+              "code": "A09",
+              "score": 0.5389938
+            },
+            {
+              "description": "Other infectious disease",
+              "code": "B99.8",
+              "score": 0.5249344
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97772205,
+          "beginOffset": 480,
+          "endOffset": 483,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9472627
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.69522977
+            },
+            {
+              "description": "Asymptomatic human immunodeficiency virus [HIV] infection status",
+              "code": "Z21",
+              "score": 0.5559706
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] counseling",
+              "code": "Z71.7",
+              "score": 0.42295292
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] disease complicating childbirth",
+              "code": "O98.72",
+              "score": 0.42115757
+            },
+            {
+              "description": "Human immunodeficiency virus, type 2 [HIV 2] as the cause of diseases classified elsewhere",
+              "code": "B97.35",
+              "score": 0.40260857
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "hepatitis C",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9815019,
+          "beginOffset": 485,
+          "endOffset": 496,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9745058
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified viral hepatitis C without hepatic coma",
+              "code": "B19.20",
+              "score": 0.60216445
+            },
+            {
+              "description": "Chronic viral hepatitis C",
+              "code": "B18.2",
+              "score": 0.5607745
+            },
+            {
+              "description": "Unspecified viral hepatitis B without hepatic coma",
+              "code": "B19.10",
+              "score": 0.38768357
+            },
+            {
+              "description": "Acute hepatitis C without hepatic coma",
+              "code": "B17.10",
+              "score": 0.33115387
+            },
+            {
+              "description": "Unspecified viral hepatitis C with hepatic coma",
+              "code": "B19.21",
+              "score": 0.3140204
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "cytomegalovirus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82439995,
+          "beginOffset": 498,
+          "endOffset": 513,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.925053
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cytomegaloviral pneumonitis",
+              "code": "B25.0",
+              "score": 0.40604645
+            },
+            {
+              "description": "Cytomegaloviral disease",
+              "code": "B25",
+              "score": 0.40555575
+            },
+            {
+              "description": "Cytomegaloviral disease, unspecified",
+              "code": "B25.9",
+              "score": 0.39976516
+            },
+            {
+              "description": "Other cytomegaloviral diseases",
+              "code": "B25.8",
+              "score": 0.39706996
+            },
+            {
+              "description": "Congenital cytomegalovirus infection",
+              "code": "P35.1",
+              "score": 0.3713779
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "893e5151-e433-4a59-93eb-795302dbd66f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "893e5151-e433-4a59-93eb-795302dbd66f"
+          ],
+          "Content-Length": [
+            "5602"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5602",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:35 GMT",
+          "x-amzn-RequestId": "893e5151-e433-4a59-93eb-795302dbd66f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 309,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "44359588-4b46-4262-80bd-223d945fb22d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "44359588-4b46-4262-80bd-223d945fb22d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:34 GMT",
+          "x-amzn-RequestId": "44359588-4b46-4262-80bd-223d945fb22d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:35 PM"
+}

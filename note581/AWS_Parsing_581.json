@@ -1,0 +1,397 @@
+{
+  "note": "Pelvic and head x-rays are unremarkable. Fever on examination (38.6C) and ECGs are unremarkable. In a recent prospective multicentre observational study, there were a mean age of 67 for the patients and 66 for the controls (mean age 61.2). The median follow up was 15 years for the patients and 15 years for the controls. A total of 19 patients (6%) had had symptomatic recurrence of their condition.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 547,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 6,
+          "score": 0.75516194,
+          "text": "Pelvic",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 0,
+          "endOffset": 22,
+          "score": 0.48798996,
+          "text": "Pelvic and head x-rays",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9840806,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 27,
+              "endOffset": 39,
+              "text": "unremarkable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 11,
+          "endOffset": 15,
+          "score": 0.9918011,
+          "text": "head",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 41,
+          "endOffset": 46,
+          "score": 0.8813078,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48087773
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 50,
+          "endOffset": 61,
+          "score": 0.3643243,
+          "text": "examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6097459,
+              "relationshipScore": 0.99992657,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 63,
+              "endOffset": 65,
+              "text": "38",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.22730944,
+              "relationshipScore": 0.9850922,
+              "relationshipType": "TEST_UNIT",
+              "id": 9,
+              "beginOffset": 66,
+              "endOffset": 68,
+              "text": "6C",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 74,
+          "endOffset": 78,
+          "score": 0.98424315,
+          "text": "ECGs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98192626,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 83,
+              "endOffset": 95,
+              "text": "unremarkable",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 102,
+          "endOffset": 108,
+          "score": 0.9999988,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.4410732,
+              "relationshipScore": 0.97695243,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 109,
+              "endOffset": 152,
+              "text": "prospective multicentre observational study",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 109,
+          "endOffset": 152,
+          "score": 0.4410732,
+          "text": "prospective multicentre observational study",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.3731361,
+              "relationshipScore": 0.9999567,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 167,
+              "endOffset": 181,
+              "text": "mean age of 67",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 179,
+          "endOffset": 181,
+          "score": 0.57225215,
+          "text": "67",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 370,
+          "endOffset": 399,
+          "score": 0.3549175,
+          "text": "recurrence of their condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5457655
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a0fdcaf2-4c34-459c-bb60-6d6f99863884"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a0fdcaf2-4c34-459c-bb60-6d6f99863884"
+          ],
+          "Content-Length": [
+            "3185"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3185",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:58 GMT",
+          "x-amzn-RequestId": "a0fdcaf2-4c34-459c-bb60-6d6f99863884"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 425,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8813078,
+          "beginOffset": 41,
+          "endOffset": 46,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48087776
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7409752
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.49185324
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.40948248
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.40623286
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.34806558
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "recurrence of their condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35491726,
+          "beginOffset": 370,
+          "endOffset": 399,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5457655
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of bone and articular cartilage, unspecified",
+              "code": "C41.9",
+              "score": 0.6349446
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.5855576
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.5823012
+            },
+            {
+              "description": "Takotsubo syndrome",
+              "code": "I51.81",
+              "score": 0.5138471
+            },
+            {
+              "description": "Typical atrial flutter",
+              "code": "I48.3",
+              "score": 0.51067257
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "345d41ec-1240-48ed-9954-79bf8b5da1c4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "345d41ec-1240-48ed-9954-79bf8b5da1c4"
+          ],
+          "Content-Length": [
+            "1425"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1425",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:00 GMT",
+          "x-amzn-RequestId": "345d41ec-1240-48ed-9954-79bf8b5da1c4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3372b2d0-f09d-40b7-8bfb-fabfdaac1e66"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3372b2d0-f09d-40b7-8bfb-fabfdaac1e66"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:00 GMT",
+          "x-amzn-RequestId": "3372b2d0-f09d-40b7-8bfb-fabfdaac1e66"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:00 PM"
+}

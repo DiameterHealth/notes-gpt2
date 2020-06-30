@@ -1,0 +1,279 @@
+{
+  "note": "at hospital. She underwent a lumbar puncture on Jan 4th but continued to require support from her spouse to keep her from straining. Cervical Scans: Pulsed Doppler (PM): Pulsed Doppler used in this case indicated cervical dilation. The cervical dilation was in the direction of the cervix and the lower portion of the cervix. No fetal remains were observed by ultrasound.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 285,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 29,
+          "endOffset": 35,
+          "score": 0.40106505,
+          "text": "lumbar",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 29,
+          "endOffset": 44,
+          "score": 0.9369383,
+          "text": "lumbar puncture",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 48,
+          "endOffset": 55,
+          "score": 0.99993896,
+          "text": "Jan 4th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9369383,
+              "relationshipScore": 0.990113,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 29,
+              "endOffset": 44,
+              "text": "lumbar puncture",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 48,
+          "endOffset": 55,
+          "score": 0.9997682,
+          "text": "Jan 4th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 133,
+          "endOffset": 147,
+          "score": 0.8507149,
+          "text": "Cervical Scans",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 149,
+          "endOffset": 163,
+          "score": 0.9108499,
+          "text": "Pulsed Doppler",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 170,
+          "endOffset": 184,
+          "score": 0.81962365,
+          "text": "Pulsed Doppler",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 213,
+          "endOffset": 230,
+          "score": 0.5399165,
+          "text": "cervical dilation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 236,
+          "endOffset": 253,
+          "score": 0.40598676,
+          "text": "cervical dilation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 282,
+          "endOffset": 288,
+          "score": 0.99546623,
+          "text": "cervix",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 318,
+          "endOffset": 324,
+          "score": 0.99878174,
+          "text": "cervix",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 360,
+          "endOffset": 370,
+          "score": 0.9744106,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.95931506,
+            "id": 2,
+            "beginOffset": 297,
+            "endOffset": 302,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.446158,
+            "id": 3,
+            "beginOffset": 303,
+            "endOffset": 310,
+            "text": "portion",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "185c0a46-b266-4b63-8bc9-faa79136e9a2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "185c0a46-b266-4b63-8bc9-faa79136e9a2"
+          ],
+          "Content-Length": [
+            "2553"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2553",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:34 GMT",
+          "x-amzn-RequestId": "185c0a46-b266-4b63-8bc9-faa79136e9a2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 246,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cafaaccb-7cf9-4c77-86a4-ef00dc899376"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cafaaccb-7cf9-4c77-86a4-ef00dc899376"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:35 GMT",
+          "x-amzn-RequestId": "cafaaccb-7cf9-4c77-86a4-ef00dc899376"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b3164b3-a8b4-4646-94bb-128d340ec15d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b3164b3-a8b4-4646-94bb-128d340ec15d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:35 GMT",
+          "x-amzn-RequestId": "2b3164b3-a8b4-4646-94bb-128d340ec15d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:35 PM"
+}

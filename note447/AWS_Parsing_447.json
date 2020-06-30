@@ -1,0 +1,245 @@
+{
+  "note": ". He is on long-term stable lipid-lowering medication. He is also undergoing exercise testing using a treadmill and will be asked to meet with a physician for a follow-up evaluation. The family has no history of cardiac or pulmonary diseases. Exercise Testing During exercise testing the subject will be asked to complete a treadmill test and will be asked to continue to the final test at the end of the test session.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 253,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 28,
+          "endOffset": 53,
+          "score": 0.78124034,
+          "text": "lipid-lowering medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 77,
+          "endOffset": 93,
+          "score": 0.46097204,
+          "text": "exercise testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 145,
+          "endOffset": 154,
+          "score": 0.27583975,
+          "text": "physician",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 212,
+          "endOffset": 241,
+          "score": 0.90766567,
+          "text": "cardiac or pulmonary diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.85218644
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.905083
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 243,
+          "endOffset": 259,
+          "score": 0.6520333,
+          "text": "Exercise Testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 267,
+          "endOffset": 283,
+          "score": 0.7979963,
+          "text": "exercise testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 324,
+          "endOffset": 338,
+          "score": 0.9836199,
+          "text": "treadmill test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "66262e83-5a93-4723-a683-34f2cffe9f91"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "66262e83-5a93-4723-a683-34f2cffe9f91"
+          ],
+          "Content-Length": [
+            "1322"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1322",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:48 GMT",
+          "x-amzn-RequestId": "66262e83-5a93-4723-a683-34f2cffe9f91"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 376,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiac or pulmonary diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90766567,
+          "beginOffset": 212,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8521864
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.905083
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of other diseases of the circulatory system",
+              "code": "Z86.79",
+              "score": 0.6418092
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.438523
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.38924244
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.37610298
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.376093
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e0ef10b-bd10-4657-a5d3-f77968749018"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e0ef10b-bd10-4657-a5d3-f77968749018"
+          ],
+          "Content-Length": [
+            "856"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "856",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:48 GMT",
+          "x-amzn-RequestId": "7e0ef10b-bd10-4657-a5d3-f77968749018"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bf34de44-12f9-4c4e-b24b-e33d2a1df455"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bf34de44-12f9-4c4e-b24b-e33d2a1df455"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:48 GMT",
+          "x-amzn-RequestId": "bf34de44-12f9-4c4e-b24b-e33d2a1df455"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:49 PM"
+}

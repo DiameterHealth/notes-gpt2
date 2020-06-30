@@ -1,0 +1,368 @@
+{
+  "note": "and monitor for signs of intolerance to food. Continue medications containing beta-blockers. If any side effects occur, stop them immediately and stop using the product. If intolerance persist, consult cardiologist. Treatment \u0026 Prevention:  Treatment of ankyloglossia: If the condition is severe (\u003c2 mmHg \u003e 5 h per week in the past 90 d) or does not respond to previous treatment:  Treatment for ankyloglossia can include a combination of medications depending on severity of the condition.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 548,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 25,
+          "endOffset": 44,
+          "score": 0.65622205,
+          "text": "intolerance to food",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.52093667
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 78,
+          "endOffset": 91,
+          "score": 0.42704242,
+          "text": "beta-blockers",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 100,
+          "endOffset": 112,
+          "score": 0.90658975,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6992594
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.43015662
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 254,
+          "endOffset": 267,
+          "score": 0.92471415,
+          "text": "ankyloglossia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7408275
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 396,
+          "endOffset": 409,
+          "score": 0.8426423,
+          "text": "ankyloglossia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78125954
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eade7fdf-a4df-41fd-b9c4-815602bca4e9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eade7fdf-a4df-41fd-b9c4-815602bca4e9"
+          ],
+          "Content-Length": [
+            "1056"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1056",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:59 GMT",
+          "x-amzn-RequestId": "eade7fdf-a4df-41fd-b9c4-815602bca4e9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 617,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "intolerance to food",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65622216,
+          "beginOffset": 25,
+          "endOffset": 44,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5209367
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.6836001
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.665491
+            },
+            {
+              "description": "Adverse effect of antihyperlipidemic and antiarteriosclerotic drugs",
+              "code": "T46.6X5",
+              "score": 0.6540271
+            },
+            {
+              "description": "Pneumonitis due to inhalation of food and vomit",
+              "code": "J69.0",
+              "score": 0.6423515
+            },
+            {
+              "description": "Malabsorption due to intolerance, not elsewhere classified",
+              "code": "K90.49",
+              "score": 0.6182492
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90658975,
+          "beginOffset": 100,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69925934
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.43015662
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.62651455
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.5829695
+            },
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.5587695
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.51489365
+            },
+            {
+              "description": "Adverse effect of unspecified drugs, medicaments and biological substances",
+              "code": "T50.905",
+              "score": 0.49142933
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "ankyloglossia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92471415,
+          "beginOffset": 254,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7408274
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ankyloglossia",
+              "code": "Q38.1",
+              "score": 0.45439765
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "ankyloglossia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8426423,
+          "beginOffset": 396,
+          "endOffset": 409,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78125954
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ankyloglossia",
+              "code": "Q38.1",
+              "score": 0.42782143
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "454b596d-d1ea-4892-b205-9ebe10ed4157"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "454b596d-d1ea-4892-b205-9ebe10ed4157"
+          ],
+          "Content-Length": [
+            "2470"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2470",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:00 GMT",
+          "x-amzn-RequestId": "454b596d-d1ea-4892-b205-9ebe10ed4157"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "beta-blockers",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.42704242,
+          "beginOffset": 78,
+          "endOffset": 91,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Interferon-beta",
+              "code": "4381",
+              "score": 0.9129537
+            },
+            {
+              "description": "agalsidase beta",
+              "code": "338817",
+              "score": 0.8677449
+            },
+            {
+              "description": "Beta Carotene",
+              "code": "19143",
+              "score": 0.81504714
+            },
+            {
+              "description": "beta-Alanine",
+              "code": "61",
+              "score": 0.78701705
+            },
+            {
+              "description": "beta Sitosterol",
+              "code": "47070",
+              "score": 0.74717385
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2762aa6a-e7bd-4967-b77c-fb97e41a8a50"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2762aa6a-e7bd-4967-b77c-fb97e41a8a50"
+          ],
+          "Content-Length": [
+            "593"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "593",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:59 GMT",
+          "x-amzn-RequestId": "2762aa6a-e7bd-4967-b77c-fb97e41a8a50"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:00 PM"
+}

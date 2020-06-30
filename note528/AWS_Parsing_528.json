@@ -1,0 +1,714 @@
+{
+  "note": ".  Patient reported to be taking atorvastatin for lipid management. Patient reports having no complaints and taking atorvastatin for lipid management in the past 12 months. OBJECTIVE to evaluate the efficacy and safety of adalimumab or fingolimod (oral, injectable, and vaginal) for patients with a primary vascular ischemia [MI.1] who have been taking an ischemic drug (eg, isoproterenol) in the past year; and patient reported adverse events (AEs) for patients with MI.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 516,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 33,
+          "endOffset": 45,
+          "score": 0.9979373,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 50,
+          "endOffset": 66,
+          "score": 0.63332886,
+          "text": "lipid management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 116,
+          "endOffset": 128,
+          "score": 0.9983487,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 133,
+          "endOffset": 149,
+          "score": 0.67129666,
+          "text": "lipid management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "score": 0.99482286,
+          "text": "in the past 12 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9983487,
+              "relationshipScore": 0.9013182,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 116,
+              "endOffset": 128,
+              "text": "atorvastatin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "score": 0.99482286,
+          "text": "in the past 12 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.67129666,
+              "relationshipScore": 0.9904332,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 133,
+              "endOffset": 149,
+              "text": "lipid management",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 222,
+          "endOffset": 232,
+          "score": 0.97698784,
+          "text": "adalimumab",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.4240766,
+              "relationshipScore": 0.8957139,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 264,
+              "text": "injectable",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 236,
+          "endOffset": 246,
+          "score": 0.92984194,
+          "text": "fingolimod",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.4240766,
+              "relationshipScore": 0.9746113,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 264,
+              "text": "injectable",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 307,
+          "endOffset": 324,
+          "score": 0.88541675,
+          "text": "vascular ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684895
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 326,
+          "endOffset": 328,
+          "score": 0.9901157,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.976644
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 375,
+          "endOffset": 388,
+          "score": 0.9804215,
+          "text": "isoproterenol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 390,
+          "endOffset": 406,
+          "score": 0.9883111,
+          "text": "in the past year",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9804215,
+              "relationshipScore": 0.927875,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 375,
+              "endOffset": 388,
+              "text": "isoproterenol",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 429,
+          "endOffset": 443,
+          "score": 0.55821365,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 468,
+          "endOffset": 470,
+          "score": 0.9769132,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96495205
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "40f9d68c-39f9-4c6c-a0b0-4ec48aa19d2f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "40f9d68c-39f9-4c6c-a0b0-4ec48aa19d2f"
+          ],
+          "Content-Length": [
+            "3599"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3599",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:25 GMT",
+          "x-amzn-RequestId": "40f9d68c-39f9-4c6c-a0b0-4ec48aa19d2f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 576,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "vascular ischemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88541675,
+          "beginOffset": 307,
+          "endOffset": 324,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9684894
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.76252
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.75413364
+            },
+            {
+              "description": "Other disorder of circulatory system",
+              "code": "I99.8",
+              "score": 0.69009554
+            },
+            {
+              "description": "Unspecified disorder of circulatory system",
+              "code": "I99.9",
+              "score": 0.66270286
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.65534467
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9901157,
+          "beginOffset": 326,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.976644
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.77277595
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7351577
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6988861
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6844572
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.66563046
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.55821365,
+          "beginOffset": 429,
+          "endOffset": 443,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of sulfonamides",
+              "code": "T37.0X5",
+              "score": 0.69322103
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.66440535
+            },
+            {
+              "description": "Adverse effect of unspecified anesthetic",
+              "code": "T41.45",
+              "score": 0.6010581
+            },
+            {
+              "description": "Other complications of anesthesia",
+              "code": "T88.59",
+              "score": 0.5934447
+            },
+            {
+              "description": "Unspecified effects of vibration",
+              "code": "T75.20",
+              "score": 0.5771278
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "MI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9769132,
+          "beginOffset": 468,
+          "endOffset": 470,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96495205
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.85326695
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.81868446
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.765891
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.76273096
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.7603996
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "330829e2-9ff5-4af0-abea-be16d6591bc5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "330829e2-9ff5-4af0-abea-be16d6591bc5"
+          ],
+          "Content-Length": [
+            "3031"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3031",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:26 GMT",
+          "x-amzn-RequestId": "330829e2-9ff5-4af0-abea-be16d6591bc5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 892,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9979373,
+          "beginOffset": 33,
+          "endOffset": 45,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "atorvastatin",
+              "code": "83367",
+              "score": 0.9420543
+            },
+            {
+              "description": "atorvastatin 20 MG Oral Tablet",
+              "code": "617310",
+              "score": 0.8040979
+            },
+            {
+              "description": "atorvastatin 10 MG Oral Tablet",
+              "code": "617312",
+              "score": 0.78608227
+            },
+            {
+              "description": "atorvastatin 80 MG Oral Tablet",
+              "code": "259255",
+              "score": 0.64597005
+            },
+            {
+              "description": "atorvastatin 40 MG Oral Tablet",
+              "code": "617311",
+              "score": 0.5089147
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9983487,
+          "beginOffset": 116,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "atorvastatin",
+              "code": "83367",
+              "score": 0.9420543
+            },
+            {
+              "description": "atorvastatin 20 MG Oral Tablet",
+              "code": "617310",
+              "score": 0.8040979
+            },
+            {
+              "description": "atorvastatin 10 MG Oral Tablet",
+              "code": "617312",
+              "score": 0.78608227
+            },
+            {
+              "description": "atorvastatin 80 MG Oral Tablet",
+              "code": "259255",
+              "score": 0.64597
+            },
+            {
+              "description": "atorvastatin 40 MG Oral Tablet",
+              "code": "617311",
+              "score": 0.5089147
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "adalimumab",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.97698784,
+          "beginOffset": 222,
+          "endOffset": 232,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42407647,
+              "relationshipScore": 0.8957138,
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 264,
+              "text": "injectable",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "adalimumab",
+              "code": "327361",
+              "score": 0.92802775
+            },
+            {
+              "description": "{1 (0.4 ML adalimumab 100 MG/ML Prefilled Syringe) / 1 (0.8 ML adalimumab 100 MG/ML Prefilled Syringe) } Pack",
+              "code": "1855526",
+              "score": 0.47892183
+            },
+            {
+              "description": "0.8 ML adalimumab 50 MG/ML Injection",
+              "code": "351290",
+              "score": 0.43777564
+            },
+            {
+              "description": "0.1 ML adalimumab 100 MG/ML Prefilled Syringe",
+              "code": "1921009",
+              "score": 0.33851126
+            },
+            {
+              "description": "{1 (0.4 ML adalimumab 100 MG/ML Prefilled Syringe [Humira]) / 1 (0.8 ML adalimumab 100 MG/ML Prefilled Syringe [Humira]) } Pack [Humira Pediatric Crohn\u0027s Disease Starter Package (2 count)]",
+              "code": "1855527",
+              "score": 0.16724312
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fingolimod",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.92984194,
+          "beginOffset": 236,
+          "endOffset": 246,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.42407647,
+              "relationshipScore": 0.9746113,
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 264,
+              "text": "injectable",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "fingolimod",
+              "code": "1012892",
+              "score": 0.94040644
+            },
+            {
+              "description": "fingolimod 0.5 MG Oral Capsule [Gilenya]",
+              "code": "1012899",
+              "score": 0.43188378
+            },
+            {
+              "description": "fingolimod 0.5 MG Oral Capsule",
+              "code": "1012895",
+              "score": 0.22202624
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "isoproterenol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9804215,
+          "beginOffset": 375,
+          "endOffset": 388,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Isoproterenol",
+              "code": "6054",
+              "score": 0.9650971
+            },
+            {
+              "description": "1 ML Isoproterenol Hydrochloride 0.2 MG/ML Injection",
+              "code": "1667909",
+              "score": 0.6025848
+            },
+            {
+              "description": "5 ML Isoproterenol Hydrochloride 0.2 MG/ML Injection",
+              "code": "1667915",
+              "score": 0.59058195
+            },
+            {
+              "description": "1 ML Isoproterenol Hydrochloride 0.2 MG/ML Injection [Isuprel]",
+              "code": "1667911",
+              "score": 0.4098936
+            },
+            {
+              "description": "5 ML Isoproterenol Hydrochloride 0.2 MG/ML Injection [Isuprel]",
+              "code": "1667916",
+              "score": 0.39211708
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "28c79ad3-a8cf-4c55-851f-bfae0d014604"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "28c79ad3-a8cf-4c55-851f-bfae0d014604"
+          ],
+          "Content-Length": [
+            "3691"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3691",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:26 GMT",
+          "x-amzn-RequestId": "28c79ad3-a8cf-4c55-851f-bfae0d014604"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:27 PM"
+}

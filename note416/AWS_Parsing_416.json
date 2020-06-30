@@ -1,0 +1,553 @@
+{
+  "note": "He has been seeing an ENT physician for the last 6 years who has failed to offer any treatment in this situation. Since beginning an off-label use of ibuprofen it has only worsened his symptoms. A recent exam by the attending ER medical provider found a mild acute inflammatory reaction in the joint. Since the inflammatory reactions are minor the chance of major harm to the joint is very small.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 486,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 150,
+          "endOffset": 159,
+          "score": 0.9888475,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 197,
+          "endOffset": 203,
+          "score": 0.99999976,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.96715164,
+              "relationshipScore": 0.67162746,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 265,
+              "endOffset": 286,
+              "text": "inflammatory reaction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7825209
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 226,
+          "endOffset": 228,
+          "score": 0.8983148,
+          "text": "ER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 265,
+          "endOffset": 286,
+          "score": 0.96715164,
+          "text": "inflammatory reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7825209
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87247455,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 259,
+              "endOffset": 264,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9467851,
+              "relationshipScore": 0.9891874,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 294,
+              "endOffset": 299,
+              "text": "joint",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 294,
+          "endOffset": 299,
+          "score": 0.9467851,
+          "text": "joint",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 311,
+          "endOffset": 333,
+          "score": 0.6988431,
+          "text": "inflammatory reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6668998
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 358,
+          "endOffset": 368,
+          "score": 0.41017613,
+          "text": "major harm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.42788664
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96501267,
+              "relationshipScore": 0.56541634,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 376,
+              "endOffset": 381,
+              "text": "joint",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 376,
+          "endOffset": 381,
+          "score": 0.96501267,
+          "text": "joint",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 376,
+          "endOffset": 395,
+          "score": 0.3549622,
+          "text": "joint is very small",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6153978
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41157132
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.87247455,
+            "id": 3,
+            "beginOffset": 259,
+            "endOffset": 264,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "137f4fb0-0103-4c8b-a324-dc7749b2d00d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "137f4fb0-0103-4c8b-a324-dc7749b2d00d"
+          ],
+          "Content-Length": [
+            "2828"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2828",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:54 GMT",
+          "x-amzn-RequestId": "137f4fb0-0103-4c8b-a324-dc7749b2d00d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 615,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "inflammatory reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96715164,
+          "beginOffset": 265,
+          "endOffset": 286,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87247443,
+              "relationshipScore": 0.9999994,
+              "id": 0,
+              "beginOffset": 259,
+              "endOffset": 264,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9467851,
+              "relationshipScore": 0.9891874,
+              "id": 2,
+              "beginOffset": 294,
+              "endOffset": 299,
+              "text": "joint",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7825209
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Female pelvic inflammatory disease, unspecified",
+              "code": "N73.9",
+              "score": 0.70533127
+            },
+            {
+              "description": "Disease of pericardium, unspecified",
+              "code": "I31.9",
+              "score": 0.64881355
+            },
+            {
+              "description": "Acute stress reaction",
+              "code": "F43.0",
+              "score": 0.6140275
+            },
+            {
+              "description": "Unspecified inflammatory spondylopathy, lumbar region",
+              "code": "M46.96",
+              "score": 0.59792334
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.585416
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "inflammatory reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.69884324,
+          "beginOffset": 311,
+          "endOffset": 333,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6668998
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Female pelvic inflammatory disease, unspecified",
+              "code": "N73.9",
+              "score": 0.6985725
+            },
+            {
+              "description": "Unspecified inflammatory spondylopathy, lumbar region",
+              "code": "M46.96",
+              "score": 0.5846001
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.57544166
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.57216656
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.55188465
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "major harm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4101764,
+          "beginOffset": 358,
+          "endOffset": 368,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.96501267,
+              "relationshipScore": 0.56541634,
+              "id": 6,
+              "beginOffset": 376,
+              "endOffset": 381,
+              "text": "joint",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4278867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.7261198
+            },
+            {
+              "description": "Major laceration of liver",
+              "code": "S36.116",
+              "score": 0.63578516
+            },
+            {
+              "description": "Major osseous defect, unspecified site",
+              "code": "M89.70",
+              "score": 0.5844762
+            },
+            {
+              "description": "Major laceration of body of pancreas",
+              "code": "S36.261",
+              "score": 0.56638765
+            },
+            {
+              "description": "Major histocompatibility complex class I deficiency",
+              "code": "D81.6",
+              "score": 0.5196453
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "joint is very small",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35496205,
+          "beginOffset": 376,
+          "endOffset": 395,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6153979
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.4115714
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stiffness of unspecified joint, not elsewhere classified",
+              "code": "M25.60",
+              "score": 0.7403565
+            },
+            {
+              "description": "Pain in unspecified joint",
+              "code": "M25.50",
+              "score": 0.7129575
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.6996007
+            },
+            {
+              "description": "Joint disorder, unspecified",
+              "code": "M25.9",
+              "score": 0.692231
+            },
+            {
+              "description": "Effusion, right knee",
+              "code": "M25.461",
+              "score": 0.6101013
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a9f48f77-b6a1-48bb-819d-bed77847e943"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a9f48f77-b6a1-48bb-819d-bed77847e943"
+          ],
+          "Content-Length": [
+            "3496"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3496",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:55 GMT",
+          "x-amzn-RequestId": "a9f48f77-b6a1-48bb-819d-bed77847e943"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9888475,
+          "beginOffset": 150,
+          "endOffset": 159,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Nuprin]",
+              "code": "206893",
+              "score": 0.06792933
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Capsule [Motrin]",
+              "code": "606990",
+              "score": 0.050846513
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eb4c9ed0-e232-4aa4-a04c-f9c67a4a0353"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eb4c9ed0-e232-4aa4-a04c-f9c67a4a0353"
+          ],
+          "Content-Length": [
+            "687"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "687",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:54 GMT",
+          "x-amzn-RequestId": "eb4c9ed0-e232-4aa4-a04c-f9c67a4a0353"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:55 PM"
+}

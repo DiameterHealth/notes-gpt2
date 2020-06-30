@@ -1,0 +1,574 @@
+{
+  "note": "at least annually. Patients with a history of stroke or ischemic attack often undergo invasive cardiac CT scans or angiograms to diagnose the cause of the bleeding, but for the patient who has chronic obstructive disease, the CT scan results are useless as an initial indication of future bleed on a follow-up visit. The patient has chronic obstructive pulmonary disease and requires follow-up with a pulmonologist at least annually.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 416,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 46,
+          "endOffset": 52,
+          "score": 0.97796726,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96790296
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 56,
+          "endOffset": 71,
+          "score": 0.97625685,
+          "text": "ischemic attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9583279
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 95,
+          "endOffset": 111,
+          "score": 0.554833,
+          "text": "cardiac CT scans",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 115,
+          "endOffset": 125,
+          "score": 0.9396791,
+          "text": "angiograms",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 155,
+          "endOffset": 163,
+          "score": 0.97570133,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63070256
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 201,
+          "endOffset": 220,
+          "score": 0.9824671,
+          "text": "obstructive disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9343742
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98432446,
+              "relationshipScore": 0.9999951,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 193,
+              "endOffset": 200,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 226,
+          "endOffset": 233,
+          "score": 0.98451984,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 289,
+          "endOffset": 294,
+          "score": 0.8148589,
+          "text": "bleed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70375484
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 341,
+          "endOffset": 370,
+          "score": 0.9492598,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9565941
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98916185,
+              "relationshipScore": 0.9999764,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 333,
+              "endOffset": 340,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98432446,
+            "id": 3,
+            "beginOffset": 193,
+            "endOffset": 200,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98916185,
+            "id": 6,
+            "beginOffset": 333,
+            "endOffset": 340,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fa615060-9b9c-4580-acf8-75066df46938"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fa615060-9b9c-4580-acf8-75066df46938"
+          ],
+          "Content-Length": [
+            "2567"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2567",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:23 GMT",
+          "x-amzn-RequestId": "fa615060-9b9c-4580-acf8-75066df46938"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 669,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97796726,
+          "beginOffset": 46,
+          "endOffset": 52,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96790296
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.8131903
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7282526
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.6448195
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.6345646
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.6305539
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ischemic attack",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97625685,
+          "beginOffset": 56,
+          "endOffset": 71,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9583279
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.79855824
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.78586173
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.7788484
+            },
+            {
+              "description": "Ischemic cardiomyopathy",
+              "code": "I25.5",
+              "score": 0.74016804
+            },
+            {
+              "description": "Cerebral ischemia",
+              "code": "I67.82",
+              "score": 0.7167719
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97570133,
+          "beginOffset": 155,
+          "endOffset": 163,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6307025
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.7315216
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.63417506
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.61529815
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.61171085
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a circulatory system organ or structure complicating a cardiac catheterization",
+              "code": "I97.410",
+              "score": 0.59085214
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "obstructive disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9824671,
+          "beginOffset": 201,
+          "endOffset": 220,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98432446,
+              "relationshipScore": 0.9999951,
+              "id": 3,
+              "beginOffset": 193,
+              "endOffset": 200,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9343742
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.8150763
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.79466283
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.73405087
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.7333098
+            },
+            {
+              "description": "Endocarditis, valve unspecified",
+              "code": "I38",
+              "score": 0.6807845
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "bleed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.814859,
+          "beginOffset": 289,
+          "endOffset": 294,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70375484
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.7178552
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.6995654
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.62423205
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.60249573
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a circulatory system organ or structure complicating a cardiac catheterization",
+              "code": "I97.410",
+              "score": 0.58863014
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9492598,
+          "beginOffset": 341,
+          "endOffset": 370,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98916173,
+              "relationshipScore": 0.9999764,
+              "id": 6,
+              "beginOffset": 333,
+              "endOffset": 340,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9565941
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7584668
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6247208
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.5311147
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.52058053
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.4717243
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2539fe5c-1636-4eeb-8bb7-dfc35e701b1a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2539fe5c-1636-4eeb-8bb7-dfc35e701b1a"
+          ],
+          "Content-Length": [
+            "5328"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5328",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:24 GMT",
+          "x-amzn-RequestId": "2539fe5c-1636-4eeb-8bb7-dfc35e701b1a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bebe4e8d-59ec-498a-b992-7eef3beb2271"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bebe4e8d-59ec-498a-b992-7eef3beb2271"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:23 GMT",
+          "x-amzn-RequestId": "bebe4e8d-59ec-498a-b992-7eef3beb2271"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:25 PM"
+}

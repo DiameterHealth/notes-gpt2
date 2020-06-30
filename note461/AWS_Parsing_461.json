@@ -1,0 +1,367 @@
+{
+  "note": "This patient is being treated with a PPI. The patient also reports a history of having frequent shortness of breath with activity and is being treated with a CPAP. I can see no other reason for such a finding. This particular patient has a history of having a very stressful work week and a recent surgery which has had its effects.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 314,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 37,
+          "endOffset": 40,
+          "score": 0.38466004,
+          "text": "PPI",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 37,
+          "endOffset": 40,
+          "score": 0.6797082,
+          "text": "PPI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 96,
+          "endOffset": 115,
+          "score": 0.9979201,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77280647
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.48580095,
+              "relationshipScore": 0.99986947,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 87,
+              "endOffset": 95,
+              "text": "frequent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 158,
+          "endOffset": 162,
+          "score": 0.4423636,
+          "text": "CPAP",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 265,
+          "endOffset": 274,
+          "score": 0.6126001,
+          "text": "stressful",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 291,
+          "endOffset": 297,
+          "score": 0.9999989,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.95809877,
+              "relationshipScore": 0.9846602,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 298,
+              "endOffset": 305,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 298,
+          "endOffset": 305,
+          "score": 0.95809877,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.48580095,
+            "id": 1,
+            "beginOffset": 87,
+            "endOffset": 95,
+            "text": "frequent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0a86f2aa-003b-450e-ad0e-289822d234b9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0a86f2aa-003b-450e-ad0e-289822d234b9"
+          ],
+          "Content-Length": [
+            "1843"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1843",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:11 GMT",
+          "x-amzn-RequestId": "0a86f2aa-003b-450e-ad0e-289822d234b9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 372,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9979201,
+          "beginOffset": 96,
+          "endOffset": 115,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4858006,
+              "relationshipScore": 0.99986947,
+              "id": 0,
+              "beginOffset": 87,
+              "endOffset": 95,
+              "text": "frequent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7728064
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.8975802
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.72221994
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.6944501
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.6574279
+            },
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.65582204
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "stressful",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6125999,
+          "beginOffset": 265,
+          "endOffset": 274,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stress, not elsewhere classified",
+              "code": "Z73.3",
+              "score": 0.66922855
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.5708628
+            },
+            {
+              "description": "Post-traumatic stress disorder, unspecified",
+              "code": "F43.10",
+              "score": 0.49938664
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.48315385
+            },
+            {
+              "description": "Stress incontinence (female) (male)",
+              "code": "N39.3",
+              "score": 0.46510383
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "66dc8769-ce96-4c1e-ba3f-9f5fa4ecda10"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "66dc8769-ce96-4c1e-ba3f-9f5fa4ecda10"
+          ],
+          "Content-Length": [
+            "1551"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1551",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:12 GMT",
+          "x-amzn-RequestId": "66dc8769-ce96-4c1e-ba3f-9f5fa4ecda10"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 485,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "PPI",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.38466004,
+          "beginOffset": 37,
+          "endOffset": 40,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "PPG-9",
+              "code": "1314210",
+              "score": 0.72372675
+            },
+            {
+              "description": "PPG-30",
+              "code": "1482540",
+              "score": 0.70658565
+            },
+            {
+              "description": "PPG-3",
+              "code": "1796120",
+              "score": 0.6905344
+            },
+            {
+              "description": "PPG-17",
+              "code": "1313179",
+              "score": 0.55876297
+            },
+            {
+              "description": "PPG-12",
+              "code": "1793745",
+              "score": 0.3261196
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a24ce80b-4d22-4f40-9abc-5e3393b173a1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a24ce80b-4d22-4f40-9abc-5e3393b173a1"
+          ],
+          "Content-Length": [
+            "552"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "552",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:12 GMT",
+          "x-amzn-RequestId": "a24ce80b-4d22-4f40-9abc-5e3393b173a1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:13 PM"
+}

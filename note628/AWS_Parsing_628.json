@@ -1,0 +1,937 @@
+{
+  "note": "(n\u003d27, average age 48 years, male: 69%, white: 76%, other: 11%). Patient reports with recent adverse events include myocardial infarction. Complications have included pulmonary embolisms, stroke, thrombosis and pulmonary hypertension. Patient has been a resident of Ohio (no other location noted). 1  In-Depth Description  Fluoride has been shown to reduce the risk of dental caries or periodontitis. This study evaluated the efficacy and safety of intranasal fluoride in patients presenting with flu or wheezing.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 407,
+    "data": {
+      "entities": [
+        {
+          "id": 16,
+          "beginOffset": 40,
+          "endOffset": 45,
+          "score": 0.6386366,
+          "text": "white",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9603715,
+              "relationshipScore": 0.999944,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 47,
+              "endOffset": 49,
+              "text": "76",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9932019,
+              "relationshipScore": 0.99999845,
+              "relationshipType": "TEST_UNIT",
+              "id": 18,
+              "beginOffset": 49,
+              "endOffset": 50,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 86,
+          "endOffset": 92,
+          "score": 0.99999726,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9635483,
+              "relationshipScore": 0.76980746,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 116,
+              "endOffset": 137,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9149787
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 86,
+          "endOffset": 92,
+          "score": 0.99999726,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.37249237,
+              "relationshipScore": 0.89086694,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 93,
+              "endOffset": 107,
+              "text": "adverse events",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 93,
+          "endOffset": 107,
+          "score": 0.37249237,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 116,
+          "endOffset": 137,
+          "score": 0.9635483,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9149787
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 167,
+          "endOffset": 186,
+          "score": 0.95607764,
+          "text": "pulmonary embolisms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92414415
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 188,
+          "endOffset": 194,
+          "score": 0.9904144,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95412666
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 196,
+          "endOffset": 206,
+          "score": 0.9817131,
+          "text": "thrombosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93519294
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 211,
+          "endOffset": 233,
+          "score": 0.94906735,
+          "text": "pulmonary hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9580398
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 266,
+          "endOffset": 270,
+          "score": 0.9478301,
+          "text": "Ohio",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 323,
+          "endOffset": 331,
+          "score": 0.7657174,
+          "text": "Fluoride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 369,
+          "endOffset": 382,
+          "score": 0.9848445,
+          "text": "dental caries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9303858
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 386,
+          "endOffset": 399,
+          "score": 0.97079945,
+          "text": "periodontitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9081388
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 460,
+          "endOffset": 468,
+          "score": 0.99670756,
+          "text": "fluoride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.81127924,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 1,
+              "beginOffset": 449,
+              "endOffset": 459,
+              "text": "intranasal",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 497,
+          "endOffset": 500,
+          "score": 0.972961,
+          "text": "flu",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49415135
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 504,
+          "endOffset": 512,
+          "score": 0.996527,
+          "text": "wheezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5639308
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.29335964,
+            "id": 14,
+            "beginOffset": 35,
+            "endOffset": 37,
+            "text": "69",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_UNIT",
+            "score": 0.99689025,
+            "id": 15,
+            "beginOffset": 37,
+            "endOffset": 38,
+            "text": "%",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "361ded50-9e5d-4db4-98ce-49431dfa830c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "361ded50-9e5d-4db4-98ce-49431dfa830c"
+          ],
+          "Content-Length": [
+            "4528"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4528",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:22 GMT",
+          "x-amzn-RequestId": "361ded50-9e5d-4db4-98ce-49431dfa830c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 446,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3724925,
+          "beginOffset": 93,
+          "endOffset": 107,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.6083092
+            },
+            {
+              "description": "Adverse effect of sulfonamides",
+              "code": "T37.0X5",
+              "score": 0.56908226
+            },
+            {
+              "description": "Unspecified effects of drowning and nonfatal submersion",
+              "code": "T75.1",
+              "score": 0.5220723
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.50818753
+            },
+            {
+              "description": "Unspecified effects of vibration",
+              "code": "T75.20",
+              "score": 0.48525387
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9635483,
+          "beginOffset": 116,
+          "endOffset": 137,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9149787
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8542473
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.8155092
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.7609423
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7414303
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.7275146
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pulmonary embolisms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95607764,
+          "beginOffset": 167,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92414415
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other pulmonary embolism without acute cor pulmonale",
+              "code": "I26.99",
+              "score": 0.8203058
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.76633006
+            },
+            {
+              "description": "Pulmonary embolism without acute cor pulmonale",
+              "code": "I26.9",
+              "score": 0.7101608
+            },
+            {
+              "description": "Other pulmonary embolism with acute cor pulmonale",
+              "code": "I26.09",
+              "score": 0.6752367
+            },
+            {
+              "description": "Chronic pulmonary embolism",
+              "code": "I27.82",
+              "score": 0.63647074
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9904144,
+          "beginOffset": 188,
+          "endOffset": 194,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9541268
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.79148966
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7511081
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.6706341
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.6151857
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.61349887
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "thrombosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.981713,
+          "beginOffset": 196,
+          "endOffset": 206,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93519294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Thrombosis due to cardiac prosthetic devices, implants and grafts",
+              "code": "T82.867",
+              "score": 0.7980642
+            },
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.789204
+            },
+            {
+              "description": "Intracardiac thrombosis, not elsewhere classified",
+              "code": "I51.3",
+              "score": 0.7871303
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified vein",
+              "code": "I82.90",
+              "score": 0.77226293
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified deep veins of unspecified lower extremity",
+              "code": "I82.409",
+              "score": 0.76848483
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pulmonary hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94906735,
+          "beginOffset": 211,
+          "endOffset": 233,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9580398
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.79768777
+            },
+            {
+              "description": "Primary pulmonary hypertension",
+              "code": "I27.0",
+              "score": 0.56653637
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.5657057
+            },
+            {
+              "description": "Secondary pulmonary arterial hypertension",
+              "code": "I27.21",
+              "score": 0.51816756
+            },
+            {
+              "description": "Secondary hypertension, unspecified",
+              "code": "I15.9",
+              "score": 0.4996427
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "dental caries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9848445,
+          "beginOffset": 369,
+          "endOffset": 382,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9303858
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dental caries",
+              "code": "K02",
+              "score": 0.61864835
+            },
+            {
+              "description": "Dental caries, unspecified",
+              "code": "K02.9",
+              "score": 0.591044
+            },
+            {
+              "description": "Periapical abscess without sinus",
+              "code": "K04.7",
+              "score": 0.55993116
+            },
+            {
+              "description": "Dental restoration status",
+              "code": "Z98.811",
+              "score": 0.54227126
+            },
+            {
+              "description": "Unspecified risk for dental caries",
+              "code": "Z91.849",
+              "score": 0.52956367
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "periodontitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97079945,
+          "beginOffset": 386,
+          "endOffset": 399,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9081387
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Aggressive periodontitis, unspecified",
+              "code": "K05.20",
+              "score": 0.43417245
+            },
+            {
+              "description": "Chronic periodontitis, unspecified",
+              "code": "K05.30",
+              "score": 0.41557747
+            },
+            {
+              "description": "Other periodontal diseases",
+              "code": "K05.5",
+              "score": 0.3908687
+            },
+            {
+              "description": "Chronic periodontitis, localized, severe",
+              "code": "K05.313",
+              "score": 0.38627172
+            },
+            {
+              "description": "Chronic periodontitis, generalized, unspecified severity",
+              "code": "K05.329",
+              "score": 0.3588653
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "flu",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.972961,
+          "beginOffset": 497,
+          "endOffset": 500,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49415135
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.81551915
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.6930719
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus",
+              "code": "J11",
+              "score": 0.6354361
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.61027145
+            },
+            {
+              "description": "Viral intestinal infection, unspecified",
+              "code": "A08.4",
+              "score": 0.5861435
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "wheezing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.996527,
+          "beginOffset": 504,
+          "endOffset": 512,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.56393087
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.850071
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.6524724
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.63231516
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.62877417
+            },
+            {
+              "description": "Postnasal drip",
+              "code": "R09.82",
+              "score": 0.5936736
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "328f1e6b-a63d-4696-b59e-7b191eb16e62"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "328f1e6b-a63d-4696-b59e-7b191eb16e62"
+          ],
+          "Content-Length": [
+            "7664"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7664",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:23 GMT",
+          "x-amzn-RequestId": "328f1e6b-a63d-4696-b59e-7b191eb16e62"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 664,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Fluoride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.76571745,
+          "beginOffset": 323,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Fluorine",
+              "code": "1310123",
+              "score": 0.9384169
+            },
+            {
+              "description": "Sodium Fluoride",
+              "code": "9873",
+              "score": 0.91745496
+            },
+            {
+              "description": "magnesium fluoride",
+              "code": "1435860",
+              "score": 0.8124922
+            },
+            {
+              "description": "Acidulated Phosphate Fluoride",
+              "code": "236",
+              "score": 0.4174854
+            },
+            {
+              "description": "silver fluoride",
+              "code": "1544125",
+              "score": 0.32350522
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fluoride",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99670756,
+          "beginOffset": 460,
+          "endOffset": 468,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.81127924,
+              "relationshipScore": 0.99999857,
+              "id": 1,
+              "beginOffset": 449,
+              "endOffset": 459,
+              "text": "intranasal",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Fluorine",
+              "code": "1310123",
+              "score": 0.89902353
+            },
+            {
+              "description": "Sodium Fluoride",
+              "code": "9873",
+              "score": 0.89876705
+            },
+            {
+              "description": "magnesium fluoride",
+              "code": "1435860",
+              "score": 0.69383097
+            },
+            {
+              "description": "Acidulated Phosphate Fluoride",
+              "code": "236",
+              "score": 0.30899438
+            },
+            {
+              "description": "yttrium fluoride",
+              "code": "1313762",
+              "score": 0.2880277
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6aec64be-414f-468e-b024-b8a29b244786"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6aec64be-414f-468e-b024-b8a29b244786"
+          ],
+          "Content-Length": [
+            "1350"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1350",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:23 GMT",
+          "x-amzn-RequestId": "6aec64be-414f-468e-b024-b8a29b244786"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:24 PM"
+}

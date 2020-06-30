@@ -1,0 +1,246 @@
+{
+  "note": "The history is consistent with a pre-existing atrial fibrillation. The patient should meet the diagnosis of PACE and undergo initial treatment including epinephrine. If the patient is unable to follow the initial treatment, the patient should receive continuous beta-blocker therapy for at least 8 h while the patient continues to follow the original treatment. Discussion:  The patient is a 48 y.o.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 372,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 46,
+          "endOffset": 65,
+          "score": 0.9761569,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9617978
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 153,
+          "endOffset": 164,
+          "score": 0.8602272,
+          "text": "epinephrine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 251,
+          "endOffset": 282,
+          "score": 0.88165694,
+          "text": "continuous beta-blocker therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 392,
+          "endOffset": 394,
+          "score": 0.9609022,
+          "text": "48",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "69f3fcc3-2673-4397-970c-3f22ba4bade1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "69f3fcc3-2673-4397-970c-3f22ba4bade1"
+          ],
+          "Content-Length": [
+            "747"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "747",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:53 GMT",
+          "x-amzn-RequestId": "69f3fcc3-2673-4397-970c-3f22ba4bade1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 982,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9761569,
+          "beginOffset": 46,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9617978
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.8401208
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.83530176
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.7846899
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.78275037
+            },
+            {
+              "description": "Unspecified atrial flutter",
+              "code": "I48.92",
+              "score": 0.6893961
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8a322c6b-4206-469c-8280-277cf92ba1f7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8a322c6b-4206-469c-8280-277cf92ba1f7"
+          ],
+          "Content-Length": [
+            "725"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "725",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:54 GMT",
+          "x-amzn-RequestId": "8a322c6b-4206-469c-8280-277cf92ba1f7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 480,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "epinephrine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.8602272,
+          "beginOffset": 153,
+          "endOffset": 164,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Epinephrine",
+              "code": "3992",
+              "score": 0.9168207
+            },
+            {
+              "description": "1 ML Epinephrine 1 MG/ML Injection",
+              "code": "1660014",
+              "score": 0.7236685
+            },
+            {
+              "description": "Epinephrine 1 MG/ML Injectable Solution",
+              "code": "310132",
+              "score": 0.5277522
+            },
+            {
+              "description": "NDA019430 0.3 ML Epinephrine 1 MG/ML Auto-Injector",
+              "code": "1870207",
+              "score": 0.25567546
+            },
+            {
+              "description": "NDA020800 0.15 ML Epinephrine 1 MG/ML Auto-Injector",
+              "code": "1870225",
+              "score": 0.2436552
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4344a72e-69c3-4b6c-b736-96f5c92e6fb7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4344a72e-69c3-4b6c-b736-96f5c92e6fb7"
+          ],
+          "Content-Length": [
+            "719"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "719",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:53 GMT",
+          "x-amzn-RequestId": "4344a72e-69c3-4b6c-b736-96f5c92e6fb7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:55 PM"
+}

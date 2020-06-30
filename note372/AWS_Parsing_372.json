@@ -1,0 +1,561 @@
+{
+  "note": "for 4 days. There is no history of infectious illness. Eligibility Criteria:  This program is for patients who are hospitalized for 1 day or more for the diagnosis of respiratory illness. Patient should be stable to the degree appropriate to the diagnosis and may have a history of mild fever or upper respiratory tract infections for more than 24 hours.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 618,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 35,
+          "endOffset": 53,
+          "score": 0.9393617,
+          "text": "infectious illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63801533
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9477587
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 132,
+          "endOffset": 137,
+          "score": 0.67449313,
+          "text": "1 day",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9694174,
+              "relationshipScore": 0.84423256,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 167,
+              "endOffset": 186,
+              "text": "respiratory illness",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7457592
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 167,
+          "endOffset": 186,
+          "score": 0.9694174,
+          "text": "respiratory illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7457592
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 287,
+          "endOffset": 292,
+          "score": 0.98644394,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5443661
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9731609,
+              "relationshipScore": 0.9411736,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 296,
+              "endOffset": 301,
+              "text": "upper",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9450558,
+              "relationshipScore": 0.48090556,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 302,
+              "endOffset": 319,
+              "text": "respiratory tract",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.44124886,
+              "relationshipScore": 0.989193,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 331,
+              "endOffset": 353,
+              "text": "for more than 24 hours",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 296,
+          "endOffset": 330,
+          "score": 0.7713636,
+          "text": "upper respiratory tract infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8827406
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44124886,
+              "relationshipScore": 0.9996414,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 331,
+              "endOffset": 353,
+              "text": "for more than 24 hours",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 302,
+          "endOffset": 319,
+          "score": 0.9450558,
+          "text": "respiratory tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 335,
+          "endOffset": 353,
+          "score": 0.78266644,
+          "text": "more than 24 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7713636,
+              "relationshipScore": 0.8749073,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 296,
+              "endOffset": 330,
+              "text": "upper respiratory tract infections",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8827406
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.42898268,
+            "id": 3,
+            "beginOffset": 132,
+            "endOffset": 137,
+            "text": "1 day",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9731609,
+            "id": 0,
+            "beginOffset": 296,
+            "endOffset": 301,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.44124886,
+            "id": 7,
+            "beginOffset": 331,
+            "endOffset": 353,
+            "text": "for more than 24 hours",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c37de03e-5862-4d6e-879d-db048d647d4d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c37de03e-5862-4d6e-879d-db048d647d4d"
+          ],
+          "Content-Length": [
+            "3472"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3472",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:41 GMT",
+          "x-amzn-RequestId": "c37de03e-5862-4d6e-879d-db048d647d4d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 534,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "infectious illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9393617,
+          "beginOffset": 35,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63801533
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94775856
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.75931346
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.75150436
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.65875316
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.65102744
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.63790023
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "respiratory illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9694174,
+          "beginOffset": 167,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7457592
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.7743608
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6997695
+            },
+            {
+              "description": "Respiratory tuberculosis unspecified",
+              "code": "A15.9",
+              "score": 0.68145424
+            },
+            {
+              "description": "Family history of other diseases of the respiratory system",
+              "code": "Z83.6",
+              "score": 0.6462271
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.6313203
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98644406,
+          "beginOffset": 287,
+          "endOffset": 292,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9731609,
+              "relationshipScore": 0.9411736,
+              "id": 5,
+              "beginOffset": 296,
+              "endOffset": 301,
+              "text": "upper",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9450559,
+              "relationshipScore": 0.48090556,
+              "id": 6,
+              "beginOffset": 302,
+              "endOffset": 319,
+              "text": "respiratory tract",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.44124907,
+              "relationshipScore": 0.989193,
+              "id": 7,
+              "beginOffset": 331,
+              "endOffset": 353,
+              "text": "for more than 24 hours",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5443661
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.79181224
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5400345
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45997298
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.4379124
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.40637988
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "upper respiratory tract infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77136356,
+          "beginOffset": 296,
+          "endOffset": 330,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.44124907,
+              "relationshipScore": 0.9996414,
+              "id": 7,
+              "beginOffset": 331,
+              "endOffset": 353,
+              "text": "for more than 24 hours",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8827406
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.725766
+            },
+            {
+              "description": "Disease of upper respiratory tract, unspecified",
+              "code": "J39.9",
+              "score": 0.6290233
+            },
+            {
+              "description": "Unspecified acute lower respiratory infection",
+              "code": "J22",
+              "score": 0.5498193
+            },
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.5122223
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.4784766
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7a201937-3b68-4738-8d28-5976fa650414"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7a201937-3b68-4738-8d28-5976fa650414"
+          ],
+          "Content-Length": [
+            "3594"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3594",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:42 GMT",
+          "x-amzn-RequestId": "7a201937-3b68-4738-8d28-5976fa650414"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "706524a4-78c5-4f87-ba7f-d69babfb0ca2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "706524a4-78c5-4f87-ba7f-d69babfb0ca2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:42 GMT",
+          "x-amzn-RequestId": "706524a4-78c5-4f87-ba7f-d69babfb0ca2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:43 PM"
+}

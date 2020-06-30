@@ -1,0 +1,372 @@
+{
+  "note": "________________________________________ ______ ______ __________________ [NAME REDACTED] has recently started using the medication to treat his prostate cancer. _______________________________________ ______ ______ __________________ [NAME REDACTED] is a 56 year old male with prostate cancer who has been on H\u0026 P for approximately two years. _______________________________________ ______ ______ __________________ [Name REDACTED] is a 52 year old male with prostate cancer also taking H\u0026P for approximately two years.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1249,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 145,
+          "endOffset": 153,
+          "score": 0.9765911,
+          "text": "prostate",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 145,
+          "endOffset": 160,
+          "score": 0.7169737,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9427861
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 256,
+          "endOffset": 258,
+          "score": 0.9999863,
+          "text": "56",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 278,
+          "endOffset": 286,
+          "score": 0.9684183,
+          "text": "prostate",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 278,
+          "endOffset": 293,
+          "score": 0.8326075,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95458937
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 438,
+          "endOffset": 440,
+          "score": 0.9999707,
+          "text": "52",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 460,
+          "endOffset": 468,
+          "score": 0.9641182,
+          "text": "prostate",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 460,
+          "endOffset": 475,
+          "score": 0.8531439,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9737371
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 510,
+          "endOffset": 519,
+          "score": 0.54281044,
+          "text": "two years",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8531439,
+              "relationshipScore": 0.76526517,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 460,
+              "endOffset": 475,
+              "text": "prostate cancer",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9737371
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b124b036-00f7-4228-a10d-9ba19f720ea3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b124b036-00f7-4228-a10d-9ba19f720ea3"
+          ],
+          "Content-Length": [
+            "1848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:55 GMT",
+          "x-amzn-RequestId": "b124b036-00f7-4228-a10d-9ba19f720ea3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1237,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7169737,
+          "beginOffset": 145,
+          "endOffset": 160,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9427861
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.66749805
+            },
+            {
+              "description": "Personal history of malignant neoplasm of prostate",
+              "code": "Z85.46",
+              "score": 0.5288874
+            },
+            {
+              "description": "Benign neoplasm of prostate",
+              "code": "D29.1",
+              "score": 0.45416012
+            },
+            {
+              "description": "Family history of malignant neoplasm of prostate",
+              "code": "Z80.42",
+              "score": 0.44614428
+            },
+            {
+              "description": "Disorder of prostate, unspecified",
+              "code": "N42.9",
+              "score": 0.43485543
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8326075,
+          "beginOffset": 278,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95458937
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.694949
+            },
+            {
+              "description": "Personal history of malignant neoplasm of prostate",
+              "code": "Z85.46",
+              "score": 0.57864934
+            },
+            {
+              "description": "Family history of malignant neoplasm of prostate",
+              "code": "Z80.42",
+              "score": 0.4726894
+            },
+            {
+              "description": "Benign neoplasm of prostate",
+              "code": "D29.1",
+              "score": 0.46649748
+            },
+            {
+              "description": "Disorder of prostate, unspecified",
+              "code": "N42.9",
+              "score": 0.43159482
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "prostate cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8531437,
+          "beginOffset": 460,
+          "endOffset": 475,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9737371
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.68229675
+            },
+            {
+              "description": "Personal history of malignant neoplasm of prostate",
+              "code": "Z85.46",
+              "score": 0.54773855
+            },
+            {
+              "description": "Family history of malignant neoplasm of prostate",
+              "code": "Z80.42",
+              "score": 0.45836422
+            },
+            {
+              "description": "Benign neoplasm of prostate",
+              "code": "D29.1",
+              "score": 0.44678214
+            },
+            {
+              "description": "Disorder of prostate, unspecified",
+              "code": "N42.9",
+              "score": 0.4150613
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8f7f5665-4d11-48a2-a03f-5f7c0bace508"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8f7f5665-4d11-48a2-a03f-5f7c0bace508"
+          ],
+          "Content-Length": [
+            "2231"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2231",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:57 GMT",
+          "x-amzn-RequestId": "8f7f5665-4d11-48a2-a03f-5f7c0bace508"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 695,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3239a265-15fb-4fd8-b1d1-91fb5ed7b26f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3239a265-15fb-4fd8-b1d1-91fb5ed7b26f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:56 GMT",
+          "x-amzn-RequestId": "3239a265-15fb-4fd8-b1d1-91fb5ed7b26f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:58 PM"
+}

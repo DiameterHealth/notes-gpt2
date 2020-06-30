@@ -1,0 +1,470 @@
+{
+  "note": "She was seen in the emergency room at 4PM and discharged with a full physical examination. Her labor lasted 12 hours with frequent contractions. Her midwife was scheduled to return to the hospital at 1AM on the morning of Jan 6th to assist with the next delivery. The delivery occurred with no fetal distress. An epidural was given. The patient had no adverse reactions.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 550,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 20,
+          "endOffset": 34,
+          "score": 0.9855891,
+          "text": "emergency room",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 69,
+          "endOffset": 89,
+          "score": 0.414742,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 95,
+          "endOffset": 100,
+          "score": 0.7320473,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 131,
+          "endOffset": 143,
+          "score": 0.99332523,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.78365743
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.34919354,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 122,
+              "endOffset": 130,
+              "text": "frequent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 222,
+          "endOffset": 229,
+          "score": 0.98291147,
+          "text": "Jan 6th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.33615187,
+              "relationshipScore": 0.69545144,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 254,
+              "endOffset": 262,
+              "text": "delivery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 222,
+          "endOffset": 229,
+          "score": 0.998831,
+          "text": "Jan 6th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 254,
+          "endOffset": 262,
+          "score": 0.33615187,
+          "text": "delivery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 294,
+          "endOffset": 308,
+          "score": 0.8190081,
+          "text": "fetal distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.82150155
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9475165
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 313,
+          "endOffset": 321,
+          "score": 0.2926453,
+          "text": "epidural",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 352,
+          "endOffset": 369,
+          "score": 0.9463122,
+          "text": "adverse reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.67825586
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9720381
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.34919354,
+            "id": 1,
+            "beginOffset": 122,
+            "endOffset": 130,
+            "text": "frequent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "479153af-94b8-4f54-86f1-23658385b208"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "479153af-94b8-4f54-86f1-23658385b208"
+          ],
+          "Content-Length": [
+            "2520"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2520",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:34 GMT",
+          "x-amzn-RequestId": "479153af-94b8-4f54-86f1-23658385b208"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1258,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7320473,
+          "beginOffset": 95,
+          "endOffset": 100,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.5627488
+            },
+            {
+              "description": "Preterm labor without delivery, unspecified trimester",
+              "code": "O60.00",
+              "score": 0.42431945
+            },
+            {
+              "description": "Personal history of pre-term labor",
+              "code": "Z87.51",
+              "score": 0.42304468
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.3949752
+            },
+            {
+              "description": "Preterm labor",
+              "code": "O60",
+              "score": 0.38730973
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99332523,
+          "beginOffset": 131,
+          "endOffset": 143,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.34919354,
+              "relationshipScore": 0.99999857,
+              "id": 1,
+              "beginOffset": 122,
+              "endOffset": 130,
+              "text": "frequent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.78365743
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.6973409
+            },
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.6788625
+            },
+            {
+              "description": "Unspecified premature depolarization",
+              "code": "I49.40",
+              "score": 0.63043404
+            },
+            {
+              "description": "Other premature depolarization",
+              "code": "I49.49",
+              "score": 0.59678644
+            },
+            {
+              "description": "Obstruction of gallbladder",
+              "code": "K82.0",
+              "score": 0.4970433
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fetal distress",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8190081,
+          "beginOffset": 294,
+          "endOffset": 308,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.82150155
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9475165
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute respiratory distress",
+              "code": "R06.03",
+              "score": 0.5426143
+            },
+            {
+              "description": "Obstructed labor, unspecified",
+              "code": "O66.9",
+              "score": 0.38497823
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.35042545
+            },
+            {
+              "description": "Benign lipomatous neoplasm, unspecified",
+              "code": "D17.9",
+              "score": 0.29804915
+            },
+            {
+              "description": "Other respiratory distress of newborn",
+              "code": "P22.8",
+              "score": 0.2695697
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "adverse reactions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9463122,
+          "beginOffset": 352,
+          "endOffset": 369,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6782558
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9720381
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.716079
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.71382457
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.6363201
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.6339006
+            },
+            {
+              "description": "Adverse effect of local astringents and local detergents",
+              "code": "T49.2X5",
+              "score": 0.6275062
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "286ce5d1-6707-4684-b1b1-1ad7d66ed467"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "286ce5d1-6707-4684-b1b1-1ad7d66ed467"
+          ],
+          "Content-Length": [
+            "3044"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3044",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:35 GMT",
+          "x-amzn-RequestId": "286ce5d1-6707-4684-b1b1-1ad7d66ed467"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 198,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9bc781e1-1f9f-41e3-bb38-44c201f9ed99"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9bc781e1-1f9f-41e3-bb38-44c201f9ed99"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:34 GMT",
+          "x-amzn-RequestId": "9bc781e1-1f9f-41e3-bb38-44c201f9ed99"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:36 PM"
+}

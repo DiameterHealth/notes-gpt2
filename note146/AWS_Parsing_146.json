@@ -1,0 +1,328 @@
+{
+  "note": "He continues to have severe pain with a large heart rate that is in a rhythm of T-waves and R-waves and cannot be managed on medication that has not been shown to affect the arrhythmia at all. He is considered at death\u0027s door due to lack of response to current treatment. Any advice given on the internet is based on his history and it is unlikely that he would have come in for care after seeking outside treatment.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 286,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 28,
+          "endOffset": 32,
+          "score": 0.9929396,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6214656
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97361654,
+              "relationshipScore": 0.5571037,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 46,
+              "endOffset": 51,
+              "text": "heart",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 46,
+          "endOffset": 51,
+          "score": 0.97361654,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 174,
+          "endOffset": 184,
+          "score": 0.91734487,
+          "text": "arrhythmia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7815314
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 213,
+          "endOffset": 218,
+          "score": 0.65110916,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6387114
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "692b80f1-3e9a-4675-b361-4e088e314f40"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "692b80f1-3e9a-4675-b361-4e088e314f40"
+          ],
+          "Content-Length": [
+            "1013"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1013",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:54 GMT",
+          "x-amzn-RequestId": "692b80f1-3e9a-4675-b361-4e088e314f40"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 440,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9929396,
+          "beginOffset": 28,
+          "endOffset": 32,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9736164,
+              "relationshipScore": 0.5571037,
+              "id": 1,
+              "beginOffset": 46,
+              "endOffset": 51,
+              "text": "heart",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.62146556
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.71733344
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.62796766
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.59799635
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5956376
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.56631166
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "arrhythmia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9173448,
+          "beginOffset": 174,
+          "endOffset": 184,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7815314
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.8581066
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.7307328
+            },
+            {
+              "description": "Other cardiac arrhythmias",
+              "code": "I49",
+              "score": 0.6033752
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.5718579
+            },
+            {
+              "description": "Conduction disorder, unspecified",
+              "code": "I45.9",
+              "score": 0.571426
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "death",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65110916,
+          "beginOffset": 213,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6387114
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.7569274
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.6955559
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.6911964
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.65322566
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.6401259
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ebef8036-37a0-4dc1-a155-1a346b10ce97"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ebef8036-37a0-4dc1-a155-1a346b10ce97"
+          ],
+          "Content-Length": [
+            "2184"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2184",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:54 GMT",
+          "x-amzn-RequestId": "ebef8036-37a0-4dc1-a155-1a346b10ce97"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 207,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4a877de6-364a-4baa-bfaf-912e1980fdb7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4a877de6-364a-4baa-bfaf-912e1980fdb7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:54 GMT",
+          "x-amzn-RequestId": "4a877de6-364a-4baa-bfaf-912e1980fdb7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:54 PM"
+}

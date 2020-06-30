@@ -1,0 +1,841 @@
+{
+  "note": "and ST elevation myocardial infarction is considered, and is likely to deteriorate to acute myocardial ischaemia with or without aortic aneurysm. Preliminary report: Pregnant woman  Clinical presentation: Strain of bryostatin analogue drug (1) that is highly active and, although a non-narcotic, is not orally active. Evaluation: Patient was in the acute phase of myocardial infarction. No abnormalities were found and the patient was put on 7+3 induction.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 475,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 17,
+          "endOffset": 38,
+          "score": 0.4374098,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9009486
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 92,
+          "endOffset": 112,
+          "score": 0.9235423,
+          "text": "myocardial ischaemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93173367
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73603946,
+              "relationshipScore": 0.999064,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 86,
+              "endOffset": 91,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 129,
+          "endOffset": 144,
+          "score": 0.9204961,
+          "text": "aortic aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9094881
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81944466
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73603946,
+              "relationshipScore": 0.83035356,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 86,
+              "endOffset": 91,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 166,
+          "endOffset": 174,
+          "score": 0.9869524,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9379766
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 205,
+          "endOffset": 211,
+          "score": 0.40689462,
+          "text": "Strain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 252,
+          "endOffset": 265,
+          "score": 0.49023944,
+          "text": "highly active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44444233
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41527364
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 282,
+          "endOffset": 294,
+          "score": 0.76250017,
+          "text": "non-narcotic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43546104
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 303,
+          "endOffset": 316,
+          "score": 0.36650953,
+          "text": "orally active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6745085
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7271954
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 364,
+          "endOffset": 385,
+          "score": 0.9312212,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88529974
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87618196,
+              "relationshipScore": 0.9304356,
+              "relationshipType": "ACUITY",
+              "id": 9,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 390,
+          "endOffset": 403,
+          "score": 0.788759,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.8613931
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.49171686,
+            "id": 12,
+            "beginOffset": 4,
+            "endOffset": 52,
+            "text": "ST elevation myocardial infarction is considered",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.73603946,
+            "id": 1,
+            "beginOffset": 86,
+            "endOffset": 91,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.43793583,
+            "id": 13,
+            "beginOffset": 121,
+            "endOffset": 144,
+            "text": "without aortic aneurysm",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.87618196,
+            "id": 9,
+            "beginOffset": 349,
+            "endOffset": 354,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c30e289-0576-4355-9c3d-00f890ecef2e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c30e289-0576-4355-9c3d-00f890ecef2e"
+          ],
+          "Content-Length": [
+            "3664"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3664",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:09 GMT",
+          "x-amzn-RequestId": "0c30e289-0576-4355-9c3d-00f890ecef2e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 700,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4374099,
+          "beginOffset": 17,
+          "endOffset": 38,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90094846
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7626717
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.7319863
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7200645
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.7169861
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7011678
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "myocardial ischaemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9235423,
+          "beginOffset": 92,
+          "endOffset": 112,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73603916,
+              "relationshipScore": 0.999064,
+              "id": 1,
+              "beginOffset": 86,
+              "endOffset": 91,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93173367
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other myocardial infarction type",
+              "code": "I21.A9",
+              "score": 0.68191403
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.5955461
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.5669013
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.553293
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.55005795
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "aortic aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9204961,
+          "beginOffset": 129,
+          "endOffset": 144,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73603916,
+              "relationshipScore": 0.83035356,
+              "id": 1,
+              "beginOffset": 86,
+              "endOffset": 91,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9094881
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.81944466
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Aortic aneurysm of unspecified site, without rupture",
+              "code": "I71.9",
+              "score": 0.60916615
+            },
+            {
+              "description": "Abdominal aortic aneurysm, without rupture",
+              "code": "I71.4",
+              "score": 0.574608
+            },
+            {
+              "description": "Thoracic aortic aneurysm, without rupture",
+              "code": "I71.2",
+              "score": 0.56781334
+            },
+            {
+              "description": "Aneurysm of heart",
+              "code": "I25.3",
+              "score": 0.46452582
+            },
+            {
+              "description": "Aneurysm of unspecified site",
+              "code": "I72.9",
+              "score": 0.4630846
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9869523,
+          "beginOffset": 166,
+          "endOffset": 174,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9379766
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6988939
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.57620823
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.53902996
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5364166
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.4825008
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Strain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40689453,
+          "beginOffset": 205,
+          "endOffset": 211,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5120479
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon at neck level",
+              "code": "S16.1",
+              "score": 0.44020447
+            },
+            {
+              "description": "Strain of muscle and tendon of unspecified wall of thorax",
+              "code": "S29.019",
+              "score": 0.4200739
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.36812153
+            },
+            {
+              "description": "Stress, not elsewhere classified",
+              "code": "Z73.3",
+              "score": 0.3565293
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "highly active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49023917,
+          "beginOffset": 252,
+          "endOffset": 265,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.44444233
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41527364
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hyperkalemia",
+              "code": "E87.5",
+              "score": 0.554546
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.5543115
+            },
+            {
+              "description": "Risk for dental caries, high",
+              "code": "Z91.843",
+              "score": 0.4885124
+            },
+            {
+              "description": "Pure hypercholesterolemia, unspecified",
+              "code": "E78.00",
+              "score": 0.48287606
+            },
+            {
+              "description": "Bilateral high scrotal testes",
+              "code": "Q53.23",
+              "score": 0.47571728
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "non-narcotic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.76250017,
+          "beginOffset": 282,
+          "endOffset": 294,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.43546095
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6805311
+            },
+            {
+              "description": "Poisoning by unspecified narcotics, accidental (unintentional)",
+              "code": "T40.601",
+              "score": 0.6417028
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.61414146
+            },
+            {
+              "description": "Non-Hodgkin lymphoma, unspecified, unspecified site",
+              "code": "C85.90",
+              "score": 0.5981689
+            },
+            {
+              "description": "Non-pressure chronic ulcer of other part of right foot with unspecified severity",
+              "code": "L97.519",
+              "score": 0.56736565
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "orally active",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.36650953,
+          "beginOffset": 303,
+          "endOffset": 316,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6745086
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7271954
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified lesions of oral mucosa",
+              "code": "K13.70",
+              "score": 0.68863136
+            },
+            {
+              "description": "Open bite of oral cavity",
+              "code": "S01.552",
+              "score": 0.66435003
+            },
+            {
+              "description": "Oral mucositis (ulcerative), unspecified",
+              "code": "K12.30",
+              "score": 0.635511
+            },
+            {
+              "description": "Leukoplakia of oral mucosa, including tongue",
+              "code": "K13.21",
+              "score": 0.57576364
+            },
+            {
+              "description": "Other forms of stomatitis",
+              "code": "K12.1",
+              "score": 0.5596083
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93122107,
+          "beginOffset": 364,
+          "endOffset": 385,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.87618184,
+              "relationshipScore": 0.9304356,
+              "id": 9,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88529974
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8844217
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.88362426
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.8222448
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.8208004
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.813505
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.788759,
+          "beginOffset": 390,
+          "endOffset": 403,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.8613932
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.7946982
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.77277905
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.75450397
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.73814523
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.72147524
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b6941101-9c39-4dda-aefe-edee1816eff0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b6941101-9c39-4dda-aefe-edee1816eff0"
+          ],
+          "Content-Length": [
+            "8009"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8009",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:09 GMT",
+          "x-amzn-RequestId": "b6941101-9c39-4dda-aefe-edee1816eff0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1500779c-382a-4dfb-bbdb-cdf091cbe413"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1500779c-382a-4dfb-bbdb-cdf091cbe413"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:09 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:09 GMT",
+          "x-amzn-RequestId": "1500779c-382a-4dfb-bbdb-cdf091cbe413"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:10 PM"
+}

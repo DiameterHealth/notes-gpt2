@@ -1,0 +1,527 @@
+{
+  "note": ". Her vital signs show a mild pulse, blood pressure 60/40, respiratory rate 24, respirations 3/hr. After leaving the hospital, she felt dizzy and lightheaded. She described having to sit at the table in the hospital waiting room. She described dizziness and lightheadedness that felt like she was going to fall over, and she had to be careful to keep her head up when she talked.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 648,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 6,
+          "endOffset": 17,
+          "score": 0.95098376,
+          "text": "vital signs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 30,
+          "endOffset": 35,
+          "score": 0.973924,
+          "text": "pulse",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8542609,
+              "relationshipScore": 0.9999542,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 25,
+              "endOffset": 29,
+              "text": "mild",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 37,
+          "endOffset": 51,
+          "score": 0.9994497,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98138213,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 52,
+              "endOffset": 57,
+              "text": "60/40",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 59,
+          "endOffset": 75,
+          "score": 0.99660945,
+          "text": "respiratory rate",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9914185,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 76,
+              "endOffset": 78,
+              "text": "24",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 80,
+          "endOffset": 92,
+          "score": 0.86798996,
+          "text": "respirations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7825414,
+              "relationshipScore": 0.9999658,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 93,
+              "endOffset": 94,
+              "text": "3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.33980677,
+              "relationshipScore": 0.9999937,
+              "relationshipType": "TEST_UNIT",
+              "id": 15,
+              "beginOffset": 95,
+              "endOffset": 97,
+              "text": "hr",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 136,
+          "endOffset": 141,
+          "score": 0.9858278,
+          "text": "dizzy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7348761
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 146,
+          "endOffset": 157,
+          "score": 0.99546117,
+          "text": "lightheaded",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69393057
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 244,
+          "endOffset": 253,
+          "score": 0.9976858,
+          "text": "dizziness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9073078
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 258,
+          "endOffset": 273,
+          "score": 0.9967989,
+          "text": "lightheadedness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.87125075
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 306,
+          "endOffset": 310,
+          "score": 0.5352131,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 355,
+          "endOffset": 359,
+          "score": 0.9389947,
+          "text": "head",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "11832f60-40cc-401e-a521-28cb1ee5206f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "11832f60-40cc-401e-a521-28cb1ee5206f"
+          ],
+          "Content-Length": [
+            "3095"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3095",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:48 GMT",
+          "x-amzn-RequestId": "11832f60-40cc-401e-a521-28cb1ee5206f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 411,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "dizzy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9858278,
+          "beginOffset": 136,
+          "endOffset": 141,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.73487604
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.75295144
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.36495852
+            },
+            {
+              "description": "Vertigo from infrasound",
+              "code": "T75.23",
+              "score": 0.354017
+            },
+            {
+              "description": "Other peripheral vertigo",
+              "code": "H81.39",
+              "score": 0.30469474
+            },
+            {
+              "description": "Vertigo of central origin",
+              "code": "H81.4",
+              "score": 0.26912382
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "lightheaded",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99546117,
+          "beginOffset": 146,
+          "endOffset": 157,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6939305
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.8831319
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.53325945
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.51174235
+            },
+            {
+              "description": "Other peripheral vertigo",
+              "code": "H81.39",
+              "score": 0.43505338
+            },
+            {
+              "description": "Vertigo from infrasound",
+              "code": "T75.23",
+              "score": 0.41282326
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "dizziness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9976858,
+          "beginOffset": 244,
+          "endOffset": 253,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9073078
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.82445925
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.40188268
+            },
+            {
+              "description": "Vertigo from infrasound",
+              "code": "T75.23",
+              "score": 0.32564157
+            },
+            {
+              "description": "Other peripheral vertigo",
+              "code": "H81.39",
+              "score": 0.31771857
+            },
+            {
+              "description": "Other peripheral vertigo, unspecified ear",
+              "code": "H81.399",
+              "score": 0.28510728
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "lightheadedness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9967989,
+          "beginOffset": 258,
+          "endOffset": 273,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8712507
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.8406358
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.51005715
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.5056324
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.49016297
+            },
+            {
+              "description": "Concussion with loss of consciousness of unspecified duration",
+              "code": "S06.0X9",
+              "score": 0.46950814
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "fall",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.53521305,
+          "beginOffset": 306,
+          "endOffset": 310,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified fall",
+              "code": "W19",
+              "score": 0.81346285
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.78798956
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.7497086
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.7343586
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.7279464
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "65f90205-c101-4fe9-b813-a04fe87adb9a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "65f90205-c101-4fe9-b813-a04fe87adb9a"
+          ],
+          "Content-Length": [
+            "3279"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3279",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:49 GMT",
+          "x-amzn-RequestId": "65f90205-c101-4fe9-b813-a04fe87adb9a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 216,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6f654307-38d5-4606-9d3a-1cff06f0d2ac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6f654307-38d5-4606-9d3a-1cff06f0d2ac"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:48 GMT",
+          "x-amzn-RequestId": "6f654307-38d5-4606-9d3a-1cff06f0d2ac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:49 PM"
+}

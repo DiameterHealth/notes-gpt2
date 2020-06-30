@@ -1,0 +1,623 @@
+{
+  "note": "_____________________________ Patient has been taking H1N1 vaccination for the past three months _____________________________ Patient has had some GI bleeding with bloody stools. _____________________________ Patient has had blood stools for the past 90 minutes _____________________________ Patient reports blood in their stool. _____________________________ Patient reports he can\u0027t get to a doctor because of a lack of transportation _____________________________ Patient says his condition is improving, but is still vomiting blood _____________________________ Subject wants to go to the ER but hasn\u0027t gone for 3 days _____________________________ Subject wants to be home by the end of the day _____________________________ Subject has been to the ER 4 times in 1 month.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1795,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 54,
+          "endOffset": 70,
+          "score": 0.9411023,
+          "text": "H1N1 vaccination",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 54,
+          "endOffset": 70,
+          "score": 0.9061593,
+          "text": "H1N1 vaccination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 79,
+          "endOffset": 96,
+          "score": 0.99551195,
+          "text": "past three months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.9411023,
+              "relationshipScore": 0.5349637,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 54,
+              "endOffset": 70,
+              "text": "H1N1 vaccination",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 79,
+          "endOffset": 96,
+          "score": 0.99551195,
+          "text": "past three months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.9061593,
+              "relationshipScore": 0.5349637,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 54,
+              "endOffset": 70,
+              "text": "H1N1 vaccination",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 148,
+          "endOffset": 150,
+          "score": 0.52039385,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 148,
+          "endOffset": 159,
+          "score": 0.68299395,
+          "text": "GI bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.665488
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 165,
+          "endOffset": 178,
+          "score": 0.7588475,
+          "text": "bloody stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8271172
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 226,
+          "endOffset": 238,
+          "score": 0.8295387,
+          "text": "blood stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78900826
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 247,
+          "endOffset": 254,
+          "score": 0.6197104,
+          "text": "past 90",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8295387,
+              "relationshipScore": 0.660169,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 226,
+              "endOffset": 238,
+              "text": "blood stools",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.78900826
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 309,
+          "endOffset": 329,
+          "score": 0.6792071,
+          "text": "blood in their stool",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.69788826
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 485,
+          "endOffset": 507,
+          "score": 0.38452706,
+          "text": "condition is improving",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6059403
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 522,
+          "endOffset": 530,
+          "score": 0.50432414,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 594,
+          "endOffset": 596,
+          "score": 0.9977285,
+          "text": "ER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 755,
+          "endOffset": 757,
+          "score": 0.9558725,
+          "text": "ER",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5ac0ad85-dcf8-49ec-9351-82f00242ffac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5ac0ad85-dcf8-49ec-9351-82f00242ffac"
+          ],
+          "Content-Length": [
+            "3240"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3240",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:31 GMT",
+          "x-amzn-RequestId": "5ac0ad85-dcf8-49ec-9351-82f00242ffac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2074,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "GI bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6829936,
+          "beginOffset": 148,
+          "endOffset": 159,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6654879
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.7469268
+            },
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.54778844
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.47737503
+            },
+            {
+              "description": "Coagulation defect, unspecified",
+              "code": "D68.9",
+              "score": 0.44359487
+            },
+            {
+              "description": "Hemorrhage of anus and rectum",
+              "code": "K62.5",
+              "score": 0.4415293
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bloody stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7588475,
+          "beginOffset": 165,
+          "endOffset": 178,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8271172
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.88463557
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.79612756
+            },
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.7827176
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.77601254
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.7618606
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "blood stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8295387,
+          "beginOffset": 226,
+          "endOffset": 238,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7890082
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.78401625
+            },
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.7129024
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.7100505
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.69192994
+            },
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.6769298
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "blood in their stool",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6792071,
+          "beginOffset": 309,
+          "endOffset": 329,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6978882
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.808363
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.8044526
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.7778647
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.76290935
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.74093354
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "condition is improving",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38452706,
+          "beginOffset": 485,
+          "endOffset": 507,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6059401
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.6621241
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.60759944
+            },
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.56373364
+            },
+            {
+              "description": "Encounter for screening for other disorder",
+              "code": "Z13.89",
+              "score": 0.48060128
+            },
+            {
+              "description": "Unspecified degenerated conditions of globe",
+              "code": "H44.50",
+              "score": 0.4585268
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.50432426,
+          "beginOffset": 522,
+          "endOffset": 530,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.73581237
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.71669424
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5495498
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.5463046
+            },
+            {
+              "description": "Hematemesis",
+              "code": "K92.0",
+              "score": 0.5140378
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b26664e2-ad45-4e68-98bf-706b239674ae"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b26664e2-ad45-4e68-98bf-706b239674ae"
+          ],
+          "Content-Length": [
+            "4074"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:33 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4074",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:33 GMT",
+          "x-amzn-RequestId": "b26664e2-ad45-4e68-98bf-706b239674ae"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1318,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "H1N1 vaccination",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9411023,
+          "beginOffset": 54,
+          "endOffset": 70,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "influenza A virus (H1N1) antigen",
+              "code": "1657128",
+              "score": 0.90314204
+            },
+            {
+              "description": "Sodium iodide I131",
+              "code": "91535",
+              "score": 0.6586767
+            },
+            {
+              "description": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-181 (H1N1) strain",
+              "code": "1006250",
+              "score": 0.39836094
+            },
+            {
+              "description": "Influenza Virus Vaccine, Inactivated A-California-07-2009 X-179A (H1N1) strain",
+              "code": "1005929",
+              "score": 0.35443735
+            },
+            {
+              "description": "influenza A virus (H5N1) antigen",
+              "code": "1804260",
+              "score": 0.3464459
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9b9828e9-470a-43e7-9ee6-fe0b69bb8376"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9b9828e9-470a-43e7-9ee6-fe0b69bb8376"
+          ],
+          "Content-Length": [
+            "775"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "775",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:32 GMT",
+          "x-amzn-RequestId": "9b9828e9-470a-43e7-9ee6-fe0b69bb8376"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:34 PM"
+}

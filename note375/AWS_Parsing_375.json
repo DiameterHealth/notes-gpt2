@@ -1,0 +1,273 @@
+{
+  "note": ". (A) The patient can tolerate minimal effort at exercise, however, the patient was unable to tolerate walking for more than 5 steps. (B) The patient can tolerate a few steps of moderate intensity from a chair over 5–10 minutes. (C) The patient is able to walk around the neighborhood unassisted but complains of difficulty walking over obstacles or steps while at rest.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 234,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 84,
+          "endOffset": 110,
+          "score": 0.75824577,
+          "text": "unable to tolerate walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5938606
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 248,
+          "endOffset": 260,
+          "score": 0.8165482,
+          "text": "able to walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 313,
+          "endOffset": 331,
+          "score": 0.9415187,
+          "text": "difficulty walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f70b101f-14bb-42c6-8ffc-852a838c7ba4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f70b101f-14bb-42c6-8ffc-852a838c7ba4"
+          ],
+          "Content-Length": [
+            "577"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "577",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:46 GMT",
+          "x-amzn-RequestId": "f70b101f-14bb-42c6-8ffc-852a838c7ba4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 378,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "unable to tolerate walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.75824577,
+          "beginOffset": 84,
+          "endOffset": 110,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59386057
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8190774
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.76891226
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.74038213
+            },
+            {
+              "description": "Other disorders of electrolyte and fluid balance, not elsewhere classified",
+              "code": "E87.8",
+              "score": 0.7146151
+            },
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.679306
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "able to walk",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8165482,
+          "beginOffset": 248,
+          "endOffset": 260,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.75585055
+            },
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.6912878
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.5461024
+            },
+            {
+              "description": "Walked into wall",
+              "code": "W22.01",
+              "score": 0.49382064
+            },
+            {
+              "description": "Walked into lamppost",
+              "code": "W22.02",
+              "score": 0.46731547
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "difficulty walking",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9415187,
+          "beginOffset": 313,
+          "endOffset": 331,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.7901659
+            },
+            {
+              "description": "Unsteadiness on feet",
+              "code": "R26.81",
+              "score": 0.5519266
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.5408368
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.48686042
+            },
+            {
+              "description": "Feeding difficulties",
+              "code": "R63.3",
+              "score": 0.45467424
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eae28b98-1b23-426e-894c-8a474665989d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eae28b98-1b23-426e-894c-8a474665989d"
+          ],
+          "Content-Length": [
+            "2091"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2091",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:46 GMT",
+          "x-amzn-RequestId": "eae28b98-1b23-426e-894c-8a474665989d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 238,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "559afee3-3e9a-4442-9745-2a224212f3d4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "559afee3-3e9a-4442-9745-2a224212f3d4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:46 GMT",
+          "x-amzn-RequestId": "559afee3-3e9a-4442-9745-2a224212f3d4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:47 PM"
+}

@@ -1,0 +1,978 @@
+{
+  "note": "The patient is in very high overall health and is currently under a medical care management. There is no other coexisting condition that is of concern. This is a high-risk patient for anaphylaxis and there needs to be an immediate, appropriate, and documented evaluation. The patient presents with a history of GERD and concerns regarding sleep apnea. PATIENT\u0027S CASE PRESENTS: SUMMARY The patient presents with a history of sleep apnea, history of allergy to wheat including prior food sensitivities, history of hay fever and hives, history of allergy to peanuts, history of seasonal allergies including hay Fever, allergic rhinitis, and a history of a past bout of atopic eczema.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 833,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 111,
+          "endOffset": 131,
+          "score": 0.41357523,
+          "text": "coexisting condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4656244
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88192344
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 184,
+          "endOffset": 195,
+          "score": 0.98839206,
+          "text": "anaphylaxis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8791648
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 311,
+          "endOffset": 315,
+          "score": 0.99790263,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.944439
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 339,
+          "endOffset": 350,
+          "score": 0.9703569,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.895684
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 424,
+          "endOffset": 435,
+          "score": 0.98965037,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8689188
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 448,
+          "endOffset": 455,
+          "score": 0.43160686,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 475,
+          "endOffset": 480,
+          "score": 0.9999546,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.43576315,
+              "relationshipScore": 0.78682625,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 481,
+              "endOffset": 499,
+              "text": "food sensitivities",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.49432436
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.45716682
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 481,
+          "endOffset": 499,
+          "score": 0.43576315,
+          "text": "food sensitivities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49432436
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45716682
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 512,
+          "endOffset": 521,
+          "score": 0.9751209,
+          "text": "hay fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56488955
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 526,
+          "endOffset": 531,
+          "score": 0.9956939,
+          "text": "hives",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7460046
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 544,
+          "endOffset": 562,
+          "score": 0.6222245,
+          "text": "allergy to peanuts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4618849
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 575,
+          "endOffset": 593,
+          "score": 0.98656464,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8029346
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 604,
+          "endOffset": 613,
+          "score": 0.98391724,
+          "text": "hay Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40521085
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.652099
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 615,
+          "endOffset": 632,
+          "score": 0.98072857,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83721566
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 666,
+          "endOffset": 679,
+          "score": 0.969626,
+          "text": "atopic eczema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8874723
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "058b56e2-5d5f-49f8-81e2-167aa1e7c1d2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "058b56e2-5d5f-49f8-81e2-167aa1e7c1d2"
+          ],
+          "Content-Length": [
+            "3426"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3426",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:16 GMT",
+          "x-amzn-RequestId": "058b56e2-5d5f-49f8-81e2-167aa1e7c1d2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 597,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "coexisting condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41357538,
+          "beginOffset": 111,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46562442
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.88192344
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.4346771
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.41090256
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.40955156
+            },
+            {
+              "description": "Other specified pleural conditions",
+              "code": "J94.8",
+              "score": 0.40243185
+            },
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.38208348
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "anaphylaxis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98839206,
+          "beginOffset": 184,
+          "endOffset": 195,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8791648
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Anaphylactic reaction due to adverse effect of correct drug or medicament properly administered",
+              "code": "T88.6",
+              "score": 0.5713634
+            },
+            {
+              "description": "Anaphylactic shock, unspecified",
+              "code": "T78.2",
+              "score": 0.49229798
+            },
+            {
+              "description": "Anaphylactic reaction due to other food products",
+              "code": "T78.09",
+              "score": 0.4486351
+            },
+            {
+              "description": "Personal history of anaphylaxis",
+              "code": "Z87.892",
+              "score": 0.37220228
+            },
+            {
+              "description": "Anaphylactic reaction due to peanuts",
+              "code": "T78.01",
+              "score": 0.28146616
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99790263,
+          "beginOffset": 311,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9444389
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.8084111
+            },
+            {
+              "description": "Gastro-esophageal reflux disease with esophagitis",
+              "code": "K21.0",
+              "score": 0.6343305
+            },
+            {
+              "description": "Vesicoureteral-reflux, unspecified",
+              "code": "N13.70",
+              "score": 0.4956229
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.49205485
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.48684505
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9703569,
+          "beginOffset": 339,
+          "endOffset": 350,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.895684
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.69627845
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.5418891
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.45984417
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.33605614
+            },
+            {
+              "description": "Sleep disorder not due to a substance or known physiological condition, unspecified",
+              "code": "F51.9",
+              "score": 0.2832507
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98965037,
+          "beginOffset": 424,
+          "endOffset": 435,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8689188
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.68215114
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.4944954
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.40948963
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.32181457
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.30631655
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "allergy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4316068,
+          "beginOffset": 448,
+          "endOffset": 455,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6748815
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.63339585
+            },
+            {
+              "description": "Allergy status to sulfonamides status",
+              "code": "Z88.2",
+              "score": 0.63295925
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.6054465
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.577182
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "food sensitivities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4357634,
+          "beginOffset": 481,
+          "endOffset": 499,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49432445
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45716676
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.45158613
+            },
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.4363444
+            },
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.42917946
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.4145656
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.36240396
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "hay fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9751209,
+          "beginOffset": 512,
+          "endOffset": 521,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.56488943
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6117316
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4193038
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.39377844
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.3580524
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.3478854
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "hives",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9956939,
+          "beginOffset": 526,
+          "endOffset": 531,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7460046
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.72431827
+            },
+            {
+              "description": "Urticaria, unspecified",
+              "code": "L50.9",
+              "score": 0.6761837
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.5000854
+            },
+            {
+              "description": "Urticaria",
+              "code": "L50",
+              "score": 0.4884123
+            },
+            {
+              "description": "Deficiency of other specified B group vitamins",
+              "code": "E53.8",
+              "score": 0.4801112
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "allergy to peanuts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6222244,
+          "beginOffset": 544,
+          "endOffset": 562,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4618849
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6837107
+            },
+            {
+              "description": "Allergy to peanuts",
+              "code": "Z91.010",
+              "score": 0.67542934
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.63859004
+            },
+            {
+              "description": "Bee allergy status",
+              "code": "Z91.030",
+              "score": 0.6256619
+            },
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.62451464
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98656464,
+          "beginOffset": 575,
+          "endOffset": 593,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.80293447
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.64237195
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.33636025
+            },
+            {
+              "description": "Other insect allergy status",
+              "code": "Z91.038",
+              "score": 0.33312932
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.32639912
+            },
+            {
+              "description": "Allergy to other foods",
+              "code": "Z91.018",
+              "score": 0.3169396
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "hay Fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98391724,
+          "beginOffset": 604,
+          "endOffset": 613,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40521085
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6520991
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.5875427
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.39827427
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.33534965
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.32857352
+            },
+            {
+              "description": "Allergic rhinitis due to pollen",
+              "code": "J30.1",
+              "score": 0.3061517
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "allergic rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98072857,
+          "beginOffset": 615,
+          "endOffset": 632,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83721566
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.797823
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.60948545
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.5313033
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.5297675
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.5227419
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "atopic eczema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.969626,
+          "beginOffset": 666,
+          "endOffset": 679,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8874723
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of diseases of the skin and subcutaneous tissue",
+              "code": "Z87.2",
+              "score": 0.42917043
+            },
+            {
+              "description": "Allergic contact dermatitis, unspecified cause",
+              "code": "L23.9",
+              "score": 0.38265523
+            },
+            {
+              "description": "Dermatitis, unspecified",
+              "code": "L30.9",
+              "score": 0.33451307
+            },
+            {
+              "description": "Atopic dermatitis, unspecified",
+              "code": "L20.9",
+              "score": 0.3040468
+            },
+            {
+              "description": "Unspecified contact dermatitis, unspecified cause",
+              "code": "L25.9",
+              "score": 0.28431764
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2dde4dc4-0607-40e5-825e-2c14e0e30d14"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2dde4dc4-0607-40e5-825e-2c14e0e30d14"
+          ],
+          "Content-Length": [
+            "9915"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "9915",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:17 GMT",
+          "x-amzn-RequestId": "2dde4dc4-0607-40e5-825e-2c14e0e30d14"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 330,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cdd4e6cc-c751-4f53-8ef3-37a27da98a1d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cdd4e6cc-c751-4f53-8ef3-37a27da98a1d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:16 GMT",
+          "x-amzn-RequestId": "cdd4e6cc-c751-4f53-8ef3-37a27da98a1d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:17 PM"
+}

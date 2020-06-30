@@ -1,0 +1,445 @@
+{
+  "note": "Pregnant women: Any woman of childbearing age who is experiencing these symptoms should contact her doctor right away. Diabetes: As a precaution, blood glucose levels of 250 mg/dL or higher are considered high for risk. Those with Type 2 diabetes should not attempt this diet. Pregnant women:  Pregnant women may wish to contact their doctor to discuss the potential risks and benefits of attempting the Diet.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 275,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 8,
+          "score": 0.98964536,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9443519
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 119,
+          "endOffset": 127,
+          "score": 0.92824626,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9152107
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 146,
+          "endOffset": 166,
+          "score": 0.9335548,
+          "text": "blood glucose levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.84778404,
+              "relationshipScore": 0.9999788,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 170,
+              "endOffset": 173,
+              "text": "250",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9949234,
+              "relationshipScore": 0.99952185,
+              "relationshipType": "TEST_UNIT",
+              "id": 7,
+              "beginOffset": 174,
+              "endOffset": 179,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 231,
+          "endOffset": 246,
+          "score": 0.625171,
+          "text": "Type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93886536
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "score": 0.98743457,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94330513
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 294,
+          "endOffset": 302,
+          "score": 0.99264514,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.952167
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a20402ba-84b5-4fac-8a28-0da61bdb4422"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a20402ba-84b5-4fac-8a28-0da61bdb4422"
+          ],
+          "Content-Length": [
+            "1668"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1668",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:04 GMT",
+          "x-amzn-RequestId": "a20402ba-84b5-4fac-8a28-0da61bdb4422"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1137,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98964536,
+          "beginOffset": 0,
+          "endOffset": 8,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9443519
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7851848
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.6158269
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.58025026
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.54021984
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.5262409
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92824626,
+          "beginOffset": 119,
+          "endOffset": 127,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9152107
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7354124
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6140386
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6050899
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.59884787
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.55078316
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.625171,
+          "beginOffset": 231,
+          "endOffset": 246,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93886536
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8292547
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.75615394
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7297897
+            },
+            {
+              "description": "Type 2 diabetes mellitus with foot ulcer",
+              "code": "E11.621",
+              "score": 0.68343097
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.6830289
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98743457,
+          "beginOffset": 277,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94330513
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7321842
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.56667304
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.52007633
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.49532592
+            },
+            {
+              "description": "Pregnant state",
+              "code": "Z33",
+              "score": 0.47898424
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Pregnant",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99264514,
+          "beginOffset": 294,
+          "endOffset": 302,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.952167
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.720443
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.58687985
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.5408227
+            },
+            {
+              "description": "40 weeks gestation of pregnancy",
+              "code": "Z3A.40",
+              "score": 0.5174005
+            },
+            {
+              "description": "Pregnant state",
+              "code": "Z33",
+              "score": 0.46492767
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46ee8d68-9829-4187-8bbe-5d484e0f72fb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46ee8d68-9829-4187-8bbe-5d484e0f72fb"
+          ],
+          "Content-Length": [
+            "3682"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3682",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:05 GMT",
+          "x-amzn-RequestId": "46ee8d68-9829-4187-8bbe-5d484e0f72fb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 202,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2ed1e578-a2ef-4035-b0f1-9b03bdf88dc4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2ed1e578-a2ef-4035-b0f1-9b03bdf88dc4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:04 GMT",
+          "x-amzn-RequestId": "2ed1e578-a2ef-4035-b0f1-9b03bdf88dc4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:06 PM"
+}

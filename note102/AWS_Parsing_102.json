@@ -1,0 +1,266 @@
+{
+  "note": "erythropoietin (an hormone in the blood to strengthen the bone marrow and make red blood cells). In about six to nine months, he has the opportunity to start treatment for bone marrow failure. He\u0027s in good hands! In terms of his treatment plan: he needs several months of treatment, with a goal of a minimum of four months prior to his wedding.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 299,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 0,
+          "endOffset": 14,
+          "score": 0.6521678,
+          "text": "erythropoietin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 19,
+          "endOffset": 69,
+          "score": 0.27538395,
+          "text": "hormone in the blood to strengthen the bone marrow",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 58,
+          "endOffset": 69,
+          "score": 0.8351691,
+          "text": "bone marrow",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 79,
+          "endOffset": 94,
+          "score": 0.55348206,
+          "text": "red blood cells",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 106,
+          "endOffset": 124,
+          "score": 0.970967,
+          "text": "six to nine months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.85109377,
+              "relationshipScore": 0.5244499,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 172,
+              "endOffset": 191,
+              "text": "bone marrow failure",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9045281
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 172,
+          "endOffset": 183,
+          "score": 0.93135065,
+          "text": "bone marrow",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 172,
+          "endOffset": 191,
+          "score": 0.85109377,
+          "text": "bone marrow failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9045281
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 206,
+          "endOffset": 211,
+          "score": 0.42667508,
+          "text": "hands",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7dc54038-b43c-4899-b675-f6d12248d78a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7dc54038-b43c-4899-b675-f6d12248d78a"
+          ],
+          "Content-Length": [
+            "1682"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1682",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:52 GMT",
+          "x-amzn-RequestId": "7dc54038-b43c-4899-b675-f6d12248d78a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 420,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "bone marrow failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85109377,
+          "beginOffset": 172,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9045281
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.32974225
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.27826267
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.22570874
+            },
+            {
+              "description": "Acute systolic (congestive) heart failure",
+              "code": "I50.21",
+              "score": 0.21712431
+            },
+            {
+              "description": "Chronic right heart failure",
+              "code": "I50.812",
+              "score": 0.21705733
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a894f2c2-6c14-4403-80f1-5aeff0caf53b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a894f2c2-6c14-4403-80f1-5aeff0caf53b"
+          ],
+          "Content-Length": [
+            "777"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "777",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:52 GMT",
+          "x-amzn-RequestId": "a894f2c2-6c14-4403-80f1-5aeff0caf53b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7d2a17d1-4e42-43f2-a13d-4fb79bbe1d5f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7d2a17d1-4e42-43f2-a13d-4fb79bbe1d5f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:52 GMT",
+          "x-amzn-RequestId": "7d2a17d1-4e42-43f2-a13d-4fb79bbe1d5f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:53 PM"
+}

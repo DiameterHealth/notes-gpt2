@@ -1,0 +1,687 @@
+{
+  "note": "Patient had had her first prenatal appointment on 3/3/16. PERSONAL INFORMATION Mother was born 3/04/87 in San Diego, CA to Dr. and Mrs. Cone. Mother has a prior history of chronic hypertension, type 2 diabetes, and obesity. Mother was treated for hypertension at 34w0d at University of California, San Diego. Currently on oral medication for diabetes, obesity and hypertension.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 502,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 50,
+          "endOffset": 56,
+          "score": 0.99998987,
+          "text": "3/3/16",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 95,
+          "endOffset": 102,
+          "score": 0.99998903,
+          "text": "3/04/87",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 106,
+          "endOffset": 115,
+          "score": 0.9923165,
+          "text": "San Diego",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 136,
+          "endOffset": 140,
+          "score": 0.82281613,
+          "text": "Cone",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 155,
+          "endOffset": 160,
+          "score": 0.9999987,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99910176,
+              "relationshipScore": 0.7976208,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 180,
+              "endOffset": 192,
+              "text": "hypertension",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.97910976
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 180,
+          "endOffset": 192,
+          "score": 0.99910176,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97910976
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9826649,
+              "relationshipScore": 0.99974984,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 194,
+          "endOffset": 209,
+          "score": 0.93202585,
+          "text": "type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9709778
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 215,
+          "endOffset": 222,
+          "score": 0.9941836,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9748932
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 247,
+          "endOffset": 259,
+          "score": 0.99717194,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97731096
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 272,
+          "endOffset": 296,
+          "score": 0.9913707,
+          "text": "University of California",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 298,
+          "endOffset": 307,
+          "score": 0.93777275,
+          "text": "San Diego",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 309,
+          "endOffset": 318,
+          "score": 0.999997,
+          "text": "Currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.82572883,
+              "relationshipScore": 0.7394517,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 322,
+              "endOffset": 337,
+              "text": "oral medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 322,
+          "endOffset": 337,
+          "score": 0.82572883,
+          "text": "oral medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 342,
+          "endOffset": 350,
+          "score": 0.9922122,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9632688
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 352,
+          "endOffset": 359,
+          "score": 0.9971686,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97103095
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 364,
+          "endOffset": 376,
+          "score": 0.99931705,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9643171
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9826649,
+            "id": 0,
+            "beginOffset": 172,
+            "endOffset": 179,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ebc892ef-4240-45e3-a48e-8087b57e69ca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ebc892ef-4240-45e3-a48e-8087b57e69ca"
+          ],
+          "Content-Length": [
+            "3829"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3829",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:23 GMT",
+          "x-amzn-RequestId": "ebc892ef-4240-45e3-a48e-8087b57e69ca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 496,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99910176,
+          "beginOffset": 180,
+          "endOffset": 192,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9826649,
+              "relationshipScore": 0.99974984,
+              "id": 0,
+              "beginOffset": 172,
+              "endOffset": 179,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97910976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.61780506
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.5336612
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.50587875
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.4868629
+            },
+            {
+              "description": "Chronic diastolic (congestive) heart failure",
+              "code": "I50.32",
+              "score": 0.44204065
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "type 2 diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93202585,
+          "beginOffset": 194,
+          "endOffset": 209,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9709778
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.82221544
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.7699489
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.72561765
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7084385
+            },
+            {
+              "description": "Type 2 diabetes mellitus with foot ulcer",
+              "code": "E11.621",
+              "score": 0.6307288
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9941836,
+          "beginOffset": 215,
+          "endOffset": 222,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9748932
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.75712585
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.67080647
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.5875937
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.568989
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.54252243
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99717194,
+          "beginOffset": 247,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97731096
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7109566
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6656928
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.6415608
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.6294125
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.51611865
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9922122,
+          "beginOffset": 342,
+          "endOffset": 350,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9632688
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.79073584
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.77014893
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.66277725
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6584369
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.59455377
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9971686,
+          "beginOffset": 352,
+          "endOffset": 359,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97103095
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.9101851
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.8638775
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.79694116
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.78358454
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.7497249
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99931705,
+          "beginOffset": 364,
+          "endOffset": 376,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9643171
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.88486034
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.8807606
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.86508054
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.8356075
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.7716109
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d56f4bac-2d22-46d5-9c4a-4b0a90828818"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d56f4bac-2d22-46d5-9c4a-4b0a90828818"
+          ],
+          "Content-Length": [
+            "5889"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5889",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:23 GMT",
+          "x-amzn-RequestId": "d56f4bac-2d22-46d5-9c4a-4b0a90828818"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 198,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3d7ef0d9-b0ed-4b28-b5e3-57dc5c4fb90e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3d7ef0d9-b0ed-4b28-b5e3-57dc5c4fb90e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:23 GMT",
+          "x-amzn-RequestId": "3d7ef0d9-b0ed-4b28-b5e3-57dc5c4fb90e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:24 PM"
+}

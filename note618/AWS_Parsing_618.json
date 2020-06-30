@@ -1,0 +1,587 @@
+{
+  "note": ". His history is consistent with recent onset of severe headache. Medical evaluation revealed he was stable until presenting to us. He has had a history of headache in the past, but without any history of chest pain. He has no family history of heart attacks or high blood pressure. On the ECG and chest X-ray, we found a diffuse, right bundle branch block (PBBB).",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 581,
+    "data": {
+      "entities": [
+        {
+          "id": 13,
+          "beginOffset": 33,
+          "endOffset": 39,
+          "score": 0.9999994,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99779415,
+              "relationshipScore": 0.8996959,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 56,
+              "endOffset": 64,
+              "text": "headache",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.767954
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 56,
+          "endOffset": 64,
+          "score": 0.99779415,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.767954
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 156,
+          "endOffset": 164,
+          "score": 0.9945628,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43803194
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42715552
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 165,
+          "endOffset": 176,
+          "score": 0.99999785,
+          "text": "in the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9945628,
+              "relationshipScore": 0.98797834,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 156,
+              "endOffset": 164,
+              "text": "headache",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.43803194
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.42715552
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 205,
+          "endOffset": 210,
+          "score": 0.9890948,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 205,
+          "endOffset": 215,
+          "score": 0.9609865,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5539817
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9756302
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 245,
+          "endOffset": 250,
+          "score": 0.95840955,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 245,
+          "endOffset": 258,
+          "score": 0.9877559,
+          "text": "heart attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7804275
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94522095
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 262,
+          "endOffset": 281,
+          "score": 0.92976785,
+          "text": "high blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7050484
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.84417063
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 290,
+          "endOffset": 293,
+          "score": 0.97377545,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 298,
+          "endOffset": 303,
+          "score": 0.98014086,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 298,
+          "endOffset": 309,
+          "score": 0.9597653,
+          "text": "chest X-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 337,
+          "endOffset": 350,
+          "score": 0.7286643,
+          "text": "bundle branch",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 358,
+          "endOffset": 362,
+          "score": 0.37463084,
+          "text": "PBBB",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9364361,
+            "id": 3,
+            "beginOffset": 331,
+            "endOffset": 336,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "943b236a-b4de-4dbf-917f-bf425d7fd6c9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "943b236a-b4de-4dbf-917f-bf425d7fd6c9"
+          ],
+          "Content-Length": [
+            "3360"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3360",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:57 GMT",
+          "x-amzn-RequestId": "943b236a-b4de-4dbf-917f-bf425d7fd6c9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1502,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99779415,
+          "beginOffset": 56,
+          "endOffset": 64,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.76795393
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.74766517
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.52837896
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.4842105
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.46264392
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.42936027
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9945628,
+          "beginOffset": 156,
+          "endOffset": 164,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43803194
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42715558
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.42478973
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.23974597
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.20912409
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.19688328
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.18365835
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9609865,
+          "beginOffset": 205,
+          "endOffset": 215,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5539817
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.97563034
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.3906381
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.23350829
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.22564824
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.17726219
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.16647615
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "heart attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9877559,
+          "beginOffset": 245,
+          "endOffset": 258,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78042746
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94522095
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5483598
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.4007647
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.38384086
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.30729377
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.3053782
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "high blood pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92976785,
+          "beginOffset": 262,
+          "endOffset": 281,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7050484
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.84417063
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.63714737
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.45598072
+            },
+            {
+              "description": "Elevated blood-pressure reading, without diagnosis of hypertension",
+              "code": "R03.0",
+              "score": 0.44107172
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.40582457
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.3859459
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ea3d5325-b581-40cf-98ca-920e3172abda"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ea3d5325-b581-40cf-98ca-920e3172abda"
+          ],
+          "Content-Length": [
+            "3828"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3828",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:59 GMT",
+          "x-amzn-RequestId": "ea3d5325-b581-40cf-98ca-920e3172abda"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2a15c8db-4b6e-465f-904f-4dbd938bc2e7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2a15c8db-4b6e-465f-904f-4dbd938bc2e7"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:57 GMT",
+          "x-amzn-RequestId": "2a15c8db-4b6e-465f-904f-4dbd938bc2e7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:59 PM"
+}

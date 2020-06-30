@@ -1,0 +1,167 @@
+{
+  "note": "erythromycin. He also received additional treatment in the hospital and then has flown home. The team is grateful for the incredible support all around the world from friends and family that have been watching his fight for life, and to his doctors of Mayo. Please show everyone your best side today. It is truly a time when we can all do the right thing and bring him home to his family and friends.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 286,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "score": 0.99905306,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f98bba92-4c9d-4210-88d8-f0320b47dbca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f98bba92-4c9d-4210-88d8-f0320b47dbca"
+          ],
+          "Content-Length": [
+            "208"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "208",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:22 GMT",
+          "x-amzn-RequestId": "f98bba92-4c9d-4210-88d8-f0320b47dbca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 413,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "182f5dc9-2bd6-4644-a776-39826fd2aa50"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "182f5dc9-2bd6-4644-a776-39826fd2aa50"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:23 GMT",
+          "x-amzn-RequestId": "182f5dc9-2bd6-4644-a776-39826fd2aa50"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 662,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "erythromycin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99905306,
+          "beginOffset": 0,
+          "endOffset": 12,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Erythromycin",
+              "code": "4053",
+              "score": 0.9361085
+            },
+            {
+              "description": "Erythromycin 0.02 MG/MG Topical Gel [Erygel]",
+              "code": "206212",
+              "score": 0.2429897
+            },
+            {
+              "description": "Erythromycin 20 MG/ML Medicated Pad [Ery]",
+              "code": "798133",
+              "score": 0.22603619
+            },
+            {
+              "description": "Erythromycin 0.02 MG/MG Topical Ointment",
+              "code": "238936",
+              "score": 0.16772695
+            },
+            {
+              "description": "Erythromycin 333 MG Delayed Release Oral Tablet",
+              "code": "315090",
+              "score": 0.045201134
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cf82b225-677c-4092-964d-bc233e163814"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cf82b225-677c-4092-964d-bc233e163814"
+          ],
+          "Content-Length": [
+            "712"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "712",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:22 GMT",
+          "x-amzn-RequestId": "cf82b225-677c-4092-964d-bc233e163814"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:24 PM"
+}

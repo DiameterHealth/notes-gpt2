@@ -1,0 +1,725 @@
+{
+  "note": ", loss of night vision due to decreased eyesight, or other symptoms in the past few years. TREATMENT OPTIONS The patient should be treated for a visual impairment first. If the initial eye symptoms are not alleviated with vision restoration/corrective lenses, then glaucoma surgery may be considered. A variety of glaucoma regimens have been used, involving surgery for obstruction or resection of the eye, intraocular steroids, or intratympanic steroid injections.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 442,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 2,
+          "endOffset": 22,
+          "score": 0.867554,
+          "text": "loss of night vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89668477
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 30,
+          "endOffset": 48,
+          "score": 0.93333036,
+          "text": "decreased eyesight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8583674
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 68,
+          "endOffset": 83,
+          "score": 0.54417443,
+          "text": "in the past few",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93333036,
+              "relationshipScore": 0.6240984,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 30,
+              "endOffset": 48,
+              "text": "decreased eyesight",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8583674
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 68,
+          "endOffset": 83,
+          "score": 0.54417443,
+          "text": "in the past few",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.867554,
+              "relationshipScore": 0.60218596,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 2,
+              "endOffset": 22,
+              "text": "loss of night vision",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.89668477
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 145,
+          "endOffset": 162,
+          "score": 0.9646605,
+          "text": "visual impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62268525
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 185,
+          "endOffset": 188,
+          "score": 0.8472735,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 185,
+          "endOffset": 197,
+          "score": 0.5078319,
+          "text": "eye symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71800077
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.8472735,
+              "relationshipScore": 0.91310245,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 185,
+              "endOffset": 188,
+              "text": "eye",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 222,
+          "endOffset": 240,
+          "score": 0.48588413,
+          "text": "vision restoration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4211033
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 265,
+          "endOffset": 273,
+          "score": 0.9592448,
+          "text": "glaucoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86846584
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 274,
+          "endOffset": 281,
+          "score": 0.5095127,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 314,
+          "endOffset": 322,
+          "score": 0.92283726,
+          "text": "glaucoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9282012
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 358,
+          "endOffset": 365,
+          "score": 0.8792346,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 370,
+          "endOffset": 381,
+          "score": 0.6921927,
+          "text": "obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6917495
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 385,
+          "endOffset": 394,
+          "score": 0.6114299,
+          "text": "resection",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 402,
+          "endOffset": 405,
+          "score": 0.9884185,
+          "text": "eye",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 407,
+          "endOffset": 427,
+          "score": 0.4006315,
+          "text": "intraocular steroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 432,
+          "endOffset": 464,
+          "score": 0.83396506,
+          "text": "intratympanic steroid injections",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "af4dc30e-a537-4d0c-be66-74d619796df7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "af4dc30e-a537-4d0c-be66-74d619796df7"
+          ],
+          "Content-Length": [
+            "3913"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3913",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:30 GMT",
+          "x-amzn-RequestId": "af4dc30e-a537-4d0c-be66-74d619796df7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 601,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "loss of night vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86755395,
+          "beginOffset": 2,
+          "endOffset": 22,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89668477
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.6433022
+            },
+            {
+              "description": "Unqualified visual loss, both eyes",
+              "code": "H54.3",
+              "score": 0.6108425
+            },
+            {
+              "description": "Transient visual loss, unspecified eye",
+              "code": "H53.129",
+              "score": 0.58040035
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.56819314
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.54094374
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "decreased eyesight",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93333036,
+          "beginOffset": 30,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8583674
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.5006491
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.47349736
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.46661082
+            },
+            {
+              "description": "Thrombocytopenia, unspecified",
+              "code": "D69.6",
+              "score": 0.4394823
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.41112116
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "visual impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9646605,
+          "beginOffset": 145,
+          "endOffset": 162,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.62268525
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.65113646
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.61985105
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.6089883
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.53069925
+            },
+            {
+              "description": "Visual discomfort, bilateral",
+              "code": "H53.143",
+              "score": 0.50192934
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "eye symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5078319,
+          "beginOffset": 185,
+          "endOffset": 197,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71800077
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified disorder of eye and adnexa",
+              "code": "H57.9",
+              "score": 0.7950018
+            },
+            {
+              "description": "Other specified disorders of eye and adnexa",
+              "code": "H57.89",
+              "score": 0.7201524
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.67169315
+            },
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.6552425
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.6250023
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "vision restoration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.48588404,
+          "beginOffset": 222,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4211033
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.7637996
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.72367764
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.6910405
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.68836457
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.64930254
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "glaucoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9592448,
+          "beginOffset": 265,
+          "endOffset": 273,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8684658
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified glaucoma",
+              "code": "H40.9",
+              "score": 0.7864603
+            },
+            {
+              "description": "Hypersecretion glaucoma, bilateral",
+              "code": "H40.823",
+              "score": 0.48270702
+            },
+            {
+              "description": "Absolute glaucoma, left eye",
+              "code": "H44.512",
+              "score": 0.47766003
+            },
+            {
+              "description": "Hypersecretion glaucoma, unspecified eye",
+              "code": "H40.829",
+              "score": 0.47662774
+            },
+            {
+              "description": "Hypersecretion glaucoma",
+              "code": "H40.82",
+              "score": 0.46865192
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "glaucoma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92283714,
+          "beginOffset": 314,
+          "endOffset": 322,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9282012
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified glaucoma",
+              "code": "H40.9",
+              "score": 0.83634657
+            },
+            {
+              "description": "Absolute glaucoma, left eye",
+              "code": "H44.512",
+              "score": 0.50578713
+            },
+            {
+              "description": "Absolute glaucoma",
+              "code": "H44.51",
+              "score": 0.502161
+            },
+            {
+              "description": "Absolute glaucoma, unspecified eye",
+              "code": "H44.519",
+              "score": 0.49155274
+            },
+            {
+              "description": "Hypersecretion glaucoma, bilateral",
+              "code": "H40.823",
+              "score": 0.49155125
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "obstruction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6921927,
+          "beginOffset": 370,
+          "endOffset": 381,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69174945
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified intestinal obstruction, unspecified as to partial versus complete obstruction",
+              "code": "K56.609",
+              "score": 0.6971667
+            },
+            {
+              "description": "Obstructive and reflux uropathy, unspecified",
+              "code": "N13.9",
+              "score": 0.62181383
+            },
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.6217435
+            },
+            {
+              "description": "Unspecified atherosclerosis of native arteries of extremities, left leg",
+              "code": "I70.202",
+              "score": 0.5861356
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.5772052
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "554b3caf-20b9-4f05-b1b1-78b542120d3a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "554b3caf-20b9-4f05-b1b1-78b542120d3a"
+          ],
+          "Content-Length": [
+            "5632"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5632",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:30 GMT",
+          "x-amzn-RequestId": "554b3caf-20b9-4f05-b1b1-78b542120d3a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "df9adf07-9915-4b64-98e9-6995577789c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "df9adf07-9915-4b64-98e9-6995577789c5"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:30 GMT",
+          "x-amzn-RequestId": "df9adf07-9915-4b64-98e9-6995577789c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:31 PM"
+}

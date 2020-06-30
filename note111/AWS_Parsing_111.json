@@ -1,0 +1,488 @@
+{
+  "note": "physician. However, if she is going to be on OTC medications for other reasons, such as seasonal allergies, then it is advisable to schedule additional follow ups. In addition, her physician should make sure to schedule subsequent visits as appropriate, including if there are any other potential medical issues that might have been missed during the visit. The Patient  Background: A 33-year-old female presented to the emergency department with acute chest pain, shortness of breath, shortness of breath, and altered mental status, followed shortly by collapse.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 532,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "score": 0.9606411,
+          "text": "OTC medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 88,
+          "endOffset": 106,
+          "score": 0.6828034,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6928049
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 385,
+          "endOffset": 387,
+          "score": 0.9996749,
+          "text": "33",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 421,
+          "endOffset": 441,
+          "score": 0.99599105,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 453,
+          "endOffset": 458,
+          "score": 0.977403,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 453,
+          "endOffset": 463,
+          "score": 0.97799337,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89719707
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9786743,
+              "relationshipScore": 0.9999782,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 447,
+              "endOffset": 452,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 465,
+          "endOffset": 484,
+          "score": 0.99712616,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94356
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 486,
+          "endOffset": 505,
+          "score": 0.99672604,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90898263
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 511,
+          "endOffset": 532,
+          "score": 0.95080173,
+          "text": "altered mental status",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8394225
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9786743,
+            "id": 2,
+            "beginOffset": 447,
+            "endOffset": 452,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a79d4a56-00b2-4363-8f79-89fb1a7df193"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a79d4a56-00b2-4363-8f79-89fb1a7df193"
+          ],
+          "Content-Length": [
+            "2111"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2111",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:02 GMT",
+          "x-amzn-RequestId": "a79d4a56-00b2-4363-8f79-89fb1a7df193"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1332,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "seasonal allergies",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6828034,
+          "beginOffset": 88,
+          "endOffset": 106,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6928049
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.6592771
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.3495008
+            },
+            {
+              "description": "Other allergic rhinitis",
+              "code": "J30.89",
+              "score": 0.349199
+            },
+            {
+              "description": "Other specified dermatitis",
+              "code": "L30.8",
+              "score": 0.34712827
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.33143595
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97799337,
+          "beginOffset": 453,
+          "endOffset": 463,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9786743,
+              "relationshipScore": 0.9999782,
+              "id": 1,
+              "beginOffset": 447,
+              "endOffset": 452,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.89719707
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.63314027
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.423528
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.410665
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.35813183
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.34541523
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99712616,
+          "beginOffset": 465,
+          "endOffset": 484,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94356
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.8983166
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6800463
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.672024
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.6472999
+            },
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.6419847
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "shortness of breath",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99672604,
+          "beginOffset": 486,
+          "endOffset": 505,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.90898263
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.8951808
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6675914
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.65688056
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.63211983
+            },
+            {
+              "description": "Wheezing",
+              "code": "R06.2",
+              "score": 0.6225156
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "altered mental status",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95080173,
+          "beginOffset": 511,
+          "endOffset": 532,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8394225
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.8631461
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.55533713
+            },
+            {
+              "description": "Nonpsychotic mental disorder, unspecified",
+              "code": "F48.9",
+              "score": 0.5470829
+            },
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.5400424
+            },
+            {
+              "description": "Gastrostomy status",
+              "code": "Z93.1",
+              "score": 0.5117109
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ce17e3c6-afcd-4a38-8918-e0657125be68"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ce17e3c6-afcd-4a38-8918-e0657125be68"
+          ],
+          "Content-Length": [
+            "3510"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3510",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:04 GMT",
+          "x-amzn-RequestId": "ce17e3c6-afcd-4a38-8918-e0657125be68"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 261,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a9139ae5-168a-4e25-a584-d9dfca3ab82e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a9139ae5-168a-4e25-a584-d9dfca3ab82e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:03 GMT",
+          "x-amzn-RequestId": "a9139ae5-168a-4e25-a584-d9dfca3ab82e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:04 PM"
+}

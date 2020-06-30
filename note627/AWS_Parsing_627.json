@@ -1,0 +1,963 @@
+{
+  "note": "surgery, history of recent myocardial infarction and recent history of gastric bypass. The main focus of presentation is chest pain, which may be intermittent or severe. He denies any recent cardiac, neurological symptoms, respiratory or hepatic complaints, and has no current pain medication for chest pain. A diagnosis of coronary heart disease should always be considered when presenting to a hospital emergency department with chest pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 730,
+    "data": {
+      "entities": [
+        {
+          "id": 14,
+          "beginOffset": 0,
+          "endOffset": 7,
+          "score": 0.8987863,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 20,
+          "endOffset": 26,
+          "score": 0.9999995,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9814047,
+              "relationshipScore": 0.7612576,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 71,
+              "endOffset": 85,
+              "text": "gastric bypass",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 20,
+          "endOffset": 26,
+          "score": 0.9999995,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.94498456,
+              "relationshipScore": 0.9732169,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 27,
+              "endOffset": 48,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9458198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 27,
+          "endOffset": 48,
+          "score": 0.94498456,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9458198
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 53,
+          "endOffset": 59,
+          "score": 0.99999917,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9814047,
+              "relationshipScore": 0.9313148,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 71,
+              "endOffset": 85,
+              "text": "gastric bypass",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 53,
+          "endOffset": 59,
+          "score": 0.99999917,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.94498456,
+              "relationshipScore": 0.58171225,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 27,
+              "endOffset": 48,
+              "text": "myocardial infarction",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9458198
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 71,
+          "endOffset": 85,
+          "score": 0.9814047,
+          "text": "gastric bypass",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 121,
+          "endOffset": 126,
+          "score": 0.9759941,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 121,
+          "endOffset": 131,
+          "score": 0.8705039,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.765359
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5355196,
+              "relationshipScore": 0.99994934,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 146,
+              "endOffset": 158,
+              "text": "intermittent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 184,
+          "endOffset": 190,
+          "score": 0.999997,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.95455486,
+              "relationshipScore": 0.735314,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 200,
+              "endOffset": 221,
+              "text": "neurological symptoms",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8760755
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.74012333
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 200,
+          "endOffset": 221,
+          "score": 0.95455486,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8760755
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.74012333
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 223,
+          "endOffset": 256,
+          "score": 0.8577768,
+          "text": "respiratory or hepatic complaints",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93152326
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94275177
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 269,
+          "endOffset": 276,
+          "score": 0.99999523,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.88846016,
+              "relationshipScore": 0.6273778,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 297,
+              "endOffset": 307,
+              "text": "chest pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.7138791
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9214244
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 269,
+          "endOffset": 276,
+          "score": 0.99999523,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.846063,
+              "relationshipScore": 0.8801967,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 277,
+              "endOffset": 292,
+              "text": "pain medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 269,
+          "endOffset": 276,
+          "score": 0.99999523,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.88960963,
+              "relationshipScore": 0.91008794,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 277,
+              "endOffset": 281,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.7083761
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.89363545
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 277,
+          "endOffset": 281,
+          "score": 0.88960963,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7083761
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89363545
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 277,
+          "endOffset": 292,
+          "score": 0.846063,
+          "text": "pain medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 297,
+          "endOffset": 302,
+          "score": 0.9899158,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 297,
+          "endOffset": 307,
+          "score": 0.88846016,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7138791
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9214244
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 324,
+          "endOffset": 346,
+          "score": 0.9843635,
+          "text": "coronary heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96560663
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 333,
+          "endOffset": 338,
+          "score": 0.9619115,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 405,
+          "endOffset": 425,
+          "score": 0.94502354,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 431,
+          "endOffset": 436,
+          "score": 0.9873953,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 431,
+          "endOffset": 441,
+          "score": 0.86439687,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.782254
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.5355196,
+            "id": 6,
+            "beginOffset": 146,
+            "endOffset": 158,
+            "text": "intermittent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46c178c5-b78f-4586-a95a-71d66c673e1f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46c178c5-b78f-4586-a95a-71d66c673e1f"
+          ],
+          "Content-Length": [
+            "7079"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7079",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:20 GMT",
+          "x-amzn-RequestId": "46c178c5-b78f-4586-a95a-71d66c673e1f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1467,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94498456,
+          "beginOffset": 27,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9458198
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.8174012
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.7338094
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.7251739
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6830019
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.67785156
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8705039,
+          "beginOffset": 121,
+          "endOffset": 131,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5355195,
+              "relationshipScore": 0.99994934,
+              "id": 3,
+              "beginOffset": 146,
+              "endOffset": 158,
+              "text": "intermittent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.765359
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6442238
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.47769812
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.45531693
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.3804051
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.35453007
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "neurological symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95455486,
+          "beginOffset": 200,
+          "endOffset": 221,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8760755
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.74012333
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.78165704
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.76357347
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6618775
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6163811
+            },
+            {
+              "description": "Conversion disorder with seizures or convulsions",
+              "code": "F44.5",
+              "score": 0.51849395
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "respiratory or hepatic complaints",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8577768,
+          "beginOffset": 223,
+          "endOffset": 256,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93152326
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.94275177
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.6566787
+            },
+            {
+              "description": "Respiratory failure, unspecified, unspecified whether with hypoxia or hypercapnia",
+              "code": "J96.90",
+              "score": 0.59589314
+            },
+            {
+              "description": "Respiratory failure, unspecified with hypoxia",
+              "code": "J96.91",
+              "score": 0.57604074
+            },
+            {
+              "description": "Family history of other diseases of the respiratory system",
+              "code": "Z83.6",
+              "score": 0.56038606
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.5524409
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88960963,
+          "beginOffset": 277,
+          "endOffset": 281,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.70837605
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.89363545
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7554448
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5999245
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.57521355
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.47142902
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4571741
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88846016,
+          "beginOffset": 297,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71387905
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9214244
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.7293897
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.5230859
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.49351197
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4641469
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.4302522
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "coronary heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9843635,
+          "beginOffset": 324,
+          "endOffset": 346,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96560663
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.80405396
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.73067254
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.680422
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.6711427
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery",
+              "code": "I25.1",
+              "score": 0.590316
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86439687,
+          "beginOffset": 431,
+          "endOffset": 441,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.782254
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.70672077
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.52484506
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.503061
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.47355735
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.40767777
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d6942533-4864-41d9-ae47-b5445b361ea8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d6942533-4864-41d9-ae47-b5445b361ea8"
+          ],
+          "Content-Length": [
+            "6167"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6167",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:22 GMT",
+          "x-amzn-RequestId": "d6942533-4864-41d9-ae47-b5445b361ea8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b3a71826-8eef-4c77-9f57-561a5bee4806"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b3a71826-8eef-4c77-9f57-561a5bee4806"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:21 GMT",
+          "x-amzn-RequestId": "b3a71826-8eef-4c77-9f57-561a5bee4806"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:22 PM"
+}

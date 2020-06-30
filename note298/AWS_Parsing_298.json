@@ -1,0 +1,303 @@
+{
+  "note": ". The following treatment is intended to reduce any pain and improve the patient to a comfortable level of function. The patient may begin by slowly increasing the dose to the desired level while continuing to take a pain reliever. After he has reduced the pain by increasing the dose, he may then begin a more aggressive program of medication by increasing the daily or weekly dosage.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 52,
+          "endOffset": 56,
+          "score": 0.9577369,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55804604
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "score": 0.3627086,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 217,
+          "endOffset": 230,
+          "score": 0.5651462,
+          "text": "pain reliever",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 257,
+          "endOffset": 261,
+          "score": 0.95299125,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5497789
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 311,
+          "endOffset": 329,
+          "score": 0.68689996,
+          "text": "aggressive program",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43031663-2bc1-432d-839a-212b6ef0b7ed"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43031663-2bc1-432d-839a-212b6ef0b7ed"
+          ],
+          "Content-Length": [
+            "920"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "920",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:49 GMT",
+          "x-amzn-RequestId": "43031663-2bc1-432d-839a-212b6ef0b7ed"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 381,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9577369,
+          "beginOffset": 52,
+          "endOffset": 56,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.55804604
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.776076
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.60128117
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5932321
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.57972485
+            },
+            {
+              "description": "Pelvic and perineal pain",
+              "code": "R10.2",
+              "score": 0.5582483
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3627086,
+          "beginOffset": 217,
+          "endOffset": 221,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7262495
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.57876426
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5424253
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.53980863
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.53545845
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95299125,
+          "beginOffset": 257,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5497789
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.737563
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6460471
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6361088
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.6296013
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.60833555
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43f23dfe-0aa8-4f51-88a2-3f7e60890218"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43f23dfe-0aa8-4f51-88a2-3f7e60890218"
+          ],
+          "Content-Length": [
+            "1859"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1859",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:50 GMT",
+          "x-amzn-RequestId": "43f23dfe-0aa8-4f51-88a2-3f7e60890218"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "51cd6586-248e-4480-a967-5707ec9a3220"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "51cd6586-248e-4480-a967-5707ec9a3220"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:49 GMT",
+          "x-amzn-RequestId": "51cd6586-248e-4480-a967-5707ec9a3220"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:50 PM"
+}

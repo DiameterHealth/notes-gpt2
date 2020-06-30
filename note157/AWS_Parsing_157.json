@@ -1,0 +1,387 @@
+{
+  "note": "Patient was also advised to limit physical exertion for one week until mass had decreased to normal. The patient was followed up during the three week period prior to surgery. Surgery  Surgery was performed at Johns Hopkins Hospital on February 5, 2006 using a laparoscopic cholecystectomy, and he had only two days of follow-up after surgery. The procedure was performed under general anesthetic by an anesthesiologist and a neurosurgical resident.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 572,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 71,
+          "endOffset": 75,
+          "score": 0.8842409,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6737476
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 80,
+          "endOffset": 99,
+          "score": 0.6289464,
+          "text": "decreased to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.47549823
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 158,
+          "endOffset": 163,
+          "score": 0.999997,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9137283,
+              "relationshipScore": 0.82069045,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 167,
+              "endOffset": 174,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 167,
+          "endOffset": 174,
+          "score": 0.9137283,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 176,
+          "endOffset": 183,
+          "score": 0.9419097,
+          "text": "Surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 185,
+          "endOffset": 192,
+          "score": 0.9450858,
+          "text": "Surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 210,
+          "endOffset": 232,
+          "score": 0.98176664,
+          "text": "Johns Hopkins Hospital",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 236,
+          "endOffset": 252,
+          "score": 0.99997246,
+          "text": "February 5, 2006",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9574535,
+              "relationshipScore": 0.6709677,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 261,
+              "endOffset": 289,
+              "text": "laparoscopic cholecystectomy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 236,
+          "endOffset": 252,
+          "score": 0.99991333,
+          "text": "February 5, 2006",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 261,
+          "endOffset": 289,
+          "score": 0.9574535,
+          "text": "laparoscopic cholecystectomy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 307,
+          "endOffset": 315,
+          "score": 0.45211256,
+          "text": "two days",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.97942734,
+              "relationshipScore": 0.82220995,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 335,
+              "endOffset": 342,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 335,
+          "endOffset": 342,
+          "score": 0.97942734,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 378,
+          "endOffset": 396,
+          "score": 0.9249359,
+          "text": "general anesthetic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "219d6294-7708-443b-bcdc-ce843fdc93c9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "219d6294-7708-443b-bcdc-ce843fdc93c9"
+          ],
+          "Content-Length": [
+            "3025"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3025",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:12 GMT",
+          "x-amzn-RequestId": "219d6294-7708-443b-bcdc-ce843fdc93c9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 379,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8842408,
+          "beginOffset": 71,
+          "endOffset": 75,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.67374754
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.6788538
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.6614249
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.6488637
+            },
+            {
+              "description": "Intra-abdominal and pelvic swelling, mass and lump, unspecified site",
+              "code": "R19.00",
+              "score": 0.63846505
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6284285
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "decreased to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6289464,
+          "beginOffset": 80,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4754983
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.6683682
+            },
+            {
+              "description": "Thrombocytopenia, unspecified",
+              "code": "D69.6",
+              "score": 0.5710666
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.56174195
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.55299145
+            },
+            {
+              "description": "Decreased white blood cell count, unspecified",
+              "code": "D72.819",
+              "score": 0.5147482
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2007d041-0126-44be-b981-9caab0defaf9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2007d041-0126-44be-b981-9caab0defaf9"
+          ],
+          "Content-Length": [
+            "1445"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1445",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:14 GMT",
+          "x-amzn-RequestId": "2007d041-0126-44be-b981-9caab0defaf9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 212,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43be1ec8-0f89-4e58-959a-55465a216011"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43be1ec8-0f89-4e58-959a-55465a216011"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:12 GMT",
+          "x-amzn-RequestId": "43be1ec8-0f89-4e58-959a-55465a216011"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:14 PM"
+}

@@ -1,0 +1,476 @@
+{
+  "note": "Her labor last 4 hours. Patient was in normal pain for last 10 hours. Patient reported no significant events or significant findings from lab tests. The placenta and fetus are in motion in the uterus. There is no apparent cervical position of the fetus. Patient is being brought out of the labor because she is having a contraction, the delivery of the placenta will not progress otherwise.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 362,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 4,
+          "endOffset": 9,
+          "score": 0.62558126,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 10,
+          "endOffset": 22,
+          "score": 0.99989665,
+          "text": "last 4 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.62558126,
+              "relationshipScore": 0.9916044,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 4,
+              "endOffset": 9,
+              "text": "labor",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 39,
+          "endOffset": 50,
+          "score": 0.65174454,
+          "text": "normal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6521372
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6598778,
+              "relationshipScore": 1.0,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 51,
+              "endOffset": 68,
+              "text": "for last 10 hours",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 55,
+          "endOffset": 68,
+          "score": 0.9998888,
+          "text": "last 10 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.65174454,
+              "relationshipScore": 0.9552021,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 39,
+              "endOffset": 50,
+              "text": "normal pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.6521372
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 138,
+          "endOffset": 147,
+          "score": 0.6848209,
+          "text": "lab tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.50051033,
+              "relationshipScore": 0.9456233,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 166,
+              "endOffset": 199,
+              "text": "fetus are in motion in the uterus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8443353,
+              "relationshipScore": 0.99911577,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 210,
+              "endOffset": 252,
+              "text": "no apparent cervical position of the fetus",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 153,
+          "endOffset": 161,
+          "score": 0.9823398,
+          "text": "placenta",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 193,
+          "endOffset": 199,
+          "score": 0.99080104,
+          "text": "uterus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 320,
+          "endOffset": 331,
+          "score": 0.84567463,
+          "text": "contraction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5777231
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9417687,
+              "relationshipScore": 0.83793396,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 353,
+              "endOffset": 361,
+              "text": "placenta",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 337,
+          "endOffset": 345,
+          "score": 0.1701272,
+          "text": "delivery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 353,
+          "endOffset": 361,
+          "score": 0.9417687,
+          "text": "placenta",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6598778,
+            "id": 5,
+            "beginOffset": 51,
+            "endOffset": 68,
+            "text": "for last 10 hours",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "afece5b3-9b84-4b23-84f3-baf65ebacc62"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "afece5b3-9b84-4b23-84f3-baf65ebacc62"
+          ],
+          "Content-Length": [
+            "3355"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3355",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:23 GMT",
+          "x-amzn-RequestId": "afece5b3-9b84-4b23-84f3-baf65ebacc62"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 496,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "labor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6255813,
+          "beginOffset": 4,
+          "endOffset": 9,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long labor, unspecified",
+              "code": "O63.9",
+              "score": 0.6626906
+            },
+            {
+              "description": "Long labor",
+              "code": "O63",
+              "score": 0.5392987
+            },
+            {
+              "description": "Precipitate labor",
+              "code": "O62.3",
+              "score": 0.5016269
+            },
+            {
+              "description": "Personal history of pre-term labor",
+              "code": "Z87.51",
+              "score": 0.49482873
+            },
+            {
+              "description": "Preterm labor",
+              "code": "O60",
+              "score": 0.46176755
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "normal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65174454,
+          "beginOffset": 39,
+          "endOffset": 50,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6598778,
+              "relationshipScore": 1.0,
+              "id": 2,
+              "beginOffset": 51,
+              "endOffset": 68,
+              "text": "for last 10 hours",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.65213716
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6610647
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.60442996
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.58427083
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5676322
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5584443
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "contraction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84567463,
+          "beginOffset": 320,
+          "endOffset": 331,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9417687,
+              "relationshipScore": 0.83793396,
+              "id": 6,
+              "beginOffset": 353,
+              "endOffset": 361,
+              "text": "placenta",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.57772297
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other premature depolarization",
+              "code": "I49.49",
+              "score": 0.5973326
+            },
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.5902473
+            },
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.53963757
+            },
+            {
+              "description": "Unspecified premature depolarization",
+              "code": "I49.40",
+              "score": 0.5057813
+            },
+            {
+              "description": "Obstruction of gallbladder",
+              "code": "K82.0",
+              "score": 0.45654887
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0fdd2fd9-dfe9-46e6-92b0-4c0f69e8492d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0fdd2fd9-dfe9-46e6-92b0-4c0f69e8492d"
+          ],
+          "Content-Length": [
+            "2246"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2246",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:24 GMT",
+          "x-amzn-RequestId": "0fdd2fd9-dfe9-46e6-92b0-4c0f69e8492d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1cf4fd96-fce3-4671-95c9-c38280dcc912"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1cf4fd96-fce3-4671-95c9-c38280dcc912"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:24 GMT",
+          "x-amzn-RequestId": "1cf4fd96-fce3-4671-95c9-c38280dcc912"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:25 PM"
+}

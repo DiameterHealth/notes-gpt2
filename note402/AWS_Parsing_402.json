@@ -1,0 +1,533 @@
+{
+  "note": "for evaluation of hypertension and congestive heart failure and presented to your hospital with a 5th grade fever. Your hospital referred care team decided to send this patient to a general practitioner. A full history was taken; fasting glucose was reported to be 124 mg/dL pre-test (95% CI 93-128 mg/dL) and was undetectable on the 7th day of illness.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 506,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 18,
+          "endOffset": 30,
+          "score": 0.9969152,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9567486
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 35,
+          "endOffset": 59,
+          "score": 0.9703982,
+          "text": "congestive heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97779673
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 46,
+          "endOffset": 51,
+          "score": 0.9501095,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 108,
+          "endOffset": 113,
+          "score": 0.9702084,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64816445
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 230,
+          "endOffset": 245,
+          "score": 0.9582426,
+          "text": "fasting glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.986289,
+              "relationshipScore": 0.99314994,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 265,
+              "endOffset": 268,
+              "text": "124",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99594516,
+              "relationshipScore": 0.71266884,
+              "relationshipType": "TEST_UNIT",
+              "id": 6,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 275,
+          "endOffset": 283,
+          "score": 0.48978978,
+          "text": "pre-test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.986289,
+              "relationshipScore": 0.96079326,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 265,
+              "endOffset": 268,
+              "text": "124",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99594516,
+              "relationshipScore": 0.9956495,
+              "relationshipType": "TEST_UNIT",
+              "id": 6,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9040521,
+              "relationshipScore": 0.7740383,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 285,
+              "endOffset": 287,
+              "text": "95",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9845739,
+              "relationshipScore": 0.9938403,
+              "relationshipType": "TEST_UNIT",
+              "id": 9,
+              "beginOffset": 287,
+              "endOffset": 288,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 289,
+          "endOffset": 291,
+          "score": 0.5497691,
+          "text": "CI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9845739,
+              "relationshipScore": 0.7993475,
+              "relationshipType": "TEST_UNIT",
+              "id": 9,
+              "beginOffset": 287,
+              "endOffset": 288,
+              "text": "%",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.87386477,
+              "relationshipScore": 0.99999547,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 292,
+              "endOffset": 298,
+              "text": "93-128",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99864286,
+              "relationshipScore": 0.998577,
+              "relationshipType": "TEST_UNIT",
+              "id": 12,
+              "beginOffset": 299,
+              "endOffset": 304,
+              "text": "mg/dL",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 334,
+          "endOffset": 337,
+          "score": 0.4441516,
+          "text": "7th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.48978978,
+              "relationshipScore": 0.60370696,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 275,
+              "endOffset": 283,
+              "text": "pre-test",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 334,
+          "endOffset": 337,
+          "score": 0.4441516,
+          "text": "7th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.5497691,
+              "relationshipScore": 0.5848347,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 289,
+              "endOffset": 291,
+              "text": "CI",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 334,
+          "endOffset": 337,
+          "score": 0.4441516,
+          "text": "7th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9582426,
+              "relationshipScore": 0.658066,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 230,
+              "endOffset": 245,
+              "text": "fasting glucose",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.74536055,
+            "id": 13,
+            "beginOffset": 314,
+            "endOffset": 326,
+            "text": "undetectable",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2b8ccc53-f43e-4759-9d8d-2213a2e10cf1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2b8ccc53-f43e-4759-9d8d-2213a2e10cf1"
+          ],
+          "Content-Length": [
+            "4717"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4717",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:28 GMT",
+          "x-amzn-RequestId": "2b8ccc53-f43e-4759-9d8d-2213a2e10cf1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 624,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9969152,
+          "beginOffset": 18,
+          "endOffset": 30,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9567486
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.78265435
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7524001
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.74219644
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.6994423
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.6920164
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "congestive heart failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9703982,
+          "beginOffset": 35,
+          "endOffset": 59,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97779673
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.7632443
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.7433977
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",
+              "code": "I13.2",
+              "score": 0.70958185
+            },
+            {
+              "description": "Unspecified systolic (congestive) heart failure",
+              "code": "I50.20",
+              "score": 0.662224
+            },
+            {
+              "description": "Unspecified combined systolic (congestive) and diastolic (congestive) heart failure",
+              "code": "I50.40",
+              "score": 0.6614135
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9702084,
+          "beginOffset": 108,
+          "endOffset": 113,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6481644
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.68023163
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.39687455
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.33267915
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.30502552
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.29417002
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a3d66ac0-0095-4c4e-828b-f6380c4b858c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a3d66ac0-0095-4c4e-828b-f6380c4b858c"
+          ],
+          "Content-Length": [
+            "2522"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2522",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:28 GMT",
+          "x-amzn-RequestId": "a3d66ac0-0095-4c4e-828b-f6380c4b858c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 192,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "141187f3-f64f-414c-b6ea-03cae933b3e0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "141187f3-f64f-414c-b6ea-03cae933b3e0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:28 GMT",
+          "x-amzn-RequestId": "141187f3-f64f-414c-b6ea-03cae933b3e0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:29 PM"
+}

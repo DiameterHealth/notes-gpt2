@@ -1,0 +1,455 @@
+{
+  "note": ".  History of Present Illness The patient is a 60 y.o. male presenting with a low grade fever. History of Present Illness The patient is a 42 y.o. male with a history of chronic obstructive pulmonary disease (COPD). History of Present Illness The patient is a 42 y.o. male presenting with headache. History of Present Illness The patient is a 50 y.o.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 284,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 47,
+          "endOffset": 49,
+          "score": 0.99991953,
+          "text": "60",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 88,
+          "endOffset": 93,
+          "score": 0.9834224,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47688034
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 139,
+          "endOffset": 141,
+          "score": 0.99993575,
+          "text": "42",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 178,
+          "endOffset": 207,
+          "score": 0.96468097,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96768445
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99045897,
+              "relationshipScore": 0.99938774,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 170,
+              "endOffset": 177,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 209,
+          "endOffset": 213,
+          "score": 0.9946662,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9509313
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99045897,
+              "relationshipScore": 0.8823885,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 170,
+              "endOffset": 177,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 260,
+          "endOffset": 262,
+          "score": 0.9999342,
+          "text": "42",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 289,
+          "endOffset": 297,
+          "score": 0.9962149,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.70362175
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 343,
+          "endOffset": 345,
+          "score": 0.99801135,
+          "text": "50",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.99045897,
+            "id": 1,
+            "beginOffset": 170,
+            "endOffset": 177,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8756c241-f9f8-49cb-acff-5ae63f5313dd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8756c241-f9f8-49cb-acff-5ae63f5313dd"
+          ],
+          "Content-Length": [
+            "2087"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2087",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:22 GMT",
+          "x-amzn-RequestId": "8756c241-f9f8-49cb-acff-5ae63f5313dd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 501,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9834224,
+          "beginOffset": 88,
+          "endOffset": 93,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47688028
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7679292
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.46948713
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.38950017
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.38746947
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.36747637
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96468097,
+          "beginOffset": 178,
+          "endOffset": 207,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99045897,
+              "relationshipScore": 0.99938774,
+              "id": 1,
+              "beginOffset": 170,
+              "endOffset": 177,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96768445
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7115342
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.63818604
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.54220855
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.47995207
+            },
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.39878407
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "COPD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9946662,
+          "beginOffset": 209,
+          "endOffset": 213,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99045897,
+              "relationshipScore": 0.8823885,
+              "id": 1,
+              "beginOffset": 170,
+              "endOffset": 177,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9509313
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.7916374
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.72554016
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.58132064
+            },
+            {
+              "description": "Interstitial pulmonary disease, unspecified",
+              "code": "J84.9",
+              "score": 0.5431009
+            },
+            {
+              "description": "Other chronic obstructive pulmonary disease",
+              "code": "J44",
+              "score": 0.51457703
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9962149,
+          "beginOffset": 289,
+          "endOffset": 297,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.70362175
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.7344668
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.5325516
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.47808605
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.47262943
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.40672377
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7a00cbf9-cc0a-4f8d-a4d9-77f57bba7aa5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7a00cbf9-cc0a-4f8d-a4d9-77f57bba7aa5"
+          ],
+          "Content-Length": [
+            "3312"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3312",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:23 GMT",
+          "x-amzn-RequestId": "7a00cbf9-cc0a-4f8d-a4d9-77f57bba7aa5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 195,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7c02ee81-4744-4324-a501-0234ca84477c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7c02ee81-4744-4324-a501-0234ca84477c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:22 GMT",
+          "x-amzn-RequestId": "7c02ee81-4744-4324-a501-0234ca84477c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:24 PM"
+}

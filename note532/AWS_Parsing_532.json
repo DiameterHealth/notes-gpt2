@@ -1,0 +1,495 @@
+{
+  "note": ".  • How likely is this patient\u0027s fever to be a symptom of a more serious disease? • How likely is it that the fever was caused by some other cause: flu syndrome? I would consider the above questions relevant to patients with fever who present to the ED with chest pain. This patient\u0027s symptoms had been described as typical of influenza.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 321,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 34,
+          "endOffset": 39,
+          "score": 0.92253965,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45684093
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 111,
+          "endOffset": 116,
+          "score": 0.96990967,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4851833
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 149,
+          "endOffset": 161,
+          "score": 0.9626293,
+          "text": "flu syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.941187
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 226,
+          "endOffset": 231,
+          "score": 0.9792117,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5124185
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48386595
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 251,
+          "endOffset": 253,
+          "score": 0.99845755,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 259,
+          "endOffset": 264,
+          "score": 0.97874635,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 259,
+          "endOffset": 269,
+          "score": 0.8431755,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7892046
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 328,
+          "endOffset": 337,
+          "score": 0.73755985,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42489687
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9381501c-8f75-4c2d-90e4-10d52f93551b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9381501c-8f75-4c2d-90e4-10d52f93551b"
+          ],
+          "Content-Length": [
+            "1563"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1563",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:35 GMT",
+          "x-amzn-RequestId": "9381501c-8f75-4c2d-90e4-10d52f93551b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 777,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9225396,
+          "beginOffset": 34,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45684084
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.8451947
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.63795984
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.50824
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5018491
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.46987164
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96990967,
+          "beginOffset": 111,
+          "endOffset": 116,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.48518336
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7981246
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.55124295
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.5066848
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.49255362
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.4811106
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "flu syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9626293,
+          "beginOffset": 149,
+          "endOffset": 161,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.941187
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.81917095
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.63804245
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.62096643
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.6165691
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.59855056
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9792117,
+          "beginOffset": 226,
+          "endOffset": 231,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.51241845
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48386598
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7557524
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.49000916
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.45476875
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.44333535
+            },
+            {
+              "description": "Urban yellow fever",
+              "code": "A95.1",
+              "score": 0.4309556
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8431754,
+          "beginOffset": 259,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7892046
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6998987
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.5036756
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.47953206
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.45880625
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.40345526
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "influenza",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.73755985,
+          "beginOffset": 328,
+          "endOffset": 337,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42489678
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Influenza due to unidentified influenza virus with other respiratory manifestations",
+              "code": "J11.1",
+              "score": 0.8630289
+            },
+            {
+              "description": "Influenza due to other identified influenza virus with other respiratory manifestations",
+              "code": "J10.1",
+              "score": 0.7573114
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with unspecified type of pneumonia",
+              "code": "J11.00",
+              "score": 0.68847257
+            },
+            {
+              "description": "Influenza due to identified novel influenza A virus with other respiratory manifestations",
+              "code": "J09.X2",
+              "score": 0.6666987
+            },
+            {
+              "description": "Influenza due to unidentified influenza virus with other manifestations",
+              "code": "J11.89",
+              "score": 0.608102
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fe702c24-1b71-4145-8fc4-aed666018b58"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fe702c24-1b71-4145-8fc4-aed666018b58"
+          ],
+          "Content-Length": [
+            "4389"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4389",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:35 GMT",
+          "x-amzn-RequestId": "fe702c24-1b71-4145-8fc4-aed666018b58"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e4eaef8-61f1-4626-be0b-8bea1439539f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e4eaef8-61f1-4626-be0b-8bea1439539f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:35 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:35 GMT",
+          "x-amzn-RequestId": "7e4eaef8-61f1-4626-be0b-8bea1439539f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:36 PM"
+}

@@ -1,0 +1,332 @@
+{
+  "note": "staff. DIAGNOSIS:  Acute rhinitis caused by nonprescription medication with possible drug interaction (e.g., antihistamines, over the counter medications)  OR  An acute allergic reaction to medication that was not prescribed (e.g., an over-the-counter medication, medication that is not prescribed in a prescription, or medication that is taken for unknown reasons), although some may be provoked by other people.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 322,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "score": 0.9971951,
+          "text": "rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9330332
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.93591344,
+              "relationshipScore": 0.99999416,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 19,
+              "endOffset": 24,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 109,
+          "endOffset": 123,
+          "score": 0.8648178,
+          "text": "antihistamines",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 169,
+          "endOffset": 186,
+          "score": 0.8909473,
+          "text": "allergic reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8380585
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.54488856,
+              "relationshipScore": 0.99999523,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 163,
+              "endOffset": 168,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 235,
+          "endOffset": 262,
+          "score": 0.83931303,
+          "text": "over-the-counter medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.93591344,
+            "id": 1,
+            "beginOffset": 19,
+            "endOffset": 24,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.54488856,
+            "id": 3,
+            "beginOffset": 163,
+            "endOffset": 168,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "da2ebef2-9c18-4d2d-9975-8a3d77f9451e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "da2ebef2-9c18-4d2d-9975-8a3d77f9451e"
+          ],
+          "Content-Length": [
+            "1606"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1606",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:30 GMT",
+          "x-amzn-RequestId": "da2ebef2-9c18-4d2d-9975-8a3d77f9451e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 608,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "rhinitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9971951,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.93591344,
+              "relationshipScore": 0.99999416,
+              "id": 0,
+              "beginOffset": 19,
+              "endOffset": 24,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9330332
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.6444809
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.5760105
+            },
+            {
+              "description": "Chronic rhinitis",
+              "code": "J31.0",
+              "score": 0.55118865
+            },
+            {
+              "description": "Other seasonal allergic rhinitis",
+              "code": "J30.2",
+              "score": 0.5021284
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.40607595
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "allergic reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8909473,
+          "beginOffset": 169,
+          "endOffset": 186,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.54488856,
+              "relationshipScore": 0.99999523,
+              "id": 2,
+              "beginOffset": 163,
+              "endOffset": 168,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8380585
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.6437618
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.6115282
+            },
+            {
+              "description": "Allergic rhinitis, unspecified",
+              "code": "J30.9",
+              "score": 0.5293767
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.50748396
+            },
+            {
+              "description": "Allergy status to penicillin",
+              "code": "Z88.0",
+              "score": 0.4845314
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0474fd97-a6c8-467e-8c96-b4ad4bd66c0f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0474fd97-a6c8-467e-8c96-b4ad4bd66c0f"
+          ],
+          "Content-Length": [
+            "1714"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1714",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:30 GMT",
+          "x-amzn-RequestId": "0474fd97-a6c8-467e-8c96-b4ad4bd66c0f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 212,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8295055f-544d-4c39-a4b3-253263b4993c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8295055f-544d-4c39-a4b3-253263b4993c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:30 GMT",
+          "x-amzn-RequestId": "8295055f-544d-4c39-a4b3-253263b4993c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:32 PM"
+}

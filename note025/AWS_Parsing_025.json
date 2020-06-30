@@ -1,0 +1,495 @@
+{
+  "note": "Should the fever resolve or the patient not be able to stand, the patient should be able to rest comfortably. Encephalopathy: Should the patient have neurological deficits the medical consultant should be contacted urgently. Management:  The medical consultant should identify the source of these infections and advise the patient of the most appropriate course of action. An encephalopathie is not a single entity, so it is important that the patient receive a thorough assessment from a medical consultant.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 258,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 11,
+          "endOffset": 16,
+          "score": 0.6307903,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 47,
+          "endOffset": 60,
+          "score": 0.3725471,
+          "text": "able to stand",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 84,
+          "endOffset": 108,
+          "score": 0.4294227,
+          "text": "able to rest comfortably",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59570354
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 110,
+          "endOffset": 124,
+          "score": 0.9743478,
+          "text": "Encephalopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6931623
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "score": 0.9114659,
+          "text": "neurological deficits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 297,
+          "endOffset": 307,
+          "score": 0.97177124,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90718627
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 376,
+          "endOffset": 391,
+          "score": 0.5472044,
+          "text": "encephalopathie",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40135074
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c5a27d18-3e07-4bd6-a473-7682959bb436"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c5a27d18-3e07-4bd6-a473-7682959bb436"
+          ],
+          "Content-Length": [
+            "1320"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1320",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:44 GMT",
+          "x-amzn-RequestId": "c5a27d18-3e07-4bd6-a473-7682959bb436"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 458,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6307903,
+          "beginOffset": 11,
+          "endOffset": 16,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.78670126
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5859408
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.44394007
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.44316667
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.41475126
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "able to stand",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3725471,
+          "beginOffset": 47,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of gait and mobility",
+              "code": "R26.89",
+              "score": 0.855345
+            },
+            {
+              "description": "Adult failure to thrive",
+              "code": "R62.7",
+              "score": 0.74171656
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.70637316
+            },
+            {
+              "description": "Dysphagia, unspecified",
+              "code": "R13.10",
+              "score": 0.69147223
+            },
+            {
+              "description": "Enterocolitis due to Clostridium difficile, not specified as recurrent",
+              "code": "A04.72",
+              "score": 0.6870254
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "able to rest comfortably",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4294226,
+          "beginOffset": 84,
+          "endOffset": 108,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59570354
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tremor, unspecified",
+              "code": "R25.1",
+              "score": 0.7913266
+            },
+            {
+              "description": "Other specified forms of tremor",
+              "code": "G25.2",
+              "score": 0.7315539
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.7270521
+            },
+            {
+              "description": "Dysphagia, unspecified",
+              "code": "R13.10",
+              "score": 0.7252862
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.709983
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Encephalopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9743478,
+          "beginOffset": 110,
+          "endOffset": 124,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6931624
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Encephalopathy, unspecified",
+              "code": "G93.40",
+              "score": 0.88014966
+            },
+            {
+              "description": "Metabolic encephalopathy",
+              "code": "G93.41",
+              "score": 0.78646773
+            },
+            {
+              "description": "Hypertensive encephalopathy",
+              "code": "I67.4",
+              "score": 0.73974276
+            },
+            {
+              "description": "Toxic encephalopathy",
+              "code": "G92",
+              "score": 0.6763421
+            },
+            {
+              "description": "Other and unspecified encephalopathy",
+              "code": "G93.4",
+              "score": 0.6760799
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "neurological deficits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9114659,
+          "beginOffset": 150,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.82356846
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.72778475
+            },
+            {
+              "description": "Other disorders of nervous system",
+              "code": "G98.8",
+              "score": 0.64044535
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.61036974
+            },
+            {
+              "description": "Weakness",
+              "code": "R53.1",
+              "score": 0.60809356
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97177124,
+          "beginOffset": 297,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90718627
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.8179986
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.7761952
+            },
+            {
+              "description": "Lobar pneumonia, unspecified organism",
+              "code": "J18.1",
+              "score": 0.73522073
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.73037636
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.72957206
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "encephalopathie",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5472044,
+          "beginOffset": 376,
+          "endOffset": 391,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.40135068
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Encephalopathy, unspecified",
+              "code": "G93.40",
+              "score": 0.83267826
+            },
+            {
+              "description": "Metabolic encephalopathy",
+              "code": "G93.41",
+              "score": 0.7738177
+            },
+            {
+              "description": "Hypertensive encephalopathy",
+              "code": "I67.4",
+              "score": 0.6892783
+            },
+            {
+              "description": "Toxic encephalopathy",
+              "code": "G92",
+              "score": 0.66444117
+            },
+            {
+              "description": "Other and unspecified encephalopathy",
+              "code": "G93.4",
+              "score": 0.6346792
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4bfd33f1-586f-4a9b-9f70-690477683b62"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4bfd33f1-586f-4a9b-9f70-690477683b62"
+          ],
+          "Content-Length": [
+            "4804"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4804",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:45 GMT",
+          "x-amzn-RequestId": "4bfd33f1-586f-4a9b-9f70-690477683b62"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 227,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dc3fb0a4-36de-4d38-8204-23ead4e35083"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dc3fb0a4-36de-4d38-8204-23ead4e35083"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:44 GMT",
+          "x-amzn-RequestId": "dc3fb0a4-36de-4d38-8204-23ead4e35083"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:45 PM"
+}

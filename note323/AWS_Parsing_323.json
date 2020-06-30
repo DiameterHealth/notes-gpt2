@@ -1,0 +1,467 @@
+{
+  "note": "difficulty concentrating, and experiences low arousal in the presence of new people. However, when these symptoms are brought within acceptable control, a marked increase in energy, activity, vigour, and energy reserve is noted. Symptoms often begin with an excitement of the mind, and a sense of excitement is described. A sense of happiness is often experienced, and the patient appears to have a better mood and mood swings occur sporadically and not constantly.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 300,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 24,
+          "score": 0.9316206,
+          "text": "difficulty concentrating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92542005
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 42,
+          "endOffset": 53,
+          "score": 0.69295126,
+          "text": "low arousal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6465646
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 258,
+          "endOffset": 280,
+          "score": 0.2861349,
+          "text": "excitement of the mind",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8097119
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 288,
+          "endOffset": 307,
+          "score": 0.67409885,
+          "text": "sense of excitement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8161712
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 324,
+          "endOffset": 342,
+          "score": 0.76863366,
+          "text": "sense of happiness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88378584
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 399,
+          "endOffset": 426,
+          "score": 0.8642835,
+          "text": "better mood and mood swings",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93555343
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "40485104-c9a6-46c7-b376-51454ffad069"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "40485104-c9a6-46c7-b376-51454ffad069"
+          ],
+          "Content-Length": [
+            "1288"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1288",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:14 GMT",
+          "x-amzn-RequestId": "40485104-c9a6-46c7-b376-51454ffad069"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1043,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "difficulty concentrating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9316206,
+          "beginOffset": 0,
+          "endOffset": 24,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.92542005
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.60954046
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.532217
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.50620234
+            },
+            {
+              "description": "Attention and concentration deficit",
+              "code": "R41.840",
+              "score": 0.4306083
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.3863489
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "low arousal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.69295126,
+          "beginOffset": 42,
+          "endOffset": 53,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64656454
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.7276057
+            },
+            {
+              "description": "Anemia, unspecified",
+              "code": "D64.9",
+              "score": 0.690191
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.676213
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.6727828
+            },
+            {
+              "description": "Confusional arousals",
+              "code": "G47.51",
+              "score": 0.65898037
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "excitement of the mind",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.28613487,
+          "beginOffset": 258,
+          "endOffset": 280,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8097119
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.8633418
+            },
+            {
+              "description": "Disorders of diaphragm",
+              "code": "J98.6",
+              "score": 0.8166351
+            },
+            {
+              "description": "Personal history of other diseases of the nervous system and sense organs",
+              "code": "Z86.69",
+              "score": 0.80284214
+            },
+            {
+              "description": "Disease of stomach and duodenum, unspecified",
+              "code": "K31.9",
+              "score": 0.79561275
+            },
+            {
+              "description": "Borderline personality disorder",
+              "code": "F60.3",
+              "score": 0.79176027
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sense of excitement",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.67409873,
+          "beginOffset": 288,
+          "endOffset": 307,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8161712
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of smell and taste",
+              "code": "R43.8",
+              "score": 0.8358517
+            },
+            {
+              "description": "Personal history of other diseases of the nervous system and sense organs",
+              "code": "Z86.69",
+              "score": 0.8117832
+            },
+            {
+              "description": "Worries",
+              "code": "R45.82",
+              "score": 0.7932779
+            },
+            {
+              "description": "Parosmia",
+              "code": "R43.1",
+              "score": 0.7737235
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.7587606
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "sense of happiness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.76863354,
+          "beginOffset": 324,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.88378584
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of smell and taste",
+              "code": "R43.8",
+              "score": 0.8356737
+            },
+            {
+              "description": "Personal history of other diseases of the nervous system and sense organs",
+              "code": "Z86.69",
+              "score": 0.83160114
+            },
+            {
+              "description": "Disorders of diaphragm",
+              "code": "J98.6",
+              "score": 0.8061307
+            },
+            {
+              "description": "Worries",
+              "code": "R45.82",
+              "score": 0.8020915
+            },
+            {
+              "description": "Parosmia",
+              "code": "R43.1",
+              "score": 0.8019731
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "better mood and mood swings",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8642835,
+          "beginOffset": 399,
+          "endOffset": 426,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.93555343
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.6542112
+            },
+            {
+              "description": "Other symptoms and signs involving emotional state",
+              "code": "R45.89",
+              "score": 0.5651354
+            },
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.42759573
+            },
+            {
+              "description": "Other specified persistent mood disorders",
+              "code": "F34.89",
+              "score": 0.41091517
+            },
+            {
+              "description": "Adjustment disorder with depressed mood",
+              "code": "F43.21",
+              "score": 0.40418386
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7c54ca05-a7f6-4ae6-9da7-ad708603b03f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7c54ca05-a7f6-4ae6-9da7-ad708603b03f"
+          ],
+          "Content-Length": [
+            "4288"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4288",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:15 GMT",
+          "x-amzn-RequestId": "7c54ca05-a7f6-4ae6-9da7-ad708603b03f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4db62481-e225-4818-9035-bd5ae7a00fe1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4db62481-e225-4818-9035-bd5ae7a00fe1"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:14 GMT",
+          "x-amzn-RequestId": "4db62481-e225-4818-9035-bd5ae7a00fe1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:16 PM"
+}

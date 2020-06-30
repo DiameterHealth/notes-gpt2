@@ -1,0 +1,221 @@
+{
+  "note": "(Mr. J. M. Chae) for hematuria, but his experience with the disease was limited and he was unable to adjust the treatment plan on time. The pt\u0027s blood glucose control improved steadily, to a level that has now been maintained for several months. He was referred to a nutritionist for diet counselling and for advice regarding weight control. DISCUSSION The case presented by the pt was an important one on several levels.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 408,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 5,
+          "endOffset": 15,
+          "score": 0.99815685,
+          "text": "J. M. Chae",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 21,
+          "endOffset": 30,
+          "score": 0.98966295,
+          "text": "hematuria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6737898
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 145,
+          "endOffset": 166,
+          "score": 0.68866444,
+          "text": "blood glucose control",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.32475513,
+              "relationshipScore": 0.99999833,
+              "relationshipType": "TEST_VALUE",
+              "id": 3,
+              "beginOffset": 167,
+              "endOffset": 175,
+              "text": "improved",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 326,
+          "endOffset": 340,
+          "score": 0.6976025,
+          "text": "weight control",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b99e68ac-d291-447e-87dd-e79b60af849f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b99e68ac-d291-447e-87dd-e79b60af849f"
+          ],
+          "Content-Length": [
+            "992"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "992",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:38 GMT",
+          "x-amzn-RequestId": "b99e68ac-d291-447e-87dd-e79b60af849f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "hematuria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98966295,
+          "beginOffset": 21,
+          "endOffset": 30,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.67378974
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.86016625
+            },
+            {
+              "description": "Acute cystitis with hematuria",
+              "code": "N30.01",
+              "score": 0.7730907
+            },
+            {
+              "description": "Gross hematuria",
+              "code": "R31.0",
+              "score": 0.6928048
+            },
+            {
+              "description": "Cystitis, unspecified without hematuria",
+              "code": "N30.90",
+              "score": 0.6316304
+            },
+            {
+              "description": "Asymptomatic microscopic hematuria",
+              "code": "R31.21",
+              "score": 0.53759927
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "79fdbcda-313b-4b3d-b5da-8fea2a5b3d29"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "79fdbcda-313b-4b3d-b5da-8fea2a5b3d29"
+          ],
+          "Content-Length": [
+            "714"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "714",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:40 GMT",
+          "x-amzn-RequestId": "79fdbcda-313b-4b3d-b5da-8fea2a5b3d29"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1645d087-9b93-430b-ad28-f02d5c789e43"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1645d087-9b93-430b-ad28-f02d5c789e43"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:40 GMT",
+          "x-amzn-RequestId": "1645d087-9b93-430b-ad28-f02d5c789e43"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:40 PM"
+}

@@ -1,0 +1,914 @@
+{
+  "note": ". On initial examination the patient has a palpable right upper quadrant pulse but no cardiac rhythm. When the patient is mechanically ventilated, his breathing pattern is rapid, with very slow inspiratory gas exchange. He has a diffuse, tachypnoea-like palmar rigidity which resolves shortly after airway occlusion. The patient\u0027s lungs are warm to the touch with a dark red coloration in the pleura with little erythema along the walls.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 807,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 64,
+          "endOffset": 72,
+          "score": 0.97431946,
+          "text": "quadrant",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 86,
+          "endOffset": 100,
+          "score": 0.7178605,
+          "text": "cardiac rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9475547
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.77231264
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 122,
+          "endOffset": 145,
+          "score": 0.95862883,
+          "text": "mechanically ventilated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9301985
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 151,
+          "endOffset": 177,
+          "score": 0.94115144,
+          "text": "breathing pattern is rapid",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.85865986
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 189,
+          "endOffset": 218,
+          "score": 0.38361344,
+          "text": "slow inspiratory gas exchange",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.89549774
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 238,
+          "endOffset": 269,
+          "score": 0.608506,
+          "text": "tachypnoea-like palmar rigidity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.90336436
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 299,
+          "endOffset": 315,
+          "score": 0.41861528,
+          "text": "airway occlusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.84971946
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 331,
+          "endOffset": 336,
+          "score": 0.9801815,
+          "text": "lungs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 331,
+          "endOffset": 358,
+          "score": 0.39180058,
+          "text": "lungs are warm to the touch",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.77657944
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.61813813,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 375,
+          "endOffset": 385,
+          "score": 0.76038647,
+          "text": "coloration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8047436
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9801815,
+              "relationshipScore": 0.70524544,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 331,
+              "endOffset": 336,
+              "text": "lungs",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.9996847,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.34126675,
+              "relationshipScore": 0.8527625,
+              "relationshipType": "DIRECTION",
+              "id": 5,
+              "beginOffset": 421,
+              "endOffset": 426,
+              "text": "along",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9697778,
+              "relationshipScore": 0.7977847,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 431,
+              "endOffset": 436,
+              "text": "walls",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 393,
+          "endOffset": 399,
+          "score": 0.95876795,
+          "text": "pleura",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 412,
+          "endOffset": 420,
+          "score": 0.96979475,
+          "text": "erythema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.89992476
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.7162174,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.34126675,
+              "relationshipScore": 0.99998415,
+              "relationshipType": "DIRECTION",
+              "id": 5,
+              "beginOffset": 421,
+              "endOffset": 426,
+              "text": "along",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9697778,
+              "relationshipScore": 0.9999385,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 6,
+              "beginOffset": 431,
+              "endOffset": 436,
+              "text": "walls",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 431,
+          "endOffset": 436,
+          "score": 0.9697778,
+          "text": "walls",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99414414,
+            "id": 0,
+            "beginOffset": 52,
+            "endOffset": 57,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.989772,
+            "id": 1,
+            "beginOffset": 58,
+            "endOffset": 63,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.34126675,
+            "id": 5,
+            "beginOffset": 421,
+            "endOffset": 426,
+            "text": "along",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "79a88946-5f7a-463f-af7e-01a782d92790"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "79a88946-5f7a-463f-af7e-01a782d92790"
+          ],
+          "Content-Length": [
+            "4814"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4814",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:39 GMT",
+          "x-amzn-RequestId": "79a88946-5f7a-463f-af7e-01a782d92790"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 983,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "cardiac rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7178605,
+          "beginOffset": 86,
+          "endOffset": 100,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9475547
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.77231264
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.72018045
+            },
+            {
+              "description": "Cardiac murmur, unspecified",
+              "code": "R01.1",
+              "score": 0.6784614
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.607567
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.58217794
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.5671698
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "mechanically ventilated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95862883,
+          "beginOffset": 122,
+          "endOffset": 145,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.9301985
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dependence on respirator [ventilator] status",
+              "code": "Z99.11",
+              "score": 0.65461516
+            },
+            {
+              "description": "Mechanical ptosis of right eyelid",
+              "code": "H02.411",
+              "score": 0.44119072
+            },
+            {
+              "description": "Disorder involving the immune mechanism, unspecified",
+              "code": "D89.9",
+              "score": 0.4237425
+            },
+            {
+              "description": "Mechanical ptosis of left eyelid",
+              "code": "H02.412",
+              "score": 0.38942736
+            },
+            {
+              "description": "Mechanical complication of respirator",
+              "code": "J95.850",
+              "score": 0.3575534
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "breathing pattern is rapid",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94115144,
+          "beginOffset": 151,
+          "endOffset": 177,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.85865986
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.550686
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.46999922
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.45519042
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.44690904
+            },
+            {
+              "description": "Volvulus",
+              "code": "K56.2",
+              "score": 0.42603764
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "slow inspiratory gas exchange",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38361344,
+          "beginOffset": 189,
+          "endOffset": 218,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.89549774
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Flatulence",
+              "code": "R14.3",
+              "score": 0.6807598
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.62994415
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.5983876
+            },
+            {
+              "description": "Abnormal electroencephalogram [EEG]",
+              "code": "R94.01",
+              "score": 0.5772425
+            },
+            {
+              "description": "Abdominal distension (gaseous)",
+              "code": "R14.0",
+              "score": 0.5706114
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "tachypnoea-like palmar rigidity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.60850596,
+          "beginOffset": 238,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.90336436
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachypnea, not elsewhere classified",
+              "code": "R06.82",
+              "score": 0.37036458
+            },
+            {
+              "description": "Palmar fascial fibromatosis [Dupuytren]",
+              "code": "M72.0",
+              "score": 0.27908668
+            },
+            {
+              "description": "Meningismus",
+              "code": "R29.1",
+              "score": 0.20917381
+            },
+            {
+              "description": "Tight hymenal ring",
+              "code": "N89.6",
+              "score": 0.1979884
+            },
+            {
+              "description": "Abdominal rigidity, unspecified site",
+              "code": "R19.30",
+              "score": 0.19687936
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "airway occlusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41861528,
+          "beginOffset": 299,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.84971946
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic total occlusion of coronary artery",
+              "code": "I25.82",
+              "score": 0.53125924
+            },
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.53112876
+            },
+            {
+              "description": "Celiac artery compression syndrome",
+              "code": "I77.4",
+              "score": 0.5173755
+            },
+            {
+              "description": "Occlusion and stenosis of unspecified cerebral artery",
+              "code": "I66.9",
+              "score": 0.5080296
+            },
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.50656676
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "lungs are warm to the touch",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39180058,
+          "beginOffset": 331,
+          "endOffset": 358,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.61813813,
+              "id": 12,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.77657944
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.7174531
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.5753162
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.55724716
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.55034953
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.5487883
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "coloration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.76038647,
+          "beginOffset": 375,
+          "endOffset": 385,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9801815,
+              "relationshipScore": 0.70524544,
+              "id": 10,
+              "beginOffset": 331,
+              "endOffset": 336,
+              "text": "lungs",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.9996847,
+              "id": 12,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.34126657,
+              "relationshipScore": 0.8527625,
+              "id": 14,
+              "beginOffset": 421,
+              "endOffset": 426,
+              "text": "along",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9697778,
+              "relationshipScore": 0.7977847,
+              "id": 15,
+              "beginOffset": 431,
+              "endOffset": 436,
+              "text": "walls",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8047437
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.63302433
+            },
+            {
+              "description": "Follicular disorder, unspecified",
+              "code": "L73.9",
+              "score": 0.6226782
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.5968126
+            },
+            {
+              "description": "Abnormal sputum",
+              "code": "R09.3",
+              "score": 0.57312864
+            },
+            {
+              "description": "Hair color and hair shaft abnormality, unspecified",
+              "code": "L67.9",
+              "score": 0.55667496
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "erythema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96979475,
+          "beginOffset": 412,
+          "endOffset": 420,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.95876795,
+              "relationshipScore": 0.7162174,
+              "id": 12,
+              "beginOffset": 393,
+              "endOffset": 399,
+              "text": "pleura",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.34126657,
+              "relationshipScore": 0.99998415,
+              "id": 14,
+              "beginOffset": 421,
+              "endOffset": 426,
+              "text": "along",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9697778,
+              "relationshipScore": 0.9999385,
+              "id": 15,
+              "beginOffset": 431,
+              "endOffset": 436,
+              "text": "walls",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.89992476
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.7151749
+            },
+            {
+              "description": "Joint disorder, unspecified",
+              "code": "M25.9",
+              "score": 0.49948633
+            },
+            {
+              "description": "Other diseases of pharynx",
+              "code": "J39.2",
+              "score": 0.44403586
+            },
+            {
+              "description": "Erythema intertrigo",
+              "code": "L30.4",
+              "score": 0.4410141
+            },
+            {
+              "description": "Rosacea, unspecified",
+              "code": "L71.9",
+              "score": 0.43591642
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1a7ecba3-a1ea-4362-9086-c72ee975575b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1a7ecba3-a1ea-4362-9086-c72ee975575b"
+          ],
+          "Content-Length": [
+            "7713"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7713",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:40 GMT",
+          "x-amzn-RequestId": "1a7ecba3-a1ea-4362-9086-c72ee975575b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 249,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f55d884c-7b33-484b-976d-696dd0fb61ed"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f55d884c-7b33-484b-976d-696dd0fb61ed"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:39 GMT",
+          "x-amzn-RequestId": "f55d884c-7b33-484b-976d-696dd0fb61ed"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:40 PM"
+}

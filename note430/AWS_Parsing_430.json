@@ -1,0 +1,770 @@
+{
+  "note": "for 2-3 days. Was feeling better yesterday and was feeling better. Itchy skin, sore throat, nausea, vomiting, stomach cramps. Am on aspirin for headache.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 460,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 18,
+          "endOffset": 32,
+          "score": 0.8121269,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.81713355
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 33,
+          "endOffset": 42,
+          "score": 0.99999917,
+          "text": "yesterday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8121269,
+              "relationshipScore": 0.9741654,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 18,
+              "endOffset": 32,
+              "text": "feeling better",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.81713355
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 33,
+          "endOffset": 42,
+          "score": 0.99999917,
+          "text": "yesterday",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.86960316,
+              "relationshipScore": 0.9158118,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 51,
+              "endOffset": 65,
+              "text": "feeling better",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.9016367
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 51,
+          "endOffset": 65,
+          "score": 0.86960316,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9016367
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 67,
+          "endOffset": 77,
+          "score": 0.9235112,
+          "text": "Itchy skin",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.95355844
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9903743,
+              "relationshipScore": 0.51620173,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 84,
+              "endOffset": 90,
+              "text": "throat",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 73,
+          "endOffset": 77,
+          "score": 0.97387105,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 79,
+          "endOffset": 90,
+          "score": 0.87364554,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9571997
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97387105,
+              "relationshipScore": 0.60971296,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 73,
+              "endOffset": 77,
+              "text": "skin",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 84,
+          "endOffset": 90,
+          "score": 0.9903743,
+          "text": "throat",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 92,
+          "endOffset": 98,
+          "score": 0.9988298,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9712814
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 100,
+          "endOffset": 108,
+          "score": 0.9989503,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9645228
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 110,
+          "endOffset": 117,
+          "score": 0.95911777,
+          "text": "stomach",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 110,
+          "endOffset": 124,
+          "score": 0.9830374,
+          "text": "stomach cramps",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94474125
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 132,
+          "endOffset": 139,
+          "score": 0.99897313,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 144,
+          "endOffset": 152,
+          "score": 0.9936132,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63513875
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "21ae76fa-383a-4dba-9b15-4cc368287b1b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "21ae76fa-383a-4dba-9b15-4cc368287b1b"
+          ],
+          "Content-Length": [
+            "3530"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3530",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:21 GMT",
+          "x-amzn-RequestId": "21ae76fa-383a-4dba-9b15-4cc368287b1b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1146,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8121269,
+          "beginOffset": 18,
+          "endOffset": 32,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8171335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.802635
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.7428769
+            },
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.73005694
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.7292881
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.7242293
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "feeling better",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.86960316,
+          "beginOffset": 51,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9016367
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7683874
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6968375
+            },
+            {
+              "description": "Dizziness and giddiness",
+              "code": "R42",
+              "score": 0.6868519
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.68564963
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.67770815
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Itchy skin",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9235112,
+          "beginOffset": 67,
+          "endOffset": 77,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9903743,
+              "relationshipScore": 0.51620173,
+              "id": 5,
+              "beginOffset": 84,
+              "endOffset": 90,
+              "text": "throat",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.95355844
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pruritus, unspecified",
+              "code": "L29.9",
+              "score": 0.7061781
+            },
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.52942026
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.52572864
+            },
+            {
+              "description": "Xerosis cutis",
+              "code": "L85.3",
+              "score": 0.5132037
+            },
+            {
+              "description": "Other pruritus",
+              "code": "L29.8",
+              "score": 0.5094387
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "sore throat",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8736454,
+          "beginOffset": 79,
+          "endOffset": 90,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.97387105,
+              "relationshipScore": 0.60971296,
+              "id": 3,
+              "beginOffset": 73,
+              "endOffset": 77,
+              "text": "skin",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9571997
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute pharyngitis, unspecified",
+              "code": "J02.9",
+              "score": 0.7179318
+            },
+            {
+              "description": "Streptococcal pharyngitis",
+              "code": "J02.0",
+              "score": 0.465308
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.45254248
+            },
+            {
+              "description": "Gonococcal pharyngitis",
+              "code": "A54.5",
+              "score": 0.43189168
+            },
+            {
+              "description": "Pain in throat",
+              "code": "R07.0",
+              "score": 0.39890912
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9988298,
+          "beginOffset": 92,
+          "endOffset": 98,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9712814
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.71247554
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.69892263
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.52345186
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.52267516
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.43016067
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9989503,
+          "beginOffset": 100,
+          "endOffset": 108,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.9645228
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.67057735
+            },
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.6231031
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.44635203
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.41581154
+            },
+            {
+              "description": "Vomiting",
+              "code": "R11.1",
+              "score": 0.4127557
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "stomach cramps",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9830374,
+          "beginOffset": 110,
+          "endOffset": 124,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.94474125
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cramp and spasm",
+              "code": "R25.2",
+              "score": 0.5103741
+            },
+            {
+              "description": "Other diseases of stomach and duodenum",
+              "code": "K31.89",
+              "score": 0.49081984
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4703802
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.4449689
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.4276533
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9936132,
+          "beginOffset": 144,
+          "endOffset": 152,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63513875
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.54940253
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.42027777
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.3434479
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.30686745
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.30378005
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ec179a32-726f-48cd-9565-2965153414ca"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ec179a32-726f-48cd-9565-2965153414ca"
+          ],
+          "Content-Length": [
+            "5699"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5699",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:23 GMT",
+          "x-amzn-RequestId": "ec179a32-726f-48cd-9565-2965153414ca"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 245,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99897313,
+          "beginOffset": 132,
+          "endOffset": 139,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]",
+              "code": "724444",
+              "score": 0.16114618
+            },
+            {
+              "description": "Aspirin 500 MG Delayed Release Oral Tablet",
+              "code": "308409",
+              "score": 0.14790183
+            },
+            {
+              "description": "Aspirin 228 MG Chewing Gum",
+              "code": "853499",
+              "score": 0.10526551
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7262197c-f350-4ee8-bb72-54f6e0b53b11"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7262197c-f350-4ee8-bb72-54f6e0b53b11"
+          ],
+          "Content-Length": [
+            "679"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "679",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:21 GMT",
+          "x-amzn-RequestId": "7262197c-f350-4ee8-bb72-54f6e0b53b11"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:23 PM"
+}

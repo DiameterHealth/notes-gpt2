@@ -1,0 +1,496 @@
+{
+  "note": "and range of motion. Patient\u0027s weight should be restored to normal by the time his doctor is available in two weeks. Case Report 2: A 69 year old man who had previously been diagnosed as a severe diabetic and who was found to be non diabetic had several recent seizures. He is now in full remission with a normal glucose level.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 432,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "score": 0.5172006,
+          "text": "range of motion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.71035975
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 31,
+          "endOffset": 37,
+          "score": 0.62467766,
+          "text": "weight",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.64109206,
+              "relationshipScore": 0.9989268,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 60,
+              "endOffset": 66,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 134,
+          "endOffset": 136,
+          "score": 0.99707615,
+          "text": "69",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 196,
+          "endOffset": 204,
+          "score": 0.96846807,
+          "text": "diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8824754
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 229,
+          "endOffset": 241,
+          "score": 0.880176,
+          "text": "non diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8173026
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 254,
+          "endOffset": 260,
+          "score": 0.99999857,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9901966,
+              "relationshipScore": 0.88863486,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 261,
+              "endOffset": 269,
+              "text": "seizures",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8207715
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 261,
+          "endOffset": 269,
+          "score": 0.9901966,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8207715
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 284,
+          "endOffset": 298,
+          "score": 0.3811535,
+          "text": "full remission",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46150443
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 313,
+          "endOffset": 326,
+          "score": 0.9295815,
+          "text": "glucose level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8948327,
+              "relationshipScore": 0.9999498,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 306,
+              "endOffset": 312,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "34172c40-cb44-4f71-9fd4-259b2e428ce0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "34172c40-cb44-4f71-9fd4-259b2e428ce0"
+          ],
+          "Content-Length": [
+            "2421"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2421",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:06 GMT",
+          "x-amzn-RequestId": "34172c40-cb44-4f71-9fd4-259b2e428ce0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 601,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "range of motion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.51720047,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7103598
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stiffness of unspecified joint, not elsewhere classified",
+              "code": "M25.60",
+              "score": 0.70239526
+            },
+            {
+              "description": "Disorders of diaphragm",
+              "code": "J98.6",
+              "score": 0.677167
+            },
+            {
+              "description": "Disorder of ligament, unspecified site",
+              "code": "M24.20",
+              "score": 0.62593645
+            },
+            {
+              "description": "Stiffness of unspecified hip, not elsewhere classified",
+              "code": "M25.659",
+              "score": 0.6167816
+            },
+            {
+              "description": "Other specific joint derangements of left hand, not elsewhere classified",
+              "code": "M24.842",
+              "score": 0.595568
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96846807,
+          "beginOffset": 196,
+          "endOffset": 204,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8824754
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8242393
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7817034
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.72396684
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.7116556
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.69691557
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "non diabetic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88017607,
+          "beginOffset": 229,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8173026
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.80893797
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.74644786
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.69953847
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.6788724
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.6628144
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "seizures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9901966,
+          "beginOffset": 261,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8207715
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified convulsions",
+              "code": "R56.9",
+              "score": 0.8391633
+            },
+            {
+              "description": "Epilepsy, unspecified, not intractable, without status epilepticus",
+              "code": "G40.909",
+              "score": 0.7923801
+            },
+            {
+              "description": "Other seizures",
+              "code": "G40.89",
+              "score": 0.74188745
+            },
+            {
+              "description": "Personal history of other specified conditions",
+              "code": "Z87.898",
+              "score": 0.69109374
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.6507403
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "full remission",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.3811535,
+          "beginOffset": 284,
+          "endOffset": 298,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.46150437
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the musculoskeletal system",
+              "code": "R29.898",
+              "score": 0.7699104
+            },
+            {
+              "description": "Cocaine dependence, in remission",
+              "code": "F14.21",
+              "score": 0.5634282
+            },
+            {
+              "description": "Major depressive disorder, single episode, in full remission",
+              "code": "F32.5",
+              "score": 0.56032485
+            },
+            {
+              "description": "Major depressive disorder, recurrent, in full remission",
+              "code": "F33.42",
+              "score": 0.5341432
+            },
+            {
+              "description": "Cocaine abuse, in remission",
+              "code": "F14.11",
+              "score": 0.51989484
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7f487e5b-3a79-4401-b54f-8fd180b02d5c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7f487e5b-3a79-4401-b54f-8fd180b02d5c"
+          ],
+          "Content-Length": [
+            "3937"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:07 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3937",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:07 GMT",
+          "x-amzn-RequestId": "7f487e5b-3a79-4401-b54f-8fd180b02d5c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 191,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "903d9582-8c3b-44e2-9a6c-924cd1e08113"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "903d9582-8c3b-44e2-9a6c-924cd1e08113"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:07:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:07:06 GMT",
+          "x-amzn-RequestId": "903d9582-8c3b-44e2-9a6c-924cd1e08113"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:07:07 PM"
+}

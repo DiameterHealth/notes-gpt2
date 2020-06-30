@@ -1,0 +1,566 @@
+{
+  "note": "After discussing with the patient and reviewing patient records, he has a diagnosis of an inflamed disc with some inflammatory features. The diagnosis of inflamed disc is likely to be confirmed by pathology reports. A diagnosis of osteoarthritis with a low rate of radiographic improvement may require surgical treatment. The clinician should refer this patient to an orthopedic surgeon to evaluate the patient for a posterior canal or other narrowing in the disc.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 478,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 90,
+          "endOffset": 103,
+          "score": 0.8505317,
+          "text": "inflamed disc",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8706339
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 99,
+          "endOffset": 103,
+          "score": 0.81054574,
+          "text": "disc",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 114,
+          "endOffset": 135,
+          "score": 0.7482544,
+          "text": "inflammatory features",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7673426
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 154,
+          "endOffset": 167,
+          "score": 0.8976881,
+          "text": "inflamed disc",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8680038
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 163,
+          "endOffset": 167,
+          "score": 0.8866753,
+          "text": "disc",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 197,
+          "endOffset": 206,
+          "score": 0.5335335,
+          "text": "pathology",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.31053248,
+              "relationshipScore": 0.9774849,
+              "relationshipType": "TEST_VALUE",
+              "id": 11,
+              "beginOffset": 253,
+              "endOffset": 256,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 231,
+          "endOffset": 245,
+          "score": 0.99884665,
+          "text": "osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9608952
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 302,
+          "endOffset": 320,
+          "score": 0.23405597,
+          "text": "surgical treatment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 427,
+          "endOffset": 432,
+          "score": 0.5609286,
+          "text": "canal",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 442,
+          "endOffset": 451,
+          "score": 0.52586925,
+          "text": "narrowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50611204
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.90431416,
+              "relationshipScore": 0.99972576,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 417,
+              "endOffset": 426,
+              "text": "posterior",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.5609286,
+              "relationshipScore": 0.93030584,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 427,
+              "endOffset": 432,
+              "text": "canal",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9695434,
+              "relationshipScore": 0.9986921,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 459,
+              "endOffset": 463,
+              "text": "disc",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 459,
+          "endOffset": 463,
+          "score": 0.9695434,
+          "text": "disc",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.90431416,
+            "id": 2,
+            "beginOffset": 417,
+            "endOffset": 426,
+            "text": "posterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "406ddb3b-6bc6-479d-a6b1-a62fe2fb0510"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "406ddb3b-6bc6-479d-a6b1-a62fe2fb0510"
+          ],
+          "Content-Length": [
+            "3053"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3053",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:32 GMT",
+          "x-amzn-RequestId": "406ddb3b-6bc6-479d-a6b1-a62fe2fb0510"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 591,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "inflamed disc",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8505317,
+          "beginOffset": 90,
+          "endOffset": 103,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8706339
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder",
+              "code": "M51.9",
+              "score": 0.6794839
+            },
+            {
+              "description": "Other specified disorders of the skin and subcutaneous tissue",
+              "code": "L98.8",
+              "score": 0.6432053
+            },
+            {
+              "description": "Other intervertebral disc disorders, lumbar region",
+              "code": "M51.86",
+              "score": 0.6409212
+            },
+            {
+              "description": "Traumatic rupture of lumbar intervertebral disc",
+              "code": "S33.0",
+              "score": 0.63701457
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.6365952
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "inflammatory features",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.74825436,
+          "beginOffset": 114,
+          "endOffset": 135,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7673426
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Inflammatory disorders of scrotum",
+              "code": "N49.2",
+              "score": 0.89888
+            },
+            {
+              "description": "Female pelvic inflammatory disease, unspecified",
+              "code": "N73.9",
+              "score": 0.8316393
+            },
+            {
+              "description": "Disease of intestine, unspecified",
+              "code": "K63.9",
+              "score": 0.8223247
+            },
+            {
+              "description": "Disease of pericardium, unspecified",
+              "code": "I31.9",
+              "score": 0.7928296
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.77009785
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "inflamed disc",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8976881,
+          "beginOffset": 154,
+          "endOffset": 167,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86800367
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder",
+              "code": "M51.9",
+              "score": 0.65029794
+            },
+            {
+              "description": "Traumatic rupture of lumbar intervertebral disc",
+              "code": "S33.0",
+              "score": 0.6162767
+            },
+            {
+              "description": "Other intervertebral disc disorders, lumbosacral region",
+              "code": "M51.87",
+              "score": 0.61436975
+            },
+            {
+              "description": "Other intervertebral disc disorders, lumbar region",
+              "code": "M51.86",
+              "score": 0.61396444
+            },
+            {
+              "description": "Other specified disorders of the skin and subcutaneous tissue",
+              "code": "L98.8",
+              "score": 0.61024916
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "osteoarthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99884665,
+          "beginOffset": 231,
+          "endOffset": 245,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9608952
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.86848074
+            },
+            {
+              "description": "Bilateral primary osteoarthritis of knee",
+              "code": "M17.0",
+              "score": 0.806055
+            },
+            {
+              "description": "Primary osteoarthritis, left ankle and foot",
+              "code": "M19.072",
+              "score": 0.7403492
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, unspecified hip",
+              "code": "M16.10",
+              "score": 0.72271013
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, left knee",
+              "code": "M17.12",
+              "score": 0.7214836
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "narrowing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.52586913,
+          "beginOffset": 442,
+          "endOffset": 451,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.90431416,
+              "relationshipScore": 0.99972576,
+              "id": 6,
+              "beginOffset": 417,
+              "endOffset": 426,
+              "text": "posterior",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.56092864,
+              "relationshipScore": 0.93030584,
+              "id": 7,
+              "beginOffset": 427,
+              "endOffset": 432,
+              "text": "canal",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9695434,
+              "relationshipScore": 0.9986921,
+              "id": 9,
+              "beginOffset": 459,
+              "endOffset": 463,
+              "text": "disc",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.506112
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Occlusion and stenosis of right carotid artery",
+              "code": "I65.21",
+              "score": 0.6377731
+            },
+            {
+              "description": "Occlusion and stenosis of left carotid artery",
+              "code": "I65.22",
+              "score": 0.6170597
+            },
+            {
+              "description": "Occlusion and stenosis of bilateral carotid arteries",
+              "code": "I65.23",
+              "score": 0.61377835
+            },
+            {
+              "description": "Occlusion and stenosis of unspecified carotid artery",
+              "code": "I65.29",
+              "score": 0.60367435
+            },
+            {
+              "description": "Stricture of artery",
+              "code": "I77.1",
+              "score": 0.5714107
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "344bac2c-2f18-4424-9805-234fcc5d4341"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "344bac2c-2f18-4424-9805-234fcc5d4341"
+          ],
+          "Content-Length": [
+            "4454"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4454",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:34 GMT",
+          "x-amzn-RequestId": "344bac2c-2f18-4424-9805-234fcc5d4341"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 224,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4166b90e-e03f-490c-816f-7bcc3bd00ab8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4166b90e-e03f-490c-816f-7bcc3bd00ab8"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:34 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:34 GMT",
+          "x-amzn-RequestId": "4166b90e-e03f-490c-816f-7bcc3bd00ab8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:34 PM"
+}

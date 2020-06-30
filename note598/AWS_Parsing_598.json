@@ -1,0 +1,564 @@
+{
+  "note": "after ingesting 7 eggs in a 7-day period. Case Report The patient, a 57-y-old, Asian American male, first presented for chest pain 3 days prior with a pain in the right lower region lasting 20-30 minutes. He was instructed to take ibuprofen for the pain followed 4 hours later with 1 pill of egg white oat porridge.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 548,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 69,
+          "endOffset": 71,
+          "score": 0.9999074,
+          "text": "57",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 120,
+          "endOffset": 125,
+          "score": 0.9813337,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 120,
+          "endOffset": 130,
+          "score": 0.9448696,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.78623146
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8505014,
+              "relationshipScore": 0.9999846,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 131,
+              "endOffset": 137,
+              "text": "3 days",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 138,
+          "endOffset": 143,
+          "score": 0.99996734,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99049884,
+              "relationshipScore": 0.7948219,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 151,
+              "endOffset": 155,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.7427328
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 138,
+          "endOffset": 143,
+          "score": 0.99996734,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9448696,
+              "relationshipScore": 0.6924011,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 120,
+              "endOffset": 130,
+              "text": "chest pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.78623146
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 151,
+          "endOffset": 155,
+          "score": 0.99049884,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7427328
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.97511464,
+              "relationshipScore": 0.99999225,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 163,
+              "endOffset": 168,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8497273,
+              "relationshipScore": 0.9999807,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 169,
+              "endOffset": 174,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.32053098,
+              "relationshipScore": 0.9960056,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 3,
+              "beginOffset": 175,
+              "endOffset": 181,
+              "text": "region",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 175,
+          "endOffset": 181,
+          "score": 0.32053098,
+          "text": "region",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 231,
+          "endOffset": 240,
+          "score": 0.9784228,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 249,
+          "endOffset": 253,
+          "score": 0.98365545,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6488564
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8505014,
+            "id": 6,
+            "beginOffset": 131,
+            "endOffset": 137,
+            "text": "3 days",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.97511464,
+            "id": 1,
+            "beginOffset": 163,
+            "endOffset": 168,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.8497273,
+            "id": 2,
+            "beginOffset": 169,
+            "endOffset": 174,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0d1d390d-2934-49ad-832d-f3831eaa369e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0d1d390d-2934-49ad-832d-f3831eaa369e"
+          ],
+          "Content-Length": [
+            "3467"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3467",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:24 GMT",
+          "x-amzn-RequestId": "0d1d390d-2934-49ad-832d-f3831eaa369e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 660,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chest pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9448696,
+          "beginOffset": 120,
+          "endOffset": 130,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8505014,
+              "relationshipScore": 0.9999846,
+              "id": 2,
+              "beginOffset": 131,
+              "endOffset": 137,
+              "text": "3 days",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7862314
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.59873295
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.413068
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.37843707
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.3400876
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.31618118
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99049884,
+          "beginOffset": 151,
+          "endOffset": 155,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.97511464,
+              "relationshipScore": 0.99999225,
+              "id": 4,
+              "beginOffset": 163,
+              "endOffset": 168,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.8497274,
+              "relationshipScore": 0.9999807,
+              "id": 5,
+              "beginOffset": 169,
+              "endOffset": 174,
+              "text": "lower",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.320531,
+              "relationshipScore": 0.9960056,
+              "id": 6,
+              "beginOffset": 175,
+              "endOffset": 181,
+              "text": "region",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7427328
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.4736535
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.44247112
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.40764663
+            },
+            {
+              "description": "Mastodynia",
+              "code": "N64.4",
+              "score": 0.38338488
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.38127777
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98365545,
+          "beginOffset": 249,
+          "endOffset": 253,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6488564
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.53297734
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4428639
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4101781
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.40389958
+            },
+            {
+              "description": "Glossodynia",
+              "code": "K14.6",
+              "score": 0.4034871
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "519c6045-c3a9-4ca7-b3bf-c0f07e30abfa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "519c6045-c3a9-4ca7-b3bf-c0f07e30abfa"
+          ],
+          "Content-Length": [
+            "2530"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2530",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:25 GMT",
+          "x-amzn-RequestId": "519c6045-c3a9-4ca7-b3bf-c0f07e30abfa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 345,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9784228,
+          "beginOffset": 231,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768023
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Genpril]",
+              "code": "206886",
+              "score": 0.09504588
+            },
+            {
+              "description": "Ibuprofen 800 MG Oral Tablet [Ibu]",
+              "code": "206917",
+              "score": 0.07635146
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1e89e78b-2cae-490f-95f3-cfc6d2400314"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1e89e78b-2cae-490f-95f3-cfc6d2400314"
+          ],
+          "Content-Length": [
+            "684"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:24 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "684",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:24 GMT",
+          "x-amzn-RequestId": "1e89e78b-2cae-490f-95f3-cfc6d2400314"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:25 PM"
+}

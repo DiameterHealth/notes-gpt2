@@ -1,0 +1,258 @@
+{
+  "note": ".  Outcome:  Patient returned home 7 days after admission and showed no recurrence of urethral discharge. Conclusion:  This is one of the worst case scenarios in which ED antibiotic use is appropriate. Most urethral complaints are of such a rare nature that this patient likely would not have been missed if ED antibiotic administration instead relied solely on patient history, examination, and other diagnostic resources.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 289,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 42,
+          "endOffset": 57,
+          "score": 0.99548435,
+          "text": "after admission",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8861595,
+              "relationshipScore": 0.5707623,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 86,
+              "endOffset": 104,
+              "text": "urethral discharge",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.6605494
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.93063086
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 86,
+          "endOffset": 104,
+          "score": 0.8861595,
+          "text": "urethral discharge",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6605494
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93063086
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 168,
+          "endOffset": 170,
+          "score": 0.9420649,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 171,
+          "endOffset": 181,
+          "score": 0.6486475,
+          "text": "antibiotic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 308,
+          "endOffset": 310,
+          "score": 0.85175407,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 311,
+          "endOffset": 321,
+          "score": 0.69668776,
+          "text": "antibiotic",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "18e5d68c-50b4-46a5-b2c4-7d7b95fffc9b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "18e5d68c-50b4-46a5-b2c4-7d7b95fffc9b"
+          ],
+          "Content-Length": [
+            "1439"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1439",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:49 GMT",
+          "x-amzn-RequestId": "18e5d68c-50b4-46a5-b2c4-7d7b95fffc9b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 916,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "urethral discharge",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8861595,
+          "beginOffset": 86,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6605494
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93063086
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urethral discharge, unspecified",
+              "code": "R36.9",
+              "score": 0.8149478
+            },
+            {
+              "description": "Nonspecific urethritis",
+              "code": "N34.1",
+              "score": 0.59558654
+            },
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.58036816
+            },
+            {
+              "description": "Urethral caruncle",
+              "code": "N36.2",
+              "score": 0.57352453
+            },
+            {
+              "description": "Abnormal electroencephalogram [EEG]",
+              "code": "R94.01",
+              "score": 0.5527835
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9c1b6854-f148-4fab-b7da-197c2e79dc74"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9c1b6854-f148-4fab-b7da-197c2e79dc74"
+          ],
+          "Content-Length": [
+            "783"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "783",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:50 GMT",
+          "x-amzn-RequestId": "9c1b6854-f148-4fab-b7da-197c2e79dc74"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2e7f55a7-2710-4cff-b887-d3d5373d0ae2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2e7f55a7-2710-4cff-b887-d3d5373d0ae2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:49 GMT",
+          "x-amzn-RequestId": "2e7f55a7-2710-4cff-b887-d3d5373d0ae2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:50 PM"
+}

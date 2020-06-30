@@ -1,0 +1,350 @@
+{
+  "note": "______________________________________ (1) The patients also reported that the treatment was more tolerable for them than a generic version of Oxycontin, as well as being less physically addictive. (2) A survey of 12.5 percent reported a decrease in pain from 6 to 3 hours and a decrease in nausea at 5 hours. (6) In summary, the current trial did not support these findings.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 358,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 143,
+          "endOffset": 152,
+          "score": 0.99986625,
+          "text": "Oxycontin",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 176,
+          "endOffset": 196,
+          "score": 0.41595846,
+          "text": "physically addictive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63921237
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 250,
+          "endOffset": 254,
+          "score": 0.98228365,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.62007004
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 291,
+          "endOffset": 297,
+          "score": 0.9921401,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5562038
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.511133
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b68ea463-644e-4010-a7ca-c2759210fd4a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b68ea463-644e-4010-a7ca-c2759210fd4a"
+          ],
+          "Content-Length": [
+            "838"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "838",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:02 GMT",
+          "x-amzn-RequestId": "b68ea463-644e-4010-a7ca-c2759210fd4a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 463,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "physically addictive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41595846,
+          "beginOffset": 176,
+          "endOffset": 196,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63921237
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.7272097
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.7142736
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.6772043
+            },
+            {
+              "description": "Other malaise",
+              "code": "R53.81",
+              "score": 0.6377947
+            },
+            {
+              "description": "Physical restraint status",
+              "code": "Z78.1",
+              "score": 0.634109
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98228365,
+          "beginOffset": 250,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.62007
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6185058
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5209555
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.51090604
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5040897
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4792221
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9921401,
+          "beginOffset": 291,
+          "endOffset": 297,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5562037
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.511133
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.7624404
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.759825
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.54664177
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.54522204
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.47754768
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "32f444be-ad84-4ac9-aa90-f8486ef88fa7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "32f444be-ad84-4ac9-aa90-f8486ef88fa7"
+          ],
+          "Content-Length": [
+            "2004"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2004",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:03 GMT",
+          "x-amzn-RequestId": "32f444be-ad84-4ac9-aa90-f8486ef88fa7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 394,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Oxycontin",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99986625,
+          "beginOffset": 143,
+          "endOffset": 152,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Oxycontin",
+              "code": "218986",
+              "score": 0.93405026
+            },
+            {
+              "description": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]",
+              "code": "1049504",
+              "score": 0.7627322
+            },
+            {
+              "description": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 20 MG Extended Release Oral Tablet [Oxycontin]",
+              "code": "1049565",
+              "score": 0.6554448
+            },
+            {
+              "description": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 40 MG Extended Release Oral Tablet [Oxycontin]",
+              "code": "1049586",
+              "score": 0.1083945
+            },
+            {
+              "description": "Abuse-Deterrent 12 HR Oxycodone Hydrochloride 15 MG Extended Release Oral Tablet [Oxycontin]",
+              "code": "1049545",
+              "score": 0.067762494
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "81f4ada5-efed-48ba-b1e2-4be67e288ecd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "81f4ada5-efed-48ba-b1e2-4be67e288ecd"
+          ],
+          "Content-Length": [
+            "908"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "908",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:02 GMT",
+          "x-amzn-RequestId": "81f4ada5-efed-48ba-b1e2-4be67e288ecd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:03 PM"
+}

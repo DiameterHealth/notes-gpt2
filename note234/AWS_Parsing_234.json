@@ -1,0 +1,394 @@
+{
+  "note": ", including anti-hypertensive therapies. Discussion: This patient was evaluated by the neurologist at a neurology practice based in a community hospital. The following is a brief description of the presentation: The patient presented to the clinic with moderate to severe bilateral upper extremity weakness. At the time of exam he had a history of recent surgery with bilateral hip arthroplasty.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 355,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 12,
+          "endOffset": 39,
+          "score": 0.99005693,
+          "text": "anti-hypertensive therapies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 104,
+          "endOffset": 113,
+          "score": 0.3031113,
+          "text": "neurology",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 288,
+          "endOffset": 297,
+          "score": 0.9891053,
+          "text": "extremity",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 298,
+          "endOffset": 306,
+          "score": 0.9826665,
+          "text": "weakness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63117576
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.997618,
+              "relationshipScore": 0.99894303,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 272,
+              "endOffset": 281,
+              "text": "bilateral",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9925062,
+              "relationshipScore": 0.9999628,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 282,
+              "endOffset": 287,
+              "text": "upper",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9891053,
+              "relationshipScore": 0.98205274,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 288,
+              "endOffset": 297,
+              "text": "extremity",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 348,
+          "endOffset": 354,
+          "score": 0.99999976,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.82464343,
+              "relationshipScore": 0.894379,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 378,
+              "endOffset": 394,
+              "text": "hip arthroplasty",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 348,
+          "endOffset": 354,
+          "score": 0.99999976,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9531028,
+              "relationshipScore": 0.9820254,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 355,
+              "endOffset": 362,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 355,
+          "endOffset": 362,
+          "score": 0.9531028,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 378,
+          "endOffset": 381,
+          "score": 0.98557645,
+          "text": "hip",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 378,
+          "endOffset": 394,
+          "score": 0.82464343,
+          "text": "hip arthroplasty",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.997618,
+            "id": 0,
+            "beginOffset": 272,
+            "endOffset": 281,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9925062,
+            "id": 1,
+            "beginOffset": 282,
+            "endOffset": 287,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9982363,
+            "id": 3,
+            "beginOffset": 368,
+            "endOffset": 377,
+            "text": "bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b32140f3-5dde-4846-8e49-6231f01b7602"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b32140f3-5dde-4846-8e49-6231f01b7602"
+          ],
+          "Content-Length": [
+            "3201"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3201",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:13 GMT",
+          "x-amzn-RequestId": "b32140f3-5dde-4846-8e49-6231f01b7602"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 388,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "weakness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9826665,
+          "beginOffset": 298,
+          "endOffset": 306,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.997618,
+              "relationshipScore": 0.99894303,
+              "id": 0,
+              "beginOffset": 272,
+              "endOffset": 281,
+              "text": "bilateral",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9925062,
+              "relationshipScore": 0.9999628,
+              "id": 1,
+              "beginOffset": 282,
+              "endOffset": 287,
+              "text": "upper",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9891053,
+              "relationshipScore": 0.98205274,
+              "id": 2,
+              "beginOffset": 288,
+              "endOffset": 297,
+              "text": "extremity",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6311757
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Weakness",
+              "code": "R53.1",
+              "score": 0.82640165
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.66897637
+            },
+            {
+              "description": "Muscle weakness (generalized)",
+              "code": "M62.81",
+              "score": 0.6580208
+            },
+            {
+              "description": "Hemiplegia, unspecified",
+              "code": "G81.9",
+              "score": 0.63629144
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.6361881
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0492cbf6-5104-44d1-b5d8-adede0fa50cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0492cbf6-5104-44d1-b5d8-adede0fa50cb"
+          ],
+          "Content-Length": [
+            "1286"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1286",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:13 GMT",
+          "x-amzn-RequestId": "0492cbf6-5104-44d1-b5d8-adede0fa50cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 189,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "520aee0d-7db9-43ac-bbd9-93854ba39c39"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "520aee0d-7db9-43ac-bbd9-93854ba39c39"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:13 GMT",
+          "x-amzn-RequestId": "520aee0d-7db9-43ac-bbd9-93854ba39c39"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:14 PM"
+}

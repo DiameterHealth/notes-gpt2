@@ -1,0 +1,539 @@
+{
+  "note": ". Because her symptoms have improved, she was sent in for a full evaluation. WHAT HAPPENED She presented to the diabetes team with signs of fatigue and low blood glucose that were suggestive of diabetes insipidus. She had normal urinalysis, renal and serum creatinine levels and a urine pH of 7.21. She had no significant kidney, renal or serum antibodies and no clinical signs of CVD or T2DM.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 549,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 112,
+          "endOffset": 120,
+          "score": 0.77755487,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82939035
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 140,
+          "endOffset": 147,
+          "score": 0.98854744,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49783054
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4480991
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 152,
+          "endOffset": 169,
+          "score": 0.42390937,
+          "text": "low blood glucose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.61367536
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 156,
+          "endOffset": 169,
+          "score": 0.99601495,
+          "text": "blood glucose",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5564112,
+              "relationshipScore": 0.9999988,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 152,
+              "endOffset": 155,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 194,
+          "endOffset": 212,
+          "score": 0.981743,
+          "text": "diabetes insipidus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95902586
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 229,
+          "endOffset": 239,
+          "score": 0.9896769,
+          "text": "urinalysis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99489874,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 222,
+              "endOffset": 228,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 241,
+          "endOffset": 274,
+          "score": 0.63876504,
+          "text": "renal and serum creatinine levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99489874,
+              "relationshipScore": 0.99992526,
+              "relationshipType": "TEST_VALUE",
+              "id": 9,
+              "beginOffset": 222,
+              "endOffset": 228,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 281,
+          "endOffset": 289,
+          "score": 0.99581736,
+          "text": "urine pH",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9992392,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 293,
+              "endOffset": 297,
+              "text": "7.21",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 322,
+          "endOffset": 328,
+          "score": 0.77259076,
+          "text": "kidney",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 330,
+          "endOffset": 355,
+          "score": 0.7138125,
+          "text": "renal or serum antibodies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4810948,
+              "relationshipScore": 0.9828993,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 307,
+              "endOffset": 328,
+              "text": "no significant kidney",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6087944,
+              "relationshipScore": 0.9999912,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 360,
+              "endOffset": 392,
+              "text": "no clinical signs of CVD or T2DM",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 381,
+          "endOffset": 384,
+          "score": 0.9300877,
+          "text": "CVD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84534836
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.85484225
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 388,
+          "endOffset": 392,
+          "score": 0.98519796,
+          "text": "T2DM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89745307
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8506845
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3e90d3fb-f519-444d-93fb-321687bb226a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3e90d3fb-f519-444d-93fb-321687bb226a"
+          ],
+          "Content-Length": [
+            "3840"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3840",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:17 GMT",
+          "x-amzn-RequestId": "3e90d3fb-f519-444d-93fb-321687bb226a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 446,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77755463,
+          "beginOffset": 112,
+          "endOffset": 120,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82939017
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.73268014
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.70362425
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.66870373
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.6206675
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.592522
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fatigue",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98854744,
+          "beginOffset": 140,
+          "endOffset": 147,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.49783057
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.44809905
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.78608584
+            },
+            {
+              "description": "Chronic fatigue, unspecified",
+              "code": "R53.82",
+              "score": 0.6801244
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.65966576
+            },
+            {
+              "description": "Fatigue fracture of vertebra, site unspecified",
+              "code": "M48.40",
+              "score": 0.6001366
+            },
+            {
+              "description": "Other specified disorders of muscle",
+              "code": "M62.89",
+              "score": 0.5524001
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "low blood glucose",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.42390952,
+          "beginOffset": 152,
+          "endOffset": 169,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6136753
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.61612624
+            },
+            {
+              "description": "Hypoglycemia, unspecified",
+              "code": "E16.2",
+              "score": 0.46970353
+            },
+            {
+              "description": "Anemia, unspecified",
+              "code": "D64.9",
+              "score": 0.46125492
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.44575158
+            },
+            {
+              "description": "Hypokalemia",
+              "code": "E87.6",
+              "score": 0.4379807
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "diabetes insipidus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.981743,
+          "beginOffset": 194,
+          "endOffset": 212,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95902586
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.5139924
+            },
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.4967374
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.4491608
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.44065526
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.41584277
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f128c34b-e1de-48e5-94f7-54b6a955b929"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f128c34b-e1de-48e5-94f7-54b6a955b929"
+          ],
+          "Content-Length": [
+            "3073"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3073",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:19 GMT",
+          "x-amzn-RequestId": "f128c34b-e1de-48e5-94f7-54b6a955b929"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3dec299a-000b-4818-8bb2-381d3360e368"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3dec299a-000b-4818-8bb2-381d3360e368"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:17 GMT",
+          "x-amzn-RequestId": "3dec299a-000b-4818-8bb2-381d3360e368"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:19 PM"
+}

@@ -1,0 +1,500 @@
+{
+  "note": "and will be seen in the ED with discharge from the hospital. Died: On day 26 of hospitalization. Interventions / Results: The patient was discharged from hospital on day 28 and his medication was discontinued at discharge. Conclusion / Comment:  This is a case report of an otherwise well matched bipolar with a diagnosis of bipolar type II. There were several risk factors that led to hospitalization, including prior suicide attempts, a history of psychotic episodes requiring hospitalization within the prior 6 months, and poor adherence to medication.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 622,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 24,
+          "endOffset": 26,
+          "score": 0.9996699,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 61,
+          "endOffset": 65,
+          "score": 0.97046834,
+          "text": "Died",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9490639
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 70,
+          "endOffset": 95,
+          "score": 0.42190036,
+          "text": "day 26 of hospitalization",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.97046834,
+              "relationshipScore": 0.7192581,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 61,
+              "endOffset": 65,
+              "text": "Died",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9490639
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 325,
+          "endOffset": 341,
+          "score": 0.46944344,
+          "text": "bipolar type II.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83288914
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 413,
+          "endOffset": 418,
+          "score": 0.9999924,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9570429,
+              "relationshipScore": 0.9012722,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 419,
+              "endOffset": 435,
+              "text": "suicide attempts",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.8100119
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 419,
+          "endOffset": 435,
+          "score": 0.9570429,
+          "text": "suicide attempts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8100119
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 450,
+          "endOffset": 468,
+          "score": 0.95457244,
+          "text": "psychotic episodes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.40732276
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 506,
+          "endOffset": 520,
+          "score": 0.99320304,
+          "text": "prior 6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.95457244,
+              "relationshipScore": 0.528092,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 450,
+              "endOffset": 468,
+              "text": "psychotic episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.40732276
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 526,
+          "endOffset": 540,
+          "score": 0.45570847,
+          "text": "poor adherence",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e38b60c-21cd-4a06-ad02-b53eae300963"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e38b60c-21cd-4a06-ad02-b53eae300963"
+          ],
+          "Content-Length": [
+            "2486"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2486",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:03 GMT",
+          "x-amzn-RequestId": "7e38b60c-21cd-4a06-ad02-b53eae300963"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 791,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Died",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97046834,
+          "beginOffset": 61,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9490639
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.8280146
+            },
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.80313164
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.66920924
+            },
+            {
+              "description": "Contusion and laceration of cerebrum, unspecified, with loss of consciousness of any duration with death due to other cause prior to regaining consciousness",
+              "code": "S06.338",
+              "score": 0.5675876
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of any duration with death due to other cause prior to regaining consciousness",
+              "code": "S06.368",
+              "score": 0.55566216
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bipolar type II.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.46944344,
+          "beginOffset": 325,
+          "endOffset": 341,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.83288914
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atrioventricular block, second degree",
+              "code": "I44.1",
+              "score": 0.50185674
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.46209377
+            },
+            {
+              "description": "Bipolar II disorder",
+              "code": "F31.81",
+              "score": 0.36640063
+            },
+            {
+              "description": "Bipolar disorder, current episode hypomanic",
+              "code": "F31.0",
+              "score": 0.28988224
+            },
+            {
+              "description": "Schizoaffective disorder, bipolar type",
+              "code": "F25.0",
+              "score": 0.2804554
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "suicide attempts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95704275,
+          "beginOffset": 419,
+          "endOffset": 435,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8100119
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of self-harm",
+              "code": "Z91.5",
+              "score": 0.66410303
+            },
+            {
+              "description": "Suicidal ideations",
+              "code": "R45.851",
+              "score": 0.47528172
+            },
+            {
+              "description": "Suicide attempt",
+              "code": "T14.91",
+              "score": 0.35602444
+            },
+            {
+              "description": "Encounter for observation for other suspected diseases and conditions ruled out",
+              "code": "Z03.89",
+              "score": 0.34759387
+            },
+            {
+              "description": "Terrorism involving suicide bomber",
+              "code": "Y38.81",
+              "score": 0.31818607
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "psychotic episodes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.95457244,
+          "beginOffset": 450,
+          "endOffset": 468,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4073228
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified psychosis not due to a substance or known physiological condition",
+              "code": "F29",
+              "score": 0.5218617
+            },
+            {
+              "description": "Autistic disorder",
+              "code": "F84.0",
+              "score": 0.45752245
+            },
+            {
+              "description": "Delusional disorders",
+              "code": "F22",
+              "score": 0.42830077
+            },
+            {
+              "description": "Manic episode, unspecified",
+              "code": "F30.9",
+              "score": 0.42543176
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe with psychotic features",
+              "code": "F32.3",
+              "score": 0.38501126
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "poor adherence",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.45570847,
+          "beginOffset": 526,
+          "endOffset": 540,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.7476328
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.67269444
+            },
+            {
+              "description": "Female pelvic peritoneal adhesions (postinfective)",
+              "code": "N73.6",
+              "score": 0.66523933
+            },
+            {
+              "description": "Poor urinary stream",
+              "code": "R39.12",
+              "score": 0.4734269
+            },
+            {
+              "description": "Other uterine inertia",
+              "code": "O62.2",
+              "score": 0.46373653
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "411f0a63-e768-4382-9c5e-a4b804599dec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "411f0a63-e768-4382-9c5e-a4b804599dec"
+          ],
+          "Content-Length": [
+            "3804"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "3804",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:05 GMT",
+          "x-amzn-RequestId": "411f0a63-e768-4382-9c5e-a4b804599dec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c5802ea3-548e-46c7-8687-6c87756e2bf4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c5802ea3-548e-46c7-8687-6c87756e2bf4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:03 GMT",
+          "x-amzn-RequestId": "c5802ea3-548e-46c7-8687-6c87756e2bf4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:05 PM"
+}

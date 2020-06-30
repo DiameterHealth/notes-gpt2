@@ -1,0 +1,402 @@
+{
+  "note": "(and if applicable, use of NSAIDS and over-the-counter drugs to address pain/discomfort). Continue with physical therapy if prescribed;  OPOCHEMICAL DRUGS: Refer to physician for additional monitoring. Be advised that treatment with OPOCHEMICAL DRUGS during pregnancy can cause birth defects in your unborn child. If you are taking such a medication, please inform your health care team of this and inform them that you understand not to use this product for at least 1 month after delivery.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 278,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 27,
+          "endOffset": 33,
+          "score": 0.8208881,
+          "text": "NSAIDS",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 27,
+          "endOffset": 33,
+          "score": 0.7368162,
+          "text": "NSAIDS",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 38,
+          "endOffset": 60,
+          "score": 0.68100345,
+          "text": "over-the-counter drugs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 38,
+          "endOffset": 60,
+          "score": 0.6180213,
+          "text": "over-the-counter drugs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 72,
+          "endOffset": 87,
+          "score": 0.888786,
+          "text": "pain/discomfort",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77848166
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 104,
+          "endOffset": 120,
+          "score": 0.9934604,
+          "text": "physical therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 137,
+          "endOffset": 154,
+          "score": 0.61363673,
+          "text": "OPOCHEMICAL DRUGS",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 233,
+          "endOffset": 250,
+          "score": 0.59572285,
+          "text": "OPOCHEMICAL DRUGS",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 258,
+          "endOffset": 267,
+          "score": 0.94886595,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9480442
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 278,
+          "endOffset": 291,
+          "score": 0.96664053,
+          "text": "birth defects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9630554
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3b755cb5-09a0-46b0-ae69-d84e8405acd9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3b755cb5-09a0-46b0-ae69-d84e8405acd9"
+          ],
+          "Content-Length": [
+            "1799"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1799",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:46 GMT",
+          "x-amzn-RequestId": "3b755cb5-09a0-46b0-ae69-d84e8405acd9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 433,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain/discomfort",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.888786,
+          "beginOffset": 72,
+          "endOffset": 87,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77848166
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.70422155
+            },
+            {
+              "description": "Pain in unspecified shoulder",
+              "code": "M25.519",
+              "score": 0.674702
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.6336562
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.5905539
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.5560816
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94886595,
+          "beginOffset": 258,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9480442
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.72354656
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.58943313
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.58085245
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.5707914
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.56885076
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "birth defects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96664053,
+          "beginOffset": 278,
+          "endOffset": 291,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9630554
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Congenital malformation of cardiac septum, unspecified",
+              "code": "Q21.9",
+              "score": 0.47429666
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.45267412
+            },
+            {
+              "description": "Congenital malformation, unspecified",
+              "code": "Q89.9",
+              "score": 0.38751733
+            },
+            {
+              "description": "Bladder disorder, unspecified",
+              "code": "N32.9",
+              "score": 0.3664981
+            },
+            {
+              "description": "Cardiac septal defect, acquired",
+              "code": "I51.0",
+              "score": 0.3414715
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4dabaa41-93b6-4de2-97c4-13c62203147f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4dabaa41-93b6-4de2-97c4-13c62203147f"
+          ],
+          "Content-Length": [
+            "2185"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2185",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:46 GMT",
+          "x-amzn-RequestId": "4dabaa41-93b6-4de2-97c4-13c62203147f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 542,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "over-the-counter drugs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.68100345,
+          "beginOffset": 38,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "1,2-benzisothiazoline-3-one",
+              "code": "1368198",
+              "score": 0.02907458
+            },
+            {
+              "description": "chicken liver preparation",
+              "code": "1313217",
+              "score": 0.022475312
+            },
+            {
+              "description": "beef liver preparation",
+              "code": "1330085",
+              "score": 0.019649105
+            },
+            {
+              "description": "Liver Extract",
+              "code": "6459",
+              "score": 0.019360054
+            },
+            {
+              "description": "Red Clover Preparation",
+              "code": "285193",
+              "score": 0.013787355
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b0e2fbbd-6e6f-40d8-8114-e165a4a8019a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b0e2fbbd-6e6f-40d8-8114-e165a4a8019a"
+          ],
+          "Content-Length": [
+            "658"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "658",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:46 GMT",
+          "x-amzn-RequestId": "b0e2fbbd-6e6f-40d8-8114-e165a4a8019a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:47 PM"
+}

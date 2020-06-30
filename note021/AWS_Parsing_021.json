@@ -1,0 +1,216 @@
+{
+  "note": "to discuss his progress. One week after the completion of his first course of antibiotics, the patient is scheduled for follow-up with his PCP in two weeks to discuss his progress. Conclusion:  The patient is monitored for an extended period of time during initial administration of antibiotics, in hopes of getting this condition under control. The physician is then advised to administer a second dose of antibiotics on a different day.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 513,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 78,
+          "endOffset": 89,
+          "score": 0.8325594,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 283,
+          "endOffset": 294,
+          "score": 0.38441762,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 283,
+          "endOffset": 294,
+          "score": 0.8580288,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 407,
+          "endOffset": 418,
+          "score": 0.53931594,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 407,
+          "endOffset": 418,
+          "score": 0.8870196,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 424,
+          "endOffset": 433,
+          "score": 0.50785744,
+          "text": "different",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.8870196,
+              "relationshipScore": 0.9177573,
+              "relationshipType": "OVERLAP",
+              "id": 4,
+              "beginOffset": 407,
+              "endOffset": 418,
+              "text": "antibiotics",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 424,
+          "endOffset": 433,
+          "score": 0.50785744,
+          "text": "different",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.53931594,
+              "relationshipScore": 0.9177573,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 407,
+              "endOffset": 418,
+              "text": "antibiotics",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f168a466-b4b8-42cb-a241-a19e8314b347"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f168a466-b4b8-42cb-a241-a19e8314b347"
+          ],
+          "Content-Length": [
+            "1655"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1655",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:39 GMT",
+          "x-amzn-RequestId": "f168a466-b4b8-42cb-a241-a19e8314b347"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "288d0969-af0f-425b-8bda-f2a00863bbcb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "288d0969-af0f-425b-8bda-f2a00863bbcb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:39 GMT",
+          "x-amzn-RequestId": "288d0969-af0f-425b-8bda-f2a00863bbcb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 225,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2bd6d43a-c5ce-45c2-b138-688f98fdac0f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2bd6d43a-c5ce-45c2-b138-688f98fdac0f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:39 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:39 GMT",
+          "x-amzn-RequestId": "2bd6d43a-c5ce-45c2-b138-688f98fdac0f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:40 PM"
+}

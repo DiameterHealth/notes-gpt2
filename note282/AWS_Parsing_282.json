@@ -1,0 +1,303 @@
+{
+  "note": "FLINCHES, GINGIVA: If you get a fever and get vaginal bleeding we recommend you consult your family doctor asap. HIVE SYMPTOMS: If you have been given a new prescription to take it\u0027s important to keep taking it as you should always be monitored by your doctor to ensure you are not receiving a dose higher than the maximum recommended daily dose.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 278,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 10,
+          "endOffset": 17,
+          "score": 0.92782307,
+          "text": "GINGIVA",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 32,
+          "endOffset": 37,
+          "score": 0.9713164,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6151108
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 46,
+          "endOffset": 62,
+          "score": 0.8956567,
+          "text": "vaginal bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6750806
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 113,
+          "endOffset": 126,
+          "score": 0.28192636,
+          "text": "HIVE SYMPTOMS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6827394
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "14ae7a40-d545-447f-b646-029a638793c5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "14ae7a40-d545-447f-b646-029a638793c5"
+          ],
+          "Content-Length": [
+            "791"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "791",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:23 GMT",
+          "x-amzn-RequestId": "14ae7a40-d545-447f-b646-029a638793c5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 386,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9713164,
+          "beginOffset": 32,
+          "endOffset": 37,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6151109
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.699047
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.4199794
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.3648094
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.35720295
+            },
+            {
+              "description": "Q fever",
+              "code": "A78",
+              "score": 0.33129632
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "vaginal bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8956567,
+          "beginOffset": 46,
+          "endOffset": 62,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6750806
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal uterine and vaginal bleeding, unspecified",
+              "code": "N93.9",
+              "score": 0.6210281
+            },
+            {
+              "description": "Other specified noninflammatory disorders of vagina",
+              "code": "N89.8",
+              "score": 0.4291887
+            },
+            {
+              "description": "Other antepartum hemorrhage, first trimester",
+              "code": "O46.8X1",
+              "score": 0.36651164
+            },
+            {
+              "description": "Postmenopausal bleeding",
+              "code": "N95.0",
+              "score": 0.3638941
+            },
+            {
+              "description": "Postmenopausal atrophic vaginitis",
+              "code": "N95.2",
+              "score": 0.3386946
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "HIVE SYMPTOMS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.28192642,
+          "beginOffset": 113,
+          "endOffset": 126,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6827393
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.54165083
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.5248695
+            },
+            {
+              "description": "Urticaria, unspecified",
+              "code": "L50.9",
+              "score": 0.51735574
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.51464367
+            },
+            {
+              "description": "Menopausal and female climacteric states",
+              "code": "N95.1",
+              "score": 0.33761233
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6f9c4186-2420-4eb2-833d-4e10394a9833"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6f9c4186-2420-4eb2-833d-4e10394a9833"
+          ],
+          "Content-Length": [
+            "2095"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2095",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:23 GMT",
+          "x-amzn-RequestId": "6f9c4186-2420-4eb2-833d-4e10394a9833"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 187,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e7680748-257b-483d-b378-f84d16c0ce71"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e7680748-257b-483d-b378-f84d16c0ce71"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:23 GMT",
+          "x-amzn-RequestId": "e7680748-257b-483d-b378-f84d16c0ce71"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:23 PM"
+}

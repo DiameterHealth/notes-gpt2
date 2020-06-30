@@ -1,0 +1,409 @@
+{
+  "note": "_______________________________________________________________________________  Sterile Water, Inc. (WTHI) is a non-profit, charitable organization. What to do or say to the nurse: What to do with diarrhea or stools of people with Crohn\u0027s Disease, ulcerative colitis or scleroderma:  Sterile Water, Inc. is not a hospital  Do not use the bathroom inside the facility  Do not use alcohol to cleanse the area  Do not use water that comes in a plastic jug  What to do with fluids: WHAT NOT TO DO:  Do not use hot water and do not put dirty dishes in the sink  Do not use soap  Do not take baths or showers for the patient!",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 739,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 113,
+          "endOffset": 123,
+          "score": 0.08754864,
+          "text": "non-profit",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "PROFESSION",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 198,
+          "endOffset": 206,
+          "score": 0.97008127,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5143629
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 210,
+          "endOffset": 216,
+          "score": 0.4600856,
+          "text": "stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 232,
+          "endOffset": 247,
+          "score": 0.9530377,
+          "text": "Crohn\u0027s Disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93003035
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 249,
+          "endOffset": 267,
+          "score": 0.91547257,
+          "text": "ulcerative colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9136519
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 271,
+          "endOffset": 282,
+          "score": 0.9302713,
+          "text": "scleroderma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8649636
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "64e667e9-e4bf-4060-b561-bd9a62c58bf4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "64e667e9-e4bf-4060-b561-bd9a62c58bf4"
+          ],
+          "Content-Length": [
+            "1167"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:58 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1167",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:58 GMT",
+          "x-amzn-RequestId": "64e667e9-e4bf-4060-b561-bd9a62c58bf4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 873,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diarrhea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97008127,
+          "beginOffset": 198,
+          "endOffset": 206,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5143628
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Diarrhea, unspecified",
+              "code": "R19.7",
+              "score": 0.77812386
+            },
+            {
+              "description": "Noninfective gastroenteritis and colitis, unspecified",
+              "code": "K52.9",
+              "score": 0.62958425
+            },
+            {
+              "description": "Irritable bowel syndrome with diarrhea",
+              "code": "K58.0",
+              "score": 0.54556686
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.5357883
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.5220156
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "stools",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.46008563,
+          "beginOffset": 210,
+          "endOffset": 216,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Melena",
+              "code": "K92.1",
+              "score": 0.7959527
+            },
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.7246827
+            },
+            {
+              "description": "Other fecal abnormalities",
+              "code": "R19.5",
+              "score": 0.7231174
+            },
+            {
+              "description": "Fecal impaction",
+              "code": "K56.41",
+              "score": 0.7035692
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.6982001
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Crohn\u0027s Disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9530377,
+          "beginOffset": 232,
+          "endOffset": 247,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93003035
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Crohn\u0027s disease, unspecified, without complications",
+              "code": "K50.90",
+              "score": 0.5784057
+            },
+            {
+              "description": "Crohn\u0027s disease, unspecified",
+              "code": "K50.9",
+              "score": 0.5112072
+            },
+            {
+              "description": "Huntington\u0027s disease",
+              "code": "G10",
+              "score": 0.3576179
+            },
+            {
+              "description": "Wilson\u0027s disease",
+              "code": "E83.01",
+              "score": 0.33374977
+            },
+            {
+              "description": "Cat-scratch disease",
+              "code": "A28.1",
+              "score": 0.32817957
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "ulcerative colitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91547257,
+          "beginOffset": 249,
+          "endOffset": 267,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9136519
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ulcerative colitis, unspecified, without complications",
+              "code": "K51.90",
+              "score": 0.70218194
+            },
+            {
+              "description": "Ulcerative colitis, unspecified with rectal bleeding",
+              "code": "K51.911",
+              "score": 0.38851854
+            },
+            {
+              "description": "Ulcerative colitis, unspecified with fistula",
+              "code": "K51.913",
+              "score": 0.3734473
+            },
+            {
+              "description": "Ulcer of intestine",
+              "code": "K63.3",
+              "score": 0.36425614
+            },
+            {
+              "description": "Ulcer of anus and rectum",
+              "code": "K62.6",
+              "score": 0.3375047
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "scleroderma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9302713,
+          "beginOffset": 271,
+          "endOffset": 282,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8649636
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Linear scleroderma",
+              "code": "L94.1",
+              "score": 0.48998502
+            },
+            {
+              "description": "Systemic sclerosis [scleroderma]",
+              "code": "M34",
+              "score": 0.41837272
+            },
+            {
+              "description": "Localized scleroderma [morphea]",
+              "code": "L94.0",
+              "score": 0.37606445
+            },
+            {
+              "description": "Other specified conditions of integument specific to newborn",
+              "code": "P83.88",
+              "score": 0.3722099
+            },
+            {
+              "description": "Sclerema neonatorum",
+              "code": "P83.0",
+              "score": 0.37170893
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5b8ec2f0-ec67-4cb2-97ac-65fa42a873a0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5b8ec2f0-ec67-4cb2-97ac-65fa42a873a0"
+          ],
+          "Content-Length": [
+            "3508"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3508",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:00 GMT",
+          "x-amzn-RequestId": "5b8ec2f0-ec67-4cb2-97ac-65fa42a873a0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 511,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e43868c0-f781-440f-b5c5-a7955d528759"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e43868c0-f781-440f-b5c5-a7955d528759"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:00 GMT",
+          "x-amzn-RequestId": "e43868c0-f781-440f-b5c5-a7955d528759"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:00 PM"
+}

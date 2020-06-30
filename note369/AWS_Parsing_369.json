@@ -1,0 +1,505 @@
+{
+  "note": "No blood transfusions were attempted and she was discharged home today with no further findings or complications. Patient does have some swelling of the lower abdomen area. TREATMENT 1) Administer blood and platelet transfusions. TREATMENT 2) Treat patient as any other patient. CONCLUSIONS Although this case illustrates the importance of thorough obstetrical examination and prompt management in the late third trimester, it does not show that the risk of hemorrhage or severe hemorrhage during the first trimester is any different than a normal second or third trimester.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 426,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 3,
+          "endOffset": 21,
+          "score": 0.61411005,
+          "text": "blood transfusions",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "score": 0.999982,
+          "text": "today",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.449269,
+              "relationshipScore": 0.5903596,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 99,
+              "endOffset": 112,
+              "text": "complications",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "NEGATION",
+                  "score": 0.57352036
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 99,
+          "endOffset": 112,
+          "score": 0.449269,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.57352036
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "score": 0.98217934,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5722923
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41689074
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9683303,
+              "relationshipScore": 0.999995,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 153,
+              "endOffset": 158,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.584425,
+              "relationshipScore": 0.99985206,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 159,
+              "endOffset": 171,
+              "text": "abdomen area",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 159,
+          "endOffset": 171,
+          "score": 0.584425,
+          "text": "abdomen area",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 197,
+          "endOffset": 228,
+          "score": 0.6268994,
+          "text": "blood and platelet transfusions",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 349,
+          "endOffset": 372,
+          "score": 0.37464976,
+          "text": "obstetrical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 458,
+          "endOffset": 468,
+          "score": 0.9651653,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8241353
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4525239
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 479,
+          "endOffset": 489,
+          "score": 0.9666753,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7872962
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.73709416
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9683303,
+            "id": 0,
+            "beginOffset": 153,
+            "endOffset": 158,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a55f47ed-9f95-444e-9bf6-de54312edd63"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a55f47ed-9f95-444e-9bf6-de54312edd63"
+          ],
+          "Content-Length": [
+            "2711"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2711",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:32 GMT",
+          "x-amzn-RequestId": "a55f47ed-9f95-444e-9bf6-de54312edd63"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 574,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4492689,
+          "beginOffset": 99,
+          "endOffset": 112,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5735202
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other postprocedural complications and disorders of digestive system",
+              "code": "K91.89",
+              "score": 0.59729636
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.594257
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.5920077
+            },
+            {
+              "description": "Unspecified complication of procedure",
+              "code": "T81.9",
+              "score": 0.574639
+            },
+            {
+              "description": "Other complications of anesthesia",
+              "code": "T88.59",
+              "score": 0.56146944
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "swelling",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98217934,
+          "beginOffset": 137,
+          "endOffset": 145,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.96833044,
+              "relationshipScore": 0.999995,
+              "id": 2,
+              "beginOffset": 153,
+              "endOffset": 158,
+              "text": "lower",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.584425,
+              "relationshipScore": 0.99985206,
+              "id": 3,
+              "beginOffset": 159,
+              "endOffset": 171,
+              "text": "abdomen area",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5722923
+            },
+            {
+              "name": "SYMPTOM",
+              "score": 0.41689074
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.6755733
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.6372859
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6250595
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.5721965
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.5692916
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9651653,
+          "beginOffset": 458,
+          "endOffset": 468,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8241353
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.45252383
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.71125686
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.690769
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, intraventricular",
+              "code": "I61.5",
+              "score": 0.6085986
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.5891865
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of unspecified duration",
+              "code": "S06.369",
+              "score": 0.57817554
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9666753,
+          "beginOffset": 479,
+          "endOffset": 489,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7872962
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7370941
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.7206541
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, unspecified",
+              "code": "I61.9",
+              "score": 0.68776107
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.6263188
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of unspecified duration",
+              "code": "S06.369",
+              "score": 0.6134742
+            },
+            {
+              "description": "Nontraumatic intracerebral hemorrhage, intraventricular",
+              "code": "I61.5",
+              "score": 0.6077714
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1e4f3c1f-92c9-4e5c-8c0e-684466e9cc4e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1e4f3c1f-92c9-4e5c-8c0e-684466e9cc4e"
+          ],
+          "Content-Length": [
+            "3646"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3646",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:32 GMT",
+          "x-amzn-RequestId": "1e4f3c1f-92c9-4e5c-8c0e-684466e9cc4e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 247,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "baaa0d00-6cd8-4ffa-b5f9-b1e016fdbaf0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "baaa0d00-6cd8-4ffa-b5f9-b1e016fdbaf0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:32 GMT",
+          "x-amzn-RequestId": "baaa0d00-6cd8-4ffa-b5f9-b1e016fdbaf0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:33 PM"
+}

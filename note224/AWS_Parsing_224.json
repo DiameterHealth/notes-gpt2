@@ -1,0 +1,479 @@
+{
+  "note": "(systolic blood pressure ≥140 mm Hg, diastolic blood pressure ≥80 mm Hg) are required to achieve therapeutic targets; this patient is an example of the \"healthy\" patient from which we can learn from. A patient with \"high risk\" renal failure without hypertension and with chronic kidney disease is less clearly defined. A patient who has a positive family history of CVD with a family history of renal failure is also in that class.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 459,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 1,
+          "endOffset": 24,
+          "score": 0.8357817,
+          "text": "systolic blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6854005,
+              "relationshipScore": 0.99999464,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 25,
+              "endOffset": 35,
+              "text": "≥140 mm Hg",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 37,
+          "endOffset": 61,
+          "score": 0.8147336,
+          "text": "diastolic blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8329919,
+              "relationshipScore": 0.9999795,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 62,
+              "endOffset": 71,
+              "text": "≥80 mm Hg",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 227,
+          "endOffset": 240,
+          "score": 0.9444044,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9223406
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 249,
+          "endOffset": 261,
+          "score": 0.9965438,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9121433
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6754515
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 279,
+          "endOffset": 285,
+          "score": 0.9434323,
+          "text": "kidney",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 279,
+          "endOffset": 293,
+          "score": 0.9787288,
+          "text": "kidney disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9280803
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.4951305
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9534998,
+              "relationshipScore": 0.9999788,
+              "relationshipType": "ACUITY",
+              "id": 3,
+              "beginOffset": 271,
+              "endOffset": 278,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 366,
+          "endOffset": 369,
+          "score": 0.89122677,
+          "text": "CVD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89556634
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 395,
+          "endOffset": 408,
+          "score": 0.9860675,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9463154
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9534998,
+            "id": 3,
+            "beginOffset": 271,
+            "endOffset": 278,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cef48915-8b26-4863-987d-bdd094b8e4ba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cef48915-8b26-4863-987d-bdd094b8e4ba"
+          ],
+          "Content-Length": [
+            "2532"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2532",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:55 GMT",
+          "x-amzn-RequestId": "cef48915-8b26-4863-987d-bdd094b8e4ba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 789,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9444044,
+          "beginOffset": 227,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9223406
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.47451547
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.4177296
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.34575722
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.32793686
+            },
+            {
+              "description": "Calculus of kidney",
+              "code": "N20.0",
+              "score": 0.31521714
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9965438,
+          "beginOffset": 249,
+          "endOffset": 261,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9121433
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6754516
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.57495755
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.561625
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.48037094
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.4701414
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.46405074
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "kidney disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9787288,
+          "beginOffset": 279,
+          "endOffset": 293,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9534998,
+              "relationshipScore": 0.9999788,
+              "id": 2,
+              "beginOffset": 271,
+              "endOffset": 278,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9280803
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.49513048
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.57514966
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.0",
+              "score": 0.5603125
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.547057
+            },
+            {
+              "description": "Chronic kidney disease, stage 3 (moderate)",
+              "code": "N18.3",
+              "score": 0.49893695
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.4859563
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9860675,
+          "beginOffset": 395,
+          "endOffset": 408,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9463153
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.4415891
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.369939
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.36669132
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.26798254
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.26491892
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8e45bed6-9f1a-4e43-a055-a2f5f1200903"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8e45bed6-9f1a-4e43-a055-a2f5f1200903"
+          ],
+          "Content-Length": [
+            "3585"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3585",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:55 GMT",
+          "x-amzn-RequestId": "8e45bed6-9f1a-4e43-a055-a2f5f1200903"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 214,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4dc9d5e1-3096-4982-aa47-65cdf91a8659"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4dc9d5e1-3096-4982-aa47-65cdf91a8659"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:55 GMT",
+          "x-amzn-RequestId": "4dc9d5e1-3096-4982-aa47-65cdf91a8659"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:56 PM"
+}

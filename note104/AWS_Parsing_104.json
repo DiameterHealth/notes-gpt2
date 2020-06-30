@@ -1,0 +1,411 @@
+{
+  "note": ". [29]  Antihistamine (Chlorpheniramine HCl) : (The most commonly prescribed H2 antagonists). In most cases, an H2 antagonist can be administered after the 3rd round of treatment. [30]  ) (The most commonly prescribed H2 antagonists). In most cases, an H2 antagonist can be administered after the 3rd round of treatment. Antihistamines (Halofantrine HCl) : There have been a few studies that suggest that antihistaminic agents may help delay postoperative recurrence of urinary tract infection.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 459,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 8,
+          "endOffset": 21,
+          "score": 0.9342435,
+          "text": "Antihistamine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 23,
+          "endOffset": 43,
+          "score": 0.96320444,
+          "text": "Chlorpheniramine HCl",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 112,
+          "endOffset": 125,
+          "score": 0.65994006,
+          "text": "H2 antagonist",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 218,
+          "endOffset": 232,
+          "score": 0.6627214,
+          "text": "H2 antagonists",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 253,
+          "endOffset": 266,
+          "score": 0.88615215,
+          "text": "H2 antagonist",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 321,
+          "endOffset": 335,
+          "score": 0.93977404,
+          "text": "Antihistamines",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 337,
+          "endOffset": 353,
+          "score": 0.9678972,
+          "text": "Halofantrine HCl",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 405,
+          "endOffset": 426,
+          "score": 0.3780956,
+          "text": "antihistaminic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 405,
+          "endOffset": 426,
+          "score": 0.39774534,
+          "text": "antihistaminic agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 442,
+          "endOffset": 455,
+          "score": 0.9997104,
+          "text": "postoperative",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.96643186,
+              "relationshipScore": 0.8391741,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 470,
+              "endOffset": 493,
+              "text": "urinary tract infection",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9107335
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 470,
+          "endOffset": 483,
+          "score": 0.8240891,
+          "text": "urinary tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 470,
+          "endOffset": 493,
+          "score": 0.96643186,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9107335
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f9445570-3a92-4b3d-9d44-bd65713d8ab0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f9445570-3a92-4b3d-9d44-bd65713d8ab0"
+          ],
+          "Content-Length": [
+            "2324"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2324",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:53 GMT",
+          "x-amzn-RequestId": "f9445570-3a92-4b3d-9d44-bd65713d8ab0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 417,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96643186,
+          "beginOffset": 470,
+          "endOffset": 493,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9107335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.84940654
+            },
+            {
+              "description": "Personal history of urinary (tract) infections",
+              "code": "Z87.440",
+              "score": 0.7042311
+            },
+            {
+              "description": "Urinary calculus, unspecified",
+              "code": "N20.9",
+              "score": 0.6610973
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.6300281
+            },
+            {
+              "description": "Calculus of lower urinary tract, unspecified",
+              "code": "N21.9",
+              "score": 0.57188314
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bb3beca9-f2d6-4605-aebb-27b115e28fad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bb3beca9-f2d6-4605-aebb-27b115e28fad"
+          ],
+          "Content-Length": [
+            "791"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "791",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:55 GMT",
+          "x-amzn-RequestId": "bb3beca9-f2d6-4605-aebb-27b115e28fad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 483,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "Chlorpheniramine HCl",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.96320456,
+          "beginOffset": 23,
+          "endOffset": 43,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Chlorpheniramine",
+              "code": "2400",
+              "score": 0.9350437
+            },
+            {
+              "description": "12 HR Chlorpheniramine Maleate 12 MG Extended Release Oral Tablet",
+              "code": "1363288",
+              "score": 0.5467406
+            },
+            {
+              "description": "chlorphenoxamine",
+              "code": "20881",
+              "score": 0.38600343
+            },
+            {
+              "description": "Chlorpheniramine Maleate 4 MG Oral Tablet",
+              "code": "1363309",
+              "score": 0.38164034
+            },
+            {
+              "description": "12 HR Chlorpheniramine Maleate 12 MG Extended Release Oral Tablet [Chlor-Trimeton]",
+              "code": "1363290",
+              "score": 0.22656494
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Halofantrine HCl",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9678972,
+          "beginOffset": 337,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "halofantrine",
+              "code": "50749",
+              "score": 0.94583696
+            },
+            {
+              "description": "Fennel oil",
+              "code": "1305608",
+              "score": 0.029449075
+            },
+            {
+              "description": "HC yellow No. 5",
+              "code": "1428873",
+              "score": 0.01178847
+            },
+            {
+              "description": "ROSEWOOD OIL",
+              "code": "1307693",
+              "score": 0.010876791
+            },
+            {
+              "description": "Safflower Oil",
+              "code": "9515",
+              "score": 0.010601859
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "antihistaminic agents",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.37809557,
+          "beginOffset": 405,
+          "endOffset": 426,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "AVENS EXTRACT",
+              "code": "1313319",
+              "score": 0.1885717
+            },
+            {
+              "description": "Lipotropic Agents",
+              "code": "6436",
+              "score": 0.017697554
+            },
+            {
+              "description": "Vitex agnus-castus whole extract",
+              "code": "1441400",
+              "score": 0.005547307
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e7112b57-3329-4599-86ee-78738769906e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e7112b57-3329-4599-86ee-78738769906e"
+          ],
+          "Content-Length": [
+            "1770"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1770",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:55 GMT",
+          "x-amzn-RequestId": "e7112b57-3329-4599-86ee-78738769906e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:55 PM"
+}

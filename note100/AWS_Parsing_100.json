@@ -1,0 +1,322 @@
+{
+  "note": "(N\u003d18-29 yr old)  –  The primary outcome would be the change in pain from baseline to follow-up. –  Patients were recruited through local advertisements and word of mouth. –  The study was approved by the ethical committee for non-fatal health care research at the Faculty Centre of Medicine, UCL. –  The main outcome measure was change from baseline to 3 months in reported pain by patients who had received spinal manipulation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 367,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 3,
+          "endOffset": 5,
+          "score": 0.95220596,
+          "text": "18",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 6,
+          "endOffset": 8,
+          "score": 0.909449,
+          "text": "29",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 54,
+          "endOffset": 68,
+          "score": 0.41668826,
+          "text": "change in pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43992424
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49132845
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 165,
+          "endOffset": 170,
+          "score": 0.68451667,
+          "text": "mouth",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 265,
+          "endOffset": 291,
+          "score": 0.53598154,
+          "text": "Faculty Centre of Medicine",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 354,
+          "endOffset": 355,
+          "score": 0.40194416,
+          "text": "3",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.96576446,
+              "relationshipScore": 0.5768188,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 375,
+              "endOffset": 379,
+              "text": "pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.4603064
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 375,
+          "endOffset": 379,
+          "score": 0.96576446,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4603064
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 409,
+          "endOffset": 428,
+          "score": 0.41914815,
+          "text": "spinal manipulation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f15d149d-2889-4ac6-870f-1a5f4440fee5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f15d149d-2889-4ac6-870f-1a5f4440fee5"
+          ],
+          "Content-Length": [
+            "1702"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1702",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:50 GMT",
+          "x-amzn-RequestId": "f15d149d-2889-4ac6-870f-1a5f4440fee5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 456,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "change in pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41668826,
+          "beginOffset": 54,
+          "endOffset": 68,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.43992427
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4913284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.70953774
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6619015
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6364295
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.59546447
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5838558
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96576446,
+          "beginOffset": 375,
+          "endOffset": 379,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4603064
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6788044
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.58475095
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.52265245
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.5200524
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.51463896
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c45ff2e7-b03b-49de-96a4-d6c8a25019c8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c45ff2e7-b03b-49de-96a4-d6c8a25019c8"
+          ],
+          "Content-Length": [
+            "1362"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1362",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:51 GMT",
+          "x-amzn-RequestId": "c45ff2e7-b03b-49de-96a4-d6c8a25019c8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 281,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f3744dd8-88a9-455e-afc3-cee40881b999"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f3744dd8-88a9-455e-afc3-cee40881b999"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:50 GMT",
+          "x-amzn-RequestId": "f3744dd8-88a9-455e-afc3-cee40881b999"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:51 PM"
+}

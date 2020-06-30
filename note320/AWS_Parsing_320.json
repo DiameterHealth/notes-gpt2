@@ -1,0 +1,227 @@
+{
+  "note": ".  Treatment is supportive therapy such as hydration, pain medications, respiratory support, oxygen support, and antimicrobial medications.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 113,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 16,
+          "endOffset": 34,
+          "score": 0.83427215,
+          "text": "supportive therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 43,
+          "endOffset": 52,
+          "score": 0.86576176,
+          "text": "hydration",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 54,
+          "endOffset": 58,
+          "score": 0.4394703,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 54,
+          "endOffset": 70,
+          "score": 0.9962681,
+          "text": "pain medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 72,
+          "endOffset": 91,
+          "score": 0.81898916,
+          "text": "respiratory support",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 93,
+          "endOffset": 107,
+          "score": 0.5280442,
+          "text": "oxygen support",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 113,
+          "endOffset": 138,
+          "score": 0.93476224,
+          "text": "antimicrobial medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "559f97c4-e2b1-4ac2-b181-4e6ca1258f3f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "559f97c4-e2b1-4ac2-b181-4e6ca1258f3f"
+          ],
+          "Content-Length": [
+            "1218"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1218",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:11 GMT",
+          "x-amzn-RequestId": "559f97c4-e2b1-4ac2-b181-4e6ca1258f3f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 228,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4394703,
+          "beginOffset": 54,
+          "endOffset": 58,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.70395225
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.46488032
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.43808612
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.42237082
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.41312853
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9ef8c789-dd17-4ef1-a283-62995c04fcad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9ef8c789-dd17-4ef1-a283-62995c04fcad"
+          ],
+          "Content-Length": [
+            "633"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "633",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:12 GMT",
+          "x-amzn-RequestId": "9ef8c789-dd17-4ef1-a283-62995c04fcad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 109,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "58d21112-2430-4f5e-b46a-e9454d066e33"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "58d21112-2430-4f5e-b46a-e9454d066e33"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:12 GMT",
+          "x-amzn-RequestId": "58d21112-2430-4f5e-b46a-e9454d066e33"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:12 PM"
+}

@@ -1,0 +1,405 @@
+{
+  "note": ".  Follow up: 0  0 Interval to follow up: 1–2 months  D. Acute Lymphocytic Leukaemia  Approval:  Patient will be evaluated for complications using established criteria. Follow Up:   Patient will receive 5-days of chemo for a relapse of the disease. Interval to follow up: 0  0 Interval to follow up: 1–2 weeks  E. Acute Leukemia  Approval: Subject will be enrolled in a phase 2 trial to determine if the combination of a combination of two drugs results in a cure rate equal to or greater than placebo.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 605,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 63,
+          "endOffset": 84,
+          "score": 0.94567925,
+          "text": "Lymphocytic Leukaemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9526519
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5080506,
+              "relationshipScore": 0.9999987,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 57,
+              "endOffset": 62,
+              "text": "Acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 213,
+          "endOffset": 218,
+          "score": 0.7129739,
+          "text": "chemo",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 225,
+          "endOffset": 247,
+          "score": 0.26219675,
+          "text": "relapse of the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9098067
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 314,
+          "endOffset": 328,
+          "score": 0.3024326,
+          "text": "Acute Leukemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95059
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 370,
+          "endOffset": 377,
+          "score": 0.6309952,
+          "text": "phase 2",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.30656087,
+              "relationshipScore": 0.92044765,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 370,
+              "endOffset": 383,
+              "text": "phase 2 trial",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 370,
+          "endOffset": 383,
+          "score": 0.30656087,
+          "text": "phase 2 trial",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 494,
+          "endOffset": 501,
+          "score": 0.7941876,
+          "text": "placebo",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.5080506,
+            "id": 1,
+            "beginOffset": 57,
+            "endOffset": 62,
+            "text": "Acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "44b7e48d-705b-4be7-a8ee-7dc7928f8a45"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "44b7e48d-705b-4be7-a8ee-7dc7928f8a45"
+          ],
+          "Content-Length": [
+            "1963"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1963",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:49 GMT",
+          "x-amzn-RequestId": "44b7e48d-705b-4be7-a8ee-7dc7928f8a45"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 511,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "Lymphocytic Leukaemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94567925,
+          "beginOffset": 63,
+          "endOffset": 84,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5080507,
+              "relationshipScore": 0.9999987,
+              "id": 0,
+              "beginOffset": 57,
+              "endOffset": 62,
+              "text": "Acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9526519
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic lymphocytic leukemia of B-cell type not having achieved remission",
+              "code": "C91.10",
+              "score": 0.6422177
+            },
+            {
+              "description": "Chronic lymphocytic leukemia of B-cell type",
+              "code": "C91.1",
+              "score": 0.43802938
+            },
+            {
+              "description": "Chronic lymphocytic leukemia of B-cell type in remission",
+              "code": "C91.11",
+              "score": 0.3651644
+            },
+            {
+              "description": "Lymphocytic colitis",
+              "code": "K52.832",
+              "score": 0.36513853
+            },
+            {
+              "description": "Lymphoid leukemia, unspecified not having achieved remission",
+              "code": "C91.90",
+              "score": 0.33963755
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "relapse of the disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.26219684,
+          "beginOffset": 225,
+          "endOffset": 247,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9098067
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.45517462
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.38992828
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.37190893
+            },
+            {
+              "description": "Chronic systolic (congestive) heart failure",
+              "code": "I50.22",
+              "score": 0.3698253
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.36862186
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Acute Leukemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.30243257,
+          "beginOffset": 314,
+          "endOffset": 328,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95059
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acute promyelocytic leukemia, not having achieved remission",
+              "code": "C92.40",
+              "score": 0.57795537
+            },
+            {
+              "description": "Acute myeloblastic leukemia, not having achieved remission",
+              "code": "C92.00",
+              "score": 0.55708665
+            },
+            {
+              "description": "Leukemia, unspecified not having achieved remission",
+              "code": "C95.90",
+              "score": 0.5400754
+            },
+            {
+              "description": "Myeloid leukemia, unspecified, not having achieved remission",
+              "code": "C92.90",
+              "score": 0.4468091
+            },
+            {
+              "description": "Acute promyelocytic leukemia",
+              "code": "C92.4",
+              "score": 0.38188097
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "08e6ece6-842a-4529-9c9b-f1b832190779"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "08e6ece6-842a-4529-9c9b-f1b832190779"
+          ],
+          "Content-Length": [
+            "2555"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2555",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:50 GMT",
+          "x-amzn-RequestId": "08e6ece6-842a-4529-9c9b-f1b832190779"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 319,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "placebo",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.7941876,
+          "beginOffset": 494,
+          "endOffset": 501,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "placebo",
+              "code": "8375",
+              "score": 0.9431892
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a2afb12c-7d44-4f90-a6a0-d51d077b2496"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a2afb12c-7d44-4f90-a6a0-d51d077b2496"
+          ],
+          "Content-Length": [
+            "283"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "283",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:50 GMT",
+          "x-amzn-RequestId": "a2afb12c-7d44-4f90-a6a0-d51d077b2496"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:51 PM"
+}

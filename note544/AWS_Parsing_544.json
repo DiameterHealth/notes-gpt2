@@ -1,0 +1,187 @@
+{
+  "note": "(Note:  \"Tolerating\" is an accurate way to describe his condition, and he still has problems with pain. I don\u0027t have a strong desire to push this, it\u0027s not a priority. His mom has been a bit more vocal about trying to get him off of anti-inflammatory drugs. In terms of what else should I be doing, that\u0027s probably the question for every single family.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 268,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 98,
+          "endOffset": 102,
+          "score": 0.9670379,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.56717205
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 233,
+          "endOffset": 256,
+          "score": 0.3769548,
+          "text": "anti-inflammatory drugs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d4b2c97e-015d-4702-9dca-632cf50e6eb6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d4b2c97e-015d-4702-9dca-632cf50e6eb6"
+          ],
+          "Content-Length": [
+            "426"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "426",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:51 GMT",
+          "x-amzn-RequestId": "d4b2c97e-015d-4702-9dca-632cf50e6eb6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 394,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9670379,
+          "beginOffset": 98,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.567172
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.67025787
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.53279877
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.5247642
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5192054
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5104388
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "97075677-ed50-4862-9d0c-754cc6f86b21"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "97075677-ed50-4862-9d0c-754cc6f86b21"
+          ],
+          "Content-Length": [
+            "652"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "652",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:51 GMT",
+          "x-amzn-RequestId": "97075677-ed50-4862-9d0c-754cc6f86b21"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 203,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5832b640-2e96-41cb-a4f7-bfa28be48f7d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5832b640-2e96-41cb-a4f7-bfa28be48f7d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:51 GMT",
+          "x-amzn-RequestId": "5832b640-2e96-41cb-a4f7-bfa28be48f7d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:51 PM"
+}

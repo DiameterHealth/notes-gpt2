@@ -1,0 +1,138 @@
+{
+  "note": "\u0027 time. He is then scheduled for emergency surgery to stabilize him in the ICU. [2] There is one more step before that can be considered and I am the last (in this list) to go over it. The patient could come back to the office/hospital for a follow-up after the two week wait. The PCP needs to consider in their decision whether or not it would be necessary to order a second MRI.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 272,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 75,
+          "endOffset": 78,
+          "score": 0.99884415,
+          "text": "ICU",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 376,
+          "endOffset": 379,
+          "score": 0.9815765,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "581b3ea8-571a-48cf-810a-857b50448a6d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "581b3ea8-571a-48cf-810a-857b50448a6d"
+          ],
+          "Content-Length": [
+            "365"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "365",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:18 GMT",
+          "x-amzn-RequestId": "581b3ea8-571a-48cf-810a-857b50448a6d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 259,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bb8e3f5e-0d49-4065-9276-629bb879b2db"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bb8e3f5e-0d49-4065-9276-629bb879b2db"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:18 GMT",
+          "x-amzn-RequestId": "bb8e3f5e-0d49-4065-9276-629bb879b2db"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 217,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "df91c099-42d3-49ad-8aed-4cfb73b78d12"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "df91c099-42d3-49ad-8aed-4cfb73b78d12"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:18 GMT",
+          "x-amzn-RequestId": "df91c099-42d3-49ad-8aed-4cfb73b78d12"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:19 PM"
+}

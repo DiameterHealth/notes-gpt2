@@ -1,0 +1,435 @@
+{
+  "note": "Patient was observed for an average time of four days. Patient was seen on two separate occasions at each site of interest—a mass, on the second visit, was not palpable despite a small increase in mass and no change in the number of tumors. Eternal Virginity Condom and Pelvic Exam This was a review of several condom products to evaluate their ability to protect sexual pleasure (no sexual activity or sensation) and prevent STD transmission.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 361,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 125,
+          "endOffset": 129,
+          "score": 0.9723679,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68758684
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 197,
+          "endOffset": 201,
+          "score": 0.9692152,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40331793
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 209,
+          "endOffset": 239,
+          "score": 0.3399808,
+          "text": "change in the number of tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75591713
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.608388
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 270,
+          "endOffset": 281,
+          "score": 0.80696726,
+          "text": "Pelvic Exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 384,
+          "endOffset": 412,
+          "score": 0.60828656,
+          "text": "sexual activity or sensation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71890473
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7298052
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 426,
+          "endOffset": 429,
+          "score": 0.5858278,
+          "text": "STD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4840022
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e75cbc9d-83db-4891-9eda-439ad3a497eb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e75cbc9d-83db-4891-9eda-439ad3a497eb"
+          ],
+          "Content-Length": [
+            "1310"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1310",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:49 GMT",
+          "x-amzn-RequestId": "e75cbc9d-83db-4891-9eda-439ad3a497eb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1054,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9723679,
+          "beginOffset": 125,
+          "endOffset": 129,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.68758684
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Intra-abdominal and pelvic swelling, mass and lump, unspecified site",
+              "code": "R19.00",
+              "score": 0.6835298
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.65562904
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.64893353
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.63931215
+            },
+            {
+              "description": "Localized swelling, mass and lump, trunk",
+              "code": "R22.2",
+              "score": 0.6367379
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9692152,
+          "beginOffset": 197,
+          "endOffset": 201,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.40331805
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Intra-abdominal and pelvic swelling, mass and lump, unspecified site",
+              "code": "R19.00",
+              "score": 0.7323093
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.68622714
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6813322
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.6789987
+            },
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.6691613
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "change in the number of tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.33998084,
+          "beginOffset": 209,
+          "endOffset": 239,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7559171
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.60838807
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Change in bowel habit",
+              "code": "R19.4",
+              "score": 0.74775255
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.74071723
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of other parts of musculoskeletal system",
+              "code": "R93.7",
+              "score": 0.70250905
+            },
+            {
+              "description": "Carcinoma in situ of hard palate",
+              "code": "D00.05",
+              "score": 0.7023684
+            },
+            {
+              "description": "Unspecified skin changes",
+              "code": "R23.9",
+              "score": 0.701881
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "sexual activity or sensation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6082866,
+          "beginOffset": 384,
+          "endOffset": 412,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71890473
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7298052
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.5482289
+            },
+            {
+              "description": "Unspecified sexually transmitted disease",
+              "code": "A64",
+              "score": 0.546446
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.4591332
+            },
+            {
+              "description": "Hyperesthesia",
+              "code": "R20.3",
+              "score": 0.4464789
+            },
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.42552283
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "STD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.58582777,
+          "beginOffset": 426,
+          "endOffset": 429,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.48400217
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified sexually transmitted disease",
+              "code": "A64",
+              "score": 0.77063483
+            },
+            {
+              "description": "Forced sexual exploitation, confirmed",
+              "code": "T74.5",
+              "score": 0.46423995
+            },
+            {
+              "description": "Sexual abuse, suspected",
+              "code": "T76.2",
+              "score": 0.43236744
+            },
+            {
+              "description": "Sexual sadism",
+              "code": "F65.52",
+              "score": 0.43160772
+            },
+            {
+              "description": "Sexual dysfunction, unspecified",
+              "code": "R37",
+              "score": 0.42442575
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "25bb766a-a7d9-433a-98d3-cbe600236a69"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "25bb766a-a7d9-433a-98d3-cbe600236a69"
+          ],
+          "Content-Length": [
+            "3761"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:50 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3761",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:50 GMT",
+          "x-amzn-RequestId": "25bb766a-a7d9-433a-98d3-cbe600236a69"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "837e03f1-404a-43db-9c34-c14178a96337"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "837e03f1-404a-43db-9c34-c14178a96337"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:49 GMT",
+          "x-amzn-RequestId": "837e03f1-404a-43db-9c34-c14178a96337"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:50 PM"
+}

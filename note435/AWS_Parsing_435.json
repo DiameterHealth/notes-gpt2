@@ -1,0 +1,428 @@
+{
+  "note": ". He maintains a normal serum lipoprotein level but has a low fasting serum C-reactive protein level. He is on an HPMC (6 mg once daily). The patient presents complaining of difficulty seeing and increasing visual acuity. He is uncooperative and has limited verbal recall about the details of his medical history and current visual symptoms. He denies any significant use of alcohol or illegal drugs.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 302,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 24,
+          "endOffset": 47,
+          "score": 0.99778676,
+          "text": "serum lipoprotein level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9394556,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 4,
+              "beginOffset": 17,
+              "endOffset": 23,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 62,
+          "endOffset": 100,
+          "score": 0.9914744,
+          "text": "fasting serum C-reactive protein level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9957153,
+              "relationshipScore": 0.9999995,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 58,
+              "endOffset": 61,
+              "text": "low",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 174,
+          "endOffset": 191,
+          "score": 0.70884126,
+          "text": "difficulty seeing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.45626792
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 207,
+          "endOffset": 220,
+          "score": 0.8837726,
+          "text": "visual acuity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86775786
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 228,
+          "endOffset": 241,
+          "score": 0.8211276,
+          "text": "uncooperative",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.551186
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 317,
+          "endOffset": 324,
+          "score": 0.9999989,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.75847113,
+              "relationshipScore": 0.99221015,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 325,
+              "endOffset": 340,
+              "text": "visual symptoms",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.74920166
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 325,
+          "endOffset": 340,
+          "score": 0.75847113,
+          "text": "visual symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74920166
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b55f6be3-971a-499a-9b6c-63298fab1e99"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b55f6be3-971a-499a-9b6c-63298fab1e99"
+          ],
+          "Content-Length": [
+            "2111"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2111",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:31 GMT",
+          "x-amzn-RequestId": "b55f6be3-971a-499a-9b6c-63298fab1e99"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1039,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "difficulty seeing",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7088414,
+          "beginOffset": 174,
+          "endOffset": 191,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4562679
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.7475781
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.6604639
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.62744635
+            },
+            {
+              "description": "Specific reading disorder",
+              "code": "F81.0",
+              "score": 0.49940765
+            },
+            {
+              "description": "Feeding difficulties",
+              "code": "R63.3",
+              "score": 0.49466684
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "visual acuity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8837726,
+          "beginOffset": 207,
+          "endOffset": 220,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.86775786
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.7194594
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.6514194
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.6044311
+            },
+            {
+              "description": "Transient visual loss, left eye",
+              "code": "H53.122",
+              "score": 0.551465
+            },
+            {
+              "description": "Visual discomfort, unspecified",
+              "code": "H53.149",
+              "score": 0.51938
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "uncooperative",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8211276,
+          "beginOffset": 228,
+          "endOffset": 241,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.551186
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol dependence with withdrawal, uncomplicated",
+              "code": "F10.230",
+              "score": 0.79910415
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.7565015
+            },
+            {
+              "description": "Alcohol dependence with intoxication, uncomplicated",
+              "code": "F10.220",
+              "score": 0.6368868
+            },
+            {
+              "description": "Other psychoactive substance use, unspecified with withdrawal, uncomplicated",
+              "code": "F19.930",
+              "score": 0.5720143
+            },
+            {
+              "description": "Alcohol abuse with intoxication, uncomplicated",
+              "code": "F10.120",
+              "score": 0.56843495
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "visual symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.75847113,
+          "beginOffset": 325,
+          "endOffset": 340,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.74920166
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.7551208
+            },
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.6781649
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.67692065
+            },
+            {
+              "description": "Visual discomfort, unspecified",
+              "code": "H53.149",
+              "score": 0.5785622
+            },
+            {
+              "description": "Visual discomfort, bilateral",
+              "code": "H53.143",
+              "score": 0.5465337
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "02b8d778-05bc-4de8-ba0a-8c0f3b714d6a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "02b8d778-05bc-4de8-ba0a-8c0f3b714d6a"
+          ],
+          "Content-Length": [
+            "2915"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2915",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:32 GMT",
+          "x-amzn-RequestId": "02b8d778-05bc-4de8-ba0a-8c0f3b714d6a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3a3fd838-3785-4571-bed7-bff0be52ecfa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3a3fd838-3785-4571-bed7-bff0be52ecfa"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:31 GMT",
+          "x-amzn-RequestId": "3a3fd838-3785-4571-bed7-bff0be52ecfa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:33 PM"
+}

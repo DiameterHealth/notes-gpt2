@@ -1,0 +1,645 @@
+{
+  "note": ". On the back, there were no changes noted that would suggest any additional problems such as disc degeneration or instability. This visit shows the patient had normal function prior to the back pain. The therapist is continuing to provide ongoing physical therapy to help facilitate muscle strengthening. Back Pain in the Adult  There are a number of different causes of back pain in adults.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 641,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 9,
+          "endOffset": 13,
+          "score": 0.91736984,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 94,
+          "endOffset": 98,
+          "score": 0.78893614,
+          "text": "disc",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 94,
+          "endOffset": 111,
+          "score": 0.9148981,
+          "text": "disc degeneration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.699767
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5764288
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 115,
+          "endOffset": 126,
+          "score": 0.92168313,
+          "text": "instability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54933745
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8552021
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.78893614,
+              "relationshipScore": 0.8826204,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 94,
+              "endOffset": 98,
+              "text": "disc",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 161,
+          "endOffset": 176,
+          "score": 0.62627363,
+          "text": "normal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46771297
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 177,
+          "endOffset": 182,
+          "score": 0.99999917,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.8509253,
+              "relationshipScore": 0.8505828,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 190,
+              "endOffset": 199,
+              "text": "back pain",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SYMPTOM",
+                  "score": 0.4657907
+                },
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.45124653
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 190,
+          "endOffset": 194,
+          "score": 0.9910473,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 190,
+          "endOffset": 199,
+          "score": 0.8509253,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4657907
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.45124653
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 248,
+          "endOffset": 264,
+          "score": 0.9762347,
+          "text": "physical therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 284,
+          "endOffset": 290,
+          "score": 0.9499904,
+          "text": "muscle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 284,
+          "endOffset": 304,
+          "score": 0.7457568,
+          "text": "muscle strengthening",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 306,
+          "endOffset": 310,
+          "score": 0.98344016,
+          "text": "Back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 306,
+          "endOffset": 315,
+          "score": 0.85328245,
+          "text": "Back Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4807903
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42022747
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 372,
+          "endOffset": 376,
+          "score": 0.9647311,
+          "text": "back",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 372,
+          "endOffset": 381,
+          "score": 0.96508425,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44691762
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.51537037
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ac4370c0-47e1-4b85-9bec-f91242fbf15a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ac4370c0-47e1-4b85-9bec-f91242fbf15a"
+          ],
+          "Content-Length": [
+            "3402"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3402",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:55 GMT",
+          "x-amzn-RequestId": "ac4370c0-47e1-4b85-9bec-f91242fbf15a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 696,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "disc degeneration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.914898,
+          "beginOffset": 94,
+          "endOffset": 111,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6997669
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5764287
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other intervertebral disc degeneration, lumbar region",
+              "code": "M51.36",
+              "score": 0.7795104
+            },
+            {
+              "description": "Other cervical disc degeneration, unspecified cervical region",
+              "code": "M50.30",
+              "score": 0.7788886
+            },
+            {
+              "description": "Other intervertebral disc degeneration, thoracic region",
+              "code": "M51.34",
+              "score": 0.6999203
+            },
+            {
+              "description": "Other intervertebral disc degeneration, lumbosacral region",
+              "code": "M51.37",
+              "score": 0.6852126
+            },
+            {
+              "description": "Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder",
+              "code": "M51.9",
+              "score": 0.64442414
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "instability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.92168313,
+          "beginOffset": 115,
+          "endOffset": 126,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.78893614,
+              "relationshipScore": 0.8826204,
+              "id": 2,
+              "beginOffset": 94,
+              "endOffset": 98,
+              "text": "disc",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5493375
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8552021
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other instability, unspecified joint",
+              "code": "M25.30",
+              "score": 0.5303292
+            },
+            {
+              "description": "Other instability, left elbow",
+              "code": "M25.322",
+              "score": 0.5193569
+            },
+            {
+              "description": "Other instability, right hand",
+              "code": "M25.341",
+              "score": 0.49756786
+            },
+            {
+              "description": "Other instability, right foot",
+              "code": "M25.374",
+              "score": 0.49494195
+            },
+            {
+              "description": "Other instability, left foot",
+              "code": "M25.375",
+              "score": 0.48424068
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "normal function",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6262735,
+          "beginOffset": 161,
+          "endOffset": 176,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.46771288
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.6593881
+            },
+            {
+              "description": "Abnormal results of kidney function studies",
+              "code": "R94.4",
+              "score": 0.6206179
+            },
+            {
+              "description": "Functional dyspepsia",
+              "code": "K30",
+              "score": 0.60582674
+            },
+            {
+              "description": "Functional quadriplegia",
+              "code": "R53.2",
+              "score": 0.57812816
+            },
+            {
+              "description": "Abnormal results of pulmonary function studies",
+              "code": "R94.2",
+              "score": 0.51233405
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8509253,
+          "beginOffset": 190,
+          "endOffset": 199,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.46579072
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4512464
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.74192995
+            },
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.7271029
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.656099
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5808894
+            },
+            {
+              "description": "Cervicalgia",
+              "code": "M54.2",
+              "score": 0.50811744
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "Back Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85328245,
+          "beginOffset": 306,
+          "endOffset": 315,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4807903
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.42022744
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.7374682
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.69190097
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.6585577
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.5608219
+            },
+            {
+              "description": "Lumbago with sciatica, unspecified side",
+              "code": "M54.40",
+              "score": 0.48753914
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "back pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96508425,
+          "beginOffset": 372,
+          "endOffset": 381,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.44691762
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5153703
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dorsalgia, unspecified",
+              "code": "M54.9",
+              "score": 0.7402052
+            },
+            {
+              "description": "Pain in thoracic spine",
+              "code": "M54.6",
+              "score": 0.64822024
+            },
+            {
+              "description": "Low back pain",
+              "code": "M54.5",
+              "score": 0.63909954
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.538124
+            },
+            {
+              "description": "Lumbago with sciatica, unspecified side",
+              "code": "M54.40",
+              "score": 0.4876164
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "408d1b23-f0b4-4867-a39b-4ae7b48cf972"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "408d1b23-f0b4-4867-a39b-4ae7b48cf972"
+          ],
+          "Content-Length": [
+            "4717"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4717",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:55 GMT",
+          "x-amzn-RequestId": "408d1b23-f0b4-4867-a39b-4ae7b48cf972"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 212,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0de9b8e9-a8d2-47ee-a4e0-549bc2256394"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0de9b8e9-a8d2-47ee-a4e0-549bc2256394"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:55 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:55 GMT",
+          "x-amzn-RequestId": "0de9b8e9-a8d2-47ee-a4e0-549bc2256394"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:56 PM"
+}

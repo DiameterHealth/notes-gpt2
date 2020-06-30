@@ -1,0 +1,226 @@
+{
+  "note": "[EVIDENCY] ------------ As a matter of interest: \"In a review of 12 studies that evaluated the effect of TNF-α alpha, the majority of these studies showed a reduced incidence of metastatic cancer when treatment with TGF-β1 was added to standard therapy.\"",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 178,
+          "endOffset": 195,
+          "score": 0.54748344,
+          "text": "metastatic cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97187907
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 216,
+          "endOffset": 222,
+          "score": 0.69660854,
+          "text": "TGF-β1",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "43fc0e8a-5fdc-4229-893f-3aad549ee1f6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "43fc0e8a-5fdc-4229-893f-3aad549ee1f6"
+          ],
+          "Content-Length": [
+            "410"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "410",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:17 GMT",
+          "x-amzn-RequestId": "43fc0e8a-5fdc-4229-893f-3aad549ee1f6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 441,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "metastatic cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.54748344,
+          "beginOffset": 178,
+          "endOffset": 195,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97187907
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Secondary malignant neoplasm of unspecified site",
+              "code": "C79.9",
+              "score": 0.6412956
+            },
+            {
+              "description": "Personal history of malignant neoplasm, unspecified",
+              "code": "Z85.9",
+              "score": 0.6292321
+            },
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.5546899
+            },
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.5436375
+            },
+            {
+              "description": "Malignant neoplasm of rectum",
+              "code": "C20",
+              "score": 0.5228468
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "38cc6df1-643f-4af0-9e70-f7d987e40cc1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "38cc6df1-643f-4af0-9e70-f7d987e40cc1"
+          ],
+          "Content-Length": [
+            "796"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "796",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:19 GMT",
+          "x-amzn-RequestId": "38cc6df1-643f-4af0-9e70-f7d987e40cc1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 367,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "TGF-β1",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.6966085,
+          "beginOffset": 216,
+          "endOffset": 222,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "laureth-11",
+              "code": "1925780",
+              "score": 0.25818554
+            },
+            {
+              "description": "STEARETH-21",
+              "code": "1367122",
+              "score": 0.08628948
+            },
+            {
+              "description": "L1 protein, Human papillomavirus type 11 Vaccine",
+              "code": "798262",
+              "score": 0.042722978
+            },
+            {
+              "description": "L1 protein, Human papillomavirus type 31 Vaccine",
+              "code": "1596930",
+              "score": 0.028496629
+            },
+            {
+              "description": "Interleukin-11",
+              "code": "1311380",
+              "score": 0.026466569
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e62b0aa2-0df6-4c5f-b2ac-d77197aab0f8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e62b0aa2-0df6-4c5f-b2ac-d77197aab0f8"
+          ],
+          "Content-Length": [
+            "669"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "669",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:17 GMT",
+          "x-amzn-RequestId": "e62b0aa2-0df6-4c5f-b2ac-d77197aab0f8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:19 PM"
+}

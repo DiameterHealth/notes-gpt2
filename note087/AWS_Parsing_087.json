@@ -1,0 +1,628 @@
+{
+  "note": "He does not have a recent history of tachycardia or atrial fibrillation. He does however have an unclassifiable disease. The Patient\u0027s primary care cardiologist notes that the ECG is \"almost normal,\" that no previous medical history of atrial fibrillation is available or available if that\u0027s a concern, that the patient\u0027s family medical history does not include symptoms of atrial fibrillation, and does note that the patient presents with a history of intermittent claudication.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 363,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 19,
+          "endOffset": 25,
+          "score": 0.99999845,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9920699,
+              "relationshipScore": 0.90456426,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 52,
+              "endOffset": 71,
+              "text": "atrial fibrillation",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.8699269
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.8793151
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 19,
+          "endOffset": 25,
+          "score": 0.99999845,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.96799856,
+              "relationshipScore": 0.9153536,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 37,
+              "endOffset": 48,
+              "text": "tachycardia",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.73088485
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.9207791
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 37,
+          "endOffset": 48,
+          "score": 0.96799856,
+          "text": "tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.73088485
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9207791
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 52,
+          "endOffset": 71,
+          "score": 0.9920699,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8699269
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8793151
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 97,
+          "endOffset": 119,
+          "score": 0.9125636,
+          "text": "unclassifiable disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89180607
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 176,
+          "endOffset": 179,
+          "score": 0.9842004,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.60130155,
+              "relationshipScore": 0.999998,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 191,
+              "endOffset": 197,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 236,
+          "endOffset": 255,
+          "score": 0.9883823,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9229141
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.70735276
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 374,
+          "endOffset": 393,
+          "score": 0.9918555,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7977343
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.76386255
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 466,
+          "endOffset": 478,
+          "score": 0.99753225,
+          "text": "claudication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4700726
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.73413384,
+              "relationshipScore": 0.9999641,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 453,
+              "endOffset": 465,
+              "text": "intermittent",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.73413384,
+            "id": 5,
+            "beginOffset": 453,
+            "endOffset": 465,
+            "text": "intermittent",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "794a396d-e33a-4a3c-88c5-0a02fcc13c4a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "794a396d-e33a-4a3c-88c5-0a02fcc13c4a"
+          ],
+          "Content-Length": [
+            "3243"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3243",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:30 GMT",
+          "x-amzn-RequestId": "794a396d-e33a-4a3c-88c5-0a02fcc13c4a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1126,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "tachycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96799856,
+          "beginOffset": 37,
+          "endOffset": 48,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.73088485
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9207791
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.81160617
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.61283773
+            },
+            {
+              "description": "Ventricular tachycardia",
+              "code": "I47.2",
+              "score": 0.578079
+            },
+            {
+              "description": "Cardiomyopathy, unspecified",
+              "code": "I42.9",
+              "score": 0.5749908
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.5582364
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9920699,
+          "beginOffset": 52,
+          "endOffset": 71,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8699269
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8793151
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.8250357
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.7780481
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.7656103
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.7554362
+            },
+            {
+              "description": "Ventricular fibrillation",
+              "code": "I49.01",
+              "score": 0.6497775
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "unclassifiable disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9125636,
+          "beginOffset": 97,
+          "endOffset": 119,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89180607
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.5647567
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.4845834
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.4524356
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.45175797
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.43745813
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9883823,
+          "beginOffset": 236,
+          "endOffset": 255,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9229141
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7073527
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.5570975
+            },
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.5548608
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.46984154
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.4422296
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.356186
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "atrial fibrillation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9918555,
+          "beginOffset": 374,
+          "endOffset": 393,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.79773426
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.7638625
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified atrial fibrillation",
+              "code": "I48.91",
+              "score": 0.7119788
+            },
+            {
+              "description": "Paroxysmal atrial fibrillation",
+              "code": "I48.0",
+              "score": 0.68005306
+            },
+            {
+              "description": "Persistent atrial fibrillation",
+              "code": "I48.1",
+              "score": 0.5935081
+            },
+            {
+              "description": "Chronic atrial fibrillation",
+              "code": "I48.2",
+              "score": 0.57815874
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.48129556
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "claudication",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99753225,
+          "beginOffset": 466,
+          "endOffset": 478,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.7341338,
+              "relationshipScore": 0.9999641,
+              "id": 5,
+              "beginOffset": 453,
+              "endOffset": 465,
+              "text": "intermittent",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4700726
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Peripheral vascular disease, unspecified",
+              "code": "I73.9",
+              "score": 0.92780656
+            },
+            {
+              "description": "Atherosclerosis of native arteries of extremities with intermittent claudication, bilateral legs",
+              "code": "I70.213",
+              "score": 0.86253566
+            },
+            {
+              "description": "Other vascular myelopathies",
+              "code": "G95.19",
+              "score": 0.8169115
+            },
+            {
+              "description": "Transient cerebral ischemic attack, unspecified",
+              "code": "G45.9",
+              "score": 0.8000638
+            },
+            {
+              "description": "Other specified disorders of veins",
+              "code": "I87.8",
+              "score": 0.79721075
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "df065fea-db36-4bb1-8f79-a0cee8b937b1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "df065fea-db36-4bb1-8f79-a0cee8b937b1"
+          ],
+          "Content-Length": [
+            "4848"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4848",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:32 GMT",
+          "x-amzn-RequestId": "df065fea-db36-4bb1-8f79-a0cee8b937b1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 222,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7cf5a20e-32fb-4750-bfce-66d9b780245c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7cf5a20e-32fb-4750-bfce-66d9b780245c"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:31 GMT",
+          "x-amzn-RequestId": "7cf5a20e-32fb-4750-bfce-66d9b780245c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:32 PM"
+}

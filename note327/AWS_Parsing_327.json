@@ -1,0 +1,580 @@
+{
+  "note": "surgery, hyperlipidemia and sleep apnea. He is now hypertensive due to an accumulation of fatty deposits in his artery walls. EXAMPLES OF HYPOCENTERMAL REFERENCE PATIENTS Hypertension  (and related disorders)  The term is derived from an 1887 paper by Dr. William Davis, who noted there were 20 known cases of hypertensive references, in which one or more of 13 common variables were present.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 337,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 0,
+          "endOffset": 7,
+          "score": 0.86286396,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 9,
+          "endOffset": 23,
+          "score": 0.9940813,
+          "text": "hyperlipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.976391
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 28,
+          "endOffset": 39,
+          "score": 0.9671611,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9656842
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 51,
+          "endOffset": 63,
+          "score": 0.987038,
+          "text": "hypertensive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90635484
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 90,
+          "endOffset": 104,
+          "score": 0.6798236,
+          "text": "fatty deposits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8828566
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.7792391,
+              "relationshipScore": 0.9993672,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 112,
+              "endOffset": 124,
+              "text": "artery walls",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 112,
+          "endOffset": 124,
+          "score": 0.7792391,
+          "text": "artery walls",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 171,
+          "endOffset": 183,
+          "score": 0.9893456,
+          "text": "Hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569745
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 198,
+          "endOffset": 207,
+          "score": 0.5794274,
+          "text": "disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75381345
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 256,
+          "endOffset": 269,
+          "score": 0.99995947,
+          "text": "William Davis",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 310,
+          "endOffset": 322,
+          "score": 0.5851471,
+          "text": "hypertensive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63181484
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3258c0cc-e78c-46af-bf21-cfd047acb474"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3258c0cc-e78c-46af-bf21-cfd047acb474"
+          ],
+          "Content-Length": [
+            "2160"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2160",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:20 GMT",
+          "x-amzn-RequestId": "3258c0cc-e78c-46af-bf21-cfd047acb474"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 549,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "hyperlipidemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9940813,
+          "beginOffset": 9,
+          "endOffset": 23,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.976391
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hyperlipidemia, unspecified",
+              "code": "E78.5",
+              "score": 0.79937565
+            },
+            {
+              "description": "Pure hypercholesterolemia, unspecified",
+              "code": "E78.00",
+              "score": 0.5374978
+            },
+            {
+              "description": "Other hyperlipidemia",
+              "code": "E78.49",
+              "score": 0.5102346
+            },
+            {
+              "description": "Pure hyperglyceridemia",
+              "code": "E78.1",
+              "score": 0.46899343
+            },
+            {
+              "description": "Mixed hyperlipidemia",
+              "code": "E78.2",
+              "score": 0.4506002
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9671611,
+          "beginOffset": 28,
+          "endOffset": 39,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9656842
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.689232
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.6020607
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.42867586
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.34923673
+            },
+            {
+              "description": "Sleep disorder not due to a substance or known physiological condition, unspecified",
+              "code": "F51.9",
+              "score": 0.2942309
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hypertensive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.987038,
+          "beginOffset": 51,
+          "endOffset": 63,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90635484
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7469989
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7431399
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.71046054
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.6768293
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.6767195
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fatty deposits",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6798237,
+          "beginOffset": 90,
+          "endOffset": 104,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.7792391,
+              "relationshipScore": 0.9993672,
+              "id": 4,
+              "beginOffset": 112,
+              "endOffset": 124,
+              "text": "artery walls",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8828566
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fatty (change of) liver, not elsewhere classified",
+              "code": "K76.0",
+              "score": 0.6054726
+            },
+            {
+              "description": "Benign lipomatous neoplasm, unspecified",
+              "code": "D17.9",
+              "score": 0.39642403
+            },
+            {
+              "description": "Alcoholic fatty liver",
+              "code": "K70.0",
+              "score": 0.34506837
+            },
+            {
+              "description": "Unspecified corneal deposit, right eye",
+              "code": "H18.001",
+              "score": 0.308937
+            },
+            {
+              "description": "Unspecified corneal deposit, left eye",
+              "code": "H18.002",
+              "score": 0.30194384
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "Hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9893456,
+          "beginOffset": 171,
+          "endOffset": 183,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569745
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.7749898
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7436405
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.71331495
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.68300855
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.67658937
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5794274,
+          "beginOffset": 198,
+          "endOffset": 207,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75381345
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Parkinson\u0027s disease",
+              "code": "G20",
+              "score": 0.8262171
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.78729576
+            },
+            {
+              "description": "Disorder of bone, unspecified",
+              "code": "M89.9",
+              "score": 0.76044005
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.7331116
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.73217237
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "hypertensive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.58514726,
+          "beginOffset": 310,
+          "endOffset": 322,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.63181496
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.8751804
+            },
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.8450067
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.844027
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.81403667
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.7550233
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "37963a26-301f-45ad-909c-ef694894bdc1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "37963a26-301f-45ad-909c-ef694894bdc1"
+          ],
+          "Content-Length": [
+            "5885"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5885",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:21 GMT",
+          "x-amzn-RequestId": "37963a26-301f-45ad-909c-ef694894bdc1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 195,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4d2ea039-4b8e-41cc-af69-b9613168a781"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4d2ea039-4b8e-41cc-af69-b9613168a781"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:21 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:21 GMT",
+          "x-amzn-RequestId": "4d2ea039-4b8e-41cc-af69-b9613168a781"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:21 PM"
+}

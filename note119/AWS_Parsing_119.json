@@ -1,0 +1,217 @@
+{
+  "note": "Healthy People 2020: An Agenda for Healthy Development, 2nd edition, page 751 – 755  Lifespan, Age, Sex and Aging in the United States  Medical Decision Making: Follow-up in 3 months  Healthy People 2020: An Agenda for Healthy Development, 2nd edition, page 731 – 734  In-Depth Medical Decision Making  Medical Ethics at Work: Principles, Values, and Practices  Medical Ethics at Work: Principles, Values, and Practices, 2nd edition  Medical Ethics at Work: Principles, Values, and Practices, 3rd Edition  Medical Health and Employee Wellness  The Effects of Workplace Injuries on Health, Stress, and Workplace Stressor Management Practices, by Peter G.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 459,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 121,
+          "endOffset": 134,
+          "score": 0.89211327,
+          "text": "United States",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 199,
+          "endOffset": 203,
+          "score": 0.1647526,
+          "text": "2020",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 493,
+          "endOffset": 542,
+          "score": 0.27623785,
+          "text": "3rd Edition  Medical Health and Employee Wellness",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 569,
+          "endOffset": 577,
+          "score": 0.7259508,
+          "text": "Injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.4784607
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 645,
+          "endOffset": 652,
+          "score": 0.98845416,
+          "text": "Peter G",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "46d62ec0-53dc-4d94-84e4-ef361d1d0032"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "46d62ec0-53dc-4d94-84e4-ef361d1d0032"
+          ],
+          "Content-Length": [
+            "928"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "928",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:15 GMT",
+          "x-amzn-RequestId": "46d62ec0-53dc-4d94-84e4-ef361d1d0032"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 606,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Injuries",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7259508,
+          "beginOffset": 569,
+          "endOffset": 577,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47846067
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.6620783
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.61404806
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.6057921
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.5831781
+            },
+            {
+              "description": "Contusion of left knee",
+              "code": "S80.02",
+              "score": 0.57607526
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "521831f8-e42d-4076-b980-0d45ac9cd35e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "521831f8-e42d-4076-b980-0d45ac9cd35e"
+          ],
+          "Content-Length": [
+            "718"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "718",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:15 GMT",
+          "x-amzn-RequestId": "521831f8-e42d-4076-b980-0d45ac9cd35e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 308,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "faa38170-815a-4169-a0d0-72355cdb30b9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "faa38170-815a-4169-a0d0-72355cdb30b9"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:15 GMT",
+          "x-amzn-RequestId": "faa38170-815a-4169-a0d0-72355cdb30b9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:16 PM"
+}

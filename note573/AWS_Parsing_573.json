@@ -1,0 +1,488 @@
+{
+  "note": ". Patient is in the community looking for better living conditions. The patient has been hospitalized for an unspecified febrile illness prior. Hematological Disorders Patient presents with a history of chronic hematuria \u0026 leukopenia with his wife. Is also in need of blood work . He has also been in the hospital with the same history prior and was also admitted for non-compliant hematocrit.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 343,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 109,
+          "endOffset": 136,
+          "score": 0.38721895,
+          "text": "unspecified febrile illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7183664
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 137,
+          "endOffset": 142,
+          "score": 0.99999833,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.38721895,
+              "relationshipScore": 0.90657604,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 109,
+              "endOffset": 136,
+              "text": "unspecified febrile illness",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7183664
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 144,
+          "endOffset": 167,
+          "score": 0.97395587,
+          "text": "Hematological Disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9057553
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 211,
+          "endOffset": 220,
+          "score": 0.9952362,
+          "text": "hematuria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7547974
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9958769,
+              "relationshipScore": 0.99953485,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 203,
+              "endOffset": 210,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 223,
+          "endOffset": 233,
+          "score": 0.9986235,
+          "text": "leukopenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.933697
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9958769,
+              "relationshipScore": 0.97762877,
+              "relationshipType": "ACUITY",
+              "id": 2,
+              "beginOffset": 203,
+              "endOffset": 210,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 268,
+          "endOffset": 278,
+          "score": 0.58009243,
+          "text": "blood work",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 336,
+          "endOffset": 341,
+          "score": 0.9999975,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.3877288,
+              "relationshipScore": 0.7639051,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 382,
+              "endOffset": 392,
+              "text": "hematocrit",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 382,
+          "endOffset": 392,
+          "score": 0.3877288,
+          "text": "hematocrit",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9958769,
+            "id": 2,
+            "beginOffset": 203,
+            "endOffset": 210,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c74302f-927d-4b52-9aa3-9c2bc5c962ef"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c74302f-927d-4b52-9aa3-9c2bc5c962ef"
+          ],
+          "Content-Length": [
+            "2681"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2681",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:44 GMT",
+          "x-amzn-RequestId": "6c74302f-927d-4b52-9aa3-9c2bc5c962ef"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 457,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "unspecified febrile illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.38721913,
+          "beginOffset": 109,
+          "endOffset": 136,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71836644
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.6242019
+            },
+            {
+              "description": "Sepsis, unspecified organism",
+              "code": "A41.9",
+              "score": 0.5166992
+            },
+            {
+              "description": "Simple febrile convulsions",
+              "code": "R56.00",
+              "score": 0.46124756
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.4365871
+            },
+            {
+              "description": "Complex febrile convulsions",
+              "code": "R56.01",
+              "score": 0.38258266
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Hematological Disorders",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97395587,
+          "beginOffset": 144,
+          "endOffset": 167,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90575534
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Albinism with hematologic abnormality, unspecified",
+              "code": "E70.339",
+              "score": 0.5473284
+            },
+            {
+              "description": "Perinatal hematological disorder, unspecified",
+              "code": "P61.9",
+              "score": 0.50008273
+            },
+            {
+              "description": "Disease of blood and blood-forming organs, unspecified",
+              "code": "D75.9",
+              "score": 0.45442995
+            },
+            {
+              "description": "Other specified perinatal hematological disorders",
+              "code": "P61.8",
+              "score": 0.43657327
+            },
+            {
+              "description": "Other albinism with hematologic abnormality",
+              "code": "E70.338",
+              "score": 0.42605057
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hematuria",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9952362,
+          "beginOffset": 211,
+          "endOffset": 220,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9958769,
+              "relationshipScore": 0.99953485,
+              "id": 2,
+              "beginOffset": 203,
+              "endOffset": 210,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.75479734
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.6786326
+            },
+            {
+              "description": "Acute cystitis with hematuria",
+              "code": "N30.01",
+              "score": 0.60237074
+            },
+            {
+              "description": "Gross hematuria",
+              "code": "R31.0",
+              "score": 0.49583665
+            },
+            {
+              "description": "Cystitis, unspecified without hematuria",
+              "code": "N30.90",
+              "score": 0.47822437
+            },
+            {
+              "description": "Recurrent and persistent hematuria with unspecified morphologic changes",
+              "code": "N02.9",
+              "score": 0.36649227
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "leukopenia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9986235,
+          "beginOffset": 223,
+          "endOffset": 233,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9958769,
+              "relationshipScore": 0.97762877,
+              "id": 2,
+              "beginOffset": 203,
+              "endOffset": 210,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.933697
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Decreased white blood cell count, unspecified",
+              "code": "D72.819",
+              "score": 0.46732312
+            },
+            {
+              "description": "Neutropenia, unspecified",
+              "code": "D70.9",
+              "score": 0.25892526
+            },
+            {
+              "description": "Decreased white blood cell count",
+              "code": "D72.81",
+              "score": 0.21907207
+            },
+            {
+              "description": "Other decreased white blood cell count",
+              "code": "D72.818",
+              "score": 0.21613555
+            },
+            {
+              "description": "Agranulocytosis secondary to cancer chemotherapy",
+              "code": "D70.1",
+              "score": 0.16715792
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9e64aaf4-2812-4413-9ffb-d946e7a50679"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9e64aaf4-2812-4413-9ffb-d946e7a50679"
+          ],
+          "Content-Length": [
+            "3260"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3260",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:45 GMT",
+          "x-amzn-RequestId": "9e64aaf4-2812-4413-9ffb-d946e7a50679"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 185,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8d591a0a-b5b5-4495-96cc-f6bc61bbc3b4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8d591a0a-b5b5-4495-96cc-f6bc61bbc3b4"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:45 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:45 GMT",
+          "x-amzn-RequestId": "8d591a0a-b5b5-4495-96cc-f6bc61bbc3b4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:46 PM"
+}

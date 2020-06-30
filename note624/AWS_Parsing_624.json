@@ -1,0 +1,235 @@
+{
+  "note": "Treatment Status Not known. Follow-Up Assessment Outcome Questionnaire Pain Relief Scale (Pain Questionnaire), and the Short‐Form General Health Survey. 6.9 Systemic (Health)  6.9.1 In-hospital  Patient-reported adverse events may comprise physical and psychological symptoms, self-reported symptoms, and laboratory abnormalities. Systemic medical symptoms were not significantly different between treatment groups. 6.9.2 Emergency department  Outcomes were not systematically recorded.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 90,
+          "endOffset": 94,
+          "score": 0.5591021,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 277,
+          "endOffset": 299,
+          "score": 0.488393,
+          "text": "self-reported symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7078186
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 422,
+          "endOffset": 442,
+          "score": 0.39301088,
+          "text": "Emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8aa20544-25c8-410c-8d9e-fb6be255c88a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8aa20544-25c8-410c-8d9e-fb6be255c88a"
+          ],
+          "Content-Length": [
+            "582"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "582",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:15 GMT",
+          "x-amzn-RequestId": "8aa20544-25c8-410c-8d9e-fb6be255c88a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 392,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5591021,
+          "beginOffset": 90,
+          "endOffset": 94,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7321511
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6082119
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5985051
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.59228015
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.5631045
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "self-reported symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.488393,
+          "beginOffset": 277,
+          "endOffset": 299,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7078186
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.75772566
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.75562876
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the genitourinary system",
+              "code": "R39.9",
+              "score": 0.71571785
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.66889715
+            },
+            {
+              "description": "Other specified symptoms and signs involving the digestive system and abdomen",
+              "code": "R19.8",
+              "score": 0.65834326
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4dc19972-6a1d-4b85-a2c8-be5d0c29b453"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4dc19972-6a1d-4b85-a2c8-be5d0c29b453"
+          ],
+          "Content-Length": [
+            "1500"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1500",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:16 GMT",
+          "x-amzn-RequestId": "4dc19972-6a1d-4b85-a2c8-be5d0c29b453"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 210,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "83e754f1-cb90-4e12-b555-ec49a74e5a0d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "83e754f1-cb90-4e12-b555-ec49a74e5a0d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:16 GMT",
+          "x-amzn-RequestId": "83e754f1-cb90-4e12-b555-ec49a74e5a0d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:16 PM"
+}

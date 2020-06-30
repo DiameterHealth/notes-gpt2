@@ -1,0 +1,274 @@
+{
+  "note": "and physician-in-chief about all noncardiac patients; for noncardiac patients, follow-up has to be repeated every year after 30 months. Patient is a good candidate for Palliative Care. The patient has chronic obstructive pulmonary disease and requires follow-up with a pulmonologist and physician-in-chief about all noncardiac patients; for noncardiac patients, follow-up has to be repeated every year after 30 months.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 427,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 168,
+          "endOffset": 183,
+          "score": 0.34332025,
+          "text": "Palliative Care",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 209,
+          "endOffset": 238,
+          "score": 0.94635457,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96214384
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.985559,
+              "relationshipScore": 0.9999883,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 341,
+          "endOffset": 351,
+          "score": 0.30481368,
+          "text": "noncardiac",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.985559,
+            "id": 0,
+            "beginOffset": 201,
+            "endOffset": 208,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "19ae4c32-5aa2-4c4d-8b9d-7f9070ec3ddd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "19ae4c32-5aa2-4c4d-8b9d-7f9070ec3ddd"
+          ],
+          "Content-Length": [
+            "1010"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1010",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:53 GMT",
+          "x-amzn-RequestId": "19ae4c32-5aa2-4c4d-8b9d-7f9070ec3ddd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 479,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94635457,
+          "beginOffset": 209,
+          "endOffset": 238,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.985559,
+              "relationshipScore": 0.9999883,
+              "id": 0,
+              "beginOffset": 201,
+              "endOffset": 208,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96214396
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.67772907
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.52917093
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.46307963
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.45347524
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.4098126
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "noncardiac",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.30481374,
+          "beginOffset": 341,
+          "endOffset": 351,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.6816861
+            },
+            {
+              "description": "Angina pectoris, unspecified",
+              "code": "I20.9",
+              "score": 0.6675535
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6421356
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5891094
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.57332695
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "11c327ca-f6bc-4282-888f-c41f7a62af8d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "11c327ca-f6bc-4282-888f-c41f7a62af8d"
+          ],
+          "Content-Length": [
+            "1582"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:54 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1582",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:54 GMT",
+          "x-amzn-RequestId": "11c327ca-f6bc-4282-888f-c41f7a62af8d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 205,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "713e24c1-0a62-4d9f-bcab-7dfeef55bc76"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "713e24c1-0a62-4d9f-bcab-7dfeef55bc76"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:53 GMT",
+          "x-amzn-RequestId": "713e24c1-0a62-4d9f-bcab-7dfeef55bc76"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:54 PM"
+}

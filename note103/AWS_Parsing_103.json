@@ -1,0 +1,324 @@
+{
+  "note": "but requires a lung transplant as a result of his lung failure. The family members, who have a common disease of chronic pulmonary failure with common treatment options, are interested in your opinion on a lung transplant for the patient and how this may affect their financial situation.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 464,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 15,
+          "endOffset": 19,
+          "score": 0.8861958,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 15,
+          "endOffset": 30,
+          "score": 0.91300535,
+          "text": "lung transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 50,
+          "endOffset": 54,
+          "score": 0.96505016,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 50,
+          "endOffset": 62,
+          "score": 0.91732943,
+          "text": "lung failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9618469
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 121,
+          "endOffset": 138,
+          "score": 0.98987097,
+          "text": "pulmonary failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495301
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9763164,
+              "relationshipScore": 0.99861944,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 113,
+              "endOffset": 120,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 206,
+          "endOffset": 210,
+          "score": 0.9594946,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 206,
+          "endOffset": 221,
+          "score": 0.9000628,
+          "text": "lung transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9763164,
+            "id": 4,
+            "beginOffset": 113,
+            "endOffset": 120,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "25672e43-0877-49a6-9e7d-215a1ab18e21"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "25672e43-0877-49a6-9e7d-215a1ab18e21"
+          ],
+          "Content-Length": [
+            "1640"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1640",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:52 GMT",
+          "x-amzn-RequestId": "25672e43-0877-49a6-9e7d-215a1ab18e21"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 464,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "lung failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91732943,
+          "beginOffset": 50,
+          "endOffset": 62,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9618469
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.4210024
+            },
+            {
+              "description": "Solitary pulmonary nodule",
+              "code": "R91.1",
+              "score": 0.35032067
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.3445605
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.32572728
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.2944522
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pulmonary failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98987097,
+          "beginOffset": 121,
+          "endOffset": 138,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9763164,
+              "relationshipScore": 0.99861944,
+              "id": 3,
+              "beginOffset": 113,
+              "endOffset": 120,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495301
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease",
+              "code": "I13.2",
+              "score": 0.34513107
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.3065623
+            },
+            {
+              "description": "Chronic right heart failure",
+              "code": "I50.812",
+              "score": 0.28055438
+            },
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.27844098
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.26974902
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a203618d-1af1-4667-9910-ce50dc5b5897"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a203618d-1af1-4667-9910-ce50dc5b5897"
+          ],
+          "Content-Length": [
+            "1735"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1735",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:53 GMT",
+          "x-amzn-RequestId": "a203618d-1af1-4667-9910-ce50dc5b5897"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 149,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e8b01308-0909-4fd7-a1cc-c5073be55952"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e8b01308-0909-4fd7-a1cc-c5073be55952"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:53 GMT",
+          "x-amzn-RequestId": "e8b01308-0909-4fd7-a1cc-c5073be55952"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:54 PM"
+}

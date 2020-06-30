@@ -1,0 +1,507 @@
+{
+  "note": "I suspect a diagnosis of rheumatoid arthritis since this patient has a painful history and he has been using ibuprofen for pain for at least 3 years. He has been given  anti-inflammatory and analgesic drugs from ages 16-50. He says his pain started with the day he started taking the anti-inflammatory medication which he started on before his arthritis started for the first time in his life.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 310,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 25,
+          "endOffset": 45,
+          "score": 0.9867344,
+          "text": "rheumatoid arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9636514
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 71,
+          "endOffset": 78,
+          "score": 0.48327604,
+          "text": "painful",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 109,
+          "endOffset": 118,
+          "score": 0.9872821,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 123,
+          "endOffset": 127,
+          "score": 0.992161,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9244015
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 168,
+          "endOffset": 206,
+          "score": 0.5707609,
+          "text": " anti-inflammatory and analgesic drugs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 217,
+          "endOffset": 222,
+          "score": 0.17616653,
+          "text": "16-50",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 236,
+          "endOffset": 240,
+          "score": 0.97835416,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5656447
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 284,
+          "endOffset": 312,
+          "score": 0.84526795,
+          "text": "anti-inflammatory medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 344,
+          "endOffset": 353,
+          "score": 0.9772199,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90710044
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 370,
+          "endOffset": 380,
+          "score": 0.7924842,
+          "text": "first time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9772199,
+              "relationshipScore": 0.8427341,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 344,
+              "endOffset": 353,
+              "text": "arthritis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.90710044
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "202f5cd0-7d6b-4e8d-a423-130bd3860af9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "202f5cd0-7d6b-4e8d-a423-130bd3860af9"
+          ],
+          "Content-Length": [
+            "2099"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2099",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:41 GMT",
+          "x-amzn-RequestId": "202f5cd0-7d6b-4e8d-a423-130bd3860af9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 370,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "rheumatoid arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9867344,
+          "beginOffset": 25,
+          "endOffset": 45,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9636514
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rheumatoid arthritis, unspecified",
+              "code": "M06.9",
+              "score": 0.8111671
+            },
+            {
+              "description": "Other specified rheumatoid arthritis, unspecified site",
+              "code": "M06.80",
+              "score": 0.5524094
+            },
+            {
+              "description": "Rheumatoid arthritis with rheumatoid factor, unspecified",
+              "code": "M05.9",
+              "score": 0.5414946
+            },
+            {
+              "description": "Rheumatoid arthritis without rheumatoid factor, unspecified site",
+              "code": "M06.00",
+              "score": 0.49427128
+            },
+            {
+              "description": "Other specified rheumatoid arthritis, unspecified hand",
+              "code": "M06.849",
+              "score": 0.44836712
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "painful",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4832758,
+          "beginOffset": 71,
+          "endOffset": 78,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.680175
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5198456
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5011446
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.47677618
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.46350613
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.992161,
+          "beginOffset": 123,
+          "endOffset": 127,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9244015
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5806507
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.48753867
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.44959113
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.44895485
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.43675026
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97835416,
+          "beginOffset": 236,
+          "endOffset": 240,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5656447
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5347219
+            },
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.5238479
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4948541
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.47724903
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.46721885
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9772199,
+          "beginOffset": 344,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90710044
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.8159984
+            },
+            {
+              "description": "Rheumatoid arthritis, unspecified",
+              "code": "M06.9",
+              "score": 0.71214604
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, right knee",
+              "code": "M17.11",
+              "score": 0.6732254
+            },
+            {
+              "description": "Arthropathic psoriasis, unspecified",
+              "code": "L40.50",
+              "score": 0.65826416
+            },
+            {
+              "description": "Primary osteoarthritis, left hand",
+              "code": "M19.042",
+              "score": 0.6436862
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dc88c351-8329-41f0-9e0c-42a73377d65f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dc88c351-8329-41f0-9e0c-42a73377d65f"
+          ],
+          "Content-Length": [
+            "3438"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3438",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:42 GMT",
+          "x-amzn-RequestId": "dc88c351-8329-41f0-9e0c-42a73377d65f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 456,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ibuprofen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9872821,
+          "beginOffset": 109,
+          "endOffset": 118,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Ibuprofen",
+              "code": "5640",
+              "score": 0.9437226
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Proprinal]",
+              "code": "1300267",
+              "score": 0.30092853
+            },
+            {
+              "description": "8 ML Ibuprofen 100 MG/ML Injection",
+              "code": "854183",
+              "score": 0.23768029
+            },
+            {
+              "description": "Ibuprofen 400 MG Oral Tablet [Ibu]",
+              "code": "206905",
+              "score": 0.14692974
+            },
+            {
+              "description": "Ibuprofen 200 MG Oral Tablet [Motrin]",
+              "code": "201126",
+              "score": 0.099150285
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f2039ad6-8013-45b8-bcef-c522bca45815"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f2039ad6-8013-45b8-bcef-c522bca45815"
+          ],
+          "Content-Length": [
+            "683"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "683",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:42 GMT",
+          "x-amzn-RequestId": "f2039ad6-8013-45b8-bcef-c522bca45815"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:42 PM"
+}

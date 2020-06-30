@@ -1,0 +1,467 @@
+{
+  "note": "The patient has no other obvious medical problems. Patient reports symptoms of GERD, but the history is consistent with obstructive sleep apnea. The patient\u0027s primary symptom is that they have a hard time falling asleep. Patient reports worsening symptoms of GERD from the medication and asks for a trial of BID. The HAPI uses 3 of the 4 criteria listed to diagnose GERD, as a way to rule in and rule out other possible causes of GERD.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 272,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 79,
+          "endOffset": 83,
+          "score": 0.99813193,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66242236
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 120,
+          "endOffset": 143,
+          "score": 0.8398323,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89645123
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 195,
+          "endOffset": 219,
+          "score": 0.71907884,
+          "text": "hard time falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8899521
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 259,
+          "endOffset": 263,
+          "score": 0.9964869,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5837986
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 366,
+          "endOffset": 370,
+          "score": 0.99494123,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.963422
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 430,
+          "endOffset": 434,
+          "score": 0.998978,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95542604
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3fac0b15-6d78-4f89-8788-cf29a8bcd187"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3fac0b15-6d78-4f89-8788-cf29a8bcd187"
+          ],
+          "Content-Length": [
+            "1240"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1240",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:47 GMT",
+          "x-amzn-RequestId": "3fac0b15-6d78-4f89-8788-cf29a8bcd187"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99813193,
+          "beginOffset": 79,
+          "endOffset": 83,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.66242236
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.79141253
+            },
+            {
+              "description": "Gastro-esophageal reflux disease with esophagitis",
+              "code": "K21.0",
+              "score": 0.590084
+            },
+            {
+              "description": "Vesicoureteral-reflux, unspecified",
+              "code": "N13.70",
+              "score": 0.46923357
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.45048243
+            },
+            {
+              "description": "Irritable bowel syndrome with constipation",
+              "code": "K58.1",
+              "score": 0.4416918
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "obstructive sleep apnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8398323,
+          "beginOffset": 120,
+          "endOffset": 143,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.89645123
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.7769737
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.49653974
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.33343598
+            },
+            {
+              "description": "Primary central sleep apnea",
+              "code": "G47.31",
+              "score": 0.2776852
+            },
+            {
+              "description": "Sleep apnea",
+              "code": "G47.3",
+              "score": 0.27367702
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "hard time falling asleep",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7190787,
+          "beginOffset": 195,
+          "endOffset": 219,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8899521
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.6694934
+            },
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6276133
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.60568666
+            },
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.59489286
+            },
+            {
+              "description": "Syncope and collapse",
+              "code": "R55",
+              "score": 0.5805707
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9964869,
+          "beginOffset": 259,
+          "endOffset": 263,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5837985
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.828518
+            },
+            {
+              "description": "Gastro-esophageal reflux disease with esophagitis",
+              "code": "K21.0",
+              "score": 0.676878
+            },
+            {
+              "description": "Postlaminectomy syndrome, not elsewhere classified",
+              "code": "M96.1",
+              "score": 0.58541083
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.5782144
+            },
+            {
+              "description": "Complex regional pain syndrome I, unspecified",
+              "code": "G90.50",
+              "score": 0.5683573
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99494123,
+          "beginOffset": 366,
+          "endOffset": 370,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.963422
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.8120256
+            },
+            {
+              "description": "Gastro-esophageal reflux disease with esophagitis",
+              "code": "K21.0",
+              "score": 0.6170654
+            },
+            {
+              "description": "Paralytic syndrome, unspecified",
+              "code": "G83.9",
+              "score": 0.5376471
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.528666
+            },
+            {
+              "description": "Complex regional pain syndrome I, unspecified",
+              "code": "G90.50",
+              "score": 0.52160615
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "GERD",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.998978,
+          "beginOffset": 430,
+          "endOffset": 434,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9554259
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.86638725
+            },
+            {
+              "description": "Gastro-esophageal reflux disease with esophagitis",
+              "code": "K21.0",
+              "score": 0.70824337
+            },
+            {
+              "description": "Vesicoureteral-reflux, unspecified",
+              "code": "N13.70",
+              "score": 0.5971942
+            },
+            {
+              "description": "Complex regional pain syndrome I, unspecified",
+              "code": "G90.50",
+              "score": 0.5882223
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.5787809
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c45e03dd-f626-4c84-93e9-9161d41ae70f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c45e03dd-f626-4c84-93e9-9161d41ae70f"
+          ],
+          "Content-Length": [
+            "4427"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4427",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:47 GMT",
+          "x-amzn-RequestId": "c45e03dd-f626-4c84-93e9-9161d41ae70f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 218,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0dc70511-1d6c-409b-80a8-d9c8b4dfb4a0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0dc70511-1d6c-409b-80a8-d9c8b4dfb4a0"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:47 GMT",
+          "x-amzn-RequestId": "0dc70511-1d6c-409b-80a8-d9c8b4dfb4a0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:48 PM"
+}

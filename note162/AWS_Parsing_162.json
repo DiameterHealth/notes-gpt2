@@ -1,0 +1,1215 @@
+{
+  "note": " .     Exclusion:  - History of gastrointestinal (GI) problems  - Ureterocele with a size greater than 3.5 cm in any one direction  - Bladder surgery  - Cervical dystrophy  - Hypertension    - Medication use in the last 60 days  - Chronic liver disease  - Chronic kidney disease  - Chronic renal failure  - Pregnancy/lactation   - Drug and alcohol addiction  - Hypotension    - Urological or GI disease  - Pulmonary disease  - Chronic liver disease    - Metabolic illness/drug use  - Metabolic syndrome",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 2589,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 32,
+          "endOffset": 48,
+          "score": 0.74005526,
+          "text": "gastrointestinal",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 50,
+          "endOffset": 52,
+          "score": 0.9031385,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 66,
+          "endOffset": 77,
+          "score": 0.33204138,
+          "text": "Ureterocele",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.74005526,
+              "relationshipScore": 0.5797369,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 32,
+              "endOffset": 48,
+              "text": "gastrointestinal",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9031385,
+              "relationshipScore": 0.8721744,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 50,
+              "endOffset": 52,
+              "text": "GI",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 134,
+          "endOffset": 141,
+          "score": 0.97803545,
+          "text": "Bladder",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 26,
+          "beginOffset": 142,
+          "endOffset": 149,
+          "score": 0.3733725,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 153,
+          "endOffset": 161,
+          "score": 0.36046043,
+          "text": "Cervical",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 153,
+          "endOffset": 171,
+          "score": 0.79551464,
+          "text": "Cervical dystrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8151052
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 175,
+          "endOffset": 187,
+          "score": 0.99682117,
+          "text": "Hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96039826
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 239,
+          "endOffset": 244,
+          "score": 0.939449,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 239,
+          "endOffset": 252,
+          "score": 0.96199226,
+          "text": "liver disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97399896
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8294227,
+              "relationshipScore": 0.9918298,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 231,
+              "endOffset": 238,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 264,
+          "endOffset": 270,
+          "score": 0.97327054,
+          "text": "kidney",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 264,
+          "endOffset": 278,
+          "score": 0.983461,
+          "text": "kidney disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9776397
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.83463115,
+              "relationshipScore": 0.9989096,
+              "relationshipType": "ACUITY",
+              "id": 13,
+              "beginOffset": 256,
+              "endOffset": 263,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 290,
+          "endOffset": 303,
+          "score": 0.99099475,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9828262
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.85539186,
+              "relationshipScore": 0.99772185,
+              "relationshipType": "ACUITY",
+              "id": 15,
+              "beginOffset": 282,
+              "endOffset": 289,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 307,
+          "endOffset": 316,
+          "score": 0.97439224,
+          "text": "Pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96422076
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 317,
+          "endOffset": 326,
+          "score": 0.93578136,
+          "text": "lactation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.905557
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 361,
+          "endOffset": 372,
+          "score": 0.9964269,
+          "text": "Hypotension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9640713
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 378,
+          "endOffset": 402,
+          "score": 0.72356546,
+          "text": "Urological or GI disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91006666
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 392,
+          "endOffset": 394,
+          "score": 0.47451115,
+          "text": "GI",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 21,
+          "beginOffset": 406,
+          "endOffset": 423,
+          "score": 0.9603271,
+          "text": "Pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93994164
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 435,
+          "endOffset": 440,
+          "score": 0.93174773,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 23,
+          "beginOffset": 435,
+          "endOffset": 448,
+          "score": 0.9557924,
+          "text": "liver disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9638749
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5605233,
+              "relationshipScore": 0.991284,
+              "relationshipType": "ACUITY",
+              "id": 22,
+              "beginOffset": 427,
+              "endOffset": 434,
+              "text": "Chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 454,
+          "endOffset": 471,
+          "score": 0.4431806,
+          "text": "Metabolic illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82929367
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "beginOffset": 484,
+          "endOffset": 502,
+          "score": 0.88003075,
+          "text": "Metabolic syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9603169
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.8294227,
+            "id": 11,
+            "beginOffset": 231,
+            "endOffset": 238,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.83463115,
+            "id": 13,
+            "beginOffset": 256,
+            "endOffset": 263,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.85539186,
+            "id": 15,
+            "beginOffset": 282,
+            "endOffset": 289,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.5605233,
+            "id": 22,
+            "beginOffset": 427,
+            "endOffset": 434,
+            "text": "Chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9f99ed2d-4043-4d8d-8163-c2473f87c13a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "9f99ed2d-4043-4d8d-8163-c2473f87c13a"
+          ],
+          "Content-Length": [
+            "6296"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "6296",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:20 GMT",
+          "x-amzn-RequestId": "9f99ed2d-4043-4d8d-8163-c2473f87c13a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 2797,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "Ureterocele",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.33204147,
+          "beginOffset": 66,
+          "endOffset": 77,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.74005514,
+              "relationshipScore": 0.5797369,
+              "id": 0,
+              "beginOffset": 32,
+              "endOffset": 48,
+              "text": "gastrointestinal",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9031385,
+              "relationshipScore": 0.8721744,
+              "id": 1,
+              "beginOffset": 50,
+              "endOffset": 52,
+              "text": "GI",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of kidney and ureter",
+              "code": "N28.89",
+              "score": 0.62542605
+            },
+            {
+              "description": "Urethrocele",
+              "code": "N81.0",
+              "score": 0.60346025
+            },
+            {
+              "description": "Other specified disorders of bladder",
+              "code": "N32.89",
+              "score": 0.52904195
+            },
+            {
+              "description": "Pyonephrosis",
+              "code": "N13.6",
+              "score": 0.47511145
+            },
+            {
+              "description": "Cystocele, unspecified",
+              "code": "N81.10",
+              "score": 0.41315058
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "Cervical dystrophy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79551446,
+          "beginOffset": 153,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.81510514
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Muscular dystrophy, unspecified",
+              "code": "G71.00",
+              "score": 0.42641383
+            },
+            {
+              "description": "Radiculopathy, cervical region",
+              "code": "M54.12",
+              "score": 0.32927272
+            },
+            {
+              "description": "Other specified muscular dystrophies",
+              "code": "G71.09",
+              "score": 0.24965014
+            },
+            {
+              "description": "Nail dystrophy",
+              "code": "L60.3",
+              "score": 0.23069759
+            },
+            {
+              "description": "Cervicalgia",
+              "code": "M54.2",
+              "score": 0.19899577
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "Hypertension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99682117,
+          "beginOffset": 175,
+          "endOffset": 187,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96039826
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.6865659
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.66416055
+            },
+            {
+              "description": "Essential (primary) hypertension",
+              "code": "I10",
+              "score": 0.6405557
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.10",
+              "score": 0.635244
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.602099
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "liver disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96199226,
+          "beginOffset": 239,
+          "endOffset": 252,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8294224,
+              "relationshipScore": 0.9918298,
+              "id": 7,
+              "beginOffset": 231,
+              "endOffset": 238,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97399896
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Liver disease, unspecified",
+              "code": "K76.9",
+              "score": 0.5906679
+            },
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.53130966
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.48648
+            },
+            {
+              "description": "Alcoholic liver disease, unspecified",
+              "code": "K70.9",
+              "score": 0.46979022
+            },
+            {
+              "description": "Chronic hepatic failure without coma",
+              "code": "K72.10",
+              "score": 0.43710965
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "kidney disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.983461,
+          "beginOffset": 264,
+          "endOffset": 278,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.83463115,
+              "relationshipScore": 0.9989096,
+              "id": 10,
+              "beginOffset": 256,
+              "endOffset": 263,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9776397
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I12.9",
+              "score": 0.7554837
+            },
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.7407399
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.72577196
+            },
+            {
+              "description": "Chronic kidney disease, stage 3 (moderate)",
+              "code": "N18.3",
+              "score": 0.71981204
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.6296739
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "text": "renal failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99099475,
+          "beginOffset": 290,
+          "endOffset": 303,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.85539174,
+              "relationshipScore": 0.99772185,
+              "id": 13,
+              "beginOffset": 282,
+              "endOffset": 289,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9828262
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.54813147
+            },
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.505537
+            },
+            {
+              "description": "Acute kidney failure, unspecified",
+              "code": "N17.9",
+              "score": 0.50315195
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.4657947
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.43043813
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "text": "Pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9743921,
+          "beginOffset": 307,
+          "endOffset": 316,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96422076
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic kidney disease, unspecified",
+              "code": "N18.9",
+              "score": 0.61087257
+            },
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.6063825
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.56553465
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.53960824
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.5203468
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "text": "lactation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93578136,
+          "beginOffset": 317,
+          "endOffset": 326,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.905557
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified disorders of lactation",
+              "code": "O92.70",
+              "score": 0.40152794
+            },
+            {
+              "description": "Nonspecific elevation of levels of transaminase and lactic acid dehydrogenase [LDH]",
+              "code": "R74.0",
+              "score": 0.37326315
+            },
+            {
+              "description": "Other disorders of lactation",
+              "code": "O92.79",
+              "score": 0.36589345
+            },
+            {
+              "description": "Abscess of breast associated with lactation",
+              "code": "O91.13",
+              "score": 0.3444493
+            },
+            {
+              "description": "Cracked nipple associated with lactation",
+              "code": "O92.13",
+              "score": 0.3087547
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "text": "Hypotension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9964269,
+          "beginOffset": 361,
+          "endOffset": 372,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9640713
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.7450386
+            },
+            {
+              "description": "Orthostatic hypotension",
+              "code": "I95.1",
+              "score": 0.581286
+            },
+            {
+              "description": "Other hypotension",
+              "code": "I95.89",
+              "score": 0.5066462
+            },
+            {
+              "description": "Postprocedural hypotension",
+              "code": "I95.81",
+              "score": 0.45572013
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.39652652
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "text": "Urological or GI disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72356534,
+          "beginOffset": 378,
+          "endOffset": 402,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.91006666
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6100073
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5805102
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.5798833
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.5734203
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.5568705
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "text": "Pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9603271,
+          "beginOffset": 406,
+          "endOffset": 423,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93994164
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.62900156
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.5943741
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.5628876
+            },
+            {
+              "description": "Pulmonary heart disease, unspecified",
+              "code": "I27.9",
+              "score": 0.5608149
+            },
+            {
+              "description": "Liver disease, unspecified",
+              "code": "K76.9",
+              "score": 0.53628844
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "text": "liver disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9557924,
+          "beginOffset": 435,
+          "endOffset": 448,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.5605232,
+              "relationshipScore": 0.991284,
+              "id": 21,
+              "beginOffset": 427,
+              "endOffset": 434,
+              "text": "Chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9638749
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Liver disease, unspecified",
+              "code": "K76.9",
+              "score": 0.66622466
+            },
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.58009493
+            },
+            {
+              "description": "Alcoholic liver disease, unspecified",
+              "code": "K70.9",
+              "score": 0.53911144
+            },
+            {
+              "description": "Inflammatory liver disease, unspecified",
+              "code": "K75.9",
+              "score": 0.5343913
+            },
+            {
+              "description": "Hepatic veno-occlusive disease",
+              "code": "K76.5",
+              "score": 0.5037353
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "text": "Metabolic illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4431806,
+          "beginOffset": 454,
+          "endOffset": 471,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.82929355
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Acidosis",
+              "code": "E87.2",
+              "score": 0.71444184
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6935275
+            },
+            {
+              "description": "Personal history of other endocrine, nutritional and metabolic disease",
+              "code": "Z86.39",
+              "score": 0.6804829
+            },
+            {
+              "description": "Disorder of bilirubin metabolism, unspecified",
+              "code": "E80.7",
+              "score": 0.68019843
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6781345
+            }
+          ]
+        },
+        {
+          "id": 25,
+          "text": "Metabolic syndrome",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88003075,
+          "beginOffset": 484,
+          "endOffset": 502,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9603169
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Disorder of bilirubin metabolism, unspecified",
+              "code": "E80.7",
+              "score": 0.5810877
+            },
+            {
+              "description": "Metabolic encephalopathy",
+              "code": "G93.41",
+              "score": 0.5679368
+            },
+            {
+              "description": "Alkalosis",
+              "code": "E87.3",
+              "score": 0.51985157
+            },
+            {
+              "description": "Metabolic disorder, unspecified",
+              "code": "E88.9",
+              "score": 0.47191828
+            },
+            {
+              "description": "Metabolic syndrome",
+              "code": "E88.81",
+              "score": 0.44226927
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1d7fa4bc-4cee-4ab1-8d40-7a9e1eef6b31"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1d7fa4bc-4cee-4ab1-8d40-7a9e1eef6b31"
+          ],
+          "Content-Length": [
+            "11381"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "11381",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:25 GMT",
+          "x-amzn-RequestId": "1d7fa4bc-4cee-4ab1-8d40-7a9e1eef6b31"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 539,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2507fa3-3c04-4914-8eaa-ce805c578f2f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2507fa3-3c04-4914-8eaa-ce805c578f2f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:22 GMT",
+          "x-amzn-RequestId": "b2507fa3-3c04-4914-8eaa-ce805c578f2f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:25 PM"
+}

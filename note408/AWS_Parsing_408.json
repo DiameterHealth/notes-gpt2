@@ -1,0 +1,558 @@
+{
+  "note": "with no prior history of heart disease or history of myocardial infarction or stroke. This image does not show any heart disease diagnosis. This is a typical wellness visit with an initial office visit followed by a phone call with an Endocrinology Nurse to discuss the history, check for current cholesterol levels, test for heart disease risk factors, and discuss recommendations to address concerns.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 610,
+    "data": {
+      "entities": [
+        {
+          "id": 11,
+          "beginOffset": 8,
+          "endOffset": 13,
+          "score": 0.999997,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9815091,
+              "relationshipScore": 0.9166511,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 25,
+              "endOffset": 38,
+              "text": "heart disease",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9367359
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.93335736
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 25,
+          "endOffset": 30,
+          "score": 0.9607028,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 25,
+          "endOffset": 38,
+          "score": 0.9815091,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9367359
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93335736
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 53,
+          "endOffset": 74,
+          "score": 0.9596756,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90126204
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9691321
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 78,
+          "endOffset": 84,
+          "score": 0.99011505,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94973356
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93572384
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 115,
+          "endOffset": 120,
+          "score": 0.9644033,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 115,
+          "endOffset": 128,
+          "score": 0.9321478,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8953099
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8603351
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 235,
+          "endOffset": 248,
+          "score": 0.06388594,
+          "text": "Endocrinology",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 289,
+          "endOffset": 296,
+          "score": 0.99999034,
+          "text": "current",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.98467433,
+              "relationshipScore": 0.87407374,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 297,
+              "endOffset": 315,
+              "text": "cholesterol levels",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 297,
+          "endOffset": 315,
+          "score": 0.98467433,
+          "text": "cholesterol levels",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 326,
+          "endOffset": 331,
+          "score": 0.9555612,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 326,
+          "endOffset": 339,
+          "score": 0.90720606,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93936116
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 326,
+          "endOffset": 352,
+          "score": 0.6246276,
+          "text": "heart disease risk factors",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5649da10-4a7f-4051-ae37-77518037a774"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5649da10-4a7f-4051-ae37-77518037a774"
+          ],
+          "Content-Length": [
+            "3063"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3063",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:40 GMT",
+          "x-amzn-RequestId": "5649da10-4a7f-4051-ae37-77518037a774"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 557,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9815091,
+          "beginOffset": 25,
+          "endOffset": 38,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9367359
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93335736
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.7761062
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.7049886
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6891341
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.6532264
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.64757794
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9596756,
+          "beginOffset": 53,
+          "endOffset": 74,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.90126204
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9691321
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.83766085
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.74668974
+            },
+            {
+              "description": "Myocardial infarction type 2",
+              "code": "I21.A1",
+              "score": 0.7045491
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.6837592
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.67622
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99011505,
+          "beginOffset": 78,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94973356
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.93572384
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.755518
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.69997066
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.5462854
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.5124325
+            },
+            {
+              "description": "Family history of stroke",
+              "code": "Z82.3",
+              "score": 0.50987625
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9321478,
+          "beginOffset": 115,
+          "endOffset": 128,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8953099
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8603351
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.69705474
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5531333
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.550387
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.53963345
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.5307511
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90720606,
+          "beginOffset": 326,
+          "endOffset": 339,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93936116
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.7109239
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.661728
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5872151
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.5805416
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.57254666
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "402d77e4-8442-43f6-9fc5-04f02876edd7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "402d77e4-8442-43f6-9fc5-04f02876edd7"
+          ],
+          "Content-Length": [
+            "4211"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4211",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:41 GMT",
+          "x-amzn-RequestId": "402d77e4-8442-43f6-9fc5-04f02876edd7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b1e7af45-e1f0-4298-ad73-9056ece31000"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b1e7af45-e1f0-4298-ad73-9056ece31000"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:41 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:41 GMT",
+          "x-amzn-RequestId": "b1e7af45-e1f0-4298-ad73-9056ece31000"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:41 PM"
+}

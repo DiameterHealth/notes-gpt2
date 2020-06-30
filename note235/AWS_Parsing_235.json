@@ -1,0 +1,475 @@
+{
+  "note": ". Pt was advised of treatment if symptoms persisted. CONCLUSION: In this report, we describe a patient with an open perianal abscess who did not develop an abscess when the abscess was drained. We suggest that this patient may have had a local infection with the abscess as the origin of the abscess. The authors did not have any conflicts of interest.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 226,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 116,
+          "endOffset": 132,
+          "score": 0.9517927,
+          "text": "perianal abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9077528
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 156,
+          "endOffset": 163,
+          "score": 0.9830325,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6713441
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.65160626
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 173,
+          "endOffset": 180,
+          "score": 0.88389033,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.80992126
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 238,
+          "endOffset": 253,
+          "score": 0.7466646,
+          "text": "local infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8498075
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 263,
+          "endOffset": 270,
+          "score": 0.9459724,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8355229
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 292,
+          "endOffset": 299,
+          "score": 0.90902865,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7892531
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d82f199e-7269-447e-974f-d05232937308"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d82f199e-7269-447e-974f-d05232937308"
+          ],
+          "Content-Length": [
+            "1289"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1289",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:13 GMT",
+          "x-amzn-RequestId": "d82f199e-7269-447e-974f-d05232937308"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 351,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "perianal abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9517927,
+          "beginOffset": 116,
+          "endOffset": 132,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9077528
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Periapical abscess without sinus",
+              "code": "K04.7",
+              "score": 0.42319772
+            },
+            {
+              "description": "Extradural and subdural abscess, unspecified",
+              "code": "G06.2",
+              "score": 0.41930905
+            },
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.366906
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.35881507
+            },
+            {
+              "description": "Rectal abscess",
+              "code": "K61.1",
+              "score": 0.33364883
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9830325,
+          "beginOffset": 156,
+          "endOffset": 163,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.671344
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.65160626
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.7467216
+            },
+            {
+              "description": "Cutaneous abscess, unspecified",
+              "code": "L02.91",
+              "score": 0.7372233
+            },
+            {
+              "description": "Cutaneous abscess of limb",
+              "code": "L02.41",
+              "score": 0.7140117
+            },
+            {
+              "description": "Periapical abscess without sinus",
+              "code": "K04.7",
+              "score": 0.69670653
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.69512826
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88389033,
+          "beginOffset": 173,
+          "endOffset": 180,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.80992126
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.7197868
+            },
+            {
+              "description": "Cutaneous abscess, unspecified",
+              "code": "L02.91",
+              "score": 0.69134164
+            },
+            {
+              "description": "Periapical abscess without sinus",
+              "code": "K04.7",
+              "score": 0.66883206
+            },
+            {
+              "description": "Cutaneous abscess of limb",
+              "code": "L02.41",
+              "score": 0.66603965
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.66367704
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "local infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.74666464,
+          "beginOffset": 238,
+          "endOffset": 253,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8498075
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.8089735
+            },
+            {
+              "description": "Cellulitis of left lower limb",
+              "code": "L03.116",
+              "score": 0.7256001
+            },
+            {
+              "description": "Unspecified infectious disease",
+              "code": "B99.9",
+              "score": 0.70639163
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7010264
+            },
+            {
+              "description": "Cellulitis of left upper limb",
+              "code": "L03.114",
+              "score": 0.66550785
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9459724,
+          "beginOffset": 263,
+          "endOffset": 270,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8355229
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.8112026
+            },
+            {
+              "description": "Cutaneous abscess, unspecified",
+              "code": "L02.91",
+              "score": 0.79962045
+            },
+            {
+              "description": "Cutaneous abscess of limb",
+              "code": "L02.41",
+              "score": 0.7801758
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.757939
+            },
+            {
+              "description": "Abscess of the breast and nipple",
+              "code": "N61.1",
+              "score": 0.7496623
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "abscess",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90902853,
+          "beginOffset": 292,
+          "endOffset": 299,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.78925294
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cutaneous abscess of left lower limb",
+              "code": "L02.416",
+              "score": 0.808598
+            },
+            {
+              "description": "Cutaneous abscess, unspecified",
+              "code": "L02.91",
+              "score": 0.7893101
+            },
+            {
+              "description": "Cutaneous abscess of limb",
+              "code": "L02.41",
+              "score": 0.7736434
+            },
+            {
+              "description": "Cutaneous abscess of right upper limb",
+              "code": "L02.413",
+              "score": 0.75361574
+            },
+            {
+              "description": "Abscess of the breast and nipple",
+              "code": "N61.1",
+              "score": 0.7409465
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "41435ec0-14ff-404a-a512-3d8f12268731"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "41435ec0-14ff-404a-a512-3d8f12268731"
+          ],
+          "Content-Length": [
+            "4336"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4336",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:14 GMT",
+          "x-amzn-RequestId": "41435ec0-14ff-404a-a512-3d8f12268731"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 197,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "09fed4c3-92f0-4e88-9219-77de2662fb9a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "09fed4c3-92f0-4e88-9219-77de2662fb9a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:14 GMT",
+          "x-amzn-RequestId": "09fed4c3-92f0-4e88-9219-77de2662fb9a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:14 PM"
+}

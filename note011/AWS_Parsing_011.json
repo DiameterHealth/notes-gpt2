@@ -1,0 +1,739 @@
+{
+  "note": ".  Management:  Initiate conservative management for hypotension and dehydration and initiate a 3rd IV line 1 hour post induction with 5.24mm in the right lower lobe. Radiographic Findings:  Cardiac troponin, 8.8ng/ml  Auscultation, 120s  Treatment:  Immediately initiate therapy with the following options:  1. IV nitroglycerine  2. Intravenous fluids (60% 1L Nolvasan/10% NPH O2, 1.5 L saline)  3.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 802,
+    "data": {
+      "entities": [
+        {
+          "id": 16,
+          "beginOffset": 25,
+          "endOffset": 48,
+          "score": 0.6613275,
+          "text": "conservative management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 53,
+          "endOffset": 64,
+          "score": 0.99750274,
+          "text": "hypotension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9275033
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 69,
+          "endOffset": 80,
+          "score": 0.9950504,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8254503
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 161,
+          "endOffset": 165,
+          "score": 0.93303335,
+          "text": "lobe",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 191,
+          "endOffset": 207,
+          "score": 0.92183304,
+          "text": "Cardiac troponin",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98931795,
+              "relationshipScore": 0.99998796,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 209,
+              "endOffset": 217,
+              "text": "8.8ng/ml",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9625313,
+              "relationshipScore": 0.9835029,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 233,
+              "endOffset": 237,
+              "text": "120s",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 219,
+          "endOffset": 231,
+          "score": 0.3777839,
+          "text": "Auscultation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9625313,
+              "relationshipScore": 0.99973327,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 233,
+              "endOffset": 237,
+              "text": "120s",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 315,
+          "endOffset": 329,
+          "score": 0.9977597,
+          "text": "nitroglycerine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9908311,
+              "relationshipScore": 1.0,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 312,
+              "endOffset": 314,
+              "text": "IV",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 346,
+          "endOffset": 352,
+          "score": 0.9795496,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9908311,
+              "relationshipScore": 0.8797836,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 3,
+              "beginOffset": 312,
+              "endOffset": 314,
+              "text": "IV",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.97241837,
+              "relationshipScore": 0.9978777,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 5,
+              "beginOffset": 334,
+              "endOffset": 345,
+              "text": "Intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.620933,
+              "relationshipScore": 0.9825749,
+              "relationshipType": "STRENGTH",
+              "id": 7,
+              "beginOffset": 354,
+              "endOffset": 357,
+              "text": "60%",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.997431,
+              "relationshipScore": 0.9990079,
+              "relationshipType": "DOSAGE",
+              "id": 8,
+              "beginOffset": 358,
+              "endOffset": 360,
+              "text": "1L",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 361,
+          "endOffset": 369,
+          "score": 0.76796997,
+          "text": "Nolvasan",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.97241837,
+              "relationshipScore": 0.7977365,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 5,
+              "beginOffset": 334,
+              "endOffset": 345,
+              "text": "Intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.997431,
+              "relationshipScore": 0.99934024,
+              "relationshipType": "DOSAGE",
+              "id": 8,
+              "beginOffset": 358,
+              "endOffset": 360,
+              "text": "1L",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 374,
+          "endOffset": 380,
+          "score": 0.8271741,
+          "text": "NPH O2",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.97241837,
+              "relationshipScore": 0.8143917,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 5,
+              "beginOffset": 334,
+              "endOffset": 345,
+              "text": "Intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.98723257,
+              "relationshipScore": 0.9999827,
+              "relationshipType": "STRENGTH",
+              "id": 10,
+              "beginOffset": 370,
+              "endOffset": 373,
+              "text": "10%",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 388,
+          "endOffset": 394,
+          "score": 0.9824652,
+          "text": "saline",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9290529,
+              "relationshipScore": 0.9999726,
+              "relationshipType": "DOSAGE",
+              "id": 12,
+              "beginOffset": 382,
+              "endOffset": 387,
+              "text": "1.5 L",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9703672,
+            "id": 0,
+            "beginOffset": 149,
+            "endOffset": 154,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.871781,
+            "id": 1,
+            "beginOffset": 155,
+            "endOffset": 160,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e6772979-2941-4010-bb79-3ad89bf02542"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e6772979-2941-4010-bb79-3ad89bf02542"
+          ],
+          "Content-Length": [
+            "5059"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5059",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:23 GMT",
+          "x-amzn-RequestId": "e6772979-2941-4010-bb79-3ad89bf02542"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 561,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "hypotension",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99750274,
+          "beginOffset": 53,
+          "endOffset": 64,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9275033
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.8164549
+            },
+            {
+              "description": "Orthostatic hypotension",
+              "code": "I95.1",
+              "score": 0.6465581
+            },
+            {
+              "description": "Other hypotension",
+              "code": "I95.89",
+              "score": 0.603793
+            },
+            {
+              "description": "Postprocedural hypotension",
+              "code": "I95.81",
+              "score": 0.54459095
+            },
+            {
+              "description": "Nonspecific low blood-pressure reading",
+              "code": "R03.1",
+              "score": 0.5027141
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "dehydration",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9950504,
+          "beginOffset": 69,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8254502
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dehydration",
+              "code": "E86.0",
+              "score": 0.82153803
+            },
+            {
+              "description": "Dehydration of newborn",
+              "code": "P74.1",
+              "score": 0.37801147
+            },
+            {
+              "description": "Hyperemesis gravidarum with metabolic disturbance",
+              "code": "O21.1",
+              "score": 0.36294392
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c01d9736-2e9c-4fb5-b7fd-46b03b481e5b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c01d9736-2e9c-4fb5-b7fd-46b03b481e5b"
+          ],
+          "Content-Length": [
+            "1201"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1201",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:27 GMT",
+          "x-amzn-RequestId": "c01d9736-2e9c-4fb5-b7fd-46b03b481e5b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1952,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "nitroglycerine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9977597,
+          "beginOffset": 315,
+          "endOffset": 329,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9908311,
+              "relationshipScore": 1.0,
+              "id": 0,
+              "beginOffset": 312,
+              "endOffset": 314,
+              "text": "IV",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Nitroglycerin",
+              "code": "4917",
+              "score": 0.9096143
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray [Nitrolingual]",
+              "code": "995019",
+              "score": 0.50079715
+            },
+            {
+              "description": "250 ML Nitroglycerin 0.4 MG/ML Injection",
+              "code": "1868494",
+              "score": 0.45930114
+            },
+            {
+              "description": "250 ML Nitroglycerin 0.2 MG/ML Injection",
+              "code": "312004",
+              "score": 0.4392341
+            },
+            {
+              "description": "500 ML Nitroglycerin 0.4 MG/ML Injection",
+              "code": "1868497",
+              "score": 0.36348334
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fluids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9795496,
+          "beginOffset": 346,
+          "endOffset": 352,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.9908311,
+              "relationshipScore": 0.8797837,
+              "id": 0,
+              "beginOffset": 312,
+              "endOffset": 314,
+              "text": "IV",
+              "traits": []
+            },
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.97241837,
+              "relationshipScore": 0.9978777,
+              "id": 2,
+              "beginOffset": 334,
+              "endOffset": 345,
+              "text": "Intravenous",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.62093294,
+              "relationshipScore": 0.9825749,
+              "id": 4,
+              "beginOffset": 354,
+              "endOffset": 357,
+              "text": "60%",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.997431,
+              "relationshipScore": 0.9990079,
+              "id": 5,
+              "beginOffset": 358,
+              "endOffset": 360,
+              "text": "1L",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "modified fluid gelatins",
+              "code": "52853",
+              "score": 0.037852213
+            },
+            {
+              "description": "Mephitis mephitis anal gland fluid preparation",
+              "code": "1311288",
+              "score": 0.016861783
+            },
+            {
+              "description": "AMNIOTIC FLUID (BOVINE)",
+              "code": "1368127",
+              "score": 0.006645339
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "NPH O2",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.82717425,
+          "beginOffset": 374,
+          "endOffset": 380,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.97241837,
+              "relationshipScore": 0.81439173,
+              "id": 2,
+              "beginOffset": 334,
+              "endOffset": 345,
+              "text": "Intravenous",
+              "traits": []
+            },
+            {
+              "type": "STRENGTH",
+              "score": 0.98723257,
+              "relationshipScore": 0.9999827,
+              "id": 7,
+              "beginOffset": 370,
+              "endOffset": 373,
+              "text": "10%",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "PPG-12",
+              "code": "1793745",
+              "score": 0.2770786
+            },
+            {
+              "description": "nonoxynol-12",
+              "code": "1314216",
+              "score": 0.08158279
+            },
+            {
+              "description": "12-hydroxystearate",
+              "code": "1368629",
+              "score": 0.052301716
+            },
+            {
+              "description": "Calcium Pantothenate 10 MG / Copper Sulfate 0.8 MG / Ferrous fumarate 324 MG / Folic Acid 1 MG / Magnesium Sulfate 6.9 MG / manganese sulfate 1.3 MG / Niacinamide 30 MG / Pyridoxine Hydrochloride 5 MG / Riboflavin 6 MG / Sodium Ascorbate 200 MG / Thiamine Mononitrate 10 MG / Vitamin B 12 0.015 MG / Zinc Sulfate 18.2 MG Oral Capsule",
+              "code": "1314654",
+              "score": 0.024959568
+            },
+            {
+              "description": "Interleukin-12",
+              "code": "1309680",
+              "score": 0.021935763
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "saline",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9824652,
+          "beginOffset": 388,
+          "endOffset": 394,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9290529,
+              "relationshipScore": 0.9999726,
+              "id": 9,
+              "beginOffset": 382,
+              "endOffset": 387,
+              "text": "1.5 L",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Serine",
+              "code": "9671",
+              "score": 0.54737234
+            },
+            {
+              "description": "Alanine 11 MG/ML / Arginine 8.5 MG/ML / Glycine 11 MG/ML / Histidine 2.6 MG/ML / Isoleucine 6.2 MG/ML / Leucine 8.1 MG/ML / Lysine 6.24 MG/ML / Magnesium Chloride 0.00502 MEQ/ML / Methionine 3.4 MG/ML / Phenylalanine 3.8 MG/ML / Potassium Chloride 0.0654 MEQ/ML / Proline 7.5 MG/ML / Serine 3.7 MG/ML / Sodium Chloride 0.00479 MEQ/ML / sodium phosphate 0.0299 MEQ/ML / Threonine 4.6 MG/ML / Tryptophan 1.5 MG/ML / Tyrosine 0.44 MG/ML / Valine 6.8 MG/ML Injectable Solution",
+              "code": "830731",
+              "score": 0.21271838
+            },
+            {
+              "description": "Alanine 11 MG/ML / Arginine 8.5 MG/ML / Glycine 11 MG/ML / Histidine 2.6 MG/ML / Isoleucine 6.2 MG/ML / Leucine 8.1 MG/ML / Lysine 6.24 MG/ML / Magnesium Chloride 0.00502 MEQ/ML / Methionine 3.4 MG/ML / Phenylalanine 3.8 MG/ML / Potassium Chloride 0.0654 MEQ/ML / Proline 7.5 MG/ML / Serine 3.7 MG/ML / Sodium Chloride 0.00479 MEQ/ML / sodium phosphate 0.0299 MEQ/ML / Threonine 4.6 MG/ML / Tryptophan 1.5 MG/ML / Tyrosine 0.44 MG/ML / Valine 6.8 MG/ML Injectable Solution [Aminosyn 8.5 % with Electrolytes, Sulfite-Free]",
+              "code": "1189611",
+              "score": 0.21271835
+            },
+            {
+              "description": "Alpine strawberry extract",
+              "code": "1328308",
+              "score": 0.15490824
+            },
+            {
+              "description": "Alanine 11 MG/ML / Arginine 8.5 MG/ML / Glycine 11 MG/ML / Histidine 2.6 MG/ML / Isoleucine 6.2 MG/ML / Leucine 8.1 MG/ML / Lysine 6.24 MG/ML / Methionine 3.4 MG/ML / Phenylalanine 3.8 MG/ML / Proline 7.5 MG/ML / Serine 3.7 MG/ML / Threonine 4.6 MG/ML / Tryptophan 1.5 MG/ML / Tyrosine 0.44 MG/ML / Valine 6.8 MG/ML Injectable Solution",
+              "code": "830680",
+              "score": 0.11162384
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "143be6c9-7a4b-4a80-8ffd-61a41070e522"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "143be6c9-7a4b-4a80-8ffd-61a41070e522"
+          ],
+          "Content-Length": [
+            "5148"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5148",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:25 GMT",
+          "x-amzn-RequestId": "143be6c9-7a4b-4a80-8ffd-61a41070e522"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:27 PM"
+}

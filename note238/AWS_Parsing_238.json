@@ -1,0 +1,201 @@
+{
+  "note": ")  Clinical remission was seen in all participants. No patients were required to restart the medication or lose weight, which was a positive development for the study and is a step towards finding a treatment for weight-related diseases as well as preventing their occurrence in the first place. The trial was also encouraging. Although patients lost 5% of the initial weight during the trial, their average BMI did not return to the pre-treatment level in any of the groups.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 284,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 213,
+          "endOffset": 236,
+          "score": 0.8861083,
+          "text": "weight-related diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8941247
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 408,
+          "endOffset": 411,
+          "score": 0.7642355,
+          "text": "BMI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.39011413,
+              "relationshipScore": 0.9999988,
+              "relationshipType": "TEST_VALUE",
+              "id": 2,
+              "beginOffset": 412,
+              "endOffset": 474,
+              "text": "did not return to the pre-treatment level in any of the groups",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c4dca64c-5178-4fe2-9377-3f4138a69876"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c4dca64c-5178-4fe2-9377-3f4138a69876"
+          ],
+          "Content-Length": [
+            "721"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "721",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:16 GMT",
+          "x-amzn-RequestId": "c4dca64c-5178-4fe2-9377-3f4138a69876"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 453,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "weight-related diseases",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8861083,
+          "beginOffset": 213,
+          "endOffset": 236,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8941247
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6754637
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.62142605
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6210818
+            },
+            {
+              "description": "Anemia in other chronic diseases classified elsewhere",
+              "code": "D63.8",
+              "score": 0.6163011
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.5768707
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c7fa2b43-c22b-4efd-b5e4-f860f57438f5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c7fa2b43-c22b-4efd-b5e4-f860f57438f5"
+          ],
+          "Content-Length": [
+            "807"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "807",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:17 GMT",
+          "x-amzn-RequestId": "c7fa2b43-c22b-4efd-b5e4-f860f57438f5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 228,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e81713c8-610d-495b-a69c-18a492f2ff91"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e81713c8-610d-495b-a69c-18a492f2ff91"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:16 GMT",
+          "x-amzn-RequestId": "e81713c8-610d-495b-a69c-18a492f2ff91"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:17 PM"
+}

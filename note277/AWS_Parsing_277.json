@@ -1,0 +1,206 @@
+{
+  "note": ".  1.3.9.6 Endocrinological Decision Making: Follow-up in 6 months. 1.3.9.7 GYNECOLOGICAL DISORDER PROCESSING: Follow-up in 9 months. 1.3.9.8 GENETICS: Follow-up in 18 months. 1.3.9.9 GENETIC AND LABORATORY DECISION MAKING: Follow-up in 6 months. 1.3.9.10 SLEEP DISORDERS: Follow-up in 24 months. 1.3.10 Medical Monitoring  1.4.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 236,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 256,
+          "endOffset": 271,
+          "score": 0.923915,
+          "text": "SLEEP DISORDERS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.939624
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 283,
+          "endOffset": 295,
+          "score": 0.992751,
+          "text": "in 24 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.923915,
+              "relationshipScore": 0.9419987,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 256,
+              "endOffset": 271,
+              "text": "SLEEP DISORDERS",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.939624
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "47bbc589-35bc-4d74-90cf-eccbb53b1c15"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "47bbc589-35bc-4d74-90cf-eccbb53b1c15"
+          ],
+          "Content-Length": [
+            "704"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "704",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:17 GMT",
+          "x-amzn-RequestId": "47bbc589-35bc-4d74-90cf-eccbb53b1c15"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 279,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "SLEEP DISORDERS",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.923915,
+          "beginOffset": 256,
+          "endOffset": 271,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.939624
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.6848761
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.5370405
+            },
+            {
+              "description": "Insomnia, unspecified",
+              "code": "G47.00",
+              "score": 0.46759215
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.45964286
+            },
+            {
+              "description": "Sleep disorder not due to a substance or known physiological condition, unspecified",
+              "code": "F51.9",
+              "score": 0.4511562
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "035df1f0-5ab2-4432-96cf-26a3a13715fb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "035df1f0-5ab2-4432-96cf-26a3a13715fb"
+          ],
+          "Content-Length": [
+            "782"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "782",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:18 GMT",
+          "x-amzn-RequestId": "035df1f0-5ab2-4432-96cf-26a3a13715fb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 152,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e72a4727-3d84-44ce-ad63-4290d1d31281"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e72a4727-3d84-44ce-ad63-4290d1d31281"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:17 GMT",
+          "x-amzn-RequestId": "e72a4727-3d84-44ce-ad63-4290d1d31281"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:18 PM"
+}

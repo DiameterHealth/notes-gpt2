@@ -1,0 +1,309 @@
+{
+  "note": ". There has never been a time in history when a treatment plan for severe asthma was developed by this type of care group and the MDM group with complete accuracy. It was not always the case that a pulmonologist was available for followup with a person with this disease. In the past, lung function tests, a bronchoscopy, and CT or MRI were not routinely performed for adults with asthma.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 316,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 74,
+          "endOffset": 80,
+          "score": 0.98984665,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93951553
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 272,
+          "endOffset": 283,
+          "score": 0.9999714,
+          "text": "In the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.8726035,
+              "relationshipScore": 0.8217274,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 285,
+              "endOffset": 304,
+              "text": "lung function tests",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 285,
+          "endOffset": 289,
+          "score": 0.95363635,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 285,
+          "endOffset": 304,
+          "score": 0.8726035,
+          "text": "lung function tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 308,
+          "endOffset": 320,
+          "score": 0.99095714,
+          "text": "bronchoscopy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 326,
+          "endOffset": 328,
+          "score": 0.8402799,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 332,
+          "endOffset": 335,
+          "score": 0.99623185,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 381,
+          "endOffset": 387,
+          "score": 0.9668531,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9109514
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1b2080f6-3113-4a54-b4ee-a5ae3dd2c31a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1b2080f6-3113-4a54-b4ee-a5ae3dd2c31a"
+          ],
+          "Content-Length": [
+            "1631"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1631",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:22 GMT",
+          "x-amzn-RequestId": "1b2080f6-3113-4a54-b4ee-a5ae3dd2c31a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 960,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98984665,
+          "beginOffset": 74,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93951553
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.713791
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.55233926
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.5057166
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.4765059
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.4611178
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9668531,
+          "beginOffset": 381,
+          "endOffset": 387,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9109514
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7520437
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.56473184
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.50406766
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.4555262
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.4444612
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6c5b0344-51fe-434d-af68-9589caf82f7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6c5b0344-51fe-434d-af68-9589caf82f7c"
+          ],
+          "Content-Length": [
+            "1449"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:23 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1449",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:23 GMT",
+          "x-amzn-RequestId": "6c5b0344-51fe-434d-af68-9589caf82f7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 211,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8046dfa0-d98b-4e39-ac2c-b3469f151bad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8046dfa0-d98b-4e39-ac2c-b3469f151bad"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:22 GMT",
+          "x-amzn-RequestId": "8046dfa0-d98b-4e39-ac2c-b3469f151bad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:23 PM"
+}

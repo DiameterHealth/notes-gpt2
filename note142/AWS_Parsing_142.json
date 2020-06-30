@@ -1,0 +1,511 @@
+{
+  "note": "to identify the underlying reason for the obstructive disease. In addition to the above, the patient does not have a significant family history of obstructive lung disease. The recommended treatment strategy is two drugs (fluoxetine or mirtazapine) and surgery. Patients with chronic obstructive pulmonary disease not responding to these medications may continue with a combination of steroids and inhaled medication (chemotherapy) for up to one year.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 328,
+    "data": {
+      "entities": [
+        {
+          "id": 5,
+          "beginOffset": 42,
+          "endOffset": 61,
+          "score": 0.8978556,
+          "text": "obstructive disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93229234
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 147,
+          "endOffset": 171,
+          "score": 0.9178689,
+          "text": "obstructive lung disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95745325
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8369268
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 159,
+          "endOffset": 163,
+          "score": 0.80118614,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 222,
+          "endOffset": 232,
+          "score": 0.99957544,
+          "text": "fluoxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 236,
+          "endOffset": 247,
+          "score": 0.9998079,
+          "text": "mirtazapine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 253,
+          "endOffset": 260,
+          "score": 0.46839878,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 284,
+          "endOffset": 313,
+          "score": 0.9571237,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.959906
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97876406,
+              "relationshipScore": 0.99999774,
+              "relationshipType": "ACUITY",
+              "id": 7,
+              "beginOffset": 276,
+              "endOffset": 283,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 385,
+          "endOffset": 393,
+          "score": 0.5380439,
+          "text": "steroids",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.2296149,
+              "relationshipScore": 0.99949324,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 398,
+              "endOffset": 405,
+              "text": "inhaled",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 385,
+          "endOffset": 393,
+          "score": 0.8443195,
+          "text": "steroids",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 398,
+          "endOffset": 416,
+          "score": 0.9664137,
+          "text": "inhaled medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 418,
+          "endOffset": 430,
+          "score": 0.93946856,
+          "text": "chemotherapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.97876406,
+            "id": 7,
+            "beginOffset": 276,
+            "endOffset": 283,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "734b2d32-4c43-4c11-ad97-602b765f3ef1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "734b2d32-4c43-4c11-ad97-602b765f3ef1"
+          ],
+          "Content-Length": [
+            "2638"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2638",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:48 GMT",
+          "x-amzn-RequestId": "734b2d32-4c43-4c11-ad97-602b765f3ef1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 641,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "obstructive disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8978556,
+          "beginOffset": 42,
+          "endOffset": 61,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93229234
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.6769546
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.58514637
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris",
+              "code": "I25.110",
+              "score": 0.5648055
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.56332356
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.5024975
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "obstructive lung disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9178689,
+          "beginOffset": 147,
+          "endOffset": 171,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95745325
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8369268
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.5847972
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.44883582
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.43144122
+            },
+            {
+              "description": "Obstructive and reflux uropathy, unspecified",
+              "code": "N13.9",
+              "score": 0.38870746
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.3547
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9571237,
+          "beginOffset": 284,
+          "endOffset": 313,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97876406,
+              "relationshipScore": 0.99999774,
+              "id": 3,
+              "beginOffset": 276,
+              "endOffset": 283,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.959906
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.79031277
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.6467253
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.57649493
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.55499524
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.46528488
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5cd8afff-7672-4999-90a5-4e7c197af1c6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5cd8afff-7672-4999-90a5-4e7c197af1c6"
+          ],
+          "Content-Length": [
+            "2757"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:49 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2757",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:49 GMT",
+          "x-amzn-RequestId": "5cd8afff-7672-4999-90a5-4e7c197af1c6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 469,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fluoxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99957544,
+          "beginOffset": 222,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Fluoxetine",
+              "code": "4493",
+              "score": 0.9508724
+            },
+            {
+              "description": "Fluoxetine 40 MG Oral Capsule",
+              "code": "313989",
+              "score": 0.54466146
+            },
+            {
+              "description": "Fluoxetine 20 MG Oral Capsule",
+              "code": "310385",
+              "score": 0.52552617
+            },
+            {
+              "description": "Fluoxetine 60 MG Oral Tablet",
+              "code": "1190110",
+              "score": 0.38959968
+            },
+            {
+              "description": "Fluoxetine 10 MG Oral Tablet",
+              "code": "313990",
+              "score": 0.32639423
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "mirtazapine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9998079,
+          "beginOffset": 236,
+          "endOffset": 247,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Mirtazapine",
+              "code": "15996",
+              "score": 0.94833034
+            },
+            {
+              "description": "Mirtazapine 30 MG Oral Tablet",
+              "code": "314111",
+              "score": 0.821046
+            },
+            {
+              "description": "Mirtazapine 15 MG Oral Tablet",
+              "code": "311725",
+              "score": 0.8104484
+            },
+            {
+              "description": "Mirtazapine 15 MG Oral Tablet [Remeron]",
+              "code": "211322",
+              "score": 0.22144309
+            },
+            {
+              "description": "Mirtazapine 30 MG Oral Tablet [Remeron]",
+              "code": "211323",
+              "score": 0.20777166
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "076b3b71-f7b5-4fbd-96f3-72167fecf665"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "076b3b71-f7b5-4fbd-96f3-72167fecf665"
+          ],
+          "Content-Length": [
+            "1292"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:48 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1292",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:48 GMT",
+          "x-amzn-RequestId": "076b3b71-f7b5-4fbd-96f3-72167fecf665"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:49 PM"
+}

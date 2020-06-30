@@ -1,0 +1,525 @@
+{
+  "note": "__________________________ _________________  Tumors in Patients With Eosinophilic Esophagitis or Eosinitis Ocularis  Tumors in these patients are often asymptomatic. Patients need careful clinical judgment as they proceed with biopsy to exclude tumors. If these patients are being treated, careful monitoring of tumor size and appearance is desirable. Patients with this condition need additional follow-up visits to evaluate progression or recurrence.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 327,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 46,
+          "endOffset": 52,
+          "score": 0.9125114,
+          "text": "Tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8233983
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 70,
+          "endOffset": 94,
+          "score": 0.88561153,
+          "text": "Eosinophilic Esophagitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.942673
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 98,
+          "endOffset": 116,
+          "score": 0.7612803,
+          "text": "Eosinitis Ocularis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8971083
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 118,
+          "endOffset": 124,
+          "score": 0.986613,
+          "text": "Tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9317532
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 153,
+          "endOffset": 165,
+          "score": 0.8369756,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 228,
+          "endOffset": 234,
+          "score": 0.958459,
+          "text": "biopsy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 246,
+          "endOffset": 252,
+          "score": 0.9687548,
+          "text": "tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9219375
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 313,
+          "endOffset": 318,
+          "score": 0.6893145,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5972317
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c12e2a5-9883-43bb-a6d8-b7b96cca4819"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c12e2a5-9883-43bb-a6d8-b7b96cca4819"
+          ],
+          "Content-Length": [
+            "1548"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1548",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:15 GMT",
+          "x-amzn-RequestId": "0c12e2a5-9883-43bb-a6d8-b7b96cca4819"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 604,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9125114,
+          "beginOffset": 46,
+          "endOffset": 52,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8233983
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.6662598
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.6399997
+            },
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.6399667
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.63451487
+            },
+            {
+              "description": "Malignant neoplasm of unspecified part of right bronchus or lung",
+              "code": "C34.91",
+              "score": 0.59688425
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Eosinophilic Esophagitis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8856114,
+          "beginOffset": 70,
+          "endOffset": 94,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.942673
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Eosinophilia",
+              "code": "D72.1",
+              "score": 0.57168156
+            },
+            {
+              "description": "Eosinophilic esophagitis",
+              "code": "K20.0",
+              "score": 0.5377681
+            },
+            {
+              "description": "Eosinophilic colitis",
+              "code": "K52.82",
+              "score": 0.43373066
+            },
+            {
+              "description": "Gastro-esophageal reflux disease without esophagitis",
+              "code": "K21.9",
+              "score": 0.41379285
+            },
+            {
+              "description": "Esophagitis, unspecified",
+              "code": "K20.9",
+              "score": 0.4091628
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "Eosinitis Ocularis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7612803,
+          "beginOffset": 98,
+          "endOffset": 116,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8971083
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ocular pain, right eye",
+              "code": "H57.11",
+              "score": 0.53213584
+            },
+            {
+              "description": "Ocular albinism, unspecified",
+              "code": "E70.319",
+              "score": 0.51571023
+            },
+            {
+              "description": "Ocular pain, unspecified eye",
+              "code": "H57.10",
+              "score": 0.49945784
+            },
+            {
+              "description": "Ocular pain, left eye",
+              "code": "H57.12",
+              "score": 0.48112765
+            },
+            {
+              "description": "Ocular pain, bilateral",
+              "code": "H57.13",
+              "score": 0.4576566
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.986613,
+          "beginOffset": 118,
+          "endOffset": 124,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9317532
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.7059597
+            },
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.70235544
+            },
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.6705758
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.65324
+            },
+            {
+              "description": "Malignant neoplasm of unspecified kidney, except renal pelvis",
+              "code": "C64.9",
+              "score": 0.6271218
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "asymptomatic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8369756,
+          "beginOffset": 153,
+          "endOffset": 165,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Asymptomatic varicose veins of bilateral lower extremities",
+              "code": "I83.93",
+              "score": 0.78564197
+            },
+            {
+              "description": "Asymptomatic menopausal state",
+              "code": "Z78.0",
+              "score": 0.71468806
+            },
+            {
+              "description": "Asymptomatic varicose veins of unspecified lower extremity",
+              "code": "I83.90",
+              "score": 0.6828079
+            },
+            {
+              "description": "Asymptomatic varicose veins of right lower extremity",
+              "code": "I83.91",
+              "score": 0.6452919
+            },
+            {
+              "description": "Asymptomatic varicose veins of left lower extremity",
+              "code": "I83.92",
+              "score": 0.6179551
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "tumors",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9687548,
+          "beginOffset": 246,
+          "endOffset": 252,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9219375
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.80490035
+            },
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.7781159
+            },
+            {
+              "description": "Squamous cell carcinoma of skin, unspecified",
+              "code": "C44.92",
+              "score": 0.7737152
+            },
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.7734916
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.76047355
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "tumor",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6893143,
+          "beginOffset": 313,
+          "endOffset": 318,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59723145
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Neoplasm of unspecified behavior of bone, soft tissue, and skin",
+              "code": "D49.2",
+              "score": 0.70797163
+            },
+            {
+              "description": "Gastrointestinal stromal tumor, unspecified site",
+              "code": "C49.A0",
+              "score": 0.7008085
+            },
+            {
+              "description": "Neoplasm of unspecified behavior of unspecified site",
+              "code": "D49.9",
+              "score": 0.6728215
+            },
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.6599047
+            },
+            {
+              "description": "Squamous cell carcinoma of skin, unspecified",
+              "code": "C44.92",
+              "score": 0.6510933
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5060141c-0163-497e-a8fd-4f9e91741259"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5060141c-0163-497e-a8fd-4f9e91741259"
+          ],
+          "Content-Length": [
+            "5266"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5266",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:16 GMT",
+          "x-amzn-RequestId": "5060141c-0163-497e-a8fd-4f9e91741259"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 258,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a843b8fa-b80e-495c-8a38-c2ca96665568"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a843b8fa-b80e-495c-8a38-c2ca96665568"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:15 GMT",
+          "x-amzn-RequestId": "a843b8fa-b80e-495c-8a38-c2ca96665568"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:16 PM"
+}

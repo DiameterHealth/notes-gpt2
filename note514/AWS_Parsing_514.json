@@ -1,0 +1,807 @@
+{
+  "note": "F states R knee joint was swollen. NEXTRAL EXAMINATION 25 y/o F presents to the ED with an ulcer on his lower belly. He had a flare-up following a flare of his knee. NEXTRAL EXAMINATION 26 y/o M presents to the ED for chronic UTI 6 months prior to discharge with an ulcer on her mid-left side.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1012,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 11,
+          "endOffset": 21,
+          "score": 0.6007318,
+          "text": "knee joint",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "score": 0.94099414,
+          "text": "swollen",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6090194
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9888403,
+              "relationshipScore": 0.95927954,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 9,
+              "endOffset": 10,
+              "text": "R",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6007318,
+              "relationshipScore": 0.98015,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 11,
+              "endOffset": 21,
+              "text": "knee joint",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 35,
+          "endOffset": 42,
+          "score": 0.47446147,
+          "text": "NEXTRAL",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 55,
+          "endOffset": 57,
+          "score": 0.99013853,
+          "text": "25",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 80,
+          "endOffset": 82,
+          "score": 0.99933547,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 91,
+          "endOffset": 96,
+          "score": 0.98282385,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5320931
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9819857,
+              "relationshipScore": 0.999987,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 104,
+              "endOffset": 109,
+              "text": "lower",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885174,
+              "relationshipScore": 0.9997044,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 4,
+              "beginOffset": 110,
+              "endOffset": 115,
+              "text": "belly",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 110,
+          "endOffset": 115,
+          "score": 0.9885174,
+          "text": "belly",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 126,
+          "endOffset": 134,
+          "score": 0.6203846,
+          "text": "flare-up",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 147,
+          "endOffset": 152,
+          "score": 0.49231428,
+          "text": "flare",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.991338,
+              "relationshipScore": 0.99983275,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 5,
+              "beginOffset": 160,
+              "endOffset": 164,
+              "text": "knee",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 160,
+          "endOffset": 164,
+          "score": 0.991338,
+          "text": "knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 186,
+          "endOffset": 188,
+          "score": 0.9820855,
+          "text": "26",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 211,
+          "endOffset": 213,
+          "score": 0.9988175,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 226,
+          "endOffset": 229,
+          "score": 0.99868375,
+          "text": "UTI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9688645
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99074477,
+              "relationshipScore": 0.9999964,
+              "relationshipType": "ACUITY",
+              "id": 11,
+              "beginOffset": 218,
+              "endOffset": 225,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 230,
+          "endOffset": 238,
+          "score": 0.9846154,
+          "text": "6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.99868375,
+              "relationshipScore": 0.8613749,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 226,
+              "endOffset": 229,
+              "text": "UTI",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9688645
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 239,
+          "endOffset": 257,
+          "score": 0.9672962,
+          "text": "prior to discharge",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9768366,
+              "relationshipScore": 0.8139096,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 266,
+              "endOffset": 271,
+              "text": "ulcer",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.719221
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 266,
+          "endOffset": 271,
+          "score": 0.9768366,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.719221
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.8608763,
+              "relationshipScore": 0.9970228,
+              "relationshipType": "DIRECTION",
+              "id": 6,
+              "beginOffset": 279,
+              "endOffset": 292,
+              "text": "mid-left side",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9888403,
+            "id": 0,
+            "beginOffset": 9,
+            "endOffset": 10,
+            "text": "R",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9819857,
+            "id": 3,
+            "beginOffset": 104,
+            "endOffset": 109,
+            "text": "lower",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.99074477,
+            "id": 11,
+            "beginOffset": 218,
+            "endOffset": 225,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.8608763,
+            "id": 6,
+            "beginOffset": 279,
+            "endOffset": 292,
+            "text": "mid-left side",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "637c02e3-ce20-4a33-86bc-8552b9ce898e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "637c02e3-ce20-4a33-86bc-8552b9ce898e"
+          ],
+          "Content-Length": [
+            "5441"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5441",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:02 GMT",
+          "x-amzn-RequestId": "637c02e3-ce20-4a33-86bc-8552b9ce898e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 997,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "swollen",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94099414,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9888403,
+              "relationshipScore": 0.95927954,
+              "id": 0,
+              "beginOffset": 9,
+              "endOffset": 10,
+              "text": "R",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6007318,
+              "relationshipScore": 0.98015,
+              "id": 1,
+              "beginOffset": 11,
+              "endOffset": 21,
+              "text": "knee joint",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6090194
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.7486459
+            },
+            {
+              "description": "Effusion, left knee",
+              "code": "M25.462",
+              "score": 0.69285846
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.6917514
+            },
+            {
+              "description": "Effusion, right knee",
+              "code": "M25.461",
+              "score": 0.66820836
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.6344996
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98282385,
+          "beginOffset": 91,
+          "endOffset": 96,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9819857,
+              "relationshipScore": 0.999987,
+              "id": 5,
+              "beginOffset": 104,
+              "endOffset": 109,
+              "text": "lower",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9885174,
+              "relationshipScore": 0.9997044,
+              "id": 6,
+              "beginOffset": 110,
+              "endOffset": 115,
+              "text": "belly",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.53209317
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.53700817
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.49174887
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.49073544
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.48957095
+            },
+            {
+              "description": "Varicose veins of right lower extremity with both ulcer of calf and inflammation",
+              "code": "I83.212",
+              "score": 0.45587417
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "flare-up",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6203846,
+          "beginOffset": 126,
+          "endOffset": 134,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hematemesis",
+              "code": "K92.0",
+              "score": 0.5122783
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.5057584
+            },
+            {
+              "description": "Gout, unspecified",
+              "code": "M10.9",
+              "score": 0.46883026
+            },
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.44018334
+            },
+            {
+              "description": "Sarcoidosis, unspecified",
+              "code": "D86.9",
+              "score": 0.3288673
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "flare",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49231416,
+          "beginOffset": 147,
+          "endOffset": 152,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.991338,
+              "relationshipScore": 0.99983275,
+              "id": 9,
+              "beginOffset": 160,
+              "endOffset": 164,
+              "text": "knee",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gout, unspecified",
+              "code": "M10.9",
+              "score": 0.52136487
+            },
+            {
+              "description": "Sarcoidosis, unspecified",
+              "code": "D86.9",
+              "score": 0.3143108
+            },
+            {
+              "description": "Idiopathic gout, unspecified site",
+              "code": "M10.00",
+              "score": 0.2254687
+            },
+            {
+              "description": "Drug-induced gout, unspecified site",
+              "code": "M10.20",
+              "score": 0.21671818
+            },
+            {
+              "description": "Idiopathic gout, unspecified knee",
+              "code": "M10.069",
+              "score": 0.17558382
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "UTI",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99868375,
+          "beginOffset": 226,
+          "endOffset": 229,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.99074477,
+              "relationshipScore": 0.9999964,
+              "id": 10,
+              "beginOffset": 218,
+              "endOffset": 225,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9688645
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.4760429
+            },
+            {
+              "description": "Pseudomonas (aeruginosa) (mallei) (pseudomallei) as the cause of diseases classified elsewhere",
+              "code": "B96.5",
+              "score": 0.32836735
+            },
+            {
+              "description": "Personal history of other infectious and parasitic diseases",
+              "code": "Z86.19",
+              "score": 0.3116924
+            },
+            {
+              "description": "Encephalitis and encephalomyelitis, unspecified",
+              "code": "G04.90",
+              "score": 0.30222684
+            },
+            {
+              "description": "Other specified respiratory disorders",
+              "code": "J98.8",
+              "score": 0.2883215
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9768366,
+          "beginOffset": 266,
+          "endOffset": 271,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.8608763,
+              "relationshipScore": 0.9970228,
+              "id": 13,
+              "beginOffset": 279,
+              "endOffset": 292,
+              "text": "mid-left side",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.719221
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.61933523
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.5894567
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.556461
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.5379355
+            },
+            {
+              "description": "Pressure ulcer of left heel, unstageable",
+              "code": "L89.620",
+              "score": 0.534796
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eb085abd-18cf-428f-b542-2435c1d682b0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eb085abd-18cf-428f-b542-2435c1d682b0"
+          ],
+          "Content-Length": [
+            "5721"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5721",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:04 GMT",
+          "x-amzn-RequestId": "eb085abd-18cf-428f-b542-2435c1d682b0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 182,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8de51c99-4a75-4345-983a-8a6b83053682"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8de51c99-4a75-4345-983a-8a6b83053682"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:35:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:35:02 GMT",
+          "x-amzn-RequestId": "8de51c99-4a75-4345-983a-8a6b83053682"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:35:04 PM"
+}

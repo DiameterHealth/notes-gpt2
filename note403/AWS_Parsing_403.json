@@ -1,0 +1,342 @@
+{
+  "note": "a history of alcoholism, and also has a co-existing bipolar disorder. This has been clinically noted by both psychiatrists and nursing students. The patient was previously stabilized on stable pharmaceuticals. She has been treated for the past six months with the antidepressant imipramine. It was recommended at the time her illness began to take a short 6 months to a year to observe any improvement.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 379,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 13,
+          "endOffset": 23,
+          "score": 0.9746318,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94817054
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 52,
+          "endOffset": 68,
+          "score": 0.9889416,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9708058
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 239,
+          "endOffset": 254,
+          "score": 0.9999449,
+          "text": "past six months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.25813782,
+              "relationshipScore": 0.68980885,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 264,
+              "endOffset": 289,
+              "text": "antidepressant imipramine",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 239,
+          "endOffset": 254,
+          "score": 0.9999449,
+          "text": "past six months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.98046714,
+              "relationshipScore": 0.6694652,
+              "relationshipType": "OVERLAP",
+              "id": 0,
+              "beginOffset": 279,
+              "endOffset": 289,
+              "text": "imipramine",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 264,
+          "endOffset": 289,
+          "score": 0.25813782,
+          "text": "antidepressant imipramine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 279,
+          "endOffset": 289,
+          "score": 0.98046714,
+          "text": "imipramine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8b64111f-b183-4697-8a59-de67a6b2662f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8b64111f-b183-4697-8a59-de67a6b2662f"
+          ],
+          "Content-Length": [
+            "1610"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1610",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:29 GMT",
+          "x-amzn-RequestId": "8b64111f-b183-4697-8a59-de67a6b2662f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "alcoholism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9746318,
+          "beginOffset": 13,
+          "endOffset": 23,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94817054
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Alcohol dependence, uncomplicated",
+              "code": "F10.20",
+              "score": 0.62174684
+            },
+            {
+              "description": "Alcohol dependence with withdrawal, unspecified",
+              "code": "F10.239",
+              "score": 0.56133956
+            },
+            {
+              "description": "Alcohol dependence, in remission",
+              "code": "F10.21",
+              "score": 0.5247481
+            },
+            {
+              "description": "Alcohol abuse, uncomplicated",
+              "code": "F10.10",
+              "score": 0.4886489
+            },
+            {
+              "description": "Alcohol abuse, in remission",
+              "code": "F10.11",
+              "score": 0.41272336
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9889416,
+          "beginOffset": 52,
+          "endOffset": 68,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9708058
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.7134694
+            },
+            {
+              "description": "Bipolar disorder",
+              "code": "F31",
+              "score": 0.42949593
+            },
+            {
+              "description": "Bipolar disorder, current episode manic without psychotic features, unspecified",
+              "code": "F31.10",
+              "score": 0.37850207
+            },
+            {
+              "description": "Bipolar disorder, current episode mixed, unspecified",
+              "code": "F31.60",
+              "score": 0.3753304
+            },
+            {
+              "description": "Bipolar II disorder",
+              "code": "F31.81",
+              "score": 0.3744504
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "72477c1e-1fca-4dbd-b118-dae598c155bf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "72477c1e-1fca-4dbd-b118-dae598c155bf"
+          ],
+          "Content-Length": [
+            "1477"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1477",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:29 GMT",
+          "x-amzn-RequestId": "72477c1e-1fca-4dbd-b118-dae598c155bf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 439,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "imipramine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.98046714,
+          "beginOffset": 279,
+          "endOffset": 289,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Imipramine",
+              "code": "5691",
+              "score": 0.95205826
+            },
+            {
+              "description": "Imipramine Hydrochloride 25 MG Oral Tablet",
+              "code": "835564",
+              "score": 0.68782353
+            },
+            {
+              "description": "Imipramine pamoate 75 MG Oral Capsule",
+              "code": "835572",
+              "score": 0.5098927
+            },
+            {
+              "description": "Imipramine Hydrochloride 10 MG Oral Tablet [Tofranil]",
+              "code": "835596",
+              "score": 0.2876659
+            },
+            {
+              "description": "Imipramine Hydrochloride 50 MG Oral Tablet [Tofranil]",
+              "code": "835570",
+              "score": 0.21231917
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "706269af-6e81-43dc-af7e-8e49e7741f65"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "706269af-6e81-43dc-af7e-8e49e7741f65"
+          ],
+          "Content-Length": [
+            "724"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "724",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:29 GMT",
+          "x-amzn-RequestId": "706269af-6e81-43dc-af7e-8e49e7741f65"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:30 PM"
+}

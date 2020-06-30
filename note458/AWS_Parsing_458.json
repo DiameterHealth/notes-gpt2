@@ -1,0 +1,371 @@
+{
+  "note": ". His history suggests a previous history of acute myocardial infarction and a history of previous cardiac bypass surgery, a recent family history of cardiovascular disease, and a family history of hypertrophic cardiomyopathy.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 262,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 51,
+          "endOffset": 72,
+          "score": 0.9790233,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9661429
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6714166,
+              "relationshipScore": 0.98644537,
+              "relationshipType": "ACUITY",
+              "id": 0,
+              "beginOffset": 45,
+              "endOffset": 50,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 99,
+          "endOffset": 121,
+          "score": 0.955347,
+          "text": "cardiac bypass surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 125,
+          "endOffset": 131,
+          "score": 0.99999964,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9559817,
+              "relationshipScore": 0.60755783,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 150,
+              "endOffset": 172,
+              "text": "cardiovascular disease",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9574075
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 150,
+          "endOffset": 172,
+          "score": 0.9559817,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9574075
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 198,
+          "endOffset": 225,
+          "score": 0.94275165,
+          "text": "hypertrophic cardiomyopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94745934
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.6714166,
+            "id": 0,
+            "beginOffset": 45,
+            "endOffset": 50,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ee3c3406-1772-493e-b01f-955f6ebbbaa8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ee3c3406-1772-493e-b01f-955f6ebbbaa8"
+          ],
+          "Content-Length": [
+            "1712"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1712",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:08 GMT",
+          "x-amzn-RequestId": "ee3c3406-1772-493e-b01f-955f6ebbbaa8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 312,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "myocardial infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9790233,
+          "beginOffset": 51,
+          "endOffset": 72,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.6714164,
+              "relationshipScore": 0.98644537,
+              "id": 0,
+              "beginOffset": 45,
+              "endOffset": 50,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9661429
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.70706606
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.643323
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.62743014
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.547723
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.5174257
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9559817,
+          "beginOffset": 150,
+          "endOffset": 172,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9574075
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5879361
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.44084987
+            },
+            {
+              "description": "Personal history of other diseases of urinary system",
+              "code": "Z87.448",
+              "score": 0.38617614
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.2957681
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.2895956
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hypertrophic cardiomyopathy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94275165,
+          "beginOffset": 198,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94745934
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obstructive hypertrophic cardiomyopathy",
+              "code": "I42.1",
+              "score": 0.5105982
+            },
+            {
+              "description": "Other hypertrophic cardiomyopathy",
+              "code": "I42.2",
+              "score": 0.44090086
+            },
+            {
+              "description": "Cardiomyopathy, unspecified",
+              "code": "I42.9",
+              "score": 0.29182112
+            },
+            {
+              "description": "Ischemic cardiomyopathy",
+              "code": "I25.5",
+              "score": 0.2421589
+            },
+            {
+              "description": "Hypertrophic elongation of cervix uteri",
+              "code": "N88.4",
+              "score": 0.23725586
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fc500b27-6f45-4189-9adc-8c27ac4f59ec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fc500b27-6f45-4189-9adc-8c27ac4f59ec"
+          ],
+          "Content-Length": [
+            "2625"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2625",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:08 GMT",
+          "x-amzn-RequestId": "fc500b27-6f45-4189-9adc-8c27ac4f59ec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 125,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ea7d0e88-e4f4-492a-96ed-80dab2a66149"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ea7d0e88-e4f4-492a-96ed-80dab2a66149"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:08 GMT",
+          "x-amzn-RequestId": "ea7d0e88-e4f4-492a-96ed-80dab2a66149"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:08 PM"
+}

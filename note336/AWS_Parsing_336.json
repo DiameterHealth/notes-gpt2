@@ -1,0 +1,197 @@
+{
+  "note": "------------------------- --------------------------  IBA: -------------------------- As you have noted earlier in this text the IBA has to do with the way the body takes the drugs, where they go through the nervous system, and what effect they have on the body. The IBA is often missed because it does not cause pain if the medication had already been taken and the body has been accustomed to it.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 509,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 257,
+          "endOffset": 261,
+          "score": 0.48653966,
+          "text": "body",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 313,
+          "endOffset": 317,
+          "score": 0.9751052,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6396307
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 367,
+          "endOffset": 371,
+          "score": 0.59361565,
+          "text": "body",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6248d0b0-9a6f-4615-ad3c-cafc623716af"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6248d0b0-9a6f-4615-ad3c-cafc623716af"
+          ],
+          "Content-Length": [
+            "539"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "539",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:31 GMT",
+          "x-amzn-RequestId": "6248d0b0-9a6f-4615-ad3c-cafc623716af"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 669,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9751052,
+          "beginOffset": 313,
+          "endOffset": 317,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6396307
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.6674773
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.5934456
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.54937345
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.54706
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.53906137
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "564b794d-1a53-421b-ba54-bc99bc975ec4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "564b794d-1a53-421b-ba54-bc99bc975ec4"
+          ],
+          "Content-Length": [
+            "662"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:32 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "662",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:32 GMT",
+          "x-amzn-RequestId": "564b794d-1a53-421b-ba54-bc99bc975ec4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 507,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6b4f6acd-bca7-4579-9d51-2efc1595fbf6"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6b4f6acd-bca7-4579-9d51-2efc1595fbf6"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:31 GMT",
+          "x-amzn-RequestId": "6b4f6acd-bca7-4579-9d51-2efc1595fbf6"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:32 PM"
+}

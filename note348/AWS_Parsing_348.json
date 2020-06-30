@@ -1,0 +1,500 @@
+{
+  "note": "to reduce risk of MI. Patient reports having had no reported allergies to penicillin, streptokinase, or amylase. There is no history of any known allergies. Patient is not receiving any immunosuppressants, other than prednisone and azathioprine. Patient does not have any other known medical conditions. Patient has no documented history of Cushing\u0027s disease. Patient does not have a history of prior surgery.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 352,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 18,
+          "endOffset": 21,
+          "score": 0.9870679,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93018323
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 74,
+          "endOffset": 84,
+          "score": 0.99738675,
+          "text": "penicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.9659693
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 86,
+          "endOffset": 99,
+          "score": 0.70608896,
+          "text": "streptokinase",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.77743405
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 186,
+          "endOffset": 204,
+          "score": 0.85201454,
+          "text": "immunosuppressants",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 217,
+          "endOffset": 227,
+          "score": 0.99984634,
+          "text": "prednisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.6662939
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 232,
+          "endOffset": 244,
+          "score": 0.99925774,
+          "text": "azathioprine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5207061
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 341,
+          "endOffset": 358,
+          "score": 0.9769075,
+          "text": "Cushing\u0027s disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9209742
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9195098
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 395,
+          "endOffset": 400,
+          "score": 0.9999914,
+          "text": "prior",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.9483927,
+              "relationshipScore": 0.9116218,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 401,
+              "endOffset": 408,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 401,
+          "endOffset": 408,
+          "score": 0.9483927,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "deb3833a-a054-4025-a20b-2a353d7fc5e7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "deb3833a-a054-4025-a20b-2a353d7fc5e7"
+          ],
+          "Content-Length": [
+            "2009"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2009",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:51 GMT",
+          "x-amzn-RequestId": "deb3833a-a054-4025-a20b-2a353d7fc5e7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 562,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "MI.",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9870679,
+          "beginOffset": 18,
+          "endOffset": 21,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93018323
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7696973
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.6704961
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.6591872
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.64280933
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.6179536
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Cushing\u0027s disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9769075,
+          "beginOffset": 341,
+          "endOffset": 358,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9209742
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9195098
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.67660517
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.6232894
+            },
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.6187564
+            },
+            {
+              "description": "Heart failure, unspecified",
+              "code": "I50.9",
+              "score": 0.60357165
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.568917
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7636b857-95de-4965-80ed-77c7e9929a20"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7636b857-95de-4965-80ed-77c7e9929a20"
+          ],
+          "Content-Length": [
+            "1726"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:52 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1726",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:52 GMT",
+          "x-amzn-RequestId": "7636b857-95de-4965-80ed-77c7e9929a20"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 464,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "penicillin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99738675,
+          "beginOffset": 74,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.9659693
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Penicillin",
+              "code": "70618",
+              "score": 0.94796205
+            },
+            {
+              "description": "DEXTRANASE PENICILLIUM",
+              "code": "1312708",
+              "score": 0.30408075
+            },
+            {
+              "description": "Penicillium brevicompactum",
+              "code": "1426666",
+              "score": 0.259641
+            },
+            {
+              "description": "1 ML penicillin G benzathine 600000 UNT/ML Prefilled Syringe",
+              "code": "731564",
+              "score": 0.13871959
+            },
+            {
+              "description": "50 ML Penicillin G Potassium 20000 UNT/ML Injection",
+              "code": "207390",
+              "score": 0.11015293
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "streptokinase",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.7060886,
+          "beginOffset": 86,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.7774339
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Streptokinase",
+              "code": "10106",
+              "score": 0.94457257
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "prednisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99984634,
+          "beginOffset": 217,
+          "endOffset": 227,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.66629386
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Prednisone",
+              "code": "8640",
+              "score": 0.93788475
+            },
+            {
+              "description": "Prednisone 20 MG Oral Tablet",
+              "code": "312615",
+              "score": 0.8070976
+            },
+            {
+              "description": "{21 (Prednisone 10 MG Oral Tablet) } Pack",
+              "code": "763185",
+              "score": 0.36935657
+            },
+            {
+              "description": "Prednisone 2 MG Delayed Release Oral Tablet",
+              "code": "1303132",
+              "score": 0.3597773
+            },
+            {
+              "description": "{48 (Prednisone 10 MG Oral Tablet) } Pack",
+              "code": "763183",
+              "score": 0.27996475
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "azathioprine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99925774,
+          "beginOffset": 232,
+          "endOffset": 244,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.52070606
+            }
+          ],
+          "rxNormConcepts": [
+            {
+              "description": "Azathioprine",
+              "code": "1256",
+              "score": 0.9429846
+            },
+            {
+              "description": "Azathioprine 50 MG Oral Tablet",
+              "code": "197388",
+              "score": 0.7869328
+            },
+            {
+              "description": "Azathioprine 100 MG Oral Tablet",
+              "code": "359228",
+              "score": 0.73928565
+            },
+            {
+              "description": "Azathioprine 100 MG Injection",
+              "code": "239983",
+              "score": 0.736798
+            },
+            {
+              "description": "Azathioprine 50 MG Oral Tablet [Imuran]",
+              "code": "105611",
+              "score": 0.5882807
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a6b00f22-678b-4392-8733-2887e7d09484"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a6b00f22-678b-4392-8733-2887e7d09484"
+          ],
+          "Content-Length": [
+            "2431"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:51 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2431",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:51 GMT",
+          "x-amzn-RequestId": "a6b00f22-678b-4392-8733-2887e7d09484"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:52 PM"
+}

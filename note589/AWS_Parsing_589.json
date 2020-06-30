@@ -1,0 +1,356 @@
+{
+  "note": "Patient is a 32w0d. The cervix is open. Patient feels a lump/mass when touching her abdomen. PDA is not present. She has a history of hysterectomy. No pregnancy test results reported from the patient. The baby is in utero. Patient will be seen early next week. The woman is in excellent overall health. A cephalic version of the C.T.I.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 24,
+          "endOffset": 30,
+          "score": 0.9860115,
+          "text": "cervix",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 56,
+          "endOffset": 65,
+          "score": 0.96381444,
+          "text": "lump/mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98994094,
+              "relationshipScore": 0.971455,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 84,
+              "endOffset": 91,
+              "text": "abdomen",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 84,
+          "endOffset": 91,
+          "score": 0.98994094,
+          "text": "abdomen",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 93,
+          "endOffset": 96,
+          "score": 0.22717285,
+          "text": "PDA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 134,
+          "endOffset": 146,
+          "score": 0.96599156,
+          "text": "hysterectomy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 151,
+          "endOffset": 160,
+          "score": 0.9307989,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8260762
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8318445
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 151,
+          "endOffset": 165,
+          "score": 0.7949497,
+          "text": "pregnancy test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 216,
+          "endOffset": 221,
+          "score": 0.36706784,
+          "text": "utero",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "755aa708-e8bc-4b90-892a-414bfb7b58c3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "755aa708-e8bc-4b90-892a-414bfb7b58c3"
+          ],
+          "Content-Length": [
+            "1590"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1590",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:10 GMT",
+          "x-amzn-RequestId": "755aa708-e8bc-4b90-892a-414bfb7b58c3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 504,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "lump/mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96381444,
+          "beginOffset": 56,
+          "endOffset": 65,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.98994094,
+              "relationshipScore": 0.971455,
+              "id": 2,
+              "beginOffset": 84,
+              "endOffset": 91,
+              "text": "abdomen",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified lump in the right breast, unspecified quadrant",
+              "code": "N63.10",
+              "score": 0.56797487
+            },
+            {
+              "description": "Localized swelling, mass and lump, trunk",
+              "code": "R22.2",
+              "score": 0.5658775
+            },
+            {
+              "description": "Localized swelling, mass and lump, neck",
+              "code": "R22.1",
+              "score": 0.5571905
+            },
+            {
+              "description": "Localized swelling, mass and lump, head",
+              "code": "R22.0",
+              "score": 0.54663306
+            },
+            {
+              "description": "Localized swelling, mass and lump, unspecified",
+              "code": "R22.9",
+              "score": 0.53092295
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "PDA",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.22717288,
+          "beginOffset": 93,
+          "endOffset": 96,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormal findings of blood chemistry",
+              "code": "R79",
+              "score": 0.61453444
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.57717866
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of skull and head, not elsewhere classified",
+              "code": "R93.0",
+              "score": 0.49093583
+            },
+            {
+              "description": "Other abnormal findings in specimens from digestive organs and abdominal cavity",
+              "code": "R85.89",
+              "score": 0.46977392
+            },
+            {
+              "description": "Abnormal findings in cerebrospinal fluid",
+              "code": "R83",
+              "score": 0.44901654
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9307989,
+          "beginOffset": 151,
+          "endOffset": 160,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8260762
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8318445
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.7202289
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6139578
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.5939369
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.58983374
+            },
+            {
+              "description": "Anemia complicating pregnancy, second trimester",
+              "code": "O99.012",
+              "score": 0.5424397
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "deeec650-ebaf-4e38-b5d4-37b58a2123d0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "deeec650-ebaf-4e38-b5d4-37b58a2123d0"
+          ],
+          "Content-Length": [
+            "2544"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2544",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:11 GMT",
+          "x-amzn-RequestId": "deeec650-ebaf-4e38-b5d4-37b58a2123d0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 208,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "87ad7d93-525e-4ddf-a263-2532948c2197"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "87ad7d93-525e-4ddf-a263-2532948c2197"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:10 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:10 GMT",
+          "x-amzn-RequestId": "87ad7d93-525e-4ddf-a263-2532948c2197"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:12 PM"
+}

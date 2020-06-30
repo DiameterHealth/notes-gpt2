@@ -1,0 +1,370 @@
+{
+  "note": ". Comments: One patient complained of bloating and a little constipation from the combination of aspirin and atorvastatin OTC. This is one of the few situations in which I would advise a patient not to switch medications until a physician is trained in the pharmacokinetics of aspirin. For the average patient, using the same medication twice a day does not seem to cause much bother.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 231,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 38,
+          "endOffset": 46,
+          "score": 0.98653597,
+          "text": "bloating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6899867
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 60,
+          "endOffset": 72,
+          "score": 0.9977653,
+          "text": "constipation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6421346
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 97,
+          "endOffset": 104,
+          "score": 0.9977864,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 109,
+          "endOffset": 121,
+          "score": 0.5711682,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 277,
+          "endOffset": 284,
+          "score": 0.9966618,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cbc75422-e29d-4c40-bfd9-2c180e33f9af"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cbc75422-e29d-4c40-bfd9-2c180e33f9af"
+          ],
+          "Content-Length": [
+            "885"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "885",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:18 GMT",
+          "x-amzn-RequestId": "cbc75422-e29d-4c40-bfd9-2c180e33f9af"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "bloating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98653597,
+          "beginOffset": 38,
+          "endOffset": 46,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6899867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abdominal distension (gaseous)",
+              "code": "R14.0",
+              "score": 0.83004826
+            },
+            {
+              "description": "Other specified disorders of veins",
+              "code": "I87.8",
+              "score": 0.6916146
+            },
+            {
+              "description": "Other specified disorders of bladder",
+              "code": "N32.89",
+              "score": 0.6200216
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "constipation",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9977653,
+          "beginOffset": 60,
+          "endOffset": 72,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.64213467
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Constipation, unspecified",
+              "code": "K59.00",
+              "score": 0.8731682
+            },
+            {
+              "description": "Other constipation",
+              "code": "K59.09",
+              "score": 0.77251315
+            },
+            {
+              "description": "Irritable bowel syndrome with constipation",
+              "code": "K58.1",
+              "score": 0.6890302
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.6128207
+            },
+            {
+              "description": "Slow transit constipation",
+              "code": "K59.01",
+              "score": 0.59562963
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2bda726b-4167-4a56-bfb5-45708645138f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2bda726b-4167-4a56-bfb5-45708645138f"
+          ],
+          "Content-Length": [
+            "1255"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1255",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:19 GMT",
+          "x-amzn-RequestId": "2bda726b-4167-4a56-bfb5-45708645138f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 495,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9977864,
+          "beginOffset": 97,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "atorvastatin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.5711682,
+          "beginOffset": 109,
+          "endOffset": 121,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "atorvastatin",
+              "code": "83367",
+              "score": 0.9420543
+            },
+            {
+              "description": "atorvastatin 20 MG Oral Tablet",
+              "code": "617310",
+              "score": 0.8040979
+            },
+            {
+              "description": "atorvastatin 10 MG Oral Tablet",
+              "code": "617312",
+              "score": 0.78608227
+            },
+            {
+              "description": "atorvastatin 80 MG Oral Tablet",
+              "code": "259255",
+              "score": 0.64597005
+            },
+            {
+              "description": "atorvastatin 40 MG Oral Tablet",
+              "code": "617311",
+              "score": 0.5089147
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9966618,
+          "beginOffset": 277,
+          "endOffset": 284,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Oral Tablet [Anacin Aspirin Regimen]",
+              "code": "724444",
+              "score": 0.16114618
+            },
+            {
+              "description": "Aspirin 500 MG Delayed Release Oral Tablet",
+              "code": "308409",
+              "score": 0.14790183
+            },
+            {
+              "description": "Aspirin 228 MG Chewing Gum",
+              "code": "853499",
+              "score": 0.10526551
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "61939eb8-4772-4bb0-ae1f-ad9685b3dc7c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "61939eb8-4772-4bb0-ae1f-ad9685b3dc7c"
+          ],
+          "Content-Length": [
+            "1963"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1963",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:18 GMT",
+          "x-amzn-RequestId": "61939eb8-4772-4bb0-ae1f-ad9685b3dc7c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:19 PM"
+}

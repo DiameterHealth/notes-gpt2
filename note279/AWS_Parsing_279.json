@@ -1,0 +1,197 @@
+{
+  "note": "_________ and will continue to be kept in the hospital ________. Pt will need constant supervision ________ of oxygen. If the patient has been recently discharged from hospital with breathing difficulties they may be kept at home. A hospital visit will be required to ensure the patient is receiving the medications given within the hospital setting. The home oxygen and monitor are for life sustaining purposes only.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 324,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 111,
+          "endOffset": 117,
+          "score": 0.8920108,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 182,
+          "endOffset": 204,
+          "score": 0.7616719,
+          "text": "breathing difficulties",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5643516
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 360,
+          "endOffset": 366,
+          "score": 0.8844665,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ab2a0e84-3944-4228-b66c-ac09f2ec3e1b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ab2a0e84-3944-4228-b66c-ac09f2ec3e1b"
+          ],
+          "Content-Length": [
+            "588"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "588",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:19 GMT",
+          "x-amzn-RequestId": "ab2a0e84-3944-4228-b66c-ac09f2ec3e1b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 397,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "breathing difficulties",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7616719,
+          "beginOffset": 182,
+          "endOffset": 204,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5643517
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.6385691
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.6073754
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.58569986
+            },
+            {
+              "description": "Unspecified abnormalities of breathing",
+              "code": "R06.9",
+              "score": 0.58446217
+            },
+            {
+              "description": "Tachypnea, not elsewhere classified",
+              "code": "R06.82",
+              "score": 0.52155644
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed81ce88-c8b5-4c97-a4bd-9fca46b6d44b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed81ce88-c8b5-4c97-a4bd-9fca46b6d44b"
+          ],
+          "Content-Length": [
+            "736"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "736",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:19 GMT",
+          "x-amzn-RequestId": "ed81ce88-c8b5-4c97-a4bd-9fca46b6d44b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 229,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "efa715a2-83f3-421d-81a7-39aec4c31273"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "efa715a2-83f3-421d-81a7-39aec4c31273"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:19 GMT",
+          "x-amzn-RequestId": "efa715a2-83f3-421d-81a7-39aec4c31273"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:20 PM"
+}

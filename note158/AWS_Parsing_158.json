@@ -1,0 +1,487 @@
+{
+  "note": "Precaution: Do not use if the patient is allergic to aspirin. Patients suspected of having glioblastoma multiforme (GBM) may be treated with this product or an NSAID(such as indacaterol), which may be added to NSAIDs administered to patients with glioblastoma multiforme. Topical corticosteroid can be used to reduce the risk. Other: Follow instructions on the package pack carefully  Caring for Patients:  Ask the patient\u0027s doctor or nurse before using any products.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 435,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 53,
+          "endOffset": 60,
+          "score": 0.99892646,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 91,
+          "endOffset": 114,
+          "score": 0.81848836,
+          "text": "glioblastoma multiforme",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9691149
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 116,
+          "endOffset": 119,
+          "score": 0.89923275,
+          "text": "GBM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93767905
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 160,
+          "endOffset": 165,
+          "score": 0.87412477,
+          "text": "NSAID",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 160,
+          "endOffset": 165,
+          "score": 0.52353066,
+          "text": "NSAID",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 174,
+          "endOffset": 185,
+          "score": 0.9929617,
+          "text": "indacaterol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 210,
+          "endOffset": 216,
+          "score": 0.8715631,
+          "text": "NSAIDs",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 210,
+          "endOffset": 216,
+          "score": 0.8131848,
+          "text": "NSAIDs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 247,
+          "endOffset": 270,
+          "score": 0.64896494,
+          "text": "glioblastoma multiforme",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9632749
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 272,
+          "endOffset": 294,
+          "score": 0.8988742,
+          "text": "Topical corticosteroid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 280,
+          "endOffset": 294,
+          "score": 0.9838308,
+          "text": "corticosteroid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.91313076,
+              "relationshipScore": 0.9999684,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 4,
+              "beginOffset": 272,
+              "endOffset": 279,
+              "text": "Topical",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "26499517-69b7-4cd4-a62d-e2145a7f161d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "26499517-69b7-4cd4-a62d-e2145a7f161d"
+          ],
+          "Content-Length": [
+            "2131"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2131",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:14 GMT",
+          "x-amzn-RequestId": "26499517-69b7-4cd4-a62d-e2145a7f161d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 406,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "glioblastoma multiforme",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.81848836,
+          "beginOffset": 91,
+          "endOffset": 114,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9691149
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nonbullous erythema multiforme",
+              "code": "L51.0",
+              "score": 0.38808012
+            },
+            {
+              "description": "Stevens-Johnson syndrome",
+              "code": "L51.1",
+              "score": 0.35306248
+            },
+            {
+              "description": "Erythema multiforme, unspecified",
+              "code": "L51.9",
+              "score": 0.3528507
+            },
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.33338892
+            },
+            {
+              "description": "Multifocal and unisystemic Langerhans-cell histiocytosis",
+              "code": "C96.5",
+              "score": 0.31259942
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "GBM",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89923275,
+          "beginOffset": 116,
+          "endOffset": 119,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93767905
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tubulo-interstitial nephritis, not specified as acute or chronic",
+              "code": "N12",
+              "score": 0.8598126
+            },
+            {
+              "description": "Hypersensitivity angiitis",
+              "code": "M31.0",
+              "score": 0.38679838
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "glioblastoma multiforme",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.648965,
+          "beginOffset": 247,
+          "endOffset": 270,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9632749
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nonbullous erythema multiforme",
+              "code": "L51.0",
+              "score": 0.3901601
+            },
+            {
+              "description": "Erythema multiforme, unspecified",
+              "code": "L51.9",
+              "score": 0.3516271
+            },
+            {
+              "description": "Stevens-Johnson syndrome",
+              "code": "L51.1",
+              "score": 0.34051597
+            },
+            {
+              "description": "Malignant neoplasm of brain, unspecified",
+              "code": "C71.9",
+              "score": 0.31718245
+            },
+            {
+              "description": "Other erythema multiforme",
+              "code": "L51.8",
+              "score": 0.29736507
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "75711f64-b4e0-4780-9d5d-da919798e441"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "75711f64-b4e0-4780-9d5d-da919798e441"
+          ],
+          "Content-Length": [
+            "1911"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1911",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:15 GMT",
+          "x-amzn-RequestId": "75711f64-b4e0-4780-9d5d-da919798e441"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 613,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "aspirin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99892646,
+          "beginOffset": 53,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Aspirin",
+              "code": "1191",
+              "score": 0.94121015
+            },
+            {
+              "description": "Aspirin 975 MG Delayed Release Oral Tablet",
+              "code": "308417",
+              "score": 0.5303385
+            },
+            {
+              "description": "Aspirin 325 MG Oral Capsule",
+              "code": "198466",
+              "score": 0.37981474
+            },
+            {
+              "description": "Aspirin 81 MG Delayed Release Oral Tablet [Aspir-Low]",
+              "code": "1293665",
+              "score": 0.33232558
+            },
+            {
+              "description": "Aspirin 650 MG Delayed Release Oral Tablet",
+              "code": "308411",
+              "score": 0.3007283
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "NSAID",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.87412477,
+          "beginOffset": 160,
+          "endOffset": 165,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "snail preparation",
+              "code": "1368534",
+              "score": 0.3918542
+            },
+            {
+              "description": "Nicotinamide adenine dinucleotide (NAD)",
+              "code": "1044975",
+              "score": 0.10600197
+            },
+            {
+              "description": "Garden snail mucin preparation",
+              "code": "1428846",
+              "score": 0.05381812
+            },
+            {
+              "description": "sea snail preparation",
+              "code": "1546397",
+              "score": 0.020082394
+            },
+            {
+              "description": "snowball sand verbena whole extract",
+              "code": "1737112",
+              "score": 0.0147492
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "indacaterol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9929617,
+          "beginOffset": 174,
+          "endOffset": 185,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "indacaterol",
+              "code": "1114326",
+              "score": 0.93823403
+            },
+            {
+              "description": "Glycopyrrolate 0.0156 MG / indacaterol 0.0275 MG Inhalant Powder",
+              "code": "1720948",
+              "score": 0.5965485
+            },
+            {
+              "description": "indacaterol 0.075 MG Inhalant Powder",
+              "code": "1114329",
+              "score": 0.16692784
+            },
+            {
+              "description": "Glycopyrrolate 0.0156 MG / indacaterol 0.0275 MG Inhalant Powder [Utibron]",
+              "code": "1720953",
+              "score": 0.08460671
+            },
+            {
+              "description": "indacaterol 0.075 MG Inhalant Powder [Arcapta]",
+              "code": "1114333",
+              "score": 0.016668268
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cee764c6-89a7-44cc-9538-ae17477806e5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cee764c6-89a7-44cc-9538-ae17477806e5"
+          ],
+          "Content-Length": [
+            "2070"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2070",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:14 GMT",
+          "x-amzn-RequestId": "cee764c6-89a7-44cc-9538-ae17477806e5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:15 PM"
+}

@@ -1,0 +1,987 @@
+{
+  "note": "for at least 3 weeks (for at least 4 days per week for a total of 3 weeks) Have blood pressure over 130/80 mm Hg Have heart disease or diabetes or are in the first degree relative of someone with heart disease or diabetes Have a chronic illness or cancer Have received a blood transfusion within 6 months Have received a blood transfusion within 12 months Have received a stem cell or bone marrow transplant within the last 6 months Have received radiation therapy within 6 months Have been taking a prescription medication within the past month Have had a pregnancy within the past 6 months Have been using a prescribed insulin or other diabetes medication within the past month Have used marijuana within the past 48 hours Have used marijuana for ≥1/2 hour in the 24 hours prior to the Medicare-covered visit  For example:  Subjective report: Patient is healthy, does not have any complaints.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1544,
+    "data": {
+      "entities": [
+        {
+          "id": 14,
+          "beginOffset": 80,
+          "endOffset": 94,
+          "score": 0.9608422,
+          "text": "blood pressure",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.36370465,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 95,
+              "endOffset": 112,
+              "text": "over 130/80 mm Hg",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 118,
+          "endOffset": 123,
+          "score": 0.93940324,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 118,
+          "endOffset": 131,
+          "score": 0.78043646,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9201347
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 135,
+          "endOffset": 143,
+          "score": 0.9894147,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94334114
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 196,
+          "endOffset": 201,
+          "score": 0.9579784,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 196,
+          "endOffset": 209,
+          "score": 0.8535438,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93902814
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 213,
+          "endOffset": 221,
+          "score": 0.9762368,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94290966
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 237,
+          "endOffset": 244,
+          "score": 0.90355945,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7423141
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9852579,
+              "relationshipScore": 0.9996038,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 229,
+              "endOffset": 236,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 248,
+          "endOffset": 254,
+          "score": 0.98697436,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96518666
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 271,
+          "endOffset": 288,
+          "score": 0.75011796,
+          "text": "blood transfusion",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 21,
+          "beginOffset": 289,
+          "endOffset": 304,
+          "score": 0.88214624,
+          "text": "within 6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.75011796,
+              "relationshipScore": 0.83543736,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 271,
+              "endOffset": 288,
+              "text": "blood transfusion",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 321,
+          "endOffset": 338,
+          "score": 0.86781436,
+          "text": "blood transfusion",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 22,
+          "beginOffset": 339,
+          "endOffset": 355,
+          "score": 0.4411079,
+          "text": "within 12 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.86781436,
+              "relationshipScore": 0.73934597,
+              "relationshipType": "OVERLAP",
+              "id": 17,
+              "beginOffset": 321,
+              "endOffset": 338,
+              "text": "blood transfusion",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 372,
+          "endOffset": 407,
+          "score": 0.7941022,
+          "text": "stem cell or bone marrow transplant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 385,
+          "endOffset": 396,
+          "score": 0.8746622,
+          "text": "bone marrow",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 19,
+          "beginOffset": 447,
+          "endOffset": 464,
+          "score": 0.950876,
+          "text": "radiation therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 24,
+          "beginOffset": 465,
+          "endOffset": 480,
+          "score": 0.9653486,
+          "text": "within 6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.950876,
+              "relationshipScore": 0.61207366,
+              "relationshipType": "OVERLAP",
+              "id": 19,
+              "beginOffset": 447,
+              "endOffset": 464,
+              "text": "radiation therapy",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 557,
+          "endOffset": 566,
+          "score": 0.9906461,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95509434
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "beginOffset": 578,
+          "endOffset": 591,
+          "score": 0.9991516,
+          "text": "past 6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9906461,
+              "relationshipScore": 0.59012574,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 557,
+              "endOffset": 566,
+              "text": "pregnancy",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.95509434
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 621,
+          "endOffset": 628,
+          "score": 0.9533444,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 638,
+          "endOffset": 646,
+          "score": 0.7641962,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84514976
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 638,
+          "endOffset": 657,
+          "score": 0.81277645,
+          "text": "diabetes medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 27,
+          "beginOffset": 669,
+          "endOffset": 679,
+          "score": 0.95647335,
+          "text": "past month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.7641962,
+              "relationshipScore": 0.62907284,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 638,
+              "endOffset": 646,
+              "text": "diabetes",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.84514976
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 27,
+          "beginOffset": 669,
+          "endOffset": 679,
+          "score": 0.95647335,
+          "text": "past month",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.81277645,
+              "relationshipScore": 0.6959569,
+              "relationshipType": "OVERLAP",
+              "id": 20,
+              "beginOffset": 638,
+              "endOffset": 657,
+              "text": "diabetes medication",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 856,
+          "endOffset": 863,
+          "score": 0.78556794,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5146131
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9852579,
+            "id": 8,
+            "beginOffset": 229,
+            "endOffset": 236,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7f2d5c8c-3768-4cd2-9ac1-bb8bb8b7f196"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7f2d5c8c-3768-4cd2-9ac1-bb8bb8b7f196"
+          ],
+          "Content-Length": [
+            "6682"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6682",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:30 GMT",
+          "x-amzn-RequestId": "7f2d5c8c-3768-4cd2-9ac1-bb8bb8b7f196"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1267,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78043646,
+          "beginOffset": 118,
+          "endOffset": 131,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9201347
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.63464415
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.0",
+              "score": 0.5690156
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.56565684
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.5483689
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.49512303
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9894147,
+          "beginOffset": 135,
+          "endOffset": 143,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9433412
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.69817364
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6394527
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.55711967
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.55435055
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.54772925
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.85354364,
+          "beginOffset": 196,
+          "endOffset": 209,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93902814
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.640444
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.5750218
+            },
+            {
+              "description": "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease",
+              "code": "I13.0",
+              "score": 0.5648689
+            },
+            {
+              "description": "Hypertensive heart disease with heart failure",
+              "code": "I11.0",
+              "score": 0.55448216
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.5347316
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9762368,
+          "beginOffset": 213,
+          "endOffset": 221,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94290966
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.70026183
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6299651
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.5815904
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.5714761
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.55692464
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "illness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.90355945,
+          "beginOffset": 237,
+          "endOffset": 244,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9852578,
+              "relationshipScore": 0.9996038,
+              "id": 6,
+              "beginOffset": 229,
+              "endOffset": 236,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7423141
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.59904706
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.47442594
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.45552412
+            },
+            {
+              "description": "Mental disorder, not otherwise specified",
+              "code": "F99",
+              "score": 0.45369655
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.39652333
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "cancer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98697436,
+          "beginOffset": 248,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.96518666
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Malignant neoplasm of unspecified site of left female breast",
+              "code": "C50.912",
+              "score": 0.59786963
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.53665495
+            },
+            {
+              "description": "Personal history of malignant neoplasm, unspecified",
+              "code": "Z85.9",
+              "score": 0.5311594
+            },
+            {
+              "description": "Malignant neoplasm of prostate",
+              "code": "C61",
+              "score": 0.52499413
+            },
+            {
+              "description": "Malignant neoplasm of rectum",
+              "code": "C20",
+              "score": 0.50987476
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "pregnancy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9906461,
+          "beginOffset": 557,
+          "endOffset": 566,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.95509434
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pregnant state, incidental",
+              "code": "Z33.1",
+              "score": 0.72643197
+            },
+            {
+              "description": "28 weeks gestation of pregnancy",
+              "code": "Z3A.28",
+              "score": 0.65091676
+            },
+            {
+              "description": "Personal history of other complications of pregnancy, childbirth and the puerperium",
+              "code": "Z87.59",
+              "score": 0.6466291
+            },
+            {
+              "description": "29 weeks gestation of pregnancy",
+              "code": "Z3A.29",
+              "score": 0.6376055
+            },
+            {
+              "description": "Gestational diabetes mellitus in pregnancy, unspecified control",
+              "code": "O24.419",
+              "score": 0.6370408
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7641962,
+          "beginOffset": 638,
+          "endOffset": 646,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84514976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.7960107
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7140833
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7067749
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.6715129
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic neuropathy, unspecified",
+              "code": "E11.40",
+              "score": 0.6703299
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78556794,
+          "beginOffset": 856,
+          "endOffset": 863,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5146131
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.827548
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.8085872
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.7836732
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.7609025
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.7524716
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0ca6dc0a-031b-40eb-8dac-9dd65912a512"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0ca6dc0a-031b-40eb-8dac-9dd65912a512"
+          ],
+          "Content-Length": [
+            "7321"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:31 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7321",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:31 GMT",
+          "x-amzn-RequestId": "0ca6dc0a-031b-40eb-8dac-9dd65912a512"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 662,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "insulin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9533444,
+          "beginOffset": 621,
+          "endOffset": 628,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Insulin Glargine",
+              "code": "274783",
+              "score": 0.87097144
+            },
+            {
+              "description": "insulin, isophane",
+              "code": "1605101",
+              "score": 0.8187334
+            },
+            {
+              "description": "Insulin, Aspart, Human",
+              "code": "51428",
+              "score": 0.80659676
+            },
+            {
+              "description": "Insulin, Glulisine, Human",
+              "code": "400008",
+              "score": 0.576264
+            },
+            {
+              "description": "Ultralente Insulin, Human",
+              "code": "221110",
+              "score": 0.5593505
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "abb0223c-8488-4843-b24d-faa1bae04f55"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "abb0223c-8488-4843-b24d-faa1bae04f55"
+          ],
+          "Content-Length": [
+            "632"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:30 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "632",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:30 GMT",
+          "x-amzn-RequestId": "abb0223c-8488-4843-b24d-faa1bae04f55"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:32 PM"
+}

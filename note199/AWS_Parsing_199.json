@@ -1,0 +1,497 @@
+{
+  "note": "(with the patient\u0027s permission). Dosing: The patient is given 3 units of 1:1 CBD:THC in 100mg capsule (with a total CBD dose, including pre-treatment, of 1.9mg). Expected Consequence: The patient\u0027s symptoms are decreased, with no psychoactive effects. Comments: This regimen provides an excellent relief from pain, and the patient does not feel high or hallucinated.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 412,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 81,
+          "endOffset": 84,
+          "score": 0.3153006,
+          "text": "THC",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.79442924,
+              "relationshipScore": 0.9790509,
+              "relationshipType": "DOSAGE",
+              "id": 0,
+              "beginOffset": 62,
+              "endOffset": 69,
+              "text": "3 units",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.6300457,
+              "relationshipScore": 0.99993074,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 88,
+              "endOffset": 93,
+              "text": "100mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.93554664,
+              "relationshipScore": 0.9672134,
+              "relationshipType": "FORM",
+              "id": 3,
+              "beginOffset": 94,
+              "endOffset": 101,
+              "text": "capsule",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.58768386,
+              "relationshipScore": 0.99925035,
+              "relationshipType": "DOSAGE",
+              "id": 4,
+              "beginOffset": 154,
+              "endOffset": 159,
+              "text": "1.9mg",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 230,
+          "endOffset": 250,
+          "score": 0.72890747,
+          "text": "psychoactive effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6080982
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.78628093
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 309,
+          "endOffset": 313,
+          "score": 0.9646676,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4378682
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 345,
+          "endOffset": 349,
+          "score": 0.22664791,
+          "text": "high",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 353,
+          "endOffset": 365,
+          "score": 0.82305604,
+          "text": "hallucinated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7335546
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.83147234
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "af8d3e8f-ec23-4953-b11d-342230462628"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "af8d3e8f-ec23-4953-b11d-342230462628"
+          ],
+          "Content-Length": [
+            "1851"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1851",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:15 GMT",
+          "x-amzn-RequestId": "af8d3e8f-ec23-4953-b11d-342230462628"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 385,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "psychoactive effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.72890747,
+          "beginOffset": 230,
+          "endOffset": 250,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6080982
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.78628093
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other psychoactive substance abuse, uncomplicated",
+              "code": "F19.10",
+              "score": 0.73989505
+            },
+            {
+              "description": "Other psychoactive substance dependence, uncomplicated",
+              "code": "F19.20",
+              "score": 0.6635916
+            },
+            {
+              "description": "Other psychoactive substance use, unspecified, uncomplicated",
+              "code": "F19.90",
+              "score": 0.61227024
+            },
+            {
+              "description": "Other psychoactive substance dependence with withdrawal, uncomplicated",
+              "code": "F19.230",
+              "score": 0.60747343
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.54801416
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9646676,
+          "beginOffset": 309,
+          "endOffset": 313,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.4378682
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.658386
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.5067017
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.48786792
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.48695076
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4813487
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "high",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.22664794,
+          "beginOffset": 345,
+          "endOffset": 349,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hyperkalemia",
+              "code": "E87.5",
+              "score": 0.7843538
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.784231
+            },
+            {
+              "description": "Hyperglycemia, unspecified",
+              "code": "R73.9",
+              "score": 0.68112934
+            },
+            {
+              "description": "Pure hypercholesterolemia, unspecified",
+              "code": "E78.00",
+              "score": 0.6759604
+            },
+            {
+              "description": "Bilateral high scrotal testes",
+              "code": "Q53.23",
+              "score": 0.6143917
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "hallucinated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82305616,
+          "beginOffset": 353,
+          "endOffset": 365,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7335547
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.83147234
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hallucinations, unspecified",
+              "code": "R44.3",
+              "score": 0.679671
+            },
+            {
+              "description": "Other hallucinations",
+              "code": "R44.2",
+              "score": 0.5104716
+            },
+            {
+              "description": "Visual hallucinations",
+              "code": "R44.1",
+              "score": 0.47605893
+            },
+            {
+              "description": "Alcohol abuse with alcohol-induced psychotic disorder with hallucinations",
+              "code": "F10.151",
+              "score": 0.36395386
+            },
+            {
+              "description": "Other stimulant use, unspecified with stimulant-induced psychotic disorder with hallucinations",
+              "code": "F15.951",
+              "score": 0.36209917
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ec8edb80-9cad-4d90-918d-4b4291f24307"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ec8edb80-9cad-4d90-918d-4b4291f24307"
+          ],
+          "Content-Length": [
+            "2975"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2975",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:18 GMT",
+          "x-amzn-RequestId": "ec8edb80-9cad-4d90-918d-4b4291f24307"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 2818,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "THC",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.31530055,
+          "beginOffset": 81,
+          "endOffset": 84,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.7944291,
+              "relationshipScore": 0.9790509,
+              "id": 0,
+              "beginOffset": 62,
+              "endOffset": 69,
+              "text": "3 units",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.6300458,
+              "relationshipScore": 0.99993074,
+              "id": 2,
+              "beginOffset": 88,
+              "endOffset": 93,
+              "text": "100mg",
+              "traits": []
+            },
+            {
+              "type": "FORM",
+              "score": 0.93554664,
+              "relationshipScore": 0.9672134,
+              "id": 3,
+              "beginOffset": 94,
+              "endOffset": 101,
+              "text": "capsule",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.58768374,
+              "relationshipScore": 0.99925035,
+              "id": 4,
+              "beginOffset": 154,
+              "endOffset": 159,
+              "text": "1.9mg",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Sodium Pertechnetate Tc 99m",
+              "code": "10349",
+              "score": 0.07294493
+            },
+            {
+              "description": "Technetium Tc 99m Pertechnetate",
+              "code": "1489762",
+              "score": 0.03692441
+            },
+            {
+              "description": "tag alder pollen extract 100 MG/ML Injectable Solution",
+              "code": "895683",
+              "score": 0.03195747
+            },
+            {
+              "description": "technetium Tc 99m bicisate",
+              "code": "114918",
+              "score": 0.024383215
+            },
+            {
+              "description": "Talc 5000 MG Topical Powder",
+              "code": "876229",
+              "score": 0.022827528
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "06642e92-cdc9-4e6c-b82c-93b192b8794a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "06642e92-cdc9-4e6c-b82c-93b192b8794a"
+          ],
+          "Content-Length": [
+            "1294"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1294",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:18 GMT",
+          "x-amzn-RequestId": "06642e92-cdc9-4e6c-b82c-93b192b8794a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:19 PM"
+}

@@ -1,0 +1,289 @@
+{
+  "note": "with poor glucose control. She was advised to see an endocrinologist, and she was retested after this visit. No additional complications have been seen since this visit. Diabetes Control  This is the PT\u0027s blood glucose control from the previous visit. Recent Changes  This is the PT\u0027s recent changes at this appointment. Radiology Report  This is the PT\u0027s recent radiologic findings and exam history.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 370,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 5,
+          "endOffset": 25,
+          "score": 0.6930749,
+          "text": "poor glucose control",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 170,
+          "endOffset": 178,
+          "score": 0.7056433,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7266908
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 170,
+          "endOffset": 186,
+          "score": 0.53164417,
+          "text": "Diabetes Control",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 205,
+          "endOffset": 226,
+          "score": 0.42895618,
+          "text": "blood glucose control",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 321,
+          "endOffset": 330,
+          "score": 0.16751896,
+          "text": "Radiology",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 356,
+          "endOffset": 362,
+          "score": 0.999998,
+          "text": "recent",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.44023088,
+              "relationshipScore": 0.9831677,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 363,
+              "endOffset": 382,
+              "text": "radiologic findings",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 363,
+          "endOffset": 382,
+          "score": 0.44023088,
+          "text": "radiologic findings",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b4b001f5-0af9-4cb4-85f6-353288c0bd52"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b4b001f5-0af9-4cb4-85f6-353288c0bd52"
+          ],
+          "Content-Length": [
+            "1492"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1492",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:12 GMT",
+          "x-amzn-RequestId": "b4b001f5-0af9-4cb4-85f6-353288c0bd52"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 348,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "poor glucose control",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.693075,
+          "beginOffset": 5,
+          "endOffset": 25,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.61949456
+            },
+            {
+              "description": "Other abnormal glucose",
+              "code": "R73.09",
+              "score": 0.57956654
+            },
+            {
+              "description": "Abnormal reflex",
+              "code": "R29.2",
+              "score": 0.5615291
+            },
+            {
+              "description": "Impulse disorder, unspecified",
+              "code": "F63.9",
+              "score": 0.53376913
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.5196622
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7056433,
+          "beginOffset": 170,
+          "endOffset": 178,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7266908
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.8355561
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.75329214
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.7155625
+            },
+            {
+              "description": "Type 2 diabetes mellitus with hyperglycemia",
+              "code": "E11.65",
+              "score": 0.69523805
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.6927733
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3a91a120-5371-41cf-a3bf-99854292fbac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3a91a120-5371-41cf-a3bf-99854292fbac"
+          ],
+          "Content-Length": [
+            "1444"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1444",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:13 GMT",
+          "x-amzn-RequestId": "3a91a120-5371-41cf-a3bf-99854292fbac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 190,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c2b45dc4-cb6f-49f7-810b-7ca2f8fd3e58"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c2b45dc4-cb6f-49f7-810b-7ca2f8fd3e58"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:12 GMT",
+          "x-amzn-RequestId": "c2b45dc4-cb6f-49f7-810b-7ca2f8fd3e58"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:14 PM"
+}

@@ -1,0 +1,613 @@
+{
+  "note": "The patient is having difficulty tolerating the use of nitroglycerin due to weight concerns. The patient is not on anticoagulant medications. The patient presents with dyspnea and has had episodes of dyspnea that have occurred in addition to the asthma attacks. The patient is on metoprolol. The patient presents with a history of moderate to severe asthma (asthma of both types) that resolved with initiation of daily doses of nebulized beta-adrenergic medication.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 494,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 22,
+          "endOffset": 43,
+          "score": 0.55830234,
+          "text": "difficulty tolerating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 55,
+          "endOffset": 68,
+          "score": 0.9968953,
+          "text": "nitroglycerin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 115,
+          "endOffset": 140,
+          "score": 0.7454362,
+          "text": "anticoagulant medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 168,
+          "endOffset": 175,
+          "score": 0.98725545,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.80596894
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 200,
+          "endOffset": 207,
+          "score": 0.99527127,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7118715
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.583447,
+              "relationshipScore": 0.99738735,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 188,
+              "endOffset": 196,
+              "text": "episodes",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 246,
+          "endOffset": 260,
+          "score": 0.5864935,
+          "text": "asthma attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84579736
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 280,
+          "endOffset": 290,
+          "score": 0.99771225,
+          "text": "metoprolol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 350,
+          "endOffset": 356,
+          "score": 0.9957741,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93087584
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 358,
+          "endOffset": 364,
+          "score": 0.99551386,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9283449
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 428,
+          "endOffset": 464,
+          "score": 0.478978,
+          "text": "nebulized beta-adrenergic medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.583447,
+            "id": 4,
+            "beginOffset": 188,
+            "endOffset": 196,
+            "text": "episodes",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "84555a6e-b132-4b4e-bc79-0ae1dad1eb98"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "84555a6e-b132-4b4e-bc79-0ae1dad1eb98"
+          ],
+          "Content-Length": [
+            "2272"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:12 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2272",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:12 GMT",
+          "x-amzn-RequestId": "84555a6e-b132-4b4e-bc79-0ae1dad1eb98"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 458,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "difficulty tolerating",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.55830234,
+          "beginOffset": 22,
+          "endOffset": 43,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.73840326
+            },
+            {
+              "description": "Other malaise",
+              "code": "R53.81",
+              "score": 0.6812542
+            },
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.6574464
+            },
+            {
+              "description": "Other difficulties with micturition",
+              "code": "R39.198",
+              "score": 0.63279444
+            },
+            {
+              "description": "Other abnormal glucose",
+              "code": "R73.09",
+              "score": 0.5343661
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98725545,
+          "beginOffset": 168,
+          "endOffset": 175,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.80596894
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.71245915
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.61017686
+            },
+            {
+              "description": "Dyspnea",
+              "code": "R06.0",
+              "score": 0.4561813
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.43650037
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.4204971
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "dyspnea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99527127,
+          "beginOffset": 200,
+          "endOffset": 207,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.58344686,
+              "relationshipScore": 0.99738735,
+              "id": 2,
+              "beginOffset": 188,
+              "endOffset": 196,
+              "text": "episodes",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.71187156
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Dyspnea, unspecified",
+              "code": "R06.00",
+              "score": 0.74134934
+            },
+            {
+              "description": "Other forms of dyspnea",
+              "code": "R06.09",
+              "score": 0.66646624
+            },
+            {
+              "description": "Dyspnea",
+              "code": "R06.0",
+              "score": 0.5248658
+            },
+            {
+              "description": "Other abnormalities of breathing",
+              "code": "R06.89",
+              "score": 0.4933787
+            },
+            {
+              "description": "Orthopnea",
+              "code": "R06.01",
+              "score": 0.4422772
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "asthma attacks",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5864937,
+          "beginOffset": 246,
+          "endOffset": 260,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.84579736
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.51969427
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.37148848
+            },
+            {
+              "description": "Severe persistent asthma, uncomplicated",
+              "code": "J45.50",
+              "score": 0.34236896
+            },
+            {
+              "description": "Unspecified asthma with status asthmaticus",
+              "code": "J45.902",
+              "score": 0.3257673
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.31818178
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9957741,
+          "beginOffset": 350,
+          "endOffset": 356,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93087584
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.6714751
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.5018901
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.45279428
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.41811758
+            },
+            {
+              "description": "Mild intermittent asthma, uncomplicated",
+              "code": "J45.20",
+              "score": 0.37473357
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99551386,
+          "beginOffset": 358,
+          "endOffset": 364,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9283449
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.61135346
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.4393338
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.39692515
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.37786803
+            },
+            {
+              "description": "Severe persistent asthma, uncomplicated",
+              "code": "J45.50",
+              "score": 0.37656564
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1cd4d2f5-ac15-40cd-b7ee-d62da0af890a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1cd4d2f5-ac15-40cd-b7ee-d62da0af890a"
+          ],
+          "Content-Length": [
+            "4270"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4270",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:13 GMT",
+          "x-amzn-RequestId": "1cd4d2f5-ac15-40cd-b7ee-d62da0af890a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 499,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "nitroglycerin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9968953,
+          "beginOffset": 55,
+          "endOffset": 68,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Nitroglycerin",
+              "code": "4917",
+              "score": 0.93150866
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG/ACTUAT Mucosal Spray [Nitrolingual]",
+              "code": "995019",
+              "score": 0.6755852
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG Sublingual Tablet [Nitrostat]",
+              "code": "207346",
+              "score": 0.40681672
+            },
+            {
+              "description": "Nitroglycerin 0.4 MG Sublingual Tablet",
+              "code": "198039",
+              "score": 0.39992502
+            },
+            {
+              "description": "24 HR Nitroglycerin 0.1 MG/HR Transdermal System [Minitran]",
+              "code": "861659",
+              "score": 0.17226326
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "metoprolol",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99771225,
+          "beginOffset": 280,
+          "endOffset": 290,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Metoprolol",
+              "code": "6918",
+              "score": 0.9479437
+            },
+            {
+              "description": "24 HR metoprolol succinate 25 MG Extended Release Oral Capsule",
+              "code": "1999035",
+              "score": 0.7103828
+            },
+            {
+              "description": "5 ML Metoprolol Tartrate 1 MG/ML Injection",
+              "code": "866508",
+              "score": 0.6728413
+            },
+            {
+              "description": "Metoprolol Tartrate 75 MG Oral Tablet",
+              "code": "1606349",
+              "score": 0.6384548
+            },
+            {
+              "description": "Metoprolol Tartrate 37.5 MG Oral Tablet",
+              "code": "1606347",
+              "score": 0.5808862
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c9713a8c-69d7-4ec9-8b60-61ff5396071e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c9713a8c-69d7-4ec9-8b60-61ff5396071e"
+          ],
+          "Content-Length": [
+            "1426"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1426",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:13 GMT",
+          "x-amzn-RequestId": "c9713a8c-69d7-4ec9-8b60-61ff5396071e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:13 PM"
+}

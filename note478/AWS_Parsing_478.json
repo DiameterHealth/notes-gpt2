@@ -1,0 +1,843 @@
+{
+  "note": ". He is otherwise fit for work. EKG -Tests show normal heart rhythm (EKG - 3,3 V ). MULTILATERAL ECG shows a sinus bradycardia (ECG: 5) which is associated with an increase in sinus pressure. No other significant findings are seen. CONCLUSION: The patient is suffering from chronic sinus bradycardia secondary to an acute sinus infection or another acute condition. The patient has no other significant physical or neurological abnormalities.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 855,
+    "data": {
+      "entities": [
+        {
+          "id": 13,
+          "beginOffset": 32,
+          "endOffset": 35,
+          "score": 0.94736457,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 37,
+          "endOffset": 42,
+          "score": 0.7474649,
+          "text": "Tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 55,
+          "endOffset": 60,
+          "score": 0.66839117,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 55,
+          "endOffset": 67,
+          "score": 0.88901335,
+          "text": "heart rhythm",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.85198313,
+              "relationshipScore": 0.91973734,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 48,
+              "endOffset": 54,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 69,
+          "endOffset": 72,
+          "score": 0.98615164,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.35412532,
+              "relationshipScore": 0.9999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 75,
+              "endOffset": 78,
+              "text": "3,3",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.32706526,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_UNIT",
+              "id": 19,
+              "beginOffset": 79,
+              "endOffset": 80,
+              "text": "V",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 84,
+          "endOffset": 100,
+          "score": 0.7703812,
+          "text": "MULTILATERAL ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9741881,
+              "relationshipScore": 0.9985983,
+              "relationshipType": "TEST_VALUE",
+              "id": 21,
+              "beginOffset": 109,
+              "endOffset": 126,
+              "text": "sinus bradycardia",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4759643,
+              "relationshipScore": 0.6723589,
+              "relationshipType": "TEST_VALUE",
+              "id": 24,
+              "beginOffset": 164,
+              "endOffset": 190,
+              "text": "increase in sinus pressure",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7303449,
+              "relationshipScore": 0.9953909,
+              "relationshipType": "TEST_VALUE",
+              "id": 25,
+              "beginOffset": 192,
+              "endOffset": 230,
+              "text": "No other significant findings are seen",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 109,
+          "endOffset": 126,
+          "score": 0.62051564,
+          "text": "sinus bradycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.68671507
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 128,
+          "endOffset": 131,
+          "score": 0.9978504,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.523963,
+              "relationshipScore": 0.99999964,
+              "relationshipType": "TEST_VALUE",
+              "id": 23,
+              "beginOffset": 133,
+              "endOffset": 134,
+              "text": "5",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.4759643,
+              "relationshipScore": 0.9958988,
+              "relationshipType": "TEST_VALUE",
+              "id": 24,
+              "beginOffset": 164,
+              "endOffset": 190,
+              "text": "increase in sinus pressure",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7303449,
+              "relationshipScore": 0.999734,
+              "relationshipType": "TEST_VALUE",
+              "id": 25,
+              "beginOffset": 192,
+              "endOffset": 230,
+              "text": "No other significant findings are seen",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 176,
+          "endOffset": 181,
+          "score": 0.5021961,
+          "text": "sinus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 176,
+          "endOffset": 190,
+          "score": 0.54104483,
+          "text": "sinus pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.81577444
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 282,
+          "endOffset": 287,
+          "score": 0.6816485,
+          "text": "sinus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 282,
+          "endOffset": 299,
+          "score": 0.94666857,
+          "text": "sinus bradycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47631773
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9960569,
+              "relationshipScore": 0.8539663,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 274,
+              "endOffset": 281,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 322,
+          "endOffset": 327,
+          "score": 0.91540754,
+          "text": "sinus",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 322,
+          "endOffset": 337,
+          "score": 0.92829937,
+          "text": "sinus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5988746
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97925204,
+              "relationshipScore": 0.99992263,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 316,
+              "endOffset": 321,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 355,
+          "endOffset": 364,
+          "score": 0.37857252,
+          "text": "condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97925204,
+              "relationshipScore": 0.89719826,
+              "relationshipType": "ACUITY",
+              "id": 8,
+              "beginOffset": 316,
+              "endOffset": 321,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.66415095,
+              "relationshipScore": 0.9999913,
+              "relationshipType": "ACUITY",
+              "id": 10,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 403,
+          "endOffset": 441,
+          "score": 0.7877143,
+          "text": "physical or neurological abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8921216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9767669
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.66415095,
+              "relationshipScore": 0.62923217,
+              "relationshipType": "ACUITY",
+              "id": 10,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9960569,
+            "id": 6,
+            "beginOffset": 274,
+            "endOffset": 281,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.97925204,
+            "id": 8,
+            "beginOffset": 316,
+            "endOffset": 321,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.66415095,
+            "id": 10,
+            "beginOffset": 349,
+            "endOffset": 354,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b0f623ec-e533-4070-897c-6b7d46a763a8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b0f623ec-e533-4070-897c-6b7d46a763a8"
+          ],
+          "Content-Length": [
+            "6667"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6667",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:43 GMT",
+          "x-amzn-RequestId": "b0f623ec-e533-4070-897c-6b7d46a763a8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1719,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "sinus bradycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.62051576,
+          "beginOffset": 109,
+          "endOffset": 126,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.68671507
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.7665214
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.45941958
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.38676095
+            },
+            {
+              "description": "Chronic sinusitis, unspecified",
+              "code": "J32.9",
+              "score": 0.38349992
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.34621307
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sinus pressure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.54104483,
+          "beginOffset": 176,
+          "endOffset": 190,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.81577444
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.71925884
+            },
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.5675597
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.5565569
+            },
+            {
+              "description": "Chronic sinusitis, unspecified",
+              "code": "J32.9",
+              "score": 0.5506748
+            },
+            {
+              "description": "Unspecified disorder of nose and nasal sinuses",
+              "code": "J34.9",
+              "score": 0.5184383
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "sinus bradycardia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94666857,
+          "beginOffset": 282,
+          "endOffset": 299,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9960569,
+              "relationshipScore": 0.8539663,
+              "id": 4,
+              "beginOffset": 274,
+              "endOffset": 281,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.47631776
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bradycardia, unspecified",
+              "code": "R00.1",
+              "score": 0.7322071
+            },
+            {
+              "description": "Chronic sinusitis, unspecified",
+              "code": "J32.9",
+              "score": 0.40966448
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.37857246
+            },
+            {
+              "description": "Neonatal bradycardia",
+              "code": "P29.12",
+              "score": 0.31945923
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.29879916
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "sinus infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9282995,
+          "beginOffset": 322,
+          "endOffset": 337,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97925204,
+              "relationshipScore": 0.99992263,
+              "id": 7,
+              "beginOffset": 316,
+              "endOffset": 321,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5988746
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic sinusitis, unspecified",
+              "code": "J32.9",
+              "score": 0.69836116
+            },
+            {
+              "description": "Acute sinusitis, unspecified",
+              "code": "J01.90",
+              "score": 0.5813631
+            },
+            {
+              "description": "Acute ethmoidal sinusitis, unspecified",
+              "code": "J01.20",
+              "score": 0.56888163
+            },
+            {
+              "description": "Sick sinus syndrome",
+              "code": "I49.5",
+              "score": 0.56809056
+            },
+            {
+              "description": "Other specified disorders of nose and nasal sinuses",
+              "code": "J34.89",
+              "score": 0.53061825
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "condition",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.37857267,
+          "beginOffset": 355,
+          "endOffset": 364,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.97925204,
+              "relationshipScore": 0.89719826,
+              "id": 7,
+              "beginOffset": 316,
+              "endOffset": 321,
+              "text": "acute",
+              "traits": []
+            },
+            {
+              "type": "ACUITY",
+              "score": 0.66415095,
+              "relationshipScore": 0.9999913,
+              "id": 10,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nosocomial condition",
+              "code": "Y95",
+              "score": 0.71310866
+            },
+            {
+              "description": "Unspecified mental disorder due to known physiological condition",
+              "code": "F09",
+              "score": 0.65167135
+            },
+            {
+              "description": "Pyoderma",
+              "code": "L08.0",
+              "score": 0.5089911
+            },
+            {
+              "description": "Family history of other specified conditions",
+              "code": "Z84.89",
+              "score": 0.4863794
+            },
+            {
+              "description": "Encounter for screening for other disorder",
+              "code": "Z13.89",
+              "score": 0.43653733
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "physical or neurological abnormalities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7877143,
+          "beginOffset": 403,
+          "endOffset": 441,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.66415095,
+              "relationshipScore": 0.62923217,
+              "id": 10,
+              "beginOffset": 349,
+              "endOffset": 354,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8921216
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.9767669
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.7486466
+            },
+            {
+              "description": "Unspecified symptoms and signs involving the nervous system",
+              "code": "R29.90",
+              "score": 0.7038862
+            },
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.5309601
+            },
+            {
+              "description": "Age-related physical debility",
+              "code": "R54",
+              "score": 0.52229446
+            },
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.50766486
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0c592f49-eeb9-48d1-9001-ef683ac5144f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0c592f49-eeb9-48d1-9001-ef683ac5144f"
+          ],
+          "Content-Length": [
+            "5004"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:46 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "5004",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:46 GMT",
+          "x-amzn-RequestId": "0c592f49-eeb9-48d1-9001-ef683ac5144f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "845b7269-5eb6-48bc-abd1-b2ea1025588e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "845b7269-5eb6-48bc-abd1-b2ea1025588e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:33:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:33:44 GMT",
+          "x-amzn-RequestId": "845b7269-5eb6-48bc-abd1-b2ea1025588e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:33:46 PM"
+}

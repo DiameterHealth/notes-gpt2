@@ -1,0 +1,295 @@
+{
+  "note": ". This would not result in a severe complication. PT advised that the patient was a high risk for complications and continued to use the recommended antibiotic ointment for a few days until he was back on clean needles. 5.5.7.3.2 (13-Dec-2012): Patient was seen in CT by Dr. Sartorius. She received a CT scan in January 2012 and was advised by a nurse to continue to receive pain medication during the procedure.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 449,
+    "data": {
+      "entities": [
+        {
+          "id": 6,
+          "beginOffset": 50,
+          "endOffset": 52,
+          "score": 0.58508915,
+          "text": "PT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 149,
+          "endOffset": 159,
+          "score": 0.40319303,
+          "text": "antibiotic",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "FORM",
+              "score": 0.9389163,
+              "relationshipScore": 0.9999994,
+              "relationshipType": "FORM",
+              "id": 1,
+              "beginOffset": 160,
+              "endOffset": 168,
+              "text": "ointment",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 149,
+          "endOffset": 168,
+          "score": 0.8200438,
+          "text": "antibiotic ointment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 231,
+          "endOffset": 242,
+          "score": 0.7258003,
+          "text": "13-Dec-2012",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 265,
+          "endOffset": 267,
+          "score": 0.9201992,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 275,
+          "endOffset": 284,
+          "score": 0.7411581,
+          "text": "Sartorius",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 301,
+          "endOffset": 308,
+          "score": 0.98217803,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 312,
+          "endOffset": 324,
+          "score": 0.9887372,
+          "text": "January 2012",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.98217803,
+              "relationshipScore": 0.9885895,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 301,
+              "endOffset": 308,
+              "text": "CT scan",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 312,
+          "endOffset": 324,
+          "score": 0.9999825,
+          "text": "January 2012",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 375,
+          "endOffset": 390,
+          "score": 0.4683766,
+          "text": "pain medication",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 375,
+          "endOffset": 390,
+          "score": 0.9793742,
+          "text": "pain medication",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7519c8d2-1418-4be0-aee4-fc387a8667c3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7519c8d2-1418-4be0-aee4-fc387a8667c3"
+          ],
+          "Content-Length": [
+            "2260"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2260",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:44 GMT",
+          "x-amzn-RequestId": "7519c8d2-1418-4be0-aee4-fc387a8667c3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 406,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2a77811d-c2f9-4a83-8aa6-e6db8bf780cb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2a77811d-c2f9-4a83-8aa6-e6db8bf780cb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:44 GMT",
+          "x-amzn-RequestId": "2a77811d-c2f9-4a83-8aa6-e6db8bf780cb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 468,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "text": "pain medication",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.4683766,
+          "beginOffset": 375,
+          "endOffset": 390,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Saffron Stain",
+              "code": "1363716",
+              "score": 0.11842214
+            },
+            {
+              "description": "PALM ACID",
+              "code": "1426624",
+              "score": 0.111261286
+            },
+            {
+              "description": "Papain",
+              "code": "7892",
+              "score": 0.108060226
+            },
+            {
+              "description": "Guinea pig skin extract",
+              "code": "852298",
+              "score": 0.0824956
+            },
+            {
+              "description": "Zein",
+              "code": "1314423",
+              "score": 0.07858162
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ddfd5f9a-e00b-407e-bf5d-5dce9d723e83"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ddfd5f9a-e00b-407e-bf5d-5dce9d723e83"
+          ],
+          "Content-Length": [
+            "595"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "595",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:44 GMT",
+          "x-amzn-RequestId": "ddfd5f9a-e00b-407e-bf5d-5dce9d723e83"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:45 PM"
+}

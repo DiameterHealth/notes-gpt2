@@ -1,0 +1,537 @@
+{
+  "note": "and intercostal muscle testing at 4-6 months. The patient is a healthy woman and on the no adjuvant cyclophosphamide. The diagnosis of MS is made by a chest x-ray and an electrocardiogram. The patient has chronic obstructive pulmonary disease and requires follow-up with a pulmonologist and intercostal muscle testing at 4-6 months. The patient is a healthy woman and on the no adjuvant cyclophosphamide.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 416,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 22,
+          "score": 0.64538044,
+          "text": "intercostal muscle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 4,
+          "endOffset": 30,
+          "score": 0.42225787,
+          "text": "intercostal muscle testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 34,
+          "endOffset": 44,
+          "score": 0.9996146,
+          "text": "4-6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.42225787,
+              "relationshipScore": 0.99226356,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 4,
+              "endOffset": 30,
+              "text": "intercostal muscle testing",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 63,
+          "endOffset": 70,
+          "score": 0.7206823,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59445524
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 100,
+          "endOffset": 116,
+          "score": 0.9977865,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 151,
+          "endOffset": 156,
+          "score": 0.9609765,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 151,
+          "endOffset": 162,
+          "score": 0.877796,
+          "text": "chest x-ray",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 170,
+          "endOffset": 187,
+          "score": 0.95098054,
+          "text": "electrocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 213,
+          "endOffset": 242,
+          "score": 0.9379117,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9560699
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98276687,
+              "relationshipScore": 0.99999607,
+              "relationshipType": "ACUITY",
+              "id": 6,
+              "beginOffset": 205,
+              "endOffset": 212,
+              "text": "chronic",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 291,
+          "endOffset": 309,
+          "score": 0.5091247,
+          "text": "intercostal muscle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 291,
+          "endOffset": 317,
+          "score": 0.4526046,
+          "text": "intercostal muscle testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 321,
+          "endOffset": 331,
+          "score": 0.9988638,
+          "text": "4-6 months",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.4526046,
+              "relationshipScore": 0.9830655,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 291,
+              "endOffset": 317,
+              "text": "intercostal muscle testing",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 350,
+          "endOffset": 357,
+          "score": 0.56987286,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 387,
+          "endOffset": 403,
+          "score": 0.998691,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.98276687,
+            "id": 6,
+            "beginOffset": 205,
+            "endOffset": 212,
+            "text": "chronic",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "02df712e-48b9-451d-8ce0-c3ce9369537c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "02df712e-48b9-451d-8ce0-c3ce9369537c"
+          ],
+          "Content-Length": [
+            "3293"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3293",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:20 GMT",
+          "x-amzn-RequestId": "02df712e-48b9-451d-8ce0-c3ce9369537c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 549,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7206823,
+          "beginOffset": 63,
+          "endOffset": 70,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.59445524
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.681739
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.637625
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6361577
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.6312575
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.6010107
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "obstructive pulmonary disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9379117,
+          "beginOffset": 213,
+          "endOffset": 242,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.98276675,
+              "relationshipScore": 0.99999607,
+              "id": 3,
+              "beginOffset": 205,
+              "endOffset": 212,
+              "text": "chronic",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9560699
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.66115713
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with (acute) exacerbation",
+              "code": "J44.1",
+              "score": 0.5307885
+            },
+            {
+              "description": "Chronic obstructive pyelonephritis",
+              "code": "N11.1",
+              "score": 0.44781372
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease with acute lower respiratory infection",
+              "code": "J44.0",
+              "score": 0.44453296
+            },
+            {
+              "description": "Other disorders of lung",
+              "code": "J98.4",
+              "score": 0.37708378
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "healthy",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.56987274,
+          "beginOffset": 350,
+          "endOffset": 357,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified health status",
+              "code": "Z78.9",
+              "score": 0.60589415
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.6048189
+            },
+            {
+              "description": "Encounter for health supervision and care of other healthy infant and child",
+              "code": "Z76.2",
+              "score": 0.59815633
+            },
+            {
+              "description": "Changes in skin texture",
+              "code": "R23.4",
+              "score": 0.5596091
+            },
+            {
+              "description": "Unspecified problem related to medical facilities and other health care",
+              "code": "Z75.9",
+              "score": 0.55663633
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bd26c333-13a1-4746-ba70-504b9c8164b9"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bd26c333-13a1-4746-ba70-504b9c8164b9"
+          ],
+          "Content-Length": [
+            "2529"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2529",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:22 GMT",
+          "x-amzn-RequestId": "bd26c333-13a1-4746-ba70-504b9c8164b9"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 309,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9977865,
+          "beginOffset": 100,
+          "endOffset": 116,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cyclophosphamide",
+              "code": "3002",
+              "score": 0.9661273
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Tablet",
+              "code": "197549",
+              "score": 0.46281326
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Capsule",
+              "code": "1437968",
+              "score": 0.46233806
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Tablet",
+              "code": "197550",
+              "score": 0.45201918
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Capsule",
+              "code": "1437969",
+              "score": 0.41543615
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "cyclophosphamide",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.998691,
+          "beginOffset": 387,
+          "endOffset": 403,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cyclophosphamide",
+              "code": "3002",
+              "score": 0.9661273
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Tablet",
+              "code": "197549",
+              "score": 0.46281326
+            },
+            {
+              "description": "Cyclophosphamide 25 MG Oral Capsule",
+              "code": "1437968",
+              "score": 0.46233806
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Tablet",
+              "code": "197550",
+              "score": 0.45201918
+            },
+            {
+              "description": "Cyclophosphamide 50 MG Oral Capsule",
+              "code": "1437969",
+              "score": 0.41543615
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "587add74-ff84-467d-8f8a-4ec0d08fe86f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "587add74-ff84-467d-8f8a-4ec0d08fe86f"
+          ],
+          "Content-Length": [
+            "1351"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1351",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:20 GMT",
+          "x-amzn-RequestId": "587add74-ff84-467d-8f8a-4ec0d08fe86f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:22 PM"
+}

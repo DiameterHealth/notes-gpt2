@@ -1,0 +1,202 @@
+{
+  "note": "************************** Biopsy is usually a small biopsy taken in the outpatient area. Biopsy is the removal of tissue from a patient in order to diagnose a serious disease. At the University of Utah Cancer Center in Salt Lake City, biopsies can be obtained on patients who come for outpatient care to the center, at home by medical professional, or when needed in an inpatient setting.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 331,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 27,
+          "endOffset": 33,
+          "score": 0.9666452,
+          "text": "Biopsy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 53,
+          "endOffset": 59,
+          "score": 0.9961318,
+          "text": "biopsy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.29568624,
+              "relationshipScore": 0.9999995,
+              "relationshipType": "TEST_VALUE",
+              "id": 3,
+              "beginOffset": 47,
+              "endOffset": 52,
+              "text": "small",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 90,
+          "endOffset": 96,
+          "score": 0.9809006,
+          "text": "Biopsy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 104,
+          "endOffset": 121,
+          "score": 0.7494369,
+          "text": "removal of tissue",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 184,
+          "endOffset": 216,
+          "score": 0.9978423,
+          "text": "University of Utah Cancer Center",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 220,
+          "endOffset": 234,
+          "score": 0.98628056,
+          "text": "Salt Lake City",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 236,
+          "endOffset": 244,
+          "score": 0.97008955,
+          "text": "biopsies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9d5430cd-b525-4b6d-8d1f-bbdb48f444e7"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9d5430cd-b525-4b6d-8d1f-bbdb48f444e7"
+          ],
+          "Content-Length": [
+            "1435"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1435",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:14 GMT",
+          "x-amzn-RequestId": "9d5430cd-b525-4b6d-8d1f-bbdb48f444e7"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 457,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "23de3b3f-da13-44aa-b7f9-9acde420b154"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "23de3b3f-da13-44aa-b7f9-9acde420b154"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:14 GMT",
+          "x-amzn-RequestId": "23de3b3f-da13-44aa-b7f9-9acde420b154"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 235,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "da007a88-c2f4-4ccf-9829-e5bfed66b08f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "da007a88-c2f4-4ccf-9829-e5bfed66b08f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:14 GMT",
+          "x-amzn-RequestId": "da007a88-c2f4-4ccf-9829-e5bfed66b08f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:15 PM"
+}

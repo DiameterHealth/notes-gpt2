@@ -1,0 +1,303 @@
+{
+  "note": "Although this was thought to be a life threatening emergency with the patient on a ventilator, the paramedics and emergency department staff decided this would be best for the patient, rather than have the patient ventilated by itself. She was still on life support as there was a significant risk of pulmonary hemorrhage from this life threatening event that may or may not have been directly caused by the pulmonary edema and the subsequent cerebral edema.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 246,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 114,
+          "endOffset": 134,
+          "score": 0.91677845,
+          "text": "emergency department",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 301,
+          "endOffset": 321,
+          "score": 0.9715828,
+          "text": "pulmonary hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8759769
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 408,
+          "endOffset": 423,
+          "score": 0.8837622,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5941512
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 443,
+          "endOffset": 457,
+          "score": 0.8240069,
+          "text": "cerebral edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59850115
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "42099322-51f9-483b-bad3-eb13934e4775"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "42099322-51f9-483b-bad3-eb13934e4775"
+          ],
+          "Content-Length": [
+            "842"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "842",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:00 GMT",
+          "x-amzn-RequestId": "42099322-51f9-483b-bad3-eb13934e4775"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 381,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pulmonary hemorrhage",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9715828,
+          "beginOffset": 301,
+          "endOffset": 321,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8759768
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pulmonary hypertension, unspecified",
+              "code": "I27.20",
+              "score": 0.74519086
+            },
+            {
+              "description": "Personal history of pulmonary embolism",
+              "code": "Z86.711",
+              "score": 0.6445704
+            },
+            {
+              "description": "Pulmonary fibrosis, unspecified",
+              "code": "J84.10",
+              "score": 0.622101
+            },
+            {
+              "description": "Solitary pulmonary nodule",
+              "code": "R91.1",
+              "score": 0.6181422
+            },
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.60835356
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "pulmonary edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8837621,
+          "beginOffset": 408,
+          "endOffset": 423,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59415114
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chronic pulmonary edema",
+              "code": "J81.1",
+              "score": 0.65535027
+            },
+            {
+              "description": "Pulmonary edema",
+              "code": "J81",
+              "score": 0.5149042
+            },
+            {
+              "description": "Acute pulmonary edema",
+              "code": "J81.0",
+              "score": 0.5089026
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.4007967
+            },
+            {
+              "description": "Left ventricular failure, unspecified",
+              "code": "I50.1",
+              "score": 0.36105832
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "cerebral edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8240069,
+          "beginOffset": 443,
+          "endOffset": 457,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59850115
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral edema",
+              "code": "G93.6",
+              "score": 0.5324567
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.47829968
+            },
+            {
+              "description": "Cerebral palsy, unspecified",
+              "code": "G80.9",
+              "score": 0.47763553
+            },
+            {
+              "description": "Traumatic cerebral edema",
+              "code": "S06.1X",
+              "score": 0.43186793
+            },
+            {
+              "description": "Cerebral atherosclerosis",
+              "code": "I67.2",
+              "score": 0.42673793
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "29b6e96f-389f-45e9-844b-18f5e0039dc4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "29b6e96f-389f-45e9-844b-18f5e0039dc4"
+          ],
+          "Content-Length": [
+            "2055"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2055",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:00 GMT",
+          "x-amzn-RequestId": "29b6e96f-389f-45e9-844b-18f5e0039dc4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ea23c03f-5018-4a6a-b2d3-6db2fd5c2794"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ea23c03f-5018-4a6a-b2d3-6db2fd5c2794"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:00 GMT",
+          "x-amzn-RequestId": "ea23c03f-5018-4a6a-b2d3-6db2fd5c2794"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:01 PM"
+}

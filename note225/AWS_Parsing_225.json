@@ -1,0 +1,177 @@
+{
+  "note": "Cognitive impairment is minimal.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 84,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 0,
+          "endOffset": 20,
+          "score": 0.89341486,
+          "text": "Cognitive impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54801697
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8f4bf3c3-6843-4797-bc56-c030a0481862"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8f4bf3c3-6843-4797-bc56-c030a0481862"
+          ],
+          "Content-Length": [
+            "265"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "265",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:56 GMT",
+          "x-amzn-RequestId": "8f4bf3c3-6843-4797-bc56-c030a0481862"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 672,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Cognitive impairment",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89341486,
+          "beginOffset": 0,
+          "endOffset": 20,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.54801685
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving cognitive functions and awareness",
+              "code": "R41.89",
+              "score": 0.64292157
+            },
+            {
+              "description": "Mild cognitive impairment, so stated",
+              "code": "G31.84",
+              "score": 0.51871437
+            },
+            {
+              "description": "Other symptoms and signs involving cognitive functions following cerebral infarction",
+              "code": "I69.318",
+              "score": 0.39439803
+            },
+            {
+              "description": "Unspecified symptoms and signs involving cognitive functions and awareness",
+              "code": "R41.9",
+              "score": 0.37782514
+            },
+            {
+              "description": "Cognitive deficits following cerebral infarction",
+              "code": "I69.31",
+              "score": 0.26521116
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "37d3e924-f3d0-4013-9038-34c1d093ee95"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "37d3e924-f3d0-4013-9038-34c1d093ee95"
+          ],
+          "Content-Length": [
+            "898"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:57 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "898",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:57 GMT",
+          "x-amzn-RequestId": "37d3e924-f3d0-4013-9038-34c1d093ee95"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 83,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fe0b468a-d7ee-4a9f-a977-2d773f5dc91d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fe0b468a-d7ee-4a9f-a977-2d773f5dc91d"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:56 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:56 GMT",
+          "x-amzn-RequestId": "fe0b468a-d7ee-4a9f-a977-2d773f5dc91d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:57 PM"
+}

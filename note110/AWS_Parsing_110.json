@@ -1,0 +1,519 @@
+{
+  "note": ". Immediate postpartum hospitalization was required. The patient had a history of an elevated troponin level 3 hours after amniocentesis and had taken a 4 week course of warfarin. During her hospitalization, there was significant elevation in her troponin which is a potential predictor of acute thromboembolism and should be carefully monitored. A low dose of intravenous heparin was administered to the patient.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 404,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 94,
+          "endOffset": 108,
+          "score": 0.93774205,
+          "text": "troponin level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.953862,
+              "relationshipScore": 0.99965906,
+              "relationshipType": "TEST_VALUE",
+              "id": 6,
+              "beginOffset": 85,
+              "endOffset": 93,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.23679955,
+              "relationshipScore": 0.9999869,
+              "relationshipType": "TEST_VALUE",
+              "id": 8,
+              "beginOffset": 109,
+              "endOffset": 116,
+              "text": "3 hours",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 109,
+          "endOffset": 116,
+          "score": 0.69241446,
+          "text": "3 hours",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.93774205,
+              "relationshipScore": 0.90031445,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 94,
+              "endOffset": 108,
+              "text": "troponin level",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 123,
+          "endOffset": 136,
+          "score": 0.8867824,
+          "text": "amniocentesis",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5047635,
+              "relationshipScore": 0.9555473,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 218,
+              "endOffset": 239,
+              "text": "significant elevation",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 153,
+          "endOffset": 159,
+          "score": 0.94832075,
+          "text": "4 week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.99981886,
+              "relationshipScore": 0.5535439,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 170,
+              "endOffset": 178,
+              "text": "warfarin",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 153,
+          "endOffset": 159,
+          "score": 0.94832075,
+          "text": "4 week",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.8867824,
+              "relationshipScore": 0.504317,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 123,
+              "endOffset": 136,
+              "text": "amniocentesis",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 170,
+          "endOffset": 178,
+          "score": 0.99981886,
+          "text": "warfarin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.72256535,
+              "relationshipScore": 1.0,
+              "relationshipType": "DURATION",
+              "id": 0,
+              "beginOffset": 153,
+              "endOffset": 166,
+              "text": "4 week course",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 247,
+          "endOffset": 255,
+          "score": 0.78647196,
+          "text": "troponin",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5047635,
+              "relationshipScore": 0.99991775,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 218,
+              "endOffset": 239,
+              "text": "significant elevation",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 296,
+          "endOffset": 311,
+          "score": 0.9914432,
+          "text": "thromboembolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9519055
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.82904553,
+              "relationshipScore": 0.99990857,
+              "relationshipType": "ACUITY",
+              "id": 4,
+              "beginOffset": 290,
+              "endOffset": 295,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 373,
+          "endOffset": 380,
+          "score": 0.99976176,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99355185,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "ROUTE_OR_MODE",
+              "id": 2,
+              "beginOffset": 361,
+              "endOffset": 372,
+              "text": "intravenous",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.82904553,
+            "id": 4,
+            "beginOffset": 290,
+            "endOffset": 295,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9c3dca15-59ea-47a9-bb84-babb9db01211"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9c3dca15-59ea-47a9-bb84-babb9db01211"
+          ],
+          "Content-Length": [
+            "4073"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:00 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4073",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:00 GMT",
+          "x-amzn-RequestId": "9c3dca15-59ea-47a9-bb84-babb9db01211"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 327,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "thromboembolism",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9914432,
+          "beginOffset": 296,
+          "endOffset": 311,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.8290453,
+              "relationshipScore": 0.99990857,
+              "id": 0,
+              "beginOffset": 290,
+              "endOffset": 295,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9519055
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Embolism and thrombosis of unspecified artery",
+              "code": "I74.9",
+              "score": 0.74524236
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified veins of upper extremity, bilateral",
+              "code": "I82.603",
+              "score": 0.69912434
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified vein",
+              "code": "I82.90",
+              "score": 0.67744327
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified veins of upper extremity",
+              "code": "I82.60",
+              "score": 0.5695936
+            },
+            {
+              "description": "Acute embolism and thrombosis of unspecified veins of left upper extremity",
+              "code": "I82.602",
+              "score": 0.52870405
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a54fb730-0c5f-4920-a684-0eecc14f3145"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a54fb730-0c5f-4920-a684-0eecc14f3145"
+          ],
+          "Content-Length": [
+            "1050"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1050",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:02 GMT",
+          "x-amzn-RequestId": "a54fb730-0c5f-4920-a684-0eecc14f3145"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 539,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "warfarin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99981886,
+          "beginOffset": 170,
+          "endOffset": 178,
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.72256553,
+              "relationshipScore": 1.0,
+              "id": 0,
+              "beginOffset": 153,
+              "endOffset": 166,
+              "text": "4 week course",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Warfarin",
+              "code": "11289",
+              "score": 0.94398654
+            },
+            {
+              "description": "Warfarin Sodium 4 MG Oral Tablet",
+              "code": "855324",
+              "score": 0.71037406
+            },
+            {
+              "description": "Warfarin Sodium 7.5 MG Oral Tablet",
+              "code": "855344",
+              "score": 0.67125964
+            },
+            {
+              "description": "Warfarin Sodium 2.5 MG Oral Tablet",
+              "code": "855312",
+              "score": 0.5218386
+            },
+            {
+              "description": "Warfarin Sodium 3 MG Oral Tablet",
+              "code": "855318",
+              "score": 0.41751716
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99976176,
+          "beginOffset": 373,
+          "endOffset": 380,
+          "attributes": [
+            {
+              "type": "ROUTE_OR_MODE",
+              "score": 0.99355185,
+              "relationshipScore": 0.9999999,
+              "id": 2,
+              "beginOffset": 361,
+              "endOffset": 372,
+              "text": "intravenous",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "heparin",
+              "code": "5224",
+              "score": 0.9121645
+            },
+            {
+              "description": "2 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658647",
+              "score": 0.38644406
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658659",
+              "score": 0.29047757
+            },
+            {
+              "description": "3 ML heparin sodium, porcine 100 UNT/ML Prefilled Syringe",
+              "code": "1362062",
+              "score": 0.21492995
+            },
+            {
+              "description": "100 ML heparin sodium, porcine 100 UNT/ML Injection",
+              "code": "1658720",
+              "score": 0.08838698
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "27544069-7d5b-48ac-b17f-58dd5f88cc33"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "27544069-7d5b-48ac-b17f-58dd5f88cc33"
+          ],
+          "Content-Length": [
+            "1687"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:02:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1687",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:02:02 GMT",
+          "x-amzn-RequestId": "27544069-7d5b-48ac-b17f-58dd5f88cc33"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:02 PM"
+}

@@ -1,0 +1,419 @@
+{
+  "note": ", followed by an unannounced follow-up visit. DUID:  Patient will be discharged to home from ED with a 7-day course of antiobiotics to treat an acute urinary tract infection, followed by an unannounced follow-up visit. PROP:  Patient will be discharged to home with 2 days off for IV sedation. DUD:  Patient will be discharged to home with 6 days of benzodiazepine and/or opioid for possible comorbidities.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 446,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 93,
+          "endOffset": 95,
+          "score": 0.99983954,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 119,
+          "endOffset": 131,
+          "score": 0.9362781,
+          "text": "antiobiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 150,
+          "endOffset": 163,
+          "score": 0.73090565,
+          "text": "urinary tract",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 150,
+          "endOffset": 173,
+          "score": 0.993339,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9626051
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9174152,
+              "relationshipScore": 0.9999546,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 144,
+              "endOffset": 149,
+              "text": "acute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 266,
+          "endOffset": 267,
+          "score": 0.6505578,
+          "text": "2",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.5681308,
+              "relationshipScore": 0.62251806,
+              "relationshipType": "OVERLAP",
+              "id": 10,
+              "beginOffset": 281,
+              "endOffset": 292,
+              "text": "IV sedation",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 281,
+          "endOffset": 292,
+          "score": 0.5681308,
+          "text": "IV sedation",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 350,
+          "endOffset": 364,
+          "score": 0.5085497,
+          "text": "benzodiazepine",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 350,
+          "endOffset": 364,
+          "score": 0.8982135,
+          "text": "benzodiazepine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.94140303,
+              "relationshipScore": 0.99999976,
+              "relationshipType": "DURATION",
+              "id": 2,
+              "beginOffset": 340,
+              "endOffset": 346,
+              "text": "6 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 372,
+          "endOffset": 378,
+          "score": 0.6543429,
+          "text": "opioid",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 372,
+          "endOffset": 378,
+          "score": 0.74506515,
+          "text": "opioid",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DURATION",
+              "score": 0.94140303,
+              "relationshipScore": 0.9999808,
+              "relationshipType": "DURATION",
+              "id": 2,
+              "beginOffset": 340,
+              "endOffset": 346,
+              "text": "6 days",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 392,
+          "endOffset": 405,
+          "score": 0.97479206,
+          "text": "comorbidities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9347313
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICATION",
+          "attribute": {
+            "type": "DURATION",
+            "score": 0.24533068,
+            "id": 1,
+            "beginOffset": 103,
+            "endOffset": 108,
+            "text": "7-day",
+            "category": "MEDICATION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.9174152,
+            "id": 5,
+            "beginOffset": 144,
+            "endOffset": 149,
+            "text": "acute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a579a13b-beb8-43f8-8c19-d59e3c8e8302"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a579a13b-beb8-43f8-8c19-d59e3c8e8302"
+          ],
+          "Content-Length": [
+            "3165"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3165",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:22 GMT",
+          "x-amzn-RequestId": "a579a13b-beb8-43f8-8c19-d59e3c8e8302"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 533,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "urinary tract infection",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.993339,
+          "beginOffset": 150,
+          "endOffset": 173,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.9174152,
+              "relationshipScore": 0.9999546,
+              "id": 0,
+              "beginOffset": 144,
+              "endOffset": 149,
+              "text": "acute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9626051
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.7829844
+            },
+            {
+              "description": "Personal history of urinary (tract) infections",
+              "code": "Z87.440",
+              "score": 0.57637566
+            },
+            {
+              "description": "Acute upper respiratory infection, unspecified",
+              "code": "J06.9",
+              "score": 0.532185
+            },
+            {
+              "description": "Urinary calculus, unspecified",
+              "code": "N20.9",
+              "score": 0.5297504
+            },
+            {
+              "description": "Disorder of urinary system, unspecified",
+              "code": "N39.9",
+              "score": 0.50617284
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "comorbidities",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.97479206,
+          "beginOffset": 392,
+          "endOffset": 405,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9347313
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Illness, unspecified",
+              "code": "R69",
+              "score": 0.8945862
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.689619
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.6860028
+            },
+            {
+              "description": "Disorder of brain, unspecified",
+              "code": "G93.9",
+              "score": 0.6821244
+            },
+            {
+              "description": "Malignant neoplasm of ill-defined sites within the digestive system",
+              "code": "C26.9",
+              "score": 0.6715868
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ffaa105a-3482-41cd-aa50-ccc65c77ab64"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ffaa105a-3482-41cd-aa50-ccc65c77ab64"
+          ],
+          "Content-Length": [
+            "1676"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1676",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:22 GMT",
+          "x-amzn-RequestId": "ffaa105a-3482-41cd-aa50-ccc65c77ab64"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 254,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3359cc0a-4648-40e6-adcf-dacb1f4e7475"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3359cc0a-4648-40e6-adcf-dacb1f4e7475"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:22 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:22 GMT",
+          "x-amzn-RequestId": "3359cc0a-4648-40e6-adcf-dacb1f4e7475"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:22 PM"
+}

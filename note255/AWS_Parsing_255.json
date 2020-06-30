@@ -1,0 +1,251 @@
+{
+  "note": ". Pt is not to be stressed or discouraged from visiting the doctor with any symptoms until he is diagnosed.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 109,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 18,
+          "endOffset": 26,
+          "score": 0.8639223,
+          "text": "stressed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5279314
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5769494
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 30,
+          "endOffset": 41,
+          "score": 0.77706224,
+          "text": "discouraged",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.49057612
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.56258464
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "81515729-54af-4c77-8251-41fab3627be4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "81515729-54af-4c77-8251-41fab3627be4"
+          ],
+          "Content-Length": [
+            "532"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "532",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:47 GMT",
+          "x-amzn-RequestId": "81515729-54af-4c77-8251-41fab3627be4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 206,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "stressed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8639223,
+          "beginOffset": 18,
+          "endOffset": 26,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.52793133
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.57694936
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Stress, not elsewhere classified",
+              "code": "Z73.3",
+              "score": 0.8018629
+            },
+            {
+              "description": "Post-traumatic stress disorder, unspecified",
+              "code": "F43.10",
+              "score": 0.74058574
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.7197357
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.71626574
+            },
+            {
+              "description": "Acute stress reaction",
+              "code": "F43.0",
+              "score": 0.6497182
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "discouraged",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.77706224,
+          "beginOffset": 30,
+          "endOffset": 41,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.49057612
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.56258464
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Demoralization and apathy",
+              "code": "R45.3",
+              "score": 0.7114773
+            },
+            {
+              "description": "Other athletic court as the place of occurrence of the external cause",
+              "code": "Y92.318",
+              "score": 0.5973873
+            },
+            {
+              "description": "Activity, volleyball (beach) (court)",
+              "code": "Y93.68",
+              "score": 0.58829457
+            },
+            {
+              "description": "Athletic court as the place of occurrence of the external cause",
+              "code": "Y92.31",
+              "score": 0.5836725
+            },
+            {
+              "description": "Squash court as the place of occurrence of the external cause",
+              "code": "Y92.311",
+              "score": 0.5693169
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "dc58955b-009a-4cd1-b5d6-ae3ca13db264"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "dc58955b-009a-4cd1-b5d6-ae3ca13db264"
+          ],
+          "Content-Length": [
+            "1658"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1658",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:47 GMT",
+          "x-amzn-RequestId": "dc58955b-009a-4cd1-b5d6-ae3ca13db264"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 113,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0a5b2c34-4e84-4624-a288-b70e3c3c43cf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0a5b2c34-4e84-4624-a288-b70e3c3c43cf"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:05:47 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:05:47 GMT",
+          "x-amzn-RequestId": "0a5b2c34-4e84-4624-a288-b70e3c3c43cf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:05:48 PM"
+}

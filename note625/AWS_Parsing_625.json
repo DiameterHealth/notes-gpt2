@@ -1,0 +1,836 @@
+{
+  "note": ". The examination has revealed that the patient is unresponsive to any form of stimuli. Her neurological exam reveals that she is apneic in the supine position, with ipsilateral paresthesias. Her cardiac examination shows cardiac dysfunction in both the right and left heart and, more importantly, a large aortic effusion. The patient\u0027s vital signs are normal. A complete history of her injury and stroke is required to identify any predisposing pathologic processes and determine the most appropriate treatment of this patient.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 680,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 51,
+          "endOffset": 63,
+          "score": 0.65390515,
+          "text": "unresponsive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.66441363
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 92,
+          "endOffset": 109,
+          "score": 0.860001,
+          "text": "neurological exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 130,
+          "endOffset": 136,
+          "score": 0.7400595,
+          "text": "apneic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42142954
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 178,
+          "endOffset": 190,
+          "score": 0.9863446,
+          "text": "paresthesias",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7685985
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 196,
+          "endOffset": 215,
+          "score": 0.9831744,
+          "text": "cardiac examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9815611,
+              "relationshipScore": 0.99998987,
+              "relationshipType": "TEST_VALUE",
+              "id": 13,
+              "beginOffset": 222,
+              "endOffset": 241,
+              "text": "cardiac dysfunction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.78533894,
+              "relationshipScore": 0.99989116,
+              "relationshipType": "TEST_VALUE",
+              "id": 14,
+              "beginOffset": 300,
+              "endOffset": 321,
+              "text": "large aortic effusion",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 222,
+          "endOffset": 241,
+          "score": 0.91909945,
+          "text": "cardiac dysfunction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4125102
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5413084
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9875459,
+              "relationshipScore": 0.99974304,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 254,
+              "endOffset": 259,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9973568,
+              "relationshipScore": 0.99481344,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 264,
+              "endOffset": 268,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9967417,
+              "relationshipScore": 0.96422166,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "heart",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 269,
+          "endOffset": 274,
+          "score": 0.9967417,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 306,
+          "endOffset": 321,
+          "score": 0.93641347,
+          "text": "aortic effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69204557
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9875459,
+              "relationshipScore": 0.9948302,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 254,
+              "endOffset": 259,
+              "text": "right",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9973568,
+              "relationshipScore": 0.9698674,
+              "relationshipType": "DIRECTION",
+              "id": 1,
+              "beginOffset": 264,
+              "endOffset": 268,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9967417,
+              "relationshipScore": 0.9785498,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "heart",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 337,
+          "endOffset": 348,
+          "score": 0.93321884,
+          "text": "vital signs",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9485712,
+              "relationshipScore": 0.99997044,
+              "relationshipType": "TEST_VALUE",
+              "id": 16,
+              "beginOffset": 353,
+              "endOffset": 359,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 337,
+          "endOffset": 359,
+          "score": 0.41662446,
+          "text": "vital signs are normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8351742
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 387,
+          "endOffset": 393,
+          "score": 0.9397952,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71760535
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 398,
+          "endOffset": 404,
+          "score": 0.98263055,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9153579
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9875459,
+            "id": 0,
+            "beginOffset": 254,
+            "endOffset": 259,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9973568,
+            "id": 1,
+            "beginOffset": 264,
+            "endOffset": 268,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0464ef33-857a-419b-aa39-97511a7a7141"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0464ef33-857a-419b-aa39-97511a7a7141"
+          ],
+          "Content-Length": [
+            "4690"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4690",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:17 GMT",
+          "x-amzn-RequestId": "0464ef33-857a-419b-aa39-97511a7a7141"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 820,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "unresponsive",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.65390503,
+          "beginOffset": 51,
+          "endOffset": 63,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.6644136
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified coma",
+              "code": "R40.20",
+              "score": 0.88043606
+            },
+            {
+              "description": "Slowness and poor responsiveness",
+              "code": "R46.4",
+              "score": 0.8457282
+            },
+            {
+              "description": "Transient alteration of awareness",
+              "code": "R40.4",
+              "score": 0.77221715
+            },
+            {
+              "description": "Altered mental status, unspecified",
+              "code": "R41.82",
+              "score": 0.75375175
+            },
+            {
+              "description": "Coma",
+              "code": "R40.2",
+              "score": 0.7352531
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "apneic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7400595,
+          "beginOffset": 130,
+          "endOffset": 136,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42142954
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Apnea, not elsewhere classified",
+              "code": "R06.81",
+              "score": 0.64754325
+            },
+            {
+              "description": "Obstructive sleep apnea (adult) (pediatric)",
+              "code": "G47.33",
+              "score": 0.63175774
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.55705434
+            },
+            {
+              "description": "Sleep apnea, unspecified",
+              "code": "G47.30",
+              "score": 0.49858785
+            },
+            {
+              "description": "Sleep disorder not due to a substance or known physiological condition, unspecified",
+              "code": "F51.9",
+              "score": 0.38055557
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "paresthesias",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9863446,
+          "beginOffset": 178,
+          "endOffset": 190,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7685985
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Paresthesia of skin",
+              "code": "R20.2",
+              "score": 0.7450672
+            },
+            {
+              "description": "Anesthesia of skin",
+              "code": "R20.0",
+              "score": 0.55476594
+            },
+            {
+              "description": "Other disturbances of skin sensation",
+              "code": "R20.8",
+              "score": 0.5432725
+            },
+            {
+              "description": "Disorder of the skin and subcutaneous tissue, unspecified",
+              "code": "L98.9",
+              "score": 0.49824843
+            },
+            {
+              "description": "Unspecified disturbances of skin sensation",
+              "code": "R20.9",
+              "score": 0.46361104
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "cardiac dysfunction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.91909945,
+          "beginOffset": 222,
+          "endOffset": 241,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9875459,
+              "relationshipScore": 0.99974304,
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 259,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9973568,
+              "relationshipScore": 0.99481344,
+              "id": 5,
+              "beginOffset": 264,
+              "endOffset": 268,
+              "text": "left",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9967417,
+              "relationshipScore": 0.96422166,
+              "id": 6,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "heart",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.4125102
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5413084
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.5276579
+            },
+            {
+              "description": "Cardiac arrest, cause unspecified",
+              "code": "I46.9",
+              "score": 0.51339597
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.49868003
+            },
+            {
+              "description": "Intraoperative cardiac arrest during cardiac surgery",
+              "code": "I97.710",
+              "score": 0.48936906
+            },
+            {
+              "description": "Other cardiac sounds",
+              "code": "R01.2",
+              "score": 0.46739832
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "aortic effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.93641347,
+          "beginOffset": 306,
+          "endOffset": 321,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9875459,
+              "relationshipScore": 0.9948302,
+              "id": 4,
+              "beginOffset": 254,
+              "endOffset": 259,
+              "text": "right",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9973568,
+              "relationshipScore": 0.9698674,
+              "id": 5,
+              "beginOffset": 264,
+              "endOffset": 268,
+              "text": "left",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9967417,
+              "relationshipScore": 0.9785498,
+              "id": 6,
+              "beginOffset": 269,
+              "endOffset": 274,
+              "text": "heart",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69204557
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pleural effusion, not elsewhere classified",
+              "code": "J90",
+              "score": 0.61946726
+            },
+            {
+              "description": "Nonrheumatic aortic (valve) stenosis",
+              "code": "I35.0",
+              "score": 0.5848786
+            },
+            {
+              "description": "Other nonrheumatic aortic valve disorders",
+              "code": "I35.8",
+              "score": 0.56123555
+            },
+            {
+              "description": "Pericardial effusion (noninflammatory)",
+              "code": "I31.3",
+              "score": 0.53314525
+            },
+            {
+              "description": "Effusion, left knee",
+              "code": "M25.462",
+              "score": 0.49304706
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "vital signs are normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41662446,
+          "beginOffset": 337,
+          "endOffset": 359,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8351742
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other fatigue",
+              "code": "R53.83",
+              "score": 0.84103477
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8006288
+            },
+            {
+              "description": "Disorder of peritoneum, unspecified",
+              "code": "K66.9",
+              "score": 0.7447797
+            },
+            {
+              "description": "Abnormal reflex",
+              "code": "R29.2",
+              "score": 0.73312587
+            },
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.7129895
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "injury",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9397952,
+          "beginOffset": 387,
+          "endOffset": 393,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.71760535
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Injury, unspecified",
+              "code": "T14.90",
+              "score": 0.7128046
+            },
+            {
+              "description": "Strain of muscle, fascia and tendon of lower back",
+              "code": "S39.012",
+              "score": 0.63186044
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.62582964
+            },
+            {
+              "description": "Contusion of left hand",
+              "code": "S60.222",
+              "score": 0.5757585
+            },
+            {
+              "description": "Contusion of left lower leg",
+              "code": "S80.12",
+              "score": 0.5600833
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "stroke",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98263055,
+          "beginOffset": 398,
+          "endOffset": 404,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9153579
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7833633
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.772572
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.6282331
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.6092362
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting left non-dominant side",
+              "code": "I69.354",
+              "score": 0.60562307
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0d1492a0-bb9d-4435-8623-9684693057e2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0d1492a0-bb9d-4435-8623-9684693057e2"
+          ],
+          "Content-Length": [
+            "6790"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6790",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:18 GMT",
+          "x-amzn-RequestId": "0d1492a0-bb9d-4435-8623-9684693057e2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 259,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "74323eb6-b1d8-44a4-96d9-839b593d967f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "74323eb6-b1d8-44a4-96d9-839b593d967f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:38:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:38:17 GMT",
+          "x-amzn-RequestId": "74323eb6-b1d8-44a4-96d9-839b593d967f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:38:18 PM"
+}

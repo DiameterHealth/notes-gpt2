@@ -1,0 +1,197 @@
+{
+  "note": "in the hip area. Patient reports the symptoms have not improved for a few weeks, now appears as if is getting worse. On previous visit, patient was seeing a chiropractor with an assessment and therapy plan, but this time visit the patient had not seen a chiropractor. Patients previous visits had been to several pain management care experts at various healthcare facilities within the city.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 217,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 7,
+          "endOffset": 15,
+          "score": 0.90310246,
+          "text": "hip area",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 313,
+          "endOffset": 317,
+          "score": 0.81831944,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49868092
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 313,
+          "endOffset": 328,
+          "score": 0.7540848,
+          "text": "pain management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "06a2de66-7766-4f4c-a9c2-8c3c952aab6d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "06a2de66-7766-4f4c-a9c2-8c3c952aab6d"
+          ],
+          "Content-Length": [
+            "565"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "565",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:11 GMT",
+          "x-amzn-RequestId": "06a2de66-7766-4f4c-a9c2-8c3c952aab6d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 365,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8183195,
+          "beginOffset": 313,
+          "endOffset": 317,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49868092
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7201958
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.5569773
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.523767
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.48071337
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.4746668
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9bd2a28d-1ee5-44b7-b6d0-6b7672d7aec8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9bd2a28d-1ee5-44b7-b6d0-6b7672d7aec8"
+          ],
+          "Content-Length": [
+            "655"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "655",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:11 GMT",
+          "x-amzn-RequestId": "9bd2a28d-1ee5-44b7-b6d0-6b7672d7aec8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 194,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "bf271c0d-f527-457d-94ba-f87223fc1ae2"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "bf271c0d-f527-457d-94ba-f87223fc1ae2"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:11 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:11 GMT",
+          "x-amzn-RequestId": "bf271c0d-f527-457d-94ba-f87223fc1ae2"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:12 PM"
+}

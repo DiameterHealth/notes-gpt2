@@ -1,0 +1,881 @@
+{
+  "note": ". Headache is the only symptom present. A CT scan showed a left hemisphere infarct affecting the posterior region. The MRI was suggestive of infarction and showed an elevated left hemifacial mass. A CT and MRI were performed and a 4 mm posterior thalamic infarct was confirmed with a 10.5 mm left thalamic mass consistent with a left-sided infarction.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 843,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 2,
+          "endOffset": 10,
+          "score": 0.98493713,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 42,
+          "endOffset": 49,
+          "score": 0.99173564,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.968623,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_VALUE",
+              "id": 15,
+              "beginOffset": 59,
+              "endOffset": 113,
+              "text": "left hemisphere infarct affecting the posterior region",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 64,
+          "endOffset": 74,
+          "score": 0.6895719,
+          "text": "hemisphere",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 75,
+          "endOffset": 82,
+          "score": 0.9331679,
+          "text": "infarct",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86125267
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9620909,
+              "relationshipScore": 0.9939097,
+              "relationshipType": "DIRECTION",
+              "id": 0,
+              "beginOffset": 59,
+              "endOffset": 63,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.6895719,
+              "relationshipScore": 0.99961084,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 1,
+              "beginOffset": 64,
+              "endOffset": 74,
+              "text": "hemisphere",
+              "category": "ANATOMY",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9352521,
+              "relationshipScore": 0.9999951,
+              "relationshipType": "DIRECTION",
+              "id": 2,
+              "beginOffset": 97,
+              "endOffset": 106,
+              "text": "posterior",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 119,
+          "endOffset": 122,
+          "score": 0.9883875,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.46565038,
+              "relationshipScore": 0.9999914,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 127,
+              "endOffset": 151,
+              "text": "suggestive of infarction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.82273585,
+              "relationshipScore": 0.9989504,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 166,
+              "endOffset": 195,
+              "text": "elevated left hemifacial mass",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 141,
+          "endOffset": 151,
+          "score": 0.8917382,
+          "text": "infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8674202
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 180,
+          "endOffset": 195,
+          "score": 0.9126924,
+          "text": "hemifacial mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9292826
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.96246743,
+              "relationshipScore": 0.99764806,
+              "relationshipType": "DIRECTION",
+              "id": 3,
+              "beginOffset": 175,
+              "endOffset": 179,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 199,
+          "endOffset": 201,
+          "score": 0.8696541,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.90967333,
+              "relationshipScore": 0.99997663,
+              "relationshipType": "TEST_VALUE",
+              "id": 21,
+              "beginOffset": 231,
+              "endOffset": 350,
+              "text": "4 mm posterior thalamic infarct was confirmed with a 10.5 mm left thalamic mass consistent with a left-sided infarction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 206,
+          "endOffset": 209,
+          "score": 0.99693143,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.90967333,
+              "relationshipScore": 0.9998827,
+              "relationshipType": "TEST_VALUE",
+              "id": 21,
+              "beginOffset": 231,
+              "endOffset": 350,
+              "text": "4 mm posterior thalamic infarct was confirmed with a 10.5 mm left thalamic mass consistent with a left-sided infarction",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 246,
+          "endOffset": 262,
+          "score": 0.76498204,
+          "text": "thalamic infarct",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9063543
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9623426,
+              "relationshipScore": 0.9123062,
+              "relationshipType": "DIRECTION",
+              "id": 4,
+              "beginOffset": 236,
+              "endOffset": 245,
+              "text": "posterior",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 297,
+          "endOffset": 310,
+          "score": 0.6537567,
+          "text": "thalamic mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88142085
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.92649263,
+              "relationshipScore": 0.99009377,
+              "relationshipType": "DIRECTION",
+              "id": 5,
+              "beginOffset": 292,
+              "endOffset": 296,
+              "text": "left",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 340,
+          "endOffset": 350,
+          "score": 0.8066412,
+          "text": "infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70812947
+            }
+          ],
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.82597,
+              "relationshipScore": 0.9999894,
+              "relationshipType": "DIRECTION",
+              "id": 6,
+              "beginOffset": 329,
+              "endOffset": 339,
+              "text": "left-sided",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9620909,
+            "id": 0,
+            "beginOffset": 59,
+            "endOffset": 63,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9352521,
+            "id": 2,
+            "beginOffset": 97,
+            "endOffset": 106,
+            "text": "posterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.96246743,
+            "id": 3,
+            "beginOffset": 175,
+            "endOffset": 179,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9623426,
+            "id": 4,
+            "beginOffset": 236,
+            "endOffset": 245,
+            "text": "posterior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.92649263,
+            "id": 5,
+            "beginOffset": 292,
+            "endOffset": 296,
+            "text": "left",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.82597,
+            "id": 6,
+            "beginOffset": 329,
+            "endOffset": 339,
+            "text": "left-sided",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3003741d-4d24-42e7-ad1a-ba5d86ada84e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3003741d-4d24-42e7-ad1a-ba5d86ada84e"
+          ],
+          "Content-Length": [
+            "6235"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6235",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:03 GMT",
+          "x-amzn-RequestId": "3003741d-4d24-42e7-ad1a-ba5d86ada84e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1001,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Headache",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98493713,
+          "beginOffset": 2,
+          "endOffset": 10,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.6441856
+            },
+            {
+              "description": "Migraine, unspecified, not intractable, without status migrainosus",
+              "code": "G43.909",
+              "score": 0.43234998
+            },
+            {
+              "description": "Tension-type headache, unspecified, not intractable",
+              "code": "G44.209",
+              "score": 0.38651365
+            },
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.38257498
+            },
+            {
+              "description": "Post-traumatic headache, unspecified, not intractable",
+              "code": "G44.309",
+              "score": 0.33318576
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "infarct",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9331679,
+          "beginOffset": 75,
+          "endOffset": 82,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9620909,
+              "relationshipScore": 0.9939097,
+              "id": 1,
+              "beginOffset": 59,
+              "endOffset": 63,
+              "text": "left",
+              "traits": []
+            },
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.689572,
+              "relationshipScore": 0.99961084,
+              "id": 2,
+              "beginOffset": 64,
+              "endOffset": 74,
+              "text": "hemisphere",
+              "traits": []
+            },
+            {
+              "type": "DIRECTION",
+              "score": 0.9352521,
+              "relationshipScore": 0.9999951,
+              "id": 4,
+              "beginOffset": 97,
+              "endOffset": 106,
+              "text": "posterior",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.86125267
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7281256
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7214121
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7170268
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.668335
+            },
+            {
+              "description": "Hemiplegia and hemiparesis following cerebral infarction affecting right dominant side",
+              "code": "I69.351",
+              "score": 0.626239
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8917382,
+          "beginOffset": 141,
+          "endOffset": 151,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8674202
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.8216959
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.77839726
+            },
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.7692889
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7503458
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.6831356
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "hemifacial mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9126924,
+          "beginOffset": 180,
+          "endOffset": 195,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.96246743,
+              "relationshipScore": 0.99764806,
+              "id": 6,
+              "beginOffset": 175,
+              "endOffset": 179,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9292825
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.43017057
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.4209383
+            },
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.3738782
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.3672423
+            },
+            {
+              "description": "Actinic keratosis",
+              "code": "L57.0",
+              "score": 0.36044648
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "thalamic infarct",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.764982,
+          "beginOffset": 246,
+          "endOffset": 262,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.9623426,
+              "relationshipScore": 0.9123062,
+              "id": 8,
+              "beginOffset": 236,
+              "endOffset": 245,
+              "text": "posterior",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9063543
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.6146988
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.58476007
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.5444941
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of inferior wall",
+              "code": "I21.19",
+              "score": 0.5295552
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.52504796
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "thalamic mass",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6537567,
+          "beginOffset": 297,
+          "endOffset": 310,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.92649263,
+              "relationshipScore": 0.99009377,
+              "id": 10,
+              "beginOffset": 292,
+              "endOffset": 296,
+              "text": "left",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88142085
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other nonspecific abnormal finding of lung field",
+              "code": "R91.8",
+              "score": 0.5975002
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.5824044
+            },
+            {
+              "description": "Left lower quadrant abdominal swelling, mass and lump",
+              "code": "R19.04",
+              "score": 0.51844275
+            },
+            {
+              "description": "Intraductal carcinoma in situ of left breast",
+              "code": "D05.12",
+              "score": 0.51826
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.51471865
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "infarction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8066412,
+          "beginOffset": 340,
+          "endOffset": 350,
+          "attributes": [
+            {
+              "type": "DIRECTION",
+              "score": 0.82597005,
+              "relationshipScore": 0.9999894,
+              "id": 12,
+              "beginOffset": 329,
+              "endOffset": 339,
+              "text": "left-sided",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70812947
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Old myocardial infarction",
+              "code": "I25.2",
+              "score": 0.79810464
+            },
+            {
+              "description": "Acute myocardial infarction, unspecified",
+              "code": "I21.9",
+              "score": 0.78944206
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.7710452
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7369835
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving other coronary artery of anterior wall",
+              "code": "I21.09",
+              "score": 0.7345775
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d8a35519-3587-4d14-b27f-21b41b2141bc"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d8a35519-3587-4d14-b27f-21b41b2141bc"
+          ],
+          "Content-Length": [
+            "6543"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6543",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:04 GMT",
+          "x-amzn-RequestId": "d8a35519-3587-4d14-b27f-21b41b2141bc"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 201,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5a42b07f-ca40-468b-a227-fec52bad48fb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5a42b07f-ca40-468b-a227-fec52bad48fb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:04 GMT",
+          "x-amzn-RequestId": "5a42b07f-ca40-468b-a227-fec52bad48fb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:05 PM"
+}

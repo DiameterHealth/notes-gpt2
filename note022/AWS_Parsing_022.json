@@ -1,0 +1,217 @@
+{
+  "note": "is being treated at home with oxygen and pain relief until discharge.\" Pt will be discharged by Wednesday and the family has no other plans for him because he was not required in hospital, Ms Gannon said. She said their plan was to bring him back to the UK to live with them. They were also in touch with the Department of Immigration to obtain Mr Bikubi\u0027s visa so he could be reunited with his family at school.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 405,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 30,
+          "endOffset": 36,
+          "score": 0.93227524,
+          "text": "oxygen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 41,
+          "endOffset": 45,
+          "score": 0.5313221,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 41,
+          "endOffset": 52,
+          "score": 0.45979032,
+          "text": "pain relief",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 192,
+          "endOffset": 198,
+          "score": 0.8692554,
+          "text": "Gannon",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 254,
+          "endOffset": 256,
+          "score": 0.9946003,
+          "text": "UK",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 348,
+          "endOffset": 354,
+          "score": 0.99521834,
+          "text": "Bikubi",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4709a0d6-6899-4c8c-8f73-3ba46b1573d3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4709a0d6-6899-4c8c-8f73-3ba46b1573d3"
+          ],
+          "Content-Length": [
+            "986"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "986",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:40 GMT",
+          "x-amzn-RequestId": "4709a0d6-6899-4c8c-8f73-3ba46b1573d3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 589,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5313218,
+          "beginOffset": 41,
+          "endOffset": 45,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.45802197
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.3532723
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.33230424
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.33207446
+            },
+            {
+              "description": "Headache",
+              "code": "R51",
+              "score": 0.33041164
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "06ca93f4-9201-4904-aa1e-cedcadd73724"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "06ca93f4-9201-4904-aa1e-cedcadd73724"
+          ],
+          "Content-Length": [
+            "613"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "613",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:40 GMT",
+          "x-amzn-RequestId": "06ca93f4-9201-4904-aa1e-cedcadd73724"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 232,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f8edaca0-394d-4570-a559-500cb3d74e07"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f8edaca0-394d-4570-a559-500cb3d74e07"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:59:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:59:40 GMT",
+          "x-amzn-RequestId": "f8edaca0-394d-4570-a559-500cb3d74e07"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:59:41 PM"
+}

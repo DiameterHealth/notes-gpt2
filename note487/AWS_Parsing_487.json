@@ -1,0 +1,1100 @@
+{
+  "note": "(CABG) operations at a young age and obesity. He has an extensive history of renal and hepatic failure and is receiving a hemodialysis therapy. He has undergone surgery for gastritis in 2003 and has undergone three bypasses. He has been previously treated for non-small cell, acute myeloid leukemia. Physical examination revealed diffuse erythematous maculo-papillomatosis, diffuse perivascular edema, elevated liver enzymes (alanine aminotransferase \u003c1.6 times upper limit of normal, alanine transaminase ≤5 × upper limit of normal and transaminase 50 IU/L \u003c45 IU/L), and increased renal blood flow.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1520,
+    "data": {
+      "entities": [
+        {
+          "id": 12,
+          "beginOffset": 1,
+          "endOffset": 5,
+          "score": 0.9046154,
+          "text": "CABG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 7,
+          "endOffset": 17,
+          "score": 0.46831438,
+          "text": "operations",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 37,
+          "endOffset": 44,
+          "score": 0.9808837,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9622813
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 77,
+          "endOffset": 102,
+          "score": 0.8900146,
+          "text": "renal and hepatic failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.98180777
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 122,
+          "endOffset": 142,
+          "score": 0.6666553,
+          "text": "hemodialysis therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 161,
+          "endOffset": 168,
+          "score": 0.94865143,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 173,
+          "endOffset": 182,
+          "score": 0.9193679,
+          "text": "gastritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88560516
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "beginOffset": 186,
+          "endOffset": 190,
+          "score": 0.9968405,
+          "text": "2003",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9193679,
+              "relationshipScore": 0.95418006,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 173,
+              "endOffset": 182,
+              "text": "gastritis",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.88560516
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 33,
+          "beginOffset": 186,
+          "endOffset": 190,
+          "score": 0.9968405,
+          "text": "2003",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_PROCEDURE_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "PROCEDURE_NAME",
+              "score": 0.94865143,
+              "relationshipScore": 0.9235678,
+              "relationshipType": "OVERLAP",
+              "id": 15,
+              "beginOffset": 161,
+              "endOffset": 168,
+              "text": "surgery",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 186,
+          "endOffset": 190,
+          "score": 0.9999685,
+          "text": "2003",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 215,
+          "endOffset": 223,
+          "score": 0.59980714,
+          "text": "bypasses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7095884
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "beginOffset": 237,
+          "endOffset": 247,
+          "score": 0.999923,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9151256,
+              "relationshipScore": 0.5860723,
+              "relationshipType": "OVERLAP",
+              "id": 16,
+              "beginOffset": 300,
+              "endOffset": 320,
+              "text": "Physical examination",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "beginOffset": 237,
+          "endOffset": 247,
+          "score": 0.999923,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.925824,
+              "relationshipScore": 0.7996809,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 260,
+              "endOffset": 274,
+              "text": "non-small cell",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.73678625
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "beginOffset": 237,
+          "endOffset": 247,
+          "score": 0.999923,
+          "text": "previously",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.5418981,
+              "relationshipScore": 0.7286267,
+              "relationshipType": "OVERLAP",
+              "id": 6,
+              "beginOffset": 276,
+              "endOffset": 298,
+              "text": "acute myeloid leukemia",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9440983
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 260,
+          "endOffset": 274,
+          "score": 0.925824,
+          "text": "non-small cell",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.73678625
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 276,
+          "endOffset": 298,
+          "score": 0.5418981,
+          "text": "acute myeloid leukemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9440983
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 300,
+          "endOffset": 320,
+          "score": 0.9151256,
+          "text": "Physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.98717636,
+              "relationshipScore": 0.99999857,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 330,
+              "endOffset": 372,
+              "text": "diffuse erythematous maculo-papillomatosis",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.8841114,
+              "relationshipScore": 0.9999989,
+              "relationshipType": "TEST_VALUE",
+              "id": 18,
+              "beginOffset": 374,
+              "endOffset": 400,
+              "text": "diffuse perivascular edema",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 338,
+          "endOffset": 357,
+          "score": 0.35239834,
+          "text": "erythematous maculo",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.49342793
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 358,
+          "endOffset": 372,
+          "score": 0.8558653,
+          "text": "papillomatosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74313474
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 382,
+          "endOffset": 400,
+          "score": 0.8165306,
+          "text": "perivascular edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8141854
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 402,
+          "endOffset": 424,
+          "score": 0.56627196,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6009966
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 411,
+          "endOffset": 416,
+          "score": 0.7632426,
+          "text": "liver",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 20,
+          "beginOffset": 411,
+          "endOffset": 424,
+          "score": 0.99460703,
+          "text": "liver enzymes",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9991128,
+              "relationshipScore": 0.99999607,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 402,
+              "endOffset": 410,
+              "text": "elevated",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 426,
+          "endOffset": 450,
+          "score": 0.76022303,
+          "text": "alanine aminotransferase",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9488578,
+              "relationshipScore": 0.9997731,
+              "relationshipType": "TEST_VALUE",
+              "id": 22,
+              "beginOffset": 451,
+              "endOffset": 455,
+              "text": "\u003c1.6",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 24,
+          "beginOffset": 485,
+          "endOffset": 505,
+          "score": 0.9043993,
+          "text": "alanine transaminase",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.42264462,
+              "relationshipScore": 0.9999844,
+              "relationshipType": "TEST_VALUE",
+              "id": 25,
+              "beginOffset": 506,
+              "endOffset": 532,
+              "text": "≤5 × upper limit of normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 26,
+          "beginOffset": 537,
+          "endOffset": 549,
+          "score": 0.87434876,
+          "text": "transaminase",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7800432,
+              "relationshipScore": 0.9999957,
+              "relationshipType": "TEST_VALUE",
+              "id": 27,
+              "beginOffset": 550,
+              "endOffset": 552,
+              "text": "50",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 28,
+          "beginOffset": 553,
+          "endOffset": 557,
+          "score": 0.6609856,
+          "text": "IU/L",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.96345365,
+              "relationshipScore": 0.99883205,
+              "relationshipType": "TEST_VALUE",
+              "id": 29,
+              "beginOffset": 558,
+              "endOffset": 561,
+              "text": "\u003c45",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.2995858,
+              "relationshipScore": 0.99996257,
+              "relationshipType": "TEST_UNIT",
+              "id": 30,
+              "beginOffset": 562,
+              "endOffset": 566,
+              "text": "IU/L",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "beginOffset": 583,
+          "endOffset": 599,
+          "score": 0.9739013,
+          "text": "renal blood flow",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9238966,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 31,
+              "beginOffset": 573,
+              "endOffset": 582,
+              "text": "increased",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.6972088,
+            "id": 23,
+            "beginOffset": 477,
+            "endOffset": 483,
+            "text": "normal",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2f56e548-1e1f-4c9f-924b-f045d2614188"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2f56e548-1e1f-4c9f-924b-f045d2614188"
+          ],
+          "Content-Length": [
+            "8746"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "8746",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:01 GMT",
+          "x-amzn-RequestId": "2f56e548-1e1f-4c9f-924b-f045d2614188"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 660,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "obesity",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9808837,
+          "beginOffset": 37,
+          "endOffset": 44,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9622813
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Obesity, unspecified",
+              "code": "E66.9",
+              "score": 0.6958653
+            },
+            {
+              "description": "Morbid (severe) obesity due to excess calories",
+              "code": "E66.01",
+              "score": 0.63557214
+            },
+            {
+              "description": "Localized adiposity",
+              "code": "E65",
+              "score": 0.53942543
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.49914202
+            },
+            {
+              "description": "Morbid (severe) obesity with alveolar hypoventilation",
+              "code": "E66.2",
+              "score": 0.43191803
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "renal and hepatic failure",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8900146,
+          "beginOffset": 77,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.98180777
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hepatic failure, unspecified without coma",
+              "code": "K72.90",
+              "score": 0.46425712
+            },
+            {
+              "description": "End stage renal disease",
+              "code": "N18.6",
+              "score": 0.4050761
+            },
+            {
+              "description": "Unspecified kidney failure",
+              "code": "N19",
+              "score": 0.38192478
+            },
+            {
+              "description": "Disorder of kidney and ureter, unspecified",
+              "code": "N28.9",
+              "score": 0.37539497
+            },
+            {
+              "description": "Calculus of kidney",
+              "code": "N20.0",
+              "score": 0.3652121
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "gastritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9193679,
+          "beginOffset": 173,
+          "endOffset": 182,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.88560516
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastritis, unspecified, without bleeding",
+              "code": "K29.70",
+              "score": 0.67387354
+            },
+            {
+              "description": "Gastritis, unspecified",
+              "code": "K29.7",
+              "score": 0.54212826
+            },
+            {
+              "description": "Acute gastritis without bleeding",
+              "code": "K29.00",
+              "score": 0.47045934
+            },
+            {
+              "description": "Personal history of other diseases of the digestive system",
+              "code": "Z87.19",
+              "score": 0.46607488
+            },
+            {
+              "description": "Other gastritis without bleeding",
+              "code": "K29.60",
+              "score": 0.4376071
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "bypasses",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.59980714,
+          "beginOffset": 215,
+          "endOffset": 223,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7095884
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Presence of aortocoronary bypass graft",
+              "code": "Z95.1",
+              "score": 0.6645819
+            },
+            {
+              "description": "Intestinal bypass and anastomosis status",
+              "code": "Z98.0",
+              "score": 0.5175368
+            },
+            {
+              "description": "Bariatric surgery status",
+              "code": "Z98.84",
+              "score": 0.51739526
+            },
+            {
+              "description": "Arthropathy following intestinal bypass, vertebrae",
+              "code": "M02.08",
+              "score": 0.27025935
+            },
+            {
+              "description": "Arthropathy following intestinal bypass, unspecified site",
+              "code": "M02.00",
+              "score": 0.2428379
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "non-small cell",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9258239,
+          "beginOffset": 260,
+          "endOffset": 274,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.73678625
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Basal cell carcinoma of skin, unspecified",
+              "code": "C44.91",
+              "score": 0.6685195
+            },
+            {
+              "description": "Mantle cell lymphoma, unspecified site",
+              "code": "C83.10",
+              "score": 0.5770884
+            },
+            {
+              "description": "Liver cell carcinoma",
+              "code": "C22.0",
+              "score": 0.57468975
+            },
+            {
+              "description": "Malignant (primary) neoplasm, unspecified",
+              "code": "C80.1",
+              "score": 0.5605817
+            },
+            {
+              "description": "Malignant neoplasm of unspecified part of unspecified bronchus or lung",
+              "code": "C34.90",
+              "score": 0.5593729
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "acute myeloid leukemia",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.54189813,
+          "beginOffset": 276,
+          "endOffset": 298,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9440983
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Myeloid leukemia, unspecified, not having achieved remission",
+              "code": "C92.90",
+              "score": 0.4870907
+            },
+            {
+              "description": "Acute myeloblastic leukemia, not having achieved remission",
+              "code": "C92.00",
+              "score": 0.39982796
+            },
+            {
+              "description": "Myeloid leukemia, unspecified",
+              "code": "C92.9",
+              "score": 0.34166637
+            },
+            {
+              "description": "Acute myeloid leukemia with 11q23-abnormality",
+              "code": "C92.6",
+              "score": 0.33954987
+            },
+            {
+              "description": "Other myeloid leukemia",
+              "code": "C92.Z",
+              "score": 0.33155078
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "erythematous maculo",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35239843,
+          "beginOffset": 338,
+          "endOffset": 357,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.493428
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified disorders of tympanic membrane, bilateral",
+              "code": "H73.893",
+              "score": 0.49319628
+            },
+            {
+              "description": "Erythematous condition, unspecified",
+              "code": "L53.9",
+              "score": 0.44366387
+            },
+            {
+              "description": "Other specified disorders of tympanic membrane, left ear",
+              "code": "H73.892",
+              "score": 0.42545527
+            },
+            {
+              "description": "Other diseases of pharynx",
+              "code": "J39.2",
+              "score": 0.3975327
+            },
+            {
+              "description": "Other specified erythematous conditions",
+              "code": "L53.8",
+              "score": 0.33043876
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "papillomatosis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8558653,
+          "beginOffset": 358,
+          "endOffset": 372,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74313474
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Benign neoplasm of left breast",
+              "code": "D24.2",
+              "score": 0.43732172
+            },
+            {
+              "description": "Benign neoplasm of right breast",
+              "code": "D24.1",
+              "score": 0.37438926
+            },
+            {
+              "description": "Benign neoplasm of breast",
+              "code": "D24",
+              "score": 0.3491229
+            },
+            {
+              "description": "Benign neoplasm of unspecified breast",
+              "code": "D24.9",
+              "score": 0.32039842
+            },
+            {
+              "description": "Acanthosis nigricans",
+              "code": "L83",
+              "score": 0.2666806
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "perivascular edema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8165306,
+          "beginOffset": 382,
+          "endOffset": 400,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8141854
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Edema, unspecified",
+              "code": "R60.9",
+              "score": 0.460976
+            },
+            {
+              "description": "Localized edema",
+              "code": "R60.0",
+              "score": 0.44945538
+            },
+            {
+              "description": "Chronic pulmonary edema",
+              "code": "J81.1",
+              "score": 0.40984887
+            },
+            {
+              "description": "Other specified soft tissue disorders",
+              "code": "M79.89",
+              "score": 0.3422359
+            },
+            {
+              "description": "Lymphedema, not elsewhere classified",
+              "code": "I89.0",
+              "score": 0.31740686
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "elevated liver enzymes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.566272,
+          "beginOffset": 402,
+          "endOffset": 424,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6009966
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal results of liver function studies",
+              "code": "R94.5",
+              "score": 0.48537293
+            },
+            {
+              "description": "Abnormal levels of other serum enzymes",
+              "code": "R74.8",
+              "score": 0.4749692
+            },
+            {
+              "description": "Other specified abnormal findings of blood chemistry",
+              "code": "R79.89",
+              "score": 0.37576252
+            },
+            {
+              "description": "Nonspecific elevation of levels of transaminase and lactic acid dehydrogenase [LDH]",
+              "code": "R74.0",
+              "score": 0.30140904
+            },
+            {
+              "description": "Unspecified jaundice",
+              "code": "R17",
+              "score": 0.2877204
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cacc660c-16fd-4217-91ec-ad7d80ba2221"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cacc660c-16fd-4217-91ec-ad7d80ba2221"
+          ],
+          "Content-Length": [
+            "7343"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7343",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:02 GMT",
+          "x-amzn-RequestId": "cacc660c-16fd-4217-91ec-ad7d80ba2221"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 260,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fbd74491-de19-49d8-9255-b95b1e2319ad"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fbd74491-de19-49d8-9255-b95b1e2319ad"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:01 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:01 GMT",
+          "x-amzn-RequestId": "fbd74491-de19-49d8-9255-b95b1e2319ad"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:02 PM"
+}

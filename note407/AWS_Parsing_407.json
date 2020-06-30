@@ -1,0 +1,653 @@
+{
+  "note": "surgery, angioplasty at age 40, and history of multiple chest infections that occurred at the same time he began his steroid regimen. He had not experienced any additional chest symptoms or any further cardiovascular disease diagnosis within 5 years preceding his start of steroid therapy. He did not have heart disease. The diagnosis of cardiac disease is based on electrocardiography, echocardiography, laboratory assessment and imaging studies.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 491,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 0,
+          "endOffset": 7,
+          "score": 0.90596145,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 9,
+          "endOffset": 20,
+          "score": 0.9679023,
+          "text": "angioplasty",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 28,
+          "endOffset": 30,
+          "score": 0.99978536,
+          "text": "40",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "AGE",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 56,
+          "endOffset": 61,
+          "score": 0.9573146,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 56,
+          "endOffset": 72,
+          "score": 0.887625,
+          "text": "chest infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9608866
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.9573146,
+              "relationshipScore": 0.9290606,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 56,
+              "endOffset": 61,
+              "text": "chest",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 87,
+          "endOffset": 103,
+          "score": 0.8734411,
+          "text": "at the same time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.887625,
+              "relationshipScore": 0.7739206,
+              "relationshipType": "OVERLAP",
+              "id": 3,
+              "beginOffset": 56,
+              "endOffset": 72,
+              "text": "chest infections",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9608866
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "beginOffset": 87,
+          "endOffset": 103,
+          "score": 0.8734411,
+          "text": "at the same time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.85646945,
+              "relationshipScore": 0.74099207,
+              "relationshipType": "OVERLAP",
+              "id": 11,
+              "beginOffset": 117,
+              "endOffset": 132,
+              "text": "steroid regimen",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 117,
+          "endOffset": 132,
+          "score": 0.85646945,
+          "text": "steroid regimen",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 172,
+          "endOffset": 177,
+          "score": 0.9528068,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 172,
+          "endOffset": 186,
+          "score": 0.82604384,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7275292
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.69520396
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 202,
+          "endOffset": 224,
+          "score": 0.93473434,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7922154
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8920405
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 235,
+          "endOffset": 243,
+          "score": 0.44200325,
+          "text": "within 5",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.93473434,
+              "relationshipScore": 0.63980466,
+              "relationshipType": "OVERLAP",
+              "id": 5,
+              "beginOffset": 202,
+              "endOffset": 224,
+              "text": "cardiovascular disease",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.7922154
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.8920405
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 273,
+          "endOffset": 288,
+          "score": 0.9031268,
+          "text": "steroid therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 306,
+          "endOffset": 311,
+          "score": 0.96400416,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 306,
+          "endOffset": 319,
+          "score": 0.9679851,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92493457
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8583951
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 338,
+          "endOffset": 353,
+          "score": 0.9666068,
+          "text": "cardiac disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9492565
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 366,
+          "endOffset": 385,
+          "score": 0.9400431,
+          "text": "electrocardiography",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 14,
+          "beginOffset": 387,
+          "endOffset": 403,
+          "score": 0.99227166,
+          "text": "echocardiography",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 15,
+          "beginOffset": 405,
+          "endOffset": 426,
+          "score": 0.84999937,
+          "text": "laboratory assessment",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 16,
+          "beginOffset": 431,
+          "endOffset": 446,
+          "score": 0.88298255,
+          "text": "imaging studies",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "7e975d0b-9ddc-40a0-83fc-389394e152d3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "7e975d0b-9ddc-40a0-83fc-389394e152d3"
+          ],
+          "Content-Length": [
+            "4715"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4715",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:38 GMT",
+          "x-amzn-RequestId": "7e975d0b-9ddc-40a0-83fc-389394e152d3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 820,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "chest infections",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.88762486,
+          "beginOffset": 56,
+          "endOffset": 72,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9608866
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.4791815
+            },
+            {
+              "description": "Local infection of the skin and subcutaneous tissue, unspecified",
+              "code": "L08.9",
+              "score": 0.43032026
+            },
+            {
+              "description": "Urinary tract infection, site not specified",
+              "code": "N39.0",
+              "score": 0.39556408
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.38978487
+            },
+            {
+              "description": "Other postprocedural complications and disorders of the circulatory system, not elsewhere classified",
+              "code": "I97.89",
+              "score": 0.37292802
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "chest symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.82604384,
+          "beginOffset": 172,
+          "endOffset": 186,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.72752917
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.69520396
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.6517383
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.623276
+            },
+            {
+              "description": "Respiratory disorder, unspecified",
+              "code": "J98.9",
+              "score": 0.6222523
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.56909883
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.54167455
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "cardiovascular disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9347342,
+          "beginOffset": 202,
+          "endOffset": 224,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7922154
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8920405
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.7103769
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.56224376
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.5442779
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.5370776
+            },
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.5209781
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "heart disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9679851,
+          "beginOffset": 306,
+          "endOffset": 319,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92493457
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8583951
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.83135605
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.8032459
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.75920427
+            },
+            {
+              "description": "Acute ischemic heart disease, unspecified",
+              "code": "I24.9",
+              "score": 0.71875525
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.71804833
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "cardiac disease",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9666067,
+          "beginOffset": 338,
+          "endOffset": 353,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9492565
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery without angina pectoris",
+              "code": "I25.10",
+              "score": 0.8129735
+            },
+            {
+              "description": "Heart disease, unspecified",
+              "code": "I51.9",
+              "score": 0.8101404
+            },
+            {
+              "description": "Hypertensive heart disease without heart failure",
+              "code": "I11.9",
+              "score": 0.7632794
+            },
+            {
+              "description": "Chronic ischemic heart disease, unspecified",
+              "code": "I25.9",
+              "score": 0.7493423
+            },
+            {
+              "description": "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris",
+              "code": "I25.119",
+              "score": 0.73031086
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "351f897d-7b78-482f-a1c3-d5b24629f55d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "351f897d-7b78-482f-a1c3-d5b24629f55d"
+          ],
+          "Content-Length": [
+            "4214"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:40 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "4214",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:40 GMT",
+          "x-amzn-RequestId": "351f897d-7b78-482f-a1c3-d5b24629f55d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 409,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "72ed5706-74b5-4ed5-b14c-3c6c067f9c0a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "72ed5706-74b5-4ed5-b14c-3c6c067f9c0a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:31:38 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:31:38 GMT",
+          "x-amzn-RequestId": "72ed5706-74b5-4ed5-b14c-3c6c067f9c0a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:31:40 PM"
+}

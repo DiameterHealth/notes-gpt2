@@ -1,0 +1,226 @@
+{
+  "note": ". He is now taking heparin for severe asthma.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 97,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 19,
+          "endOffset": 26,
+          "score": 0.99890804,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 38,
+          "endOffset": 44,
+          "score": 0.99678975,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94258577
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3131e8ad-a835-41f4-9e3e-5dcb653ca753"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3131e8ad-a835-41f4-9e3e-5dcb653ca753"
+          ],
+          "Content-Length": [
+            "395"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "395",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:36 GMT",
+          "x-amzn-RequestId": "3131e8ad-a835-41f4-9e3e-5dcb653ca753"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 152,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99678975,
+          "beginOffset": 38,
+          "endOffset": 44,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94258577
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7672766
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.609811
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.5275028
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.5027841
+            },
+            {
+              "description": "Severe persistent asthma, uncomplicated",
+              "code": "J45.50",
+              "score": 0.4569893
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "d950521c-d3ee-4319-bef8-3ef7405db969"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "d950521c-d3ee-4319-bef8-3ef7405db969"
+          ],
+          "Content-Length": [
+            "712"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "712",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:36 GMT",
+          "x-amzn-RequestId": "d950521c-d3ee-4319-bef8-3ef7405db969"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 428,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "heparin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99890804,
+          "beginOffset": 19,
+          "endOffset": 26,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "heparin",
+              "code": "5224",
+              "score": 0.9407183
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 5000 UNT/ML Prefilled Syringe",
+              "code": "1798389",
+              "score": 0.6438545
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 5000 UNT/ML Injection",
+              "code": "1659263",
+              "score": 0.58301085
+            },
+            {
+              "description": "2 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658647",
+              "score": 0.57524097
+            },
+            {
+              "description": "1 ML heparin sodium, porcine 1000 UNT/ML Injection",
+              "code": "1658659",
+              "score": 0.5256948
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "364eb174-3194-4637-832b-e470dd360f80"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "364eb174-3194-4637-832b-e470dd360f80"
+          ],
+          "Content-Length": [
+            "741"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:32:36 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "741",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:32:36 GMT",
+          "x-amzn-RequestId": "364eb174-3194-4637-832b-e470dd360f80"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:32:37 PM"
+}

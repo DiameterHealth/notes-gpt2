@@ -1,0 +1,187 @@
+{
+  "note": ". The pt had had a diagnosis of diabetes, but no medications had been provided. The nephrologist thought the nephron was being used as a \"glucose storage chamber\" and felt the pt\u0027s nephron should be removed completely. The nephrologist then felt he needed to look at the pt\u0027s pancreas to check for a nephron that was being clogged with fat.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 221,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "beginOffset": 32,
+          "endOffset": 40,
+          "score": 0.99542195,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9598947
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 276,
+          "endOffset": 284,
+          "score": 0.5812412,
+          "text": "pancreas",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "22ada7be-43f1-46ba-8e1c-07b89667021e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "22ada7be-43f1-46ba-8e1c-07b89667021e"
+          ],
+          "Content-Length": [
+            "402"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "402",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:13 GMT",
+          "x-amzn-RequestId": "22ada7be-43f1-46ba-8e1c-07b89667021e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 494,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "diabetes",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99542195,
+          "beginOffset": 32,
+          "endOffset": 40,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9598947
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Type 2 diabetes mellitus without complications",
+              "code": "E11.9",
+              "score": 0.78922117
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic chronic kidney disease",
+              "code": "E11.22",
+              "score": 0.7082755
+            },
+            {
+              "description": "Type 2 diabetes mellitus with diabetic polyneuropathy",
+              "code": "E11.42",
+              "score": 0.6734725
+            },
+            {
+              "description": "Type 1 diabetes mellitus with ketoacidosis without coma",
+              "code": "E10.10",
+              "score": 0.64604604
+            },
+            {
+              "description": "Family history of diabetes mellitus",
+              "code": "Z83.3",
+              "score": 0.6338065
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e661a4b9-8d0a-4fb1-a64d-918d15302fec"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e661a4b9-8d0a-4fb1-a64d-918d15302fec"
+          ],
+          "Content-Length": [
+            "822"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "822",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:14 GMT",
+          "x-amzn-RequestId": "e661a4b9-8d0a-4fb1-a64d-918d15302fec"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 189,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "48218dfe-be90-4fd9-aa51-b4315fc6f24e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "48218dfe-be90-4fd9-aa51-b4315fc6f24e"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:29:13 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:29:13 GMT",
+          "x-amzn-RequestId": "48218dfe-be90-4fd9-aa51-b4315fc6f24e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:29:14 PM"
+}

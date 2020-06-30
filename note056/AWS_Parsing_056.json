@@ -1,0 +1,399 @@
+{
+  "note": "for pain management and physical therapy. Complications: There were no complications or adverse events. Comment: This is the first report from the National Institute of Allergy and Infectious Diseases (NIAID), the National Cancer Institute, and the Vaccine \u0026 Related Biological Products Advisory Committee that includes an observation period of 8 weeks following vaccination of HIV seronegative participants receiving TDF/FTC-ZIKV.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 319,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 4,
+          "endOffset": 8,
+          "score": 0.89002335,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6309555
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 4,
+          "endOffset": 19,
+          "score": 0.97137374,
+          "text": "pain management",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 24,
+          "endOffset": 40,
+          "score": 0.99020994,
+          "text": "physical therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 71,
+          "endOffset": 84,
+          "score": 0.41001788,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5899867
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 88,
+          "endOffset": 102,
+          "score": 0.47054252,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73664314
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.84671646
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 363,
+          "endOffset": 374,
+          "score": 0.45659423,
+          "text": "vaccination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 378,
+          "endOffset": 381,
+          "score": 0.42955282,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.572506
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 418,
+          "endOffset": 430,
+          "score": 0.26666164,
+          "text": "TDF/FTC-ZIKV",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0bc410e1-3050-49af-b949-931c2f14f1ac"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0bc410e1-3050-49af-b949-931c2f14f1ac"
+          ],
+          "Content-Length": [
+            "1542"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1542",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:43 GMT",
+          "x-amzn-RequestId": "0bc410e1-3050-49af-b949-931c2f14f1ac"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 987,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89002335,
+          "beginOffset": 4,
+          "endOffset": 8,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6309555
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.7042363
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.47373638
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.43793347
+            },
+            {
+              "description": "Epigastric pain",
+              "code": "R10.13",
+              "score": 0.42741886
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.4155776
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "complications",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.41001788,
+          "beginOffset": 71,
+          "endOffset": 84,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "NEGATION",
+              "score": 0.5899867
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified complication of procedure",
+              "code": "T81.9",
+              "score": 0.7053464
+            },
+            {
+              "description": "Other postprocedural complications of skin and subcutaneous tissue",
+              "code": "L76.82",
+              "score": 0.691116
+            },
+            {
+              "description": "Other complications of procedures, not elsewhere classified",
+              "code": "T81.89",
+              "score": 0.67306614
+            },
+            {
+              "description": "Other postprocedural complications and disorders of digestive system",
+              "code": "K91.89",
+              "score": 0.63162065
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.6250243
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "adverse events",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.47054258,
+          "beginOffset": 88,
+          "endOffset": 102,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7366431
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8467164
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.6529011
+            },
+            {
+              "description": "Adverse effect of sulfonamides",
+              "code": "T37.0X5",
+              "score": 0.6123591
+            },
+            {
+              "description": "Unspecified effects of vibration",
+              "code": "T75.20",
+              "score": 0.5827687
+            },
+            {
+              "description": "Other adverse food reactions, not elsewhere classified",
+              "code": "T78.1",
+              "score": 0.55183315
+            },
+            {
+              "description": "Adverse effect of unspecified anesthetic",
+              "code": "T41.45",
+              "score": 0.5495093
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "HIV",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.42955267,
+          "beginOffset": 378,
+          "endOffset": 381,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5725059
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Human immunodeficiency virus [HIV] disease",
+              "code": "B20",
+              "score": 0.68381315
+            },
+            {
+              "description": "Asymptomatic human immunodeficiency virus [HIV] infection status",
+              "code": "Z21",
+              "score": 0.4862668
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] counseling",
+              "code": "Z71.7",
+              "score": 0.40545765
+            },
+            {
+              "description": "Human immunodeficiency virus, type 2 [HIV 2] as the cause of diseases classified elsewhere",
+              "code": "B97.35",
+              "score": 0.3871781
+            },
+            {
+              "description": "Human immunodeficiency virus [HIV] disease complicating childbirth",
+              "code": "O98.72",
+              "score": 0.37886533
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6f9a4601-0b18-4f68-8242-f260f4b4f427"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6f9a4601-0b18-4f68-8242-f260f4b4f427"
+          ],
+          "Content-Length": [
+            "3132"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:44 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3132",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:44 GMT",
+          "x-amzn-RequestId": "6f9a4601-0b18-4f68-8242-f260f4b4f427"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 199,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "60e359b6-6bb8-4301-9764-8f49b49c0fdb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "60e359b6-6bb8-4301-9764-8f49b49c0fdb"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:00:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:00:43 GMT",
+          "x-amzn-RequestId": "60e359b6-6bb8-4301-9764-8f49b49c0fdb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:00:44 PM"
+}

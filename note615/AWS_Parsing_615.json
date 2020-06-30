@@ -1,0 +1,417 @@
+{
+  "note": ". He did not wear contacts and had been wearing glasses since childhood and never had signs of cataracts, but his glasses are loose enough that they fell off when he fell down. He is now wearing glasses with a prescription and no longer has bluriness. The patient reports that at one point the blurred vision went away, but that it has returned.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 231,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 95,
+          "endOffset": 104,
+          "score": 0.9863079,
+          "text": "cataracts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.50029254
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6443894
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 149,
+          "endOffset": 157,
+          "score": 0.27544814,
+          "text": "fell off",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7620697
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 166,
+          "endOffset": 175,
+          "score": 0.521608,
+          "text": "fell down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.861934
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 241,
+          "endOffset": 250,
+          "score": 0.763324,
+          "text": "bluriness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6451605
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 294,
+          "endOffset": 308,
+          "score": 0.8552755,
+          "text": "blurred vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8259894
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "331ce666-e23e-4694-935e-35e4d82b4c19"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "331ce666-e23e-4694-935e-35e4d82b4c19"
+          ],
+          "Content-Length": [
+            "1084"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1084",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:53 GMT",
+          "x-amzn-RequestId": "331ce666-e23e-4694-935e-35e4d82b4c19"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 346,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cataracts",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9863079,
+          "beginOffset": 95,
+          "endOffset": 104,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5002924
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.6443894
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified cataract",
+              "code": "H26.9",
+              "score": 0.7851252
+            },
+            {
+              "description": "Cataract extraction status, unspecified eye",
+              "code": "Z98.49",
+              "score": 0.68729335
+            },
+            {
+              "description": "Cataract extraction status",
+              "code": "Z98.4",
+              "score": 0.6545641
+            },
+            {
+              "description": "Unspecified secondary cataract",
+              "code": "H26.40",
+              "score": 0.5758193
+            },
+            {
+              "description": "Other cataract",
+              "code": "H26",
+              "score": 0.56915975
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fell off",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.27544817,
+          "beginOffset": 149,
+          "endOffset": 157,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.76206976
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.6020166
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.59186816
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling with subsequent striking against other object",
+              "code": "W01.198",
+              "score": 0.56864053
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.56523806
+            },
+            {
+              "description": "Fall from, out of or through window",
+              "code": "W13.4",
+              "score": 0.50750506
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "fell down",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.52160805,
+          "beginOffset": 166,
+          "endOffset": 175,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.861934
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fall on same level, unspecified",
+              "code": "W18.30",
+              "score": 0.7101639
+            },
+            {
+              "description": "History of falling",
+              "code": "Z91.81",
+              "score": 0.65160453
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling without subsequent striking against object",
+              "code": "W01.0",
+              "score": 0.6413427
+            },
+            {
+              "description": "Fall on same level from slipping, tripping and stumbling with subsequent striking against other object",
+              "code": "W01.198",
+              "score": 0.6286949
+            },
+            {
+              "description": "Fall from, out of or through window",
+              "code": "W13.4",
+              "score": 0.589098
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "bluriness",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7633238,
+          "beginOffset": 241,
+          "endOffset": 250,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6451603
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.70641613
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.53403103
+            },
+            {
+              "description": "Visual disturbances",
+              "code": "H53",
+              "score": 0.4432718
+            },
+            {
+              "description": "Subjective visual disturbances",
+              "code": "H53.1",
+              "score": 0.40054718
+            },
+            {
+              "description": "Unspecified subjective visual disturbances",
+              "code": "H53.10",
+              "score": 0.3737911
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "blurred vision",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8552755,
+          "beginOffset": 294,
+          "endOffset": 308,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8259893
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other visual disturbances",
+              "code": "H53.8",
+              "score": 0.687554
+            },
+            {
+              "description": "Unspecified visual disturbance",
+              "code": "H53.9",
+              "score": 0.412423
+            },
+            {
+              "description": "Unspecified visual loss",
+              "code": "H54.7",
+              "score": 0.39157894
+            },
+            {
+              "description": "Diplopia",
+              "code": "H53.2",
+              "score": 0.3378295
+            },
+            {
+              "description": "Unspecified subjective visual disturbances",
+              "code": "H53.10",
+              "score": 0.33745888
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "849eae4a-4c9a-4131-be7c-234be9374e6c"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "849eae4a-4c9a-4131-be7c-234be9374e6c"
+          ],
+          "Content-Length": [
+            "3751"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3751",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:53 GMT",
+          "x-amzn-RequestId": "849eae4a-4c9a-4131-be7c-234be9374e6c"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 186,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "489e0d1a-05de-4cce-9184-143ff858cc54"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "489e0d1a-05de-4cce-9184-143ff858cc54"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:53 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:53 GMT",
+          "x-amzn-RequestId": "489e0d1a-05de-4cce-9184-143ff858cc54"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:54 PM"
+}

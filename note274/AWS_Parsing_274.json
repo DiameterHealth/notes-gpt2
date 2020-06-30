@@ -1,0 +1,361 @@
+{
+  "note": ". Pt was advised of a change in dressing every day; however, the ulcer did not worsen over the course of the study period. Blood Testing: Pt was on blood thinning medications for ulcers. This study was stopped because of the increased bleeding potential that resulted from the use of medication that is known to be neurotoxic in some instances.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 215,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "score": 0.9048715,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69906926
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 123,
+          "endOffset": 136,
+          "score": 0.9767655,
+          "text": "Blood Testing",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 148,
+          "endOffset": 174,
+          "score": 0.86997557,
+          "text": "blood thinning medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 179,
+          "endOffset": 185,
+          "score": 0.89773124,
+          "text": "ulcers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5451567
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 235,
+          "endOffset": 243,
+          "score": 0.96479887,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5459593
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 315,
+          "endOffset": 325,
+          "score": 0.4200956,
+          "text": "neurotoxic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "07298cde-49a9-4518-87f8-507c094e22b8"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "07298cde-49a9-4518-87f8-507c094e22b8"
+          ],
+          "Content-Length": [
+            "1127"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1127",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:14 GMT",
+          "x-amzn-RequestId": "07298cde-49a9-4518-87f8-507c094e22b8"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 336,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "ulcer",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9048715,
+          "beginOffset": 65,
+          "endOffset": 70,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6990692
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.6599998
+            },
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.60850257
+            },
+            {
+              "description": "Non-pressure chronic ulcer of right calf with unspecified severity",
+              "code": "L97.219",
+              "score": 0.60848385
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.5789909
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.57021064
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "ulcers",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.89773124,
+          "beginOffset": 179,
+          "endOffset": 185,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5451567
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Gastric ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K25.9",
+              "score": 0.5926604
+            },
+            {
+              "description": "Non-pressure chronic ulcer of unspecified part of left lower leg with unspecified severity",
+              "code": "L97.929",
+              "score": 0.5848975
+            },
+            {
+              "description": "Peptic ulcer, site unspecified, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K27.9",
+              "score": 0.5716981
+            },
+            {
+              "description": "Chronic venous hypertension (idiopathic) with ulcer and inflammation of bilateral lower extremity",
+              "code": "I87.333",
+              "score": 0.54582536
+            },
+            {
+              "description": "Gastrojejunal ulcer, unspecified as acute or chronic, without hemorrhage or perforation",
+              "code": "K28.9",
+              "score": 0.5313366
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "bleeding",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96479887,
+          "beginOffset": 235,
+          "endOffset": 243,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.5459593
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.66620445
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.6252269
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.5565824
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.55383414
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a digestive system organ or structure complicating a digestive system procedure",
+              "code": "K91.61",
+              "score": 0.53188556
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "neurotoxic",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4200954,
+          "beginOffset": 315,
+          "endOffset": 325,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other symptoms and signs involving the nervous system",
+              "code": "R29.818",
+              "score": 0.74353516
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.5941868
+            },
+            {
+              "description": "Nonpsychotic mental disorder, unspecified",
+              "code": "F48.9",
+              "score": 0.5940353
+            },
+            {
+              "description": "Neurologic neglect syndrome",
+              "code": "R41.4",
+              "score": 0.4940707
+            },
+            {
+              "description": "Other shellfish poisoning, accidental (unintentional)",
+              "code": "T61.781",
+              "score": 0.49401304
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "30514481-3455-4303-a911-24d5f59a44e4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "30514481-3455-4303-a911-24d5f59a44e4"
+          ],
+          "Content-Length": [
+            "3521"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3521",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:14 GMT",
+          "x-amzn-RequestId": "30514481-3455-4303-a911-24d5f59a44e4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 184,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "449bfd9d-ca75-45df-a8b6-b2a5c37f8bae"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "449bfd9d-ca75-45df-a8b6-b2a5c37f8bae"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:14 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:14 GMT",
+          "x-amzn-RequestId": "449bfd9d-ca75-45df-a8b6-b2a5c37f8bae"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:14 PM"
+}

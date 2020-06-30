@@ -1,0 +1,506 @@
+{
+  "note": "been diagnosed as having bipolar disorder and given antipsychotic agents in the past. In early 2004, the patient underwent a course of therapy with lithium. The patient\u0027s symptoms began to subside on cessation of the drug, and his mood returned to normal. At this point, the patient underwent another course of pharmacotherapy with lithium, this time including valproate. At this point, the patient\u0027s symptoms subsided, and he began to experience significant improvement in his depressive symptoms.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 404,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 25,
+          "endOffset": 41,
+          "score": 0.99242944,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97341263
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 52,
+          "endOffset": 72,
+          "score": 0.827843,
+          "text": "antipsychotic agents",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 73,
+          "endOffset": 84,
+          "score": 0.99999225,
+          "text": "in the past",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TREATMENT_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TREATMENT_NAME",
+              "score": 0.827843,
+              "relationshipScore": 0.9941105,
+              "relationshipType": "OVERLAP",
+              "id": 7,
+              "beginOffset": 52,
+              "endOffset": 72,
+              "text": "antipsychotic agents",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "beginOffset": 95,
+          "endOffset": 99,
+          "score": 0.9995908,
+          "text": "2004",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 135,
+          "endOffset": 142,
+          "score": 0.33326733,
+          "text": "therapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 148,
+          "endOffset": 155,
+          "score": 0.99301165,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 231,
+          "endOffset": 254,
+          "score": 0.52392113,
+          "text": "mood returned to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5910625
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 311,
+          "endOffset": 326,
+          "score": 0.7163054,
+          "text": "pharmacotherapy",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 332,
+          "endOffset": 339,
+          "score": 0.9927396,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 361,
+          "endOffset": 370,
+          "score": 0.9492481,
+          "text": "valproate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 478,
+          "endOffset": 497,
+          "score": 0.96855986,
+          "text": "depressive symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8391534
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "af17a086-a3cb-4844-850c-18a180d8aeaa"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "af17a086-a3cb-4844-850c-18a180d8aeaa"
+          ],
+          "Content-Length": [
+            "2179"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2179",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:18 GMT",
+          "x-amzn-RequestId": "af17a086-a3cb-4844-850c-18a180d8aeaa"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 615,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "bipolar disorder",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99242944,
+          "beginOffset": 25,
+          "endOffset": 41,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97341263
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.7600942
+            },
+            {
+              "description": "Bipolar disorder",
+              "code": "F31",
+              "score": 0.46953326
+            },
+            {
+              "description": "Bipolar disorder, current episode hypomanic",
+              "code": "F31.0",
+              "score": 0.40359595
+            },
+            {
+              "description": "Bipolar disorder, current episode manic without psychotic features, unspecified",
+              "code": "F31.10",
+              "score": 0.39644638
+            },
+            {
+              "description": "Bipolar disorder, current episode mixed, unspecified",
+              "code": "F31.60",
+              "score": 0.38137212
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "mood returned to normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5239214,
+          "beginOffset": 231,
+          "endOffset": 254,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5910625
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emotional lability",
+              "code": "R45.86",
+              "score": 0.6519889
+            },
+            {
+              "description": "Unspecified mood [affective] disorder",
+              "code": "F39",
+              "score": 0.47846735
+            },
+            {
+              "description": "Adjustment disorder with depressed mood",
+              "code": "F43.21",
+              "score": 0.4330029
+            },
+            {
+              "description": "Unhappiness",
+              "code": "R45.2",
+              "score": 0.40698797
+            },
+            {
+              "description": "Other specified persistent mood disorders",
+              "code": "F34.89",
+              "score": 0.38349864
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "depressive symptoms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96855986,
+          "beginOffset": 478,
+          "endOffset": 497,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83915335
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.86845237
+            },
+            {
+              "description": "Other general symptoms and signs",
+              "code": "R68.89",
+              "score": 0.8406661
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.7606959
+            },
+            {
+              "description": "Bipolar disorder, unspecified",
+              "code": "F31.9",
+              "score": 0.6454095
+            },
+            {
+              "description": "Major depressive disorder, recurrent severe without psychotic features",
+              "code": "F33.2",
+              "score": 0.639553
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1b67f3ee-52ac-4d7e-bcc5-471fc129df3f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1b67f3ee-52ac-4d7e-bcc5-471fc129df3f"
+          ],
+          "Content-Length": [
+            "2300"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:20 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2300",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:20 GMT",
+          "x-amzn-RequestId": "1b67f3ee-52ac-4d7e-bcc5-471fc129df3f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 367,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99301165,
+          "beginOffset": 148,
+          "endOffset": 155,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lithium",
+              "code": "6448",
+              "score": 0.976987
+            },
+            {
+              "description": "THENOATE LITHIUM",
+              "code": "236587",
+              "score": 0.8405943
+            },
+            {
+              "description": "Lithium Carbonate",
+              "code": "42351",
+              "score": 0.43229482
+            },
+            {
+              "description": "lithium bromide",
+              "code": "1310187",
+              "score": 0.35023546
+            },
+            {
+              "description": "lithium gluconate",
+              "code": "52106",
+              "score": 0.25647753
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "lithium",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9927396,
+          "beginOffset": 332,
+          "endOffset": 339,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Lithium",
+              "code": "6448",
+              "score": 0.976987
+            },
+            {
+              "description": "THENOATE LITHIUM",
+              "code": "236587",
+              "score": 0.8405943
+            },
+            {
+              "description": "Lithium Carbonate",
+              "code": "42351",
+              "score": 0.43229482
+            },
+            {
+              "description": "lithium bromide",
+              "code": "1310187",
+              "score": 0.35023546
+            },
+            {
+              "description": "Lithium Aspartate",
+              "code": "746070",
+              "score": 0.33105692
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "valproate",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9492481,
+          "beginOffset": 361,
+          "endOffset": 370,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Valproate",
+              "code": "40254",
+              "score": 0.9476142
+            },
+            {
+              "description": "Divalproex Sodium 250 MG Delayed Release Oral Tablet",
+              "code": "1099678",
+              "score": 0.29072472
+            },
+            {
+              "description": "24 HR Divalproex Sodium 500 MG Extended Release Oral Tablet",
+              "code": "1099569",
+              "score": 0.27912214
+            },
+            {
+              "description": "Divalproex Sodium 125 MG Delayed Release Oral Tablet",
+              "code": "1099625",
+              "score": 0.20642829
+            },
+            {
+              "description": "Divalproex Sodium 125 MG Delayed Release Oral Capsule",
+              "code": "1099596",
+              "score": 0.19931357
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cbea104a-af23-4719-af25-4bbdd78f4a25"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "Connection": [
+            "close"
+          ],
+          "x-amzn-RequestId": [
+            "cbea104a-af23-4719-af25-4bbdd78f4a25"
+          ],
+          "Content-Length": [
+            "1879"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Connection": "close",
+          "Content-Length": "1879",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:18 GMT",
+          "x-amzn-RequestId": "cbea104a-af23-4719-af25-4bbdd78f4a25"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:20 PM"
+}

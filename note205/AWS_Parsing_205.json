@@ -1,0 +1,710 @@
+{
+  "note": "She has normal electrocardiogram. Cardiologist:  \"We\u0027ve got a new cardiac rhythm. We\u0027re going to induce another rhythm. This is probably a pericardial effusion.\" (Pause) \"Or worse.\" [Cardiologist to patient] \"You didn\u0027t just pass out! This is a serious situation!\"  [Cardiologist to patient] \"If we don\u0027t make a fist and do chest compressions, it\u0027s a pericardial effusion or a ruptured aneurysm, you\u0027re going to die.\"  [Treatment of a patient with an aneurysm] \"You\u0027re going to bleed profusely from your chest and lungs.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 671,
+    "data": {
+      "entities": [
+        {
+          "id": 13,
+          "beginOffset": 15,
+          "endOffset": 32,
+          "score": 0.99446905,
+          "text": "electrocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.7016373,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 12,
+              "beginOffset": 8,
+              "endOffset": 14,
+              "text": "normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 66,
+          "endOffset": 80,
+          "score": 0.69256264,
+          "text": "cardiac rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.729656
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 97,
+          "endOffset": 118,
+          "score": 0.39467022,
+          "text": "induce another rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7324606
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 139,
+          "endOffset": 159,
+          "score": 0.9733689,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8514247
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 324,
+          "endOffset": 329,
+          "score": 0.92249423,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 324,
+          "endOffset": 342,
+          "score": 0.7266646,
+          "text": "chest compressions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74691284
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 351,
+          "endOffset": 371,
+          "score": 0.96639967,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93052816
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 377,
+          "endOffset": 394,
+          "score": 0.94251186,
+          "text": "ruptured aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92755806
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 412,
+          "endOffset": 415,
+          "score": 0.79550934,
+          "text": "die",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7900233
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "beginOffset": 451,
+          "endOffset": 459,
+          "score": 0.8685678,
+          "text": "aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.70823324
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 478,
+          "endOffset": 483,
+          "score": 0.48724982,
+          "text": "bleed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.997255,
+              "relationshipScore": 0.55537814,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 2,
+              "beginOffset": 514,
+              "endOffset": 519,
+              "text": "lungs",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 504,
+          "endOffset": 509,
+          "score": 0.99433064,
+          "text": "chest",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 514,
+          "endOffset": 519,
+          "score": 0.997255,
+          "text": "lungs",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2e0bbacb-eb08-4286-ab2f-5d8d42c5425d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2e0bbacb-eb08-4286-ab2f-5d8d42c5425d"
+          ],
+          "Content-Length": [
+            "2888"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:27 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2888",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:27 GMT",
+          "x-amzn-RequestId": "2e0bbacb-eb08-4286-ab2f-5d8d42c5425d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 807,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "cardiac rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.69256264,
+          "beginOffset": 66,
+          "endOffset": 80,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.729656
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.73239595
+            },
+            {
+              "description": "Presence of cardiac pacemaker",
+              "code": "Z95.0",
+              "score": 0.6372534
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.623236
+            },
+            {
+              "description": "Cardiac murmur, unspecified",
+              "code": "R01.1",
+              "score": 0.61925966
+            },
+            {
+              "description": "Intraoperative cardiac arrest during cardiac surgery",
+              "code": "I97.710",
+              "score": 0.5680463
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "induce another rhythm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39467034,
+          "beginOffset": 97,
+          "endOffset": 118,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.73246056
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cardiac arrhythmia, unspecified",
+              "code": "I49.9",
+              "score": 0.7848428
+            },
+            {
+              "description": "Other specified cardiac arrhythmias",
+              "code": "I49.8",
+              "score": 0.6845587
+            },
+            {
+              "description": "Takotsubo syndrome",
+              "code": "I51.81",
+              "score": 0.5417289
+            },
+            {
+              "description": "Re-entry ventricular arrhythmia",
+              "code": "I47.0",
+              "score": 0.5329585
+            },
+            {
+              "description": "Circadian rhythm sleep disorder, unspecified type",
+              "code": "G47.20",
+              "score": 0.4888636
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9733689,
+          "beginOffset": 139,
+          "endOffset": 159,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8514247
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pericardial effusion (noninflammatory)",
+              "code": "I31.3",
+              "score": 0.7734759
+            },
+            {
+              "description": "Pleural effusion, not elsewhere classified",
+              "code": "J90",
+              "score": 0.5137648
+            },
+            {
+              "description": "Disease of pericardium, unspecified",
+              "code": "I31.9",
+              "score": 0.48952952
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.3979624
+            },
+            {
+              "description": "Acute pericarditis, unspecified",
+              "code": "I30.9",
+              "score": 0.35247514
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "chest compressions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7266648,
+          "beginOffset": 324,
+          "endOffset": 342,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.74691284
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other placental disorders, third trimester",
+              "code": "O43.893",
+              "score": 0.5385368
+            },
+            {
+              "description": "Other chest pain",
+              "code": "R07.89",
+              "score": 0.5209383
+            },
+            {
+              "description": "Unspecified cord compression",
+              "code": "G95.20",
+              "score": 0.4786035
+            },
+            {
+              "description": "Unspecified placental disorder, third trimester",
+              "code": "O43.93",
+              "score": 0.44757748
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.42814758
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "pericardial effusion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.96639967,
+          "beginOffset": 351,
+          "endOffset": 371,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93052816
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pericardial effusion (noninflammatory)",
+              "code": "I31.3",
+              "score": 0.683429
+            },
+            {
+              "description": "Pleural effusion, not elsewhere classified",
+              "code": "J90",
+              "score": 0.4519429
+            },
+            {
+              "description": "Disease of pericardium, unspecified",
+              "code": "I31.9",
+              "score": 0.43212336
+            },
+            {
+              "description": "Effusion, unspecified joint",
+              "code": "M25.40",
+              "score": 0.30723795
+            },
+            {
+              "description": "Acute pericarditis, unspecified",
+              "code": "I30.9",
+              "score": 0.2794563
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "ruptured aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94251186,
+          "beginOffset": 377,
+          "endOffset": 394,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92755806
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Family history of ischemic heart disease and other diseases of the circulatory system",
+              "code": "Z82.49",
+              "score": 0.41454348
+            },
+            {
+              "description": "Cerebral aneurysm, nonruptured",
+              "code": "I67.1",
+              "score": 0.40021053
+            },
+            {
+              "description": "Abdominal aortic aneurysm, without rupture",
+              "code": "I71.4",
+              "score": 0.38826177
+            },
+            {
+              "description": "Aortic aneurysm of unspecified site, ruptured",
+              "code": "I71.8",
+              "score": 0.35955286
+            },
+            {
+              "description": "Aortic aneurysm of unspecified site, without rupture",
+              "code": "I71.9",
+              "score": 0.35867235
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "die",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.79550934,
+          "beginOffset": 412,
+          "endOffset": 415,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7900233
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ill-defined and unknown cause of mortality",
+              "code": "R99",
+              "score": 0.72912353
+            },
+            {
+              "description": "Disappearance and death of family member",
+              "code": "Z63.4",
+              "score": 0.6823559
+            },
+            {
+              "description": "Brain death",
+              "code": "G93.82",
+              "score": 0.5783093
+            },
+            {
+              "description": "Traumatic hemorrhage of cerebrum, unspecified, with loss of consciousness of any duration with death due to other cause prior to regaining consciousness",
+              "code": "S06.368",
+              "score": 0.48657468
+            },
+            {
+              "description": "Traumatic subdural hemorrhage with loss of consciousness of any duration with death due to other cause before regaining consciousness",
+              "code": "S06.5X8",
+              "score": 0.47267362
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "aneurysm",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8685677,
+          "beginOffset": 451,
+          "endOffset": 459,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7082332
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Aneurysm of heart",
+              "code": "I25.3",
+              "score": 0.66644263
+            },
+            {
+              "description": "Cerebral aneurysm, nonruptured",
+              "code": "I67.1",
+              "score": 0.629613
+            },
+            {
+              "description": "Aneurysm of unspecified site",
+              "code": "I72.9",
+              "score": 0.62732995
+            },
+            {
+              "description": "Aortic aneurysm of unspecified site, without rupture",
+              "code": "I71.9",
+              "score": 0.6069036
+            },
+            {
+              "description": "Abdominal aortic aneurysm, without rupture",
+              "code": "I71.4",
+              "score": 0.5936387
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "bleed",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.4872496,
+          "beginOffset": 478,
+          "endOffset": 483,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.997255,
+              "relationshipScore": 0.55537814,
+              "id": 11,
+              "beginOffset": 514,
+              "endOffset": 519,
+              "text": "lungs",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Hemorrhage, not elsewhere classified",
+              "code": "R58",
+              "score": 0.760775
+            },
+            {
+              "description": "Gastrointestinal hemorrhage, unspecified",
+              "code": "K92.2",
+              "score": 0.70072067
+            },
+            {
+              "description": "Intraoperative hemorrhage and hematoma of a circulatory system organ or structure complicating a cardiac catheterization",
+              "code": "I97.410",
+              "score": 0.6690067
+            },
+            {
+              "description": "Postprocedural hemorrhage of skin and subcutaneous tissue following other procedure",
+              "code": "L76.22",
+              "score": 0.65846217
+            },
+            {
+              "description": "Hematuria, unspecified",
+              "code": "R31.9",
+              "score": 0.6515871
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1ecf41db-2c6a-4699-acd3-d590c5a4fda3"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1ecf41db-2c6a-4699-acd3-d590c5a4fda3"
+          ],
+          "Content-Length": [
+            "6972"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6972",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:28 GMT",
+          "x-amzn-RequestId": "1ecf41db-2c6a-4699-acd3-d590c5a4fda3"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 282,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3983dab0-2159-47a1-b00b-50e783131bef"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3983dab0-2159-47a1-b00b-50e783131bef"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:28 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:28 GMT",
+          "x-amzn-RequestId": "3983dab0-2159-47a1-b00b-50e783131bef"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:29 PM"
+}

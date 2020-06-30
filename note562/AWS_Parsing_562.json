@@ -1,0 +1,360 @@
+{
+  "note": "in 2012. Frequency not given. Discussion of the patient\u0027s past medications and allergies. A review of the patient\u0027s physical examination. A review of the patient\u0027s past medical history. Determined that an antithrombotic beta interferon (Avandia) was contraindicated for the patient because a new anticoagulant (e.g., warfarin) had been placed into the patient\u0027s system. Recommended initial glucose level goal of 100 mg/dl with a target BG of 45 mg/dl.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 393,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "beginOffset": 3,
+          "endOffset": 7,
+          "score": 0.99786264,
+          "text": "2012",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 116,
+          "endOffset": 136,
+          "score": 0.56738955,
+          "text": "physical examination",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 205,
+          "endOffset": 235,
+          "score": 0.52127236,
+          "text": "antithrombotic beta interferon",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 237,
+          "endOffset": 244,
+          "score": 0.99903524,
+          "text": "Avandia",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 296,
+          "endOffset": 309,
+          "score": 0.34187979,
+          "text": "anticoagulant",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 317,
+          "endOffset": 325,
+          "score": 0.99935585,
+          "text": "warfarin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 390,
+          "endOffset": 403,
+          "score": 0.9530956,
+          "text": "glucose level",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.992855,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 7,
+              "beginOffset": 412,
+              "endOffset": 415,
+              "text": "100",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.9960759,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_UNIT",
+              "id": 8,
+              "beginOffset": 416,
+              "endOffset": 421,
+              "text": "mg/dl",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 436,
+          "endOffset": 438,
+          "score": 0.9881592,
+          "text": "BG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.99530053,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 442,
+              "endOffset": 444,
+              "text": "45",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_UNIT",
+              "score": 0.99647886,
+              "relationshipScore": 0.9999993,
+              "relationshipType": "TEST_UNIT",
+              "id": 11,
+              "beginOffset": 445,
+              "endOffset": 450,
+              "text": "mg/dl",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "3c543a50-0fcc-4a8c-970b-1c6ae9d64a2f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "3c543a50-0fcc-4a8c-970b-1c6ae9d64a2f"
+          ],
+          "Content-Length": [
+            "2210"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2210",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:17 GMT",
+          "x-amzn-RequestId": "3c543a50-0fcc-4a8c-970b-1c6ae9d64a2f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 280,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "8138b7b2-8ac9-479b-9325-80f3c0096d4b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "8138b7b2-8ac9-479b-9325-80f3c0096d4b"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:18 GMT",
+          "x-amzn-RequestId": "8138b7b2-8ac9-479b-9325-80f3c0096d4b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 813,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "antithrombotic beta interferon",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.52127236,
+          "beginOffset": 205,
+          "endOffset": 235,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Interferon-beta",
+              "code": "4381",
+              "score": 0.966426
+            },
+            {
+              "description": "interferon beta-1b",
+              "code": "72257",
+              "score": 0.8986109
+            },
+            {
+              "description": "{6 (0.2 ML Interferon beta-1a 0.044 MG/ML Auto-Injector) / 6 (0.5 ML Interferon beta-1a 0.044 MG/ML Auto-Injector) } Pack",
+              "code": "1650268",
+              "score": 0.7452698
+            },
+            {
+              "description": "{6 (0.2 ML Interferon beta-1a 0.044 MG/ML Prefilled Syringe [Rebif]) / 6 (0.5 ML Interferon beta-1a 0.044 MG/ML Prefilled Syringe [Rebif]) } Pack [Rebif Titration]",
+              "code": "795749",
+              "score": 0.4439286
+            },
+            {
+              "description": "{6 (0.2 ML Interferon beta-1a 0.044 MG/ML Auto-Injector [Rebif]) / 6 (0.5 ML Interferon beta-1a 0.044 MG/ML Auto-Injector [Rebif]) } Pack [Rebif Rebidose]",
+              "code": "1650282",
+              "score": 0.38731408
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "Avandia",
+          "category": "MEDICATION",
+          "type": "BRAND_NAME",
+          "score": 0.99903524,
+          "beginOffset": 237,
+          "endOffset": 244,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Avandia",
+              "code": "261455",
+              "score": 0.93943167
+            },
+            {
+              "description": "rosiglitazone 2 MG Oral Tablet [Avandia]",
+              "code": "261241",
+              "score": 0.5954247
+            },
+            {
+              "description": "rosiglitazone 8 MG Oral Tablet [Avandia]",
+              "code": "261243",
+              "score": 0.3822875
+            },
+            {
+              "description": "rosiglitazone 4 MG Oral Tablet [Avandia]",
+              "code": "261242",
+              "score": 0.25483385
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "warfarin",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99935585,
+          "beginOffset": 317,
+          "endOffset": 325,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Warfarin",
+              "code": "11289",
+              "score": 0.94398654
+            },
+            {
+              "description": "Warfarin Sodium 4 MG Oral Tablet",
+              "code": "855324",
+              "score": 0.71037406
+            },
+            {
+              "description": "Warfarin Sodium 7.5 MG Oral Tablet",
+              "code": "855344",
+              "score": 0.67125964
+            },
+            {
+              "description": "Warfarin Sodium 2.5 MG Oral Tablet",
+              "code": "855312",
+              "score": 0.5218386
+            },
+            {
+              "description": "Warfarin Sodium 3 MG Oral Tablet",
+              "code": "855318",
+              "score": 0.41751716
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "042ca86a-f629-4e80-b380-f21a5b23773e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "042ca86a-f629-4e80-b380-f21a5b23773e"
+          ],
+          "Content-Length": [
+            "2202"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2202",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:17 GMT",
+          "x-amzn-RequestId": "042ca86a-f629-4e80-b380-f21a5b23773e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:18 PM"
+}

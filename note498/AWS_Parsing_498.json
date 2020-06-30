@@ -1,0 +1,1052 @@
+{
+  "note": "in the right upper quadrant. The patient is currently receiving 50 mg of duloxetine 100 mg daily for depression. The ECG is as follows (Fig 1.):  The Patient\u0027s Echocardiogram (Fig 1) shows:  Bilateral AV, inferior, aVL, and LAD  Etoh, QRS, and PR interval are normal  No T wave  ROSC is normal  ICD was normal  QT was 158ms  T-wave inversion at 120 ms  Stroke volume is 3 ml/kg  Cerebral Aortic Nerve QRS wave is normal  The T wave is at the LAD (Fig 1):  The patient was given a CT and MRI before we started the duloxetine.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 1074,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 19,
+          "endOffset": 27,
+          "score": 0.9718095,
+          "text": "quadrant",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 34,
+          "beginOffset": 44,
+          "endOffset": 53,
+          "score": 0.9999989,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_MEDICATION_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "GENERIC_NAME",
+              "score": 0.999491,
+              "relationshipScore": 0.740242,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 73,
+              "endOffset": 83,
+              "text": "duloxetine",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 34,
+          "beginOffset": 44,
+          "endOffset": 53,
+          "score": 0.9999989,
+          "text": "currently",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9955419,
+              "relationshipScore": 0.5977081,
+              "relationshipType": "OVERLAP",
+              "id": 12,
+              "beginOffset": 101,
+              "endOffset": 111,
+              "text": "depression",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9495982
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 73,
+          "endOffset": 83,
+          "score": 0.999491,
+          "text": "duloxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9727384,
+              "relationshipScore": 0.99965775,
+              "relationshipType": "DOSAGE",
+              "id": 7,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "50 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9862937,
+              "relationshipScore": 0.9998528,
+              "relationshipType": "DOSAGE",
+              "id": 9,
+              "beginOffset": 84,
+              "endOffset": 90,
+              "text": "100 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99237496,
+              "relationshipScore": 0.99996233,
+              "relationshipType": "FREQUENCY",
+              "id": 10,
+              "beginOffset": 91,
+              "endOffset": 96,
+              "text": "daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "beginOffset": 101,
+          "endOffset": 111,
+          "score": 0.9955419,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495982
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "beginOffset": 117,
+          "endOffset": 120,
+          "score": 0.96413666,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 21,
+          "beginOffset": 160,
+          "endOffset": 174,
+          "score": 0.98657787,
+          "text": "Echocardiogram",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.6304914,
+              "relationshipScore": 0.9999578,
+              "relationshipType": "TEST_VALUE",
+              "id": 22,
+              "beginOffset": 191,
+              "endOffset": 238,
+              "text": "Bilateral AV, inferior, aVL, and LAD  Etoh, QRS",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.96504295,
+              "relationshipScore": 0.99993074,
+              "relationshipType": "TEST_VALUE",
+              "id": 23,
+              "beginOffset": 244,
+              "endOffset": 266,
+              "text": "PR interval are normal",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            },
+            {
+              "type": "TEST_VALUE",
+              "score": 0.9887919,
+              "relationshipScore": 0.99995494,
+              "relationshipType": "TEST_VALUE",
+              "id": 24,
+              "beginOffset": 268,
+              "endOffset": 277,
+              "text": "No T wave",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 201,
+          "endOffset": 203,
+          "score": 0.34120288,
+          "text": "AV",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 215,
+          "endOffset": 218,
+          "score": 0.3389517,
+          "text": "aVL",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 271,
+          "endOffset": 277,
+          "score": 0.35790613,
+          "text": "T wave",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8056957
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.86616045
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 279,
+          "endOffset": 293,
+          "score": 0.64544797,
+          "text": "ROSC is normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7469265
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 295,
+          "endOffset": 309,
+          "score": 0.4986341,
+          "text": "ICD was normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.64118844
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 311,
+          "endOffset": 323,
+          "score": 0.33549505,
+          "text": "QT was 158ms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 17,
+          "beginOffset": 325,
+          "endOffset": 341,
+          "score": 0.6920898,
+          "text": "T-wave inversion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.54661196
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "beginOffset": 353,
+          "endOffset": 377,
+          "score": 0.33180135,
+          "text": "Stroke volume is 3 ml/kg",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42207107
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "beginOffset": 388,
+          "endOffset": 419,
+          "score": 0.35146233,
+          "text": "Aortic Nerve QRS wave is normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.78947896
+            }
+          ]
+        },
+        {
+          "id": 32,
+          "beginOffset": 480,
+          "endOffset": 482,
+          "score": 0.9171142,
+          "text": "CT",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 33,
+          "beginOffset": 487,
+          "endOffset": 490,
+          "score": 0.99120367,
+          "text": "MRI",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 11,
+          "beginOffset": 513,
+          "endOffset": 523,
+          "score": 0.99802655,
+          "text": "duloxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.99497545,
+            "id": 0,
+            "beginOffset": 7,
+            "endOffset": 12,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9899914,
+            "id": 1,
+            "beginOffset": 13,
+            "endOffset": 18,
+            "text": "upper",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9579316,
+            "id": 3,
+            "beginOffset": 191,
+            "endOffset": 200,
+            "text": "Bilateral",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.88843465,
+            "id": 5,
+            "beginOffset": 205,
+            "endOffset": 213,
+            "text": "inferior",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.65878505,
+            "id": 25,
+            "beginOffset": 279,
+            "endOffset": 293,
+            "text": "ROSC is normal",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.8149693,
+            "id": 26,
+            "beginOffset": 295,
+            "endOffset": 309,
+            "text": "ICD was normal",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.8905814,
+            "id": 27,
+            "beginOffset": 311,
+            "endOffset": 323,
+            "text": "QT was 158ms",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.9021868,
+            "id": 28,
+            "beginOffset": 325,
+            "endOffset": 351,
+            "text": "T-wave inversion at 120 ms",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.96290326,
+            "id": 29,
+            "beginOffset": 353,
+            "endOffset": 377,
+            "text": "Stroke volume is 3 ml/kg",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.6814531,
+            "id": 30,
+            "beginOffset": 379,
+            "endOffset": 419,
+            "text": "Cerebral Aortic Nerve QRS wave is normal",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        },
+        {
+          "type": "TEST_TREATMENT_PROCEDURE",
+          "attribute": {
+            "type": "TEST_VALUE",
+            "score": 0.88131285,
+            "id": 31,
+            "beginOffset": 425,
+            "endOffset": 445,
+            "text": "T wave is at the LAD",
+            "category": "TEST_TREATMENT_PROCEDURE",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "539abedc-fe7a-4fdf-852d-60f4a8aa7fe0"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "539abedc-fe7a-4fdf-852d-60f4a8aa7fe0"
+          ],
+          "Content-Length": [
+            "7438"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "7438",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:25 GMT",
+          "x-amzn-RequestId": "539abedc-fe7a-4fdf-852d-60f4a8aa7fe0"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1100,
+    "data": {
+      "entities": [
+        {
+          "id": 3,
+          "text": "depression",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9955419,
+          "beginOffset": 101,
+          "endOffset": 111,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9495981
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Major depressive disorder, single episode, unspecified",
+              "code": "F32.9",
+              "score": 0.73282087
+            },
+            {
+              "description": "Major depressive disorder, single episode, severe without psychotic features",
+              "code": "F32.2",
+              "score": 0.5740037
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.566088
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.5240726
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.4903654
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "T wave",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35790625,
+          "beginOffset": 271,
+          "endOffset": 277,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.8056957
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8661605
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.8622584
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction involving right coronary artery",
+              "code": "I21.11",
+              "score": 0.8288046
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.7673307
+            },
+            {
+              "description": "ST elevation (STEMI) myocardial infarction of unspecified site",
+              "code": "I21.3",
+              "score": 0.7396806
+            },
+            {
+              "description": "Non-ST elevation (NSTEMI) myocardial infarction",
+              "code": "I21.4",
+              "score": 0.73317975
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "text": "ROSC is normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6454479,
+          "beginOffset": 279,
+          "endOffset": 293,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7469265
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Chromosome inversion in normal individual",
+              "code": "Q95.1",
+              "score": 0.5986228
+            },
+            {
+              "description": "Balanced translocation and insertion in normal individual",
+              "code": "Q95.0",
+              "score": 0.5902917
+            },
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.54496706
+            },
+            {
+              "description": "Finding of unspecified substance, not normally found in blood",
+              "code": "R78.9",
+              "score": 0.48719928
+            },
+            {
+              "description": "Marker chromosomes in normal individual",
+              "code": "Q92.61",
+              "score": 0.44373652
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "ICD was normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49863398,
+          "beginOffset": 295,
+          "endOffset": 309,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.64118874
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Presence of automatic (implantable) cardiac defibrillator",
+              "code": "Z95.810",
+              "score": 0.70362246
+            },
+            {
+              "description": "Chromosome inversion in normal individual",
+              "code": "Q95.1",
+              "score": 0.5074044
+            },
+            {
+              "description": "Balanced translocation and insertion in normal individual",
+              "code": "Q95.0",
+              "score": 0.50427336
+            },
+            {
+              "description": "Eating disorder, unspecified",
+              "code": "F50.9",
+              "score": 0.48595446
+            },
+            {
+              "description": "Finding of unspecified substance, not normally found in blood",
+              "code": "R78.9",
+              "score": 0.48533413
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "QT was 158ms",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.33549514,
+          "beginOffset": 311,
+          "endOffset": 323,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Long QT syndrome",
+              "code": "I45.81",
+              "score": 0.7271732
+            },
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.7248063
+            },
+            {
+              "description": "Disorientation, unspecified",
+              "code": "R41.0",
+              "score": 0.67279315
+            },
+            {
+              "description": "Hypotension, unspecified",
+              "code": "I95.9",
+              "score": 0.67068046
+            },
+            {
+              "description": "Rash and other nonspecific skin eruption",
+              "code": "R21",
+              "score": 0.6429636
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "text": "T-wave inversion",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.6920898,
+          "beginOffset": 325,
+          "endOffset": 341,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.546612
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Abnormal electrocardiogram [ECG] [EKG]",
+              "code": "R94.31",
+              "score": 0.85326535
+            },
+            {
+              "description": "Abnormal findings on diagnostic imaging of heart and coronary circulation",
+              "code": "R93.1",
+              "score": 0.66215485
+            },
+            {
+              "description": "Abnormal result of other cardiovascular function study",
+              "code": "R94.39",
+              "score": 0.6565404
+            },
+            {
+              "description": "Other specified conduction disorders",
+              "code": "I45.89",
+              "score": 0.65253544
+            },
+            {
+              "description": "Unhappiness",
+              "code": "R45.2",
+              "score": 0.60037243
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "text": "Stroke volume is 3 ml/kg",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.33180144,
+          "beginOffset": 353,
+          "endOffset": 377,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.42207107
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6507121
+            },
+            {
+              "description": "Volume depletion, unspecified",
+              "code": "E86.9",
+              "score": 0.5941235
+            },
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.55714846
+            },
+            {
+              "description": "Aphasia following cerebral infarction",
+              "code": "I69.320",
+              "score": 0.5235712
+            },
+            {
+              "description": "Other cerebral infarction",
+              "code": "I63.89",
+              "score": 0.5125839
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "text": "Aortic Nerve QRS wave is normal",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.35146222,
+          "beginOffset": 388,
+          "endOffset": 419,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.7894789
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Aortic aneurysm of unspecified site, without rupture",
+              "code": "I71.9",
+              "score": 0.35213333
+            },
+            {
+              "description": "Atherosclerosis of aorta",
+              "code": "I70.0",
+              "score": 0.32226765
+            },
+            {
+              "description": "Nonrheumatic aortic (valve) stenosis",
+              "code": "I35.0",
+              "score": 0.3169551
+            },
+            {
+              "description": "Rheumatic disorders of both mitral and aortic valves",
+              "code": "I08.0",
+              "score": 0.31489938
+            },
+            {
+              "description": "Thoracic aortic aneurysm, without rupture",
+              "code": "I71.2",
+              "score": 0.29916558
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "52463433-aa0e-4247-bcd4-4f746a169a28"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "52463433-aa0e-4247-bcd4-4f746a169a28"
+          ],
+          "Content-Length": [
+            "6204"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:26 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6204",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:26 GMT",
+          "x-amzn-RequestId": "52463433-aa0e-4247-bcd4-4f746a169a28"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 675,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "duloxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.999491,
+          "beginOffset": 73,
+          "endOffset": 83,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9727384,
+              "relationshipScore": 0.99965775,
+              "id": 0,
+              "beginOffset": 64,
+              "endOffset": 69,
+              "text": "50 mg",
+              "traits": []
+            },
+            {
+              "type": "DOSAGE",
+              "score": 0.9862937,
+              "relationshipScore": 0.9998529,
+              "id": 2,
+              "beginOffset": 84,
+              "endOffset": 90,
+              "text": "100 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99237496,
+              "relationshipScore": 0.99996233,
+              "id": 3,
+              "beginOffset": 91,
+              "endOffset": 96,
+              "text": "daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "duloxetine",
+              "code": "72625",
+              "score": 0.6629009
+            },
+            {
+              "description": "duloxetine 20 MG Delayed Release Oral Capsule",
+              "code": "596926",
+              "score": 0.076648794
+            },
+            {
+              "description": "duloxetine 60 MG Delayed Release Oral Capsule",
+              "code": "596934",
+              "score": 0.038249373
+            },
+            {
+              "description": "Fluoxetine",
+              "code": "4493",
+              "score": 0.037581056
+            },
+            {
+              "description": "Fluoxetine 50 MG / olanzapine 12 MG Oral Capsule [Symbyax]",
+              "code": "725068",
+              "score": 0.03613899
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "duloxetine",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99802655,
+          "beginOffset": 513,
+          "endOffset": 523,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "duloxetine",
+              "code": "72625",
+              "score": 0.93902403
+            },
+            {
+              "description": "duloxetine 20 MG Delayed Release Oral Capsule",
+              "code": "596926",
+              "score": 0.71846783
+            },
+            {
+              "description": "duloxetine 30 MG Delayed Release Oral Capsule",
+              "code": "596930",
+              "score": 0.40824243
+            },
+            {
+              "description": "duloxetine 40 MG Delayed Release Oral Capsule",
+              "code": "616402",
+              "score": 0.39898208
+            },
+            {
+              "description": "duloxetine 60 MG Delayed Release Oral Capsule",
+              "code": "596934",
+              "score": 0.33215573
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "73bf97a0-c113-4bd0-a58d-f8f9435c75d4"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "73bf97a0-c113-4bd0-a58d-f8f9435c75d4"
+          ],
+          "Content-Length": [
+            "1833"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:25 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1833",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:25 GMT",
+          "x-amzn-RequestId": "73bf97a0-c113-4bd0-a58d-f8f9435c75d4"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:27 PM"
+}

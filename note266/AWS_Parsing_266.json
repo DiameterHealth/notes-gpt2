@@ -1,0 +1,243 @@
+{
+  "note": "to reduce risk  Other (Psychological, Health or Social) Concerns: Should follow-up with the practitioner as this can affect their confidence in their healthcare and decision making  Patient should be aware that decisions to discontinue therapy can have serious side effects. If patients or other caregivers have concerns regarding their safety regarding care of a patient with an intellectual disability, they should first contact their healthcare provider.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 226,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 261,
+          "endOffset": 273,
+          "score": 0.9564364,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.514915
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.55178046
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 380,
+          "endOffset": 403,
+          "score": 0.9211686,
+          "text": "intellectual disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92370677
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "2142a945-5912-4e34-a15c-30034c2e97d1"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "2142a945-5912-4e34-a15c-30034c2e97d1"
+          ],
+          "Content-Length": [
+            "516"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "516",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:02 GMT",
+          "x-amzn-RequestId": "2142a945-5912-4e34-a15c-30034c2e97d1"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 386,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "side effects",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9564364,
+          "beginOffset": 261,
+          "endOffset": 273,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.514915
+            },
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5517804
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Adverse effect of antineoplastic and immunosuppressive drugs",
+              "code": "T45.1X5",
+              "score": 0.5732927
+            },
+            {
+              "description": "Unspecified adverse effect of drug or medicament",
+              "code": "T88.7",
+              "score": 0.5381526
+            },
+            {
+              "description": "Radiological procedure and radiotherapy as the cause of abnormal reaction of the patient, or of later complication, without mention of misadventure at the time of the procedure",
+              "code": "Y84.2",
+              "score": 0.52894235
+            },
+            {
+              "description": "Adverse effect of beta-adrenoreceptor antagonists",
+              "code": "T44.7X5",
+              "score": 0.44614342
+            },
+            {
+              "description": "Adverse effect of unspecified drugs, medicaments and biological substances",
+              "code": "T50.905",
+              "score": 0.4421557
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "intellectual disability",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9211687,
+          "beginOffset": 380,
+          "endOffset": 403,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.92370677
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified intellectual disabilities",
+              "code": "F79",
+              "score": 0.37744895
+            },
+            {
+              "description": "Limitation of activities due to disability",
+              "code": "Z73.6",
+              "score": 0.3766884
+            },
+            {
+              "description": "Developmental disorder of scholastic skills, unspecified",
+              "code": "F81.9",
+              "score": 0.31409657
+            },
+            {
+              "description": "Borderline intellectual functioning",
+              "code": "R41.83",
+              "score": 0.2976226
+            },
+            {
+              "description": "Family history of intellectual disabilities",
+              "code": "Z81.0",
+              "score": 0.2960882
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "6dcfed37-56ea-4de9-8f5f-b86c6b0ddd83"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "6dcfed37-56ea-4de9-8f5f-b86c6b0ddd83"
+          ],
+          "Content-Length": [
+            "1801"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1801",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:02 GMT",
+          "x-amzn-RequestId": "6dcfed37-56ea-4de9-8f5f-b86c6b0ddd83"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 204,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b2b4cb3d-cd6f-4aa8-8a49-ee4f2e086990"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b2b4cb3d-cd6f-4aa8-8a49-ee4f2e086990"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:06:02 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:06:02 GMT",
+          "x-amzn-RequestId": "b2b4cb3d-cd6f-4aa8-8a49-ee4f2e086990"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:06:03 PM"
+}

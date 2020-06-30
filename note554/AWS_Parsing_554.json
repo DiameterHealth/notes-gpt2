@@ -1,0 +1,436 @@
+{
+  "note": "She presented to ED with leg pain and she was prescribed an NSAID and acetaminophen as well as pain meds. Knee:  In the PT exam, he palpated the joint with a soft towel, then did a Tinel\u0027s test, and noted that she didn\u0027t know how to grip the foam roll she was instructed to hold. He then told her to grip with her right hand and then place it on the foam roll with the left in support.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 377,
+    "data": {
+      "entities": [
+        {
+          "id": 9,
+          "beginOffset": 17,
+          "endOffset": 19,
+          "score": 0.99809176,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 25,
+          "endOffset": 28,
+          "score": 0.96303356,
+          "text": "leg",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "score": 0.76250154,
+          "text": "leg pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.67135113
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 60,
+          "endOffset": 65,
+          "score": 0.71968585,
+          "text": "NSAID",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 60,
+          "endOffset": 65,
+          "score": 0.4898472,
+          "text": "NSAID",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 70,
+          "endOffset": 83,
+          "score": 0.99869555,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 8,
+          "beginOffset": 95,
+          "endOffset": 99,
+          "score": 0.84388393,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6994216
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 95,
+          "endOffset": 104,
+          "score": 0.97368455,
+          "text": "pain meds",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 106,
+          "endOffset": 110,
+          "score": 0.9666989,
+          "text": "Knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 120,
+          "endOffset": 127,
+          "score": 0.28070176,
+          "text": "PT exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 145,
+          "endOffset": 150,
+          "score": 0.9652066,
+          "text": "joint",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 181,
+          "endOffset": 193,
+          "score": 0.29928088,
+          "text": "Tinel\u0027s test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 320,
+          "endOffset": 324,
+          "score": 0.9766641,
+          "text": "hand",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "ANATOMY",
+          "attribute": {
+            "type": "DIRECTION",
+            "score": 0.9570159,
+            "id": 3,
+            "beginOffset": 314,
+            "endOffset": 319,
+            "text": "right",
+            "category": "ANATOMY",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ba06d9d4-b932-460a-8ac6-66de127b8f80"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ba06d9d4-b932-460a-8ac6-66de127b8f80"
+          ],
+          "Content-Length": [
+            "2263"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2263",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:04 GMT",
+          "x-amzn-RequestId": "ba06d9d4-b932-460a-8ac6-66de127b8f80"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 498,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "leg pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7625014,
+          "beginOffset": 25,
+          "endOffset": 33,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6713511
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in leg, unspecified",
+              "code": "M79.606",
+              "score": 0.6066405
+            },
+            {
+              "description": "Pain in unspecified lower leg",
+              "code": "M79.669",
+              "score": 0.5852439
+            },
+            {
+              "description": "Pain in left leg",
+              "code": "M79.605",
+              "score": 0.5828303
+            },
+            {
+              "description": "Pain in left lower leg",
+              "code": "M79.662",
+              "score": 0.5366589
+            },
+            {
+              "description": "Pain in right lower leg",
+              "code": "M79.661",
+              "score": 0.48434487
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.84388393,
+          "beginOffset": 95,
+          "endOffset": 99,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6994216
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.60355264
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.46905744
+            },
+            {
+              "description": "Precordial pain",
+              "code": "R07.2",
+              "score": 0.4328774
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.43203655
+            },
+            {
+              "description": "Chest pain, unspecified",
+              "code": "R07.9",
+              "score": 0.4299061
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "988ac7ba-9cb2-4170-8363-e2dc62915426"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "988ac7ba-9cb2-4170-8363-e2dc62915426"
+          ],
+          "Content-Length": [
+            "1341"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1341",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:05 GMT",
+          "x-amzn-RequestId": "988ac7ba-9cb2-4170-8363-e2dc62915426"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 515,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "NSAID",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.71968585,
+          "beginOffset": 60,
+          "endOffset": 65,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "snail preparation",
+              "code": "1368534",
+              "score": 0.3918542
+            },
+            {
+              "description": "Nicotinamide adenine dinucleotide (NAD)",
+              "code": "1044975",
+              "score": 0.10600197
+            },
+            {
+              "description": "Garden snail mucin preparation",
+              "code": "1428846",
+              "score": 0.05381812
+            },
+            {
+              "description": "sea snail preparation",
+              "code": "1546397",
+              "score": 0.020082394
+            },
+            {
+              "description": "snowball sand verbena whole extract",
+              "code": "1737112",
+              "score": 0.0147492
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.99869555,
+          "beginOffset": 70,
+          "endOffset": 83,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6038662
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet",
+              "code": "313782",
+              "score": 0.59314084
+            },
+            {
+              "description": "Acetaminophen 650 MG Oral Tablet",
+              "code": "198444",
+              "score": 0.29524592
+            },
+            {
+              "description": "100 ML Acetaminophen 10 MG/ML Injection [Ofirmev]",
+              "code": "1041530",
+              "score": 0.27166602
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "539a77a9-8c1c-4a3c-ac44-233795a73244"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "539a77a9-8c1c-4a3c-ac44-233795a73244"
+          ],
+          "Content-Length": [
+            "1326"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:36:04 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1326",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:36:04 GMT",
+          "x-amzn-RequestId": "539a77a9-8c1c-4a3c-ac44-233795a73244"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:36:06 PM"
+}

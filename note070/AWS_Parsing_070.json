@@ -1,0 +1,420 @@
+{
+  "note": "We took an ultrasound on Jan 4th and had our first appointment with her on the 5th (and a second on Jan 6th). On Jan 7th she was found to be 25 cm dilated, and the baby was 20 cm long. She was having contractions for about 5 minutes, and she had to be sedated twice to achieve a cervix that could be induced by our midwife.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 487,
+    "data": {
+      "entities": [
+        {
+          "id": 8,
+          "beginOffset": 11,
+          "endOffset": 21,
+          "score": 0.9880983,
+          "text": "ultrasound",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 25,
+          "endOffset": 32,
+          "score": 0.9998672,
+          "text": "Jan 4th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 25,
+          "endOffset": 32,
+          "score": 0.99989307,
+          "text": "Jan 4th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9880983,
+              "relationshipScore": 0.9848465,
+              "relationshipType": "OVERLAP",
+              "id": 8,
+              "beginOffset": 11,
+              "endOffset": 21,
+              "text": "ultrasound",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 79,
+          "endOffset": 82,
+          "score": 0.23212916,
+          "text": "5th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 100,
+          "endOffset": 107,
+          "score": 0.99991226,
+          "text": "Jan 6th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 13,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "score": 0.9997713,
+          "text": "Jan 7th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9652807,
+              "relationshipScore": 0.7048445,
+              "relationshipType": "OVERLAP",
+              "id": 2,
+              "beginOffset": 200,
+              "endOffset": 212,
+              "text": "contractions",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "SIGN",
+                  "score": 0.733025
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "score": 0.9997713,
+          "text": "Jan 7th",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.40404448,
+              "relationshipScore": 0.97098124,
+              "relationshipType": "OVERLAP",
+              "id": 1,
+              "beginOffset": 147,
+              "endOffset": 154,
+              "text": "dilated",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 113,
+          "endOffset": 120,
+          "score": 0.99971133,
+          "text": "Jan 7th",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "DATE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 147,
+          "endOffset": 154,
+          "score": 0.40404448,
+          "text": "dilated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 2,
+          "beginOffset": 200,
+          "endOffset": 212,
+          "score": 0.9652807,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.733025
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 252,
+          "endOffset": 259,
+          "score": 0.4902785,
+          "text": "sedated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 252,
+          "endOffset": 259,
+          "score": 0.48750398,
+          "text": "sedated",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 279,
+          "endOffset": 285,
+          "score": 0.9142218,
+          "text": "cervix",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "b708173f-3448-4bf8-a6cb-185cf709d16d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "b708173f-3448-4bf8-a6cb-185cf709d16d"
+          ],
+          "Content-Length": [
+            "2833"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2833",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:08 GMT",
+          "x-amzn-RequestId": "b708173f-3448-4bf8-a6cb-185cf709d16d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 396,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "dilated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40404448,
+          "beginOffset": 147,
+          "endOffset": 154,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Varicose veins of other specified sites",
+              "code": "I86.8",
+              "score": 0.68198055
+            },
+            {
+              "description": "Dilated cardiomyopathy",
+              "code": "I42.0",
+              "score": 0.66659
+            },
+            {
+              "description": "Cardiomegaly",
+              "code": "I51.7",
+              "score": 0.64310503
+            },
+            {
+              "description": "Mydriasis",
+              "code": "H57.04",
+              "score": 0.63490456
+            },
+            {
+              "description": "Cardiomyopathy, unspecified",
+              "code": "I42.9",
+              "score": 0.6335821
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "contractions",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9652807,
+          "beginOffset": 200,
+          "endOffset": 212,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.733025
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Ventricular premature depolarization",
+              "code": "I49.3",
+              "score": 0.7349319
+            },
+            {
+              "description": "Atrial premature depolarization",
+              "code": "I49.1",
+              "score": 0.7057921
+            },
+            {
+              "description": "Unspecified premature depolarization",
+              "code": "I49.40",
+              "score": 0.6594121
+            },
+            {
+              "description": "Other premature depolarization",
+              "code": "I49.49",
+              "score": 0.64088076
+            },
+            {
+              "description": "Obstruction of gallbladder",
+              "code": "K82.0",
+              "score": 0.55035263
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "sedated",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.49027836,
+          "beginOffset": 252,
+          "endOffset": 259,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other complications of anesthesia",
+              "code": "T88.59",
+              "score": 0.54459965
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic abuse, uncomplicated",
+              "code": "F13.10",
+              "score": 0.4269281
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic dependence, uncomplicated",
+              "code": "F13.20",
+              "score": 0.40208495
+            },
+            {
+              "description": "Sedative, hypnotic, or anxiolytic use, unspecified, uncomplicated",
+              "code": "F13.90",
+              "score": 0.3705863
+            },
+            {
+              "description": "Sedative, hypnotic or anxiolytic abuse with intoxication, unspecified",
+              "code": "F13.129",
+              "score": 0.36314175
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "f64d3e5d-3114-483b-a93f-a5779610004b"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "f64d3e5d-3114-483b-a93f-a5779610004b"
+          ],
+          "Content-Length": [
+            "2104"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2104",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:08 GMT",
+          "x-amzn-RequestId": "f64d3e5d-3114-483b-a93f-a5779610004b"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 209,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "c4d9b1f4-3875-4118-bd79-58faade52032"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "c4d9b1f4-3875-4118-bd79-58faade52032"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:08 GMT",
+          "x-amzn-RequestId": "c4d9b1f4-3875-4118-bd79-58faade52032"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:01:09 PM"
+}

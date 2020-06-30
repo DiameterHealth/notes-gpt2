@@ -1,0 +1,383 @@
+{
+  "note": ". The history is that he was outdoors during inclement weather in his living environment and a warm wind occurred when he attempted to stand up. The patient was also sweating profusely. Tests for fever are negative. The patient\u0027s urine is slightly acidic. The blood culture is negative for E. coli but positive for Vibrio vulnificus which grows poorly in our local water supply.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 560,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 166,
+          "endOffset": 184,
+          "score": 0.5811546,
+          "text": "sweating profusely",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83638793
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 196,
+          "endOffset": 201,
+          "score": 0.8829201,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47966763
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 260,
+          "endOffset": 273,
+          "score": 0.9593184,
+          "text": "blood culture",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5309747,
+              "relationshipScore": 1.0,
+              "relationshipType": "TEST_VALUE",
+              "id": 5,
+              "beginOffset": 277,
+              "endOffset": 285,
+              "text": "negative",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 290,
+          "endOffset": 297,
+          "score": 0.78864795,
+          "text": "E. coli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.69188327
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5636753
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 315,
+          "endOffset": 332,
+          "score": 0.76805824,
+          "text": "Vibrio vulnificus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8222921
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "94a42160-bfc3-4716-8fbd-9a09a17f71eb"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "94a42160-bfc3-4716-8fbd-9a09a17f71eb"
+          ],
+          "Content-Length": [
+            "1291"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1291",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:29 GMT",
+          "x-amzn-RequestId": "94a42160-bfc3-4716-8fbd-9a09a17f71eb"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 502,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "sweating profusely",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5811547,
+          "beginOffset": 166,
+          "endOffset": 184,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.83638793
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Generalized hyperhidrosis",
+              "code": "R61",
+              "score": 0.6668315
+            },
+            {
+              "description": "Other mechanical complication of unspecified vascular grafts",
+              "code": "T82.399",
+              "score": 0.50541806
+            },
+            {
+              "description": "Abnormal coagulation profile",
+              "code": "R79.1",
+              "score": 0.48007226
+            },
+            {
+              "description": "Bromhidrosis",
+              "code": "L75.0",
+              "score": 0.38089558
+            },
+            {
+              "description": "Pneumonia due to other Gram-negative bacteria",
+              "code": "J15.6",
+              "score": 0.34614608
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fever",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8829201,
+          "beginOffset": 196,
+          "endOffset": 201,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.47966754
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fever, unspecified",
+              "code": "R50.9",
+              "score": 0.78748274
+            },
+            {
+              "description": "Chills (without fever)",
+              "code": "R68.83",
+              "score": 0.5248644
+            },
+            {
+              "description": "Relapsing fever, unspecified",
+              "code": "A68.9",
+              "score": 0.45544043
+            },
+            {
+              "description": "Yellow fever, unspecified",
+              "code": "A95.9",
+              "score": 0.4386797
+            },
+            {
+              "description": "Rat-bite fever, unspecified",
+              "code": "A25.9",
+              "score": 0.39561883
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "E. coli",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.78864795,
+          "beginOffset": 290,
+          "endOffset": 297,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6918833
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.5636753
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified Escherichia coli [E. coli] as the cause of diseases classified elsewhere",
+              "code": "B96.20",
+              "score": 0.81269866
+            },
+            {
+              "description": "Sepsis due to Escherichia coli [E. coli]",
+              "code": "A41.51",
+              "score": 0.7875786
+            },
+            {
+              "description": "Pneumonia due to Escherichia coli",
+              "code": "J15.5",
+              "score": 0.6497466
+            },
+            {
+              "description": "Colic",
+              "code": "R10.83",
+              "score": 0.643772
+            },
+            {
+              "description": "Acute nasopharyngitis [common cold]",
+              "code": "J00",
+              "score": 0.6397533
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "Vibrio vulnificus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7680585,
+          "beginOffset": 315,
+          "endOffset": 332,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8222921
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Vibrio vulnificus as the cause of diseases classified elsewhere",
+              "code": "B96.82",
+              "score": 0.7176574
+            },
+            {
+              "description": "Cholera, unspecified",
+              "code": "A00.9",
+              "score": 0.5189765
+            },
+            {
+              "description": "Cholera due to Vibrio cholerae 01, biovar cholerae",
+              "code": "A00.0",
+              "score": 0.4875414
+            },
+            {
+              "description": "Zoonotic bacterial disease, unspecified",
+              "code": "A28.9",
+              "score": 0.46944845
+            },
+            {
+              "description": "Cholera due to Vibrio cholerae 01, biovar eltor",
+              "code": "A00.1",
+              "score": 0.44781277
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "fdc9291d-290b-4723-8e47-9b2aa8ad564a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "fdc9291d-290b-4723-8e47-9b2aa8ad564a"
+          ],
+          "Content-Length": [
+            "2949"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2949",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:29 GMT",
+          "x-amzn-RequestId": "fdc9291d-290b-4723-8e47-9b2aa8ad564a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 192,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "1c55edd6-f644-4fd5-a73f-f396f9efa0de"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "1c55edd6-f644-4fd5-a73f-f396f9efa0de"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:34:29 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:34:29 GMT",
+          "x-amzn-RequestId": "1c55edd6-f644-4fd5-a73f-f396f9efa0de"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:34:30 PM"
+}

@@ -1,0 +1,341 @@
+{
+  "note": "and there is no change. The patient is still unable to speak and will not be able to have food or water. It is difficult to know what stage the patient is at but there is no obvious improvement. The Patient is now scheduled for a CT Scan. Routine Tests:  Acetaminophen: This patient\u0027s symptoms cleared after the administration of acetaminophen at a dose of 200 mg twice daily.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 387,
+    "data": {
+      "entities": [
+        {
+          "id": 4,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "score": 0.8217646,
+          "text": "unable to speak",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5147761
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 230,
+          "endOffset": 237,
+          "score": 0.9891003,
+          "text": "CT Scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 239,
+          "endOffset": 252,
+          "score": 0.44852123,
+          "text": "Routine Tests",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 255,
+          "endOffset": 268,
+          "score": 0.97422725,
+          "text": "Acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 330,
+          "endOffset": 343,
+          "score": 0.9989466,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9980281,
+              "relationshipScore": 0.99719775,
+              "relationshipType": "DOSAGE",
+              "id": 2,
+              "beginOffset": 357,
+              "endOffset": 363,
+              "text": "200 mg",
+              "category": "MEDICATION",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99910766,
+              "relationshipScore": 0.99997497,
+              "relationshipType": "FREQUENCY",
+              "id": 3,
+              "beginOffset": 364,
+              "endOffset": 375,
+              "text": "twice daily",
+              "category": "MEDICATION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "eda8a7c7-da73-480b-8e7f-a3d651137b62"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "eda8a7c7-da73-480b-8e7f-a3d651137b62"
+          ],
+          "Content-Length": [
+            "1310"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:15 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1310",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:15 GMT",
+          "x-amzn-RequestId": "eda8a7c7-da73-480b-8e7f-a3d651137b62"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 408,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "unable to speak",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8217646,
+          "beginOffset": 45,
+          "endOffset": 60,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5147762
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Difficulty in walking, not elsewhere classified",
+              "code": "R26.2",
+              "score": 0.7806813
+            },
+            {
+              "description": "Unspecified speech disturbances",
+              "code": "R47.9",
+              "score": 0.7655453
+            },
+            {
+              "description": "Other reduced mobility",
+              "code": "Z74.09",
+              "score": 0.7301779
+            },
+            {
+              "description": "Lack of physical exercise",
+              "code": "Z72.3",
+              "score": 0.7299754
+            },
+            {
+              "description": "Sleep disorder, unspecified",
+              "code": "G47.9",
+              "score": 0.72968304
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "60e84c08-def3-4b5c-a964-73a7d3d5735f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "60e84c08-def3-4b5c-a964-73a7d3d5735f"
+          ],
+          "Content-Length": [
+            "725"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "725",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:16 GMT",
+          "x-amzn-RequestId": "60e84c08-def3-4b5c-a964-73a7d3d5735f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 1049,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "Acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.97422725,
+          "beginOffset": 255,
+          "endOffset": 268,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.9459181
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6038662
+            },
+            {
+              "description": "Acetaminophen 325 MG Oral Tablet",
+              "code": "313782",
+              "score": 0.59314084
+            },
+            {
+              "description": "Acetaminophen 650 MG Oral Tablet",
+              "code": "198444",
+              "score": 0.29524592
+            },
+            {
+              "description": "100 ML Acetaminophen 10 MG/ML Injection [Ofirmev]",
+              "code": "1041530",
+              "score": 0.27166602
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "acetaminophen",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9989466,
+          "beginOffset": 330,
+          "endOffset": 343,
+          "attributes": [
+            {
+              "type": "DOSAGE",
+              "score": 0.9980281,
+              "relationshipScore": 0.99719775,
+              "id": 2,
+              "beginOffset": 357,
+              "endOffset": 363,
+              "text": "200 mg",
+              "traits": []
+            },
+            {
+              "type": "FREQUENCY",
+              "score": 0.99910766,
+              "relationshipScore": 0.99997497,
+              "id": 3,
+              "beginOffset": 364,
+              "endOffset": 375,
+              "text": "twice daily",
+              "traits": []
+            }
+          ],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Acetaminophen",
+              "code": "161",
+              "score": 0.85557914
+            },
+            {
+              "description": "Acetaminophen 500 MG Oral Capsule",
+              "code": "198439",
+              "score": 0.6502334
+            },
+            {
+              "description": "Acetaminophen 325 MG / Guaifenesin 200 MG Oral Tablet",
+              "code": "602617",
+              "score": 0.5109077
+            },
+            {
+              "description": "Acetaminophen 300 MG / Phenyltoloxamine citrate 20 MG / salicylamide 200 MG Oral Capsule",
+              "code": "880326",
+              "score": 0.48210236
+            },
+            {
+              "description": "Acetaminophen 300 MG / Phenyltoloxamine citrate 20 MG / salicylamide 200 MG Oral Tablet",
+              "code": "1037273",
+              "score": 0.4222072
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "e9c4f1c5-6d1b-4935-b1de-1c991ae7d916"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "e9c4f1c5-6d1b-4935-b1de-1c991ae7d916"
+          ],
+          "Content-Length": [
+            "1768"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:16 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "1768",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:16 GMT",
+          "x-amzn-RequestId": "e9c4f1c5-6d1b-4935-b1de-1c991ae7d916"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:17 PM"
+}

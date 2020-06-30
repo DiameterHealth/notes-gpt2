@@ -1,0 +1,458 @@
+{
+  "note": ". The patient was able to manage her allergies with these modalities. Discussion:  This is another case of subacute systemic lupus erythematosus. With the use of noninvasive skin blood test and other testing with a positive reaction, a diagnosis of rheumatoid arthritis could have been ruled out. Top of Page  3. A 30–35-year-old woman was seen for a minor surgery after an episode of exacerbation of an abdominal pain.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 577,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 116,
+          "endOffset": 144,
+          "score": 0.9122265,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9568814
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35934642,
+              "relationshipScore": 0.9999869,
+              "relationshipType": "ACUITY",
+              "id": 1,
+              "beginOffset": 107,
+              "endOffset": 115,
+              "text": "subacute",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 174,
+          "endOffset": 178,
+          "score": 0.5956275,
+          "text": "skin",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 7,
+          "beginOffset": 174,
+          "endOffset": 189,
+          "score": 0.6662339,
+          "text": "skin blood test",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 215,
+          "endOffset": 232,
+          "score": 0.39598653,
+          "text": "positive reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.59976864
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 249,
+          "endOffset": 269,
+          "score": 0.98907673,
+          "text": "rheumatoid arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569684
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 357,
+          "endOffset": 364,
+          "score": 0.4797487,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 404,
+          "endOffset": 418,
+          "score": 0.9417863,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6379986
+            }
+          ],
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.43100262,
+              "relationshipScore": 0.94892937,
+              "relationshipType": "ACUITY",
+              "id": 5,
+              "beginOffset": 374,
+              "endOffset": 381,
+              "text": "episode",
+              "category": "MEDICAL_CONDITION",
+              "traits": []
+            }
+          ]
+        }
+      ],
+      "unmappedAttributes": [
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.35934642,
+            "id": 1,
+            "beginOffset": 107,
+            "endOffset": 115,
+            "text": "subacute",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        },
+        {
+          "type": "MEDICAL_CONDITION",
+          "attribute": {
+            "type": "ACUITY",
+            "score": 0.43100262,
+            "id": 5,
+            "beginOffset": 374,
+            "endOffset": 381,
+            "text": "episode",
+            "category": "MEDICAL_CONDITION",
+            "traits": []
+          }
+        }
+      ],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "434b2f93-4bbe-4cae-8132-219acee3ee3f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "434b2f93-4bbe-4cae-8132-219acee3ee3f"
+          ],
+          "Content-Length": [
+            "2185"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:03 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2185",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:03 GMT",
+          "x-amzn-RequestId": "434b2f93-4bbe-4cae-8132-219acee3ee3f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1302,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "systemic lupus erythematosus",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9122265,
+          "beginOffset": 116,
+          "endOffset": 144,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.35934642,
+              "relationshipScore": 0.9999869,
+              "id": 0,
+              "beginOffset": 107,
+              "endOffset": 115,
+              "text": "subacute",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9568814
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Systemic lupus erythematosus, unspecified",
+              "code": "M32.9",
+              "score": 0.7634274
+            },
+            {
+              "description": "Systemic lupus erythematosus, organ or system involvement unspecified",
+              "code": "M32.10",
+              "score": 0.61275935
+            },
+            {
+              "description": "Systemic lupus erythematosus (SLE)",
+              "code": "M32",
+              "score": 0.5897808
+            },
+            {
+              "description": "Systemic lupus erythematosus with organ or system involvement",
+              "code": "M32.1",
+              "score": 0.57178956
+            },
+            {
+              "description": "Other forms of systemic lupus erythematosus",
+              "code": "M32.8",
+              "score": 0.5200222
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "positive reaction",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.39598653,
+          "beginOffset": 215,
+          "endOffset": 232,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.5997686
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Allergy, unspecified",
+              "code": "T78.40",
+              "score": 0.47833997
+            },
+            {
+              "description": "Reaction to severe stress, unspecified",
+              "code": "F43.9",
+              "score": 0.47493276
+            },
+            {
+              "description": "Allergic urticaria",
+              "code": "L50.0",
+              "score": 0.39112288
+            },
+            {
+              "description": "Other abnormal findings on microbiological examination of urine",
+              "code": "R82.79",
+              "score": 0.38276598
+            },
+            {
+              "description": "Adjustment disorder, unspecified",
+              "code": "F43.20",
+              "score": 0.34096536
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "rheumatoid arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98907673,
+          "beginOffset": 249,
+          "endOffset": 269,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9569683
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Rheumatoid arthritis, unspecified",
+              "code": "M06.9",
+              "score": 0.72999835
+            },
+            {
+              "description": "Other specified rheumatoid arthritis, unspecified site",
+              "code": "M06.80",
+              "score": 0.49001902
+            },
+            {
+              "description": "Rheumatoid arthritis of unspecified site with involvement of other organs and systems",
+              "code": "M05.60",
+              "score": 0.4643311
+            },
+            {
+              "description": "Rheumatoid arthritis with rheumatoid factor, unspecified",
+              "code": "M05.9",
+              "score": 0.45651707
+            },
+            {
+              "description": "Rheumatoid arthritis without rheumatoid factor, unspecified site",
+              "code": "M06.00",
+              "score": 0.4150433
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "abdominal pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.94178635,
+          "beginOffset": 404,
+          "endOffset": 418,
+          "attributes": [
+            {
+              "type": "ACUITY",
+              "score": 0.4310025,
+              "relationshipScore": 0.94892937,
+              "id": 5,
+              "beginOffset": 374,
+              "endOffset": 381,
+              "text": "episode",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.63799846
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.6868702
+            },
+            {
+              "description": "Upper abdominal pain, unspecified",
+              "code": "R10.10",
+              "score": 0.5798554
+            },
+            {
+              "description": "Generalized abdominal pain",
+              "code": "R10.84",
+              "score": 0.54836315
+            },
+            {
+              "description": "Lower abdominal pain, unspecified",
+              "code": "R10.30",
+              "score": 0.529862
+            },
+            {
+              "description": "Left lower quadrant pain",
+              "code": "R10.32",
+              "score": 0.477251
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "24c7f7cb-a5b6-425a-b2b3-e4e42627fb15"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "24c7f7cb-a5b6-425a-b2b3-e4e42627fb15"
+          ],
+          "Content-Length": [
+            "3400"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:06 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "3400",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:06 GMT",
+          "x-amzn-RequestId": "24c7f7cb-a5b6-425a-b2b3-e4e42627fb15"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 223,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "5cda3a17-3371-4026-9939-5ed481442d27"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "5cda3a17-3371-4026-9939-5ed481442d27"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:04:05 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:04:05 GMT",
+          "x-amzn-RequestId": "5cda3a17-3371-4026-9939-5ed481442d27"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:04:06 PM"
+}

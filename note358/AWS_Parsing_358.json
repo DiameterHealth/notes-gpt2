@@ -1,0 +1,655 @@
+{
+  "note": ". The initial presentation was from a workplace accident or some sort of domestic incident. He has experienced nausea and vomiting and a dry cough. His initial physical exam revealed a tachypnoea and he had a very short pulse. We performed a respiratory history. He had a previous history of asthma and emphysema. The patient\u0027s ECG was recorded as below.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 252,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 38,
+          "endOffset": 56,
+          "score": 0.8503826,
+          "text": "workplace accident",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.64288324
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "beginOffset": 73,
+          "endOffset": 90,
+          "score": 0.5363675,
+          "text": "domestic incident",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6322773
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 111,
+          "endOffset": 117,
+          "score": 0.9953721,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8733125
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 122,
+          "endOffset": 130,
+          "score": 0.99845254,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7792179
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 137,
+          "endOffset": 146,
+          "score": 0.774904,
+          "text": "dry cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7460968
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "beginOffset": 160,
+          "endOffset": 173,
+          "score": 0.8659193,
+          "text": "physical exam",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.2641679,
+              "relationshipScore": 0.99998736,
+              "relationshipType": "TEST_VALUE",
+              "id": 10,
+              "beginOffset": 185,
+              "endOffset": 195,
+              "text": "tachypnoea",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "beginOffset": 185,
+          "endOffset": 195,
+          "score": 0.8483115,
+          "text": "tachypnoea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 209,
+          "endOffset": 225,
+          "score": 0.40369385,
+          "text": "very short pulse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5849
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "beginOffset": 292,
+          "endOffset": 298,
+          "score": 0.99619067,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9329521
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 303,
+          "endOffset": 312,
+          "score": 0.9985014,
+          "text": "emphysema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9375864
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 328,
+          "endOffset": 331,
+          "score": 0.98793775,
+          "text": "ECG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ab7500b0-1bcd-4e9d-a2ff-8db2d4d781ba"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ab7500b0-1bcd-4e9d-a2ff-8db2d4d781ba"
+          ],
+          "Content-Length": [
+            "2340"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "2340",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:08 GMT",
+          "x-amzn-RequestId": "ab7500b0-1bcd-4e9d-a2ff-8db2d4d781ba"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 371,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "workplace accident",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8503826,
+          "beginOffset": 38,
+          "endOffset": 56,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.6428831
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of transient ischemic attack (TIA), and cerebral infarction without residual deficits",
+              "code": "Z86.73",
+              "score": 0.7785459
+            },
+            {
+              "description": "Encounter for examination and observation following work accident",
+              "code": "Z04.2",
+              "score": 0.6934727
+            },
+            {
+              "description": "Cerebral infarction, unspecified",
+              "code": "I63.9",
+              "score": 0.6857435
+            },
+            {
+              "description": "Quadriplegia, unspecified",
+              "code": "G82.50",
+              "score": 0.66470987
+            },
+            {
+              "description": "Personal history of other (healed) physical injury and trauma",
+              "code": "Z87.828",
+              "score": 0.6226363
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "domestic incident",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.5363676,
+          "beginOffset": 73,
+          "endOffset": 90,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6322773
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Violent behavior",
+              "code": "R45.6",
+              "score": 0.72253275
+            },
+            {
+              "description": "Contact with birds (domestic) (wild)",
+              "code": "W61",
+              "score": 0.6906852
+            },
+            {
+              "description": "Incisional hernia without obstruction or gangrene",
+              "code": "K43.2",
+              "score": 0.60112906
+            },
+            {
+              "description": "Anesthesiology devices associated with adverse incidents",
+              "code": "Y70",
+              "score": 0.546987
+            },
+            {
+              "description": "Exposure to domestic wiring and appliances",
+              "code": "W86.0",
+              "score": 0.54677266
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "text": "nausea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9953721,
+          "beginOffset": 111,
+          "endOffset": 117,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.8733125
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.7929035
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.69281375
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.571826
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.5616762
+            },
+            {
+              "description": "Nausea and vomiting",
+              "code": "R11",
+              "score": 0.48582616
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "vomiting",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99845254,
+          "beginOffset": 122,
+          "endOffset": 130,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.77921784
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Nausea with vomiting, unspecified",
+              "code": "R11.2",
+              "score": 0.77387655
+            },
+            {
+              "description": "Vomiting, unspecified",
+              "code": "R11.10",
+              "score": 0.6600776
+            },
+            {
+              "description": "Late vomiting of pregnancy",
+              "code": "O21.2",
+              "score": 0.54382014
+            },
+            {
+              "description": "Nausea",
+              "code": "R11.0",
+              "score": 0.48637953
+            },
+            {
+              "description": "Cyclical vomiting, not intractable",
+              "code": "G43.A0",
+              "score": 0.44519734
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "dry cough",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.7749039,
+          "beginOffset": 137,
+          "endOffset": 146,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.7460968
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Cough",
+              "code": "R05",
+              "score": 0.7418564
+            },
+            {
+              "description": "Dry eye syndrome of bilateral lacrimal glands",
+              "code": "H04.123",
+              "score": 0.5824642
+            },
+            {
+              "description": "Xerosis cutis",
+              "code": "L85.3",
+              "score": 0.55578274
+            },
+            {
+              "description": "Hemoptysis",
+              "code": "R04.2",
+              "score": 0.5153287
+            },
+            {
+              "description": "Dry mouth, unspecified",
+              "code": "R68.2",
+              "score": 0.5034348
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "text": "tachypnoea",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.8483115,
+          "beginOffset": 185,
+          "endOffset": 195,
+          "attributes": [],
+          "traits": [],
+          "iCD10CMConcepts": [
+            {
+              "description": "Tachypnea, not elsewhere classified",
+              "code": "R06.82",
+              "score": 0.5486542
+            },
+            {
+              "description": "Other somatoform disorders",
+              "code": "F45.8",
+              "score": 0.22945759
+            },
+            {
+              "description": "Transient tachypnea of newborn",
+              "code": "P22.1",
+              "score": 0.17093296
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "very short pulse",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.40369356,
+          "beginOffset": 209,
+          "endOffset": 225,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SIGN",
+              "score": 0.5849
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Other specified symptoms and signs involving the circulatory and respiratory systems",
+              "code": "R09.89",
+              "score": 0.7319551
+            },
+            {
+              "description": "Shortness of breath",
+              "code": "R06.02",
+              "score": 0.70117617
+            },
+            {
+              "description": "Tachycardia, unspecified",
+              "code": "R00.0",
+              "score": 0.6979773
+            },
+            {
+              "description": "Pallor",
+              "code": "R23.1",
+              "score": 0.61470973
+            },
+            {
+              "description": "Supraventricular tachycardia",
+              "code": "I47.1",
+              "score": 0.5783085
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "text": "asthma",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.99619067,
+          "beginOffset": 292,
+          "endOffset": 298,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9329521
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified asthma, uncomplicated",
+              "code": "J45.909",
+              "score": 0.7277522
+            },
+            {
+              "description": "Family history of asthma and other chronic lower respiratory diseases",
+              "code": "Z82.5",
+              "score": 0.5255012
+            },
+            {
+              "description": "Unspecified asthma with (acute) exacerbation",
+              "code": "J45.901",
+              "score": 0.49160638
+            },
+            {
+              "description": "Unspecified asthma",
+              "code": "J45.90",
+              "score": 0.4102072
+            },
+            {
+              "description": "Asthma",
+              "code": "J45",
+              "score": 0.3605718
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "emphysema",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9985014,
+          "beginOffset": 303,
+          "endOffset": 312,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9375864
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Emphysema, unspecified",
+              "code": "J43.9",
+              "score": 0.7063729
+            },
+            {
+              "description": "Traumatic subcutaneous emphysema",
+              "code": "T79.7",
+              "score": 0.5373978
+            },
+            {
+              "description": "Emphysema",
+              "code": "J43",
+              "score": 0.514056
+            },
+            {
+              "description": "Other emphysema",
+              "code": "J43.8",
+              "score": 0.51358116
+            },
+            {
+              "description": "Chronic obstructive pulmonary disease, unspecified",
+              "code": "J44.9",
+              "score": 0.4471216
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "de7cd25c-022a-4086-b204-75431ae529d5"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "de7cd25c-022a-4086-b204-75431ae529d5"
+          ],
+          "Content-Length": [
+            "6064"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6064",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:08 GMT",
+          "x-amzn-RequestId": "de7cd25c-022a-4086-b204-75431ae529d5"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 193,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "90082d5f-b94f-42e5-8eb7-a5862476c82a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "90082d5f-b94f-42e5-8eb7-a5862476c82a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:30:08 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:30:08 GMT",
+          "x-amzn-RequestId": "90082d5f-b94f-42e5-8eb7-a5862476c82a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:30:09 PM"
+}

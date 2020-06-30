@@ -1,0 +1,891 @@
+{
+  "note": "Is this a sign of another fracture. No other fracture to the bones and no history of fracture(s) in this family. ED states ankle pain is a known symptom of her arthritis. EKG states T9 T12. CT scan shows diffuse ankle/knee pain. The diagnosis at this time states osteochondral fracture with multiple fractures on magnetic resonance imaging. Post Operative Follow-up  Tailbone, Femur, and Femur.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 910,
+    "data": {
+      "entities": [
+        {
+          "id": 7,
+          "beginOffset": 26,
+          "endOffset": 34,
+          "score": 0.9795379,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94262064
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "beginOffset": 45,
+          "endOffset": 53,
+          "score": 0.9588065,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87562376
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8413689
+            }
+          ],
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99332136,
+              "relationshipScore": 0.9998049,
+              "relationshipType": "SYSTEM_ORGAN_SITE",
+              "id": 0,
+              "beginOffset": 61,
+              "endOffset": 66,
+              "text": "bones",
+              "category": "ANATOMY",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 0,
+          "beginOffset": 61,
+          "endOffset": 66,
+          "score": 0.99332136,
+          "text": "bones",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 9,
+          "beginOffset": 85,
+          "endOffset": 93,
+          "score": 0.98984325,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93296736
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92248994
+            }
+          ]
+        },
+        {
+          "id": 22,
+          "beginOffset": 100,
+          "endOffset": 104,
+          "score": 0.37725696,
+          "text": "this",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.98984325,
+              "relationshipScore": 0.8738045,
+              "relationshipType": "OVERLAP",
+              "id": 9,
+              "beginOffset": 85,
+              "endOffset": 93,
+              "text": "fracture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.93296736
+                },
+                {
+                  "name": "NEGATION",
+                  "score": 0.92248994
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 15,
+          "beginOffset": 113,
+          "endOffset": 115,
+          "score": 0.9777598,
+          "text": "ED",
+          "category": "PROTECTED_HEALTH_INFORMATION",
+          "type": "ADDRESS",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 123,
+          "endOffset": 128,
+          "score": 0.9786059,
+          "text": "ankle",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 10,
+          "beginOffset": 123,
+          "endOffset": 133,
+          "score": 0.872341,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6128272
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "beginOffset": 160,
+          "endOffset": 169,
+          "score": 0.9763899,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8775419
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "beginOffset": 171,
+          "endOffset": 174,
+          "score": 0.9872364,
+          "text": "EKG",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.5763653,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 17,
+              "beginOffset": 182,
+              "endOffset": 188,
+              "text": "T9 T12",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "beginOffset": 182,
+          "endOffset": 188,
+          "score": 0.62690854,
+          "text": "T9 T12",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 18,
+          "beginOffset": 190,
+          "endOffset": 197,
+          "score": 0.9871673,
+          "text": "CT scan",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.955564,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 19,
+              "beginOffset": 204,
+              "endOffset": 227,
+              "text": "diffuse ankle/knee pain",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "beginOffset": 212,
+          "endOffset": 222,
+          "score": 0.96003443,
+          "text": "ankle/knee",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 12,
+          "beginOffset": 212,
+          "endOffset": 227,
+          "score": 0.6653747,
+          "text": "ankle/knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.7740079
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 243,
+          "endOffset": 255,
+          "score": 0.99998987,
+          "text": "at this time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_NAME",
+              "score": 0.9870969,
+              "relationshipScore": 0.6501063,
+              "relationshipType": "OVERLAP",
+              "id": 21,
+              "beginOffset": 313,
+              "endOffset": 339,
+              "text": "magnetic resonance imaging",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 243,
+          "endOffset": 255,
+          "score": 0.99998987,
+          "text": "at this time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.9483068,
+              "relationshipScore": 0.89431036,
+              "relationshipType": "OVERLAP",
+              "id": 13,
+              "beginOffset": 263,
+              "endOffset": 285,
+              "text": "osteochondral fracture",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.97648275
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 23,
+          "beginOffset": 243,
+          "endOffset": 255,
+          "score": 0.99998987,
+          "text": "at this time",
+          "category": "TIME_EXPRESSION",
+          "type": "TIME_TO_DX_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "DX_NAME",
+              "score": 0.4590621,
+              "relationshipScore": 0.87754613,
+              "relationshipType": "OVERLAP",
+              "id": 14,
+              "beginOffset": 291,
+              "endOffset": 309,
+              "text": "multiple fractures",
+              "category": "MEDICAL_CONDITION",
+              "traits": [
+                {
+                  "name": "DIAGNOSIS",
+                  "score": 0.9621682
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "beginOffset": 263,
+          "endOffset": 285,
+          "score": 0.9483068,
+          "text": "osteochondral fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97648275
+            }
+          ]
+        },
+        {
+          "id": 14,
+          "beginOffset": 291,
+          "endOffset": 309,
+          "score": 0.4590621,
+          "text": "multiple fractures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621682
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "beginOffset": 313,
+          "endOffset": 339,
+          "score": 0.9870969,
+          "text": "magnetic resonance imaging",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TEST_NAME",
+          "traits": [],
+          "attributes": [
+            {
+              "type": "TEST_VALUE",
+              "score": 0.37461728,
+              "relationshipScore": 0.9999999,
+              "relationshipType": "TEST_VALUE",
+              "id": 20,
+              "beginOffset": 291,
+              "endOffset": 309,
+              "text": "multiple fractures",
+              "category": "TEST_TREATMENT_PROCEDURE",
+              "traits": []
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "beginOffset": 367,
+          "endOffset": 375,
+          "score": 0.4692743,
+          "text": "Tailbone",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 5,
+          "beginOffset": 377,
+          "endOffset": 382,
+          "score": 0.9738427,
+          "text": "Femur",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 6,
+          "beginOffset": 388,
+          "endOffset": 393,
+          "score": 0.9796159,
+          "text": "Femur",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "cc33b969-7088-4b3c-8ab7-a0417b65d77e"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "cc33b969-7088-4b3c-8ab7-a0417b65d77e"
+          ],
+          "Content-Length": [
+            "6190"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:17 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6190",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:17 GMT",
+          "x-amzn-RequestId": "cc33b969-7088-4b3c-8ab7-a0417b65d77e"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 1036,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9795379,
+          "beginOffset": 26,
+          "endOffset": 34,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.94262064
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.5352973
+            },
+            {
+              "description": "Unspecified fracture of right wrist and hand",
+              "code": "S62.91",
+              "score": 0.5181223
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.51058203
+            },
+            {
+              "description": "Displaced unspecified fracture of left great toe",
+              "code": "S92.402",
+              "score": 0.5085278
+            },
+            {
+              "description": "Fracture of left shoulder girdle, part unspecified",
+              "code": "S42.92",
+              "score": 0.49370262
+            }
+          ]
+        },
+        {
+          "id": 1,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9588065,
+          "beginOffset": 45,
+          "endOffset": 53,
+          "attributes": [
+            {
+              "type": "SYSTEM_ORGAN_SITE",
+              "score": 0.99332136,
+              "relationshipScore": 0.9998049,
+              "id": 2,
+              "beginOffset": 61,
+              "endOffset": 66,
+              "text": "bones",
+              "traits": []
+            }
+          ],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.87562376
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.8413689
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Displaced unspecified fracture of left great toe",
+              "code": "S92.402",
+              "score": 0.37290245
+            },
+            {
+              "description": "Unspecified fracture of right wrist and hand",
+              "code": "S62.91",
+              "score": 0.36387217
+            },
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.36218852
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.3612047
+            },
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.35574055
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "text": "fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.98984325,
+          "beginOffset": 85,
+          "endOffset": 93,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.93296736
+            },
+            {
+              "name": "NEGATION",
+              "score": 0.92248994
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Personal history of (healed) traumatic fracture",
+              "code": "Z87.81",
+              "score": 0.53632003
+            },
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.3227439
+            },
+            {
+              "description": "Displaced unspecified fracture of left great toe",
+              "code": "S92.402",
+              "score": 0.3183916
+            },
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.31666046
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.3088901
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "text": "ankle pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.872341,
+          "beginOffset": 123,
+          "endOffset": 133,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "SYMPTOM",
+              "score": 0.6128272
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain in right ankle and joints of right foot",
+              "code": "M25.571",
+              "score": 0.25646028
+            },
+            {
+              "description": "Pain in left ankle and joints of left foot",
+              "code": "M25.572",
+              "score": 0.22903857
+            },
+            {
+              "description": "Pain in unspecified ankle and joints of unspecified foot",
+              "code": "M25.579",
+              "score": 0.21981695
+            },
+            {
+              "description": "Pain in left foot",
+              "code": "M79.672",
+              "score": 0.14160931
+            },
+            {
+              "description": "Pain in right finger(s)",
+              "code": "M79.644",
+              "score": 0.12338075
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "text": "arthritis",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9763899,
+          "beginOffset": 160,
+          "endOffset": 169,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.8775418
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Unspecified osteoarthritis, unspecified site",
+              "code": "M19.90",
+              "score": 0.49343708
+            },
+            {
+              "description": "Family history of arthritis and other diseases of the musculoskeletal system and connective tissue",
+              "code": "Z82.6",
+              "score": 0.45394704
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, right knee",
+              "code": "M17.11",
+              "score": 0.4155763
+            },
+            {
+              "description": "Rheumatoid arthritis, unspecified",
+              "code": "M06.9",
+              "score": 0.3503882
+            },
+            {
+              "description": "Unilateral primary osteoarthritis, unspecified knee",
+              "code": "M17.10",
+              "score": 0.31731886
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "text": "ankle/knee pain",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.66537476,
+          "beginOffset": 212,
+          "endOffset": 227,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.77400786
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Pain, unspecified",
+              "code": "R52",
+              "score": 0.28020263
+            },
+            {
+              "description": "Pleurodynia",
+              "code": "R07.81",
+              "score": 0.27611884
+            },
+            {
+              "description": "Pain in right thigh",
+              "code": "M79.651",
+              "score": 0.23665299
+            },
+            {
+              "description": "Unspecified abdominal pain",
+              "code": "R10.9",
+              "score": 0.232148
+            },
+            {
+              "description": "Glossodynia",
+              "code": "K14.6",
+              "score": 0.21950246
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "text": "osteochondral fracture",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.9483068,
+          "beginOffset": 263,
+          "endOffset": 285,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.97648275
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.22538261
+            },
+            {
+              "description": "Unspecified fracture of facial bones",
+              "code": "S02.92",
+              "score": 0.2199387
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.21906318
+            },
+            {
+              "description": "Fracture of neck, unspecified",
+              "code": "S12.9",
+              "score": 0.20630096
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.20628193
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "text": "multiple fractures",
+          "category": "MEDICAL_CONDITION",
+          "type": "DX_NAME",
+          "score": 0.459062,
+          "beginOffset": 291,
+          "endOffset": 309,
+          "attributes": [],
+          "traits": [
+            {
+              "name": "DIAGNOSIS",
+              "score": 0.9621682
+            }
+          ],
+          "iCD10CMConcepts": [
+            {
+              "description": "Multiple fractures of ribs, unspecified side",
+              "code": "S22.49",
+              "score": 0.3670708
+            },
+            {
+              "description": "Other injury of unspecified body region",
+              "code": "T14.8",
+              "score": 0.361073
+            },
+            {
+              "description": "Unspecified fracture of facial bones",
+              "code": "S02.92",
+              "score": 0.3164772
+            },
+            {
+              "description": "Unspecified fracture of left femur",
+              "code": "S72.92",
+              "score": 0.3135768
+            },
+            {
+              "description": "Fracture of nasal bones",
+              "code": "S02.2",
+              "score": 0.30104324
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "9774f62a-4ad9-45dd-a9e9-f0ed2036d0bd"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "9774f62a-4ad9-45dd-a9e9-f0ed2036d0bd"
+          ],
+          "Content-Length": [
+            "6103"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:19 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "6103",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:19 GMT",
+          "x-amzn-RequestId": "9774f62a-4ad9-45dd-a9e9-f0ed2036d0bd"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 207,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "a6c880d2-7089-47d4-ac14-ed442889912f"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "a6c880d2-7089-47d4-ac14-ed442889912f"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 20:37:18 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 20:37:18 GMT",
+          "x-amzn-RequestId": "a6c880d2-7089-47d4-ac14-ed442889912f"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 4:37:19 PM"
+}

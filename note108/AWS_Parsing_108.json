@@ -1,0 +1,138 @@
+{
+  "note": ", if at all possible. Medication Errors: Treat the underlying cause of symptoms. If the patient is having heart, circulation or lung problems then they require medication. If a medication does not work or if symptoms have not improved, then discontinue medication and consult their physician for further instructions on changing drugs. If the patient is not sure of their diagnosis, then they are able to determine by asking their physician to perform a physical.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 420,
+    "data": {
+      "entities": [
+        {
+          "id": 0,
+          "beginOffset": 106,
+          "endOffset": 111,
+          "score": 0.9749782,
+          "text": "heart",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 128,
+          "endOffset": 132,
+          "score": 0.98365134,
+          "text": "lung",
+          "category": "ANATOMY",
+          "type": "SYSTEM_ORGAN_SITE",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "93910b5b-65bb-4f81-ab8e-60b5a957c191"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "93910b5b-65bb-4f81-ab8e-60b5a957c191"
+          ],
+          "Content-Length": [
+            "349"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "349",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:59 GMT",
+          "x-amzn-RequestId": "93910b5b-65bb-4f81-ab8e-60b5a957c191"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 410,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "41ce7686-0f90-4457-a47d-5b825ddd3110"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "41ce7686-0f90-4457-a47d-5b825ddd3110"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:59 GMT",
+          "x-amzn-RequestId": "41ce7686-0f90-4457-a47d-5b825ddd3110"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 412,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "0e2c87f9-7cc4-488b-a752-d23ba8902a0a"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "0e2c87f9-7cc4-488b-a752-d23ba8902a0a"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:01:59 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:01:59 GMT",
+          "x-amzn-RequestId": "0e2c87f9-7cc4-488b-a752-d23ba8902a0a"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:02:00 PM"
+}

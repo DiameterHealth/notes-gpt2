@@ -1,0 +1,202 @@
+{
+  "note": "Patient was scheduled for surgery. Treatment:  The patient was instructed to use a low doses of antibiotics and anti-inflammatory medications, and undergo a course of cortisone. At the 7-week follow-up interval the patient was instructed to stop and maintain at a non-smoking abstinence period. Outcome:  At the 7-week follow-up interval the patient had achieved full remission of the disease.",
+  "dhScore": -1,
+  "detectEntities": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "DETECT-ENTITY",
+    "callTimeMillis": 374,
+    "data": {
+      "entities": [
+        {
+          "id": 2,
+          "beginOffset": 26,
+          "endOffset": 33,
+          "score": 0.9452191,
+          "text": "surgery",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "PROCEDURE_NAME",
+          "traits": []
+        },
+        {
+          "id": 0,
+          "beginOffset": 96,
+          "endOffset": 107,
+          "score": 0.52324647,
+          "text": "antibiotics",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        },
+        {
+          "id": 3,
+          "beginOffset": 96,
+          "endOffset": 107,
+          "score": 0.89520794,
+          "text": "antibiotics",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 4,
+          "beginOffset": 112,
+          "endOffset": 141,
+          "score": 0.8002135,
+          "text": "anti-inflammatory medications",
+          "category": "TEST_TREATMENT_PROCEDURE",
+          "type": "TREATMENT_NAME",
+          "traits": []
+        },
+        {
+          "id": 1,
+          "beginOffset": 167,
+          "endOffset": 176,
+          "score": 0.9818412,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "traits": []
+        }
+      ],
+      "unmappedAttributes": [],
+      "modelVersion": "1.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ed2796e5-7c5e-4396-8d91-5d2ba2600c4d"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ed2796e5-7c5e-4396-8d91-5d2ba2600c4d"
+          ],
+          "Content-Length": [
+            "860"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "860",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:42 GMT",
+          "x-amzn-RequestId": "ed2796e5-7c5e-4396-8d91-5d2ba2600c4d"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferICD10CM": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "ICD-10-CM",
+    "callTimeMillis": 279,
+    "data": {
+      "entities": [],
+      "modelVersion": "0.1.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "ca3e6204-1abe-4285-9d83-a2ede73e52cf"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "ca3e6204-1abe-4285-9d83-a2ede73e52cf"
+          ],
+          "Content-Length": [
+            "38"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:43 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "38",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:43 GMT",
+          "x-amzn-RequestId": "ca3e6204-1abe-4285-9d83-a2ede73e52cf"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "inferRxNorm": {
+    "sourceName": "AWS-COMPRENHEND-MEDICAL",
+    "sourceType": "RxNorm",
+    "callTimeMillis": 370,
+    "data": {
+      "entities": [
+        {
+          "id": 1,
+          "text": "cortisone",
+          "category": "MEDICATION",
+          "type": "GENERIC_NAME",
+          "score": 0.9818412,
+          "beginOffset": 167,
+          "endOffset": 176,
+          "attributes": [],
+          "traits": [],
+          "rxNormConcepts": [
+            {
+              "description": "Cortisone",
+              "code": "2878",
+              "score": 0.93504256
+            },
+            {
+              "description": "Cortisone 5 MG Oral Tablet",
+              "code": "197545",
+              "score": 0.33341527
+            },
+            {
+              "description": "cortisone acetate 25 MG Oral Tablet",
+              "code": "828248",
+              "score": 0.20463465
+            },
+            {
+              "description": "Cortisone 10 MG Oral Tablet",
+              "code": "197543",
+              "score": 0.03202813
+            }
+          ]
+        }
+      ],
+      "modelVersion": "0.0.0",
+      "sdkResponseMetadata": {
+        "metadata": {
+          "AWS_REQUEST_ID": "4712f5f2-878b-42a1-98e4-9446678a5508"
+        }
+      },
+      "sdkHttpMetadata": {
+        "allHeaders": {
+          "x-amzn-RequestId": [
+            "4712f5f2-878b-42a1-98e4-9446678a5508"
+          ],
+          "Content-Length": [
+            "564"
+          ],
+          "Date": [
+            "Mon, 29 Jun 2020 21:03:42 GMT"
+          ],
+          "Content-Type": [
+            "application/x-amz-json-1.1"
+          ]
+        },
+        "httpHeaders": {
+          "Content-Length": "564",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "Mon, 29 Jun 2020 21:03:42 GMT",
+          "x-amzn-RequestId": "4712f5f2-878b-42a1-98e4-9446678a5508"
+        },
+        "httpStatusCode": 200
+      }
+    }
+  },
+  "callTime": "Jun 29, 2020, 5:03:43 PM"
+}
