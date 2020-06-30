@@ -14,5 +14,5 @@ for (let i = 0; i < lines.length; i++) {
   let num = i + 1;
   if (num < 10) num = `00${num}`; 
   else if (num < 100) num = `0${num}`;
-  fs.writeFileSync(`../notes/note${num}/Note_Before_Truncate${num}.txt`, output);
+  fs.writeFileSync(`../notes/note${num}/Note_Before_Truncate_${num}.txt`, output);
 }
