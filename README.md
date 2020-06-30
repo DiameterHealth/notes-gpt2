@@ -32,14 +32,14 @@ Looks like there were some good notes! Take a peek in the repo and review for yo
 
 Medical Decision Making: The patient is admitted for further evaluation and is found to have bilateral anterior compartment syndrome and right hip abduction dysfunction with bilateral patella dislocation with degenerative changes and calcified synovitis.
 
-**RESPONSE** (Sentence ending after 60th word):
+**RESPONSE (Sentence ending after 60th word)**:
 
 The patient has no significant pulmonary disease with evidence of a sub-diaphragmatic hernia with an initial sacroiliac joint motion of 5 degrees of flexion and a peak motion of 23-27 degrees of abduction which demonstrates a clinically significant joint instability. Physical examination indicates a mildly active patient with increased muscle mass with a normal vital capacity. The clinical diagnosis of bilateral anterior compartment syndrome is made and a clinical diagnostic workup includes physical exam, lumbar puncture, computed tomography examination, iliac and femoral computed tomography, and ultrasound. 
 
 Throughout the repo, the information is organized in the note folders following a similar structure (where XXX = sample number)
 
 - AWS_Parsing_XXX.json
-- Note_As_Scored_XXX.txt
+- Note_As_Scored_XXX.md
 - Note_Before_Truncate.txt  
 - Settings_Scores_XXX.json
 
