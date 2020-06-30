@@ -1,0 +1,7 @@
+**PROMPT:**
+
+Medical Decision Making: Patient was advised of surigical options but currently plans to pursue continued therapy and medications
+
+**RESPONSE (Sentence ending after 60th word):**
+
+The patient decided to continue the surgery and surgery was performed as scheduled. Cephalosporin (Ce) 250 mg or 3.5 mg PO daily for 7 days  Adjunctive therapy:  Adjuvant therapy was started  The patients treated with Ce 400 mg PO once daily for 4 days. The patients treated with Ce 250 mg PO once daily for 0.5 days. The patients treated with ce 400 mg PO 3 times daily for 0.2 days  The patients treated with ce 250 mg PO 3 times daily for 0.1 days  The patients treated with ce 400 mg PO 3 times daily for 4 days  The patients treated with ce 250 mg PO once daily for 0.5 days  The patients treated with ce 400 mg PO once daily for 2 or 3 days  The patients treated with ce 400 mg PO once daily for 5 days  The patients treated with ce 400 mg PO 3 times daily for 8 days  The patients treated with ce 500 mg PO three times daily  The patients treated with ce 500 mg PO once daily for 16 days  Recurrence at 18 months  At 18 months, Cephalosporin 100 mg PO three times daily was continued for the patient  The following were adverse events  There were no significant differences between the two groups regarding adverse events [ ]. 
