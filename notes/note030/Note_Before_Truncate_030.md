@@ -1,0 +1,7 @@
+**PROMPT:**
+
+Assessment & Recommendation:  The patient was admitted in spontaneous labor in the morning of Jan 3rd. Her spouse was reactive and reassuring throughout the course of her stay in labor and delivery.
+
+**RESPONSE:**
+
+   Innovative management:  The patient was managed within her institutional setting in the most efficient way possible. The fetus was delivered at term in a breech presentation.  Conclusion:  Our experience suggests the use of a cedric clamp, similar to that used in many other settings outside the United States, should be considered.  References: (2, 4, 5)  1. Tuck, S. F. (2009). "Tuck Technique in the Emergency Department." In Efficient Management of Resus and Perinatal Emergencies (eds A. Sussman & B. E. Rachael).  (2)  E-mail: [email protected]  (3)  T. Sussman, and, M. E. Rachael, "A Comparative Comparison of Clamp and Stethoscope in Acute Myocardial Infarction." (1996).  (4)  Sussman, T., E. Rachael, J. D. Reiter, and R. D. Ritterl. "A Comparison of Clamp and Stethoscope in Patients Prior to and After Labor." (1993).  (5)  Tuck, D. F., & P. DeGrippo, "Clotting in Women With Acute myocardial Infarction," Clinical Journal of Obstetrics & Gynecology. October 2003, vol. 98:1, 57-70.

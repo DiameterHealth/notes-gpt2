@@ -1,0 +1,7 @@
+**PROMPT:**
+
+Medical Decision Making: Patient should follow up within 2 days and continue medications as prescribed
+
+**RESPONSE:**
+
+  to reduce risk  Other (Psychological, Health or Social) Concerns: Should follow-up with the practitioner as this can affect their confidence in their healthcare and decision making  Patient should be aware that decisions to discontinue therapy can have serious side effects.  If patients or other caregivers have concerns regarding their safety regarding care of a patient with an intellectual disability, they should first contact their healthcare provider.  For the full guidance, please see the AHC's Guidance for the Care and Management of Persons with Intellectual Disabilities web page.  Where can I get more information?  You can find out more about the care and management of persons with intellectual disabilities through information released regularly by the Royal College of Nursing, AHC  More information on a patient's care can be obtained from the Royal College of Nursing, AHC or directly from the Care Quality Commission.  More information on the Care and Management of Persons with Intellectual Disabilities is available through the UK's National Health Service.  Find a GP  Find a local doctor or other healthcare professional

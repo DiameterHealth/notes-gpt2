@@ -1,0 +1,7 @@
+**PROMPT:**
+
+Assessment & Plan:  Patient was advised of surigical options but currently plans to pursue continued therapy and medications
+
+**RESPONSE:**
+
+ ; and   Management Plan:  Patient was advised of medications and ongoing surveillance and has discussed them with attending physician but plans to follow medications as they are updated; and Patient was advised that the next scheduled visit is at 2:00 p.m. on 2/27 [4/19]  Date of Assessment: 01/18-01/19  Date of Service: 02/05-02/07  Date of Recovery from Injury: 02/11-02/14  Date of Incomplete Rehabilitation: 02/23-02/25  Date of Transfer to New Level of Care: 03/03-03/06 [5/01]  Date of Discharge: 03/15-03/20   [UPDATED 05/06-03/16]  Location: AVERY  Severity: Incomplete[UPDATED 05/26-03/17]  Date of the Injury: 10/22/12[UPDATED 05/27-03/18]  Age at the Time of Injury: 26  Race: Black[UPDATED 05/27-03/18]  Gender: Female   [UPDATED 06/17-03/22]  Location: EAST LAFAYETTE  Severity: Incomplete[UPDATED 06/29-03/23]  Date of Injury: 11/05/13[UPDATED 06/30-03/24]  Age at the Time of Injury: 34  Race: Asian American[UPDATED 06/30-03/24]  Gender: Female   [UPDATED 07/27-03/31]  Location: NORTON  Severity: Incomplete [MADE CLEAR 07/28-04/05]  Date of Injury: 05/12/16  Age at the Time of Injury: 30  Race: White[MADE CLEAR 07/28-04/05]  Gender: Female   [UPDATED 07/31-04/04]  Location: FARRINGTON  Severity: Incomplete [MADE CLEAR 07/31-04/04]  Date of Injury: 10/04/17  Age at the Time of Injury: 28  Race: Brown  Gender: Female   [UPDATED 09/14-04/

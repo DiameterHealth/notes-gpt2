@@ -1,0 +1,7 @@
+**PROMPT:**
+
+Medical Decision Making: Patient was advised of surigical options but currently plans to pursue continued therapy and medications
+
+**RESPONSE:**
+
+  that may benefit him  Surgical Resection: As part of treatment decision, patient made the decision to proceed to open wound repair of amputation site; physician advised and patient decided to proceed to the open wound repair procedure performed  Intended Surplus: Patient was informed of the decision to discard body part; patient said he would "take as many as I need" to achieve the goal; patient said he is not concerned about his weight  Replaced Body Part: Patient said he wanted to replace his hand, foot, and leg  Repaired, Attended, and Disposed of Body Part: Patient has returned to his home and intends to continue regular exercise and therapy to maintain the limb; patient has informed him of his physical therapist's recommendation to take the stump as a part of his recovery  Physical Therapy Intervention: Patient has been engaged in physical therapy to enhance functional independence and physical function of his stump  Palliative Care Intervention: Patient has been consulted by a physician about using hospice care  Risk Adjustment: Patient was observed as a "high" risk patient who would require continued supervision and care to ensure his comfort and care  Additional Information and Support  For information on the surgical procedure, please refer to the Surgical Induction and Resection of a Hand or Upper Extremity With Necrotizing Fasciitis (SIRNFI) Patient Information Sheet.
