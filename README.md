@@ -47,7 +47,7 @@ In addition, since there's a lot of notes, we've provided a README.md in the fol
 
 ## Want to learn more? 
 
-This exploratory research was performed in the context of Diameter Health's synthetic patient generation module. We are taking notes like these and packaging them with sturctured data to create synthetic samples that are representative of the real-world. 
+This exploratory research was performed in the context of Diameter Health's synthetic patient generation module. We are taking notes like these and packaging them with structured data to create synthetic samples that are representative of the real-world. 
 
 More information on Diameter Health is available here: [Diameter Health](https://www.diameterhealth.com)
 
