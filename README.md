@@ -40,7 +40,7 @@ Throughout the repo, the information is organized in the note folders following 
 
 - AWS_Parsing_XXX.json
 - Note_As_Scored_XXX.md
-- Note_Before_Truncate.md  
+- Note_Before_Truncate_XXX.md  
 - Settings_Scores_XXX.json
 
 In addition, since there's a lot of notes, we've provided a README.md in the folder name links to allow people to navigate to higher scoring samples, which may be of most interest.  
