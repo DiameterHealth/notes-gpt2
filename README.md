@@ -24,9 +24,13 @@ Responses from GPT-2 vary in length. We truncated all responses in two ways. Fir
 
 Two individuals with medical informatics and real-world clinical note review experience then scored the samples from 0-10 on how realistic they were in respect to the prompt provided and medical coherence. 5 notes were jointly reviewed to discuss scoring criteria, although all subsequent reviews were performed independently and blinded between reviewers.
 
+Notes were also processed using Amazon Medical Comprehend and the results from that natural language processing (NLP) engine are also included in this repository. Diameter Health, Inc. does not represent Amazon Web Services, Inc. in any respect. 
+
 ## Results
 
-Looks like there were some good notes! Take a peek in the repo and review for yourself. Here's one example of a highly scored note: 
+Looks like there were some good notes! Take a peek in the repo and review for yourself. If you'd like to scan notes by scores, we're created a [listing](https://github.com/DiameterHealth/notes-gpt2/tree/master/links) that you can click through. 
+
+Here's one example of a highly scored note: 
 
 **PROMPT**: 
 
