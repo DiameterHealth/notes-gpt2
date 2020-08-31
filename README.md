@@ -28,7 +28,7 @@ Notes were also processed using Amazon Medical Comprehend and the results from t
 
 ## Results
 
-Looks like there were some good notes! Take a peek in the repo and review for yourself. If you'd like to scan notes by scores, we're created a [listing](https://github.com/DiameterHealth/notes-gpt2/tree/master/links) that you can click through. 
+Looks like there were some good notes! Take a peek in the repo and review for yourself. If you'd like to scan notes by scores, we created a [listing](https://github.com/DiameterHealth/notes-gpt2/tree/master/links) that you can click through. 
 
 Here's one example of a highly scored note: 
 
